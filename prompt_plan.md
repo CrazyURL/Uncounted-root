@@ -1,35 +1,44 @@
-# Implementation Plan: 루트 CLAUDE.md 작성
+# 환경별 암호화 키 분리
 
-## 요구사항 재정의
+상태: 완료
+타입: feature
+생성일: 2026-03-25
 
-멀티 리포 구조(`uncounted-api`, `uncounted-app`, `uncounted-admin`)를 아우르는 **루트 CLAUDE.md**를 작성한다. 기존 하위 CLAUDE.md는 유지하고, 루트에는 **프로젝트 전체 컨텍스트 + 공통 규칙 + 오케스트레이션 가이드**만 요약한다.
+## 목표
 
-## 구현 단계
+VITE_ENCRYPTION_KEY, VITE_SESSION_HMAC_KEY 값을 개발(dev)과 라이브(live) 환경에서 서로 다른 값으로 분리한다.
 
-### Phase 1: 루트 CLAUDE.md 작성 (단일 파일)
+## 현재 상태
 
-작성할 내용 구성:
+모든 환경(local/dev/live)이 동일한 키를 사용 중:
+- ENCRYPTION_KEY: `1c6ea996...06720b` (모든 곳 동일)
+- SESSION_HMAC_KEY: `4d255e63...e654cd` (uncounted-app만 사용, 모든 환경 동일)
 
-1. **프로젝트 개요** — Uncounted 플랫폼이 무엇인지 1문단 요약
-2. **워크스페이스 구조** — 5개 하위 디렉토리 역할 표
-3. **기술 스택 요약** — 프로젝트별 핵심 스택 한눈에 비교
-4. **공통 아키텍처 패턴** — AES-256-GCM 암호화, 인증 흐름, API 통신 패턴
-5. **핵심 비즈니스 규칙** — 5가지 절대 준수 원칙 (AI 추론 금지, 단일 가격 표시 금지 등)
-6. **개발 환경** — 환경별(local/dev/live) 구성, 환경변수 개요
-7. **오케스트레이션 가이드** — 에이전트별 소유권, 크로스 프로젝트 작업 시 주의사항
-8. **하위 CLAUDE.md 참조** — 상세 내용은 각 프로젝트 CLAUDE.md 참조하도록 안내
+## 변경 계획
 
-### Phase 2: 없음 (단일 파일 작성으로 완료)
+기존 키는 **dev 환경용으로 유지**, 새 키를 **live 환경용으로 생성**.
 
-## 리스크
+### Task 목록
 
-- **LOW**: 하위 CLAUDE.md와 내용 중복 — 루트는 요약만, 상세는 하위에 위임하여 방지
-- **LOW**: 컨텍스트 크기 — 200줄 이내로 압축
+- [ ] Task 1: live 환경용 새 암호화 키 2개 생성 (ENCRYPTION_KEY, SESSION_HMAC_KEY)
+- [ ] Task 2: uncounted-app/.env.production 키 교체 (depends: Task 1)
+- [ ] Task 3: uncounted-admin/.env.production 키 교체 (depends: Task 1)
+- [ ] Task 4: uncounted-app/android/local.properties ENCRYPTION_KEY_LIVE 교체 (depends: Task 1)
+- [ ] Task 5: uncounted-api Render.com prod 환경변수 변경 가이드 (depends: Task 1)
+- [ ] Task 6: .env.example 파일 환경별 분리 안내 추가
 
-## 복잡도: LOW
+## 영향 범위
 
-단일 파일 작성, 코드 변경 없음.
+| 프로젝트 | 파일 | 변경 |
+|---------|------|------|
+| uncounted-app | `.env.production` | VITE_ENCRYPTION_KEY, VITE_SESSION_HMAC_KEY → 새 값 |
+| uncounted-app | `android/local.properties` | ENCRYPTION_KEY_LIVE → 새 값 |
+| uncounted-admin | `.env.production` | VITE_ENCRYPTION_KEY → 새 값 |
+| uncounted-api | Render.com prod | ENCRYPTION_KEY → 새 값 (수동) |
 
-## 상태: 완료
+## 주의사항
 
-루트 CLAUDE.md 작성 완료 (2026-03-25).
+- **dev 환경 키는 변경하지 않음** — 기존 dev 데이터와 호환성 유지
+- Render.com prod의 ENCRYPTION_KEY는 수동으로 변경해야 함
+- 키 변경 후 live 환경의 기존 암호화 데이터는 복호화 불가 → live 데이터 존재 여부 확인 필요
+- Android local.properties는 gitignore 대상

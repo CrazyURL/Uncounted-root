@@ -94,8 +94,8 @@ cd uncounted-admin && yarn dev         # port 15173
 
 ## DB 마이그레이션
 
-`uncounted-api/supabase/migrations/` — 001~017번 SQL 파일.
-새 마이그레이션 추가 시 번호 순차 증가 (예: `018_xxx.sql`).
+`uncounted-api/supabase/migrations/` — 001~019번 SQL 파일.
+새 마이그레이션 추가 시 번호 순차 증가 (예: `020_xxx.sql`).
 컬럼 변경 시 `uncounted-docs/` 내 DB 스키마 문서도 함께 업데이트.
 
 ## 오케스트레이션 가이드
