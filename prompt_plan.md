@@ -1,6 +1,6 @@
 # A2 파일 스캔 & 품질 분석 — HIGH 15건 버그픽스 실행계획
 
-상태: 계획 확정 대기
+상태: 완료
 타입: bugfix
 생성일: 2026-03-30
 근거 문서: uncounted-docs/bugfix/A2-file-scan-quality-review.md
