@@ -1,6 +1,6 @@
 # A2 MEDIUM 16건 버그픽스
 
-상태: 계획
+상태: 완료
 타입: bugfix
 생성일: 2026-03-31
 대상: uncounted-docs/bugfix/A2-file-scan-quality-review.md MEDIUM 미처리 16건
