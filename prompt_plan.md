@@ -1,9 +1,12 @@
-# A2 LOW 13건 버그픽스
+# 오디오 전처리 아키텍처 통합 (D시리즈 해소)
 
 상태: 완료
-타입: bugfix
+타입: refactor
 생성일: 2026-03-31
-대상: uncounted-docs/bugfix/A2-file-scan-quality-review.md LOW 미처리 13건
+대상: A2-audio-pipeline-unification-plan.md 핵심 범위 (Phase 1-3)
+
+## 이전 계획
+> A2 LOW 13건 버그픽스 — 완료.
 
 ## 이전 계획
 > A2 MEDIUM 15건 버그픽스 — 완료.
