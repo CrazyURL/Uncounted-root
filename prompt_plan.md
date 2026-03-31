@@ -1,6 +1,6 @@
 # Refresh Token Race Condition 버그픽스
 
-상태: 계획 확정 대기
+상태: 완료
 타입: bugfix
 생성일: 2026-03-31
 멀티모델 자문: Gemini → Claude planner 검증
