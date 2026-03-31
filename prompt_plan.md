@@ -1,95 +1,71 @@
-# A2 MEDIUM 16건 버그픽스
+# A2 LOW 13건 버그픽스
 
 상태: 완료
 타입: bugfix
 생성일: 2026-03-31
-대상: uncounted-docs/bugfix/A2-file-scan-quality-review.md MEDIUM 미처리 16건
+대상: uncounted-docs/bugfix/A2-file-scan-quality-review.md LOW 미처리 13건
 
 ## 이전 계획
-> Refresh token race condition 버그픽스 — 완료.
+> A2 MEDIUM 15건 버그픽스 — 완료.
 
 ---
 
 ## 대상 버그 목록
 
-### 그룹 A: AudioDecoderPlugin.java (M6, M8, M9, M10, M11)
-
-| # | 라인 | CWE | 문제 | 수정 방안 |
-|---|------|-----|------|----------|
-| M6 | :75 | CWE-459 | 오래된 .wav.tmp 파일 정리 없음 | stt_decoded 디렉토리에 24h 이상 된 .wav.tmp 삭제 로직 추가 |
-| M8 | :97 | CWE-190 | WAV dataSize int 캐스팅 | long 산술 후 Integer.MAX_VALUE 검증 |
-| M9 | :78 | CWE-532 | 20+ Log.d()에 절대경로 기록 | 경로를 파일명만 남기거나 해시 처리 |
-| M10 | :139 | CWE-200 | checkWavExists 경로 제한 없음 | stt_decoded/ 하위만 허용 (H6에서 이미 수정했으나 재검증) |
-| M11 | TS↔Java | Interface | deleteTempFile 미구현 | TS 인터페이스 정의 + Java 플러그인 메서드 구현 |
-
-### 그룹 B: scanEngine.ts + audioFileLoader.ts + audioDecoderBridge.ts (M1, M2, M3, M5)
+### 그룹 A: TS Scan/Helpers (L1, L2, L16, L17)
 
 | # | 파일:라인 | CWE | 문제 | 수정 방안 |
 |---|-----------|-----|------|----------|
-| M1 | scanEngine.ts:139 | CWE-22 | entry.name 경로 정규화 없음 | entry.name에서 `..` 포함 시 skip + 로그 |
-| M2 | scanEngine.ts:129 | CWE-755 | 권한 거부 무시 후 스캔 진행 | 권한 거부를 명시적으로 캐치하고 사용자에 알림 |
-| M3 | audioFileLoader.ts:25 | CWE-209 | 에러 메시지에 전체 경로 | 경로를 파일명만으로 교체 |
-| M5 | audioDecoderBridge.ts:44 | CWE-209 | 에러 메시지에 절대경로 | 경로를 파일명만으로 교체 |
+| L1 | scanEngine.ts:136 | CWE-200 | 진행률 콜백에 전체 경로 전달 | 파일명만 전달 (path.split('/').pop()) |
+| L2 | scanEngine.ts:194 | CWE-400 | 웹 재귀 스캔 깊이 제한 없음 | 최대 깊이 10 제한, 초과 시 skip |
+| L16 | autoScanHelpers.ts:58 | CWE-200 | callRecordId에 파일 경로 원본 저장 | 경로를 해시 또는 파일명만으로 교체 |
+| L17 | autoScanHelpers.ts:39 | CWE-79 | 파일명 sanitization 미적용 | 특수문자 제거/이스케이프 |
 
-### 그룹 C: AudioProcessor.java + WavParser.java (M12, M17)
-
-| # | 파일:라인 | CWE | 문제 | 수정 방안 |
-|---|-----------|-----|------|----------|
-| M12 | AudioProcessor.java:369 | CWE-190 | WAV 헤더 pcmBytesWritten int 캐스팅 | long 유지 후 int 범위 검증, 초과 시 에러 |
-| M17 | WavParser.java:138 | CWE-190 | extractChunk 바이트 오프셋 오버플로우 | long 산술로 전환, 범위 초과 시 예외 |
-
-### 그룹 D: OnnxSttRunner.java (M16)
+### 그룹 B: TS Audio (L3, L11, L14, L15)
 
 | # | 파일:라인 | CWE | 문제 | 수정 방안 |
 |---|-----------|-----|------|----------|
-| M16 | OnnxSttRunner.java:859 | CWE-400 | O(N^2) 디코딩 (KV-Cache 비활성) | 성능 개선 — 위험도 높아 별도 검토 필요 (이번 스프린트 skip 권장) |
+| L3 | audioScanner.ts:173 | CWE-922 | localStorage 해시 캐시 타입 무검증 | zod 또는 수동 타입 가드로 파싱 결과 검증 |
+| L11 | wavEncoder.ts:32 | CWE-190 | pcmToWav 정수 오버플로 (이론적) | dataSize를 Number.MAX_SAFE_INTEGER 검증 |
+| L14 | audioSanitizer.ts:295 | CWE-532 | console.warn 사용 | console.warn 제거 |
+| L15 | audioAnalyzer.ts:50 | CWE-682 | totalFrames=0 시 NaN 전파 | totalFrames===0 가드 추가, 0 반환 |
 
-### 그룹 E: wavEncoder.ts (M18)
-
-| # | 파일:라인 | CWE | 문제 | 수정 방안 |
-|---|-----------|-----|------|----------|
-| M18 | wavEncoder.ts:111 | CWE-200 | PII 구간 안전 마진(padding) 미적용 | muteSegment에 전후 50ms 패딩 추가 |
-
-### 그룹 F: audioDedupe.ts (M21, M22)
+### 그룹 C: TS Bridge (L4)
 
 | # | 파일:라인 | CWE | 문제 | 수정 방안 |
 |---|-----------|-----|------|----------|
-| M21 | audioDedupe.ts:25 | CWE-922 | 캐시 TTL/크기 제한 없음 | 7일 TTL + 최대 500항목 제한 |
-| M22 | audioDedupe.ts:59 | CWE-359 | 핑거프린트 localStorage 평문 저장 | 핑거프린트를 SHA-256 해시로 저장 |
+| L4 | audioDecoderBridge.ts:41 | CWE-772 | fetch 응답 에러 경로에서 body 미드레인 | catch 블록에서 response.body?.cancel() 호출 |
 
-### 그룹 G: audioScanner.ts (M23)
+### 그룹 D: Java Audio (L5, L7, L8, L9)
 
 | # | 파일:라인 | CWE | 문제 | 수정 방안 |
 |---|-----------|-----|------|----------|
-| M23 | audioScanner.ts:190 | CWE-682 | bitrate 폴백 삼항 조건 반전 버그 | 조건 논리 수정 (실제 코드 확인 후 반전 교정) |
-
----
-
-## Wave 구성 (초안)
-
-### Wave 1 (병렬 3팀)
-- **팀원 1 (Java)**: M6 + M8 + M9 + M10 + M11 — AudioDecoderPlugin.java 중심
-- **팀원 2 (TS-scan)**: M1 + M2 + M3 + M5 + M23 — scanEngine/audioFileLoader/audioDecoderBridge/audioScanner
-- **팀원 3 (TS-audio)**: M18 + M21 + M22 — wavEncoder/audioDedupe
-
-### Wave 2
-- **팀원 1 (Java)**: M12 + M17 — AudioProcessor/WavParser 정수 오버플로우
+| L5 | AudioDecoderPlugin.java:97 | CWE-190 | WAV int 캐스팅 (현실적 위험 낮음) | M8에서 이미 long 산술 적용 — 재검증만 필요 |
+| L7 | MfccExtractor.java:18 | Thread | 단일 스레드 전용이나 컴파일 타임 보호 없음 | 클래스에 @NotThreadSafe 어노테이션 또는 Javadoc 주석 |
+| L8 | EmbeddingExtractor.java:582 | API | InputStream.available() 신뢰성 | available() 대신 실제 read 루프로 전환 |
+| L9 | OnnxSttRunner.java:926 | Bounds | softmaxProb 빈 배열 가드 없음 | 배열 길이 0 체크 후 기본값 반환 |
 
 ### Skip
-- M16: KV-Cache 성능 이슈는 아키텍처 변경 수반 — 별도 태스크로 분리 권장
+
+| # | 파일 | 사유 |
+|---|------|------|
+| L12 | audioSanitizer.ts:83 | applyNoiseReduction 미사용 함수 — 아키텍처 통합(D 시리즈)에서 삭제 예정 |
 
 ---
 
-## 의존성 분석
+## Wave 구성
 
-- M10(checkWavExists)은 H6에서 이미 수정됨 — 재검증만 필요할 수 있음
-- M11(deleteTempFile)은 M6(tmp 정리)와 연관 — 동일 팀원이 처리
-- M22(핑거프린트 해시)는 M21(TTL/크기)과 같은 파일 — 동일 팀원 필수
-- M1, M2는 같은 scanEngine.ts — 동일 팀원 필수
-- M12, M17은 같은 Java 정수 오버플로 패턴 — 동일 팀원이 일관성 있게 처리
+### Wave 1 (병렬 2팀)
+- **팀원 1 (TS)**: L1 + L2 + L3 + L4 + L11 + L14 + L15 + L16 + L17 — TS 파일 전체 (9건)
+- **팀원 2 (Java)**: L5 + L7 + L8 + L9 — Java 파일 전체 (4건)
+
+### 의존성 분석
+- L5는 M8에서 이미 수정했을 수 있음 — 재검증만 필요
+- L1, L2는 같은 scanEngine.ts → 동일 팀원 필수
+- L16, L17은 같은 autoScanHelpers.ts → 동일 팀원 필수
+- TS와 Java 간 의존성 없음 → 완전 병렬 가능
 
 ## 리스크
-
-1. M16(KV-Cache)은 ONNX 추론 아키텍처 변경이라 side-effect 위험 높음
-2. M11(deleteTempFile)은 TS↔Java 양쪽 수정 필요 — 인터페이스 정합성 주의
-3. M22(핑거프린트 해시)는 기존 캐시와 호환성 깨짐 — 마이그레이션 로직 필요
+- 전체적으로 LOW 등급이라 리스크 낮음
+- L12는 아키텍처 통합 계획과 충돌 → skip이 적절
+- L5는 M8 수정으로 이미 해소되었을 가능성 높음
