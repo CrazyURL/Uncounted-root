@@ -50,6 +50,31 @@ CLOVA Speech 샘플 납품 대응: 앱에서 녹음 → PHASE 4 온디바이스 
 
 **테스트 결과**: 95/95 passed ✅
 
+## 목소리 등록 프로필 서버 동기화 (2026-04-10)
+
+| 항목 | 파일 | 상태 |
+|------|------|------|
+| voice_profiles 테이블 생성 | `uncounted-api/supabase/migrations/030_voice_profiles.sql` | ✅ 완료 |
+| GET/PUT/DELETE /api/user/voice-profile | `uncounted-api/src/routes/user.ts` | ✅ 완료 |
+| PUT payload 크기 검증 (embeddings ≤20, referenceEmbedding ≤256) | `uncounted-api/src/routes/user.ts` | ✅ 완료 |
+| voice-profile API 테스트 12개 | `uncounted-api/src/routes/voiceProfile.test.ts` | ✅ 완료 |
+| voiceProfile API 클라이언트 | `uncounted-app/src/lib/api/voiceProfile.ts` | ✅ 완료 |
+| saveProfile/resetProfile 서버 동기화 (fire-and-forget) | `uncounted-app/src/lib/embedding/embeddingProfile.ts` | ✅ 완료 |
+| ensureProfileLoaded 4-tier 복원 (localStorage→Preferences→Filesystem→서버) | `uncounted-app/src/lib/embedding/embeddingProfile.ts` | ✅ 완료 |
+| sessions batch upsert labels null 덮어쓰기 버그 수정 | `uncounted-api/src/routes/sessions-helpers.ts` | ✅ 완료 |
+
+**효과**: 기기 교체/앱 재설치 후 목소리 등록 데이터 자동 복원. 전송은 AES-256-GCM 암호화.
+
+**테스트 결과**: 107/107 passed ✅
+
+## PII 마스킹 원본 백업 경로 수정 (2026-04-10)
+
+| 항목 | 파일 | 상태 |
+|------|------|------|
+| S3 backupPath에서 `user_id` 세그먼트 제거 (3곳) | `uncounted-api/src/routes/admin-utterances.ts` | ✅ 완료 |
+
+**변경**: `{user_id}/{session_id}/original/{id}.wav` → `{session_id}/original/{id}.wav`
+
 ## WeSpeaker 임베딩 기반 화자분리 리팩토링 (2026-04-09)
 
 | 항목 | 파일 | 상태 |
