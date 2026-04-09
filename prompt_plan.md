@@ -1,173 +1,242 @@
-# 가변형 문장경계 청킹 (Variable-Length Sentence-Aware Chunking)
+# SKU 데이터셋 추출 시스템 v3 — Phase 1 (3일 스프린트)
 
-상태: 구현 완료 (테스트 실행 대기)
+상태: Wave 1~3 구현 완료 (2026-04-08) + v3 스펙 차이 보정 완료 (2026-04-09) + U-M01 통화 메타데이터 SKU 완성 (2026-04-09)
 타입: feature
-생성일: 2026-04-06
-
-## 요약
-
-고정 60초 절삭 → STT 워드 타이밍 기반 문장 경계 분할로 변경.
-청크 파일의 문장 끊김 해소 → 데이터 상품 품질 향상.
-
-## 변경 파일
-
-| 파일 | 변경 |
-|------|------|
-| `SentenceBoundaryDetector.java` | **신규** — 문장경계 탐지 알고리즘 |
-| `WavParser.java` | 수정 — `splitAtBoundaries()` 추가, `ChunkInfo` 생성자 public |
-| `SttProcessingService.java` | 수정 — STT→업로드 사이에 재청킹 삽입 |
-| `SentenceBoundaryDetectorTest.java` | **신규** — 15개 단위 테스트 |
-
-## 파이프라인
-
-```
-[기존] splitChunks(60s) → STT → 업로드
-[변경] splitChunks(60s) → STT → ★경계탐지 → 재분할 → 업로드
-```
-
-## 검증
-
-- 메인 소스 컴파일: `BUILD SUCCESSFUL`
-- 테스트 소스: 에러 없음 (기존 다른 테스트의 pre-existing 에러로 실행 차단)
-- 기존 코드 동작 영향 없음 (최악의 경우 고정 60초 fallback)
-
----
-
-## 이전 계획
-
----
-
-# SKU 데이터셋 추출 시스템 — Phase 1 구현 계획
-
-상태: 진행 중
-타입: feature
-생성일: 2026-04-05
-
-## 확정된 기술 결정
-
-1. **노이즈 억제 + 묵음 트리밍 + 음량 정규화**: 서버사이드 FFmpeg (`fluent-ffmpeg` + `ffmpeg-static`)
-   - `afftdn` (노이즈), `silenceremove` (묵음), `loudnorm` (음량) 필터 체인
-   - Render.com `runtime: node` 그대로 사용 (ffmpeg-static이 바이너리 번들)
-2. **STT**: 서버사이드 STT 미구현 — 모바일 앱에서 이미 STT 완료된 세션(DB transcript 존재)만 대상
-   - transcript 없는 세션은 Phase 1 추출 대상에서 제외
-3. **파일 구조**: `src/lib/export/` + `src/lib/audio/` (기존 프로젝트 패턴 준수)
-4. **라우트 분리**: 기존 admin.ts에서 export 전용 라우트 분리 (`admin-exports.ts`)
+생성일: 2026-04-08
+스프린트: 4/8(수) ~ 4/10(금) | 납품 마감: 4/14(월)
 
 ## 목표
 
-CLOVA Speech 샘플 대응: 어드민에서 **U-A01 1시간 패키지**를 생성하여 즉시 전달 가능한 상태 구현.
+CLOVA Speech 샘플 납품 대응: 앱에서 녹음 → PHASE 4 온디바이스 발화 분리 → 서버 업로드 → 어드민 검수 → ZIP 다운로드 → CLOVA 전달 가능 상태 구현.
 
-**완료 기준**: 어드민에서 U-A01 선택 → 1시간 입력 → 발화 검수 → 패키징 확정 → ZIP 다운로드 (utterance WAV + transcript + metadata 포함)
+**완료 기준**: U-A01 1시간 패키지 ZIP 다운로드 가능 (utterance WAV + transcript + metadata 포함)
+
+## v3 스펙 보정 완료 항목 (2026-04-09)
+
+| ID | 항목 | 파일 | 상태 |
+|----|------|------|------|
+| FIX-1 | storage.ts volumeLufs 수신 누락 | `storage.ts:290,373` | ✅ 완료 |
+| FIX-2 | utterances 테이블 U-A03 필드 추가 | `migrations/029_utterances_a03_fields.sql` | ✅ 완료 (수동 적용 필요) |
+| FIX-3 | packageBuilder UtteranceMetaLine 완전 재작성 (demographics, consent, 라벨 평탄화, U-A03) | `packageBuilder.ts` | ✅ 완료 |
+| FIX-4 | packageBuilder qa_score → quality_score 통일 | `packageBuilder.ts` | ✅ 완료 |
+| FIX-5 | admin-utterances preview-mask 엔드포인트 추가 | `admin-utterances.ts` | ✅ 완료 |
+| FIX-6 | apply-mask S3 원본 백업 추가 | `admin-utterances.ts` | ✅ 완료 |
+| FIX-7 | inventoryService skuId 'A01'→'U-A01' 테스트 수정 | `poolingService.test.ts` | ✅ 완료 |
+
+**테스트 결과**: 82/82 passed ✅
+
+## U-M01 통화 메타데이터 SKU 완성 (2026-04-09)
+
+| 항목 | 파일 | 상태 |
+|------|------|------|
+| callMetaCollector.ts 신규 구현 | `uncounted-app/src/lib/callMetaCollector.ts` | ✅ 완료 |
+| MetadataCollectorInit 등록 (9→10번째) | `src/app/bootstrap/MetadataCollectorInit.tsx` | ✅ 완료 |
+| CallLogPlugin.java (READ_CALL_LOG, 버케팅) | `android/.../CallLogPlugin.java` | ✅ 완료 |
+| AndroidManifest READ_CALL_LOG 권한 추가 | `android/.../AndroidManifest.xml` | ✅ 완료 |
+| MainActivity registerPlugin 등록 | `android/.../MainActivity.java` | ✅ 완료 |
+| metadataRepository U-M01-v1 schemas 추가 | `uncounted-api/.../metadataRepository.ts` | ✅ 완료 |
+
+**동의 게이트**: `um01Enabled` 미동의 시 수집 건너뜀. `DEFAULT_METADATA_CONSENT.um01Enabled = false` — 신규 설치 기본값 수집 안 함.
+
+## 기반 문서
+
+- `uncounted-docs/SKU_데이터셋_추출_최종기획서_v3.html`
 
 ## 프로젝트 구조
 
 ```
 uncounted-project/
-├── uncounted-api/      # Hono REST API (백엔드, TypeScript, Supabase, iwinv S3)
-├── uncounted-app/      # React + Capacitor (모바일 앱) — Phase 1에서 변경 없음
-├── uncounted-admin/    # React + Vite (관리자 웹, TypeScript)
+├── uncounted-api/      # Hono REST API (TypeScript, Supabase, iwinv S3)
+├── uncounted-app/      # React + Capacitor (모바일 앱, Java Android)
+├── uncounted-admin/    # React + Vite (관리자 웹)
 └── uncounted-docs/     # 기능정의서, DB 스키마
 ```
 
-## 기존 구현 현황 (재사용 가능)
+## 코드베이스 검증 결과 (2026-04-08)
 
-### DB (이미 존재)
-- `export_jobs` — 추출 요청 관리 (status 상태머신 포함)
-- `billable_units` — BU별 품질/동의/잠금 추적
-- `delivery_records` — 납품 이력
-- `user_asset_ledger` — 정산 원장
+### 이미 존재하는 코드 (재사용/수정 대상)
 
-### 백엔드 API (이미 존재)
-- `GET/POST /api/admin/export-jobs` — CRUD
-- `GET/POST /api/admin/billable-units` — 조회/일괄생성
-- `POST /api/admin/billable-units/lock|unlock|mark-delivered` — BU 잠금/해제/배달
-- `GET/POST /api/admin/ledger-entries` — 정산
+| 구분 | 파일 | 현재 상태 | v3 수정 범위 |
+|------|------|----------|-------------|
+| DB | `009_session_chunks.sql` | session_chunks 테이블 존재, `storage_path NOT NULL` | 컬럼 추가 + NOT NULL 제거 |
+| DB | 마이그레이션 001~024 | 024번까지 사용됨 | **신규는 025번부터** |
+| API | `storage.ts` POST `/audio/chunk` | 청크 WAV multipart 업로드 | 발화 업로드 엔드포인트 추가 |
+| API | `admin-exports.ts` | Export API 8개 엔드포인트 이미 존재 (preview/confirm/process/utterances/review/finalize/download/inventory) | `process`에서 utterances 테이블 우선 체크, `utterances`에서 신규 테이블 조회 |
+| API | `utteranceRepository.ts` | `export_package_items` 테이블 기반 CRUD | utterances 테이블 병행 조회 로직 추가 |
+| API | `utteranceSegmentationService.ts` | S3 다운로드 → FFmpeg 분할 → 재업로드 | utterances 존재 시 바이패스 |
+| API | `packageBuilder.ts` | `export_package_items` → S3 WAV 다운로드 → ZIP | utterances 테이블 직접 읽기로 전환 |
+| App | `SttProcessingService.java` (1209줄) | PHASE 1~3 구현, PHASE 4 없음 | PHASE 4 추가, PHASE 3 청크 WAV 업로드 제거 |
+| App | `SessionApiClient.java` (299줄) | `uploadChunk()` 존재 | `uploadUtterance()`, `registerLogicalChunk()`, `completeUtterances()` 추가 |
+| App | `SentenceBoundaryDetector.java` | 문장경계 탐지 구현 완료 | C1 UtteranceSegmenter 구현 시 활용 |
+| App | `WavParser.java` | `splitAtBoundaries()` 존재 | 발화 추출 시 활용 |
+| Admin | `AdminBuildWizardPage.tsx` | 8단계 위저드 이미 존재 | utterances 테이블 연동 수정 |
+| Admin | `UtteranceReviewTable.tsx` | 자동필터/재생/체크박스 존재 | 청크 매핑(C0:S0) 표시 추가 |
+| Admin | `UtteranceReviewGuide.tsx` | 검수 가이드 존재 | 수정 불필요 |
 
-### 어드민 프론트엔드 (이미 존재)
-- `AdminBuildWizardPage.tsx` — 4단계 위저드 (클라이언트→SKU→수량/필터→시뮬레이션)
-- `AdminExportJobsPage.tsx` / `AdminExportJobDetailPage.tsx` — 목록/상세
-- `billableUnitEngine.ts` — BU 필터/샘플링 (quality_first, stratified 등)
-- `wavEncoder.ts` — WAV 인코딩, 리샘플링, beep 마스킹, 묵음 제거
-- `audioScanner.ts` — 클라이언트 품질 분석 (SNR, silence ratio, clipping)
-- `diarizationEngine.ts` — 화자분리 프레임워크 (pub/sub, 실제 알고리즘 미구현)
-- `sttEngine.ts` — Whisper-tiny WASM (클라이언트 STT)
-- `adminHelpers.ts` — jszip 기반 ZIP 패키징, JSONL/CSV 내보내기
+### 미존재 (신규 개발)
 
-## Phase 1 신규 개발 항목
+| 구분 | 항목 | 비고 |
+|------|------|------|
+| DB | `utterances` 테이블 | 기획서 3-3 스키마 그대로 |
+| App | `UtteranceSegmenter.java` | SentenceBoundaryDetector 활용 |
+| App | `ChunkAssigner.java` | 논리 청크 배정 알고리즘 |
+| Admin | `UtteranceLabelingPanel.tsx` | A02 라벨 5종 + A03 대화행위 |
+| Admin | `ConsentOverridePanel.tsx` | consent_status 강제 변경 |
+| Admin | `PiiMaskingEditor.tsx` | wavesurfer.js 파형 + Region |
+| API | PII 수동 마스킹 API 4종 | admin-utterances.ts 신규 라우트 |
 
-### Layer 1: DB 마이그레이션
+### S3 저장 경로 (sanitized-audio 버킷)
 
-| ID | 항목 | 설명 |
-|----|------|------|
-| D2 | `export_package_items` | 패키지 내 개별 파일(utterance) 추적 |
-| D4 | `bu_quality_metrics` | BU별 서버 실측 품질 (SNR, speech_ratio, clipping, beep_mask, LUFS) |
-| D6 | exports 스토리지 버킷 | S3에 `exports/` 버킷 또는 prefix 생성 |
-| D-ext | export_jobs 컬럼 확장 | utterance_count, package_size_bytes, package_storage_path, download_url 등 추가 |
+| 리소스 | S3 key | v3 변경 |
+|--------|--------|---------|
+| 청크 WAV | `{userId}/{sessionId}/{sessionId}-001.wav` | v3에서 더 이상 업로드 안 함 (기존 데이터 유지) |
+| 발화 WAV | `utterances/{sessionId}/utt_{sessionId}_000.wav` | 클라이언트가 직접 업로드 (기존 서버 생성 경로와 동일) |
+| 패키지 ZIP | `exports/{exportJobId}/package.zip` | 변경 없음 |
 
-### Layer 2: 백엔드 — 오디오 처리 파이프라인
+### utteranceId 형식
 
-| ID | 항목 | 설명 | 의존성 |
-|----|------|------|--------|
-| B1 | WAV 품질 분석 잡 | S3 WAV → SNR/speech_ratio/clipping/beep_mask 실측 → bu_quality_metrics 저장 | D4 |
-| B2 | 노이즈 억제 | spectral gating (Node.js) 또는 RNNoise (WASM/native) | — |
-| B3 | 묵음 트리밍 | 3초+ 연속 묵음 제거/압축 (서버사이드) | — |
-| B5 | 발화 재분할 엔진 | diarization + VAD → utterance별 WAV 생성 (5~30초) | B2, B3 |
-| B6 | 서버사이드 일괄 STT | Faster-Whisper 또는 Whisper.cpp로 미처리 세션 일괄 처리 | — |
-| B7 | PII 마스킹 동기화 | beep 구간 ↔ transcript [MASKED] 정합성 검증/보정 | B6 |
+`utt_{sessionId}_{sequence:03d}` — 예: `utt_abc123_000`, `utt_abc123_042`
+- `buildUtteranceId()` in `utteranceRepository.ts:49-50`
+- 클라이언트/서버 동일 규칙 사용
 
-### Layer 3: 백엔드 — Export 파이프라인 API
+---
 
-| ID | 항목 | 설명 | 의존성 |
-|----|------|------|--------|
-| B9-preview | 미리보기 API | `GET /api/admin/export-requests/:id/preview` — 적격 BU 수, 품질 분포 | B1, B11 |
-| B9-process | 처리 트리거 API | `POST /api/admin/export-requests/:id/process` — BU 풀링 → 발화 재분할 → 후처리 | B5, B11 |
-| B9-utterances | 발화 목록 API | `GET /api/admin/export-requests/:id/utterances` — 검수용 발화 리스트 | B9-process |
-| B9-review | 발화 검수 API | `PUT /api/admin/export-requests/:id/utterances/review` — 제외/포함 상태 업데이트 | B9-utterances |
-| B9-finalize | 패키징 확정 API | `POST /api/admin/export-requests/:id/finalize` — 검수 완료 → ZIP 생성 시작 | B9-review, B10 |
-| B9-download | 패키지 다운로드 API | `GET /api/admin/export-requests/:id/download` — 서명 URL 반환 | B10 |
-| B10 | ZIP 패키징 엔진 | SKU별 디렉토리 구조 + manifest.json + quality_summary.json 생성 → S3 업로드 | D6 |
-| B11 | BU 풀링 & 랭킹 강화 | ~~기존 필터 + 품질점수 랭킹 + 다양성 제약~~ **완료**: 품질점수 랭킹 + 화자 다양성(40%/2명) + demographicTargets 버케팅(성별/연령/지역 비율 균형) + demographicActual 달성비율 리포트 | B1 |
-| B9-inventory | 재고 현황 API | `GET /api/admin/inventory` — SKU별 가용 BU/이벤트 수 | B1 |
+## 3일 스프린트 계획
 
-### Layer 4: 프론트엔드 — 어드민 UI
+### Day 1 (4/8 수): DB + 서버 API 기반 구축
 
-| ID | 항목 | 설명 | 의존성 |
-|----|------|------|--------|
-| F1-ext | Export 위저드 확장 | 기존 4단계에 미리보기 + 처리진행 + 발화검수 + 다운로드 추가 | B9-* |
-| F7 | 발화 검수 UI | 발화 목록 테이블 + 재생(audio element) + 자동필터(3초/C/beep30%) + 체크박스 + 검수 가이드 패널 + 제외 사유 표시 | B9-utterances, B9-review |
-| F4 | 벌크 라벨링 UI | 세션 청취 → BU 단위 라벨 일괄 입력 (relationship, purpose, domain, tone, noise) | — |
-| F2-mini | SKU 재고 카드 | Export 위저드 Step 1에 SKU별 가용 BU/화자 수 표시 | B9-inventory |
+**목표**: 발화/청크 데이터를 수신·저장할 수 있는 서버 인프라 완성
 
-## 의존성 그래프 (실행 순서)
+#### Wave 1-1 (병렬) — DB 마이그레이션
+
+| ID | 항목 | 파일 | 설명 |
+|----|------|------|------|
+| D1 | session_chunks 확장 | `uncounted-api/supabase/migrations/025_session_chunks_logical.sql` | utterance_count, total_utterance_duration, chunk_type 컬럼 추가 + **storage_path NOT NULL 제거** |
+| D2 | utterances 테이블 | `uncounted-api/supabase/migrations/026_utterances.sql` | 전체 스키마 + 인덱스 + RLS (기획서 3-3 그대로) |
+| D3 | sessions 확장 | `uncounted-api/supabase/migrations/027_sessions_utterance_status.sql` | utterance_count, utterance_upload_status 컬럼 추가 |
+
+#### Wave 1-2 (병렬, D1~D3 완료 후) — 서버 API 3종
+
+| ID | 항목 | 파일 | 설명 |
+|----|------|------|------|
+| B1 | 논리 청크 등록 API | `uncounted-api/src/routes/storage.ts` 추가 | POST /api/storage/session-chunks (메타만, WAV 없음) → session_chunks INSERT (chunk_type='logical', storage_path=NULL) |
+| B2 | 발화 업로드 API | `uncounted-api/src/routes/storage.ts` 추가 | POST /api/storage/audio/utterance (multipart: WAV + 암호화 메타) → S3 `utterances/{sessionId}/{utteranceId}.wav` 저장 + utterances INSERT |
+| B3 | 발화 완료 API | `uncounted-api/src/routes/sessions.ts` 확장 | POST /api/sessions/:id/utterances/complete → sessions 상태 업데이트 (멱등성 보장) |
+
+#### Wave 1-3 (B1~B3 완료 후) — 서버 파이프라인 수정
+
+| ID | 항목 | 파일 | 설명 |
+|----|------|------|------|
+| B4 | segmentationService 바이패스 | `uncounted-api/src/lib/export/utteranceSegmentationService.ts` 수정 | utterances 테이블에 데이터 존재 시 FFmpeg 분리 스킵 |
+| B6 | qualityMetrics 수정 | `uncounted-api/src/lib/export/qualityMetricsService.ts` 수정 | 클라이언트 측정값(utterances 테이블) 집계 사용 |
+
+---
+
+### Day 2 (4/9 목): 클라이언트 PHASE 4 + Export 파이프라인 전환
+
+**목표**: 앱에서 발화 분리·업로드 + 서버 패키징 파이프라인을 utterances 테이블 기반으로 전환
+
+#### Wave 2-1 (병렬)
+
+| ID | 항목 | 파일 | 설명 |
+|----|------|------|------|
+| C1 | UtteranceSegmenter.java | `uncounted-app/android/.../UtteranceSegmenter.java` 신규 | sessionWords → 발화 경계 (화자변경 + 0.5s 묵음, 5~30초, ±0.15s 패딩). 기존 `SentenceBoundaryDetector.java` 활용 |
+| C2 | ChunkAssigner.java | `uncounted-app/android/.../ChunkAssigner.java` 신규 | 발화 → 논리 청크 배정 (합산 ≥60초 + 문장 완성 기준) |
+| B7 | Export process 수정 | `uncounted-api/src/routes/admin-exports.ts` 수정 | `process` 엔드포인트: utterances 테이블 존재 시 segmentBulk 스킵, 직접 사용 |
+| B8 | packageBuilder 전환 | `uncounted-api/src/lib/export/packageBuilder.ts` 수정 | `export_package_items` 대신 `utterances` 테이블에서 직접 읽기, storage_path로 S3 WAV 다운로드 |
+
+#### Wave 2-2 (C1, C2 완료 후)
+
+| ID | 항목 | 파일 | 설명 |
+|----|------|------|------|
+| C3 | SttProcessingService PHASE 4 | `uncounted-app/android/.../SttProcessingService.java` 수정 | 기존 PHASE 3 후에 PHASE 4 (5 Step) 추가 |
+| C4 | SessionApiClient 확장 | `uncounted-app/android/.../SessionApiClient.java` 수정 | uploadUtterance() + registerLogicalChunk() + completeUtterances() 추가 |
+| C5 | PHASE 3 청크 WAV 업로드 제거 | `uncounted-app/android/.../SttProcessingService.java` 수정 | Flow1에서 `sac.uploadChunk()` 호출 제거, sessionWords 누적만 유지 |
+
+#### Wave 2-3 (B7, B8 완료 후)
+
+| ID | 항목 | 파일 | 설명 |
+|----|------|------|------|
+| B5 | utterances 엔드포인트 수정 | `uncounted-api/src/routes/admin-exports.ts` 수정 | GET utterances: utterances 테이블 직접 조회 (export_package_items 폴백 유지) |
+| B9 | PII 수동 마스킹 API | `uncounted-api/src/routes/admin-utterances.ts` 신규 | 4개 엔드포인트: audio URL, PII 조회/저장, 마스킹 실행, 미리듣기 |
+
+---
+
+### Day 3 (4/10 금): 어드민 UI 수정/추가 + 통합 테스트
+
+**목표**: 어드민에서 전체 플로우 동작 확인 + CLOVA 샘플 생성 테스트
+
+#### Wave 3-1 (병렬)
+
+| ID | 항목 | 파일 | 설명 |
+|----|------|------|------|
+| F1 | AdminBuildWizardPage 수정 | `uncounted-admin/src/pages/admin/AdminBuildWizardPage.tsx` 수정 | utterances 테이블 기반 데이터 연동, 처리 진행 단계에서 클라이언트 발화 존재 시 segmentation 스킵 표시 |
+| F2 | UtteranceReviewTable 수정 | `uncounted-admin/src/components/domain/UtteranceReviewTable.tsx` 수정 | 청크 매핑 표시(C0:S0 형태), utterances 테이블 필드 대응 (chunkId, sequenceInChunk) |
+| F3 | UtteranceLabelingPanel | `uncounted-admin/src/components/domain/UtteranceLabelingPanel.tsx` 신규 | A02 라벨 5종 (relationship, purpose, domain, tone, noise) + A03 대화행위/강도 |
+
+#### Wave 3-2 (F1~F3 완료 후)
+
+| ID | 항목 | 파일 | 설명 |
+|----|------|------|------|
+| F6 | ConsentOverridePanel | `uncounted-admin/src/components/domain/ConsentOverridePanel.tsx` 신규 | consent_status 관리자 강제 변경 |
+| F8 | PiiMaskingEditor | `uncounted-admin/src/components/domain/PiiMaskingEditor.tsx` 신규 | wavesurfer.js 파형 + Region 드래그 + beep/무음 처리 |
+
+#### Wave 3-3: 통합 검증
+
+| 항목 | 검증 내용 |
+|------|----------|
+| E2E 흐름 | 앱 녹음 → PHASE 4 → 서버 수신(utterances 테이블 + S3) → 어드민 검수 → ZIP 다운로드 |
+| 빌드 검증 | API 빌드 + App Android 빌드 + Admin 빌드 |
+| DB 정합성 | utterances ↔ session_chunks 매핑, storage_path와 실제 S3 파일 일치 |
+
+---
+
+## 의존성 그래프
 
 ```
-Wave 1 (병렬): D2, D4, D6, D-ext, B2, B3, B6
-Wave 2 (병렬): B1(→D4), B5(→B2,B3), B7(→B6)
-Wave 3 (병렬): B11(→B1), B10(→D6), B9-inventory(→B1)
-Wave 4 (병렬): B9-preview(→B11), B9-process(→B5,B11)
-Wave 5 (순차): B9-utterances → B9-review → B9-finalize(→B10) → B9-download
-Wave 6 (병렬): F1-ext, F7, F4, F2-mini (→ API들 완료 후)
+Day 1:
+  D1, D2, D3 (병렬)
+    → B1, B2, B3 (병렬)
+      → B4, B6 (병렬)
+
+Day 2:
+  C1, C2, B7, B8 (병렬)
+    → C3, C4, C5 (순차)
+    → B5, B9 (병렬)
+
+Day 3:
+  F1, F2, F3 (병렬)
+    → F6, F8 (병렬)
+      → E2E 통합 검증
 ```
 
-## 기술 스택 참고
+## 에이전트 소유권
 
-- **백엔드**: Hono 4 + Node.js, Supabase (service_role), iwinv S3 호환, AES-256-GCM 암호화
-- **프론트엔드**: React 19 + Vite 6, TypeScript
-- **인증**: httpOnly Cookie + Bearer, admin = app_metadata.role === 'admin'
-- **테스트**: Vitest 3
-- **API 클라이언트**: apiFetch<T>() 래퍼 (자동 암호화/복호화 + 401 갱신)
+| 에이전트 | 담당 | 항목 |
+|---------|------|------|
+| backend-expert | uncounted-api/ | D1~D3, B1~B9 |
+| app-expert | uncounted-app/ | C1~C5 |
+| admin-expert | uncounted-admin/ | F1~F3, F6, F8 |
+
+## 기술 스택
+
+- API: Hono 4 + Node.js, Supabase (service_role), iwinv S3 호환, AES-256-GCM
+- App: React 19 + Capacitor 8, Java (Android STT pipeline)
+- Admin: React 19 + Vite 6, TypeScript, Tailwind CSS 3
+- 테스트: Vitest 3
+- 암호화: 모든 API 요청/응답 AES-256-GCM
 
 ## 핵심 비즈니스 규칙
 
 1. GPU 기반 AI 추론 결과 저장/표시/판매 금지
-2. 라벨은 사용자 입력만 (AI 자동 판정 라벨 사용 금지)
-3. 정밀 데이터 저장 금지 (위치/정밀타임스탬프/연락처/텍스트원문)
-4. consent ON 데이터만 SKU로 납품 가능
-5. BU 이중 판매 방지 (lock_status 기반)
+2. 라벨은 사용자 입력만 (AI 자동 판정 라벨 금지)
+3. 정밀 데이터 저장 금지
+4. consent ON 데이터만 SKU 납품 가능
+5. BU 이중 판매 방지 (lock_status)
 
-## 서버사이드 오디오 처리 고려사항
+## 크로스 프로젝트 동기화
 
-- 현재 오디오 처리(품질분석, 묵음제거, STT)가 모두 **클라이언트(어드민 브라우저)**에 있음
-- Phase 1에서 서버사이드로 이관해야 하는 핵심: WAV 품질 분석, 발화 재분할, ZIP 패키징
-- Node.js에서 오디오 처리: `audiobuffer-to-wav`, `node-vad`, `ffmpeg` (child_process), 또는 WASM 기반
-- STT는 Faster-Whisper(Python) 또는 Whisper.cpp(native) subprocess 호출 검토
+- API 엔드포인트 추가 시 → App SessionApiClient + Admin apiFetch 동시 수정
+- DB 스키마 변경 시 → API 마이그레이션 + uncounted-docs 문서 업데이트
+- utteranceId 규칙: `utt_{sessionId}_{sequence:03d}` — 클라이언트/서버 동일
+- 타입 변경 시 → 각 프로젝트 src/types/ 일관성 확인
