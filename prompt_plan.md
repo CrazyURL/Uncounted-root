@@ -1,6 +1,6 @@
 # SKU 데이터셋 추출 시스템 v3 — Phase 1 (3일 스프린트)
 
-상태: Wave 1~3 구현 완료 (2026-04-08) + v3 스펙 차이 보정 완료 (2026-04-09) + U-M01 통화 메타데이터 SKU 완성 (2026-04-09)
+상태: Wave 1~3 구현 완료 (2026-04-08) + v3 스펙 차이 보정 완료 (2026-04-09) + U-M01 통화 메타데이터 SKU 완성 (2026-04-09) + WeSpeaker 화자분리 리팩토링 완료 (2026-04-09)
 타입: feature
 생성일: 2026-04-08
 스프린트: 4/8(수) ~ 4/10(금) | 납품 마감: 4/14(월)
@@ -37,6 +37,30 @@ CLOVA Speech 샘플 납품 대응: 앱에서 녹음 → PHASE 4 온디바이스 
 | metadataRepository U-M01-v1 schemas 추가 | `uncounted-api/.../metadataRepository.ts` | ✅ 완료 |
 
 **동의 게이트**: `um01Enabled` 미동의 시 수집 건너뜀. `DEFAULT_METADATA_CONSENT.um01Enabled = false` — 신규 설치 기본값 수집 안 함.
+
+## PII 마스킹 에디터 + 검증 로직 TDD (2026-04-09)
+
+| 항목 | 파일 | 상태 |
+|------|------|------|
+| PiiMaskingEditor.tsx 구현 (wavesurfer.js + Region) | `uncounted-admin/.../PiiMaskingEditor.tsx` | ✅ 완료 (F8) |
+| admin.ts API 함수 AbortController + signal 추가 | `uncounted-admin/src/lib/api/admin.ts` | ✅ 완료 |
+| validatePiiInterval / validatePiiIntervals 헬퍼 추출 | `uncounted-api/src/routes/admin-utterances-helpers.ts` | ✅ 완료 |
+| 헬퍼 TDD 단위 테스트 13개 | `uncounted-api/src/routes/admin-utterances-helpers.test.ts` | ✅ 완료 |
+| admin-utterances.ts 3개 라우트 헬퍼 교체 | `uncounted-api/src/routes/admin-utterances.ts` | ✅ 완료 |
+
+**테스트 결과**: 95/95 passed ✅
+
+## WeSpeaker 임베딩 기반 화자분리 리팩토링 (2026-04-09)
+
+| 항목 | 파일 | 상태 |
+|------|------|------|
+| `assignSpeakersByEmbedding()` 추가 (등록 사용자: USER/PEER_N) | `SpeakerDiarizer.java` | ✅ 완료 |
+| `assignSpeakersByUnsupervisedEmbedding()` 추가 (미등록: SPEAKER_N) | `SpeakerDiarizer.java` | ✅ 완료 |
+| EmbeddingExtractor 항상 초기화 + 통합 분기 호출 | `SttProcessingService.java` | ✅ 완료 |
+| `identifyUserSpeaker()` 제거 → `findUserSpeakerId()` 교체 | `SttProcessingService.java` | ✅ 완료 |
+| consent 제한 제거 — `hasEnrolledVoice`이면 referenceEmbedding 전달 | `sttEngine.ts` | ✅ 완료 |
+
+**효과**: MFCC 13차원 → WeSpeaker 256차원 임베딩으로 화자분리 정확도 대폭 향상. MFCC는 초기화 실패 시 폴백으로만 유지.
 
 ## 기반 문서
 
