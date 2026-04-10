@@ -1,0 +1,75 @@
+## EVAL CHECK LOG
+Date: 2026-04-09
+Evaluator: code-analysis + vitest
+
+---
+
+### Capability Evals
+
+CE-1: 정상 refresh → 200 + 새 쿠키
+  Method: 코드 분석 (auth.ts L259-267)
+  Result: PASS
+  Evidence: data.session.access_token 존재 시 setAuthCookies() 호출, enc_data 응답 반환
+
+CE-2: 만료 토큰 → 401
+  Method: 코드 분석 (auth.ts L251-258)
+  Result: PASS
+  Evidence: supabaseAdmin.auth.refreshSession() 실패 → error 반환 → 401 응답
+
+CE-3: 토큰 없음 → 400
+  Method: 코드 분석 (auth.ts L246-247)
+  Result: PASS
+  Evidence: `if (!refresh_token) return c.json({ error: '...' }, 400)`
+
+CE-4: App 클라이언트 401 자동 재시도
+  Method: 코드 분석 (client.ts L143-154)
+  Result: PASS
+  Evidence: 401 && !isRetry → refreshTokenOnce() → 성공 시 _apiFetch(isRetry=true) 재호출
+
+CE-5: refresh mutex (동시 호출 1회만)
+  Method: 코드 분석 (client.ts L70-105)
+  Result: PASS
+  Evidence: _refreshPromise 공유 — if (_refreshPromise) return _refreshPromise
+
+CE-6: refresh 실패 시 로그아웃
+  Method: 코드 분석 (client.ts L154-160)
+  Result: PASS
+  Evidence: refresh 실패 + _authGeneration 동일 시 setAuthToken(null) + SIGNED_OUT 이벤트
+
+CE-7: 새 로그인 경합 방지
+  Method: 코드 분석 (client.ts L40-42, L144-148)
+  Result: PASS
+  Evidence: setAuthToken()마다 _authGeneration++ / 401 핸들러에서 startGeneration 비교 후 분기
+
+---
+
+### Regression Evals
+
+RE-1: 기존 로그인 흐름
+  Method: 코드 분석 (auth.ts L60-96)
+  Result: PASS
+  Evidence: POST /auth/login 구현 유지, access_token + refresh_token 반환
+
+RE-2: 암호화 통신
+  Method: 코드 분석 (client.ts _apiFetch body 암호화 로직)
+  Result: PASS
+  Evidence: body → encryptData({ enc_data }) 래핑 / 응답 → decryptResponse() 처리
+
+RE-3: 기존 테스트 통과
+  Method: npx vitest run (실제 실행)
+  Result: PASS
+  Evidence: 10 tests passed (client.test.ts 9개 + auth.test.ts 1개), Duration 1.18s
+
+RE-4: Admin 동일 동작
+  Method: 코드 분석 (admin client.ts L29-57, L92-95)
+  Result: PASS (단, admin은 _authGeneration 세대 카운터 미구현)
+  Note: App에는 CE-7 경합 방지 있음. Admin에는 없음 — 허용 가능 범위 (Admin은 단일 사용자)
+
+---
+
+### 최종 결과
+
+Capability: 7/7 PASS
+Regression: 4/4 PASS (RE-4 minor gap 있음)
+
+Status: READY

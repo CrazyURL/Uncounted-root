@@ -1,0 +1,59 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/skills/strategic-compact/suggest-compact.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/tdd-guard.sh"
+          },
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/migration-guard.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/verification-stop.sh"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/cleanup-pass.sh"
+          }
+        ]
+      }
+    ],
+    "TaskCompleted": [
+      {
+        "hooks": [
+          {
+            "type": "agent",
+            "prompt": "먼저 $CLAUDE_PROJECT_DIR/.claude/skills/agent-introspection-debugging/SKILL.md 파일을 읽어 4단계 디버깅 워크플로우를 파악하세요. 그런 다음 완료된 태스크 출력($ARGUMENTS)을 분석하여, 실패 신호(에러, 루프, 컨텍스트 오염, 환각)가 감지되면 스킬의 Phase 1~4를 수행하고 디버그 리포트를 출력하세요. 정상 완료면 아무것도 출력하지 마세요.",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}
