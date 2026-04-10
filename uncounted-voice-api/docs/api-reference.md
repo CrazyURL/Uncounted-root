@@ -50,7 +50,7 @@ Swagger UI: `http://{host}:{port}/docs`
 }
 ```
 
-**Errors**: 400 (지원하지 않는 포맷), 413 (100MB 초과)
+**Errors**: 400 (지원하지 않는 포맷), 413 (500MB 초과)
 
 **curl 예시**
 ```bash
@@ -173,7 +173,7 @@ curl -o utterance_000.wav "http://host:8000/api/v1/jobs/{task_id}/audio/utteranc
 | `HOTWORDS` | - | 고유명사 힌트 (쉼표 구분, 따옴표 필수) |
 | `INITIAL_PROMPT` | - | STT 초기 프롬프트 (따옴표 필수) |
 | `TEMP_DIR` | `/dev/shm/stt-temp` | 임시 파일 경로 |
-| `MAX_UPLOAD_SIZE` | `104857600` | 업로드 제한 (100MB) |
+| `MAX_UPLOAD_SIZE` | `524288000` | 업로드 제한 (500MB) |
 
 ---
 
