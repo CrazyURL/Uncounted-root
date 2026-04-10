@@ -2,4 +2,5 @@ uncounted-*/
 .*-consult/
 sample_data/
 screenshot/
+nltk_data/
 !.claude/
