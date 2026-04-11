@@ -28,10 +28,10 @@ app/
 ├── config.py            # 환경변수 설정
 ├── stt_processor.py     # STT 파이프라인 (핵심)
 ├── pii_masker.py        # PII 마스킹
-├── routers/             # API 엔드포인트
-├── services/            # utterance_segmenter, audio_splitter, whisperx_service
+├── routers/             # health, transcribe
+├── services/            # audio_preprocessor, audio_splitter, pii_service, utterance_segmenter, whisperx_service
 ├── models/schemas.py    # Pydantic 스키마
-└── core/job_store.py    # 인메모리 작업 관리 (TTL 1h, max 100)
+└── core/                # job_store (TTL 1h, max 100), exceptions
 tests/                   # pytest (30개)
 ```
 
