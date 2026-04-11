@@ -8,6 +8,7 @@
 ```
 uncounted-project/          <- 여기서 claude 실행
 ├── uncounted-api/          # Hono REST API (백엔드)
+├── uncounted-voice-api/    # FastAPI STT 서버 (Python)
 ├── uncounted-app/          # React + Capacitor (모바일 앱)
 ├── uncounted-admin/        # React + Vite (관리자 웹)
 ├── uncounted-docs/         # 기능정의서, UX, 와이어프레임, DB 스키마
@@ -16,15 +17,15 @@ uncounted-project/          <- 여기서 claude 실행
 
 ## 기술 스택 요약
 
-| 항목 | API | App | Admin |
-|------|-----|-----|-------|
-| 프레임워크 | Hono 4 + Node.js | React 19 + Capacitor 8 | React 19 + Vite 6 |
-| 언어 | TypeScript (tsx) | TypeScript + Java (Android) | TypeScript |
-| DB | Supabase (service_role) | -- | -- |
-| 스토리지 | iwinv S3 호환 | IndexedDB + localStorage | -- |
-| 암호화 | AES-256-GCM | AES-256-GCM (@noble/ciphers) | AES-256-GCM (@noble/ciphers) |
-| 테스트 | Vitest 3 | Vitest 3 | -- |
-| 배포 | Render.com | Android APK (flavor별) | Vite build |
+| 항목 | API | Voice API | App | Admin |
+|------|-----|-----------|-----|-------|
+| 프레임워크 | Hono 4 + Node.js | FastAPI + Uvicorn | React 19 + Capacitor 8 | React 19 + Vite 6 |
+| 언어 | TypeScript (tsx) | Python 3.12 | TypeScript + Java (Android) | TypeScript |
+| DB | Supabase (service_role) | -- (인메모리 job store) | -- | -- |
+| 스토리지 | iwinv S3 호환 | RAM disk (/dev/shm) | IndexedDB + localStorage | -- |
+| 암호화 | AES-256-GCM | -- | AES-256-GCM (@noble/ciphers) | AES-256-GCM (@noble/ciphers) |
+| 테스트 | Vitest 3 | pytest | Vitest 3 | -- |
+| 배포 | Render.com | systemd (GPU 서버) | Android APK (flavor별) | Vite build |
 
 ## 핵심 비즈니스 규칙 (절대 준수)
 
@@ -38,6 +39,7 @@ uncounted-project/          <- 여기서 claude 실행
 
 ```bash
 cd uncounted-api && npm run dev        # port 3001
+cd uncounted-voice-api && ./run.sh dev # port 8001
 cd uncounted-app && npm run dev        # port 5173
 cd uncounted-admin && yarn dev         # port 15173
 ```
@@ -51,6 +53,7 @@ cd uncounted-admin && yarn dev         # port 15173
 | 문서 | 내용 |
 |------|------|
 | `uncounted-api/CLAUDE.md` | 엔드포인트 목록, 미들웨어 체인, 인증 상세 |
+| `uncounted-voice-api/CLAUDE.md` | WhisperX STT 엔드포인트, 화자분리, PII 마스킹 |
 | `uncounted-app/CLAUDE.md` | 라우트, 네이티브 STT 파이프라인, 타입, localStorage |
 | `uncounted-admin/CLAUDE.md` | 관리자 라우트, 디렉토리 구조 |
 | `.claude/rules/common/architecture.md` | 암호화 통신, 인증 흐름, API 클라이언트 패턴 |

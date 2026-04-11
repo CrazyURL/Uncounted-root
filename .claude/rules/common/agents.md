@@ -54,6 +54,7 @@ For complex problems, use split role sub-agents:
 | Agent | Directory | Role |
 |-------|-----------|------|
 | backend-expert | `uncounted-api/` | API routes, DB queries, migrations |
+| voice-api-expert | `uncounted-voice-api/` | Python FastAPI, WhisperX STT, PII masking |
 | app-expert | `uncounted-app/` | React UI, Capacitor, Android Java |
 | admin-expert | `uncounted-admin/` | Admin web UI |
 | architect-lead | All (read-only) | Planning, cross-project coordination |
@@ -61,6 +62,7 @@ For complex problems, use split role sub-agents:
 ## Cross-Project Rules
 
 - API endpoint add/change → also update App and Admin API clients
+- Voice API endpoint/파라미터 변경 → App의 voiceApi.ts + Android VoiceApiClient.java 동기화
 - DB schema change → API migration + `uncounted-docs/` doc update
-- Encryption key/logic change → sync API, App (JS+Java), Admin (all 3)
+- Encryption key/logic change → sync API, App (JS+Java), Admin (all 3) — Voice API는 암호화 미적용
 - Type change → verify `src/types/` consistency across projects
