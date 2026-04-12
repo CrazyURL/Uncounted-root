@@ -1,0 +1,485 @@
+# getOrCreateAesKey & PrivacyControlCenterPage
+Cohesion: 0.03 | Nodes: 96
+
+## Key Nodes
+- **getOrCreateAesKey** (uncounted-app/src/lib/uploadQueue.ts) -- 24 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetsecureitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmigratekeyfromlocalstorage]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffrom]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefatob]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcharcodeat]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefimportkey]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgeneratekey]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefexportkey]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetsecureitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefbtoa]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffromcharcode]]
+  - -> calls -> [[unresolvedrefgetsecureitem]]
+  - -> calls -> [[unresolvedrefmigratekeyfromlocalstorage]]
+  - -> calls -> [[unresolvedreffrom]]
+  - -> calls -> [[unresolvedrefatob]]
+  - -> calls -> [[unresolvedrefcharcodeat]]
+  - -> calls -> [[unresolvedrefimportkey]]
+  - -> calls -> [[unresolvedrefgeneratekey]]
+  - -> calls -> [[unresolvedrefexportkey]]
+  - -> calls -> [[unresolvedrefsetsecureitem]]
+  - -> calls -> [[unresolvedrefbtoa]]
+  - -> calls -> [[unresolvedreffromcharcode]]
+  - <- contains <- [[uploadqueue]]
+  - <- contains <- [[uploadqueue]]
+- **PrivacyControlCenterPage** (/Users/gdash/project/uncounted-project/uncounted-app/src/pages/PrivacyControlCenterPage.tsx) -- 13 connections
+  - -> contains -> [[loadconsents]]
+  - -> contains -> [[saveconsents]]
+  - -> contains -> [[deleteconfirmmodal]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefreact]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefreactrouterdom]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftypessku]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftypesconsent]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibsessionmapper]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibpipelineorchestrator]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibglobalconsent]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibauthcontext]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibapiconsent]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibcallmetacollector]]
+- **PrivacyControlCenterPage** (uncounted-app/src/pages/PrivacyControlCenterPage.tsx) -- 13 connections
+  - -> contains -> [[loadconsents]]
+  - -> contains -> [[saveconsents]]
+  - -> contains -> [[deleteconfirmmodal]]
+  - -> imports -> [[unresolvedrefreact]]
+  - -> imports -> [[unresolvedrefreactrouterdom]]
+  - -> imports -> [[unresolvedreftypessku]]
+  - -> imports -> [[unresolvedreftypesconsent]]
+  - -> imports -> [[unresolvedreflibsessionmapper]]
+  - -> imports -> [[unresolvedreflibpipelineorchestrator]]
+  - -> imports -> [[unresolvedreflibglobalconsent]]
+  - -> imports -> [[unresolvedreflibauthcontext]]
+  - -> imports -> [[unresolvedreflibapiconsent]]
+  - -> imports -> [[unresolvedreflibcallmetacollector]]
+- **calcNextRetryAt** (uncounted-app/src/lib/uploadQueue.ts) -- 10 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpow]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftoisostring]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnow]]
+  - -> calls -> [[unresolvedrefmin]]
+  - -> calls -> [[unresolvedrefpow]]
+  - -> calls -> [[unresolvedreftoisostring]]
+  - -> calls -> [[unresolvedrefnow]]
+  - <- contains <- [[uploadqueue]]
+  - <- contains <- [[uploadqueue]]
+- **migrateKeyFromLocalStorage** (uncounted-app/src/lib/uploadQueue.ts) -- 10 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetsecureitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefremoveitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwarn]]
+  - -> calls -> [[unresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefsetsecureitem]]
+  - -> calls -> [[unresolvedrefremoveitem]]
+  - -> calls -> [[unresolvedrefwarn]]
+  - <- contains <- [[uploadqueue]]
+  - <- contains <- [[uploadqueue]]
+- **uploadQueue** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/uploadQueue.ts) -- 8 connections
+  - -> contains -> [[loadqueue]]
+  - -> contains -> [[savequeue]]
+  - -> contains -> [[calcnextretryat]]
+  - -> contains -> [[migratekeyfromlocalstorage]]
+  - -> contains -> [[getorcreateaeskey]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefnetwork]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefuuid]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsecurekeystore]]
+- **saveQueue** (uncounted-app/src/lib/uploadQueue.ts) -- 8 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstringify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefslice]]
+  - -> calls -> [[unresolvedrefsetitem]]
+  - -> calls -> [[unresolvedrefstringify]]
+  - -> calls -> [[unresolvedrefslice]]
+  - <- contains <- [[uploadqueue]]
+  - <- contains <- [[uploadqueue]]
+- **uploadQueue** (uncounted-app/src/lib/uploadQueue.ts) -- 8 connections
+  - -> contains -> [[loadqueue]]
+  - -> contains -> [[savequeue]]
+  - -> contains -> [[calcnextretryat]]
+  - -> contains -> [[migratekeyfromlocalstorage]]
+  - -> contains -> [[getorcreateaeskey]]
+  - -> imports -> [[unresolvedrefnetwork]]
+  - -> imports -> [[unresolvedrefuuid]]
+  - -> imports -> [[unresolvedrefsecurekeystore]]
+- **ConsentRestoreInit** (/Users/gdash/project/uncounted-project/uncounted-app/src/app/bootstrap/ConsentRestoreInit.tsx) -- 6 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefreact]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibauthcontext]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibapiconsent]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftypesconsent]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibglobalconsent]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibcallmetacollector]]
+- **ConsentRestoreInit** (uncounted-app/src/app/bootstrap/ConsentRestoreInit.tsx) -- 6 connections
+  - -> imports -> [[unresolvedrefreact]]
+  - -> imports -> [[unresolvedreflibauthcontext]]
+  - -> imports -> [[unresolvedreflibapiconsent]]
+  - -> imports -> [[unresolvedreftypesconsent]]
+  - -> imports -> [[unresolvedreflibglobalconsent]]
+  - -> imports -> [[unresolvedreflibcallmetacollector]]
+- **isUm01Enabled** (uncounted-app/src/lib/callMetaCollector.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefparse]]
+  - -> calls -> [[unresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefparse]]
+  - <- contains <- [[callmetacollector]]
+  - <- contains <- [[callmetacollector]]
+- **loadQueue** (uncounted-app/src/lib/uploadQueue.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefparse]]
+  - -> calls -> [[unresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefparse]]
+  - <- contains <- [[uploadqueue]]
+  - <- contains <- [[uploadqueue]]
+- **loadConsents** (uncounted-app/src/pages/PrivacyControlCenterPage.tsx) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefparse]]
+  - -> calls -> [[unresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefparse]]
+  - <- contains <- [[privacycontrolcenterpage]]
+  - <- contains <- [[privacycontrolcenterpage]]
+- **saveConsents** (uncounted-app/src/pages/PrivacyControlCenterPage.tsx) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstringify]]
+  - -> calls -> [[unresolvedrefsetitem]]
+  - -> calls -> [[unresolvedrefstringify]]
+  - <- contains <- [[privacycontrolcenterpage]]
+  - <- contains <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getitem** () -- 4 connections
+  - <- calls <- [[loadqueue]]
+  - <- calls <- [[migratekeyfromlocalstorage]]
+  - <- calls <- [[isum01enabled]]
+  - <- calls <- [[loadconsents]]
+- **__unresolved__::ref::getitem** () -- 4 connections
+  - <- calls <- [[loadqueue]]
+  - <- calls <- [[migratekeyfromlocalstorage]]
+  - <- calls <- [[isum01enabled]]
+  - <- calls <- [[loadconsents]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__parse** () -- 3 connections
+  - <- calls <- [[loadqueue]]
+  - <- calls <- [[isum01enabled]]
+  - <- calls <- [[loadconsents]]
+- **__unresolved__::ref::parse** () -- 3 connections
+  - <- calls <- [[loadqueue]]
+  - <- calls <- [[isum01enabled]]
+  - <- calls <- [[loadconsents]]
+- **callMetaCollector** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/callMetaCollector.ts) -- 3 connections
+  - -> contains -> [[calllogplugin]]
+  - -> contains -> [[isum01enabled]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcapacitorcore]]
+- **callMetaCollector** (uncounted-app/src/lib/callMetaCollector.ts) -- 3 connections
+  - -> contains -> [[calllogplugin]]
+  - -> contains -> [[isum01enabled]]
+  - -> imports -> [[unresolvedrefcapacitorcore]]
+- **deviceId** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/deviceId.ts) -- 3 connections
+  - -> contains -> [[deviceidplugin]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcapacitorcore]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcapacitorpreferences]]
+- **deviceId** (uncounted-app/src/lib/deviceId.ts) -- 3 connections
+  - -> contains -> [[deviceidplugin]]
+  - -> imports -> [[unresolvedrefcapacitorcore]]
+  - -> imports -> [[unresolvedrefcapacitorpreferences]]
+- **__unresolved__::ref::__capacitor_core_** () -- 2 connections
+  - <- imports <- [[deviceid]]
+  - <- imports <- [[callmetacollector]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____capacitor_core_** () -- 2 connections
+  - <- imports <- [[deviceid]]
+  - <- imports <- [[callmetacollector]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___lib_api_consent_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___lib_authcontext_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___lib_callmetacollector_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___lib_globalconsent_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___react_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___types_consent_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setitem** () -- 2 connections
+  - <- calls <- [[savequeue]]
+  - <- calls <- [[saveconsents]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setsecureitem** () -- 2 connections
+  - <- calls <- [[migratekeyfromlocalstorage]]
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__stringify** () -- 2 connections
+  - <- calls <- [[savequeue]]
+  - <- calls <- [[saveconsents]]
+- **__unresolved__::ref::_lib_api_consent_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_lib_authcontext_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_lib_callmetacollector_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_lib_globalconsent_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_react_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_types_consent_** () -- 2 connections
+  - <- imports <- [[consentrestoreinit]]
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::setitem** () -- 2 connections
+  - <- calls <- [[savequeue]]
+  - <- calls <- [[saveconsents]]
+- **__unresolved__::ref::setsecureitem** () -- 2 connections
+  - <- calls <- [[migratekeyfromlocalstorage]]
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::stringify** () -- 2 connections
+  - <- calls <- [[savequeue]]
+  - <- calls <- [[saveconsents]]
+- **CallLogPlugin** (uncounted-app/src/lib/callMetaCollector.ts) -- 2 connections
+  - <- contains <- [[callmetacollector]]
+  - <- contains <- [[callmetacollector]]
+- **DeviceIdPlugin** (uncounted-app/src/lib/deviceId.ts) -- 2 connections
+  - <- contains <- [[deviceid]]
+  - <- contains <- [[deviceid]]
+- **__unresolved__::ref::__capacitor_preferences_** () -- 1 connections
+  - <- imports <- [[deviceid]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____capacitor_preferences_** () -- 1 connections
+  - <- imports <- [[deviceid]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___lib_pipelineorchestrator_** () -- 1 connections
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___lib_sessionmapper_** () -- 1 connections
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___network_** () -- 1 connections
+  - <- imports <- [[uploadqueue]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___react_router_dom_** () -- 1 connections
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___securekeystore_** () -- 1 connections
+  - <- imports <- [[uploadqueue]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___types_sku_** () -- 1 connections
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___uuid_** () -- 1 connections
+  - <- imports <- [[uploadqueue]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__atob** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__btoa** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__charcodeat** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__exportkey** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__from** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__fromcharcode** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__generatekey** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getsecureitem** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__importkey** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__migratekeyfromlocalstorage** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__min** () -- 1 connections
+  - <- calls <- [[calcnextretryat]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__now** () -- 1 connections
+  - <- calls <- [[calcnextretryat]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__pow** () -- 1 connections
+  - <- calls <- [[calcnextretryat]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__removeitem** () -- 1 connections
+  - <- calls <- [[migratekeyfromlocalstorage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__slice** () -- 1 connections
+  - <- calls <- [[savequeue]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__toisostring** () -- 1 connections
+  - <- calls <- [[calcnextretryat]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__warn** () -- 1 connections
+  - <- calls <- [[migratekeyfromlocalstorage]]
+- **__unresolved__::ref::_lib_pipelineorchestrator_** () -- 1 connections
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_lib_sessionmapper_** () -- 1 connections
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_network_** () -- 1 connections
+  - <- imports <- [[uploadqueue]]
+- **__unresolved__::ref::_react_router_dom_** () -- 1 connections
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_securekeystore_** () -- 1 connections
+  - <- imports <- [[uploadqueue]]
+- **__unresolved__::ref::_types_sku_** () -- 1 connections
+  - <- imports <- [[privacycontrolcenterpage]]
+- **__unresolved__::ref::_uuid_** () -- 1 connections
+  - <- imports <- [[uploadqueue]]
+- **__unresolved__::ref::atob** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::btoa** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::charcodeat** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::exportkey** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::from** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::fromcharcode** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::generatekey** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::getsecureitem** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::importkey** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::migratekeyfromlocalstorage** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::min** () -- 1 connections
+  - <- calls <- [[calcnextretryat]]
+- **__unresolved__::ref::now** () -- 1 connections
+  - <- calls <- [[calcnextretryat]]
+- **__unresolved__::ref::pow** () -- 1 connections
+  - <- calls <- [[calcnextretryat]]
+- **__unresolved__::ref::removeitem** () -- 1 connections
+  - <- calls <- [[migratekeyfromlocalstorage]]
+- **__unresolved__::ref::slice** () -- 1 connections
+  - <- calls <- [[savequeue]]
+- **__unresolved__::ref::toisostring** () -- 1 connections
+  - <- calls <- [[calcnextretryat]]
+- **__unresolved__::ref::warn** () -- 1 connections
+  - <- calls <- [[migratekeyfromlocalstorage]]
+- **DeleteConfirmModal** (/Users/gdash/project/uncounted-project/uncounted-app/src/pages/PrivacyControlCenterPage.tsx) -- 1 connections
+  - <- contains <- [[privacycontrolcenterpage]]
+- **DeleteConfirmModal** (uncounted-app/src/pages/PrivacyControlCenterPage.tsx) -- 1 connections
+  - <- contains <- [[privacycontrolcenterpage]]
+
+## Internal Relationships
+- ConsentRestoreInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___react_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_authcontext_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_api_consent_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_consent_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_globalconsent_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_callmetacollector_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::_react_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::_lib_authcontext_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::_lib_api_consent_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::_types_consent_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::_lib_globalconsent_ [EXTRACTED]
+- ConsentRestoreInit -> imports -> __unresolved__::ref::_lib_callmetacollector_ [EXTRACTED]
+- callMetaCollector -> contains -> CallLogPlugin [EXTRACTED]
+- callMetaCollector -> contains -> isUm01Enabled [EXTRACTED]
+- callMetaCollector -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____capacitor_core_ [EXTRACTED]
+- isUm01Enabled -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getitem [EXTRACTED]
+- isUm01Enabled -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__parse [EXTRACTED]
+- isUm01Enabled -> calls -> __unresolved__::ref::getitem [EXTRACTED]
+- isUm01Enabled -> calls -> __unresolved__::ref::parse [EXTRACTED]
+- callMetaCollector -> contains -> CallLogPlugin [EXTRACTED]
+- callMetaCollector -> contains -> isUm01Enabled [EXTRACTED]
+- callMetaCollector -> imports -> __unresolved__::ref::__capacitor_core_ [EXTRACTED]
+- deviceId -> contains -> DeviceIdPlugin [EXTRACTED]
+- deviceId -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____capacitor_core_ [EXTRACTED]
+- deviceId -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____capacitor_preferences_ [EXTRACTED]
+- deviceId -> contains -> DeviceIdPlugin [EXTRACTED]
+- deviceId -> imports -> __unresolved__::ref::__capacitor_core_ [EXTRACTED]
+- deviceId -> imports -> __unresolved__::ref::__capacitor_preferences_ [EXTRACTED]
+- uploadQueue -> contains -> loadQueue [EXTRACTED]
+- uploadQueue -> contains -> saveQueue [EXTRACTED]
+- uploadQueue -> contains -> calcNextRetryAt [EXTRACTED]
+- uploadQueue -> contains -> migrateKeyFromLocalStorage [EXTRACTED]
+- uploadQueue -> contains -> getOrCreateAesKey [EXTRACTED]
+- uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___network_ [EXTRACTED]
+- uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___uuid_ [EXTRACTED]
+- uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___securekeystore_ [EXTRACTED]
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pow [EXTRACTED]
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__toisostring [EXTRACTED]
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__now [EXTRACTED]
+- calcNextRetryAt -> calls -> __unresolved__::ref::min [EXTRACTED]
+- calcNextRetryAt -> calls -> __unresolved__::ref::pow [EXTRACTED]
+- calcNextRetryAt -> calls -> __unresolved__::ref::toisostring [EXTRACTED]
+- calcNextRetryAt -> calls -> __unresolved__::ref::now [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getsecureitem [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__migratekeyfromlocalstorage [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__from [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__atob [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__charcodeat [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__importkey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__generatekey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__exportkey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setsecureitem [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__btoa [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__fromcharcode [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::getsecureitem [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::migratekeyfromlocalstorage [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::from [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::atob [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::charcodeat [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::importkey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::generatekey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::exportkey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::setsecureitem [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::btoa [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::fromcharcode [EXTRACTED]
+- loadQueue -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getitem [EXTRACTED]
+- loadQueue -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__parse [EXTRACTED]
+- loadQueue -> calls -> __unresolved__::ref::getitem [EXTRACTED]
+- loadQueue -> calls -> __unresolved__::ref::parse [EXTRACTED]
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getitem [EXTRACTED]
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setsecureitem [EXTRACTED]
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__removeitem [EXTRACTED]
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__warn [EXTRACTED]
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::getitem [EXTRACTED]
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::setsecureitem [EXTRACTED]
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::removeitem [EXTRACTED]
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::warn [EXTRACTED]
+- saveQueue -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setitem [EXTRACTED]
+- saveQueue -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__stringify [EXTRACTED]
+- saveQueue -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__slice [EXTRACTED]
+- saveQueue -> calls -> __unresolved__::ref::setitem [EXTRACTED]
+- saveQueue -> calls -> __unresolved__::ref::stringify [EXTRACTED]
+- saveQueue -> calls -> __unresolved__::ref::slice [EXTRACTED]
+- uploadQueue -> contains -> loadQueue [EXTRACTED]
+- uploadQueue -> contains -> saveQueue [EXTRACTED]
+- uploadQueue -> contains -> calcNextRetryAt [EXTRACTED]
+- uploadQueue -> contains -> migrateKeyFromLocalStorage [EXTRACTED]
+- uploadQueue -> contains -> getOrCreateAesKey [EXTRACTED]
+- uploadQueue -> imports -> __unresolved__::ref::_network_ [EXTRACTED]
+- uploadQueue -> imports -> __unresolved__::ref::_uuid_ [EXTRACTED]
+- uploadQueue -> imports -> __unresolved__::ref::_securekeystore_ [EXTRACTED]
+- PrivacyControlCenterPage -> contains -> loadConsents [EXTRACTED]
+- PrivacyControlCenterPage -> contains -> saveConsents [EXTRACTED]
+- PrivacyControlCenterPage -> contains -> DeleteConfirmModal [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___react_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___react_router_dom_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_sku_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_consent_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_sessionmapper_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_pipelineorchestrator_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_globalconsent_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_authcontext_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_api_consent_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_callmetacollector_ [EXTRACTED]
+- loadConsents -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getitem [EXTRACTED]
+- loadConsents -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__parse [EXTRACTED]
+- loadConsents -> calls -> __unresolved__::ref::getitem [EXTRACTED]
+- loadConsents -> calls -> __unresolved__::ref::parse [EXTRACTED]
+- saveConsents -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setitem [EXTRACTED]
+- saveConsents -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__stringify [EXTRACTED]
+- saveConsents -> calls -> __unresolved__::ref::setitem [EXTRACTED]
+- saveConsents -> calls -> __unresolved__::ref::stringify [EXTRACTED]
+- PrivacyControlCenterPage -> contains -> loadConsents [EXTRACTED]
+- PrivacyControlCenterPage -> contains -> saveConsents [EXTRACTED]
+- PrivacyControlCenterPage -> contains -> DeleteConfirmModal [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_react_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_react_router_dom_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_types_sku_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_types_consent_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_lib_sessionmapper_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_lib_pipelineorchestrator_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_lib_globalconsent_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_lib_authcontext_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_lib_api_consent_ [EXTRACTED]
+- PrivacyControlCenterPage -> imports -> __unresolved__::ref::_lib_callmetacollector_ [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 getOrCreateAesKey, PrivacyControlCenterPage, PrivacyControlCenterPage를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 ConsentRestoreInit.tsx, PrivacyControlCenterPage.tsx, callMetaCollector.ts, deviceId.ts, uploadQueue.ts이다.

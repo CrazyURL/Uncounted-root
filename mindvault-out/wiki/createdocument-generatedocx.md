@@ -3,30 +3,30 @@ Cohesion: 0.08 | Nodes: 51
 
 ## Key Nodes
 - **create_document** (uncounted-docs/scripts/generate_gstar_docx.py) -- 25 connections
-  - -> calls -> [[unresolvedrefunresolvedrefdocument]]
-  - -> calls -> [[unresolvedrefunresolvedrefcm]]
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefgetoraddrpr]]
-  - -> calls -> [[unresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefnsdecls]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddp]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddtable]]
-  - -> calls -> [[unresolvedrefunresolvedrefcelltext]]
-  - -> calls -> [[unresolvedrefunresolvedrefcell]]
-  - -> calls -> [[unresolvedrefunresolvedrefshadecell]]
-  - -> calls -> [[unresolvedrefunresolvedrefenumerate]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddbullet]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddpagebreak]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddsectionheading]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddsubheading]]
-  - -> calls -> [[unresolvedrefunresolvedrefadddash]]
-  - -> calls -> [[unresolvedrefunresolvedrefmerge]]
-  - -> calls -> [[unresolvedrefunresolvedrefrange]]
-  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
-  - -> calls -> [[unresolvedrefunresolvedrefdirname]]
-  - -> calls -> [[unresolvedrefunresolvedrefsave]]
-  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdocument]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcm]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddrpr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddp]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddtable]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcelltext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcell]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefshadecell]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddbullet]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddpagebreak]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddsectionheading]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddsubheading]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefadddash]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmerge]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdirname]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsave]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefprint]]
   - <- contains <- [[generategstardocx]]
 - **generate_docx** (uncounted-docs/scripts/generate_docx.py) -- 17 connections
   - -> contains -> [[setfont]]
@@ -38,14 +38,14 @@ Cohesion: 0.08 | Nodes: 51
   - -> contains -> [[makeoverviewtable]]
   - -> contains -> [[readmd]]
   - -> contains -> [[createdocument]]
-  - -> imports -> [[unresolvedrefunresolvedrefre]]
-  - -> imports -> [[unresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefdocx]]
-  - -> imports -> [[unresolvedrefunresolvedrefshared]]
-  - -> imports -> [[unresolvedrefunresolvedreftext]]
-  - -> imports -> [[unresolvedrefunresolvedreftable]]
-  - -> imports -> [[unresolvedrefunresolvedrefns]]
-  - -> imports -> [[unresolvedrefunresolvedrefoxml]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefre]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdocx]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefshared]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftext]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftable]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefns]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefoxml]]
 - **generate_gstar_docx** (uncounted-docs/scripts/generate_gstar_docx.py) -- 16 connections
   - -> contains -> [[setfont]]
   - -> contains -> [[addp]]
@@ -56,27 +56,27 @@ Cohesion: 0.08 | Nodes: 51
   - -> contains -> [[addbullet]]
   - -> contains -> [[adddash]]
   - -> contains -> [[createdocument]]
-  - -> imports -> [[unresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefdocx]]
-  - -> imports -> [[unresolvedrefunresolvedrefshared]]
-  - -> imports -> [[unresolvedrefunresolvedreftext]]
-  - -> imports -> [[unresolvedrefunresolvedreftable]]
-  - -> imports -> [[unresolvedrefunresolvedrefns]]
-  - -> imports -> [[unresolvedrefunresolvedrefoxml]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdocx]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefshared]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftext]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftable]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefns]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefoxml]]
 - **make_overview_table** (uncounted-docs/scripts/generate_docx.py) -- 12 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddtable]]
-  - -> calls -> [[unresolvedrefunresolvedrefcell]]
-  - -> calls -> [[unresolvedrefunresolvedrefcm]]
-  - -> calls -> [[unresolvedrefunresolvedrefheadercell]]
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
-  - -> calls -> [[unresolvedrefunresolvedrefstartswith]]
-  - -> calls -> [[unresolvedrefunresolvedrefendswith]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddtable]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcell]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcm]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefheadercell]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefendswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
   - <- contains <- [[generatedocx]]
-- **__unresolved__::ref::__unresolved____ref__add_run** () -- 10 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run** () -- 10 connections
   - <- calls <- [[addp]]
   - <- calls <- [[headercell]]
   - <- calls <- [[contentcell]]
@@ -87,7 +87,7 @@ Cohesion: 0.08 | Nodes: 51
   - <- calls <- [[addsectionheading]]
   - <- calls <- [[addsubheading]]
   - <- calls <- [[addbullet]]
-- **__unresolved__::ref::__unresolved____ref__pt** () -- 10 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt** () -- 10 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[addp]]
   - <- calls <- [[makeoverviewtable]]
@@ -98,7 +98,7 @@ Cohesion: 0.08 | Nodes: 51
   - <- calls <- [[addsubheading]]
   - <- calls <- [[addbullet]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__set_font** () -- 10 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font** () -- 10 connections
   - <- calls <- [[addp]]
   - <- calls <- [[headercell]]
   - <- calls <- [[contentcell]]
@@ -109,7 +109,7 @@ Cohesion: 0.08 | Nodes: 51
   - <- calls <- [[addsectionheading]]
   - <- calls <- [[addsubheading]]
   - <- calls <- [[addbullet]]
-- **__unresolved__::ref::__unresolved____ref__add_paragraph** () -- 7 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph** () -- 7 connections
   - <- calls <- [[addp]]
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
@@ -118,29 +118,29 @@ Cohesion: 0.08 | Nodes: 51
   - <- calls <- [[addsubheading]]
   - <- calls <- [[addbullet]]
 - **set_font** (uncounted-docs/scripts/generate_docx.py) -- 7 connections
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefgetoraddrpr]]
-  - -> calls -> [[unresolvedrefunresolvedrefinsert]]
-  - -> calls -> [[unresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefnsdecls]]
-  - -> calls -> [[unresolvedrefunresolvedrefrgbcolor]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddrpr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefinsert]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefrgbcolor]]
   - <- contains <- [[generatedocx]]
 - **set_font** (uncounted-docs/scripts/generate_gstar_docx.py) -- 7 connections
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefgetoraddrpr]]
-  - -> calls -> [[unresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefnsdecls]]
-  - -> calls -> [[unresolvedrefunresolvedrefrgbcolor]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddrpr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefrgbcolor]]
   - <- contains <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref__nsdecls** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__nsdecls** () -- 6 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[shadecell]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[setfont]]
   - <- calls <- [[shadecell]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__parse_xml** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_xml** () -- 6 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[shadecell]]
   - <- calls <- [[createdocument]]
@@ -148,158 +148,158 @@ Cohesion: 0.08 | Nodes: 51
   - <- calls <- [[shadecell]]
   - <- calls <- [[createdocument]]
 - **add_bullet** (uncounted-docs/scripts/generate_gstar_docx.py) -- 6 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefcm]]
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcm]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
 - **add_p** (uncounted-docs/scripts/generate_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
   - <- contains <- [[generatedocx]]
 - **read_md** (uncounted-docs/scripts/generate_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
-  - -> calls -> [[unresolvedrefunresolvedrefdirname]]
-  - -> calls -> [[unresolvedrefunresolvedrefopen]]
-  - -> calls -> [[unresolvedrefunresolvedrefread]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdirname]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefread]]
   - <- contains <- [[generatedocx]]
 - **shade_cell** (uncounted-docs/scripts/generate_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefgetoraddtcpr]]
-  - -> calls -> [[unresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddtcpr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
   - <- contains <- [[generatedocx]]
 - **add_p** (uncounted-docs/scripts/generate_gstar_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
 - **add_section_heading** (uncounted-docs/scripts/generate_gstar_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
 - **add_sub_heading** (uncounted-docs/scripts/generate_gstar_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
 - **shade_cell** (uncounted-docs/scripts/generate_gstar_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefnsdecls]]
-  - -> calls -> [[unresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefgetoraddtcpr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddtcpr]]
   - <- contains <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref__cm** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cm** () -- 4 connections
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[addbullet]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__dirname** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dirname** () -- 4 connections
   - <- calls <- [[readmd]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[downloadobject]]
-- **__unresolved__::ref::__unresolved____ref__get_or_add_rpr** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_rpr** () -- 4 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[setfont]]
   - <- calls <- [[createdocument]]
 - **header_cell** (uncounted-docs/scripts/generate_docx.py) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefshadecell]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefshadecell]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
   - <- contains <- [[generatedocx]]
-- **__unresolved__::ref::__unresolved____ref__add_p** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_p** () -- 3 connections
   - <- calls <- [[addheading]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__add_table** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_table** () -- 3 connections
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__cell** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cell** () -- 3 connections
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__read** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__read** () -- 3 connections
   - <- calls <- [[testwavbyteshavevalidriffheader]]
   - <- calls <- [[cmdimport]]
   - <- calls <- [[readmd]]
-- **__unresolved__::ref::__unresolved____ref__shade_cell** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__shade_cell** () -- 3 connections
   - <- calls <- [[headercell]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__text** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__text** () -- 3 connections
   - <- calls <- [[voicefetch]]
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
 - **add_heading** (uncounted-docs/scripts/generate_docx.py) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefget]]
-  - -> calls -> [[unresolvedrefunresolvedrefaddp]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddp]]
   - <- contains <- [[generatedocx]]
 - **content_cell** (uncounted-docs/scripts/generate_docx.py) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
   - <- contains <- [[generatedocx]]
 - **cell_text** (uncounted-docs/scripts/generate_gstar_docx.py) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref__add_bullet** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_bullet** () -- 2 connections
   - <- calls <- [[adddash]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__add_page_break** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_page_break** () -- 2 connections
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__document** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__document** () -- 2 connections
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__docx** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__docx** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref__get_or_add_tcpr** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_tcpr** () -- 2 connections
   - <- calls <- [[shadecell]]
   - <- calls <- [[shadecell]]
-- **__unresolved__::ref::__unresolved____ref__header_cell** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__header_cell** () -- 2 connections
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__ns** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__ns** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref__oxml** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__oxml** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref__rgbcolor** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__rgbcolor** () -- 2 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[setfont]]
-- **__unresolved__::ref::__unresolved____ref__save** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__save** () -- 2 connections
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__shared** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__shared** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref__table** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__table** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
 - **add_dash** (uncounted-docs/scripts/generate_gstar_docx.py) -- 2 connections
-  - -> calls -> [[unresolvedrefunresolvedrefaddbullet]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddbullet]]
   - <- contains <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref__add_dash** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_dash** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__add_section_heading** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_section_heading** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__add_sub_heading** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_sub_heading** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__cell_text** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cell_text** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref__merge** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__merge** () -- 1 connections
   - <- calls <- [[createdocument]]
 
 ## Internal Relationships
@@ -311,40 +311,40 @@ Cohesion: 0.08 | Nodes: 51
 - generate_docx -> contains -> content_cell [EXTRACTED]
 - generate_docx -> contains -> make_overview_table [EXTRACTED]
 - generate_docx -> contains -> read_md [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref__docx [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref__shared [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref__text [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref__table [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref__ns [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref__oxml [EXTRACTED]
-- add_heading -> calls -> __unresolved__::ref::__unresolved____ref__add_p [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref__add_paragraph [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- content_cell -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- content_cell -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- header_cell -> calls -> __unresolved__::ref::__unresolved____ref__shade_cell [EXTRACTED]
-- header_cell -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- header_cell -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__add_table [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__cell [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__cm [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__header_cell [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__add_paragraph [EXTRACTED]
-- read_md -> calls -> __unresolved__::ref::__unresolved____ref__dirname [EXTRACTED]
-- read_md -> calls -> __unresolved__::ref::__unresolved____ref__read [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__get_or_add_rpr [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__parse_xml [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__nsdecls [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__rgbcolor [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref__get_or_add_tcpr [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref__parse_xml [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref__nsdecls [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__docx [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__shared [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__text [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__table [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__ns [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__oxml [EXTRACTED]
+- add_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_p [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- content_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- content_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- header_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__shade_cell [EXTRACTED]
+- header_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- header_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_table [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cell [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cm [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__header_cell [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
+- read_md -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dirname [EXTRACTED]
+- read_md -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__read [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_rpr [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__rgbcolor [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_tcpr [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
 - generate_gstar_docx -> contains -> set_font [EXTRACTED]
 - generate_gstar_docx -> contains -> add_p [EXTRACTED]
 - generate_gstar_docx -> contains -> shade_cell [EXTRACTED]
@@ -354,80 +354,80 @@ Cohesion: 0.08 | Nodes: 51
 - generate_gstar_docx -> contains -> add_bullet [EXTRACTED]
 - generate_gstar_docx -> contains -> add_dash [EXTRACTED]
 - generate_gstar_docx -> contains -> create_document [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref__docx [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref__shared [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref__text [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref__table [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref__ns [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref__oxml [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref__add_paragraph [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref__cm [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- add_dash -> calls -> __unresolved__::ref::__unresolved____ref__add_bullet [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref__add_paragraph [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref__add_paragraph [EXTRACTED]
-- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref__add_paragraph [EXTRACTED]
-- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- cell_text -> calls -> __unresolved__::ref::__unresolved____ref__add_run [EXTRACTED]
-- cell_text -> calls -> __unresolved__::ref::__unresolved____ref__set_font [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__document [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__cm [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__get_or_add_rpr [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__parse_xml [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__nsdecls [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__add_p [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__add_table [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__cell_text [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__cell [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__shade_cell [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__add_bullet [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__add_page_break [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__add_section_heading [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__add_sub_heading [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__add_dash [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__merge [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__dirname [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__save [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__pt [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__get_or_add_rpr [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__parse_xml [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__nsdecls [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__rgbcolor [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref__parse_xml [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref__nsdecls [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref__get_or_add_tcpr [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__docx [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__shared [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__text [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__table [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__ns [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__oxml [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cm [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- add_dash -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_bullet [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
+- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
+- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- cell_text -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
+- cell_text -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__document [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cm [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_rpr [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_p [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_table [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cell_text [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cell [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__shade_cell [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_bullet [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_page_break [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_section_heading [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_sub_heading [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_dash [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__merge [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dirname [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__save [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_rpr [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__rgbcolor [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_tcpr [EXTRACTED]
 
 ## Cross-Community Connections
-- generate_docx -> contains -> create_document (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref__re (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref__os (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- add_heading -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref__endswith (-> [[piisessioncard-unresolvedrefunresolvedrefabs]])
-- read_md -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- read_md -> calls -> __unresolved__::ref::__unresolved____ref__open (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__insert (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref__os (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__enumerate (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref__print (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- generate_docx -> contains -> create_document (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__re (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__os (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- add_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__split (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__endswith (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
+- read_md -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- read_md -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__open (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__insert (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__os (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__enumerate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__print (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
 
 ## Context
 이 커뮤니티는 create_document, generate_docx, generate_gstar_docx를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 generate_docx.py, generate_gstar_docx.py이다.
