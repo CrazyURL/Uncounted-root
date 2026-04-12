@@ -1,8 +1,19 @@
 # _apiFetch & refreshTokenOnce
-Cohesion: 0.09 | Nodes: 32
+Cohesion: 0.09 | Nodes: 31
 
 ## Key Nodes
-- **_apiFetch** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/api/client.ts) -- 24 connections
+- **_apiFetch** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/api/client.ts) -- 23 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefparse]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstringify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefencryptdata]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffetch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefapifetch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrefreshtokenonce]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetauthtoken]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetrefreshtoken]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdispatchevent]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdecryptresponse]]
   - -> calls -> [[unresolvedrefunresolvedrefparse]]
   - -> calls -> [[unresolvedrefunresolvedrefstringify]]
   - -> calls -> [[unresolvedrefunresolvedrefencryptdata]]
@@ -14,20 +25,16 @@ Cohesion: 0.09 | Nodes: 32
   - -> calls -> [[unresolvedrefunresolvedrefdispatchevent]]
   - -> calls -> [[unresolvedrefunresolvedrefjson]]
   - -> calls -> [[unresolvedrefunresolvedrefdecryptresponse]]
-  - -> calls -> [[unresolvedrefparse]]
-  - -> calls -> [[unresolvedrefstringify]]
-  - -> calls -> [[unresolvedrefencryptdata]]
-  - -> calls -> [[unresolvedreffetch]]
-  - -> calls -> [[unresolvedrefapifetch]]
-  - -> calls -> [[unresolvedrefrefreshtokenonce]]
-  - -> calls -> [[unresolvedrefsetauthtoken]]
-  - -> calls -> [[unresolvedrefsetrefreshtoken]]
-  - -> calls -> [[unresolvedrefdispatchevent]]
-  - -> calls -> [[unresolvedrefjson]]
-  - -> calls -> [[unresolvedrefdecryptresponse]]
   - <- contains <- [[client]]
-  - <- contains <- [[client]]
-- **refreshTokenOnce** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/api/client.ts) -- 18 connections
+- **refreshTokenOnce** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/api/client.ts) -- 17 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrefreshtokenifnewtokensetauthtokennewtokenifnewrefreshtokensetrefreshtokennewrefreshtokenreturntruereturnfalsecatchreturnfalsefinallyrefreshpromisenull]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffetch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstringify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefencryptdata]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdecryptresponse]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetauthtoken]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetrefreshtoken]]
   - -> calls -> [[unresolvedrefunresolvedrefrefreshtokenifnewtokensetauthtokennewtokenifnewrefreshtokensetrefreshtokennewrefreshtokenreturntruereturnfalsecatchreturnfalsefinallyrefreshpromisenull]]
   - -> calls -> [[unresolvedrefunresolvedreffetch]]
   - -> calls -> [[unresolvedrefunresolvedrefstringify]]
@@ -36,32 +43,41 @@ Cohesion: 0.09 | Nodes: 32
   - -> calls -> [[unresolvedrefunresolvedrefdecryptresponse]]
   - -> calls -> [[unresolvedrefunresolvedrefsetauthtoken]]
   - -> calls -> [[unresolvedrefunresolvedrefsetrefreshtoken]]
-  - -> calls -> [[unresolvedrefrefreshtokenifnewtokensetauthtokennewtokenifnewrefreshtokensetrefreshtokennewrefreshtokenreturntruereturnfalsecatchreturnfalsefinallyrefreshpromisenull]]
-  - -> calls -> [[unresolvedreffetch]]
-  - -> calls -> [[unresolvedrefstringify]]
-  - -> calls -> [[unresolvedrefencryptdata]]
-  - -> calls -> [[unresolvedrefjson]]
-  - -> calls -> [[unresolvedrefdecryptresponse]]
-  - -> calls -> [[unresolvedrefsetauthtoken]]
-  - -> calls -> [[unresolvedrefsetrefreshtoken]]
   - <- contains <- [[client]]
-  - <- contains <- [[client]]
-- **__unresolved__::ref::json** () -- 3 connections
+- **client** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/api/client.ts) -- 4 connections
+  - -> contains -> [[refreshtokenonce]]
+  - -> contains -> [[apifetch]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcrypto]]
+  - -> imports -> [[unresolvedrefunresolvedrefcrypto]]
+- **__unresolved__::ref::__unresolved____ref__json** () -- 3 connections
   - <- calls <- [[refreshtokenonce]]
   - <- calls <- [[apifetch]]
   - <- imports <- [[checkchunktimestamps]]
-- **client** (uncounted-app/src/lib/api/client.ts) -- 3 connections
-  - -> contains -> [[refreshtokenonce]]
-  - -> contains -> [[apifetch]]
-  - -> imports -> [[unresolvedrefunresolvedrefcrypto]]
-- **client** (/Users/gdash/project/uncounted-project/uncounted-app/src/lib/api/client.ts) -- 3 connections
-  - -> contains -> [[refreshtokenonce]]
-  - -> contains -> [[apifetch]]
-  - -> imports -> [[unresolvedrefcrypto]]
 - **check_chunk_timestamps** (/Users/gdash/project/uncounted-project/uncounted-voice-api/sample_data/scripts/check_chunk_timestamps.py) -- 3 connections
   - -> contains -> [[check]]
-  - -> imports -> [[unresolvedrefjson]]
-  - -> imports -> [[unresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__decryptresponse** () -- 2 connections
+  - <- calls <- [[refreshtokenonce]]
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__encryptdata** () -- 2 connections
+  - <- calls <- [[refreshtokenonce]]
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__fetch** () -- 2 connections
+  - <- calls <- [[refreshtokenonce]]
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__json** () -- 2 connections
+  - <- calls <- [[refreshtokenonce]]
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setauthtoken** () -- 2 connections
+  - <- calls <- [[refreshtokenonce]]
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setrefreshtoken** () -- 2 connections
+  - <- calls <- [[refreshtokenonce]]
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__stringify** () -- 2 connections
+  - <- calls <- [[refreshtokenonce]]
+  - <- calls <- [[apifetch]]
 - **__unresolved__::ref::__unresolved____ref__decryptresponse** () -- 2 connections
   - <- calls <- [[refreshtokenonce]]
   - <- calls <- [[apifetch]]
@@ -69,9 +85,6 @@ Cohesion: 0.09 | Nodes: 32
   - <- calls <- [[refreshtokenonce]]
   - <- calls <- [[apifetch]]
 - **__unresolved__::ref::__unresolved____ref__fetch** () -- 2 connections
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::__unresolved____ref__json** () -- 2 connections
   - <- calls <- [[refreshtokenonce]]
   - <- calls <- [[apifetch]]
 - **__unresolved__::ref::__unresolved____ref__setauthtoken** () -- 2 connections
@@ -83,27 +96,21 @@ Cohesion: 0.09 | Nodes: 32
 - **__unresolved__::ref::__unresolved____ref__stringify** () -- 2 connections
   - <- calls <- [[refreshtokenonce]]
   - <- calls <- [[apifetch]]
-- **__unresolved__::ref::decryptresponse** () -- 2 connections
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::encryptdata** () -- 2 connections
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::fetch** () -- 2 connections
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::setauthtoken** () -- 2 connections
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::setrefreshtoken** () -- 2 connections
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::stringify** () -- 2 connections
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::sys** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__sys** () -- 2 connections
   - <- imports <- [[checkchunktimestamps]]
   - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___apifetch** () -- 1 connections
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___crypto_** () -- 1 connections
+  - <- imports <- [[client]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__dispatchevent** () -- 1 connections
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__parse** () -- 1 connections
+  - <- calls <- [[apifetch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__refresh_token_________if__newtoken______________setauthtoken_newtoken____________if__newrefreshtoken__setrefreshtoken_newrefreshtoken____________return_true_________________________return_false_______catch_________return_false_______finally__________refreshpromise___null___________** () -- 1 connections
+  - <- calls <- [[refreshtokenonce]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__refreshtokenonce** () -- 1 connections
+  - <- calls <- [[apifetch]]
 - **__unresolved__::ref::__unresolved____ref___apifetch** () -- 1 connections
   - <- calls <- [[apifetch]]
 - **__unresolved__::ref::__unresolved____ref___crypto_** () -- 1 connections
@@ -116,23 +123,23 @@ Cohesion: 0.09 | Nodes: 32
   - <- calls <- [[refreshtokenonce]]
 - **__unresolved__::ref::__unresolved____ref__refreshtokenonce** () -- 1 connections
   - <- calls <- [[apifetch]]
-- **__unresolved__::ref::_apifetch** () -- 1 connections
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::_crypto_** () -- 1 connections
-  - <- imports <- [[client]]
-- **__unresolved__::ref::dispatchevent** () -- 1 connections
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::parse** () -- 1 connections
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::refresh_token_________if__newtoken______________setauthtoken_newtoken____________if__newrefreshtoken__setrefreshtoken_newrefreshtoken____________return_true_________________________return_false_______catch_________return_false_______finally__________refreshpromise___null___________** () -- 1 connections
-  - <- calls <- [[refreshtokenonce]]
-- **__unresolved__::ref::refreshtokenonce** () -- 1 connections
-  - <- calls <- [[apifetch]]
 
 ## Internal Relationships
 - client -> contains -> refreshTokenOnce [EXTRACTED]
 - client -> contains -> _apiFetch [EXTRACTED]
+- client -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___crypto_ [EXTRACTED]
 - client -> imports -> __unresolved__::ref::__unresolved____ref___crypto_ [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__parse [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__stringify [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__encryptdata [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__fetch [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref___apifetch [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__refreshtokenonce [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setauthtoken [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setrefreshtoken [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__dispatchevent [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__json [EXTRACTED]
+- _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__decryptresponse [EXTRACTED]
 - _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref__parse [EXTRACTED]
 - _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref__stringify [EXTRACTED]
 - _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref__encryptdata [EXTRACTED]
@@ -144,17 +151,14 @@ Cohesion: 0.09 | Nodes: 32
 - _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref__dispatchevent [EXTRACTED]
 - _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref__json [EXTRACTED]
 - _apiFetch -> calls -> __unresolved__::ref::__unresolved____ref__decryptresponse [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::parse [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::stringify [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::encryptdata [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::fetch [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::_apifetch [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::refreshtokenonce [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::setauthtoken [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::setrefreshtoken [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::dispatchevent [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::json [EXTRACTED]
-- _apiFetch -> calls -> __unresolved__::ref::decryptresponse [EXTRACTED]
+- refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__refresh_token_________if__newtoken______________setauthtoken_newtoken____________if__newrefreshtoken__setrefreshtoken_newrefreshtoken____________return_true_________________________return_false_______catch_________return_false_______finally__________refreshpromise___null___________ [EXTRACTED]
+- refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__fetch [EXTRACTED]
+- refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__stringify [EXTRACTED]
+- refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__encryptdata [EXTRACTED]
+- refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__json [EXTRACTED]
+- refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__decryptresponse [EXTRACTED]
+- refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setauthtoken [EXTRACTED]
+- refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setrefreshtoken [EXTRACTED]
 - refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref__refresh_token_________if__newtoken______________setauthtoken_newtoken____________if__newrefreshtoken__setrefreshtoken_newrefreshtoken____________return_true_________________________return_false_______catch_________return_false_______finally__________refreshpromise___null___________ [EXTRACTED]
 - refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref__fetch [EXTRACTED]
 - refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref__stringify [EXTRACTED]
@@ -163,22 +167,11 @@ Cohesion: 0.09 | Nodes: 32
 - refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref__decryptresponse [EXTRACTED]
 - refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref__setauthtoken [EXTRACTED]
 - refreshTokenOnce -> calls -> __unresolved__::ref::__unresolved____ref__setrefreshtoken [EXTRACTED]
-- refreshTokenOnce -> calls -> __unresolved__::ref::refresh_token_________if__newtoken______________setauthtoken_newtoken____________if__newrefreshtoken__setrefreshtoken_newrefreshtoken____________return_true_________________________return_false_______catch_________return_false_______finally__________refreshpromise___null___________ [EXTRACTED]
-- refreshTokenOnce -> calls -> __unresolved__::ref::fetch [EXTRACTED]
-- refreshTokenOnce -> calls -> __unresolved__::ref::stringify [EXTRACTED]
-- refreshTokenOnce -> calls -> __unresolved__::ref::encryptdata [EXTRACTED]
-- refreshTokenOnce -> calls -> __unresolved__::ref::json [EXTRACTED]
-- refreshTokenOnce -> calls -> __unresolved__::ref::decryptresponse [EXTRACTED]
-- refreshTokenOnce -> calls -> __unresolved__::ref::setauthtoken [EXTRACTED]
-- refreshTokenOnce -> calls -> __unresolved__::ref::setrefreshtoken [EXTRACTED]
-- client -> contains -> refreshTokenOnce [EXTRACTED]
-- client -> contains -> _apiFetch [EXTRACTED]
-- client -> imports -> __unresolved__::ref::_crypto_ [EXTRACTED]
-- check_chunk_timestamps -> imports -> __unresolved__::ref::json [EXTRACTED]
-- check_chunk_timestamps -> imports -> __unresolved__::ref::sys [EXTRACTED]
+- check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref__json [EXTRACTED]
+- check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
 
 ## Cross-Community Connections
-- check_chunk_timestamps -> contains -> check (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- check_chunk_timestamps -> contains -> check (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 
 ## Context
-이 커뮤니티는 _apiFetch, refreshTokenOnce, __unresolved__::ref::json를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 check_chunk_timestamps.py, client.ts이다.
+이 커뮤니티는 _apiFetch, refreshTokenOnce, client를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 check_chunk_timestamps.py, client.ts이다.

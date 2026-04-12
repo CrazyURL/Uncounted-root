@@ -1,8 +1,25 @@
 # denoise & remove_duplicates
-Cohesion: 0.02 | Nodes: 187
+Cohesion: 0.02 | Nodes: 185
 
 ## Key Nodes
-- **denoise** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 36 connections
+- **denoise** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 35 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefensureworker]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpath]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunlink]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftofile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefastype]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftouch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstat]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcopy]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffromfile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpoll]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsleep]]
   - -> calls -> [[unresolvedrefunresolvedrefensureworker]]
   - -> calls -> [[unresolvedrefunresolvedrefwarning]]
   - -> calls -> [[unresolvedrefunresolvedrefpath]]
@@ -20,26 +37,24 @@ Cohesion: 0.02 | Nodes: 187
   - -> calls -> [[unresolvedrefunresolvedreffromfile]]
   - -> calls -> [[unresolvedrefunresolvedrefpoll]]
   - -> calls -> [[unresolvedrefunresolvedrefsleep]]
-  - -> calls -> [[unresolvedrefensureworker]]
-  - -> calls -> [[unresolvedrefwarning]]
-  - -> calls -> [[unresolvedrefpath]]
-  - -> calls -> [[unresolvedrefunlink]]
-  - -> calls -> [[unresolvedreftofile]]
-  - -> calls -> [[unresolvedrefastype]]
-  - -> calls -> [[unresolvedrefstr]]
-  - -> calls -> [[unresolvedreftouch]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefmax]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefstat]]
-  - -> calls -> [[unresolvedrefcopy]]
-  - -> calls -> [[unresolvedreffromfile]]
-  - -> calls -> [[unresolvedrefpoll]]
-  - -> calls -> [[unresolvedrefsleep]]
   - <- contains <- [[audiopreprocessor]]
-  - <- contains <- [[audiopreprocessor]]
-- **remove_duplicates** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 34 connections
+- **remove_duplicates** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 33 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsqrt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmean]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnorm]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffftconvolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefadd]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsorted]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefarray]]
   - -> calls -> [[unresolvedrefunresolvedrefint]]
   - -> calls -> [[unresolvedrefunresolvedreflen]]
   - -> calls -> [[unresolvedrefunresolvedrefrange]]
@@ -56,25 +71,21 @@ Cohesion: 0.02 | Nodes: 187
   - -> calls -> [[unresolvedrefunresolvedrefsorted]]
   - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
   - -> calls -> [[unresolvedrefunresolvedrefarray]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefrange]]
-  - -> calls -> [[unresolvedrefsqrt]]
-  - -> calls -> [[unresolvedrefmean]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefset]]
-  - -> calls -> [[unresolvedrefnorm]]
-  - -> calls -> [[unresolvedrefmin]]
-  - -> calls -> [[unresolvedreffftconvolve]]
-  - -> calls -> [[unresolvedrefmax]]
-  - -> calls -> [[unresolvedrefadd]]
-  - -> calls -> [[unresolvedrefinfo]]
-  - -> calls -> [[unresolvedrefsorted]]
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefarray]]
   - <- contains <- [[audiopreprocessor]]
-  - <- contains <- [[audiopreprocessor]]
-- **load_df_model** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 28 connections
+- **load_df_model** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 27 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefchmod]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunlink]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpoll]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsleep]]
   - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
   - -> calls -> [[unresolvedrefunresolvedrefstr]]
   - -> calls -> [[unresolvedrefunresolvedrefwritetext]]
@@ -88,22 +99,40 @@ Cohesion: 0.02 | Nodes: 187
   - -> calls -> [[unresolvedrefunresolvedrefpoll]]
   - -> calls -> [[unresolvedrefunresolvedrefwarning]]
   - -> calls -> [[unresolvedrefunresolvedrefsleep]]
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefstr]]
-  - -> calls -> [[unresolvedrefwritetext]]
-  - -> calls -> [[unresolvedrefchmod]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefunlink]]
-  - -> calls -> [[unresolvedrefopen]]
-  - -> calls -> [[unresolvedrefpopen]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefinfo]]
-  - -> calls -> [[unresolvedrefpoll]]
-  - -> calls -> [[unresolvedrefwarning]]
-  - -> calls -> [[unresolvedrefsleep]]
   - <- contains <- [[audiopreprocessor]]
-  - <- contains <- [[audiopreprocessor]]
-- **compress_silence** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 22 connections
+- **audio_preprocessor** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 21 connections
+  - -> contains -> [[loaddfmodel]]
+  - -> contains -> [[ensureworker]]
+  - -> contains -> [[denoise]]
+  - -> contains -> [[removeduplicates]]
+  - -> contains -> [[compresssilence]]
+  - -> contains -> [[normalizegain]]
+  - -> contains -> [[preprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsubprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsignal]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefsubprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefsignal]]
+  - -> imports -> [[unresolvedrefunresolvedrefapp]]
+- **compress_silence** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 21 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreshape]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsqrt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmean]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefzeros]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefinfo]]
   - -> calls -> [[unresolvedrefunresolvedrefint]]
   - -> calls -> [[unresolvedrefunresolvedreflen]]
   - -> calls -> [[unresolvedrefunresolvedrefreshape]]
@@ -114,19 +143,18 @@ Cohesion: 0.02 | Nodes: 187
   - -> calls -> [[unresolvedrefunresolvedrefzeros]]
   - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
   - -> calls -> [[unresolvedrefunresolvedrefinfo]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefreshape]]
-  - -> calls -> [[unresolvedrefsqrt]]
-  - -> calls -> [[unresolvedrefmean]]
-  - -> calls -> [[unresolvedrefenumerate]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefzeros]]
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefinfo]]
   - <- contains <- [[audiopreprocessor]]
-  - <- contains <- [[audiopreprocessor]]
-- **preprocess** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 22 connections
+- **preprocess** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 21 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnormalizegain]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcompresssilence]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefitems]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefinfo]]
   - -> calls -> [[unresolvedrefunresolvedreflen]]
   - -> calls -> [[unresolvedrefunresolvedreftime]]
   - -> calls -> [[unresolvedrefunresolvedrefnormalizegain]]
@@ -137,19 +165,10 @@ Cohesion: 0.02 | Nodes: 187
   - -> calls -> [[unresolvedrefunresolvedrefjoin]]
   - -> calls -> [[unresolvedrefunresolvedrefitems]]
   - -> calls -> [[unresolvedrefunresolvedrefinfo]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefnormalizegain]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefdenoise]]
-  - -> calls -> [[unresolvedrefremoveduplicates]]
-  - -> calls -> [[unresolvedrefcompresssilence]]
-  - -> calls -> [[unresolvedrefjoin]]
-  - -> calls -> [[unresolvedrefitems]]
-  - -> calls -> [[unresolvedrefinfo]]
   - <- contains <- [[audiopreprocessor]]
-  - <- contains <- [[audiopreprocessor]]
-- **__unresolved__::ref::int** () -- 18 connections
+- **__unresolved__::ref::__unresolved____ref__int** () -- 18 connections
+  - <- calls <- [[removeduplicates]]
+  - <- calls <- [[compresssilence]]
   - <- calls <- [[makechunk]]
   - <- calls <- [[sine]]
   - <- calls <- [[silence]]
@@ -166,9 +185,15 @@ Cohesion: 0.02 | Nodes: 187
   - <- calls <- [[extractutteranceaudio]]
   - <- calls <- [[extractutteranceaudiolocal]]
   - <- calls <- [[mutenonspeaker]]
-  - <- calls <- [[removeduplicates]]
-  - <- calls <- [[compresssilence]]
-- **normalize_gain** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 18 connections
+- **normalize_gain** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 17 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsqrt]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmean]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefastype]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefclip]]
   - -> calls -> [[unresolvedrefunresolvedreflen]]
   - -> calls -> [[unresolvedrefunresolvedreffloat]]
   - -> calls -> [[unresolvedrefunresolvedrefsqrt]]
@@ -177,65 +202,26 @@ Cohesion: 0.02 | Nodes: 187
   - -> calls -> [[unresolvedrefunresolvedrefinfo]]
   - -> calls -> [[unresolvedrefunresolvedrefastype]]
   - -> calls -> [[unresolvedrefunresolvedrefclip]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedreffloat]]
-  - -> calls -> [[unresolvedrefsqrt]]
-  - -> calls -> [[unresolvedrefmean]]
-  - -> calls -> [[unresolvedrefmin]]
-  - -> calls -> [[unresolvedrefinfo]]
-  - -> calls -> [[unresolvedrefastype]]
-  - -> calls -> [[unresolvedrefclip]]
-  - <- contains <- [[audiopreprocessor]]
   - <- contains <- [[audiopreprocessor]]
 - **load_models** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/stt_processor.py) -- 17 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcleanuptempfiles]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefinfo]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftime]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadmodel]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadalignmodel]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdiarizationpipeline]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwarning]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloaddfmodel]]
-  - -> calls -> [[unresolvedrefcleanuptempfiles]]
-  - -> calls -> [[unresolvedrefinfo]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefloadmodel]]
-  - -> calls -> [[unresolvedrefloadalignmodel]]
-  - -> calls -> [[unresolvedrefdiarizationpipeline]]
-  - -> calls -> [[unresolvedrefwarning]]
-  - -> calls -> [[unresolvedrefloaddfmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcleanuptempfiles]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadalignmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdiarizationpipeline]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloaddfmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefcleanuptempfiles]]
+  - -> calls -> [[unresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadalignmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefdiarizationpipeline]]
+  - -> calls -> [[unresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefloaddfmodel]]
   - <- contains <- [[sttprocessor]]
-- **audio_preprocessor** (uncounted-voice-api/app/services/audio_preprocessor.py) -- 14 connections
-  - -> contains -> [[loaddfmodel]]
-  - -> contains -> [[ensureworker]]
-  - -> contains -> [[denoise]]
-  - -> contains -> [[removeduplicates]]
-  - -> contains -> [[compresssilence]]
-  - -> contains -> [[normalizegain]]
-  - -> contains -> [[preprocess]]
-  - -> imports -> [[unresolvedrefunresolvedreflogging]]
-  - -> imports -> [[unresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefsubprocess]]
-  - -> imports -> [[unresolvedrefunresolvedrefsys]]
-  - -> imports -> [[unresolvedrefunresolvedreftime]]
-  - -> imports -> [[unresolvedrefunresolvedrefsignal]]
-  - -> imports -> [[unresolvedrefunresolvedrefapp]]
-- **audio_preprocessor** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 14 connections
-  - -> contains -> [[loaddfmodel]]
-  - -> contains -> [[ensureworker]]
-  - -> contains -> [[denoise]]
-  - -> contains -> [[removeduplicates]]
-  - -> contains -> [[compresssilence]]
-  - -> contains -> [[normalizegain]]
-  - -> contains -> [[preprocess]]
-  - -> imports -> [[unresolvedreflogging]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefsubprocess]]
-  - -> imports -> [[unresolvedrefsys]]
-  - -> imports -> [[unresolvedreftime]]
-  - -> imports -> [[unresolvedrefsignal]]
-  - -> imports -> [[unresolvedrefapp]]
-- **__unresolved__::ref::_sine** () -- 12 connections
+- **__unresolved__::ref::__unresolved____ref___sine** () -- 12 connections
   - <- calls <- [[testreturnsinputwhenworkernotready]]
   - <- calls <- [[testreturnsndarraysamedtype]]
   - <- calls <- [[testdoesnotmutateinput]]
@@ -249,39 +235,38 @@ Cohesion: 0.02 | Nodes: 187
   - <- calls <- [[testpreservesshortsilence]]
   - <- calls <- [[testoutputshorterwithgaps]]
 - **test_does_not_mutate_input** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 12 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefcopy]]
-  - -> calls -> [[unresolvedrefpatch]]
-  - -> calls -> [[unresolvedrefdenoise]]
-  - -> calls -> [[unresolvedrefassertarrayequal]]
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefremoveduplicates]]
-  - -> calls -> [[unresolvedrefsilence]]
-  - -> calls -> [[unresolvedrefcompresssilence]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefcopy]]
+  - -> calls -> [[unresolvedrefunresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefunresolvedrefassertarrayequal]]
+  - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedrefunresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefunresolvedrefcompresssilence]]
   - <- contains <- [[testdenoise]]
   - <- contains <- [[testremoveduplicates]]
   - <- contains <- [[testcompresssilence]]
-- **__unresolved__::ref::concatenate** () -- 10 connections
+- **__unresolved__::ref::__unresolved____ref__concatenate** () -- 10 connections
+  - <- calls <- [[removeduplicates]]
+  - <- calls <- [[compresssilence]]
+  - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testremovesrepeatedsegment]]
   - <- calls <- [[testkeepsuniquesegments]]
   - <- calls <- [[testskipssilentregions]]
-  - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testcompresseslongsilence]]
   - <- calls <- [[testpreservesshortsilence]]
   - <- calls <- [[testoutputshorterwithgaps]]
   - <- calls <- [[extractspeakeraudio]]
-  - <- calls <- [[removeduplicates]]
-  - <- calls <- [[compresssilence]]
-- **_ensure_worker** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 10 connections
+- **_ensure_worker** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/audio_preprocessor.py) -- 9 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefisdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefloaddfmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpoll]]
   - -> calls -> [[unresolvedrefunresolvedrefisdir]]
   - -> calls -> [[unresolvedrefunresolvedrefwarning]]
   - -> calls -> [[unresolvedrefunresolvedrefloaddfmodel]]
   - -> calls -> [[unresolvedrefunresolvedrefpoll]]
-  - -> calls -> [[unresolvedrefisdir]]
-  - -> calls -> [[unresolvedrefwarning]]
-  - -> calls -> [[unresolvedrefloaddfmodel]]
-  - -> calls -> [[unresolvedrefpoll]]
-  - <- contains <- [[audiopreprocessor]]
   - <- contains <- [[audiopreprocessor]]
 - **test_audio_preprocessor** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 9 connections
   - -> contains -> [[sine]]
@@ -290,9 +275,9 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[testremoveduplicates]]
   - -> contains -> [[testcompresssilence]]
   - -> contains -> [[testpreprocess]]
-  - -> imports -> [[unresolvedrefmock]]
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefaudiopreprocessor]]
+  - -> imports -> [[unresolvedrefunresolvedrefmock]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefaudiopreprocessor]]
 - **test_audio_splitter** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 9 connections
   - -> contains -> [[seg]]
   - -> contains -> [[testextractspeakeraudio]]
@@ -300,17 +285,17 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[testextractutteranceaudiolocal]]
   - -> contains -> [[testmutenonspeaker]]
   - -> contains -> [[testtowavbytes]]
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefaudiosplitter]]
-  - -> imports -> [[unresolvedrefutterancesegmenter]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefaudiosplitter]]
+  - -> imports -> [[unresolvedrefunresolvedrefutterancesegmenter]]
 - **test_output_shorter_with_gaps** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 8 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefsilence]]
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefcompresssilence]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefabs]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefcompresssilence]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefabs]]
   - <- contains <- [[testcompresssilence]]
 - **test_chunked_utterances** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 8 connections
   - -> contains -> [[word]]
@@ -318,24 +303,24 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[assegments]]
   - -> contains -> [[runchunkedutteranceloop]]
   - -> contains -> [[testchunkedutteranceloop]]
-  - -> imports -> [[unresolvedrefio]]
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefchunkutteranceemitter]]
-- **__unresolved__::ref::denoise** () -- 7 connections
+  - -> imports -> [[unresolvedrefunresolvedrefio]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefchunkutteranceemitter]]
+- **__unresolved__::ref::__unresolved____ref__denoise** () -- 7 connections
+  - <- calls <- [[preprocess]]
   - <- calls <- [[testreturnsinputwhenworkernotready]]
   - <- calls <- [[testreturnsndarraysamedtype]]
   - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testskipswhenworkernone]]
   - <- calls <- [[testoutputis1d]]
   - <- calls <- [[testhandlessilenceinput]]
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::time** () -- 7 connections
-  - <- calls <- [[loadmodels]]
-  - <- calls <- [[transcribe]]
-  - <- imports <- [[sttprocessor]]
+- **__unresolved__::ref::__unresolved____ref__time** () -- 7 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[denoise]]
   - <- calls <- [[preprocess]]
+  - <- imports <- [[sttprocessor]]
+  - <- calls <- [[loadmodels]]
+  - <- calls <- [[transcribe]]
   - <- imports <- [[audiopreprocessor]]
 - **TestDenoise** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 7 connections
   - -> contains -> [[testreturnsinputwhenworkernotready]]
@@ -346,79 +331,79 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[testhandlessilenceinput]]
   - <- contains <- [[testaudiopreprocessor]]
 - **_sine** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 7 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflinspace]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsin]]
-  - -> calls -> [[unresolvedreflinspace]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefsin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflinspace]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsin]]
+  - -> calls -> [[unresolvedrefunresolvedreflinspace]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefsin]]
   - <- contains <- [[testaudiopreprocessor]]
 - **test_compresses_long_silence** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 7 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefsilence]]
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefcompresssilence]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefcompresssilence]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[testcompresssilence]]
 - **test_extracts_single_speaker** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 7 connections
-  - -> calls -> [[unresolvedrefones]]
-  - -> calls -> [[unresolvedrefseg]]
-  - -> calls -> [[unresolvedrefextractspeakeraudio]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefabs]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractspeakeraudio]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefabs]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testextractspeakeraudio]]
 - **test_extracts_with_padding** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 7 connections
-  - -> calls -> [[unresolvedrefarange]]
-  - -> calls -> [[unresolvedrefutteranceboundary]]
-  - -> calls -> [[unresolvedrefextractutteranceaudio]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefabs]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedrefutteranceboundary]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractutteranceaudio]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefabs]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testextractutteranceaudio]]
-- **__unresolved__::ref::_silence** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref___silence** () -- 6 connections
+  - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testhandlessilenceinput]]
   - <- calls <- [[testskipssilentregions]]
   - <- calls <- [[testcompresseslongsilence]]
   - <- calls <- [[testpreservesshortsilence]]
-  - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testoutputshorterwithgaps]]
-- **__unresolved__::ref::extract_utterance_audio_local** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref__extract_utterance_audio_local** () -- 6 connections
   - <- calls <- [[testsliceswithinchunk]]
   - <- calls <- [[testclipsnegativestart]]
   - <- calls <- [[testclipsendbeyondchunk]]
   - <- calls <- [[testemptyslicewhenendbeforestart]]
   - <- calls <- [[testdoesnotcopyarray]]
   - <- calls <- [[emitchunkutterances]]
-- **__unresolved__::ref::ones** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref__ones** () -- 6 connections
   - <- calls <- [[testextractssinglespeaker]]
   - <- calls <- [[testreturnsnoneforshortduration]]
   - <- calls <- [[testreturnsnoneformissingspeaker]]
   - <- calls <- [[testdoesnotcopyarray]]
   - <- calls <- [[testmutesotherspeakers]]
   - <- calls <- [[testdoesnotmutateoriginal]]
-- **__unresolved__::ref::patch** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref__patch** () -- 6 connections
   - <- calls <- [[testreturnsinputwhenworkernotready]]
   - <- calls <- [[testreturnsndarraysamedtype]]
   - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testskipswhenworkernone]]
   - <- calls <- [[testoutputis1d]]
   - <- calls <- [[testhandlessilenceinput]]
-- **__unresolved__::ref::remove_duplicates** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref__remove_duplicates** () -- 6 connections
+  - <- calls <- [[preprocess]]
+  - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testremovesrepeatedsegment]]
   - <- calls <- [[testkeepsuniquesegments]]
   - <- calls <- [[testskipssilentregions]]
-  - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testhandlesshortaudio]]
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::warning** () -- 6 connections
-  - <- calls <- [[loadmodels]]
-  - <- calls <- [[transcribechunk]]
-  - <- calls <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref__warning** () -- 6 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[ensureworker]]
   - <- calls <- [[denoise]]
+  - <- calls <- [[loadmodels]]
+  - <- calls <- [[transcribechunk]]
+  - <- calls <- [[transcribe]]
 - **TestRemoveDuplicates** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 6 connections
   - -> contains -> [[testremovesrepeatedsegment]]
   - -> contains -> [[testkeepsuniquesegments]]
@@ -427,25 +412,25 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[testhandlesshortaudio]]
   - <- contains <- [[testaudiopreprocessor]]
 - **test_preserves_short_silence** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 6 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefsilence]]
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefcompresssilence]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefcompresssilence]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testcompresssilence]]
 - **test_returns_ndarray_same_dtype** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 6 connections
-  - -> calls -> [[unresolvedrefastype]]
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefpatch]]
-  - -> calls -> [[unresolvedrefdenoise]]
-  - -> calls -> [[unresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefastype]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefunresolvedrefisinstance]]
   - <- contains <- [[testdenoise]]
 - **test_skips_silent_regions** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 6 connections
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefsilence]]
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefremoveduplicates]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testremoveduplicates]]
 - **TestExtractUtteranceAudioLocal** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 6 connections
   - -> contains -> [[testsliceswithinchunk]]
@@ -455,50 +440,50 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[testdoesnotcopyarray]]
   - <- contains <- [[testaudiosplitter]]
 - **test_mutes_other_speakers** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 6 connections
-  - -> calls -> [[unresolvedrefones]]
-  - -> calls -> [[unresolvedrefseg]]
-  - -> calls -> [[unresolvedrefmutenonspeaker]]
-  - -> calls -> [[unresolvedrefall]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefmutenonspeaker]]
+  - -> calls -> [[unresolvedrefunresolvedrefall]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[testmutenonspeaker]]
 - **test_returns_valid_wav_bytes** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 6 connections
-  - -> calls -> [[unresolvedrefastype]]
-  - -> calls -> [[unresolvedrefrandn]]
-  - -> calls -> [[unresolvedreftowavbytes]]
-  - -> calls -> [[unresolvedrefisinstance]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefastype]]
+  - -> calls -> [[unresolvedrefunresolvedrefrandn]]
+  - -> calls -> [[unresolvedrefunresolvedreftowavbytes]]
+  - -> calls -> [[unresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testtowavbytes]]
-- **__unresolved__::ref::__unresolved____ref__info** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__info** () -- 5 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
   - <- calls <- [[normalizegain]]
   - <- calls <- [[preprocess]]
-- **__unresolved__::ref::__unresolved____ref__len** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__len** () -- 5 connections
   - <- calls <- [[denoise]]
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
   - <- calls <- [[normalizegain]]
   - <- calls <- [[preprocess]]
-- **__unresolved__::ref::_seg** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref___seg** () -- 5 connections
   - <- calls <- [[testextractssinglespeaker]]
   - <- calls <- [[testreturnsnoneforshortduration]]
   - <- calls <- [[testreturnsnoneformissingspeaker]]
   - <- calls <- [[testmutesotherspeakers]]
   - <- calls <- [[testdoesnotmutateoriginal]]
-- **__unresolved__::ref::arange** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__arange** () -- 5 connections
   - <- calls <- [[testextractswithpadding]]
   - <- calls <- [[testsliceswithinchunk]]
   - <- calls <- [[testclipsnegativestart]]
   - <- calls <- [[testclipsendbeyondchunk]]
   - <- calls <- [[testemptyslicewhenendbeforestart]]
-- **__unresolved__::ref::compress_silence** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__compress_silence** () -- 5 connections
+  - <- calls <- [[preprocess]]
+  - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testcompresseslongsilence]]
   - <- calls <- [[testpreservesshortsilence]]
-  - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testoutputshorterwithgaps]]
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::pytest** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__pytest** () -- 5 connections
   - <- imports <- [[testutterancesegmenter]]
   - <- imports <- [[conftest]]
   - <- imports <- [[testchunkedutterances]]
@@ -511,110 +496,115 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[testoutputshorterwithgaps]]
   - <- contains <- [[testaudiopreprocessor]]
 - **_silence** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefzeros]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
-  - -> calls -> [[unresolvedrefzeros]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefzeros]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefzeros]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[testaudiopreprocessor]]
 - **test_handles_silence_input** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
-  - -> calls -> [[unresolvedrefsilence]]
-  - -> calls -> [[unresolvedrefpatch]]
-  - -> calls -> [[unresolvedrefdenoise]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefunresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testdenoise]]
 - **test_keeps_unique_segments** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefremoveduplicates]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testremoveduplicates]]
 - **test_removes_repeated_segment** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefconcatenate]]
-  - -> calls -> [[unresolvedrefremoveduplicates]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefunresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testremoveduplicates]]
 - **test_returns_input_when_worker_not_ready** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefpatch]]
-  - -> calls -> [[unresolvedrefdenoise]]
-  - -> calls -> [[unresolvedrefassertarrayequal]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefunresolvedrefassertarrayequal]]
   - <- contains <- [[testdenoise]]
 - **test_skips_when_worker_none** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefpatch]]
-  - -> calls -> [[unresolvedrefdenoise]]
-  - -> calls -> [[unresolvedrefassertarrayequal]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefunresolvedrefassertarrayequal]]
   - <- contains <- [[testdenoise]]
 - **test_clips_end_beyond_chunk** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 5 connections
-  - -> calls -> [[unresolvedrefarange]]
-  - -> calls -> [[unresolvedrefextractutteranceaudiolocal]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractutteranceaudiolocal]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[testextractutteranceaudiolocal]]
 - **test_clips_negative_start** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 5 connections
-  - -> calls -> [[unresolvedrefarange]]
-  - -> calls -> [[unresolvedrefextractutteranceaudiolocal]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractutteranceaudiolocal]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[testextractutteranceaudiolocal]]
 - **test_does_not_mutate_original** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 5 connections
-  - -> calls -> [[unresolvedrefones]]
-  - -> calls -> [[unresolvedrefseg]]
-  - -> calls -> [[unresolvedrefmutenonspeaker]]
-  - -> calls -> [[unresolvedrefall]]
+  - -> calls -> [[unresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefmutenonspeaker]]
+  - -> calls -> [[unresolvedrefunresolvedrefall]]
   - <- contains <- [[testmutenonspeaker]]
 - **test_slices_within_chunk** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 5 connections
-  - -> calls -> [[unresolvedrefarange]]
-  - -> calls -> [[unresolvedrefextractutteranceaudiolocal]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractutteranceaudiolocal]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[testextractutteranceaudiolocal]]
 - **_make_chunk** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffull]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
-  - -> calls -> [[unresolvedreffull]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffull]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedreffull]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[testchunkedutterances]]
-- **__unresolved__::ref::__unresolved____ref__time** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__time** () -- 4 connections
+  - <- imports <- [[audiopreprocessor]]
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[denoise]]
   - <- calls <- [[preprocess]]
-  - <- imports <- [[audiopreprocessor]]
-- **__unresolved__::ref::assert_array_equal** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__assert_array_equal** () -- 4 connections
   - <- calls <- [[testreturnsinputwhenworkernotready]]
   - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[testskipswhenworkernone]]
   - <- calls <- [[testhandlesshortaudio]]
-- **__unresolved__::ref::astype** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__astype** () -- 4 connections
+  - <- calls <- [[denoise]]
+  - <- calls <- [[normalizegain]]
   - <- calls <- [[testreturnsndarraysamedtype]]
   - <- calls <- [[testreturnsvalidwavbytes]]
-  - <- calls <- [[denoise]]
-  - <- calls <- [[normalizegain]]
-- **__unresolved__::ref::exists** () -- 4 connections
-  - <- calls <- [[cleanuptempfiles]]
-  - <- calls <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref__exists** () -- 4 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[denoise]]
-- **__unresolved__::ref::mean** () -- 4 connections
-  - <- calls <- [[computeaudiostats]]
+  - <- calls <- [[cleanuptempfiles]]
+  - <- calls <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref__mean** () -- 4 connections
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
   - <- calls <- [[normalizegain]]
-- **__unresolved__::ref::sqrt** () -- 4 connections
   - <- calls <- [[computeaudiostats]]
+- **__unresolved__::ref::__unresolved____ref__sqrt** () -- 4 connections
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
   - <- calls <- [[normalizegain]]
+  - <- calls <- [[computeaudiostats]]
+- **config** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/config.py) -- 4 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
 - **test_handles_short_audio** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 4 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefremoveduplicates]]
-  - -> calls -> [[unresolvedrefassertarrayequal]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedrefunresolvedrefassertarrayequal]]
   - <- contains <- [[testremoveduplicates]]
 - **test_output_is_1d** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 4 connections
-  - -> calls -> [[unresolvedrefsine]]
-  - -> calls -> [[unresolvedrefpatch]]
-  - -> calls -> [[unresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefunresolvedrefsine]]
+  - -> calls -> [[unresolvedrefunresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefdenoise]]
   - <- contains <- [[testdenoise]]
 - **TestExtractSpeakerAudio** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 4 connections
   - -> contains -> [[testextractssinglespeaker]]
@@ -622,66 +612,66 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[testreturnsnoneformissingspeaker]]
   - <- contains <- [[testaudiosplitter]]
 - **test_does_not_copy_array** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 4 connections
-  - -> calls -> [[unresolvedrefones]]
-  - -> calls -> [[unresolvedrefextractutteranceaudiolocal]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractutteranceaudiolocal]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[testextractutteranceaudiolocal]]
 - **test_empty_slice_when_end_before_start** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 4 connections
-  - -> calls -> [[unresolvedrefarange]]
-  - -> calls -> [[unresolvedrefextractutteranceaudiolocal]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractutteranceaudiolocal]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testextractutteranceaudiolocal]]
 - **test_returns_none_for_missing_speaker** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 4 connections
-  - -> calls -> [[unresolvedrefones]]
-  - -> calls -> [[unresolvedrefseg]]
-  - -> calls -> [[unresolvedrefextractspeakeraudio]]
+  - -> calls -> [[unresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractspeakeraudio]]
   - <- contains <- [[testextractspeakeraudio]]
 - **test_returns_none_for_short_duration** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 4 connections
-  - -> calls -> [[unresolvedrefones]]
-  - -> calls -> [[unresolvedrefseg]]
-  - -> calls -> [[unresolvedrefextractspeakeraudio]]
+  - -> calls -> [[unresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractspeakeraudio]]
   - <- contains <- [[testextractspeakeraudio]]
-- **__unresolved__::ref::__unresolved____ref__append** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__append** () -- 3 connections
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
   - <- calls <- [[preprocess]]
-- **__unresolved__::ref::__unresolved____ref__mean** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__mean** () -- 3 connections
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
   - <- calls <- [[normalizegain]]
-- **__unresolved__::ref::__unresolved____ref__poll** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__poll** () -- 3 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[ensureworker]]
   - <- calls <- [[denoise]]
-- **__unresolved__::ref::__unresolved____ref__sqrt** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__sqrt** () -- 3 connections
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
   - <- calls <- [[normalizegain]]
-- **__unresolved__::ref::__unresolved____ref__warning** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__warning** () -- 3 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[ensureworker]]
   - <- calls <- [[denoise]]
-- **__unresolved__::ref::all** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__all** () -- 3 connections
   - <- calls <- [[testmutesotherspeakers]]
   - <- calls <- [[testdoesnotmutateoriginal]]
   - <- calls <- [[isbackchannel]]
-- **__unresolved__::ref::extract_speaker_audio** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__extract_speaker_audio** () -- 3 connections
   - <- calls <- [[testextractssinglespeaker]]
   - <- calls <- [[testreturnsnoneforshortduration]]
   - <- calls <- [[testreturnsnoneformissingspeaker]]
-- **__unresolved__::ref::isinstance** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__isinstance** () -- 3 connections
   - <- calls <- [[testreturnsndarraysamedtype]]
   - <- calls <- [[testreturnsvalidwavbytes]]
   - <- calls <- [[tofloat]]
-- **__unresolved__::ref::mute_non_speaker** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__mute_non_speaker** () -- 3 connections
   - <- calls <- [[testmutesotherspeakers]]
   - <- calls <- [[testdoesnotmutateoriginal]]
   - <- calls <- [[transcribe]]
-- **__unresolved__::ref::os** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__os** () -- 3 connections
   - <- imports <- [[sttprocessor]]
   - <- imports <- [[config]]
   - <- imports <- [[audiopreprocessor]]
-- **__unresolved__::ref::poll** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__poll** () -- 3 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[ensureworker]]
   - <- calls <- [[denoise]]
@@ -689,242 +679,236 @@ Cohesion: 0.02 | Nodes: 187
   - -> contains -> [[testmutesotherspeakers]]
   - -> contains -> [[testdoesnotmutateoriginal]]
   - <- contains <- [[testaudiosplitter]]
-- **__unresolved__::ref::__unresolved____ref__astype** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__astype** () -- 2 connections
   - <- calls <- [[denoise]]
   - <- calls <- [[normalizegain]]
-- **__unresolved__::ref::__unresolved____ref__concatenate** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__concatenate** () -- 2 connections
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
-- **__unresolved__::ref::__unresolved____ref__exists** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__exists** () -- 2 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[denoise]]
-- **__unresolved__::ref::__unresolved____ref__int** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__int** () -- 2 connections
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[compresssilence]]
-- **__unresolved__::ref::__unresolved____ref__max** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__max** () -- 2 connections
   - <- calls <- [[denoise]]
   - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::__unresolved____ref__min** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__min** () -- 2 connections
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[normalizegain]]
-- **__unresolved__::ref::__unresolved____ref__os** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__os** () -- 2 connections
   - <- imports <- [[config]]
   - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__sleep** () -- 2 connections
+  - <- calls <- [[loaddfmodel]]
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__str** () -- 2 connections
+  - <- calls <- [[loaddfmodel]]
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__unlink** () -- 2 connections
+  - <- calls <- [[loaddfmodel]]
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref__audio_preprocessor** () -- 2 connections
+  - <- imports <- [[testaudiopreprocessor]]
+  - <- imports <- [[sttprocessor]]
+- **__unresolved__::ref::__unresolved____ref__chunk_utterance_emitter** () -- 2 connections
+  - <- imports <- [[testchunkedutterances]]
+  - <- imports <- [[sttprocessor]]
+- **__unresolved__::ref::__unresolved____ref__extract_utterance_audio** () -- 2 connections
+  - <- calls <- [[testextractswithpadding]]
+  - <- calls <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref__io** () -- 2 connections
+  - <- imports <- [[testchunkedutterances]]
+  - <- imports <- [[audiosplitter]]
+- **__unresolved__::ref::__unresolved____ref__load_df_model** () -- 2 connections
+  - <- calls <- [[ensureworker]]
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref__logging** () -- 2 connections
+  - <- imports <- [[sttprocessor]]
+  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref__open** () -- 2 connections
+  - <- calls <- [[loaddfmodel]]
+  - <- calls <- [[check]]
+- **__unresolved__::ref::__unresolved____ref__path** () -- 2 connections
+  - <- calls <- [[denoise]]
+  - <- calls <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref__pathlib** () -- 2 connections
+  - <- imports <- [[sttprocessor]]
+  - <- imports <- [[config]]
+- **__unresolved__::ref::__unresolved____ref__reshape** () -- 2 connections
+  - <- calls <- [[compresssilence]]
+  - <- calls <- [[computeaudiostats]]
 - **__unresolved__::ref::__unresolved____ref__sleep** () -- 2 connections
   - <- calls <- [[loaddfmodel]]
   - <- calls <- [[denoise]]
-- **__unresolved__::ref::__unresolved____ref__str** () -- 2 connections
-  - <- calls <- [[loaddfmodel]]
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::__unresolved____ref__unlink** () -- 2 connections
-  - <- calls <- [[loaddfmodel]]
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::audio_preprocessor** () -- 2 connections
-  - <- imports <- [[testaudiopreprocessor]]
-  - <- imports <- [[sttprocessor]]
-- **__unresolved__::ref::chunk_utterance_emitter** () -- 2 connections
-  - <- imports <- [[testchunkedutterances]]
-  - <- imports <- [[sttprocessor]]
-- **__unresolved__::ref::extract_utterance_audio** () -- 2 connections
-  - <- calls <- [[testextractswithpadding]]
-  - <- calls <- [[transcribe]]
-- **__unresolved__::ref::io** () -- 2 connections
-  - <- imports <- [[testchunkedutterances]]
-  - <- imports <- [[audiosplitter]]
-- **__unresolved__::ref::load_df_model** () -- 2 connections
-  - <- calls <- [[loadmodels]]
-  - <- calls <- [[ensureworker]]
-- **__unresolved__::ref::logging** () -- 2 connections
-  - <- imports <- [[sttprocessor]]
-  - <- imports <- [[audiopreprocessor]]
-- **__unresolved__::ref::open** () -- 2 connections
-  - <- calls <- [[check]]
-  - <- calls <- [[loaddfmodel]]
-- **__unresolved__::ref::path** () -- 2 connections
-  - <- calls <- [[transcribe]]
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::pathlib** () -- 2 connections
-  - <- imports <- [[sttprocessor]]
-  - <- imports <- [[config]]
-- **__unresolved__::ref::reshape** () -- 2 connections
-  - <- calls <- [[computeaudiostats]]
-  - <- calls <- [[compresssilence]]
-- **__unresolved__::ref::sleep** () -- 2 connections
-  - <- calls <- [[loaddfmodel]]
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::sorted** () -- 2 connections
-  - <- calls <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref__sorted** () -- 2 connections
   - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::stat** () -- 2 connections
   - <- calls <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref__stat** () -- 2 connections
   - <- calls <- [[denoise]]
-- **__unresolved__::ref::subprocess** () -- 2 connections
+  - <- calls <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref__subprocess** () -- 2 connections
   - <- imports <- [[sttprocessor]]
   - <- imports <- [[audiopreprocessor]]
-- **__unresolved__::ref::utteranceboundary** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__utteranceboundary** () -- 2 connections
   - <- calls <- [[testextractswithpadding]]
   - <- calls <- [[applypadding]]
-- **__unresolved__::ref::zeros** () -- 2 connections
-  - <- calls <- [[silence]]
+- **__unresolved__::ref::__unresolved____ref__zeros** () -- 2 connections
   - <- calls <- [[compresssilence]]
-- **config** (uncounted-voice-api/app/config.py) -- 2 connections
-  - -> imports -> [[unresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
-- **config** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/config.py) -- 2 connections
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefpathlib]]
+  - <- calls <- [[silence]]
 - **conftest** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/conftest.py) -- 2 connections
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefjobstore]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefjobstore]]
 - **TestExtractUtteranceAudio** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 2 connections
   - -> contains -> [[testextractswithpadding]]
   - <- contains <- [[testaudiosplitter]]
 - **TestToWavBytes** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_splitter.py) -- 2 connections
   - -> contains -> [[testreturnsvalidwavbytes]]
   - <- contains <- [[testaudiosplitter]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___cleanup_temp_files** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___cleanup_temp_files** () -- 1 connections
   - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__diarizationpipeline** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__diarizationpipeline** () -- 1 connections
   - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__full** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__full** () -- 1 connections
   - <- calls <- [[makechunk]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__linspace** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__linspace** () -- 1 connections
   - <- calls <- [[sine]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_align_model** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_align_model** () -- 1 connections
   - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_df_model** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_df_model** () -- 1 connections
   - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_model** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_model** () -- 1 connections
   - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__zeros** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__zeros** () -- 1 connections
   - <- calls <- [[silence]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___ensure_worker** () -- 1 connections
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__add** () -- 1 connections
+  - <- calls <- [[removeduplicates]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__app** () -- 1 connections
+  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__array** () -- 1 connections
+  - <- calls <- [[removeduplicates]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__chmod** () -- 1 connections
+  - <- calls <- [[loaddfmodel]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__clip** () -- 1 connections
+  - <- calls <- [[normalizegain]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__compress_silence** () -- 1 connections
+  - <- calls <- [[preprocess]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__copy** () -- 1 connections
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__denoise** () -- 1 connections
+  - <- calls <- [[preprocess]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__enumerate** () -- 1 connections
+  - <- calls <- [[compresssilence]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__fftconvolve** () -- 1 connections
+  - <- calls <- [[removeduplicates]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__float** () -- 1 connections
+  - <- calls <- [[normalizegain]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__fromfile** () -- 1 connections
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__isdir** () -- 1 connections
+  - <- calls <- [[ensureworker]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__items** () -- 1 connections
+  - <- calls <- [[preprocess]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__join** () -- 1 connections
+  - <- calls <- [[preprocess]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__load_df_model** () -- 1 connections
+  - <- calls <- [[ensureworker]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__logging** () -- 1 connections
+  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__mkdir** () -- 1 connections
+  - <- calls <- [[loaddfmodel]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__norm** () -- 1 connections
+  - <- calls <- [[removeduplicates]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__normalize_gain** () -- 1 connections
+  - <- calls <- [[preprocess]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__open** () -- 1 connections
+  - <- calls <- [[loaddfmodel]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__path** () -- 1 connections
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__pathlib** () -- 1 connections
+  - <- imports <- [[config]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__popen** () -- 1 connections
+  - <- calls <- [[loaddfmodel]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__range** () -- 1 connections
+  - <- calls <- [[removeduplicates]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__remove_duplicates** () -- 1 connections
+  - <- calls <- [[preprocess]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__reshape** () -- 1 connections
+  - <- calls <- [[compresssilence]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__set** () -- 1 connections
+  - <- calls <- [[removeduplicates]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__signal** () -- 1 connections
+  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__sorted** () -- 1 connections
+  - <- calls <- [[removeduplicates]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__stat** () -- 1 connections
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__subprocess** () -- 1 connections
+  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__sys** () -- 1 connections
+  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__tofile** () -- 1 connections
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__touch** () -- 1 connections
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__write_text** () -- 1 connections
+  - <- calls <- [[loaddfmodel]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__zeros** () -- 1 connections
+  - <- calls <- [[compresssilence]]
+- **__unresolved__::ref::__unresolved____ref___cleanup_temp_files** () -- 1 connections
+  - <- calls <- [[loadmodels]]
 - **__unresolved__::ref::__unresolved____ref___ensure_worker** () -- 1 connections
   - <- calls <- [[denoise]]
 - **__unresolved__::ref::__unresolved____ref__add** () -- 1 connections
   - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::__unresolved____ref__app** () -- 1 connections
-  - <- imports <- [[audiopreprocessor]]
 - **__unresolved__::ref::__unresolved____ref__array** () -- 1 connections
   - <- calls <- [[removeduplicates]]
 - **__unresolved__::ref::__unresolved____ref__chmod** () -- 1 connections
   - <- calls <- [[loaddfmodel]]
 - **__unresolved__::ref::__unresolved____ref__clip** () -- 1 connections
   - <- calls <- [[normalizegain]]
-- **__unresolved__::ref::__unresolved____ref__compress_silence** () -- 1 connections
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::__unresolved____ref__copy** () -- 1 connections
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::__unresolved____ref__denoise** () -- 1 connections
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::__unresolved____ref__enumerate** () -- 1 connections
-  - <- calls <- [[compresssilence]]
+- **__unresolved__::ref::__unresolved____ref__diarizationpipeline** () -- 1 connections
+  - <- calls <- [[loadmodels]]
 - **__unresolved__::ref::__unresolved____ref__fftconvolve** () -- 1 connections
   - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::__unresolved____ref__float** () -- 1 connections
-  - <- calls <- [[normalizegain]]
 - **__unresolved__::ref::__unresolved____ref__fromfile** () -- 1 connections
   - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref__full** () -- 1 connections
+  - <- calls <- [[makechunk]]
 - **__unresolved__::ref::__unresolved____ref__isdir** () -- 1 connections
   - <- calls <- [[ensureworker]]
-- **__unresolved__::ref::__unresolved____ref__items** () -- 1 connections
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::__unresolved____ref__join** () -- 1 connections
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::__unresolved____ref__load_df_model** () -- 1 connections
-  - <- calls <- [[ensureworker]]
-- **__unresolved__::ref::__unresolved____ref__logging** () -- 1 connections
-  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref__job_store** () -- 1 connections
+  - <- imports <- [[conftest]]
+- **__unresolved__::ref::__unresolved____ref__linspace** () -- 1 connections
+  - <- calls <- [[sine]]
+- **__unresolved__::ref::__unresolved____ref__load_align_model** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref__load_model** () -- 1 connections
+  - <- calls <- [[loadmodels]]
 - **__unresolved__::ref::__unresolved____ref__mkdir** () -- 1 connections
   - <- calls <- [[loaddfmodel]]
+- **__unresolved__::ref::__unresolved____ref__mock** () -- 1 connections
+  - <- imports <- [[testaudiopreprocessor]]
 - **__unresolved__::ref::__unresolved____ref__norm** () -- 1 connections
   - <- calls <- [[removeduplicates]]
 - **__unresolved__::ref::__unresolved____ref__normalize_gain** () -- 1 connections
   - <- calls <- [[preprocess]]
-- **__unresolved__::ref::__unresolved____ref__open** () -- 1 connections
-  - <- calls <- [[loaddfmodel]]
-- **__unresolved__::ref::__unresolved____ref__path** () -- 1 connections
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::__unresolved____ref__pathlib** () -- 1 connections
-  - <- imports <- [[config]]
 - **__unresolved__::ref::__unresolved____ref__popen** () -- 1 connections
   - <- calls <- [[loaddfmodel]]
-- **__unresolved__::ref::__unresolved____ref__range** () -- 1 connections
-  - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::__unresolved____ref__remove_duplicates** () -- 1 connections
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::__unresolved____ref__reshape** () -- 1 connections
-  - <- calls <- [[compresssilence]]
-- **__unresolved__::ref::__unresolved____ref__set** () -- 1 connections
-  - <- calls <- [[removeduplicates]]
+- **__unresolved__::ref::__unresolved____ref__randn** () -- 1 connections
+  - <- calls <- [[testreturnsvalidwavbytes]]
 - **__unresolved__::ref::__unresolved____ref__signal** () -- 1 connections
   - <- imports <- [[audiopreprocessor]]
-- **__unresolved__::ref::__unresolved____ref__sorted** () -- 1 connections
-  - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::__unresolved____ref__stat** () -- 1 connections
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::__unresolved____ref__subprocess** () -- 1 connections
-  - <- imports <- [[audiopreprocessor]]
-- **__unresolved__::ref::__unresolved____ref__sys** () -- 1 connections
-  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref__sin** () -- 1 connections
+  - <- calls <- [[sine]]
 - **__unresolved__::ref::__unresolved____ref__tofile** () -- 1 connections
   - <- calls <- [[denoise]]
 - **__unresolved__::ref::__unresolved____ref__touch** () -- 1 connections
   - <- calls <- [[denoise]]
 - **__unresolved__::ref::__unresolved____ref__write_text** () -- 1 connections
-  - <- calls <- [[loaddfmodel]]
-- **__unresolved__::ref::__unresolved____ref__zeros** () -- 1 connections
-  - <- calls <- [[compresssilence]]
-- **__unresolved__::ref::_cleanup_temp_files** () -- 1 connections
-  - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::_ensure_worker** () -- 1 connections
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::add** () -- 1 connections
-  - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::array** () -- 1 connections
-  - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::chmod** () -- 1 connections
-  - <- calls <- [[loaddfmodel]]
-- **__unresolved__::ref::clip** () -- 1 connections
-  - <- calls <- [[normalizegain]]
-- **__unresolved__::ref::diarizationpipeline** () -- 1 connections
-  - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::fftconvolve** () -- 1 connections
-  - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::fromfile** () -- 1 connections
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::full** () -- 1 connections
-  - <- calls <- [[makechunk]]
-- **__unresolved__::ref::isdir** () -- 1 connections
-  - <- calls <- [[ensureworker]]
-- **__unresolved__::ref::job_store** () -- 1 connections
-  - <- imports <- [[conftest]]
-- **__unresolved__::ref::linspace** () -- 1 connections
-  - <- calls <- [[sine]]
-- **__unresolved__::ref::load_align_model** () -- 1 connections
-  - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::load_model** () -- 1 connections
-  - <- calls <- [[loadmodels]]
-- **__unresolved__::ref::mkdir** () -- 1 connections
-  - <- calls <- [[loaddfmodel]]
-- **__unresolved__::ref::mock** () -- 1 connections
-  - <- imports <- [[testaudiopreprocessor]]
-- **__unresolved__::ref::norm** () -- 1 connections
-  - <- calls <- [[removeduplicates]]
-- **__unresolved__::ref::normalize_gain** () -- 1 connections
-  - <- calls <- [[preprocess]]
-- **__unresolved__::ref::popen** () -- 1 connections
-  - <- calls <- [[loaddfmodel]]
-- **__unresolved__::ref::randn** () -- 1 connections
-  - <- calls <- [[testreturnsvalidwavbytes]]
-- **__unresolved__::ref::signal** () -- 1 connections
-  - <- imports <- [[audiopreprocessor]]
-- **__unresolved__::ref::sin** () -- 1 connections
-  - <- calls <- [[sine]]
-- **__unresolved__::ref::tofile** () -- 1 connections
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::touch** () -- 1 connections
-  - <- calls <- [[denoise]]
-- **__unresolved__::ref::write_text** () -- 1 connections
   - <- calls <- [[loaddfmodel]]
 - **TestPreprocess** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_audio_preprocessor.py) -- 1 connections
   - <- contains <- [[testaudiopreprocessor]]
@@ -934,10 +918,10 @@ Cohesion: 0.02 | Nodes: 187
   - <- contains <- [[testchunkedutterances]]
 
 ## Internal Relationships
+- config -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__os [EXTRACTED]
+- config -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pathlib [EXTRACTED]
 - config -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
 - config -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
-- config -> imports -> __unresolved__::ref::os [EXTRACTED]
-- config -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
 - audio_preprocessor -> contains -> load_df_model [EXTRACTED]
 - audio_preprocessor -> contains -> _ensure_worker [EXTRACTED]
 - audio_preprocessor -> contains -> denoise [EXTRACTED]
@@ -945,167 +929,160 @@ Cohesion: 0.02 | Nodes: 187
 - audio_preprocessor -> contains -> compress_silence [EXTRACTED]
 - audio_preprocessor -> contains -> normalize_gain [EXTRACTED]
 - audio_preprocessor -> contains -> preprocess [EXTRACTED]
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logging [EXTRACTED]
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__os [EXTRACTED]
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__subprocess [EXTRACTED]
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sys [EXTRACTED]
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__time [EXTRACTED]
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__signal [EXTRACTED]
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__app [EXTRACTED]
 - audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__logging [EXTRACTED]
 - audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
 - audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__subprocess [EXTRACTED]
-- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
 - audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
 - audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__signal [EXTRACTED]
-- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__app [EXTRACTED]
+- _ensure_worker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__isdir [EXTRACTED]
+- _ensure_worker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__warning [EXTRACTED]
+- _ensure_worker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__load_df_model [EXTRACTED]
+- _ensure_worker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__poll [EXTRACTED]
 - _ensure_worker -> calls -> __unresolved__::ref::__unresolved____ref__isdir [EXTRACTED]
 - _ensure_worker -> calls -> __unresolved__::ref::__unresolved____ref__warning [EXTRACTED]
 - _ensure_worker -> calls -> __unresolved__::ref::__unresolved____ref__load_df_model [EXTRACTED]
 - _ensure_worker -> calls -> __unresolved__::ref::__unresolved____ref__poll [EXTRACTED]
-- _ensure_worker -> calls -> __unresolved__::ref::isdir [EXTRACTED]
-- _ensure_worker -> calls -> __unresolved__::ref::warning [EXTRACTED]
-- _ensure_worker -> calls -> __unresolved__::ref::load_df_model [EXTRACTED]
-- _ensure_worker -> calls -> __unresolved__::ref::poll [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__int [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__len [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reshape [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sqrt [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mean [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__enumerate [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__append [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__zeros [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__concatenate [EXTRACTED]
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__info [EXTRACTED]
 - compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__len [EXTRACTED]
 - compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__reshape [EXTRACTED]
 - compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__sqrt [EXTRACTED]
 - compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__mean [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__enumerate [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__append [EXTRACTED]
 - compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__zeros [EXTRACTED]
 - compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__info [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::int [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::reshape [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::sqrt [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::mean [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::zeros [EXTRACTED]
-- compress_silence -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref___ensure_worker [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__warning [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__path [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__unlink [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tofile [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__astype [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__str [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__touch [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__len [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__time [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__exists [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__stat [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__copy [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__fromfile [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__poll [EXTRACTED]
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sleep [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref___ensure_worker [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__warning [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__path [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::__unresolved____ref__unlink [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__tofile [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__astype [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::__unresolved____ref__str [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__touch [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::__unresolved____ref__len [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::__unresolved____ref__max [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__stat [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::__unresolved____ref__copy [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__fromfile [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__poll [EXTRACTED]
 - denoise -> calls -> __unresolved__::ref::__unresolved____ref__sleep [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::_ensure_worker [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::warning [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::path [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::tofile [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::astype [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::touch [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::time [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::stat [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::fromfile [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::poll [EXTRACTED]
-- denoise -> calls -> __unresolved__::ref::sleep [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mkdir [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__str [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__write_text [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__chmod [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__exists [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__unlink [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__open [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__popen [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__time [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__info [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__poll [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__warning [EXTRACTED]
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sleep [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__str [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__write_text [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__chmod [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__unlink [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__open [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__popen [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__info [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__poll [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__warning [EXTRACTED]
 - load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__sleep [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::write_text [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::chmod [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::open [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::popen [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::time [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::poll [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::warning [EXTRACTED]
-- load_df_model -> calls -> __unresolved__::ref::sleep [EXTRACTED]
-- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__len [EXTRACTED]
-- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__float [EXTRACTED]
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__len [EXTRACTED]
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__float [EXTRACTED]
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sqrt [EXTRACTED]
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mean [EXTRACTED]
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__info [EXTRACTED]
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__astype [EXTRACTED]
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__clip [EXTRACTED]
 - normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__sqrt [EXTRACTED]
 - normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__mean [EXTRACTED]
-- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__min [EXTRACTED]
-- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__info [EXTRACTED]
 - normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__astype [EXTRACTED]
 - normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__clip [EXTRACTED]
-- normalize_gain -> calls -> __unresolved__::ref::sqrt [EXTRACTED]
-- normalize_gain -> calls -> __unresolved__::ref::mean [EXTRACTED]
-- normalize_gain -> calls -> __unresolved__::ref::astype [EXTRACTED]
-- normalize_gain -> calls -> __unresolved__::ref::clip [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__len [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__len [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__time [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__normalize_gain [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__append [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__denoise [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__remove_duplicates [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__compress_silence [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__join [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__items [EXTRACTED]
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__info [EXTRACTED]
 - preprocess -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
 - preprocess -> calls -> __unresolved__::ref::__unresolved____ref__normalize_gain [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__append [EXTRACTED]
 - preprocess -> calls -> __unresolved__::ref::__unresolved____ref__denoise [EXTRACTED]
 - preprocess -> calls -> __unresolved__::ref::__unresolved____ref__remove_duplicates [EXTRACTED]
 - preprocess -> calls -> __unresolved__::ref::__unresolved____ref__compress_silence [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__join [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__items [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__info [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::time [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::normalize_gain [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::denoise [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
-- preprocess -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__int [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__len [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__range [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sqrt [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mean [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__append [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__set [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__norm [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__fftconvolve [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__add [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__info [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sorted [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__concatenate [EXTRACTED]
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__array [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__len [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__range [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__sqrt [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__mean [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__append [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__set [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__norm [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__min [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__fftconvolve [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__max [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__add [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__info [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__sorted [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
 - remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__array [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::int [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::sqrt [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::mean [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::norm [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::fftconvolve [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::add [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::sorted [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
-- remove_duplicates -> calls -> __unresolved__::ref::array [EXTRACTED]
-- audio_preprocessor -> contains -> load_df_model [EXTRACTED]
-- audio_preprocessor -> contains -> _ensure_worker [EXTRACTED]
-- audio_preprocessor -> contains -> denoise [EXTRACTED]
-- audio_preprocessor -> contains -> remove_duplicates [EXTRACTED]
-- audio_preprocessor -> contains -> compress_silence [EXTRACTED]
-- audio_preprocessor -> contains -> normalize_gain [EXTRACTED]
-- audio_preprocessor -> contains -> preprocess [EXTRACTED]
-- audio_preprocessor -> imports -> __unresolved__::ref::logging [EXTRACTED]
-- audio_preprocessor -> imports -> __unresolved__::ref::os [EXTRACTED]
-- audio_preprocessor -> imports -> __unresolved__::ref::subprocess [EXTRACTED]
-- audio_preprocessor -> imports -> __unresolved__::ref::time [EXTRACTED]
-- audio_preprocessor -> imports -> __unresolved__::ref::signal [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___cleanup_temp_files [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_model [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_align_model [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__diarizationpipeline [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_df_model [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::_cleanup_temp_files [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::time [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::load_model [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::load_align_model [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::diarizationpipeline [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::warning [EXTRACTED]
-- load_models -> calls -> __unresolved__::ref::load_df_model [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::job_store [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___cleanup_temp_files [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_align_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__diarizationpipeline [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_df_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref___cleanup_temp_files [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__load_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__load_align_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__diarizationpipeline [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__warning [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__load_df_model [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__job_store [EXTRACTED]
 - TestCompressSilence -> contains -> test_compresses_long_silence [EXTRACTED]
 - TestCompressSilence -> contains -> test_preserves_short_silence [EXTRACTED]
 - TestCompressSilence -> contains -> test_does_not_mutate_input [EXTRACTED]
@@ -1121,76 +1098,76 @@ Cohesion: 0.02 | Nodes: 187
 - TestRemoveDuplicates -> contains -> test_skips_silent_regions [EXTRACTED]
 - TestRemoveDuplicates -> contains -> test_does_not_mutate_input [EXTRACTED]
 - TestRemoveDuplicates -> contains -> test_handles_short_audio [EXTRACTED]
-- _silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__zeros [EXTRACTED]
-- _silence -> calls -> __unresolved__::ref::zeros [EXTRACTED]
-- _silence -> calls -> __unresolved__::ref::int [EXTRACTED]
-- _sine -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__linspace [EXTRACTED]
-- _sine -> calls -> __unresolved__::ref::linspace [EXTRACTED]
-- _sine -> calls -> __unresolved__::ref::int [EXTRACTED]
-- _sine -> calls -> __unresolved__::ref::sin [EXTRACTED]
-- test_compresses_long_silence -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_compresses_long_silence -> calls -> __unresolved__::ref::_silence [EXTRACTED]
-- test_compresses_long_silence -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
-- test_compresses_long_silence -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
-- test_compresses_long_silence -> calls -> __unresolved__::ref::int [EXTRACTED]
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::patch [EXTRACTED]
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::denoise [EXTRACTED]
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::assert_array_equal [EXTRACTED]
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::_silence [EXTRACTED]
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
-- test_handles_short_audio -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_handles_short_audio -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
-- test_handles_short_audio -> calls -> __unresolved__::ref::assert_array_equal [EXTRACTED]
-- test_handles_silence_input -> calls -> __unresolved__::ref::_silence [EXTRACTED]
-- test_handles_silence_input -> calls -> __unresolved__::ref::patch [EXTRACTED]
-- test_handles_silence_input -> calls -> __unresolved__::ref::denoise [EXTRACTED]
-- test_keeps_unique_segments -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_keeps_unique_segments -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
-- test_keeps_unique_segments -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
-- test_output_is_1d -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_output_is_1d -> calls -> __unresolved__::ref::patch [EXTRACTED]
-- test_output_is_1d -> calls -> __unresolved__::ref::denoise [EXTRACTED]
-- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::_silence [EXTRACTED]
-- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
-- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
-- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::int [EXTRACTED]
-- test_preserves_short_silence -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_preserves_short_silence -> calls -> __unresolved__::ref::_silence [EXTRACTED]
-- test_preserves_short_silence -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
-- test_preserves_short_silence -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
-- test_removes_repeated_segment -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_removes_repeated_segment -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
-- test_removes_repeated_segment -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
-- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::patch [EXTRACTED]
-- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::denoise [EXTRACTED]
-- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::assert_array_equal [EXTRACTED]
-- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::astype [EXTRACTED]
-- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::patch [EXTRACTED]
-- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::denoise [EXTRACTED]
-- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::isinstance [EXTRACTED]
-- test_skips_silent_regions -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
-- test_skips_silent_regions -> calls -> __unresolved__::ref::_silence [EXTRACTED]
-- test_skips_silent_regions -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_skips_silent_regions -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
-- test_skips_when_worker_none -> calls -> __unresolved__::ref::_sine [EXTRACTED]
-- test_skips_when_worker_none -> calls -> __unresolved__::ref::patch [EXTRACTED]
-- test_skips_when_worker_none -> calls -> __unresolved__::ref::denoise [EXTRACTED]
-- test_skips_when_worker_none -> calls -> __unresolved__::ref::assert_array_equal [EXTRACTED]
 - test_audio_preprocessor -> contains -> _sine [EXTRACTED]
 - test_audio_preprocessor -> contains -> _silence [EXTRACTED]
 - test_audio_preprocessor -> contains -> TestDenoise [EXTRACTED]
 - test_audio_preprocessor -> contains -> TestRemoveDuplicates [EXTRACTED]
 - test_audio_preprocessor -> contains -> TestCompressSilence [EXTRACTED]
 - test_audio_preprocessor -> contains -> TestPreprocess [EXTRACTED]
-- test_audio_preprocessor -> imports -> __unresolved__::ref::mock [EXTRACTED]
-- test_audio_preprocessor -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_audio_preprocessor -> imports -> __unresolved__::ref::audio_preprocessor [EXTRACTED]
+- test_audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__mock [EXTRACTED]
+- test_audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__audio_preprocessor [EXTRACTED]
+- _silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__zeros [EXTRACTED]
+- _silence -> calls -> __unresolved__::ref::__unresolved____ref__zeros [EXTRACTED]
+- _silence -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- _sine -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__linspace [EXTRACTED]
+- _sine -> calls -> __unresolved__::ref::__unresolved____ref__linspace [EXTRACTED]
+- _sine -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- _sine -> calls -> __unresolved__::ref::__unresolved____ref__sin [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::__unresolved____ref___silence [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::__unresolved____ref__compress_silence [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref__patch [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref__denoise [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref__assert_array_equal [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref__remove_duplicates [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref___silence [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref__compress_silence [EXTRACTED]
+- test_handles_short_audio -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_handles_short_audio -> calls -> __unresolved__::ref::__unresolved____ref__remove_duplicates [EXTRACTED]
+- test_handles_short_audio -> calls -> __unresolved__::ref::__unresolved____ref__assert_array_equal [EXTRACTED]
+- test_handles_silence_input -> calls -> __unresolved__::ref::__unresolved____ref___silence [EXTRACTED]
+- test_handles_silence_input -> calls -> __unresolved__::ref::__unresolved____ref__patch [EXTRACTED]
+- test_handles_silence_input -> calls -> __unresolved__::ref::__unresolved____ref__denoise [EXTRACTED]
+- test_keeps_unique_segments -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_keeps_unique_segments -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
+- test_keeps_unique_segments -> calls -> __unresolved__::ref::__unresolved____ref__remove_duplicates [EXTRACTED]
+- test_output_is_1d -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_output_is_1d -> calls -> __unresolved__::ref::__unresolved____ref__patch [EXTRACTED]
+- test_output_is_1d -> calls -> __unresolved__::ref::__unresolved____ref__denoise [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::__unresolved____ref___silence [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::__unresolved____ref__compress_silence [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- test_preserves_short_silence -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_preserves_short_silence -> calls -> __unresolved__::ref::__unresolved____ref___silence [EXTRACTED]
+- test_preserves_short_silence -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
+- test_preserves_short_silence -> calls -> __unresolved__::ref::__unresolved____ref__compress_silence [EXTRACTED]
+- test_removes_repeated_segment -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_removes_repeated_segment -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
+- test_removes_repeated_segment -> calls -> __unresolved__::ref::__unresolved____ref__remove_duplicates [EXTRACTED]
+- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::__unresolved____ref__patch [EXTRACTED]
+- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::__unresolved____ref__denoise [EXTRACTED]
+- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::__unresolved____ref__assert_array_equal [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::__unresolved____ref__astype [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::__unresolved____ref__patch [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::__unresolved____ref__denoise [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::__unresolved____ref__isinstance [EXTRACTED]
+- test_skips_silent_regions -> calls -> __unresolved__::ref::__unresolved____ref__concatenate [EXTRACTED]
+- test_skips_silent_regions -> calls -> __unresolved__::ref::__unresolved____ref___silence [EXTRACTED]
+- test_skips_silent_regions -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_skips_silent_regions -> calls -> __unresolved__::ref::__unresolved____ref__remove_duplicates [EXTRACTED]
+- test_skips_when_worker_none -> calls -> __unresolved__::ref::__unresolved____ref___sine [EXTRACTED]
+- test_skips_when_worker_none -> calls -> __unresolved__::ref::__unresolved____ref__patch [EXTRACTED]
+- test_skips_when_worker_none -> calls -> __unresolved__::ref::__unresolved____ref__denoise [EXTRACTED]
+- test_skips_when_worker_none -> calls -> __unresolved__::ref::__unresolved____ref__assert_array_equal [EXTRACTED]
 - TestExtractSpeakerAudio -> contains -> test_extracts_single_speaker [EXTRACTED]
 - TestExtractSpeakerAudio -> contains -> test_returns_none_for_short_duration [EXTRACTED]
 - TestExtractSpeakerAudio -> contains -> test_returns_none_for_missing_speaker [EXTRACTED]
@@ -1203,125 +1180,125 @@ Cohesion: 0.02 | Nodes: 187
 - TestMuteNonSpeaker -> contains -> test_mutes_other_speakers [EXTRACTED]
 - TestMuteNonSpeaker -> contains -> test_does_not_mutate_original [EXTRACTED]
 - TestToWavBytes -> contains -> test_returns_valid_wav_bytes [EXTRACTED]
-- test_clips_end_beyond_chunk -> calls -> __unresolved__::ref::arange [EXTRACTED]
-- test_clips_end_beyond_chunk -> calls -> __unresolved__::ref::extract_utterance_audio_local [EXTRACTED]
-- test_clips_end_beyond_chunk -> calls -> __unresolved__::ref::int [EXTRACTED]
-- test_clips_negative_start -> calls -> __unresolved__::ref::arange [EXTRACTED]
-- test_clips_negative_start -> calls -> __unresolved__::ref::extract_utterance_audio_local [EXTRACTED]
-- test_clips_negative_start -> calls -> __unresolved__::ref::int [EXTRACTED]
-- test_does_not_copy_array -> calls -> __unresolved__::ref::ones [EXTRACTED]
-- test_does_not_copy_array -> calls -> __unresolved__::ref::extract_utterance_audio_local [EXTRACTED]
-- test_does_not_copy_array -> calls -> __unresolved__::ref::int [EXTRACTED]
-- test_does_not_mutate_original -> calls -> __unresolved__::ref::ones [EXTRACTED]
-- test_does_not_mutate_original -> calls -> __unresolved__::ref::_seg [EXTRACTED]
-- test_does_not_mutate_original -> calls -> __unresolved__::ref::mute_non_speaker [EXTRACTED]
-- test_does_not_mutate_original -> calls -> __unresolved__::ref::all [EXTRACTED]
-- test_empty_slice_when_end_before_start -> calls -> __unresolved__::ref::arange [EXTRACTED]
-- test_empty_slice_when_end_before_start -> calls -> __unresolved__::ref::extract_utterance_audio_local [EXTRACTED]
-- test_extracts_single_speaker -> calls -> __unresolved__::ref::ones [EXTRACTED]
-- test_extracts_single_speaker -> calls -> __unresolved__::ref::_seg [EXTRACTED]
-- test_extracts_single_speaker -> calls -> __unresolved__::ref::extract_speaker_audio [EXTRACTED]
-- test_extracts_single_speaker -> calls -> __unresolved__::ref::int [EXTRACTED]
-- test_extracts_with_padding -> calls -> __unresolved__::ref::arange [EXTRACTED]
-- test_extracts_with_padding -> calls -> __unresolved__::ref::utteranceboundary [EXTRACTED]
-- test_extracts_with_padding -> calls -> __unresolved__::ref::extract_utterance_audio [EXTRACTED]
-- test_extracts_with_padding -> calls -> __unresolved__::ref::int [EXTRACTED]
-- test_mutes_other_speakers -> calls -> __unresolved__::ref::ones [EXTRACTED]
-- test_mutes_other_speakers -> calls -> __unresolved__::ref::_seg [EXTRACTED]
-- test_mutes_other_speakers -> calls -> __unresolved__::ref::mute_non_speaker [EXTRACTED]
-- test_mutes_other_speakers -> calls -> __unresolved__::ref::all [EXTRACTED]
-- test_mutes_other_speakers -> calls -> __unresolved__::ref::int [EXTRACTED]
-- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::ones [EXTRACTED]
-- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::_seg [EXTRACTED]
-- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::extract_speaker_audio [EXTRACTED]
-- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::ones [EXTRACTED]
-- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::_seg [EXTRACTED]
-- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::extract_speaker_audio [EXTRACTED]
-- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::astype [EXTRACTED]
-- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::randn [EXTRACTED]
-- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::isinstance [EXTRACTED]
-- test_slices_within_chunk -> calls -> __unresolved__::ref::arange [EXTRACTED]
-- test_slices_within_chunk -> calls -> __unresolved__::ref::extract_utterance_audio_local [EXTRACTED]
-- test_slices_within_chunk -> calls -> __unresolved__::ref::int [EXTRACTED]
 - test_audio_splitter -> contains -> _seg [EXTRACTED]
 - test_audio_splitter -> contains -> TestExtractSpeakerAudio [EXTRACTED]
 - test_audio_splitter -> contains -> TestExtractUtteranceAudio [EXTRACTED]
 - test_audio_splitter -> contains -> TestExtractUtteranceAudioLocal [EXTRACTED]
 - test_audio_splitter -> contains -> TestMuteNonSpeaker [EXTRACTED]
 - test_audio_splitter -> contains -> TestToWavBytes [EXTRACTED]
-- test_audio_splitter -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- _make_chunk -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__full [EXTRACTED]
-- _make_chunk -> calls -> __unresolved__::ref::full [EXTRACTED]
-- _make_chunk -> calls -> __unresolved__::ref::int [EXTRACTED]
+- test_audio_splitter -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_clips_end_beyond_chunk -> calls -> __unresolved__::ref::__unresolved____ref__arange [EXTRACTED]
+- test_clips_end_beyond_chunk -> calls -> __unresolved__::ref::__unresolved____ref__extract_utterance_audio_local [EXTRACTED]
+- test_clips_end_beyond_chunk -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- test_clips_negative_start -> calls -> __unresolved__::ref::__unresolved____ref__arange [EXTRACTED]
+- test_clips_negative_start -> calls -> __unresolved__::ref::__unresolved____ref__extract_utterance_audio_local [EXTRACTED]
+- test_clips_negative_start -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- test_does_not_copy_array -> calls -> __unresolved__::ref::__unresolved____ref__ones [EXTRACTED]
+- test_does_not_copy_array -> calls -> __unresolved__::ref::__unresolved____ref__extract_utterance_audio_local [EXTRACTED]
+- test_does_not_copy_array -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref__ones [EXTRACTED]
+- test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref___seg [EXTRACTED]
+- test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref__mute_non_speaker [EXTRACTED]
+- test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref__all [EXTRACTED]
+- test_empty_slice_when_end_before_start -> calls -> __unresolved__::ref::__unresolved____ref__arange [EXTRACTED]
+- test_empty_slice_when_end_before_start -> calls -> __unresolved__::ref::__unresolved____ref__extract_utterance_audio_local [EXTRACTED]
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref__ones [EXTRACTED]
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref___seg [EXTRACTED]
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref__extract_speaker_audio [EXTRACTED]
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- test_extracts_with_padding -> calls -> __unresolved__::ref::__unresolved____ref__arange [EXTRACTED]
+- test_extracts_with_padding -> calls -> __unresolved__::ref::__unresolved____ref__utteranceboundary [EXTRACTED]
+- test_extracts_with_padding -> calls -> __unresolved__::ref::__unresolved____ref__extract_utterance_audio [EXTRACTED]
+- test_extracts_with_padding -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref__ones [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref___seg [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref__mute_non_speaker [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref__all [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref__ones [EXTRACTED]
+- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref___seg [EXTRACTED]
+- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref__extract_speaker_audio [EXTRACTED]
+- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref__ones [EXTRACTED]
+- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref___seg [EXTRACTED]
+- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref__extract_speaker_audio [EXTRACTED]
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::__unresolved____ref__astype [EXTRACTED]
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::__unresolved____ref__randn [EXTRACTED]
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::__unresolved____ref__isinstance [EXTRACTED]
+- test_slices_within_chunk -> calls -> __unresolved__::ref::__unresolved____ref__arange [EXTRACTED]
+- test_slices_within_chunk -> calls -> __unresolved__::ref::__unresolved____ref__extract_utterance_audio_local [EXTRACTED]
+- test_slices_within_chunk -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
 - test_chunked_utterances -> contains -> _word [EXTRACTED]
 - test_chunked_utterances -> contains -> _make_chunk [EXTRACTED]
-- test_chunked_utterances -> imports -> __unresolved__::ref::io [EXTRACTED]
-- test_chunked_utterances -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_chunked_utterances -> imports -> __unresolved__::ref::chunk_utterance_emitter [EXTRACTED]
+- test_chunked_utterances -> imports -> __unresolved__::ref::__unresolved____ref__io [EXTRACTED]
+- test_chunked_utterances -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_chunked_utterances -> imports -> __unresolved__::ref::__unresolved____ref__chunk_utterance_emitter [EXTRACTED]
+- _make_chunk -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__full [EXTRACTED]
+- _make_chunk -> calls -> __unresolved__::ref::__unresolved____ref__full [EXTRACTED]
+- _make_chunk -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
 
 ## Cross-Community Connections
-- compress_silence -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- compress_silence -> calls -> __unresolved__::ref::enumerate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- compress_silence -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- compress_silence -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- denoise -> calls -> __unresolved__::ref::unlink (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- denoise -> calls -> __unresolved__::ref::str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- denoise -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- denoise -> calls -> __unresolved__::ref::max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- denoise -> calls -> __unresolved__::ref::copy (-> [[unresolvedrefword-unresolvedrefsegment]])
-- load_df_model -> calls -> __unresolved__::ref::str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- load_df_model -> calls -> __unresolved__::ref::unlink (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- load_df_model -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- normalize_gain -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- normalize_gain -> calls -> __unresolved__::ref::float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- normalize_gain -> calls -> __unresolved__::ref::min (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- normalize_gain -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- preprocess -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- preprocess -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- preprocess -> calls -> __unresolved__::ref::join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- preprocess -> calls -> __unresolved__::ref::items (-> [[unresolvedrefword-unresolvedrefsegment]])
-- preprocess -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- remove_duplicates -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- remove_duplicates -> calls -> __unresolved__::ref::range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- remove_duplicates -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- remove_duplicates -> calls -> __unresolved__::ref::set (-> [[unresolvedrefword-unresolvedrefsegment]])
-- remove_duplicates -> calls -> __unresolved__::ref::min (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- remove_duplicates -> calls -> __unresolved__::ref::max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- remove_duplicates -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- audio_preprocessor -> imports -> __unresolved__::ref::sys (-> [[apifetch-refreshtokenonce]])
-- audio_preprocessor -> imports -> __unresolved__::ref::app (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__time (-> [[uncountedvoiceapiappsttprocessorpyentitysttprocessor-key-findings]])
-- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__warning (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- load_models -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _sine -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _sine -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sin (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
-- test_compresses_long_silence -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_does_not_mutate_input -> calls -> __unresolved__::ref::copy (-> [[unresolvedrefword-unresolvedrefsegment]])
-- test_handles_silence_input -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_keeps_unique_segments -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_preserves_short_silence -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_removes_repeated_segment -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_skips_silent_regions -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_clips_end_beyond_chunk -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_clips_negative_start -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_empty_slice_when_end_before_start -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_extracts_single_speaker -> calls -> __unresolved__::ref::abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_extracts_single_speaker -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_extracts_with_padding -> calls -> __unresolved__::ref::abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_extracts_with_padding -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::to_wav_bytes (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_slices_within_chunk -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_audio_splitter -> imports -> __unresolved__::ref::audio_splitter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_audio_splitter -> imports -> __unresolved__::ref::utterance_segmenter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _make_chunk -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_chunked_utterances -> contains -> _as_segments (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_chunked_utterances -> contains -> _run_chunked_utterance_loop (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_chunked_utterances -> contains -> TestChunkedUtteranceLoop (-> [[unresolvedrefword-unresolvedrefsegment]])
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__sys (-> [[apifetch-refreshtokenonce]])
+- audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref__app (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__enumerate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- compress_silence -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref__unlink (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- denoise -> calls -> __unresolved__::ref::__unresolved____ref__copy (-> [[unresolvedrefunresolvedrefword-unresolvedrefunresolvedrefsegment]])
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__unlink (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- load_df_model -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- normalize_gain -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__items (-> [[unresolvedrefunresolvedrefword-unresolvedrefunresolvedrefsegment]])
+- preprocess -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__set (-> [[unresolvedrefunresolvedrefword-unresolvedrefunresolvedrefsegment]])
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- remove_duplicates -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__time (-> [[unresolvedrefuncountedvoiceapiappsttprocessorpyentitysttprocessor-key-findings]])
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__warning (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _silence -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _sine -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _sine -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sin (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
+- test_compresses_long_silence -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::__unresolved____ref__copy (-> [[unresolvedrefunresolvedrefword-unresolvedrefunresolvedrefsegment]])
+- test_handles_silence_input -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_keeps_unique_segments -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::__unresolved____ref__abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_preserves_short_silence -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_removes_repeated_segment -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_skips_silent_regions -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_audio_splitter -> imports -> __unresolved__::ref::__unresolved____ref__audio_splitter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_audio_splitter -> imports -> __unresolved__::ref::__unresolved____ref__utterance_segmenter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_clips_end_beyond_chunk -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_clips_negative_start -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_empty_slice_when_end_before_start -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref__abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_extracts_with_padding -> calls -> __unresolved__::ref::__unresolved____ref__abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_extracts_with_padding -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::__unresolved____ref__to_wav_bytes (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_slices_within_chunk -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_chunked_utterances -> contains -> _as_segments (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_chunked_utterances -> contains -> _run_chunked_utterance_loop (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_chunked_utterances -> contains -> TestChunkedUtteranceLoop (-> [[unresolvedrefunresolvedrefword-unresolvedrefunresolvedrefsegment]])
+- _make_chunk -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 
 ## Context
 이 커뮤니티는 denoise, remove_duplicates, load_df_model를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 audio_preprocessor.py, config.py, conftest.py, stt_processor.py, test_audio_preprocessor.py이다.

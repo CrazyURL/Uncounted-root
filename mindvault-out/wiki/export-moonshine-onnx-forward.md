@@ -11,114 +11,122 @@ Cohesion: 0.07 | Nodes: 42
   - -> contains -> [[onnxbidirectionalmask]]
   - -> contains -> [[makekvcache]]
   - -> contains -> [[decoderwithpaststacked]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsys]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftorch]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftransformers]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftorch]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftransformers]]
 - **forward** (uncounted-app/scripts/export-moonshine-onnx.py) -- 13 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefenc]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefisinstance]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdec]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefproj]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftensor]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmakekvcache]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstack]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefenc]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdec]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefproj]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftensor]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmakekvcache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstack]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
   - <- contains <- [[encoderwrapper]]
   - <- contains <- [[decoderwrapper]]
   - <- contains <- [[decoderwithpaststacked]]
 - **_make_kv_cache** (uncounted-app/scripts/export-moonshine-onnx.py) -- 9 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftuple]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdynamiccache]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdl]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefml]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefencoderdecodercache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftuple]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdynamiccache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdl]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefml]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefencoderdecodercache]]
   - <- contains <- [[export-moonshine-onnx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones** () -- 7 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones** () -- 7 connections
   - <- calls <- [[forward]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestextractssinglespeaker]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneforshortduration]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneformissingspeaker]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotcopyarray]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestmutesotherspeakers]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotmutateoriginal]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestextractssinglespeaker]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneforshortduration]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneformissingspeaker]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotcopyarray]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestmutesotherspeakers]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotmutateoriginal]]
+- **__unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_extracts_single_speaker** () -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefextractspeakeraudio]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
 - **get_encoder** (uncounted-app/scripts/export-moonshine-onnx.py) -- 6 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetencoder]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefattributeerror]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdir]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetencoder]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefattributeerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
   - <- contains <- [[export-moonshine-onnx]]
-- **uncounted_voice_api__tests__test_audio_splitter_py::function::test_extracts_single_speaker** () -- 6 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefextractspeakeraudio]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg** () -- 5 connections
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestextractssinglespeaker]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneforshortduration]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneformissingspeaker]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestmutesotherspeakers]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotmutateoriginal]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg** () -- 5 connections
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestextractssinglespeaker]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneforshortduration]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneformissingspeaker]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestmutesotherspeakers]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotmutateoriginal]]
+- **__unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_mutes_other_speakers** () -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmutenonspeaker]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefall]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
 - **__init__** (uncounted-app/scripts/export-moonshine-onnx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefinit]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsuper]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefinit]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsuper]]
   - <- contains <- [[encoderwrapper]]
   - <- contains <- [[decoderwrapper]]
   - <- contains <- [[decoderwithpaststacked]]
 - **get_decoder** (uncounted-app/scripts/export-moonshine-onnx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefattributeerror]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdir]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefattributeerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
   - <- contains <- [[export-moonshine-onnx]]
-- **uncounted_voice_api__tests__test_audio_splitter_py::function::test_mutes_other_speakers** () -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmutenonspeaker]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefall]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefint]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__all** () -- 4 connections
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestmutesotherspeakers]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotmutateoriginal]]
-  - <- calls <- [[isbackchannel]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__all** () -- 4 connections
   - <- calls <- [[verifybucket]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr** () -- 4 connections
+  - <- calls <- [[isbackchannel]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestmutesotherspeakers]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotmutateoriginal]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr** () -- 4 connections
   - <- calls <- [[getencoder]]
   - <- calls <- [[forward]]
   - <- calls <- [[getdecoder]]
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sys** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sys** () -- 4 connections
   - <- imports <- [[export-moonshine-onnx]]
-  - <- imports <- [[uncountedvoiceapisampledatascriptscheckchunktimestampspyentitycheckchunktimestamps]]
   - <- imports <- [[testparseinstinct]]
   - <- imports <- [[instinct-cli]]
+  - <- imports <- [[unresolvedrefuncountedvoiceapisampledatascriptscheckchunktimestampspyentitycheckchunktimestamps]]
+- **__unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_does_not_mutate_original** () -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmutenonspeaker]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefall]]
 - **_onnx_causal_mask** (uncounted-app/scripts/export-moonshine-onnx.py) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunsqueeze]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefarange]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunsqueeze]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffloat]]
   - <- contains <- [[export-moonshine-onnx]]
-- **uncounted_voice_api__tests__test_audio_splitter_py::function::test_does_not_mutate_original** () -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmutenonspeaker]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefall]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extract_speaker_audio** () -- 3 connections
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestextractssinglespeaker]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneforshortduration]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneformissingspeaker]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mute_non_speaker** () -- 3 connections
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestmutesotherspeakers]]
-  - <- calls <- [[uncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotmutateoriginal]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extract_speaker_audio** () -- 3 connections
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestextractssinglespeaker]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneforshortduration]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestreturnsnoneformissingspeaker]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mute_non_speaker** () -- 3 connections
   - <- calls <- [[transcribe]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestmutesotherspeakers]]
+  - <- calls <- [[unresolvedrefuncountedvoiceapiteststestaudiosplitterpyfunctiontestdoesnotmutateoriginal]]
+- **__unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_returns_none_for_missing_speaker** () -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefextractspeakeraudio]]
+- **__unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_returns_none_for_short_duration** () -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefextractspeakeraudio]]
 - **DecoderWithPastStacked** (uncounted-app/scripts/export-moonshine-onnx.py) -- 3 connections
   - -> contains -> [[init]]
   - -> contains -> [[forward]]
@@ -131,60 +139,70 @@ Cohesion: 0.07 | Nodes: 42
   - -> contains -> [[init]]
   - -> contains -> [[forward]]
   - <- contains <- [[export-moonshine-onnx]]
-- **uncounted_voice_api__tests__test_audio_splitter_py::function::test_returns_none_for_missing_speaker** () -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefextractspeakeraudio]]
-- **uncounted_voice_api__tests__test_audio_splitter_py::function::test_returns_none_for_short_duration** () -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseg]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefextractspeakeraudio]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__attributeerror** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__attributeerror** () -- 2 connections
   - <- calls <- [[getencoder]]
   - <- calls <- [[getdecoder]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dir** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dir** () -- 2 connections
   - <- calls <- [[getencoder]]
   - <- calls <- [[getdecoder]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tuple** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tuple** () -- 2 connections
   - <- calls <- [[makekvcache]]
   - <- calls <- [[applypadding]]
-- **uncounted_voice_api__sample_data__scripts__check_chunk_timestamps_py::entity::check_chunk_timestamps** () -- 2 connections
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsys]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____init__** () -- 1 connections
+- **__unresolved__::ref::uncounted_voice_api__sample_data__scripts__check_chunk_timestamps_py__entity__check_chunk_timestamps** () -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsys]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____init__** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___dl** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___dl** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___make_kv_cache** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___make_kv_cache** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___ml** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___ml** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dec** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dec** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dynamiccache** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dynamiccache** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__enc** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__enc** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__encoderdecodercache** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__encoderdecodercache** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_encoder** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_encoder** () -- 1 connections
   - <- calls <- [[getencoder]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__proj** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__proj** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__stack** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__stack** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__super** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__super** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tensor** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tensor** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__transformers** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__transformers** () -- 1 connections
   - <- imports <- [[export-moonshine-onnx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__unsqueeze** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__unsqueeze** () -- 1 connections
   - <- calls <- [[onnxcausalmask]]
 - **_onnx_bidirectional_mask** (uncounted-app/scripts/export-moonshine-onnx.py) -- 1 connections
   - <- contains <- [[export-moonshine-onnx]]
 
 ## Internal Relationships
+- __unresolved__::ref::uncounted_voice_api__sample_data__scripts__check_chunk_timestamps_py__entity__check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sys [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mute_non_speaker [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__all [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extract_speaker_audio [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mute_non_speaker [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__all [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extract_speaker_audio [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extract_speaker_audio [EXTRACTED]
 - DecoderWithPastStacked -> contains -> __init__ [EXTRACTED]
 - DecoderWithPastStacked -> contains -> forward [EXTRACTED]
 - DecoderWrapper -> contains -> __init__ [EXTRACTED]
@@ -199,68 +217,50 @@ Cohesion: 0.07 | Nodes: 42
 - export-moonshine-onnx -> contains -> _onnx_bidirectional_mask [EXTRACTED]
 - export-moonshine-onnx -> contains -> _make_kv_cache [EXTRACTED]
 - export-moonshine-onnx -> contains -> DecoderWithPastStacked [EXTRACTED]
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sys [EXTRACTED]
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__transformers [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____init__ [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__super [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tuple [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dynamiccache [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___dl [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___ml [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__encoderdecodercache [EXTRACTED]
-- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__unsqueeze [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__enc [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dec [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__proj [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tensor [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___make_kv_cache [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__stack [EXTRACTED]
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__attributeerror [EXTRACTED]
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dir [EXTRACTED]
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_encoder [EXTRACTED]
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__attributeerror [EXTRACTED]
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dir [EXTRACTED]
-- uncounted_voice_api__sample_data__scripts__check_chunk_timestamps_py::entity::check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sys [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mute_non_speaker [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_does_not_mutate_original -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__all [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extract_speaker_audio [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mute_non_speaker [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__all [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extract_speaker_audio [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___seg [EXTRACTED]
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_returns_none_for_short_duration -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extract_speaker_audio [EXTRACTED]
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sys [EXTRACTED]
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__transformers [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____init__ [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__super [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tuple [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dynamiccache [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___dl [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___ml [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__encoderdecodercache [EXTRACTED]
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__unsqueeze [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__enc [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ones [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dec [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__proj [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tensor [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___make_kv_cache [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__stack [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__attributeerror [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dir [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_encoder [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__attributeerror [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dir [EXTRACTED]
 
 ## Cross-Community Connections
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__os (-> [[createdocument-generatedocx]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__torch (-> [[uncountedvoiceapiappsttprocessorpyentitysttprocessor-key-findings]])
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__arange (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__isinstance (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- uncounted_voice_api__sample_data__scripts__check_chunk_timestamps_py::entity::check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmin-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffloor]])
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- uncounted_voice_api__tests__test_audio_splitter_py::function::test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- __unresolved__::ref::uncounted_voice_api__sample_data__scripts__check_chunk_timestamps_py__entity__check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__abs (-> [[piisessioncard-detectbeepintervals]])
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_extracts_single_speaker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- __unresolved__::ref::uncounted_voice_api__tests__test_audio_splitter_py__function__test_mutes_other_speakers -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__int (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__os (-> [[createdocument-generatedocx]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__torch (-> [[unresolvedrefuncountedvoiceapiappsttprocessorpyentitysttprocessor-key-findings]])
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__arange (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__isinstance (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 
 ## Context
 이 커뮤니티는 export-moonshine-onnx, forward, _make_kv_cache를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 export-moonshine-onnx.py이다.

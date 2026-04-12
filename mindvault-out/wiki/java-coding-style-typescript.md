@@ -3,7 +3,7 @@ Cohesion: 0.08 | Nodes: 33
 
 ## Key Nodes
 - **Java Coding Style** (.claude/rules/java/coding-style.md) -- 10 connections
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcodingstyle]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcodingstyle]]
   - -> contains -> [[formatting]]
   - -> contains -> [[immutability]]
   - -> contains -> [[naming]]
@@ -22,7 +22,7 @@ Cohesion: 0.08 | Nodes: 33
   - <- has_code_example <- [[error-handling]]
   - <- has_code_example <- [[input-validation]]
 - **TypeScript/JavaScript Coding Style** (.claude/rules/typescript/coding-style.md) -- 7 connections
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcodingstyle]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcodingstyle]]
   - -> contains -> [[types-and-interfaces]]
   - -> contains -> [[immutability]]
   - -> contains -> [[error-handling]]
@@ -30,7 +30,7 @@ Cohesion: 0.08 | Nodes: 33
   - -> contains -> [[consolelog]]
   - <- contains <- [[coding-style]]
 - **Python Coding Style** (.claude/rules/python/coding-style.md) -- 6 connections
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcodingstyle]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcodingstyle]]
   - -> contains -> [[standards]]
   - -> contains -> [[immutability]]
   - -> contains -> [[formatting]]
@@ -48,7 +48,7 @@ Cohesion: 0.08 | Nodes: 33
   - <- has_code_example <- [[modern-java-features]]
   - <- has_code_example <- [[optional-usage]]
   - <- has_code_example <- [[error-handling]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__coding_style** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__coding_style** () -- 3 connections
   - <- references <- [[python-coding-style]]
   - <- references <- [[typescriptjavascript-coding-style]]
   - <- references <- [[java-coding-style]]
@@ -122,7 +122,7 @@ Cohesion: 0.08 | Nodes: 33
 - coding-style -> contains -> Java Coding Style [EXTRACTED]
 - Error Handling -> has_code_example -> java [EXTRACTED]
 - Immutability -> has_code_example -> java [EXTRACTED]
-- Java Coding Style -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__coding_style [EXTRACTED]
+- Java Coding Style -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__coding_style [EXTRACTED]
 - Java Coding Style -> contains -> Formatting [EXTRACTED]
 - Java Coding Style -> contains -> Immutability [EXTRACTED]
 - Java Coding Style -> contains -> Naming [EXTRACTED]
@@ -135,7 +135,7 @@ Cohesion: 0.08 | Nodes: 33
 - Optional Usage -> has_code_example -> java [EXTRACTED]
 - coding-style -> contains -> Python Coding Style [EXTRACTED]
 - Immutability -> has_code_example -> python [EXTRACTED]
-- Python Coding Style -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__coding_style [EXTRACTED]
+- Python Coding Style -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__coding_style [EXTRACTED]
 - Python Coding Style -> contains -> Standards [EXTRACTED]
 - Python Coding Style -> contains -> Immutability [EXTRACTED]
 - Python Coding Style -> contains -> Formatting [EXTRACTED]
@@ -154,7 +154,7 @@ Cohesion: 0.08 | Nodes: 33
 - Types and Interfaces -> contains -> Avoid `any` [EXTRACTED]
 - Types and Interfaces -> contains -> React Props [EXTRACTED]
 - Types and Interfaces -> contains -> JavaScript Files [EXTRACTED]
-- TypeScript/JavaScript Coding Style -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__coding_style [EXTRACTED]
+- TypeScript/JavaScript Coding Style -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__coding_style [EXTRACTED]
 - TypeScript/JavaScript Coding Style -> contains -> Types and Interfaces [EXTRACTED]
 - TypeScript/JavaScript Coding Style -> contains -> Immutability [EXTRACTED]
 - TypeScript/JavaScript Coding Style -> contains -> Error Handling [EXTRACTED]
