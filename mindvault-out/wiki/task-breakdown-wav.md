@@ -2,7 +2,7 @@
 Cohesion: 0.15 | Nodes: 13
 
 ## Key Nodes
-- **작업 분해 (Task Breakdown)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 9 connections
+- **작업 분해 (Task Breakdown)** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 9 connections
   - -> contains -> [[t1-utterancesegmenter]]
   - -> contains -> [[t2-audiosplitter]]
   - -> contains -> [[t3-transcribechunked-wav]]
@@ -12,32 +12,32 @@ Cohesion: 0.15 | Nodes: 13
   - -> contains -> [[t7]]
   - -> contains -> [[t8]]
   - <- contains <- [[wav]]
-- **청크 모드 WAV 미생성 버그픽스 계획** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 3 connections
+- **청크 모드 WAV 미생성 버그픽스 계획** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 3 connections
   - -> contains -> [[a]]
   - -> contains -> [[task-breakdown]]
   - -> contains -> [[dag]]
-- **채택 전략 — 옵션 A: 청크별 로컬 분리** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 2 connections
+- **채택 전략 — 옵션 A: 청크별 로컬 분리** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 2 connections
   - -> contains -> [[transcribe]]
   - <- contains <- [[wav]]
-- **의존성 DAG** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **의존성 DAG** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[wav]]
-- **T1. utterance_segmenter 청크 단위 적응** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **T1. utterance_segmenter 청크 단위 적응** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[task-breakdown]]
-- **T2. audio_splitter에 로컬 슬라이스 헬퍼 추가** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **T2. audio_splitter에 로컬 슬라이스 헬퍼 추가** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[task-breakdown]]
-- **T3. `_transcribe_chunked` 루프에 발화 분리 + WAV 생성 통합** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **T3. `_transcribe_chunked` 루프에 발화 분리 + WAV 생성 통합** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[task-breakdown]]
-- **T4. `transcribe()` 상위 병합** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **T4. `transcribe()` 상위 병합** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[task-breakdown]]
-- **T5. API 스펙/문서 업데이트** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **T5. API 스펙/문서 업데이트** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[task-breakdown]]
-- **T6. 테스트** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **T6. 테스트** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[task-breakdown]]
-- **T7. 실측 검증** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **T7. 실측 검증** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[task-breakdown]]
-- **T8. 앱/어드민 클라이언트 수용 확인** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **T8. 앱/어드민 클라이언트 수용 확인** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[task-breakdown]]
-- **`transcribe()` 병합** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
+- **`transcribe()` 병합** (.orchestrate-consult/20260412-121319/prompt_plan.md) -- 1 connections
   - <- contains <- [[a]]
 
 ## Internal Relationships

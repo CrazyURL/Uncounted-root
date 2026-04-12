@@ -2,7 +2,7 @@
 Cohesion: 1.00 | Nodes: 1
 
 ## Key Nodes
-- **화자 임베딩 모델 (`assets/embedding/`)** (/Users/gdash/project/uncounted-project/uncounted-docs/앱/온디바이스_모델_파일_제거_분석.md) -- 0 connections
+- **화자 임베딩 모델 (`assets/embedding/`)** (uncounted-docs/앱/온디바이스_모델_파일_제거_분석.md) -- 0 connections
 
 ## Internal Relationships
 

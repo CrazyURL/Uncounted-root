@@ -1,32 +1,32 @@
 # create_document & generate_docx
-Cohesion: 0.05 | Nodes: 77
+Cohesion: 0.08 | Nodes: 51
 
 ## Key Nodes
 - **create_document** (uncounted-docs/scripts/generate_gstar_docx.py) -- 25 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdocument]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcm]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddrpr]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddp]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddtable]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcelltext]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcell]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefshadecell]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefenumerate]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddbullet]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddpagebreak]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddsectionheading]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddsubheading]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefadddash]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmerge]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjoin]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdirname]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsave]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefdocument]]
+  - -> calls -> [[unresolvedrefcm]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefgetoraddrpr]]
+  - -> calls -> [[unresolvedrefappend]]
+  - -> calls -> [[unresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefaddp]]
+  - -> calls -> [[unresolvedrefaddtable]]
+  - -> calls -> [[unresolvedrefcelltext]]
+  - -> calls -> [[unresolvedrefcell]]
+  - -> calls -> [[unresolvedrefshadecell]]
+  - -> calls -> [[unresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefaddbullet]]
+  - -> calls -> [[unresolvedrefaddpagebreak]]
+  - -> calls -> [[unresolvedrefaddsectionheading]]
+  - -> calls -> [[unresolvedrefaddsubheading]]
+  - -> calls -> [[unresolvedrefadddash]]
+  - -> calls -> [[unresolvedrefmerge]]
+  - -> calls -> [[unresolvedrefrange]]
+  - -> calls -> [[unresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefdirname]]
+  - -> calls -> [[unresolvedrefsave]]
+  - -> calls -> [[unresolvedrefprint]]
   - <- contains <- [[generategstardocx]]
 - **generate_docx** (uncounted-docs/scripts/generate_docx.py) -- 17 connections
   - -> contains -> [[setfont]]
@@ -38,14 +38,14 @@ Cohesion: 0.05 | Nodes: 77
   - -> contains -> [[makeoverviewtable]]
   - -> contains -> [[readmd]]
   - -> contains -> [[createdocument]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefre]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdocx]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefshared]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftext]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftable]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefns]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefoxml]]
+  - -> imports -> [[unresolvedrefre]]
+  - -> imports -> [[unresolvedrefos]]
+  - -> imports -> [[unresolvedrefdocx]]
+  - -> imports -> [[unresolvedrefshared]]
+  - -> imports -> [[unresolvedreftext]]
+  - -> imports -> [[unresolvedreftable]]
+  - -> imports -> [[unresolvedrefns]]
+  - -> imports -> [[unresolvedrefoxml]]
 - **generate_gstar_docx** (uncounted-docs/scripts/generate_gstar_docx.py) -- 16 connections
   - -> contains -> [[setfont]]
   - -> contains -> [[addp]]
@@ -56,27 +56,27 @@ Cohesion: 0.05 | Nodes: 77
   - -> contains -> [[addbullet]]
   - -> contains -> [[adddash]]
   - -> contains -> [[createdocument]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdocx]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefshared]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftext]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftable]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefns]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefoxml]]
+  - -> imports -> [[unresolvedrefos]]
+  - -> imports -> [[unresolvedrefdocx]]
+  - -> imports -> [[unresolvedrefshared]]
+  - -> imports -> [[unresolvedreftext]]
+  - -> imports -> [[unresolvedreftable]]
+  - -> imports -> [[unresolvedrefns]]
+  - -> imports -> [[unresolvedrefoxml]]
 - **make_overview_table** (uncounted-docs/scripts/generate_docx.py) -- 12 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddtable]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcell]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcm]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefheadercell]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsplit]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefendswith]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefaddtable]]
+  - -> calls -> [[unresolvedrefcell]]
+  - -> calls -> [[unresolvedrefcm]]
+  - -> calls -> [[unresolvedrefheadercell]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefendswith]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefaddparagraph]]
   - <- contains <- [[generatedocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run** () -- 10 connections
+- **__unresolved__::ref::add_run** () -- 10 connections
   - <- calls <- [[addp]]
   - <- calls <- [[headercell]]
   - <- calls <- [[contentcell]]
@@ -87,7 +87,7 @@ Cohesion: 0.05 | Nodes: 77
   - <- calls <- [[addsectionheading]]
   - <- calls <- [[addsubheading]]
   - <- calls <- [[addbullet]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt** () -- 10 connections
+- **__unresolved__::ref::pt** () -- 10 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[addp]]
   - <- calls <- [[makeoverviewtable]]
@@ -98,7 +98,7 @@ Cohesion: 0.05 | Nodes: 77
   - <- calls <- [[addsubheading]]
   - <- calls <- [[addbullet]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font** () -- 10 connections
+- **__unresolved__::ref::set_font** () -- 10 connections
   - <- calls <- [[addp]]
   - <- calls <- [[headercell]]
   - <- calls <- [[contentcell]]
@@ -109,16 +109,7 @@ Cohesion: 0.05 | Nodes: 77
   - <- calls <- [[addsectionheading]]
   - <- calls <- [[addsubheading]]
   - <- calls <- [[addbullet]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__os** () -- 8 connections
-  - <- imports <- [[download-wespeaker-onnx]]
-  - <- imports <- [[sttcolab]]
-  - <- imports <- [[export-moonshine-onnx]]
-  - <- imports <- [[testparseinstinct]]
-  - <- imports <- [[instinct-cli]]
-  - <- imports <- [[generatedocx]]
-  - <- imports <- [[generategstardocx]]
-  - <- imports <- [[unresolvedrefunresolvedrefunresolvedrefuncountedvoiceapiappsttprocessorpyentitysttprocessor]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph** () -- 7 connections
+- **__unresolved__::ref::add_paragraph** () -- 7 connections
   - <- calls <- [[addp]]
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
@@ -127,312 +118,219 @@ Cohesion: 0.05 | Nodes: 77
   - <- calls <- [[addsubheading]]
   - <- calls <- [[addbullet]]
 - **set_font** (uncounted-docs/scripts/generate_docx.py) -- 7 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddrpr]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefinsert]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrgbcolor]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefgetoraddrpr]]
+  - -> calls -> [[unresolvedrefinsert]]
+  - -> calls -> [[unresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefrgbcolor]]
   - <- contains <- [[generatedocx]]
 - **set_font** (uncounted-docs/scripts/generate_gstar_docx.py) -- 7 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddrpr]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrgbcolor]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefgetoraddrpr]]
+  - -> calls -> [[unresolvedrefappend]]
+  - -> calls -> [[unresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefrgbcolor]]
   - <- contains <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fetch** () -- 6 connections
-  - <- calls <- [[loadfromstorage]]
-  - <- calls <- [[voicefetch]]
-  - <- calls <- [[voicefetchblob]]
-  - <- calls <- [[loadfromstorage]]
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__nsdecls** () -- 6 connections
+- **__unresolved__::ref::nsdecls** () -- 6 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[shadecell]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[setfont]]
   - <- calls <- [[shadecell]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__parse_xml** () -- 6 connections
+- **__unresolved__::ref::parse_xml** () -- 6 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[shadecell]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[setfont]]
   - <- calls <- [[shadecell]]
   - <- calls <- [[createdocument]]
-- **stt_colab** (uncounted-app/scripts/stt_colab.py) -- 6 connections
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcolab]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdatetime]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsupabase]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffasterwhisper]]
-- **voiceFetch** (uncounted-app/src/lib/api/voiceApi.ts) -- 6 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffetch]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftimeout]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcatch]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftext]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
-  - <- contains <- [[voiceapi]]
 - **add_bullet** (uncounted-docs/scripts/generate_gstar_docx.py) -- 6 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcm]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefcm]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
 - **add_p** (uncounted-docs/scripts/generate_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
   - <- contains <- [[generatedocx]]
 - **read_md** (uncounted-docs/scripts/generate_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjoin]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdirname]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefopen]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefread]]
+  - -> calls -> [[unresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefdirname]]
+  - -> calls -> [[unresolvedrefopen]]
+  - -> calls -> [[unresolvedrefread]]
   - <- contains <- [[generatedocx]]
 - **shade_cell** (uncounted-docs/scripts/generate_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddtcpr]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefappend]]
+  - -> calls -> [[unresolvedrefgetoraddtcpr]]
+  - -> calls -> [[unresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefnsdecls]]
   - <- contains <- [[generatedocx]]
 - **add_p** (uncounted-docs/scripts/generate_gstar_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
 - **add_section_heading** (uncounted-docs/scripts/generate_gstar_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
 - **add_sub_heading** (uncounted-docs/scripts/generate_gstar_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparagraph]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpt]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefaddparagraph]]
+  - -> calls -> [[unresolvedrefpt]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
 - **shade_cell** (uncounted-docs/scripts/generate_gstar_docx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefparsexml]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefnsdecls]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetoraddtcpr]]
+  - -> calls -> [[unresolvedrefparsexml]]
+  - -> calls -> [[unresolvedrefnsdecls]]
+  - -> calls -> [[unresolvedrefappend]]
+  - -> calls -> [[unresolvedrefgetoraddtcpr]]
   - <- contains <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cm** () -- 4 connections
+- **__unresolved__::ref::cm** () -- 4 connections
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[addbullet]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dirname** () -- 4 connections
+- **__unresolved__::ref::dirname** () -- 4 connections
   - <- calls <- [[readmd]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[downloadobject]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_rpr** () -- 4 connections
+- **__unresolved__::ref::get_or_add_rpr** () -- 4 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[setfont]]
   - <- calls <- [[createdocument]]
-- **audioSanitizer** (uncounted-admin/src/lib/audioSanitizer.ts) -- 4 connections
-  - -> contains -> [[loadfromstorage]]
-  - -> contains -> [[loadaudio]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwavencoder]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstorageupload]]
-- **loadFromStorage** (uncounted-admin/src/lib/audioSanitizer.ts) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetaudiosignedurl]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffetch]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefarraybuffer]]
-  - <- contains <- [[audiosanitizer]]
-- **voiceFetchBlob** (uncounted-app/src/lib/api/voiceApi.ts) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffetch]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftimeout]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefblob]]
-  - <- contains <- [[voiceapi]]
-- **loadFromStorage** (uncounted-app/src/lib/audioSanitizer.ts) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetaudiosignedurl]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffetch]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefarraybuffer]]
-  - <- contains <- [[audiosanitizer]]
 - **header_cell** (uncounted-docs/scripts/generate_docx.py) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefshadecell]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefshadecell]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
   - <- contains <- [[generatedocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_p** () -- 3 connections
+- **__unresolved__::ref::add_p** () -- 3 connections
   - <- calls <- [[addheading]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_table** () -- 3 connections
+- **__unresolved__::ref::add_table** () -- 3 connections
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cell** () -- 3 connections
+- **__unresolved__::ref::cell** () -- 3 connections
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__read** () -- 3 connections
+- **__unresolved__::ref::read** () -- 3 connections
+  - <- calls <- [[testwavbyteshavevalidriffheader]]
   - <- calls <- [[cmdimport]]
   - <- calls <- [[readmd]]
-  - <- calls <- [[unresolvedrefunresolvedrefunresolvedrefuncountedvoiceapiteststestchunkedutterancespyfunctiontestwavbyteshavevalidriffheader]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shade_cell** () -- 3 connections
+- **__unresolved__::ref::shade_cell** () -- 3 connections
   - <- calls <- [[headercell]]
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__text** () -- 3 connections
+- **__unresolved__::ref::text** () -- 3 connections
   - <- calls <- [[voicefetch]]
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **download-wespeaker-onnx** (uncounted-app/scripts/download-wespeaker-onnx.py) -- 3 connections
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhuggingfacehub]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefshutil]]
-- **audioSanitizer** (uncounted-app/src/lib/audioSanitizer.ts) -- 3 connections
-  - -> contains -> [[loadfromstorage]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstorageupload]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaudiodecoderbridge]]
 - **add_heading** (uncounted-docs/scripts/generate_docx.py) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefget]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddp]]
+  - -> calls -> [[unresolvedrefget]]
+  - -> calls -> [[unresolvedrefaddp]]
   - <- contains <- [[generatedocx]]
 - **content_cell** (uncounted-docs/scripts/generate_docx.py) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
   - <- contains <- [[generatedocx]]
 - **cell_text** (uncounted-docs/scripts/generate_gstar_docx.py) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddrun]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetfont]]
+  - -> calls -> [[unresolvedrefaddrun]]
+  - -> calls -> [[unresolvedrefsetfont]]
   - <- contains <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___audiodecoderbridge_** () -- 2 connections
-  - <- imports <- [[audiosanitizer]]
-  - <- imports <- [[audiodecoderbridgetest]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___storageupload_** () -- 2 connections
-  - <- imports <- [[audiosanitizer]]
-  - <- imports <- [[audiosanitizer]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_bullet** () -- 2 connections
+- **__unresolved__::ref::add_bullet** () -- 2 connections
   - <- calls <- [[adddash]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_page_break** () -- 2 connections
+- **__unresolved__::ref::add_page_break** () -- 2 connections
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__arraybuffer** () -- 2 connections
-  - <- calls <- [[loadfromstorage]]
-  - <- calls <- [[loadfromstorage]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__datetime** () -- 2 connections
-  - <- imports <- [[sttcolab]]
-  - <- imports <- [[instinct-cli]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__document** () -- 2 connections
+- **__unresolved__::ref::document** () -- 2 connections
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__docx** () -- 2 connections
+- **__unresolved__::ref::docx** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_tcpr** () -- 2 connections
+- **__unresolved__::ref::get_or_add_tcpr** () -- 2 connections
   - <- calls <- [[shadecell]]
   - <- calls <- [[shadecell]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__getaudiosignedurl** () -- 2 connections
-  - <- calls <- [[loadfromstorage]]
-  - <- calls <- [[loadfromstorage]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__header_cell** () -- 2 connections
+- **__unresolved__::ref::header_cell** () -- 2 connections
   - <- calls <- [[makeoverviewtable]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ns** () -- 2 connections
+- **__unresolved__::ref::ns** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__oxml** () -- 2 connections
+- **__unresolved__::ref::oxml** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__rgbcolor** () -- 2 connections
+- **__unresolved__::ref::rgbcolor** () -- 2 connections
   - <- calls <- [[setfont]]
   - <- calls <- [[setfont]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__save** () -- 2 connections
+- **__unresolved__::ref::save** () -- 2 connections
   - <- calls <- [[createdocument]]
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shared** () -- 2 connections
+- **__unresolved__::ref::shared** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shutil** () -- 2 connections
-  - <- imports <- [[download-wespeaker-onnx]]
-  - <- imports <- [[jobstore]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__table** () -- 2 connections
+- **__unresolved__::ref::table** () -- 2 connections
   - <- imports <- [[generatedocx]]
   - <- imports <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__timeout** () -- 2 connections
-  - <- calls <- [[voicefetch]]
-  - <- calls <- [[voicefetchblob]]
-- **loadAudio** (uncounted-admin/src/lib/audioSanitizer.ts) -- 2 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadfromstorage]]
-  - <- contains <- [[audiosanitizer]]
-- **voiceApi** (uncounted-app/src/lib/api/voiceApi.ts) -- 2 connections
-  - -> contains -> [[voicefetch]]
-  - -> contains -> [[voicefetchblob]]
-- **audioDecoderBridge.test** (uncounted-app/src/lib/audioDecoderBridge.test.ts) -- 2 connections
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaudiodecoderbridge]]
 - **add_dash** (uncounted-docs/scripts/generate_gstar_docx.py) -- 2 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddbullet]]
+  - -> calls -> [[unresolvedrefaddbullet]]
   - <- contains <- [[generategstardocx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_dash** () -- 1 connections
+- **__unresolved__::ref::add_dash** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_section_heading** () -- 1 connections
+- **__unresolved__::ref::add_section_heading** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_sub_heading** () -- 1 connections
+- **__unresolved__::ref::add_sub_heading** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__blob** () -- 1 connections
-  - <- calls <- [[voicefetchblob]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cell_text** () -- 1 connections
+- **__unresolved__::ref::cell_text** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__colab** () -- 1 connections
-  - <- imports <- [[sttcolab]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__faster_whisper** () -- 1 connections
-  - <- imports <- [[sttcolab]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__huggingface_hub** () -- 1 connections
-  - <- imports <- [[download-wespeaker-onnx]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__loadfromstorage** () -- 1 connections
-  - <- calls <- [[loadaudio]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__merge** () -- 1 connections
+- **__unresolved__::ref::merge** () -- 1 connections
   - <- calls <- [[createdocument]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__supabase** () -- 1 connections
-  - <- imports <- [[sttcolab]]
 
 ## Internal Relationships
-- audioSanitizer -> contains -> loadFromStorage [EXTRACTED]
-- audioSanitizer -> contains -> loadAudio [EXTRACTED]
-- audioSanitizer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___storageupload_ [EXTRACTED]
-- loadAudio -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__loadfromstorage [EXTRACTED]
-- loadFromStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__getaudiosignedurl [EXTRACTED]
-- loadFromStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fetch [EXTRACTED]
-- loadFromStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__arraybuffer [EXTRACTED]
-- download-wespeaker-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__os [EXTRACTED]
-- download-wespeaker-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__huggingface_hub [EXTRACTED]
-- download-wespeaker-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shutil [EXTRACTED]
-- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__colab [EXTRACTED]
-- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__os [EXTRACTED]
-- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__datetime [EXTRACTED]
-- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__supabase [EXTRACTED]
-- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__faster_whisper [EXTRACTED]
-- voiceApi -> contains -> voiceFetch [EXTRACTED]
-- voiceApi -> contains -> voiceFetchBlob [EXTRACTED]
-- voiceFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fetch [EXTRACTED]
-- voiceFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__timeout [EXTRACTED]
-- voiceFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__text [EXTRACTED]
-- voiceFetchBlob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fetch [EXTRACTED]
-- voiceFetchBlob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__timeout [EXTRACTED]
-- voiceFetchBlob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__blob [EXTRACTED]
-- audioDecoderBridge.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___audiodecoderbridge_ [EXTRACTED]
-- audioSanitizer -> contains -> loadFromStorage [EXTRACTED]
-- audioSanitizer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___storageupload_ [EXTRACTED]
-- audioSanitizer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___audiodecoderbridge_ [EXTRACTED]
-- loadFromStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__getaudiosignedurl [EXTRACTED]
-- loadFromStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fetch [EXTRACTED]
-- loadFromStorage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__arraybuffer [EXTRACTED]
+- add_heading -> calls -> __unresolved__::ref::add_p [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::add_paragraph [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- content_cell -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- content_cell -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- header_cell -> calls -> __unresolved__::ref::shade_cell [EXTRACTED]
+- header_cell -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- header_cell -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::add_table [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::cell [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::cm [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::header_cell [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- make_overview_table -> calls -> __unresolved__::ref::add_paragraph [EXTRACTED]
+- read_md -> calls -> __unresolved__::ref::dirname [EXTRACTED]
+- read_md -> calls -> __unresolved__::ref::read [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::get_or_add_rpr [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::parse_xml [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::nsdecls [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::rgbcolor [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::get_or_add_tcpr [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::parse_xml [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::nsdecls [EXTRACTED]
 - generate_docx -> contains -> set_font [EXTRACTED]
 - generate_docx -> contains -> add_p [EXTRACTED]
 - generate_docx -> contains -> add_heading [EXTRACTED]
@@ -441,41 +339,59 @@ Cohesion: 0.05 | Nodes: 77
 - generate_docx -> contains -> content_cell [EXTRACTED]
 - generate_docx -> contains -> make_overview_table [EXTRACTED]
 - generate_docx -> contains -> read_md [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__os [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__docx [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shared [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__text [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__table [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ns [EXTRACTED]
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__oxml [EXTRACTED]
-- add_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_p [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- content_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- content_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- header_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shade_cell [EXTRACTED]
-- header_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- header_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_table [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cell [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cm [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__header_cell [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
-- read_md -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dirname [EXTRACTED]
-- read_md -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__read [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_rpr [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__rgbcolor [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_tcpr [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::docx [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::shared [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::text [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::table [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::ns [EXTRACTED]
+- generate_docx -> imports -> __unresolved__::ref::oxml [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::add_paragraph [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::cm [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- add_bullet -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- add_dash -> calls -> __unresolved__::ref::add_bullet [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::add_paragraph [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- add_p -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- add_section_heading -> calls -> __unresolved__::ref::add_paragraph [EXTRACTED]
+- add_section_heading -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- add_section_heading -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- add_section_heading -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- add_sub_heading -> calls -> __unresolved__::ref::add_paragraph [EXTRACTED]
+- add_sub_heading -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- add_sub_heading -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- add_sub_heading -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- cell_text -> calls -> __unresolved__::ref::add_run [EXTRACTED]
+- cell_text -> calls -> __unresolved__::ref::set_font [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::document [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::cm [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::get_or_add_rpr [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::parse_xml [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::nsdecls [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::add_p [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::add_table [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::cell_text [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::cell [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::shade_cell [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::add_bullet [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::add_page_break [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::add_section_heading [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::add_sub_heading [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::add_dash [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::merge [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::dirname [EXTRACTED]
+- create_document -> calls -> __unresolved__::ref::save [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::pt [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::get_or_add_rpr [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::parse_xml [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::nsdecls [EXTRACTED]
+- set_font -> calls -> __unresolved__::ref::rgbcolor [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::parse_xml [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::nsdecls [EXTRACTED]
+- shade_cell -> calls -> __unresolved__::ref::get_or_add_tcpr [EXTRACTED]
 - generate_gstar_docx -> contains -> set_font [EXTRACTED]
 - generate_gstar_docx -> contains -> add_p [EXTRACTED]
 - generate_gstar_docx -> contains -> shade_cell [EXTRACTED]
@@ -485,84 +401,33 @@ Cohesion: 0.05 | Nodes: 77
 - generate_gstar_docx -> contains -> add_bullet [EXTRACTED]
 - generate_gstar_docx -> contains -> add_dash [EXTRACTED]
 - generate_gstar_docx -> contains -> create_document [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__os [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__docx [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shared [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__text [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__table [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ns [EXTRACTED]
-- generate_gstar_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__oxml [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cm [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- add_bullet -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- add_dash -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_bullet [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- add_p -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
-- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- add_section_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_paragraph [EXTRACTED]
-- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- add_sub_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- cell_text -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_run [EXTRACTED]
-- cell_text -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_font [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__document [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cm [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_rpr [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_p [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_table [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cell_text [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__cell [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shade_cell [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_bullet [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_page_break [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_section_heading [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_sub_heading [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__add_dash [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__merge [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dirname [EXTRACTED]
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__save [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pt [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_rpr [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__rgbcolor [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__parse_xml [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__nsdecls [EXTRACTED]
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get_or_add_tcpr [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::docx [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::shared [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::text [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::table [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::ns [EXTRACTED]
+- generate_gstar_docx -> imports -> __unresolved__::ref::oxml [EXTRACTED]
 
 ## Cross-Community Connections
-- audioSanitizer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___wavencoder_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- voiceFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__catch (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
-- voiceFetch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- audioDecoderBridge.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
-- generate_docx -> contains -> create_document (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- generate_docx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__re (-> [[unresolvedrefunresolvedrefunresolvedrefuncountedvoiceapiappsttprocessorpyentitysttprocessor-key-findings]])
-- add_heading -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__split (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- make_overview_table -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__endswith (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
-- read_md -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- read_md -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__open (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__insert (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__enumerate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- create_document -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__print (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- set_font -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- shade_cell -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- add_heading -> calls -> __unresolved__::ref::get (-> [[unresolvedrefpush-unresolvedreflen]])
+- make_overview_table -> calls -> __unresolved__::ref::split (-> [[unresolvedrefpush-unresolvedreflen]])
+- make_overview_table -> calls -> __unresolved__::ref::startswith (-> [[unresolvedrefpush-unresolvedreflen]])
+- make_overview_table -> calls -> __unresolved__::ref::endswith (-> [[piisessioncard-unresolvedrefabs]])
+- read_md -> calls -> __unresolved__::ref::join (-> [[unresolvedrefpush-unresolvedreflen]])
+- read_md -> calls -> __unresolved__::ref::open (-> [[unresolvedrefpush-unresolvedreflen]])
+- set_font -> calls -> __unresolved__::ref::insert (-> [[unresolvedrefpush-unresolvedreflen]])
+- shade_cell -> calls -> __unresolved__::ref::append (-> [[unresolvedrefpush-unresolvedreflen]])
+- generate_docx -> contains -> create_document (-> [[unresolvedrefpush-unresolvedreflen]])
+- generate_docx -> imports -> __unresolved__::ref::re (-> [[unresolvedrefpush-unresolvedreflen]])
+- generate_docx -> imports -> __unresolved__::ref::os (-> [[unresolvedrefpush-unresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::append (-> [[unresolvedrefpush-unresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::enumerate (-> [[unresolvedrefpush-unresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::range (-> [[unresolvedrefpush-unresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::join (-> [[unresolvedrefpush-unresolvedreflen]])
+- create_document -> calls -> __unresolved__::ref::print (-> [[unresolvedrefpush-unresolvedreflen]])
+- set_font -> calls -> __unresolved__::ref::append (-> [[unresolvedrefpush-unresolvedreflen]])
+- shade_cell -> calls -> __unresolved__::ref::append (-> [[unresolvedrefpush-unresolvedreflen]])
+- generate_gstar_docx -> imports -> __unresolved__::ref::os (-> [[unresolvedrefpush-unresolvedreflen]])
 
 ## Context
-이 커뮤니티는 create_document, generate_docx, generate_gstar_docx를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 audioDecoderBridge.test.ts, audioSanitizer.ts, download-wespeaker-onnx.py, generate_docx.py, generate_gstar_docx.py이다.
+이 커뮤니티는 create_document, generate_docx, generate_gstar_docx를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 generate_docx.py, generate_gstar_docx.py이다.

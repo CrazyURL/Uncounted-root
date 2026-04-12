@@ -2,27 +2,27 @@
 Cohesion: 0.25 | Nodes: 8
 
 ## Key Nodes
-- **voice-api 화자 분리(pyannote) 정확도 이슈** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 6 connections
+- **voice-api 화자 분리(pyannote) 정확도 이슈** (uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 6 connections
   - -> contains -> [[utterance-431]]
   - -> contains -> [[a-pyannote]]
   - -> contains -> [[b-wespeaker]]
   - -> contains -> [[c-id]]
   - -> contains -> [[d-minspeakers2-maxspeakers2-hint]]
   - -> contains -> [[e]]
-- **증상 — utterance 431** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 2 connections
+- **증상 — utterance 431** (uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 2 connections
   - -> has_code_example -> [[json]]
   - <- contains <- [[voice-api-pyannote]]
-- **json** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
+- **json** (uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
   - <- has_code_example <- [[utterance-431]]
-- **옵션 A — pyannote 모델 업그레이드** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
+- **옵션 A — pyannote 모델 업그레이드** (uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
   - <- contains <- [[voice-api-pyannote]]
-- **옵션 B — 서버 사이드 WeSpeaker 후처리 (권장)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
+- **옵션 B — 서버 사이드 WeSpeaker 후처리 (권장)** (uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
   - <- contains <- [[voice-api-pyannote]]
-- **옵션 C — 청크 간 화자 ID 매핑** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
+- **옵션 C — 청크 간 화자 ID 매핑** (uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
   - <- contains <- [[voice-api-pyannote]]
-- **옵션 D — `min_speakers=2, max_speakers=2` hint** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
+- **옵션 D — `min_speakers=2, max_speakers=2` hint** (uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
   - <- contains <- [[voice-api-pyannote]]
-- **옵션 E — 스트리밍 모드로 전환** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
+- **옵션 E — 스트리밍 모드로 전환** (uncounted-docs/voice-api/화자분리_정확도_이슈.md) -- 1 connections
   - <- contains <- [[voice-api-pyannote]]
 
 ## Internal Relationships

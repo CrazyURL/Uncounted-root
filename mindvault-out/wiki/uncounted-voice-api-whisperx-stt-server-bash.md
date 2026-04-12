@@ -2,12 +2,12 @@
 Cohesion: 0.67 | Nodes: 3
 
 ## Key Nodes
-- **uncounted-voice-api — WhisperX STT Server** (/Users/gdash/project/uncounted-project/uncounted-voice-api/CLAUDE.md) -- 2 connections
+- **uncounted-voice-api — WhisperX STT Server** (uncounted-voice-api/CLAUDE.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - -> contains -> [[api]]
-- **bash** (/Users/gdash/project/uncounted-project/uncounted-voice-api/CLAUDE.md) -- 1 connections
+- **bash** (uncounted-voice-api/CLAUDE.md) -- 1 connections
   - <- has_code_example <- [[uncounted-voice-api-whisperx-stt-server]]
-- **API 엔드포인트** (/Users/gdash/project/uncounted-project/uncounted-voice-api/CLAUDE.md) -- 1 connections
+- **API 엔드포인트** (uncounted-voice-api/CLAUDE.md) -- 1 connections
   - <- contains <- [[uncounted-voice-api-whisperx-stt-server]]
 
 ## Internal Relationships

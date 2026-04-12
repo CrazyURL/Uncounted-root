@@ -2,7 +2,7 @@
 Cohesion: 0.24 | Nodes: 10
 
 ## Key Nodes
-- **청크 모드에서 발화/화자 WAV 미생성 이슈** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 8 connections
+- **청크 모드에서 발화/화자 WAV 미생성 이슈** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 8 connections
   - -> has_code_example -> [[json]]
   - -> contains -> [[1h]]
   - -> contains -> [[1h-sttprocessorpytranscribe]]
@@ -11,28 +11,28 @@ Cohesion: 0.24 | Nodes: 10
   - -> contains -> [[c-wav-wav]]
   - -> contains -> [[d-ffmpeg]]
   - -> contains -> [[e-duration]]
-- **python** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 3 connections
+- **python** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 3 connections
   - <- has_code_example <- [[1h]]
   - <- has_code_example <- [[1h-sttprocessorpytranscribe]]
   - <- has_code_example <- [[a]]
-- **일반 모드 (< 1h)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 2 connections
+- **일반 모드 (< 1h)** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 2 connections
   - -> has_code_example -> [[python]]
   - <- contains <- [[wav]]
-- **청크 모드 (≥ 1h) — `stt_processor.py:transcribe()`** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 2 connections
+- **청크 모드 (≥ 1h) — `stt_processor.py:transcribe()`** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 2 connections
   - -> has_code_example -> [[python]]
   - <- contains <- [[wav]]
-- **옵션 A — 청크별 로컬 분리 (메모리 안전)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 2 connections
+- **옵션 A — 청크별 로컬 분리 (메모리 안전)** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 2 connections
   - -> has_code_example -> [[python]]
   - <- contains <- [[wav]]
-- **json** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
+- **json** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
   - <- has_code_example <- [[wav]]
-- **옵션 B — 처리 후 streaming 병합 (파일 기반)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
+- **옵션 B — 처리 후 streaming 병합 (파일 기반)** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
   - <- contains <- [[wav]]
-- **옵션 C — 화자별 WAV만 서버 사이드에서 포기, 발화 WAV만 복원** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
+- **옵션 C — 화자별 WAV만 서버 사이드에서 포기, 발화 WAV만 복원** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
   - <- contains <- [[wav]]
-- **옵션 D — 클라이언트 사이드에서 직접 ffmpeg로 잘라 쓰기** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
+- **옵션 D — 클라이언트 사이드에서 직접 ffmpeg로 잘라 쓰기** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
   - <- contains <- [[wav]]
-- **옵션 E — duration 제한 완화 (비권장)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
+- **옵션 E — duration 제한 완화 (비권장)** (uncounted-docs/voice-api/청크모드_WAV_미생성_이슈.md) -- 1 connections
   - <- contains <- [[wav]]
 
 ## Internal Relationships
