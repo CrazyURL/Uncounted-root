@@ -1,0 +1,112 @@
+# API 변경 & python
+Cohesion: 0.10 | Nodes: 23
+
+## Key Nodes
+- **API 변경** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 8 connections
+  - -> contains -> [[post-apiv1transcribe]]
+  - -> contains -> [[get-apiv1jobstaskid]]
+  - -> contains -> [[get-apiv1jobstaskidaudiofilename]]
+  - -> contains -> [[phase-1-utterancesegmenterpy]]
+  - -> contains -> [[phase-2-audiosplitterpy]]
+  - -> contains -> [[phase-3]]
+  - -> contains -> [[phase-4]]
+  - <- contains <- [[uncounted-voice-api]]
+- **python** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 5 connections
+  - <- has_code_example <- [[1-appservicesutterancesegmenterpy]]
+  - <- has_code_example <- [[2-appservicesaudiosplitterpy]]
+  - <- has_code_example <- [[3-appmodelsschemaspy]]
+  - <- has_code_example <- [[appsttprocessorpy-transcribe]]
+  - <- has_code_example <- [[approuterstranscribepy]]
+- **목표 구조 (TO-BE)** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 5 connections
+  - -> contains -> [[1-appservicesutterancesegmenterpy]]
+  - -> contains -> [[2-appservicesaudiosplitterpy]]
+  - -> contains -> [[3-appmodelsschemaspy]]
+  - -> contains -> [[4]]
+  - <- contains <- [[uncounted-voice-api]]
+- **안드로이드 앱 참조 (AS-IS 네이티브 파이프라인)** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 4 connections
+  - -> contains -> [[speakerdiarizerjava]]
+  - -> contains -> [[utterancesegmenterjava]]
+  - -> contains -> [[phase4utteranceuploaderjava]]
+  - <- contains <- [[uncounted-voice-api]]
+- **uncounted-voice-api — 화자 분리 기반 음성 분리 기능 추가** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 4 connections
+  - -> contains -> [[as-is]]
+  - -> contains -> [[voice-api-as-is]]
+  - -> contains -> [[to-be]]
+  - -> contains -> [[api]]
+- **4. 기존 모듈 수정** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 3 connections
+  - -> contains -> [[appsttprocessorpy-transcribe]]
+  - -> contains -> [[approuterstranscribepy]]
+  - <- contains <- [[to-be]]
+- **1. `app/services/utterance_segmenter.py` — 발화 경계 분리** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[to-be]]
+- **2. `app/services/audio_splitter.py` — 오디오 물리 분리** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[to-be]]
+- **3. `app/models/schemas.py` — 스키마 확장** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[to-be]]
+- **`app/routers/transcribe.py` — 쿼리 파라미터 추가** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[4]]
+- **`app/stt_processor.py` — transcribe 함수 확장** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[4]]
+- **GET /api/v1/jobs/{task_id} — 응답 확장** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[json]]
+  - <- contains <- [[api]]
+- **json** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- has_code_example <- [[get-apiv1jobstaskid]]
+- **신규: GET /api/v1/jobs/{task_id}/audio/{filename} — 분리 오디오 다운로드** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[api]]
+- **Phase4UtteranceUploader.java — 발화별 업로드** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[as-is]]
+- **Phase 1: 발화 분리 엔진 (utterance_segmenter.py)** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[api]]
+- **Phase 2: 오디오 분리 엔진 (audio_splitter.py)** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[api]]
+- **Phase 3: 파이프라인 통합** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[api]]
+- **Phase 4: 테스트 + 검증** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[api]]
+- **POST /api/v1/transcribe — 파라미터 추가** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[api]]
+- **SpeakerDiarizer.java — 핵심 기능** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[as-is]]
+- **UtteranceSegmenter.java — 발화 경계 분리** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[as-is]]
+- **현재 voice API 구조 (AS-IS)** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.orchestrate-consult/20260410-155724/prompt_plan.md) -- 1 connections
+  - <- contains <- [[uncounted-voice-api]]
+
+## Internal Relationships
+- 1. `app/services/utterance_segmenter.py` — 발화 경계 분리 -> has_code_example -> python [EXTRACTED]
+- 2. `app/services/audio_splitter.py` — 오디오 물리 분리 -> has_code_example -> python [EXTRACTED]
+- 3. `app/models/schemas.py` — 스키마 확장 -> has_code_example -> python [EXTRACTED]
+- 4. 기존 모듈 수정 -> contains -> `app/stt_processor.py` — transcribe 함수 확장 [EXTRACTED]
+- 4. 기존 모듈 수정 -> contains -> `app/routers/transcribe.py` — 쿼리 파라미터 추가 [EXTRACTED]
+- API 변경 -> contains -> POST /api/v1/transcribe — 파라미터 추가 [EXTRACTED]
+- API 변경 -> contains -> GET /api/v1/jobs/{task_id} — 응답 확장 [EXTRACTED]
+- API 변경 -> contains -> 신규: GET /api/v1/jobs/{task_id}/audio/{filename} — 분리 오디오 다운로드 [EXTRACTED]
+- API 변경 -> contains -> Phase 1: 발화 분리 엔진 (utterance_segmenter.py) [EXTRACTED]
+- API 변경 -> contains -> Phase 2: 오디오 분리 엔진 (audio_splitter.py) [EXTRACTED]
+- API 변경 -> contains -> Phase 3: 파이프라인 통합 [EXTRACTED]
+- API 변경 -> contains -> Phase 4: 테스트 + 검증 [EXTRACTED]
+- `app/routers/transcribe.py` — 쿼리 파라미터 추가 -> has_code_example -> python [EXTRACTED]
+- `app/stt_processor.py` — transcribe 함수 확장 -> has_code_example -> python [EXTRACTED]
+- 안드로이드 앱 참조 (AS-IS 네이티브 파이프라인) -> contains -> SpeakerDiarizer.java — 핵심 기능 [EXTRACTED]
+- 안드로이드 앱 참조 (AS-IS 네이티브 파이프라인) -> contains -> UtteranceSegmenter.java — 발화 경계 분리 [EXTRACTED]
+- 안드로이드 앱 참조 (AS-IS 네이티브 파이프라인) -> contains -> Phase4UtteranceUploader.java — 발화별 업로드 [EXTRACTED]
+- GET /api/v1/jobs/{task_id} — 응답 확장 -> has_code_example -> json [EXTRACTED]
+- 목표 구조 (TO-BE) -> contains -> 1. `app/services/utterance_segmenter.py` — 발화 경계 분리 [EXTRACTED]
+- 목표 구조 (TO-BE) -> contains -> 2. `app/services/audio_splitter.py` — 오디오 물리 분리 [EXTRACTED]
+- 목표 구조 (TO-BE) -> contains -> 3. `app/models/schemas.py` — 스키마 확장 [EXTRACTED]
+- 목표 구조 (TO-BE) -> contains -> 4. 기존 모듈 수정 [EXTRACTED]
+- uncounted-voice-api — 화자 분리 기반 음성 분리 기능 추가 -> contains -> 안드로이드 앱 참조 (AS-IS 네이티브 파이프라인) [EXTRACTED]
+- uncounted-voice-api — 화자 분리 기반 음성 분리 기능 추가 -> contains -> 현재 voice API 구조 (AS-IS) [EXTRACTED]
+- uncounted-voice-api — 화자 분리 기반 음성 분리 기능 추가 -> contains -> 목표 구조 (TO-BE) [EXTRACTED]
+- uncounted-voice-api — 화자 분리 기반 음성 분리 기능 추가 -> contains -> API 변경 [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 API 변경, python, 목표 구조 (TO-BE)를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 prompt_plan.md이다.

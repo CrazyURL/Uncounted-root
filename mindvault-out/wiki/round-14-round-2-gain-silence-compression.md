@@ -23,11 +23,11 @@ Cohesion: 0.08 | Nodes: 34
 - **Round 4 — dedup 추가 (⏳ 대기)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 8 connections
   - -> has_code_example -> [[bash]]
   - -> contains -> [[round-4-dedup]]
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedref]]
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwav]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedref]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwav]]
   - -> contains -> [[round-3-denoise-fail-2026-04-12]]
-  - -> references -> [[unresolvedrefunresolvedref]]
-  - -> references -> [[unresolvedrefunresolvedrefwav]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedref]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwav]]
   - <- contains <- [[round-14]]
 - **Round 3 — denoise 추가 (❌ FAIL — 2026-04-12 롤백)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 7 connections
   - -> has_code_example -> [[bash]]
@@ -57,8 +57,8 @@ Cohesion: 0.08 | Nodes: 34
   - -> contains -> [[sttprocessorpy]]
   - <- contains <- [[round-14]]
 - **🐛 추가 발견 — utterance_segmenter Case C 과병합 버그** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 3 connections
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedref]]
-  - -> references -> [[unresolvedrefunresolvedref]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedref]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedref]]
   - <- contains <- [[round-2-gain-silence-compression]]
 - **config.py 플래그 추가** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 3 connections
   - -> has_code_example -> [[python]]
@@ -68,10 +68,10 @@ Cohesion: 0.08 | Nodes: 34
   - -> contains -> [[transition-gain-denoise-frame-level-diff]]
   - -> contains -> [[cascade]]
   - <- contains <- [[round-3-denoise-fail-2026-04-12]]
-- **__unresolved__::ref::__unresolved____ref______________** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref______________** () -- 2 connections
   - <- references <- [[utterancesegmenter-case-c]]
   - <- references <- [[round-4-dedup]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref______________** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref______________** () -- 2 connections
   - <- references <- [[utterancesegmenter-case-c]]
   - <- references <- [[round-4-dedup]]
 - **롤백 (2026-04-12 13:59)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
@@ -98,9 +98,9 @@ Cohesion: 0.08 | Nodes: 34
 - **stt_processor.py 복원** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
   - -> has_code_example -> [[python]]
   - <- contains <- [[phase-1]]
-- **__unresolved__::ref::__unresolved____ref_______wav_______** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref_______wav_______** () -- 1 connections
   - <- references <- [[round-4-dedup]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref_______wav_______** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref_______wav_______** () -- 1 connections
   - <- references <- [[round-4-dedup]]
 - **2차 검증 결과** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
   - <- contains <- [[round-2-gain-silence-compression]]
@@ -139,8 +139,8 @@ Cohesion: 0.08 | Nodes: 34
 - 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 2 — gain + silence compression [EXTRACTED]
 - 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 4 — dedup 추가 (⏳ 대기) [EXTRACTED]
 - 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 3 — denoise 추가 (❌ FAIL — 2026-04-12 롤백) [EXTRACTED]
-- 🐛 추가 발견 — utterance_segmenter Case C 과병합 버그 -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref______________ [EXTRACTED]
-- 🐛 추가 발견 — utterance_segmenter Case C 과병합 버그 -> references -> __unresolved__::ref::__unresolved____ref______________ [EXTRACTED]
+- 🐛 추가 발견 — utterance_segmenter Case C 과병합 버그 -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref______________ [EXTRACTED]
+- 🐛 추가 발견 — utterance_segmenter Case C 과병합 버그 -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref______________ [EXTRACTED]
 - 전략 (How) -> contains -> Round 플랜 [EXTRACTED]
 - audio_preprocessor.preprocess() 리팩토링 -> has_code_example -> python [EXTRACTED]
 - Cascade 정량 -> has_code_example -> python [EXTRACTED]
@@ -167,11 +167,11 @@ Cohesion: 0.08 | Nodes: 34
 - Round 3 — denoise 추가 (❌ FAIL — 2026-04-12 롤백) -> contains -> Round 3 재시도 결과 (2026-04-12, 옵션 A → 옵션 B 적용) [EXTRACTED]
 - Round 4 — dedup 추가 (⏳ 대기) -> has_code_example -> bash [EXTRACTED]
 - Round 4 — dedup 추가 (⏳ 대기) -> contains -> Round 4 (dedup) [EXTRACTED]
-- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref______________ [EXTRACTED]
-- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref_______wav_______ [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref______________ [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref_______wav_______ [EXTRACTED]
 - Round 4 — dedup 추가 (⏳ 대기) -> contains -> Round 3 (denoise) — ❌ FAIL (2026-04-12), 롤백 완료 [EXTRACTED]
-- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref______________ [EXTRACTED]
-- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref_______wav_______ [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref______________ [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref_______wav_______ [EXTRACTED]
 - stt_processor.py 복원 -> has_code_example -> python [EXTRACTED]
 
 ## Cross-Community Connections
