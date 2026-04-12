@@ -1,5 +1,5 @@
 # __unresolved__::ref::__unresolved____ref__clamp01 & ruleEngine
-Cohesion: 0.09 | Nodes: 47
+Cohesion: 0.12 | Nodes: 38
 
 ## Key Nodes
 - **__unresolved__::ref::__unresolved____ref__clamp01** () -- 24 connections
@@ -88,18 +88,6 @@ Cohesion: 0.09 | Nodes: 47
   - <- calls <- [[scoremedical]]
   - <- calls <- [[scorelegal]]
   - <- calls <- [[scorefinance]]
-- **__unresolved__::ref::__unresolved____ref__tolowercase** () -- 11 connections
-  - <- calls <- [[classifyextension]]
-  - <- calls <- [[scanmediafiles]]
-  - <- calls <- [[validateaudiopath]]
-  - <- calls <- [[containsany]]
-  - <- calls <- [[countkeywordhits]]
-  - <- calls <- [[classifyenrollerror]]
-  - <- calls <- [[piisessioncard]]
-  - <- calls <- [[containsany]]
-  - <- calls <- [[countkeywordhits]]
-  - <- calls <- [[confirm]]
-  - <- calls <- [[getjsonlfilename]]
 - **__unresolved__::ref::__unresolved____ref__containsany** () -- 8 connections
   - <- calls <- [[scorefamily]]
   - <- calls <- [[scorework]]
@@ -205,11 +193,6 @@ Cohesion: 0.09 | Nodes: 47
   - -> calls -> [[unresolvedrefunresolvedrefpush]]
   - -> calls -> [[unresolvedrefunresolvedrefclamp01]]
   - <- contains <- [[ruleengine]]
-- **containsAny** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedreftolowercase]]
-  - -> calls -> [[unresolvedrefunresolvedrefsome]]
-  - -> calls -> [[unresolvedrefunresolvedrefincludes]]
-  - <- contains <- [[ruleengine]]
 - **scoreCLIENT** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 4 connections
   - -> calls -> [[unresolvedrefunresolvedrefcontainsany]]
   - -> calls -> [[unresolvedrefunresolvedrefpush]]
@@ -229,16 +212,6 @@ Cohesion: 0.09 | Nodes: 47
   - -> calls -> [[unresolvedrefunresolvedrefcontainsany]]
   - -> calls -> [[unresolvedrefunresolvedrefpush]]
   - -> calls -> [[unresolvedrefunresolvedrefclamp01]]
-  - <- contains <- [[ruleengine]]
-- **getJsonlFilename** (uncounted-api/src/lib/export/metadataPackageBuilder.ts) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefstripversion]]
-  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
-  - -> calls -> [[unresolvedrefunresolvedreftolowercase]]
-  - <- contains <- [[metadatapackagebuilder]]
-- **containsAny** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedreftolowercase]]
-  - -> calls -> [[unresolvedrefunresolvedrefsome]]
-  - -> calls -> [[unresolvedrefunresolvedrefincludes]]
   - <- contains <- [[ruleengine]]
 - **scoreCLIENT** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 4 connections
   - -> calls -> [[unresolvedrefunresolvedrefcontainsany]]
@@ -260,35 +233,17 @@ Cohesion: 0.09 | Nodes: 47
   - -> calls -> [[unresolvedrefunresolvedrefpush]]
   - -> calls -> [[unresolvedrefunresolvedrefclamp01]]
   - <- contains <- [[ruleengine]]
-- **__unresolved__::ref::__unresolved____ref__stripversion** () -- 3 connections
-  - <- calls <- [[getjsonlfilename]]
-  - <- calls <- [[buildextrafiles]]
-  - <- calls <- [[createmetadatazip]]
 - **clamp01** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 3 connections
   - -> calls -> [[unresolvedrefunresolvedrefmax]]
   - -> calls -> [[unresolvedrefunresolvedrefmin]]
   - <- contains <- [[ruleengine]]
-- **countKeywordHits** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedreftolowercase]]
-  - -> calls -> [[unresolvedrefunresolvedrefincludes]]
-  - <- contains <- [[ruleengine]]
-- **buildExtraFiles** (uncounted-api/src/lib/export/metadataPackageBuilder.ts) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedrefstripversion]]
-  - -> calls -> [[unresolvedrefunresolvedrefbuilddayofweekdistribution]]
-  - <- contains <- [[metadatapackagebuilder]]
 - **clamp01** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 3 connections
   - -> calls -> [[unresolvedrefunresolvedrefmax]]
   - -> calls -> [[unresolvedrefunresolvedrefmin]]
   - <- contains <- [[ruleengine]]
-- **countKeywordHits** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 3 connections
-  - -> calls -> [[unresolvedrefunresolvedreftolowercase]]
-  - -> calls -> [[unresolvedrefunresolvedrefincludes]]
-  - <- contains <- [[ruleengine]]
 - **__unresolved__::ref::__unresolved____ref___dictionaries_** () -- 2 connections
   - <- imports <- [[ruleengine]]
   - <- imports <- [[ruleengine]]
-- **__unresolved__::ref::__unresolved____ref__builddayofweekdistribution** () -- 1 connections
-  - <- calls <- [[buildextrafiles]]
 - **inferNoise** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 1 connections
   - <- contains <- [[ruleengine]]
 - **inferPurpose** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 1 connections
@@ -304,8 +259,6 @@ Cohesion: 0.09 | Nodes: 47
 
 ## Internal Relationships
 - ruleEngine -> contains -> clamp01 [EXTRACTED]
-- ruleEngine -> contains -> containsAny [EXTRACTED]
-- ruleEngine -> contains -> countKeywordHits [EXTRACTED]
 - ruleEngine -> contains -> scoreFAMILY [EXTRACTED]
 - ruleEngine -> contains -> scoreWORK [EXTRACTED]
 - ruleEngine -> contains -> scoreCLIENT [EXTRACTED]
@@ -322,8 +275,6 @@ Cohesion: 0.09 | Nodes: 47
 - ruleEngine -> contains -> inferTone [EXTRACTED]
 - ruleEngine -> contains -> inferNoise [EXTRACTED]
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref___dictionaries_ [EXTRACTED]
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref__tolowercase [EXTRACTED]
-- countKeywordHits -> calls -> __unresolved__::ref::__unresolved____ref__tolowercase [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__countkeywordhits [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__clamp01 [EXTRACTED]
 - scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref__containsany [EXTRACTED]
@@ -348,13 +299,7 @@ Cohesion: 0.09 | Nodes: 47
 - scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__clamp01 [EXTRACTED]
 - scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref__containsany [EXTRACTED]
 - scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref__clamp01 [EXTRACTED]
-- buildExtraFiles -> calls -> __unresolved__::ref::__unresolved____ref__stripversion [EXTRACTED]
-- buildExtraFiles -> calls -> __unresolved__::ref::__unresolved____ref__builddayofweekdistribution [EXTRACTED]
-- getJsonlFilename -> calls -> __unresolved__::ref::__unresolved____ref__stripversion [EXTRACTED]
-- getJsonlFilename -> calls -> __unresolved__::ref::__unresolved____ref__tolowercase [EXTRACTED]
 - ruleEngine -> contains -> clamp01 [EXTRACTED]
-- ruleEngine -> contains -> containsAny [EXTRACTED]
-- ruleEngine -> contains -> countKeywordHits [EXTRACTED]
 - ruleEngine -> contains -> scoreFAMILY [EXTRACTED]
 - ruleEngine -> contains -> scoreWORK [EXTRACTED]
 - ruleEngine -> contains -> scoreCLIENT [EXTRACTED]
@@ -371,8 +316,6 @@ Cohesion: 0.09 | Nodes: 47
 - ruleEngine -> contains -> inferTone [EXTRACTED]
 - ruleEngine -> contains -> inferNoise [EXTRACTED]
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref___dictionaries_ [EXTRACTED]
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref__tolowercase [EXTRACTED]
-- countKeywordHits -> calls -> __unresolved__::ref::__unresolved____ref__tolowercase [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__countkeywordhits [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__clamp01 [EXTRACTED]
 - scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref__containsany [EXTRACTED]
@@ -399,61 +342,58 @@ Cohesion: 0.09 | Nodes: 47
 - scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref__clamp01 [EXTRACTED]
 
 ## Cross-Community Connections
+- ruleEngine -> contains -> containsAny (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref___labeloptions_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref__some (-> [[unresolvedrefunresolvedrefresolve-unresolvedrefunresolvedrefabs]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref__includes (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- countKeywordHits -> calls -> __unresolved__::ref::__unresolved____ref__includes (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- getJsonlFilename -> calls -> __unresolved__::ref::__unresolved____ref__replace (-> [[unresolvedrefunresolvedrefreplace-generate]])
+- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- ruleEngine -> contains -> containsAny (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref___labeloptions_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref__some (-> [[unresolvedrefunresolvedrefresolve-unresolvedrefunresolvedrefabs]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref__includes (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- countKeywordHits -> calls -> __unresolved__::ref::__unresolved____ref__includes (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 
 ## Context
-이 커뮤니티는 __unresolved__::ref::__unresolved____ref__clamp01, ruleEngine, ruleEngine를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 metadataPackageBuilder.ts, ruleEngine.ts이다.
+이 커뮤니티는 __unresolved__::ref::__unresolved____ref__clamp01, ruleEngine, ruleEngine를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 ruleEngine.ts이다.

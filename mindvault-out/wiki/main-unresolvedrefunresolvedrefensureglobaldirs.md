@@ -58,8 +58,8 @@ Cohesion: 0.15 | Nodes: 13
 - main -> calls -> __unresolved__::ref::__unresolved____ref__print_help [EXTRACTED]
 
 ## Cross-Community Connections
-- main -> calls -> __unresolved__::ref::__unresolved____ref__cmd_status (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- main -> calls -> __unresolved__::ref::__unresolved____ref__cmd_projects (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref__cmd_status (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref__cmd_projects (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 
 ## Context
 이 커뮤니티는 main, __unresolved__::ref::__unresolved____ref___ensure_global_dirs, __unresolved__::ref::__unresolved____ref__add_argument를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 instinct-cli.py이다.

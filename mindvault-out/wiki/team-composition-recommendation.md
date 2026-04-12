@@ -2,7 +2,7 @@
 Cohesion: 1.00 | Nodes: 1
 
 ## Key Nodes
-- **Team Composition Recommendation** (.orchestrate-consult/20260412-121319/gemini.md) -- 0 connections
+- **Team Composition Recommendation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/gemini.md) -- 0 connections
 
 ## Internal Relationships
 

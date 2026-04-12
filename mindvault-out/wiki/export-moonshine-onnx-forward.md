@@ -1,5 +1,5 @@
 # export-moonshine-onnx & forward
-Cohesion: 0.08 | Nodes: 32
+Cohesion: 0.10 | Nodes: 28
 
 ## Key Nodes
 - **export-moonshine-onnx** (uncounted-app/scripts/export-moonshine-onnx.py) -- 13 connections
@@ -64,11 +64,6 @@ Cohesion: 0.08 | Nodes: 32
   - <- calls <- [[forward]]
   - <- calls <- [[getdecoder]]
   - <- calls <- [[makekvcache]]
-- **_onnx_causal_mask** (uncounted-app/scripts/export-moonshine-onnx.py) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunsqueeze]]
-  - -> calls -> [[unresolvedrefunresolvedrefarange]]
-  - -> calls -> [[unresolvedrefunresolvedreffloat]]
-  - <- contains <- [[export-moonshine-onnx]]
 - **DecoderWithPastStacked** (uncounted-app/scripts/export-moonshine-onnx.py) -- 3 connections
   - -> contains -> [[init]]
   - -> contains -> [[forward]]
@@ -98,8 +93,6 @@ Cohesion: 0.08 | Nodes: 32
   - <- calls <- [[forward]]
 - **__unresolved__::ref::__unresolved____ref___ml** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref__arange** () -- 1 connections
-  - <- calls <- [[onnxcausalmask]]
 - **__unresolved__::ref::__unresolved____ref__dec** () -- 1 connections
   - <- calls <- [[forward]]
 - **__unresolved__::ref::__unresolved____ref__dynamiccache** () -- 1 connections
@@ -110,8 +103,6 @@ Cohesion: 0.08 | Nodes: 32
   - <- calls <- [[makekvcache]]
 - **__unresolved__::ref::__unresolved____ref__get_encoder** () -- 1 connections
   - <- calls <- [[getencoder]]
-- **__unresolved__::ref::__unresolved____ref__ones** () -- 1 connections
-  - <- calls <- [[forward]]
 - **__unresolved__::ref::__unresolved____ref__proj** () -- 1 connections
   - <- calls <- [[forward]]
 - **__unresolved__::ref::__unresolved____ref__stack** () -- 1 connections
@@ -122,8 +113,6 @@ Cohesion: 0.08 | Nodes: 32
   - <- calls <- [[forward]]
 - **__unresolved__::ref::__unresolved____ref__transformers** () -- 1 connections
   - <- imports <- [[export-moonshine-onnx]]
-- **__unresolved__::ref::__unresolved____ref__unsqueeze** () -- 1 connections
-  - <- calls <- [[onnxcausalmask]]
 - **_onnx_bidirectional_mask** (uncounted-app/scripts/export-moonshine-onnx.py) -- 1 connections
   - <- contains <- [[export-moonshine-onnx]]
 
@@ -138,7 +127,6 @@ Cohesion: 0.08 | Nodes: 32
 - export-moonshine-onnx -> contains -> EncoderWrapper [EXTRACTED]
 - export-moonshine-onnx -> contains -> get_decoder [EXTRACTED]
 - export-moonshine-onnx -> contains -> DecoderWrapper [EXTRACTED]
-- export-moonshine-onnx -> contains -> _onnx_causal_mask [EXTRACTED]
 - export-moonshine-onnx -> contains -> _onnx_bidirectional_mask [EXTRACTED]
 - export-moonshine-onnx -> contains -> _make_kv_cache [EXTRACTED]
 - export-moonshine-onnx -> contains -> DecoderWithPastStacked [EXTRACTED]
@@ -151,11 +139,8 @@ Cohesion: 0.08 | Nodes: 32
 - _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref___dl [EXTRACTED]
 - _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref___ml [EXTRACTED]
 - _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__encoderdecodercache [EXTRACTED]
-- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref__unsqueeze [EXTRACTED]
-- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref__arange [EXTRACTED]
 - forward -> calls -> __unresolved__::ref::__unresolved____ref__enc [EXTRACTED]
 - forward -> calls -> __unresolved__::ref::__unresolved____ref__hasattr [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__ones [EXTRACTED]
 - forward -> calls -> __unresolved__::ref::__unresolved____ref__dec [EXTRACTED]
 - forward -> calls -> __unresolved__::ref::__unresolved____ref__proj [EXTRACTED]
 - forward -> calls -> __unresolved__::ref::__unresolved____ref__tensor [EXTRACTED]
@@ -170,17 +155,18 @@ Cohesion: 0.08 | Nodes: 32
 - get_encoder -> calls -> __unresolved__::ref::__unresolved____ref__dir [EXTRACTED]
 
 ## Cross-Community Connections
+- export-moonshine-onnx -> contains -> _onnx_causal_mask (-> [[transcribe-unresolvedrefunresolvedrefmin]])
 - export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__json (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefsetitem]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__os (-> [[createdocument-generatedocx]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__sys (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__torch (-> [[schemas-unresolvedrefunresolvedrefbasemodel]])
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref__float (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__isinstance (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__os (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__sys (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__torch (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref__isinstance (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref__ones (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 
 ## Context
 이 커뮤니티는 export-moonshine-onnx, forward, _make_kv_cache를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 export-moonshine-onnx.py이다.

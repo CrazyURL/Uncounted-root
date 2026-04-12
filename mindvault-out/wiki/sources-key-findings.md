@@ -88,8 +88,8 @@ Cohesion: 0.24 | Nodes: 14
 - Sources -> references -> __unresolved__::ref::__unresolved____ref__resetall [EXTRACTED]
 
 ## Cross-Community Connections
-- Key Findings -> references -> __unresolved__::ref::__unresolved____ref__app (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
-- Sources -> references -> __unresolved__::ref::__unresolved____ref__app (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref__app (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- Sources -> references -> __unresolved__::ref::__unresolved____ref__app (-> [[transcribe-unresolvedrefunresolvedrefmin]])
 
 ## Context
 이 커뮤니티는 Sources, Key Findings, __unresolved__::ref::__unresolved____ref__autoscanevent를 중심으로 references 관계로 연결되어 있다. 주요 소스 파일은 codex.md이다.

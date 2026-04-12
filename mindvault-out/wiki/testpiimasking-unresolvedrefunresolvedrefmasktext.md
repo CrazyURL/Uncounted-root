@@ -24,6 +24,9 @@ Cohesion: 0.23 | Nodes: 13
   - -> calls -> [[unresolvedrefunresolvedrefmasksegments]]
   - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[testpiimasking]]
+- **__unresolved__::ref::__unresolved____ref__mask_segments** () -- 2 connections
+  - <- calls <- [[testsegmentsmasking]]
+  - <- calls <- [[transcribe]]
 - **test_pii** (uncounted-voice-api/tests/test_pii.py) -- 2 connections
   - -> contains -> [[testpiimasking]]
   - -> imports -> [[unresolvedrefunresolvedrefpiiservice]]
@@ -48,8 +51,6 @@ Cohesion: 0.23 | Nodes: 13
 - **test_resident_number** (uncounted-voice-api/tests/test_pii.py) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefmasktext]]
   - <- contains <- [[testpiimasking]]
-- **__unresolved__::ref::__unresolved____ref__mask_segments** () -- 1 connections
-  - <- calls <- [[testsegmentsmasking]]
 - **__unresolved__::ref::__unresolved____ref__pii_service** () -- 1 connections
   - <- imports <- [[testpii]]
 
@@ -74,7 +75,7 @@ Cohesion: 0.23 | Nodes: 13
 - test_segments_masking -> calls -> __unresolved__::ref::__unresolved____ref__mask_segments [EXTRACTED]
 
 ## Cross-Community Connections
-- test_segments_masking -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- test_segments_masking -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 
 ## Context
 이 커뮤니티는 TestPIIMasking, __unresolved__::ref::__unresolved____ref__mask_text, test_segments_masking를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 test_pii.py이다.

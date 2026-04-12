@@ -2,7 +2,7 @@
 Cohesion: 0.15 | Nodes: 13
 
 ## Key Nodes
-- **불일치점 (Disagreement)** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 7 connections
+- **불일치점 (Disagreement)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 7 connections
   - -> contains -> [[1-sttprocessorpy-codex]]
   - -> contains -> [[2-wave-0-baseline-orientation]]
   - -> contains -> [[3-utterancesegmenterpy]]
@@ -10,34 +10,34 @@ Cohesion: 0.15 | Nodes: 13
   - -> contains -> [[gemini]]
   - -> contains -> [[codex]]
   - <- contains <- [[orchestration-consultation-synthesis-wav]]
-- **Orchestration Consultation Synthesis — 청크 모드 WAV 버그픽스** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 4 connections
+- **Orchestration Consultation Synthesis — 청크 모드 WAV 버그픽스** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 4 connections
   - -> contains -> [[agreement-high-confidence]]
   - -> contains -> [[disagreement]]
   - -> contains -> [[recommended]]
   - -> contains -> [[needs-discussion]]
-- **통합 오케스트레이션 전략 (Recommended)** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 3 connections
+- **통합 오케스트레이션 전략 (Recommended)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 3 connections
   - -> contains -> [[hard-rule]]
   - -> contains -> [[wave]]
   - <- contains <- [[orchestration-consultation-synthesis-wav]]
-- **(1) stt_processor.py 통합 단위 — Codex가 더 엄격** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **(1) stt_processor.py 통합 단위 — Codex가 더 엄격** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[disagreement]]
-- **(2) Wave 0 (Baseline Orientation) 추가 여부** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **(2) Wave 0 (Baseline Orientation) 추가 여부** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[disagreement]]
-- **(3) utterance_segmenter.py 수정 범위** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **(3) utterance_segmenter.py 수정 범위** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[disagreement]]
-- **(4) Agent 수** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **(4) Agent 수** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[disagreement]]
-- **일치점 (Agreement) — High confidence** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **일치점 (Agreement) — High confidence** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[orchestration-consultation-synthesis-wav]]
-- **Codex만 지적** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **Codex만 지적** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[disagreement]]
-- **Gemini만 지적** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **Gemini만 지적** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[disagreement]]
-- **시간 좌표 규약 (Hard Rule)** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **시간 좌표 규약 (Hard Rule)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[recommended]]
-- **추가 검토 필요 (Needs Discussion)** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **추가 검토 필요 (Needs Discussion)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[orchestration-consultation-synthesis-wav]]
-- **Wave 실행 계획 (최종)** (.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
+- **Wave 실행 계획 (최종)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/orchestrate-synthesis.md) -- 1 connections
   - <- contains <- [[recommended]]
 
 ## Internal Relationships

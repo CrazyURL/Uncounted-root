@@ -1,0 +1,258 @@
+# Round 2 — gain + silence compression & 전처리 파이프라인 재활성화 (Round 1~4)
+Cohesion: 0.06 | Nodes: 49
+
+## Key Nodes
+- **Round 2 — gain + silence compression** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 16 connections
+  - -> has_code_example -> [[bash]]
+  - -> contains -> [[4]]
+  - -> contains -> [[gap]]
+  - -> contains -> [[2-offset]]
+  - -> contains -> [[2]]
+  - -> contains -> [[6c821aaf5d50]]
+  - -> contains -> [[utterancesegmenter-case-c]]
+  - -> has_code_example -> [[bash]]
+  - -> contains -> [[4]]
+  - -> contains -> [[gap]]
+  - -> contains -> [[2-offset]]
+  - -> contains -> [[2]]
+  - -> contains -> [[6c821aaf5d50]]
+  - -> contains -> [[utterancesegmenter-case-c]]
+  - <- contains <- [[round-14]]
+  - <- contains <- [[round-14]]
+- **전처리 파이프라인 재활성화 (Round 1~4)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 8 connections
+  - -> contains -> [[why]]
+  - -> contains -> [[how]]
+  - -> contains -> [[phase-1]]
+  - -> contains -> [[phase-2]]
+  - -> contains -> [[round-1-gain]]
+  - -> contains -> [[round-2-gain-silence-compression]]
+  - -> contains -> [[round-3-denoise]]
+  - -> contains -> [[round-4-dedup]]
+- **전처리 파이프라인 재활성화 (Round 1~4)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 8 connections
+  - -> contains -> [[why]]
+  - -> contains -> [[how]]
+  - -> contains -> [[phase-1]]
+  - -> contains -> [[phase-2]]
+  - -> contains -> [[round-1-gain]]
+  - -> contains -> [[round-2-gain-silence-compression]]
+  - -> contains -> [[round-3-denoise]]
+  - -> contains -> [[round-4-dedup]]
+- **Round 4 — dedup 추가 (⏳ 대기)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 6 connections
+  - -> has_code_example -> [[bash]]
+  - -> references -> [[unresolvedref]]
+  - -> references -> [[unresolvedrefwav]]
+  - -> contains -> [[round-3-denoise]]
+  - -> contains -> [[round-4-dedup]]
+  - <- contains <- [[round-14]]
+- **Round 4 — dedup 추가 (⏳ 대기)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 6 connections
+  - -> has_code_example -> [[bash]]
+  - -> references -> [[unresolvedrefunresolvedref]]
+  - -> references -> [[unresolvedrefunresolvedrefwav]]
+  - -> contains -> [[round-3-denoise]]
+  - -> contains -> [[round-4-dedup]]
+  - <- contains <- [[round-14]]
+- **bash** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 5 connections
+  - <- has_code_example <- [[configpy]]
+  - <- has_code_example <- [[round-1-gain]]
+  - <- has_code_example <- [[round-2-gain-silence-compression]]
+  - <- has_code_example <- [[round-3-denoise]]
+  - <- has_code_example <- [[round-4-dedup]]
+- **python** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 5 connections
+  - <- has_code_example <- [[configpy]]
+  - <- has_code_example <- [[audiopreprocessorpreprocess]]
+  - <- has_code_example <- [[sttprocessorpy]]
+  - <- has_code_example <- [[gap]]
+  - <- has_code_example <- [[2-offset]]
+- **bash** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 5 connections
+  - <- has_code_example <- [[configpy]]
+  - <- has_code_example <- [[round-1-gain]]
+  - <- has_code_example <- [[round-2-gain-silence-compression]]
+  - <- has_code_example <- [[round-3-denoise]]
+  - <- has_code_example <- [[round-4-dedup]]
+- **python** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 5 connections
+  - <- has_code_example <- [[configpy]]
+  - <- has_code_example <- [[audiopreprocessorpreprocess]]
+  - <- has_code_example <- [[sttprocessorpy]]
+  - <- has_code_example <- [[gap]]
+  - <- has_code_example <- [[2-offset]]
+- **Phase 1 — 토글 인프라** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 4 connections
+  - -> contains -> [[configpy]]
+  - -> contains -> [[audiopreprocessorpreprocess]]
+  - -> contains -> [[sttprocessorpy]]
+  - <- contains <- [[round-14]]
+- **Phase 1 — 토글 인프라** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 4 connections
+  - -> contains -> [[configpy]]
+  - -> contains -> [[audiopreprocessorpreprocess]]
+  - -> contains -> [[sttprocessorpy]]
+  - <- contains <- [[round-14]]
+- **config.py 플래그 추가** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 3 connections
+  - -> has_code_example -> [[python]]
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[phase-1]]
+- **config.py 플래그 추가** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 3 connections
+  - -> has_code_example -> [[python]]
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[phase-1]]
+- **__unresolved__::ref::____________** () -- 2 connections
+  - <- references <- [[utterancesegmenter-case-c]]
+  - <- references <- [[round-4-dedup]]
+- **__unresolved__::ref::__unresolved____ref______________** () -- 2 connections
+  - <- references <- [[utterancesegmenter-case-c]]
+  - <- references <- [[round-4-dedup]]
+- **수정 — 옵션 2 (누적 offset)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **수정 — 옵션 2 (누적 offset)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **🐛 발견된 버그: 청크 모드 타임스탬프 gap** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **🐛 추가 발견 — utterance_segmenter Case C 과병합 버그** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedref]]
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **전략 (How)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> contains -> [[round]]
+  - <- contains <- [[round-14]]
+- **audio_preprocessor.preprocess() 리팩토링** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[phase-1]]
+- **audio_preprocessor.preprocess() 리팩토링** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[phase-1]]
+- **🐛 발견된 버그: 청크 모드 타임스탬프 gap** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **전략 (How)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> contains -> [[round]]
+  - <- contains <- [[round-14]]
+- **Round 1 — gain만 활성화** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[round-14]]
+- **Round 1 — gain만 활성화** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[round-14]]
+- **Round 3 — denoise 추가 (⏳ 대기)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[round-14]]
+- **Round 3 — denoise 추가 (⏳ 대기)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[round-14]]
+- **stt_processor.py 복원** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[phase-1]]
+- **stt_processor.py 복원** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[phase-1]]
+- **🐛 추가 발견 — utterance_segmenter Case C 과병합 버그** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 2 connections
+  - -> references -> [[unresolvedref]]
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **__unresolved__::ref::_____wav_______** () -- 1 connections
+  - <- references <- [[round-4-dedup]]
+- **__unresolved__::ref::__unresolved____ref_______wav_______** () -- 1 connections
+  - <- references <- [[round-4-dedup]]
+- **2차 검증 결과** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **2차 검증 결과** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **검증 파일 (4개)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **일반 모드 검증 (`6c821aaf5d50`)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **검증 파일 (4개)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **일반 모드 검증 (`6c821aaf5d50`)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-2-gain-silence-compression]]
+- **배경 (Why)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-14]]
+- **Phase 2 — 보수적 임계값** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-14]]
+- **Phase 2 — 보수적 임계값** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-14]]
+- **Round 플랜** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[how]]
+- **Round 3 (denoise)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-4-dedup]]
+- **Round 3 (denoise)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-4-dedup]]
+- **Round 4 (dedup)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-4-dedup]]
+- **Round 4 (dedup)** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-4-dedup]]
+- **Round 플랜** (uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[how]]
+- **배경 (Why)** (/Users/gdash/project/uncounted-project/uncounted-docs/voice-api/전처리_파이프라인_재활성화.md) -- 1 connections
+  - <- contains <- [[round-14]]
+
+## Internal Relationships
+- 수정 — 옵션 2 (누적 offset) -> has_code_example -> python [EXTRACTED]
+- 수정 — 옵션 2 (누적 offset) -> has_code_example -> python [EXTRACTED]
+- 🐛 발견된 버그: 청크 모드 타임스탬프 gap -> has_code_example -> python [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> 배경 (Why) [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> 전략 (How) [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Phase 1 — 토글 인프라 [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Phase 2 — 보수적 임계값 [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 1 — gain만 활성화 [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 2 — gain + silence compression [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 3 — denoise 추가 (⏳ 대기) [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 4 — dedup 추가 (⏳ 대기) [EXTRACTED]
+- 🐛 추가 발견 — utterance_segmenter Case C 과병합 버그 -> references -> __unresolved__::ref::__unresolved____ref______________ [EXTRACTED]
+- 전략 (How) -> contains -> Round 플랜 [EXTRACTED]
+- audio_preprocessor.preprocess() 리팩토링 -> has_code_example -> python [EXTRACTED]
+- audio_preprocessor.preprocess() 리팩토링 -> has_code_example -> python [EXTRACTED]
+- config.py 플래그 추가 -> has_code_example -> python [EXTRACTED]
+- config.py 플래그 추가 -> has_code_example -> bash [EXTRACTED]
+- config.py 플래그 추가 -> has_code_example -> python [EXTRACTED]
+- config.py 플래그 추가 -> has_code_example -> bash [EXTRACTED]
+- 🐛 발견된 버그: 청크 모드 타임스탬프 gap -> has_code_example -> python [EXTRACTED]
+- 전략 (How) -> contains -> Round 플랜 [EXTRACTED]
+- Phase 1 — 토글 인프라 -> contains -> config.py 플래그 추가 [EXTRACTED]
+- Phase 1 — 토글 인프라 -> contains -> audio_preprocessor.preprocess() 리팩토링 [EXTRACTED]
+- Phase 1 — 토글 인프라 -> contains -> stt_processor.py 복원 [EXTRACTED]
+- Phase 1 — 토글 인프라 -> contains -> config.py 플래그 추가 [EXTRACTED]
+- Phase 1 — 토글 인프라 -> contains -> audio_preprocessor.preprocess() 리팩토링 [EXTRACTED]
+- Phase 1 — 토글 인프라 -> contains -> stt_processor.py 복원 [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> 배경 (Why) [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> 전략 (How) [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Phase 1 — 토글 인프라 [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Phase 2 — 보수적 임계값 [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 1 — gain만 활성화 [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 2 — gain + silence compression [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 3 — denoise 추가 (⏳ 대기) [EXTRACTED]
+- 전처리 파이프라인 재활성화 (Round 1~4) -> contains -> Round 4 — dedup 추가 (⏳ 대기) [EXTRACTED]
+- Round 1 — gain만 활성화 -> has_code_example -> bash [EXTRACTED]
+- Round 1 — gain만 활성화 -> has_code_example -> bash [EXTRACTED]
+- Round 2 — gain + silence compression -> has_code_example -> bash [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 검증 파일 (4개) [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 🐛 발견된 버그: 청크 모드 타임스탬프 gap [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 수정 — 옵션 2 (누적 offset) [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 2차 검증 결과 [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 일반 모드 검증 (`6c821aaf5d50`) [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 🐛 추가 발견 — utterance_segmenter Case C 과병합 버그 [EXTRACTED]
+- Round 2 — gain + silence compression -> has_code_example -> bash [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 검증 파일 (4개) [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 🐛 발견된 버그: 청크 모드 타임스탬프 gap [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 수정 — 옵션 2 (누적 offset) [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 2차 검증 결과 [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 일반 모드 검증 (`6c821aaf5d50`) [EXTRACTED]
+- Round 2 — gain + silence compression -> contains -> 🐛 추가 발견 — utterance_segmenter Case C 과병합 버그 [EXTRACTED]
+- Round 3 — denoise 추가 (⏳ 대기) -> has_code_example -> bash [EXTRACTED]
+- Round 3 — denoise 추가 (⏳ 대기) -> has_code_example -> bash [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> has_code_example -> bash [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::____________ [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::_____wav_______ [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> contains -> Round 3 (denoise) [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> contains -> Round 4 (dedup) [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> has_code_example -> bash [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref______________ [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> references -> __unresolved__::ref::__unresolved____ref_______wav_______ [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> contains -> Round 3 (denoise) [EXTRACTED]
+- Round 4 — dedup 추가 (⏳ 대기) -> contains -> Round 4 (dedup) [EXTRACTED]
+- stt_processor.py 복원 -> has_code_example -> python [EXTRACTED]
+- stt_processor.py 복원 -> has_code_example -> python [EXTRACTED]
+- 🐛 추가 발견 — utterance_segmenter Case C 과병합 버그 -> references -> __unresolved__::ref::____________ [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Round 2 — gain + silence compression, 전처리 파이프라인 재활성화 (Round 1~4), 전처리 파이프라인 재활성화 (Round 1~4)를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 전처리_파이프라인_재활성화.md이다.

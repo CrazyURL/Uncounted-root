@@ -60,9 +60,9 @@ Cohesion: 0.36 | Nodes: 9
 - test_set_result -> calls -> __unresolved__::ref::__unresolved____ref__set_result [EXTRACTED]
 
 ## Cross-Community Connections
-- test_get_nonexistent -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- test_set_error -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
-- test_set_result -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- test_get_nonexistent -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- test_set_error -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- test_set_result -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 
 ## Context
 이 커뮤니티는 TestJobStore, test_set_error, test_set_result를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 test_health.py이다.

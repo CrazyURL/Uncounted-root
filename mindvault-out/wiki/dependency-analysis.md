@@ -2,7 +2,7 @@
 Cohesion: 1.00 | Nodes: 1
 
 ## Key Nodes
-- **Dependency Analysis** (.orchestrate-consult/20260412-121319/gemini.md) -- 0 connections
+- **Dependency Analysis** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/gemini.md) -- 0 connections
 
 ## Internal Relationships
 

@@ -1,8 +1,8 @@
 # Task Decomposition & Summary
-Cohesion: 0.08 | Nodes: 26
+Cohesion: 0.07 | Nodes: 27
 
 ## Key Nodes
-- **Task Decomposition** (.orchestrate-consult/20260412-121319/codex.md) -- 10 connections
+- **Task Decomposition** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 11 connections
   - -> contains -> [[task-1-confirm-current-chunk-mode-data-flow]]
   - -> contains -> [[task-2-add-local-audio-slice-helper]]
   - -> contains -> [[task-3-validate-utterance-segmenter-chunk-inputs]]
@@ -12,8 +12,9 @@ Cohesion: 0.08 | Nodes: 26
   - -> contains -> [[task-7-update-api-contract-and-issue-documentation]]
   - -> contains -> [[task-8-client-acceptance-check]]
   - -> contains -> [[task-9-real-sample-and-memory-verification]]
+  - -> contains -> [[task-5-merge-chunked-results-into-transcribe]]
   - <- contains <- [[summary]]
-- **Summary** (.orchestrate-consult/20260412-121319/codex.md) -- 7 connections
+- **Summary** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 7 connections
   - -> contains -> [[task-decomposition]]
   - -> contains -> [[dependency-analysis]]
   - -> contains -> [[team-composition-recommendation]]
@@ -21,62 +22,64 @@ Cohesion: 0.08 | Nodes: 26
   - -> contains -> [[risk-assessment]]
   - -> contains -> [[alternative-strategies]]
   - -> contains -> [[confidence-level]]
-- **Wave Execution Plan** (.orchestrate-consult/20260412-121319/codex.md) -- 6 connections
+- **Wave Execution Plan** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 6 connections
   - -> contains -> [[wave-0-baseline-orientation]]
   - -> contains -> [[wave-1-independent-helper-work]]
   - -> contains -> [[wave-2-serialized-processor-integration]]
   - -> contains -> [[wave-3-contract-and-client-acceptance]]
   - -> contains -> [[wave-4-runtime-verification]]
   - <- contains <- [[summary]]
-- **Alternative Strategies** (.orchestrate-consult/20260412-121319/codex.md) -- 5 connections
+- **Alternative Strategies** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 5 connections
   - -> contains -> [[option-a-chunk-local-utterance-wav-generation]]
   - -> contains -> [[option-b-load-full-audio-after-chunked-stt-to-reuse-existing-splitter]]
   - -> contains -> [[option-c-file-backed-artifact-generation-during-chunk-processing]]
   - -> contains -> [[option-d-defer-wav-generation-to-a-post-processing-queue]]
   - <- contains <- [[summary]]
-- **Confidence Level** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Confidence Level** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[summary]]
-- **Dependency Analysis** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Dependency Analysis** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[summary]]
-- **Option A: Chunk-Local Utterance WAV Generation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Option A: Chunk-Local Utterance WAV Generation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[alternative-strategies]]
-- **Option B: Load Full Audio After Chunked STT To Reuse Existing Splitter** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Option B: Load Full Audio After Chunked STT To Reuse Existing Splitter** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[alternative-strategies]]
-- **Option C: File-Backed Artifact Generation During Chunk Processing** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Option C: File-Backed Artifact Generation During Chunk Processing** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[alternative-strategies]]
-- **Option D: Defer WAV Generation To A Post-Processing Queue** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Option D: Defer WAV Generation To A Post-Processing Queue** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[alternative-strategies]]
-- **Risk Assessment** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Risk Assessment** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[summary]]
-- **Task 1: Confirm Current Chunk-Mode Data Flow** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Task 1: Confirm Current Chunk-Mode Data Flow** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Task 2: Add Local Audio Slice Helper** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Task 2: Add Local Audio Slice Helper** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Task 3: Validate Utterance Segmenter Chunk Inputs** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Task 3: Validate Utterance Segmenter Chunk Inputs** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Task 4: Integrate Chunk Utterance WAV Generation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Task 4: Integrate Chunk Utterance WAV Generation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 5: Merge Chunked Results Into `transcribe()`** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
 - **Task 5: Merge Chunked Results Into `transcribe()`** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Task 6: Add Processor Integration Tests** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Task 6: Add Processor Integration Tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Task 7: Update API Contract And Issue Documentation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Task 7: Update API Contract And Issue Documentation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Task 8: Client Acceptance Check** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Task 8: Client Acceptance Check** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Task 9: Real Sample And Memory Verification** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Task 9: Real Sample And Memory Verification** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Team Composition Recommendation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Team Composition Recommendation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[summary]]
-- **Wave 0: Baseline Orientation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Wave 0: Baseline Orientation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[wave-execution-plan]]
-- **Wave 1: Independent Helper Work** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Wave 1: Independent Helper Work** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[wave-execution-plan]]
-- **Wave 2: Serialized Processor Integration** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Wave 2: Serialized Processor Integration** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[wave-execution-plan]]
-- **Wave 3: Contract And Client Acceptance** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Wave 3: Contract And Client Acceptance** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[wave-execution-plan]]
-- **Wave 4: Runtime Verification** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+- **Wave 4: Runtime Verification** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[wave-execution-plan]]
 
 ## Internal Relationships
@@ -100,6 +103,7 @@ Cohesion: 0.08 | Nodes: 26
 - Task Decomposition -> contains -> Task 7: Update API Contract And Issue Documentation [EXTRACTED]
 - Task Decomposition -> contains -> Task 8: Client Acceptance Check [EXTRACTED]
 - Task Decomposition -> contains -> Task 9: Real Sample And Memory Verification [EXTRACTED]
+- Task Decomposition -> contains -> Task 5: Merge Chunked Results Into `transcribe()` [EXTRACTED]
 - Wave Execution Plan -> contains -> Wave 0: Baseline Orientation [EXTRACTED]
 - Wave Execution Plan -> contains -> Wave 1: Independent Helper Work [EXTRACTED]
 - Wave Execution Plan -> contains -> Wave 2: Serialized Processor Integration [EXTRACTED]

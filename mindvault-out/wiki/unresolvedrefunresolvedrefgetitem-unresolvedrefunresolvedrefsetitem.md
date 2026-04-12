@@ -1,5 +1,5 @@
 # __unresolved__::ref::__unresolved____ref__getitem & __unresolved__::ref::__unresolved____ref__setitem
-Cohesion: 0.01 | Nodes: 333
+Cohesion: 0.01 | Nodes: 338
 
 ## Key Nodes
 - **__unresolved__::ref::__unresolved____ref__getitem** () -- 111 connections
@@ -660,6 +660,14 @@ Cohesion: 0.01 | Nodes: 333
   - <- calls <- [[runpiiforall]]
   - <- calls <- [[runlabelforall]]
   - <- calls <- [[markcurrentstageerror]]
+- **generateCodeChallenge** (uncounted-app/src/lib/auth.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefencode]]
+  - -> calls -> [[unresolvedrefunresolvedrefdigest]]
+  - -> calls -> [[unresolvedrefunresolvedrefsha256sync]]
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefbtoa]]
+  - -> calls -> [[unresolvedrefunresolvedreffromcharcode]]
+  - <- contains <- [[auth]]
 - **persistCache** (uncounted-app/src/lib/embedding/embeddingCache.ts) -- 7 connections
   - -> calls -> [[unresolvedrefunresolvedrefstringify]]
   - -> calls -> [[unresolvedrefunresolvedrefsetitem]]
@@ -731,6 +739,13 @@ Cohesion: 0.01 | Nodes: 333
   - -> contains -> [[getorcreateaeskey]]
   - -> imports -> [[unresolvedrefunresolvedrefnetwork]]
   - -> imports -> [[unresolvedrefunresolvedrefuuid]]
+- **stt_colab** (uncounted-app/scripts/stt_colab.py) -- 6 connections
+  - -> imports -> [[unresolvedrefunresolvedrefcolab]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefdatetime]]
+  - -> imports -> [[unresolvedrefunresolvedrefsupabase]]
+  - -> imports -> [[unresolvedrefunresolvedreffasterwhisper]]
 - **voiceFetch** (uncounted-app/src/lib/api/voiceApi.ts) -- 6 connections
   - -> calls -> [[unresolvedrefunresolvedreffetch]]
   - -> calls -> [[unresolvedrefunresolvedreftimeout]]
@@ -851,12 +866,6 @@ Cohesion: 0.01 | Nodes: 333
   - -> imports -> [[unresolvedrefunresolvedrefauth]]
   - -> imports -> [[unresolvedrefunresolvedrefnetwork]]
   - -> imports -> [[unresolvedrefunresolvedrefuuid]]
-- **computeAlreadyDone** (uncounted-app/src/lib/pipelineOrchestrator.ts) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefloadalltranscripts]]
-  - -> calls -> [[unresolvedrefunresolvedreffilter]]
-  - -> calls -> [[unresolvedrefunresolvedreffind]]
-  - -> calls -> [[unresolvedrefunresolvedrefmax]]
-  - <- contains <- [[pipelineorchestrator]]
 - **pipelineState** (uncounted-app/src/lib/pipelineState.ts) -- 5 connections
   - -> contains -> [[makeidle]]
   - -> contains -> [[persist]]
@@ -895,11 +904,6 @@ Cohesion: 0.01 | Nodes: 333
   - <- calls <- [[generatecodeverifier]]
   - <- calls <- [[generatecodechallenge]]
   - <- calls <- [[getorcreateaeskey]]
-- **__unresolved__::ref::__unresolved____ref__pow** () -- 4 connections
-  - <- calls <- [[calcnextretryat]]
-  - <- calls <- [[calcnextretryat]]
-  - <- calls <- [[formatbytes]]
-  - <- calls <- [[formatbytes]]
 - **__unresolved__::ref::__unresolved____ref__settimeout** () -- 4 connections
   - <- calls <- [[runpiiforall]]
   - <- calls <- [[runlabelforall]]
@@ -1735,6 +1739,9 @@ Cohesion: 0.01 | Nodes: 333
 - **__unresolved__::ref::__unresolved____ref__batchautolabel** () -- 2 connections
   - <- calls <- [[runlabelforall]]
   - <- calls <- [[runlabelforall]]
+- **__unresolved__::ref::__unresolved____ref__datetime** () -- 2 connections
+  - <- imports <- [[sttcolab]]
+  - <- imports <- [[instinct-cli]]
 - **__unresolved__::ref::__unresolved____ref__exportkey** () -- 2 connections
   - <- calls <- [[getorcreateaeskey]]
   - <- calls <- [[getorcreateaeskey]]
@@ -1876,6 +1883,10 @@ Cohesion: 0.01 | Nodes: 333
   - <- calls <- [[refreshtokenonce]]
 - **__unresolved__::ref::__unresolved____ref__blob** () -- 1 connections
   - <- calls <- [[voicefetchblob]]
+- **__unresolved__::ref::__unresolved____ref__colab** () -- 1 connections
+  - <- imports <- [[sttcolab]]
+- **__unresolved__::ref::__unresolved____ref__faster_whisper** () -- 1 connections
+  - <- imports <- [[sttcolab]]
 - **__unresolved__::ref::__unresolved____ref__getsecureitem** () -- 1 connections
   - <- calls <- [[getorcreateaeskey]]
 - **__unresolved__::ref::__unresolved____ref__getverifiedpaths** () -- 1 connections
@@ -1898,6 +1909,10 @@ Cohesion: 0.01 | Nodes: 333
   - <- calls <- [[runnonsttstages]]
 - **__unresolved__::ref::__unresolved____ref__saveallsessions** () -- 1 connections
   - <- calls <- [[runnonsttstages]]
+- **__unresolved__::ref::__unresolved____ref__sha256sync** () -- 1 connections
+  - <- calls <- [[generatecodechallenge]]
+- **__unresolved__::ref::__unresolved____ref__supabase** () -- 1 connections
+  - <- imports <- [[sttcolab]]
 - **__unresolved__::ref::__unresolved____ref__updateprocessingtask** () -- 1 connections
   - <- calls <- [[runnonsttstages]]
 - **wavEncoder** (.orchestrate-consult/20260327-210056/wavEncoder.ts) -- 1 connections
@@ -2207,7 +2222,6 @@ Cohesion: 0.01 | Nodes: 333
 - uploadQueue -> contains -> calcNextRetryAt [EXTRACTED]
 - uploadQueue -> contains -> getOrCreateAesKey [EXTRACTED]
 - uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref___network_ [EXTRACTED]
-- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__pow [EXTRACTED]
 - calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__toisostring [EXTRACTED]
 - getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__getitem [EXTRACTED]
 - getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__atob [EXTRACTED]
@@ -2229,6 +2243,11 @@ Cohesion: 0.01 | Nodes: 333
 - writeString -> calls -> __unresolved__::ref::__unresolved____ref__charcodeat [EXTRACTED]
 - userProfile -> contains -> generatePid [EXTRACTED]
 - generatePid -> calls -> __unresolved__::ref::__unresolved____ref__generateuuid [EXTRACTED]
+- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref__colab [EXTRACTED]
+- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref__json [EXTRACTED]
+- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref__datetime [EXTRACTED]
+- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref__supabase [EXTRACTED]
+- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref__faster_whisper [EXTRACTED]
 - getLocalFilePathIds -> calls -> __unresolved__::ref::__unresolved____ref__getitem [EXTRACTED]
 - getLocalFilePathIds -> calls -> __unresolved__::ref::__unresolved____ref__parse [EXTRACTED]
 - loadSessionsFromLS -> calls -> __unresolved__::ref::__unresolved____ref__getitem [EXTRACTED]
@@ -2323,9 +2342,13 @@ Cohesion: 0.01 | Nodes: 333
 - loadFromStorage -> calls -> __unresolved__::ref::__unresolved____ref__fetch [EXTRACTED]
 - loadFromStorage -> calls -> __unresolved__::ref::__unresolved____ref__arraybuffer [EXTRACTED]
 - auth -> contains -> generateCodeVerifier [EXTRACTED]
+- auth -> contains -> generateCodeChallenge [EXTRACTED]
 - auth -> contains -> getOrCreatePid [EXTRACTED]
 - auth -> imports -> __unresolved__::ref::__unresolved____ref___api_auth_ [EXTRACTED]
 - auth -> imports -> __unresolved__::ref::__unresolved____ref___crypto_ [EXTRACTED]
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__sha256sync [EXTRACTED]
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__btoa [EXTRACTED]
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__fromcharcode [EXTRACTED]
 - generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__btoa [EXTRACTED]
 - generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__fromcharcode [EXTRACTED]
 - getOrCreatePid -> calls -> __unresolved__::ref::__unresolved____ref__getitem [EXTRACTED]
@@ -2467,7 +2490,6 @@ Cohesion: 0.01 | Nodes: 333
 - loadScanState -> calls -> __unresolved__::ref::__unresolved____ref__parse [EXTRACTED]
 - saveScanState -> calls -> __unresolved__::ref::__unresolved____ref__setitem [EXTRACTED]
 - saveScanState -> calls -> __unresolved__::ref::__unresolved____ref__stringify [EXTRACTED]
-- computeAlreadyDone -> calls -> __unresolved__::ref::__unresolved____ref__loadalltranscripts [EXTRACTED]
 - markCurrentStageError -> calls -> __unresolved__::ref::__unresolved____ref__getpipelinesnapshot [EXTRACTED]
 - markCurrentStageError -> calls -> __unresolved__::ref::__unresolved____ref__pipelineupdatestage [EXTRACTED]
 - runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__getitem [EXTRACTED]
@@ -2528,7 +2550,6 @@ Cohesion: 0.01 | Nodes: 333
 - uploadQueue -> contains -> migrateKeyFromLocalStorage [EXTRACTED]
 - uploadQueue -> contains -> getOrCreateAesKey [EXTRACTED]
 - uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref___network_ [EXTRACTED]
-- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__pow [EXTRACTED]
 - calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__toisostring [EXTRACTED]
 - getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__getsecureitem [EXTRACTED]
 - getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__migratekeyfromlocalstorage [EXTRACTED]
@@ -2583,53 +2604,55 @@ Cohesion: 0.01 | Nodes: 333
 - sessions -> imports -> __unresolved__::ref::__unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - audioSanitizer -> imports -> __unresolved__::ref::__unresolved____ref___wavencoder_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - auth -> imports -> __unresolved__::ref::__unresolved____ref___api_admin_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- auth -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- captureDeviceContext -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- consentInvitation -> contains -> generateToken (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- consentInvitation -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- captureDeviceContext -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- consentInvitation -> contains -> generateToken (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- consentInvitation -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - datasetStore -> imports -> __unresolved__::ref::__unresolved____ref___types_dataset_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- saveToCache -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- saveToCache -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - errorLogger -> imports -> __unresolved__::ref::__unresolved____ref___auth_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- errorLogger -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- getDeviceInfo -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- saveLog -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- errorLogger -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- getDeviceInfo -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- saveLog -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - exportJobRunner -> imports -> __unresolved__::ref::__unresolved____ref___types_admin_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - funnelLogger -> imports -> __unresolved__::ref::__unresolved____ref___auth_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- funnelLogger -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- saveEvents -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- todayBucket -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-unresolvedrefunresolvedreffloor]])
-- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__some (-> [[piisessioncard-unresolvedrefunresolvedrefnotify]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- funnelLogger -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- saveEvents -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- todayBucket -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__some (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - pipelineState -> contains -> notify (-> [[unresolvedrefunresolvedrefl-notify]])
 - pipelineState -> imports -> __unresolved__::ref::__unresolved____ref___react_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- applyGlobalConsent -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- applyGlobalConsent -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- applyVerificationPatches -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- applyVerificationPatches -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- applyVisibilityOverrides -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- cleanupVisibilityOverrides -> calls -> __unresolved__::ref::__unresolved____ref__entries (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- cleanupVisibilityOverrides -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- enrichWithFilePaths -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- enrichWithFilePaths -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- loadSessionsFromLS -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- saveSessionsToLS -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- applyGlobalConsent -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- applyGlobalConsent -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- applyVerificationPatches -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- applyVerificationPatches -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- applyVisibilityOverrides -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- cleanupVisibilityOverrides -> calls -> __unresolved__::ref::__unresolved____ref__entries (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- cleanupVisibilityOverrides -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- enrichWithFilePaths -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- enrichWithFilePaths -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- loadSessionsFromLS -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- saveSessionsToLS -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - storageUpload -> imports -> __unresolved__::ref::__unresolved____ref___auth_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-unresolvedrefunresolvedreffloor]])
-- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__now (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__from (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- saveQueue -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__pow (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__now (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__from (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- saveQueue -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - userProfile -> imports -> __unresolved__::ref::__unresolved____ref___lib_uuid_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- getLocalFilePathIds -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- loadSessionsFromLS -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- saveSessionsToLS -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- stt_colab -> imports -> __unresolved__::ref::__unresolved____ref__os (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- getLocalFilePathIds -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- loadSessionsFromLS -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- saveSessionsToLS -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - sessionChunks -> imports -> __unresolved__::ref::__unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - sessions -> imports -> __unresolved__::ref::__unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - transcriptChunks -> imports -> __unresolved__::ref::__unresolved____ref___transcriptstore_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
@@ -2637,54 +2660,54 @@ Cohesion: 0.01 | Nodes: 333
 - voiceFetch -> calls -> __unresolved__::ref::__unresolved____ref__text (-> [[createdocument-generatedocx]])
 - voiceProfile -> imports -> __unresolved__::ref::__unresolved____ref___types_voicebiometrics_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - audioDecoderBridge.test -> imports -> __unresolved__::ref::__unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefvitest]])
-- audioDedupe -> contains -> hashFingerprint (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- auth -> contains -> generateCodeChallenge (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- audioDedupe -> contains -> hashFingerprint (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - auth -> imports -> __unresolved__::ref::__unresolved____ref____capacitor_core_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - auth -> imports -> __unresolved__::ref::__unresolved____ref____capacitor_browser_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- auth -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - auth -> imports -> __unresolved__::ref::__unresolved____ref___securekeystore_ (-> [[unresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefvitest]])
-- generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__getrandomvalues (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__replace (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- captureDeviceContext -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- consentInvitation -> contains -> generateToken (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- consentInvitation -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__encode (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__digest (-> [[migrate-session-ids-computenewsessionid]])
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__replace (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__getrandomvalues (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__replace (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- captureDeviceContext -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- consentInvitation -> contains -> generateToken (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- consentInvitation -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - datasetStore -> imports -> __unresolved__::ref::__unresolved____ref___types_dataset_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- saveToCache -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- saveToCache -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - persistCache -> calls -> __unresolved__::ref::__unresolved____ref__isnativeplatform (-> [[piisessioncard-unresolvedrefunresolvedrefnotify]])
 - persistCache -> calls -> __unresolved__::ref::__unresolved____ref__catch (-> [[piisessioncard-unresolvedrefunresolvedrefnotify]])
-- persistCache -> calls -> __unresolved__::ref::__unresolved____ref__set (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- persistCache -> calls -> __unresolved__::ref::__unresolved____ref__writefile (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- persistCache -> calls -> __unresolved__::ref::__unresolved____ref__set (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- persistCache -> calls -> __unresolved__::ref::__unresolved____ref__writefile (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - errorLogger -> imports -> __unresolved__::ref::__unresolved____ref___auth_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- errorLogger -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- getDeviceInfo -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- saveLog -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- errorLogger -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- getDeviceInfo -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- saveLog -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - funnelLogger -> imports -> __unresolved__::ref::__unresolved____ref___auth_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- funnelLogger -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- saveEvents -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- todayBucket -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- computeAlreadyDone -> calls -> __unresolved__::ref::__unresolved____ref__filter (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- computeAlreadyDone -> calls -> __unresolved__::ref::__unresolved____ref__find (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
-- computeAlreadyDone -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-unresolvedrefunresolvedreffloor]])
-- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__some (-> [[piisessioncard-unresolvedrefunresolvedrefnotify]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- funnelLogger -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- saveEvents -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- todayBucket -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- runLabelForAll -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__some (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- runPiiForAll -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - pipelineState -> contains -> notify (-> [[unresolvedrefunresolvedrefl-notify]])
 - pipelineState -> imports -> __unresolved__::ref::__unresolved____ref___react_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - storageUpload -> imports -> __unresolved__::ref::__unresolved____ref___auth_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 - handleSttTokenRefreshed -> calls -> __unresolved__::ref::__unresolved____ref__logerror (-> [[piisessioncard-unresolvedrefunresolvedrefnotify]])
-- uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - uploadQueue -> imports -> __unresolved__::ref::__unresolved____ref___securekeystore_ (-> [[unresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefvitest]])
-- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-unresolvedrefunresolvedreffloor]])
-- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__now (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__from (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::__unresolved____ref__warn (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
-- saveQueue -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-testparseinstinct]])
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[transcribe-unresolvedrefunresolvedrefmin]])
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__pow (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- calcNextRetryAt -> calls -> __unresolved__::ref::__unresolved____ref__now (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__from (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- migrateKeyFromLocalStorage -> calls -> __unresolved__::ref::__unresolved____ref__warn (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- saveQueue -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
 - userProfile -> imports -> __unresolved__::ref::__unresolved____ref___lib_uuid_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
 
 ## Context

@@ -60,7 +60,7 @@ Cohesion: 0.14 | Nodes: 14
 - Key Findings -> references -> __unresolved__::ref::__unresolved____ref__skutier [EXTRACTED]
 
 ## Cross-Community Connections
-- Key Findings -> references -> __unresolved__::ref::__unresolved____ref__app (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref__app (-> [[transcribe-unresolvedrefunresolvedrefmin]])
 
 ## Context
 이 커뮤니티는 Key Findings, __unresolved__::ref::__unresolved____ref__appshell, __unresolved__::ref::__unresolved____ref__authcontext를 중심으로 references 관계로 연결되어 있다. 주요 소스 파일은 codex.md이다.

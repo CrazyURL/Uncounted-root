@@ -1,12 +1,17 @@
 # segment & __unresolved__::ref::__unresolved____ref___apply_padding
-Cohesion: 0.40 | Nodes: 5
+Cohesion: 0.22 | Nodes: 9
 
 ## Key Nodes
-- **segment** (uncounted-voice-api/app/services/utterance_segmenter.py) -- 5 connections
+- **segment** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/utterance_segmenter.py) -- 10 connections
   - -> calls -> [[unresolvedrefunresolvedrefsplitbyboundaries]]
   - -> calls -> [[unresolvedrefunresolvedrefmergeshortutterances]]
   - -> calls -> [[unresolvedrefunresolvedrefsplitlongutterances]]
   - -> calls -> [[unresolvedrefunresolvedrefapplypadding]]
+  - -> calls -> [[unresolvedrefsplitbyboundaries]]
+  - -> calls -> [[unresolvedrefmergeshortutterances]]
+  - -> calls -> [[unresolvedrefsplitlongutterances]]
+  - -> calls -> [[unresolvedrefapplypadding]]
+  - <- contains <- [[utterancesegmenter]]
   - <- contains <- [[utterancesegmenter]]
 - **__unresolved__::ref::__unresolved____ref___apply_padding** () -- 1 connections
   - <- calls <- [[segment]]
@@ -16,12 +21,24 @@ Cohesion: 0.40 | Nodes: 5
   - <- calls <- [[segment]]
 - **__unresolved__::ref::__unresolved____ref___split_long_utterances** () -- 1 connections
   - <- calls <- [[segment]]
+- **__unresolved__::ref::_apply_padding** () -- 1 connections
+  - <- calls <- [[segment]]
+- **__unresolved__::ref::_merge_short_utterances** () -- 1 connections
+  - <- calls <- [[segment]]
+- **__unresolved__::ref::_split_by_boundaries** () -- 1 connections
+  - <- calls <- [[segment]]
+- **__unresolved__::ref::_split_long_utterances** () -- 1 connections
+  - <- calls <- [[segment]]
 
 ## Internal Relationships
 - segment -> calls -> __unresolved__::ref::__unresolved____ref___split_by_boundaries [EXTRACTED]
 - segment -> calls -> __unresolved__::ref::__unresolved____ref___merge_short_utterances [EXTRACTED]
 - segment -> calls -> __unresolved__::ref::__unresolved____ref___split_long_utterances [EXTRACTED]
 - segment -> calls -> __unresolved__::ref::__unresolved____ref___apply_padding [EXTRACTED]
+- segment -> calls -> __unresolved__::ref::_split_by_boundaries [EXTRACTED]
+- segment -> calls -> __unresolved__::ref::_merge_short_utterances [EXTRACTED]
+- segment -> calls -> __unresolved__::ref::_split_long_utterances [EXTRACTED]
+- segment -> calls -> __unresolved__::ref::_apply_padding [EXTRACTED]
 
 ## Cross-Community Connections
 
