@@ -75,6 +75,17 @@ print(f'Source: {result[\"total_words\"]} words')
 
 Replace `INPUT_PATH` with the actual path the user provided (or `.` if none).
 
+### Step 2.5 -- Prune unresolvedref noise (MANDATORY after every pipeline run)
+
+The mindvault package generates `__unresolved__::ref::*` pseudo-nodes for unresolved imports (React, pytest types, builtins, etc.) and produces wiki pages with `unresolvedref` in the filename. These pages are pure noise, inflate god-node stats, and the count **doubles each run** (`unresolvedref` -> `unresolvedrefunresolvedref`). Always delete them before the report step.
+
+```bash
+find mindvault-out/wiki -type f -name '*unresolvedref*.md' -delete 2>/dev/null
+echo "Pruned unresolvedref wiki pages."
+```
+
+Run this after `run()` and after `run_incremental()`. Do not skip.
+
 ### Step 3 -- Read the report and present findings
 
 ```bash
@@ -258,6 +269,8 @@ else:
 ```
 
 Replace `INPUT_PATH` with the path the user provided. If no output exists yet, `run_incremental` automatically falls back to a full pipeline run.
+
+After the ingest call, run the Step 2.5 pruning block to remove any `*unresolvedref*.md` files the package regenerated.
 
 ## For /mindvault install
 
