@@ -1,0 +1,278 @@
+# pipelineOrchestrator & sharePrepEngine
+Cohesion: 0.05 | Nodes: 45
+
+## Key Nodes
+- **pipelineOrchestrator** (src/lib/pipelineOrchestrator.ts) -- 20 connections
+  - -> contains -> [[filtersttitems]]
+  - -> contains -> [[computealreadydone]]
+  - -> contains -> [[registerpostpipelinewatch]]
+  - -> contains -> [[runnonsttstages]]
+  - -> contains -> [[startsttbackground]]
+  - -> contains -> [[runpiiforall]]
+  - -> contains -> [[runlabelforall]]
+  - -> contains -> [[runmetadatastage]]
+  - -> contains -> [[markcurrentstageerror]]
+  - -> imports -> [[unresolvedreftypessession]]
+  - -> imports -> [[unresolvedrefpipelinestate]]
+  - -> imports -> [[unresolvedrefsttengine]]
+  - -> imports -> [[unresolvedreftranscriptstore]]
+  - -> imports -> [[unresolvedrefpiidetector]]
+  - -> imports -> [[unresolvedrefsanitizecache]]
+  - -> imports -> [[unresolvedrefsessionmapper]]
+  - -> imports -> [[unresolvedrefautolabel]]
+  - -> imports -> [[unresolvedrefcontactutils]]
+  - -> imports -> [[unresolvedrefmetadataexportresolver]]
+  - -> imports -> [[unresolvedrefprocessingservicebridge]]
+- **sharePrepEngine** (src/lib/sharePrepEngine.ts) -- 10 connections
+  - -> contains -> [[loadbatches]]
+  - -> contains -> [[savebatch]]
+  - -> contains -> [[buildresult]]
+  - -> imports -> [[unresolvedreftypessession]]
+  - -> imports -> [[unresolvedreftypesconsent]]
+  - -> imports -> [[unresolvedrefauth]]
+  - -> imports -> [[unresolvedrefsanitizecache]]
+  - -> imports -> [[unresolvedrefstatemachine]]
+  - -> imports -> [[unresolvedrefidb]]
+  - -> imports -> [[unresolvedrefuuid]]
+- **__unresolved__::ref::_idb_** () -- 9 connections
+  - <- imports <- [[sanitizecache]]
+  - <- imports <- [[shareprepengine]]
+  - <- imports <- [[transcriptstore]]
+  - <- imports <- [[chunkstatsstore]]
+  - <- imports <- [[speakermuter]]
+  - <- imports <- [[globalconsent]]
+  - <- imports <- [[resetall]]
+  - <- imports <- [[decodestatestore]]
+  - <- imports <- [[batchprocessor]]
+- **__unresolved__::ref::_transcriptstore_** () -- 7 connections
+  - <- imports <- [[sanitizecache]]
+  - <- imports <- [[pipelineorchestrator]]
+  - <- imports <- [[speakermuter]]
+  - <- imports <- [[sttworkerpool]]
+  - <- imports <- [[sttengine]]
+  - <- imports <- [[batchprocessor]]
+  - <- imports <- [[transcriptchunks]]
+- **batchProcessor** (src/lib/autoLabel/batchProcessor.ts) -- 7 connections
+  - -> contains -> [[calcgroupstats]]
+  - -> imports -> [[unresolvedreftypessession]]
+  - -> imports -> [[unresolvedrefcontactutils]]
+  - -> imports -> [[unresolvedrefidb]]
+  - -> imports -> [[unresolvedrefruleengine]]
+  - -> imports -> [[unresolvedreftranscriptstore]]
+  - -> imports -> [[unresolvedreflabeloptions]]
+- **registerPostPipelineWatch** (src/lib/pipelineOrchestrator.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefregisterprocessingtask]]
+  - -> calls -> [[unresolvedrefsubscribepipeline]]
+  - -> calls -> [[unresolvedrefgetpipelinesnapshot]]
+  - -> calls -> [[unresolvedrefunsub]]
+  - -> calls -> [[unresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunregisterprocessingtask]]
+  - <- contains <- [[pipelineorchestrator]]
+- **sanitizeCache** (src/lib/sanitizeCache.ts) -- 7 connections
+  - -> contains -> [[loadcache]]
+  - -> contains -> [[savecache]]
+  - -> contains -> [[findwordtimestamp]]
+  - -> imports -> [[unresolvedreftypessession]]
+  - -> imports -> [[unresolvedrefidb]]
+  - -> imports -> [[unresolvedrefpiidetector]]
+  - -> imports -> [[unresolvedreftranscriptstore]]
+- **runNonSttStages** (src/lib/pipelineOrchestrator.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefpipelineupdatestage]]
+  - -> calls -> [[unresolvedrefupdateprocessingtask]]
+  - -> calls -> [[unresolvedrefrunpiiforall]]
+  - -> calls -> [[unresolvedrefrunlabelforall]]
+  - -> calls -> [[unresolvedrefsaveallsessions]]
+  - <- contains <- [[pipelineorchestrator]]
+- **saveBatch** (src/lib/sharePrepEngine.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefloadbatches]]
+  - -> calls -> [[unresolvedreffindindex]]
+  - -> calls -> [[unresolvedrefpush]]
+  - -> calls -> [[unresolvedrefidbset]]
+  - <- contains <- [[shareprepengine]]
+- **__unresolved__::ref::_processingservicebridge_** () -- 4 connections
+  - <- imports <- [[verificationengine]]
+  - <- imports <- [[pipelineorchestrator]]
+  - <- imports <- [[sttservicebridge]]
+  - <- imports <- [[sttengine]]
+- **__unresolved__::ref::pipelineupdatestage** () -- 4 connections
+  - <- calls <- [[runnonsttstages]]
+  - <- calls <- [[runpiiforall]]
+  - <- calls <- [[runlabelforall]]
+  - <- calls <- [[markcurrentstageerror]]
+- **audioEnvironmentCollector** (src/lib/audioEnvironmentCollector.ts) -- 4 connections
+  - -> contains -> [[hourtotimebucket]]
+  - -> imports -> [[unresolvedrefaudioanalyzer]]
+  - -> imports -> [[unresolvedreftypesmetadata]]
+  - -> imports -> [[unresolvedreftypesaudioasset]]
+- **__unresolved__::ref::_contactutils_** () -- 3 connections
+  - <- imports <- [[pipelineorchestrator]]
+  - <- imports <- [[displaymask]]
+  - <- imports <- [[batchprocessor]]
+- **__unresolved__::ref::await_idbget** () -- 3 connections
+  - <- calls <- [[loadcache]]
+  - <- calls <- [[loadbatches]]
+  - <- calls <- [[ensuremigrated]]
+- **__unresolved__::ref::idbset** () -- 3 connections
+  - <- calls <- [[savecache]]
+  - <- calls <- [[savebatch]]
+  - <- calls <- [[ensuremigrated]]
+- **hourToTimeBucket** (src/lib/audioEnvironmentCollector.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefmin]]
+  - -> calls -> [[unresolvedreffloor]]
+  - <- contains <- [[audioenvironmentcollector]]
+- **markCurrentStageError** (src/lib/pipelineOrchestrator.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefgetpipelinesnapshot]]
+  - -> calls -> [[unresolvedrefpipelineupdatestage]]
+  - <- contains <- [[pipelineorchestrator]]
+- **__unresolved__::ref::_audioanalyzer_** () -- 2 connections
+  - <- imports <- [[chunkstatsstore]]
+  - <- imports <- [[audioenvironmentcollector]]
+- **__unresolved__::ref::_labeloptions_** () -- 2 connections
+  - <- imports <- [[batchprocessor]]
+  - <- imports <- [[ruleengine]]
+- **__unresolved__::ref::_piidetector_** () -- 2 connections
+  - <- imports <- [[sanitizecache]]
+  - <- imports <- [[pipelineorchestrator]]
+- **__unresolved__::ref::_sanitizecache_** () -- 2 connections
+  - <- imports <- [[shareprepengine]]
+  - <- imports <- [[pipelineorchestrator]]
+- **__unresolved__::ref::getpipelinesnapshot** () -- 2 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+  - <- calls <- [[markcurrentstageerror]]
+- **transcriptChunks** (src/lib/api/transcriptChunks.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefclient]]
+  - -> imports -> [[unresolvedreftranscriptstore]]
+- **chunkStatsStore** (src/lib/chunkStatsStore.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefidb]]
+  - -> imports -> [[unresolvedrefaudioanalyzer]]
+- **loadCache** (src/lib/sanitizeCache.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefawaitidbget]]
+  - <- contains <- [[sanitizecache]]
+- **saveCache** (src/lib/sanitizeCache.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefidbset]]
+  - <- contains <- [[sanitizecache]]
+- **loadBatches** (src/lib/sharePrepEngine.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefawaitidbget]]
+  - <- contains <- [[shareprepengine]]
+- **sttWorkerPool** (src/lib/sttWorkerPool.ts) -- 2 connections
+  - -> contains -> [[sttworkerpool]]
+  - -> imports -> [[unresolvedreftranscriptstore]]
+- **__unresolved__::ref::_autolabel_** () -- 1 connections
+  - <- imports <- [[pipelineorchestrator]]
+- **__unresolved__::ref::_ruleengine_** () -- 1 connections
+  - <- imports <- [[batchprocessor]]
+- **__unresolved__::ref::_statemachine_** () -- 1 connections
+  - <- imports <- [[shareprepengine]]
+- **__unresolved__::ref::_sttengine_** () -- 1 connections
+  - <- imports <- [[pipelineorchestrator]]
+- **__unresolved__::ref::findindex** () -- 1 connections
+  - <- calls <- [[savebatch]]
+- **__unresolved__::ref::loadbatches** () -- 1 connections
+  - <- calls <- [[savebatch]]
+- **__unresolved__::ref::registerprocessingtask** () -- 1 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+- **__unresolved__::ref::runlabelforall** () -- 1 connections
+  - <- calls <- [[runnonsttstages]]
+- **__unresolved__::ref::runpiiforall** () -- 1 connections
+  - <- calls <- [[runnonsttstages]]
+- **__unresolved__::ref::saveallsessions** () -- 1 connections
+  - <- calls <- [[runnonsttstages]]
+- **__unresolved__::ref::subscribepipeline** () -- 1 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+- **__unresolved__::ref::unregisterprocessingtask** () -- 1 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+- **__unresolved__::ref::unsub** () -- 1 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+- **__unresolved__::ref::updateprocessingtask** () -- 1 connections
+  - <- calls <- [[runnonsttstages]]
+- **decodeStateStore** (src/lib/decodeStateStore.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefidb]]
+- **buildResult** (src/lib/sharePrepEngine.ts) -- 1 connections
+  - <- contains <- [[shareprepengine]]
+- **sttServiceBridge** (src/lib/sttServiceBridge.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefprocessingservicebridge]]
+
+## Internal Relationships
+- transcriptChunks -> imports -> __unresolved__::ref::_transcriptstore_ [EXTRACTED]
+- audioEnvironmentCollector -> contains -> hourToTimeBucket [EXTRACTED]
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::_audioanalyzer_ [EXTRACTED]
+- batchProcessor -> imports -> __unresolved__::ref::_contactutils_ [EXTRACTED]
+- batchProcessor -> imports -> __unresolved__::ref::_idb_ [EXTRACTED]
+- batchProcessor -> imports -> __unresolved__::ref::_ruleengine_ [EXTRACTED]
+- batchProcessor -> imports -> __unresolved__::ref::_transcriptstore_ [EXTRACTED]
+- batchProcessor -> imports -> __unresolved__::ref::_labeloptions_ [EXTRACTED]
+- chunkStatsStore -> imports -> __unresolved__::ref::_idb_ [EXTRACTED]
+- chunkStatsStore -> imports -> __unresolved__::ref::_audioanalyzer_ [EXTRACTED]
+- decodeStateStore -> imports -> __unresolved__::ref::_idb_ [EXTRACTED]
+- markCurrentStageError -> calls -> __unresolved__::ref::getpipelinesnapshot [EXTRACTED]
+- markCurrentStageError -> calls -> __unresolved__::ref::pipelineupdatestage [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::registerprocessingtask [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::subscribepipeline [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::getpipelinesnapshot [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::unsub [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::unregisterprocessingtask [EXTRACTED]
+- runNonSttStages -> calls -> __unresolved__::ref::pipelineupdatestage [EXTRACTED]
+- runNonSttStages -> calls -> __unresolved__::ref::updateprocessingtask [EXTRACTED]
+- runNonSttStages -> calls -> __unresolved__::ref::runpiiforall [EXTRACTED]
+- runNonSttStages -> calls -> __unresolved__::ref::runlabelforall [EXTRACTED]
+- runNonSttStages -> calls -> __unresolved__::ref::saveallsessions [EXTRACTED]
+- pipelineOrchestrator -> contains -> registerPostPipelineWatch [EXTRACTED]
+- pipelineOrchestrator -> contains -> runNonSttStages [EXTRACTED]
+- pipelineOrchestrator -> contains -> markCurrentStageError [EXTRACTED]
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_sttengine_ [EXTRACTED]
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_transcriptstore_ [EXTRACTED]
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_piidetector_ [EXTRACTED]
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_sanitizecache_ [EXTRACTED]
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_autolabel_ [EXTRACTED]
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_contactutils_ [EXTRACTED]
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_processingservicebridge_ [EXTRACTED]
+- loadCache -> calls -> __unresolved__::ref::await_idbget [EXTRACTED]
+- saveCache -> calls -> __unresolved__::ref::idbset [EXTRACTED]
+- sanitizeCache -> contains -> loadCache [EXTRACTED]
+- sanitizeCache -> contains -> saveCache [EXTRACTED]
+- sanitizeCache -> imports -> __unresolved__::ref::_idb_ [EXTRACTED]
+- sanitizeCache -> imports -> __unresolved__::ref::_piidetector_ [EXTRACTED]
+- sanitizeCache -> imports -> __unresolved__::ref::_transcriptstore_ [EXTRACTED]
+- loadBatches -> calls -> __unresolved__::ref::await_idbget [EXTRACTED]
+- saveBatch -> calls -> __unresolved__::ref::loadbatches [EXTRACTED]
+- saveBatch -> calls -> __unresolved__::ref::findindex [EXTRACTED]
+- saveBatch -> calls -> __unresolved__::ref::idbset [EXTRACTED]
+- sharePrepEngine -> contains -> loadBatches [EXTRACTED]
+- sharePrepEngine -> contains -> saveBatch [EXTRACTED]
+- sharePrepEngine -> contains -> buildResult [EXTRACTED]
+- sharePrepEngine -> imports -> __unresolved__::ref::_sanitizecache_ [EXTRACTED]
+- sharePrepEngine -> imports -> __unresolved__::ref::_statemachine_ [EXTRACTED]
+- sharePrepEngine -> imports -> __unresolved__::ref::_idb_ [EXTRACTED]
+- sttServiceBridge -> imports -> __unresolved__::ref::_processingservicebridge_ [EXTRACTED]
+- sttWorkerPool -> imports -> __unresolved__::ref::_transcriptstore_ [EXTRACTED]
+
+## Cross-Community Connections
+- transcriptChunks -> imports -> __unresolved__::ref::_client_ (-> [[unresolvedrefgetitem-unresolvedrefsetitem]])
+- hourToTimeBucket -> calls -> __unresolved__::ref::min (-> [[unresolvedrefpush-unresolvedrefmin]])
+- hourToTimeBucket -> calls -> __unresolved__::ref::floor (-> [[unresolvedrefpush-unresolvedrefmin]])
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::_types_metadata_ (-> [[unresolvedrefgetitem-unresolvedrefsetitem]])
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::_types_audioasset_ (-> [[unresolvedrefgetitem-unresolvedrefsetitem]])
+- batchProcessor -> contains -> calcGroupStats (-> [[unresolvedrefpush-unresolvedrefmin]])
+- batchProcessor -> imports -> __unresolved__::ref::_types_session_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::catch (-> [[unresolvedrefstring-unresolvedrefgetmonth]])
+- pipelineOrchestrator -> contains -> filterSttItems (-> [[unresolvedrefpush-unresolvedrefmin]])
+- pipelineOrchestrator -> contains -> computeAlreadyDone (-> [[sttworkerpool-handlemessage]])
+- pipelineOrchestrator -> contains -> startSttBackground (-> [[unresolvedrefstring-unresolvedrefgetmonth]])
+- pipelineOrchestrator -> contains -> runPiiForAll (-> [[piisessioncard-runpiiforall]])
+- pipelineOrchestrator -> contains -> runLabelForAll (-> [[unresolvedrefgetitem-unresolvedrefsetitem]])
+- pipelineOrchestrator -> contains -> runMetadataStage (-> [[unresolvedrefstring-unresolvedrefgetmonth]])
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_types_session_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_pipelinestate_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_sessionmapper_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- pipelineOrchestrator -> imports -> __unresolved__::ref::_metadataexportresolver_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- sanitizeCache -> contains -> findWordTimestamp (-> [[unresolvedrefpush-unresolvedrefmin]])
+- sanitizeCache -> imports -> __unresolved__::ref::_types_session_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- saveBatch -> calls -> __unresolved__::ref::push (-> [[unresolvedrefpush-unresolvedrefmin]])
+- sharePrepEngine -> imports -> __unresolved__::ref::_types_session_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- sharePrepEngine -> imports -> __unresolved__::ref::_types_consent_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- sharePrepEngine -> imports -> __unresolved__::ref::_auth_ (-> [[unresolvedrefgetitem-unresolvedrefsetitem]])
+- sharePrepEngine -> imports -> __unresolved__::ref::_uuid_ (-> [[unresolvedrefgetitem-unresolvedrefsetitem]])
+- sttWorkerPool -> contains -> SttWorkerPool (-> [[sttworkerpool-handlemessage]])
+
+## Context
+이 커뮤니티는 pipelineOrchestrator, sharePrepEngine, __unresolved__::ref::_idb_를 중심으로 imports 관계로 연결되어 있다. 주요 소스 파일은 audioEnvironmentCollector.ts, batchProcessor.ts, chunkStatsStore.ts, decodeStateStore.ts, pipelineOrchestrator.ts이다.

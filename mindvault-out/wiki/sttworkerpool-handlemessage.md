@@ -1,0 +1,211 @@
+# SttWorkerPool & handleMessage
+Cohesion: 0.09 | Nodes: 31
+
+## Key Nodes
+- **SttWorkerPool** (src/lib/sttWorkerPool.ts) -- 10 connections
+  - -> contains -> [[createslot]]
+  - -> contains -> [[resize]]
+  - -> contains -> [[submit]]
+  - -> contains -> [[dispatch]]
+  - -> contains -> [[handlemessage]]
+  - -> contains -> [[handleworkererror]]
+  - -> contains -> [[activecount]]
+  - -> contains -> [[poolsize]]
+  - -> contains -> [[terminateall]]
+  - <- contains <- [[sttworkerpool]]
+- **handleMessage** (src/lib/sttWorkerPool.ts) -- 8 connections
+  - -> calls -> [[unresolvedrefonprogress]]
+  - -> calls -> [[unresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefreject]]
+  - -> calls -> [[unresolvedrefterminate]]
+  - -> calls -> [[unresolvedrefdelete]]
+  - -> calls -> [[unresolvedrefdispatch]]
+  - -> calls -> [[unresolvedrefshift]]
+  - <- contains <- [[sttworkerpool]]
+- **handleWorkerError** (src/lib/sttWorkerPool.ts) -- 8 connections
+  - -> calls -> [[unresolvedrefreject]]
+  - -> calls -> [[unresolvedrefterminate]]
+  - -> calls -> [[unresolvedrefdelete]]
+  - -> calls -> [[unresolvedrefcreateslot]]
+  - -> calls -> [[unresolvedrefadd]]
+  - -> calls -> [[unresolvedrefdispatch]]
+  - -> calls -> [[unresolvedrefshift]]
+  - <- contains <- [[sttworkerpool]]
+- **resize** (src/lib/sttWorkerPool.ts) -- 8 connections
+  - -> calls -> [[unresolvedrefmax]]
+  - -> calls -> [[unresolvedrefcreateslot]]
+  - -> calls -> [[unresolvedrefadd]]
+  - -> calls -> [[unresolvedrefdispatch]]
+  - -> calls -> [[unresolvedrefshift]]
+  - -> calls -> [[unresolvedrefterminate]]
+  - -> calls -> [[unresolvedrefdelete]]
+  - <- contains <- [[sttworkerpool]]
+- **__unresolved__::ref::delete** () -- 6 connections
+  - <- calls <- [[clearsupabase]]
+  - <- calls <- [[resize]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+  - <- calls <- [[handlesttcomplete]]
+  - <- calls <- [[handlestterror]]
+- **getDB** (src/lib/idb.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefreject]]
+  - -> calls -> [[unresolvedrefopen]]
+  - -> calls -> [[unresolvedrefcontains]]
+  - -> calls -> [[unresolvedrefcreateobjectstore]]
+  - -> calls -> [[unresolvedrefresolve]]
+  - <- contains <- [[idb]]
+- **__unresolved__::ref::add** () -- 5 connections
+  - <- calls <- [[assignquality]]
+  - <- calls <- [[scanmediafiles]]
+  - <- calls <- [[resize]]
+  - <- calls <- [[handleworkererror]]
+  - <- calls <- [[dispatchtonative]]
+- **__unresolved__::ref::reject** () -- 5 connections
+  - <- calls <- [[rundiarization]]
+  - <- calls <- [[getdb]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+  - <- calls <- [[terminateall]]
+- **computeAlreadyDone** (src/lib/pipelineOrchestrator.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefloadalltranscripts]]
+  - -> calls -> [[unresolvedreffilter]]
+  - -> calls -> [[unresolvedreffind]]
+  - -> calls -> [[unresolvedrefmax]]
+  - <- contains <- [[pipelineorchestrator]]
+- **__unresolved__::ref::dispatch** () -- 4 connections
+  - <- calls <- [[resize]]
+  - <- calls <- [[submit]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+- **__unresolved__::ref::find** () -- 4 connections
+  - <- calls <- [[deduplicatedetections]]
+  - <- calls <- [[computealreadydone]]
+  - <- calls <- [[mergecomponentfilters]]
+  - <- calls <- [[submit]]
+- **__unresolved__::ref::terminate** () -- 4 connections
+  - <- calls <- [[resize]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+  - <- calls <- [[terminateall]]
+- **assignQuality** (src/lib/eventUnitEngine.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefget]]
+  - -> calls -> [[unresolvedrefadd]]
+  - -> calls -> [[unresolvedrefset]]
+  - <- contains <- [[eventunitengine]]
+- **createSlot** (src/lib/sttWorkerPool.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefaddeventlistener]]
+  - -> calls -> [[unresolvedrefhandlemessage]]
+  - -> calls -> [[unresolvedrefhandleworkererror]]
+  - <- contains <- [[sttworkerpool]]
+- **submit** (src/lib/sttWorkerPool.ts) -- 4 connections
+  - -> calls -> [[unresolvedreffind]]
+  - -> calls -> [[unresolvedrefdispatch]]
+  - -> calls -> [[unresolvedrefpush]]
+  - <- contains <- [[sttworkerpool]]
+- **terminateAll** (src/lib/sttWorkerPool.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefreject]]
+  - -> calls -> [[unresolvedrefterminate]]
+  - -> calls -> [[unresolvedrefclear]]
+  - <- contains <- [[sttworkerpool]]
+- **__unresolved__::ref::shift** () -- 3 connections
+  - <- calls <- [[resize]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+- **eventUnitEngine** (src/lib/eventUnitEngine.ts) -- 3 connections
+  - -> contains -> [[assignquality]]
+  - -> imports -> [[unresolvedreftypessku]]
+  - -> imports -> [[unresolvedreftypeseventunit]]
+- **__unresolved__::ref::createslot** () -- 2 connections
+  - <- calls <- [[resize]]
+  - <- calls <- [[handleworkererror]]
+- **__unresolved__::ref::loadalltranscripts** () -- 2 connections
+  - <- calls <- [[computealreadydone]]
+  - <- calls <- [[runpiiforall]]
+- **mergeComponentFilters** (src/lib/billableUnitEngine.ts) -- 2 connections
+  - -> calls -> [[unresolvedreffind]]
+  - <- contains <- [[billableunitengine]]
+- **activeCount** (src/lib/sttWorkerPool.ts) -- 2 connections
+  - -> calls -> [[unresolvedreffilter]]
+  - <- contains <- [[sttworkerpool]]
+- **__unresolved__::ref::clear** () -- 1 connections
+  - <- calls <- [[terminateall]]
+- **__unresolved__::ref::contains** () -- 1 connections
+  - <- calls <- [[getdb]]
+- **__unresolved__::ref::createobjectstore** () -- 1 connections
+  - <- calls <- [[getdb]]
+- **__unresolved__::ref::handlemessage** () -- 1 connections
+  - <- calls <- [[createslot]]
+- **__unresolved__::ref::handleworkererror** () -- 1 connections
+  - <- calls <- [[createslot]]
+- **__unresolved__::ref::onprogress** () -- 1 connections
+  - <- calls <- [[handlemessage]]
+- **__unresolved__::ref::open** () -- 1 connections
+  - <- calls <- [[getdb]]
+- **idb** (src/lib/idb.ts) -- 1 connections
+  - -> contains -> [[getdb]]
+- **poolSize** (src/lib/sttWorkerPool.ts) -- 1 connections
+  - <- contains <- [[sttworkerpool]]
+
+## Internal Relationships
+- mergeComponentFilters -> calls -> __unresolved__::ref::find [EXTRACTED]
+- assignQuality -> calls -> __unresolved__::ref::add [EXTRACTED]
+- eventUnitEngine -> contains -> assignQuality [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::reject [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::open [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::contains [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::createobjectstore [EXTRACTED]
+- idb -> contains -> getDB [EXTRACTED]
+- computeAlreadyDone -> calls -> __unresolved__::ref::loadalltranscripts [EXTRACTED]
+- computeAlreadyDone -> calls -> __unresolved__::ref::find [EXTRACTED]
+- SttWorkerPool -> contains -> createSlot [EXTRACTED]
+- SttWorkerPool -> contains -> resize [EXTRACTED]
+- SttWorkerPool -> contains -> submit [EXTRACTED]
+- SttWorkerPool -> contains -> handleMessage [EXTRACTED]
+- SttWorkerPool -> contains -> handleWorkerError [EXTRACTED]
+- SttWorkerPool -> contains -> activeCount [EXTRACTED]
+- SttWorkerPool -> contains -> poolSize [EXTRACTED]
+- SttWorkerPool -> contains -> terminateAll [EXTRACTED]
+- createSlot -> calls -> __unresolved__::ref::handlemessage [EXTRACTED]
+- createSlot -> calls -> __unresolved__::ref::handleworkererror [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::onprogress [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::reject [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::terminate [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::delete [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::dispatch [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::shift [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::reject [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::terminate [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::delete [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::createslot [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::add [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::dispatch [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::shift [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::createslot [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::add [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::dispatch [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::shift [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::terminate [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::delete [EXTRACTED]
+- submit -> calls -> __unresolved__::ref::find [EXTRACTED]
+- submit -> calls -> __unresolved__::ref::dispatch [EXTRACTED]
+- terminateAll -> calls -> __unresolved__::ref::reject [EXTRACTED]
+- terminateAll -> calls -> __unresolved__::ref::terminate [EXTRACTED]
+- terminateAll -> calls -> __unresolved__::ref::clear [EXTRACTED]
+
+## Cross-Community Connections
+- assignQuality -> calls -> __unresolved__::ref::get (-> [[unresolvedrefpush-unresolvedrefmin]])
+- assignQuality -> calls -> __unresolved__::ref::set (-> [[unresolvedrefstring-unresolvedrefgetmonth]])
+- eventUnitEngine -> imports -> __unresolved__::ref::_types_sku_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- eventUnitEngine -> imports -> __unresolved__::ref::_types_eventunit_ (-> [[unresolvedrefreact-unresolvedreftypessession]])
+- getDB -> calls -> __unresolved__::ref::resolve (-> [[unresolvedrefpush-unresolvedrefmin]])
+- computeAlreadyDone -> calls -> __unresolved__::ref::filter (-> [[unresolvedrefpush-unresolvedrefmin]])
+- computeAlreadyDone -> calls -> __unresolved__::ref::max (-> [[unresolvedrefpush-unresolvedrefmin]])
+- SttWorkerPool -> contains -> dispatch (-> [[unresolvedrefpush-unresolvedrefmin]])
+- activeCount -> calls -> __unresolved__::ref::filter (-> [[unresolvedrefpush-unresolvedrefmin]])
+- createSlot -> calls -> __unresolved__::ref::addeventlistener (-> [[unresolvedrefpush-unresolvedrefmin]])
+- handleMessage -> calls -> __unresolved__::ref::resolve (-> [[unresolvedrefpush-unresolvedrefmin]])
+- resize -> calls -> __unresolved__::ref::max (-> [[unresolvedrefpush-unresolvedrefmin]])
+- submit -> calls -> __unresolved__::ref::push (-> [[unresolvedrefpush-unresolvedrefmin]])
+
+## Context
+이 커뮤니티는 SttWorkerPool, handleMessage, handleWorkerError를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 billableUnitEngine.ts, eventUnitEngine.ts, idb.ts, pipelineOrchestrator.ts, sttWorkerPool.ts이다.
