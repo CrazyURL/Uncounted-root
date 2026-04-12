@@ -2,15 +2,15 @@
 Cohesion: 0.50 | Nodes: 4
 
 ## Key Nodes
-- **Voice API 제공 기능 (서버로 이전 가능)** (.orchestrate-consult/20260410-201236/prompt_plan.md) -- 3 connections
+- **Voice API 제공 기능 (서버로 이전 가능)** (prompt_plan.md) -- 3 connections
   - -> contains -> [[phase-1-voice-api]]
   - -> contains -> [[phase-2-ui]]
   - -> contains -> [[phase-3]]
-- **Phase 1: Voice API 클라이언트 + 어댑터 (앱)** (.orchestrate-consult/20260410-201236/prompt_plan.md) -- 1 connections
+- **Phase 1: Voice API 클라이언트 + 어댑터 (앱)** (prompt_plan.md) -- 1 connections
   - <- contains <- [[voice-api]]
-- **Phase 2: 설정 UI + 폴백 메커니즘** (.orchestrate-consult/20260410-201236/prompt_plan.md) -- 1 connections
+- **Phase 2: 설정 UI + 폴백 메커니즘** (prompt_plan.md) -- 1 connections
   - <- contains <- [[voice-api]]
-- **Phase 3: 최적화 + 정리** (.orchestrate-consult/20260410-201236/prompt_plan.md) -- 1 connections
+- **Phase 3: 최적화 + 정리** (prompt_plan.md) -- 1 connections
   - <- contains <- [[voice-api]]
 
 ## Internal Relationships

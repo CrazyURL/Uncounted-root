@@ -1,5 +1,5 @@
 # export-moonshine-onnx & forward
-Cohesion: 0.10 | Nodes: 28
+Cohesion: 0.07 | Nodes: 34
 
 ## Key Nodes
 - **export-moonshine-onnx** (uncounted-app/scripts/export-moonshine-onnx.py) -- 13 connections
@@ -11,59 +11,75 @@ Cohesion: 0.10 | Nodes: 28
   - -> contains -> [[onnxbidirectionalmask]]
   - -> contains -> [[makekvcache]]
   - -> contains -> [[decoderwithpaststacked]]
-  - -> imports -> [[unresolvedrefunresolvedrefjson]]
-  - -> imports -> [[unresolvedrefunresolvedrefos]]
-  - -> imports -> [[unresolvedrefunresolvedrefsys]]
-  - -> imports -> [[unresolvedrefunresolvedreftorch]]
-  - -> imports -> [[unresolvedrefunresolvedreftransformers]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftorch]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftransformers]]
 - **forward** (uncounted-app/scripts/export-moonshine-onnx.py) -- 13 connections
-  - -> calls -> [[unresolvedrefunresolvedrefenc]]
-  - -> calls -> [[unresolvedrefunresolvedrefisinstance]]
-  - -> calls -> [[unresolvedrefunresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefunresolvedrefones]]
-  - -> calls -> [[unresolvedrefunresolvedrefdec]]
-  - -> calls -> [[unresolvedrefunresolvedrefproj]]
-  - -> calls -> [[unresolvedrefunresolvedreftensor]]
-  - -> calls -> [[unresolvedrefunresolvedrefmakekvcache]]
-  - -> calls -> [[unresolvedrefunresolvedrefstack]]
-  - -> calls -> [[unresolvedrefunresolvedrefrange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefenc]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdec]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefproj]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftensor]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakekvcache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstack]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
   - <- contains <- [[encoderwrapper]]
   - <- contains <- [[decoderwrapper]]
   - <- contains <- [[decoderwithpaststacked]]
 - **_make_kv_cache** (uncounted-app/scripts/export-moonshine-onnx.py) -- 9 connections
-  - -> calls -> [[unresolvedrefunresolvedreftuple]]
-  - -> calls -> [[unresolvedrefunresolvedrefrange]]
-  - -> calls -> [[unresolvedrefunresolvedrefdynamiccache]]
-  - -> calls -> [[unresolvedrefunresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefunresolvedrefdl]]
-  - -> calls -> [[unresolvedrefunresolvedrefappend]]
-  - -> calls -> [[unresolvedrefunresolvedrefml]]
-  - -> calls -> [[unresolvedrefunresolvedrefencoderdecodercache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftuple]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdynamiccache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdl]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefml]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefencoderdecodercache]]
   - <- contains <- [[export-moonshine-onnx]]
 - **get_encoder** (uncounted-app/scripts/export-moonshine-onnx.py) -- 6 connections
-  - -> calls -> [[unresolvedrefunresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefunresolvedrefgetencoder]]
-  - -> calls -> [[unresolvedrefunresolvedrefattributeerror]]
-  - -> calls -> [[unresolvedrefunresolvedrefdir]]
-  - -> calls -> [[unresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetencoder]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefattributeerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
   - <- contains <- [[export-moonshine-onnx]]
 - **__init__** (uncounted-app/scripts/export-moonshine-onnx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefinit]]
-  - -> calls -> [[unresolvedrefunresolvedrefsuper]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefinit]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsuper]]
   - <- contains <- [[encoderwrapper]]
   - <- contains <- [[decoderwrapper]]
   - <- contains <- [[decoderwithpaststacked]]
 - **get_decoder** (uncounted-app/scripts/export-moonshine-onnx.py) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefunresolvedrefattributeerror]]
-  - -> calls -> [[unresolvedrefunresolvedrefdir]]
-  - -> calls -> [[unresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefattributeerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
   - <- contains <- [[export-moonshine-onnx]]
-- **__unresolved__::ref::__unresolved____ref__hasattr** () -- 4 connections
+- **check_chunk_timestamps** (/Users/gdash/project/uncounted-project/uncounted-voice-api/sample_data/scripts/check_chunk_timestamps.py) -- 5 connections
+  - -> contains -> [[check]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsys]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr** () -- 4 connections
   - <- calls <- [[getencoder]]
   - <- calls <- [[forward]]
   - <- calls <- [[getdecoder]]
   - <- calls <- [[makekvcache]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sys** () -- 4 connections
+  - <- imports <- [[export-moonshine-onnx]]
+  - <- imports <- [[checkchunktimestamps]]
+  - <- imports <- [[testparseinstinct]]
+  - <- imports <- [[instinct-cli]]
+- **_onnx_causal_mask** (uncounted-app/scripts/export-moonshine-onnx.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunsqueeze]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreffloat]]
+  - <- contains <- [[export-moonshine-onnx]]
 - **DecoderWithPastStacked** (uncounted-app/scripts/export-moonshine-onnx.py) -- 3 connections
   - -> contains -> [[init]]
   - -> contains -> [[forward]]
@@ -76,43 +92,50 @@ Cohesion: 0.10 | Nodes: 28
   - -> contains -> [[init]]
   - -> contains -> [[forward]]
   - <- contains <- [[export-moonshine-onnx]]
-- **__unresolved__::ref::__unresolved____ref__attributeerror** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__attributeerror** () -- 2 connections
   - <- calls <- [[getencoder]]
   - <- calls <- [[getdecoder]]
-- **__unresolved__::ref::__unresolved____ref__dir** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dir** () -- 2 connections
   - <- calls <- [[getencoder]]
   - <- calls <- [[getdecoder]]
-- **__unresolved__::ref::__unresolved____ref__tuple** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tuple** () -- 2 connections
   - <- calls <- [[makekvcache]]
   - <- calls <- [[applypadding]]
-- **__unresolved__::ref::__unresolved____ref____init__** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__sys** () -- 2 connections
+  - <- imports <- [[checkchunktimestamps]]
+  - <- imports <- [[audiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____init__** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::__unresolved____ref___dl** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___dl** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref___make_kv_cache** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_kv_cache** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref___ml** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___ml** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref__dec** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dec** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref__dynamiccache** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dynamiccache** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref__enc** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__enc** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref__encoderdecodercache** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__encoderdecodercache** () -- 1 connections
   - <- calls <- [[makekvcache]]
-- **__unresolved__::ref::__unresolved____ref__get_encoder** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_encoder** () -- 1 connections
   - <- calls <- [[getencoder]]
-- **__unresolved__::ref::__unresolved____ref__proj** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__proj** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref__stack** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__stack** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref__super** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__super** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::__unresolved____ref__tensor** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tensor** () -- 1 connections
   - <- calls <- [[forward]]
-- **__unresolved__::ref::__unresolved____ref__transformers** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__transformers** () -- 1 connections
   - <- imports <- [[export-moonshine-onnx]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__unsqueeze** () -- 1 connections
+  - <- calls <- [[onnxcausalmask]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__json** () -- 1 connections
+  - <- imports <- [[checkchunktimestamps]]
 - **_onnx_bidirectional_mask** (uncounted-app/scripts/export-moonshine-onnx.py) -- 1 connections
   - <- contains <- [[export-moonshine-onnx]]
 
@@ -127,46 +150,54 @@ Cohesion: 0.10 | Nodes: 28
 - export-moonshine-onnx -> contains -> EncoderWrapper [EXTRACTED]
 - export-moonshine-onnx -> contains -> get_decoder [EXTRACTED]
 - export-moonshine-onnx -> contains -> DecoderWrapper [EXTRACTED]
+- export-moonshine-onnx -> contains -> _onnx_causal_mask [EXTRACTED]
 - export-moonshine-onnx -> contains -> _onnx_bidirectional_mask [EXTRACTED]
 - export-moonshine-onnx -> contains -> _make_kv_cache [EXTRACTED]
 - export-moonshine-onnx -> contains -> DecoderWithPastStacked [EXTRACTED]
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__transformers [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____init__ [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::__unresolved____ref__super [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__tuple [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__dynamiccache [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__hasattr [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref___dl [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref___ml [EXTRACTED]
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__encoderdecodercache [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__enc [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__hasattr [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__dec [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__proj [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__tensor [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref___make_kv_cache [EXTRACTED]
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__stack [EXTRACTED]
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref__hasattr [EXTRACTED]
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref__attributeerror [EXTRACTED]
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref__dir [EXTRACTED]
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref__hasattr [EXTRACTED]
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref__get_encoder [EXTRACTED]
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref__attributeerror [EXTRACTED]
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref__dir [EXTRACTED]
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sys [EXTRACTED]
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__transformers [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____init__ [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__super [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tuple [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dynamiccache [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___dl [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___ml [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__encoderdecodercache [EXTRACTED]
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__unsqueeze [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__enc [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dec [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__proj [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tensor [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_kv_cache [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__stack [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__attributeerror [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dir [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_encoder [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__attributeerror [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dir [EXTRACTED]
+- check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sys [EXTRACTED]
+- check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__json [EXTRACTED]
+- check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sys [EXTRACTED]
 
 ## Cross-Community Connections
-- export-moonshine-onnx -> contains -> _onnx_causal_mask (-> [[transcribe-unresolvedrefunresolvedrefmin]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__json (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefsetitem]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__os (-> [[transcribe-unresolvedrefunresolvedrefmin]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__sys (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref__torch (-> [[transcribe-unresolvedrefunresolvedrefmin]])
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__isinstance (-> [[transcribe-unresolvedrefunresolvedrefmin]])
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__ones (-> [[transcribe-unresolvedrefunresolvedrefmin]])
-- forward -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
-- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefpush-unresolvedrefunresolvedreflen]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__os (-> [[createdocument-generatedocx]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__torch (-> [[sttprocessor-denoise]])
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__arange (-> [[sttprocessor-denoise]])
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__isinstance (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__ones (-> [[sttprocessor-denoise]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- check_chunk_timestamps -> contains -> check (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- check_chunk_timestamps -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 
 ## Context
-이 커뮤니티는 export-moonshine-onnx, forward, _make_kv_cache를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 export-moonshine-onnx.py이다.
+이 커뮤니티는 export-moonshine-onnx, forward, _make_kv_cache를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 check_chunk_timestamps.py, export-moonshine-onnx.py이다.

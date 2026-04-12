@@ -1,8 +1,8 @@
 # __unresolved__::ref::__unresolved____ref____unresolved____ref__min & __unresolved__::ref::__unresolved____ref____unresolved____ref__floor
-Cohesion: 0.06 | Nodes: 77
+Cohesion: 0.02 | Nodes: 223
 
 ## Key Nodes
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__min** () -- 65 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__min** () -- 66 connections
   - <- calls <- [[splashsvg]]
   - <- calls <- [[hourtotimebucket]]
   - <- calls <- [[hourtotimebucket]]
@@ -35,6 +35,7 @@ Cohesion: 0.06 | Nodes: 77
   - <- calls <- [[computeaudiostats]]
   - <- calls <- [[extractspeakeraudio]]
   - <- calls <- [[extractutteranceaudio]]
+  - <- calls <- [[extractutteranceaudiolocal]]
   - <- calls <- [[mutenonspeaker]]
   - <- calls <- [[removeduplicates]]
   - <- calls <- [[normalizegain]]
@@ -173,6 +174,26 @@ Cohesion: 0.06 | Nodes: 77
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftypessession]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefdictionaries]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflabeloptions]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__resolve** () -- 19 connections
+  - <- calls <- [[rundiarization]]
+  - <- calls <- [[extracthashfromjava]]
+  - <- calls <- [[getdb]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[getaudio]]
+  - <- calls <- [[testvalidatenormalpath]]
+  - <- calls <- [[testvalidaterelativepath]]
+  - <- calls <- [[validatefilepath]]
+  - <- calls <- [[cmdimport]]
+  - <- calls <- [[getdb]]
+  - <- calls <- [[extractembedding]]
+  - <- calls <- [[extractmultiembedding]]
+  - <- calls <- [[confirm]]
+  - <- calls <- [[runffmpegfilter]]
+  - <- calls <- [[createziparchive]]
+  - <- calls <- [[createmetadatazip]]
+  - <- calls <- [[mockquerychain]]
+  - <- calls <- [[detectbeepintervals]]
+  - <- calls <- [[createchainmock]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref__countkeywordhits** () -- 16 connections
   - <- calls <- [[scorebiz]]
   - <- calls <- [[scoresales]]
@@ -190,6 +211,172 @@ Cohesion: 0.06 | Nodes: 77
   - <- calls <- [[scoremedical]]
   - <- calls <- [[scorelegal]]
   - <- calls <- [[scorefinance]]
+- **detectBeepIntervals** (uncounted-api/src/lib/export/piiMaskSyncService.ts) -- 16 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefon]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefoutput]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaudiocodec]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaudiochannels]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaudiofrequency]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaudiofilters]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefffmpeg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdetectsilenceboundaries]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmap]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcleanuptemp]]
+  - <- contains <- [[piimasksyncservice]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__notify** () -- 14 connections
+  - <- calls <- [[getworker]]
+  - <- calls <- [[rundiarization]]
+  - <- calls <- [[updatejob]]
+  - <- calls <- [[handlesttcomplete]]
+  - <- calls <- [[handlesttstate]]
+  - <- calls <- [[dispatchtonative]]
+  - <- calls <- [[processnext]]
+  - <- calls <- [[getworker]]
+  - <- calls <- [[getworker]]
+  - <- calls <- [[readandresampleaudio]]
+  - <- calls <- [[extractembedding]]
+  - <- calls <- [[extractmultiembedding]]
+  - <- calls <- [[updatejob]]
+  - <- calls <- [[processnext]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener** () -- 13 connections
+  - <- calls <- [[startwebfallback]]
+  - <- calls <- [[startnativebridge]]
+  - <- calls <- [[getworker]]
+  - <- calls <- [[rundiarization]]
+  - <- calls <- [[ensurelisteners]]
+  - <- calls <- [[createslot]]
+  - <- calls <- [[getworker]]
+  - <- calls <- [[startwebfallback]]
+  - <- calls <- [[startnativebridge]]
+  - <- calls <- [[ensurelisteners]]
+  - <- calls <- [[getworker]]
+  - <- calls <- [[extractembedding]]
+  - <- calls <- [[extractmultiembedding]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__catch** () -- 13 connections
+  - <- calls <- [[syncandflush]]
+  - <- calls <- [[backuptobackend]]
+  - <- calls <- [[registerpostpipelinewatch]]
+  - <- calls <- [[handlesttcomplete]]
+  - <- calls <- [[handlestterror]]
+  - <- calls <- [[processnext]]
+  - <- calls <- [[persistcache]]
+  - <- calls <- [[voicefetch]]
+  - <- calls <- [[errorloggerinit]]
+  - <- calls <- [[cleanupstalesessions]]
+  - <- calls <- [[backuptobackend]]
+  - <- calls <- [[createziparchive]]
+  - <- calls <- [[createmetadatazip]]
+- **handleSttComplete** (uncounted-app/src/lib/sttEngine.ts) -- 11 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdelete]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnow]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflogerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetglobalstate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefupdatejob]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrunpoststtforsession]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstring]]
+  - <- contains <- [[sttengine]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage** () -- 10 connections
+  - <- calls <- [[rundiarization]]
+  - <- calls <- [[post]]
+  - <- calls <- [[post]]
+  - <- calls <- [[post]]
+  - <- calls <- [[dispatch]]
+  - <- calls <- [[post]]
+  - <- calls <- [[post]]
+  - <- calls <- [[post]]
+  - <- calls <- [[extractembedding]]
+  - <- calls <- [[extractmultiembedding]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__reject** () -- 10 connections
+  - <- calls <- [[rundiarization]]
+  - <- calls <- [[getdb]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+  - <- calls <- [[terminateall]]
+  - <- calls <- [[getdb]]
+  - <- calls <- [[extractembedding]]
+  - <- calls <- [[extractmultiembedding]]
+  - <- calls <- [[runffmpegfilter]]
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__some** () -- 10 connections
+  - <- calls <- [[selecttopksegments]]
+  - <- calls <- [[runpiiforall]]
+  - <- calls <- [[endswithinstitution]]
+  - <- calls <- [[matchesjoinedsku]]
+  - <- calls <- [[containsany]]
+  - <- calls <- [[selecttopksegments]]
+  - <- calls <- [[runpiiforall]]
+  - <- calls <- [[endswithinstitution]]
+  - <- calls <- [[matchesjoinedsku]]
+  - <- calls <- [[containsany]]
+- **SttWorkerPool** (uncounted-app/src/lib/sttWorkerPool.ts) -- 10 connections
+  - -> contains -> [[createslot]]
+  - -> contains -> [[resize]]
+  - -> contains -> [[submit]]
+  - -> contains -> [[dispatch]]
+  - -> contains -> [[handlemessage]]
+  - -> contains -> [[handleworkererror]]
+  - -> contains -> [[activecount]]
+  - -> contains -> [[poolsize]]
+  - -> contains -> [[terminateall]]
+  - <- contains <- [[sttworkerpool]]
+- **extractEmbedding** (uncounted-admin/src/lib/embeddingEngine.ts) -- 9 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetworker]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefremoveeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[embeddingengine]]
+- **extractMultiEmbedding** (uncounted-admin/src/lib/embeddingEngine.ts) -- 9 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetworker]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefremoveeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[embeddingengine]]
+- **processNext** (uncounted-admin/src/lib/sttEngine.ts) -- 9 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetsttmode]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsyncforegroundservice]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefshift]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefloadtranscript]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefupdatejob]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefprocessnext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstring]]
+  - <- contains <- [[sttengine]]
+- **runFfmpegFilter** (uncounted-api/src/lib/audio/ffmpegProcessor.ts) -- 9 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefon]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefoutput]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefformat]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaudiofilters]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefffmpeg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - <- contains <- [[ffmpegprocessor]]
+- **runDiarization** (uncounted-app/src/lib/diarizationEngine.ts) -- 9 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetworker]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefremoveeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[diarizationengine]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref__containsany** () -- 8 connections
   - <- calls <- [[scorefamily]]
   - <- calls <- [[scorework]]
@@ -199,6 +386,59 @@ Cohesion: 0.06 | Nodes: 77
   - <- calls <- [[scorework]]
   - <- calls <- [[scoreclient]]
   - <- calls <- [[scorefriend]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__delete** () -- 8 connections
+  - <- calls <- [[clearsupabase]]
+  - <- calls <- [[resize]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+  - <- calls <- [[handlesttcomplete]]
+  - <- calls <- [[handlestterror]]
+  - <- calls <- [[migrateone]]
+  - <- calls <- [[deletelosers]]
+- **purgeDevStorage** (uncounted-api/src/scripts/purgeDevStorage.ts) -- 8 connections
+  - -> contains -> [[formatbytes]]
+  - -> contains -> [[assertdevbucket]]
+  - -> contains -> [[confirm]]
+  - -> contains -> [[purgebucket]]
+  - -> contains -> [[main]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefdotenv]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefreadline]]
+- **handleMessage** (uncounted-app/src/lib/sttWorkerPool.ts) -- 8 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefonprogress]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefterminate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdelete]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdispatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefshift]]
+  - <- contains <- [[sttworkerpool]]
+- **handleWorkerError** (uncounted-app/src/lib/sttWorkerPool.ts) -- 8 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefterminate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdelete]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcreateslot]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefadd]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdispatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefshift]]
+  - <- contains <- [[sttworkerpool]]
+- **resize** (uncounted-app/src/lib/sttWorkerPool.ts) -- 8 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcreateslot]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefadd]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdispatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefshift]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefterminate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdelete]]
+  - <- contains <- [[sttworkerpool]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__logerror** () -- 7 connections
+  - <- calls <- [[handlesttprogress]]
+  - <- calls <- [[handlesttcomplete]]
+  - <- calls <- [[handlestterror]]
+  - <- calls <- [[handlestttokenrefreshed]]
+  - <- calls <- [[handlesttautherror]]
+  - <- calls <- [[handlesttstate]]
+  - <- calls <- [[setupnativelisteners]]
 - **MetadataInventoryPanel** (uncounted-admin/src/components/domain/metadata/MetadataInventoryPanel.tsx) -- 7 connections
   - -> contains -> [[metadatainventorypanelprops]]
   - -> contains -> [[computeperiodlabel]]
@@ -207,6 +447,127 @@ Cohesion: 0.06 | Nodes: 77
   - -> contains -> [[syncstatusbadge]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefreact]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflibapiadmin]]
+- **confirm** (uncounted-api/src/scripts/purgeDevStorage.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcreateinterface]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefquestion]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefclose]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftolowercase]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftrim]]
+  - <- contains <- [[purgedevstorage]]
+- **registerPostPipelineWatch** (uncounted-app/src/lib/pipelineOrchestrator.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefregisterprocessingtask]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsubscribepipeline]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetpipelinesnapshot]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunsub]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunregisterprocessingtask]]
+  - <- contains <- [[pipelineorchestrator]]
+- **handleSttError** (uncounted-app/src/lib/sttEngine.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflogerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdelete]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefupdatejob]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrunpoststtforsession]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstring]]
+  - <- contains <- [[sttengine]]
+- **processNext** (uncounted-app/src/lib/sttEngine.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflog]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetsttmode]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsplice]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdispatchtonative]]
+  - <- contains <- [[sttengine]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____huggingface_transformers_** () -- 6 connections
+  - <- imports <- [[embeddingworker]]
+  - <- imports <- [[sttworker]]
+  - <- imports <- [[diarizationworker]]
+  - <- imports <- [[embeddingworker]]
+  - <- imports <- [[sttworker]]
+  - <- imports <- [[diarizationworker]]
+- **embeddingWorker** (uncounted-admin/src/lib/embeddingWorker.ts) -- 6 connections
+  - -> contains -> [[post]]
+  - -> contains -> [[cosinesimilarity]]
+  - -> contains -> [[selectbestsegment]]
+  - -> contains -> [[selecttopksegments]]
+  - -> contains -> [[extractsingleembedding]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhuggingfacetransformers]]
+- **getDB** (uncounted-admin/src/lib/idb.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcontains]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcreateobjectstore]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - <- contains <- [[idb]]
+- **cleanupStaleSessions** (uncounted-admin/src/lib/sessionMapper.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefallsettled]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmap]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdeletesession]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwarn]]
+  - <- contains <- [[sessionmapper]]
+- **backupToBackend** (uncounted-admin/src/lib/transcriptStore.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefthen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefimport]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsavetranscriptapi]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwarn]]
+  - <- contains <- [[transcriptstore]]
+- **verify-migration** (uncounted-api/scripts/verify-migration.ts) -- 6 connections
+  - -> contains -> [[s3object]]
+  - -> contains -> [[listallobjects]]
+  - -> contains -> [[formatbytes]]
+  - -> contains -> [[verifybucket]]
+  - -> contains -> [[main]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefawssdkclients3]]
+- **main** (uncounted-api/src/scripts/purgeDevStorage.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflog]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefassertdevbucket]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefconfirm]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefexit]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpurgebucket]]
+  - <- contains <- [[purgedevstorage]]
+- **syncAndFlush** (uncounted-app/src/app/bootstrap/MetadataUploadSyncInit.tsx) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsyncmetadatatouploadqueue]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefisonline]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefflushqueue]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetuploadendpoint]]
+  - <- contains <- [[metadatauploadsyncinit]]
+- **embeddingWorker** (uncounted-app/src/lib/embeddingWorker.ts) -- 6 connections
+  - -> contains -> [[post]]
+  - -> contains -> [[cosinesimilarity]]
+  - -> contains -> [[selectbestsegment]]
+  - -> contains -> [[selecttopksegments]]
+  - -> contains -> [[extractsingleembedding]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhuggingfacetransformers]]
+- **getDB** (uncounted-app/src/lib/idb.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcontains]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcreateobjectstore]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - <- contains <- [[idb]]
+- **backupToBackend** (uncounted-app/src/lib/transcriptStore.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefthen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefimport]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsavetranscriptapi]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwarn]]
+  - <- contains <- [[transcriptstore]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__tofixed** () -- 5 connections
+  - <- calls <- [[estimatewordtimestamps]]
+  - <- calls <- [[usergroupcard]]
+  - <- calls <- [[formatbytes]]
+  - <- calls <- [[formatbytes]]
+  - <- calls <- [[formatbytes]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__updatejob** () -- 5 connections
+  - <- calls <- [[handlesttprogress]]
+  - <- calls <- [[handlesttcomplete]]
+  - <- calls <- [[handlestterror]]
+  - <- calls <- [[dispatchtonative]]
+  - <- calls <- [[processnext]]
 - **scoreBIZ** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 5 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcountkeywordhits]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
@@ -261,12 +622,24 @@ Cohesion: 0.06 | Nodes: 77
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefslice]]
   - <- contains <- [[embeddingworker]]
-- **computeQualityScore** (uncounted-api/src/lib/export/qualityMetricsService.ts) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefabs]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmax]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefround]]
-  - <- contains <- [[qualitymetricsservice]]
+- **syncForegroundService** (uncounted-admin/src/lib/sttEngine.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefthen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstartsttservice]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefupdatesttprogress]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstopsttservice]]
+  - <- contains <- [[sttengine]]
+- **formatBytes** (uncounted-api/scripts/migrate-storage.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflog]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftofixed]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpow]]
+  - <- contains <- [[migrate-storage]]
+- **formatBytes** (uncounted-api/scripts/verify-migration.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflog]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftofixed]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpow]]
+  - <- contains <- [[verify-migration]]
 - **scoreBIZ** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 5 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcountkeywordhits]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
@@ -315,17 +688,58 @@ Cohesion: 0.06 | Nodes: 77
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpush]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefclamp01]]
   - <- contains <- [[ruleengine]]
+- **getWorker** (uncounted-app/src/lib/embedding/embeddingExtractor.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreferror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetcurrentjob]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - <- contains <- [[embeddingextractor]]
 - **selectBestSegment** (uncounted-app/src/lib/embeddingWorker.ts) -- 5 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpush]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefslice]]
   - <- contains <- [[embeddingworker]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__cb** () -- 4 connections
+  - <- calls <- [[handleonline]]
+  - <- calls <- [[handleoffline]]
+  - <- calls <- [[handleonline]]
+  - <- calls <- [[handleoffline]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__dispatch** () -- 4 connections
+  - <- calls <- [[resize]]
+  - <- calls <- [[submit]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__endswith** () -- 4 connections
+  - <- calls <- [[endswithinstitution]]
+  - <- calls <- [[parseinstinctfile]]
+  - <- calls <- [[endswithinstitution]]
+  - <- calls <- [[makeoverviewtable]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__on** () -- 4 connections
+  - <- calls <- [[runffmpegfilter]]
+  - <- calls <- [[createziparchive]]
+  - <- calls <- [[createmetadatazip]]
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__shift** () -- 4 connections
+  - <- calls <- [[resize]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+  - <- calls <- [[processnext]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__terminate** () -- 4 connections
+  - <- calls <- [[resize]]
+  - <- calls <- [[handlemessage]]
+  - <- calls <- [[handleworkererror]]
+  - <- calls <- [[terminateall]]
 - **formatRelativeTime** (uncounted-admin/src/components/domain/metadata/MetadataInventoryPanel.tsx) -- 4 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnow]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgettime]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[metadatainventorypanel]]
+- **audioEnvironmentCollector** (uncounted-admin/src/lib/audioEnvironmentCollector.ts) -- 4 connections
+  - -> contains -> [[hourtotimebucket]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefaudioanalyzer]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftypesmetadata]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftypesaudioasset]]
 - **containsAny** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 4 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftolowercase]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsome]]
@@ -351,11 +765,31 @@ Cohesion: 0.06 | Nodes: 77
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpush]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefclamp01]]
   - <- contains <- [[ruleengine]]
+- **diarizationWorker** (uncounted-admin/src/lib/diarizationWorker.ts) -- 4 connections
+  - -> contains -> [[post]]
+  - -> contains -> [[framestosegments]]
+  - -> contains -> [[summarizespeakers]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhuggingfacetransformers]]
+- **getWorker** (uncounted-admin/src/lib/embeddingEngine.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreferror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - <- contains <- [[embeddingengine]]
+- **sttWorker** (uncounted-admin/src/lib/sttWorker.ts) -- 4 connections
+  - -> contains -> [[post]]
+  - -> contains -> [[mergechunktexts]]
+  - -> contains -> [[chunkaudio]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhuggingfacetransformers]]
 - **mergeChunkTexts** (uncounted-admin/src/lib/sttWorker.ts) -- 4 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefslice]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstartswith]]
   - <- contains <- [[sttworker]]
+- **audioEnvironmentCollector** (uncounted-app/src/lib/audioEnvironmentCollector.ts) -- 4 connections
+  - -> contains -> [[hourtotimebucket]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefaudioanalyzer]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftypesmetadata]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftypesaudioasset]]
 - **containsAny** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 4 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftolowercase]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsome]]
@@ -381,6 +815,61 @@ Cohesion: 0.06 | Nodes: 77
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpush]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefclamp01]]
   - <- contains <- [[ruleengine]]
+- **getWorker** (uncounted-app/src/lib/diarizationEngine.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreferror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - <- contains <- [[diarizationengine]]
+- **diarizationWorker** (uncounted-app/src/lib/diarizationWorker.ts) -- 4 connections
+  - -> contains -> [[post]]
+  - -> contains -> [[framestosegments]]
+  - -> contains -> [[summarizespeakers]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhuggingfacetransformers]]
+- **handleSttState** (uncounted-app/src/lib/sttEngine.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflogerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - <- contains <- [[sttengine]]
+- **sttWorker** (uncounted-app/src/lib/sttWorker.ts) -- 4 connections
+  - -> contains -> [[post]]
+  - -> contains -> [[estimatewordtimestamps]]
+  - -> contains -> [[chunkaudio]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhuggingfacetransformers]]
+- **createSlot** (uncounted-app/src/lib/sttWorkerPool.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefhandlemessage]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefhandleworkererror]]
+  - <- contains <- [[sttworkerpool]]
+- **submit** (uncounted-app/src/lib/sttWorkerPool.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffind]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdispatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpush]]
+  - <- contains <- [[sttworkerpool]]
+- **terminateAll** (uncounted-app/src/lib/sttWorkerPool.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefterminate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefclear]]
+  - <- contains <- [[sttworkerpool]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___audioanalyzer_** () -- 3 connections
+  - <- imports <- [[chunkstatsstore]]
+  - <- imports <- [[audioenvironmentcollector]]
+  - <- imports <- [[audioenvironmentcollector]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getworker** () -- 3 connections
+  - <- calls <- [[rundiarization]]
+  - <- calls <- [[extractembedding]]
+  - <- calls <- [[extractmultiembedding]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__import** () -- 3 connections
+  - <- calls <- [[backuptobackend]]
+  - <- calls <- [[backuptobackend]]
+  - <- calls <- [[readfileasbuffer]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__removeeventlistener** () -- 3 connections
+  - <- calls <- [[rundiarization]]
+  - <- calls <- [[extractembedding]]
+  - <- calls <- [[extractmultiembedding]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__then** () -- 3 connections
+  - <- calls <- [[backuptobackend]]
+  - <- calls <- [[backuptobackend]]
+  - <- calls <- [[syncforegroundservice]]
 - **estimateExcluded** (uncounted-admin/src/components/domain/metadata/MetadataQualityFilter.tsx) -- 3 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefincludes]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
@@ -417,10 +906,22 @@ Cohesion: 0.06 | Nodes: 77
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[devicemotioncollector]]
+- **endsWithInstitution** (uncounted-admin/src/lib/displayMask.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsome]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefendswith]]
+  - <- contains <- [[displaymask]]
+- **matchesJoinedSku** (uncounted-admin/src/lib/globalConsent.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsome]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefhas]]
+  - <- contains <- [[globalconsent]]
 - **hourToTimeBucket** (uncounted-admin/src/lib/mediaPlaybackCollector.ts) -- 3 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[mediaplaybackcollector]]
+- **network** (uncounted-admin/src/lib/network.ts) -- 3 connections
+  - -> contains -> [[handleonline]]
+  - -> contains -> [[handleoffline]]
+  - -> contains -> [[ensurelisteners]]
 - **hourToTimeBucket** (uncounted-admin/src/lib/networkCollector.ts) -- 3 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
@@ -433,6 +934,18 @@ Cohesion: 0.06 | Nodes: 77
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[screensessioncollector]]
+- **updateJob** (uncounted-admin/src/lib/sttEngine.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - <- contains <- [[sttengine]]
+- **transcriptStore** (uncounted-admin/src/lib/transcriptStore.ts) -- 3 connections
+  - -> contains -> [[ensuremigrated]]
+  - -> contains -> [[backuptobackend]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefidb]]
+- **readFileAsBuffer** (uncounted-api/src/lib/export/utteranceSegmentationService.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefimport]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreadfile]]
+  - <- contains <- [[utterancesegmentationservice]]
 - **hourToTimeBucket** (uncounted-app/src/lib/activityStateCollector.ts) -- 3 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
@@ -469,10 +982,22 @@ Cohesion: 0.06 | Nodes: 77
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[devicemotioncollector]]
+- **endsWithInstitution** (uncounted-app/src/lib/displayMask.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsome]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefendswith]]
+  - <- contains <- [[displaymask]]
+- **matchesJoinedSku** (uncounted-app/src/lib/globalConsent.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsome]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefhas]]
+  - <- contains <- [[globalconsent]]
 - **hourToTimeBucket** (uncounted-app/src/lib/mediaPlaybackCollector.ts) -- 3 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[mediaplaybackcollector]]
+- **network** (uncounted-app/src/lib/network.ts) -- 3 connections
+  - -> contains -> [[handleonline]]
+  - -> contains -> [[handleoffline]]
+  - -> contains -> [[ensurelisteners]]
 - **hourToTimeBucket** (uncounted-app/src/lib/networkCollector.ts) -- 3 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
@@ -485,20 +1010,196 @@ Cohesion: 0.06 | Nodes: 77
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[screensessioncollector]]
+- **handleSttProgress** (uncounted-app/src/lib/sttEngine.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflogerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefupdatejob]]
+  - <- contains <- [[sttengine]]
+- **updateJob** (uncounted-app/src/lib/sttEngine.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - <- contains <- [[sttengine]]
+- **transcriptStore** (uncounted-app/src/lib/transcriptStore.ts) -- 3 connections
+  - -> contains -> [[ensuremigrated]]
+  - -> contains -> [[backuptobackend]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefidb]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref___dictionaries_** () -- 2 connections
   - <- imports <- [[ruleengine]]
   - <- imports <- [[ruleengine]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__audiofilters** () -- 2 connections
+  - <- calls <- [[runffmpegfilter]]
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__close** () -- 2 connections
+  - <- calls <- [[updateregistry]]
+  - <- calls <- [[confirm]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__contains** () -- 2 connections
+  - <- calls <- [[getdb]]
+  - <- calls <- [[getdb]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__createobjectstore** () -- 2 connections
+  - <- calls <- [[getdb]]
+  - <- calls <- [[getdb]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__createslot** () -- 2 connections
+  - <- calls <- [[resize]]
+  - <- calls <- [[handleworkererror]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__ffmpeg** () -- 2 connections
+  - <- calls <- [[runffmpegfilter]]
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getsttmode** () -- 2 connections
+  - <- calls <- [[processnext]]
+  - <- calls <- [[processnext]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__output** () -- 2 connections
+  - <- calls <- [[runffmpegfilter]]
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__readfile** () -- 2 connections
+  - <- calls <- [[piisessioncard]]
+  - <- calls <- [[readfileasbuffer]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__runpoststtforsession** () -- 2 connections
+  - <- calls <- [[handlesttcomplete]]
+  - <- calls <- [[handlestterror]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__savetranscriptapi** () -- 2 connections
+  - <- calls <- [[backuptobackend]]
+  - <- calls <- [[backuptobackend]]
 - **SyncStatusBadge** (uncounted-admin/src/components/domain/metadata/MetadataInventoryPanel.tsx) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefformatrelativetime]]
   - <- contains <- [[metadatainventorypanel]]
 - **formatElapsed** (uncounted-admin/src/components/domain/ShareProgressPanel.tsx) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[shareprogresspanel]]
+- **post** (uncounted-admin/src/lib/diarizationWorker.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[diarizationworker]]
+- **readAndResampleAudio** (uncounted-admin/src/lib/embeddingEngine.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnotify]]
+  - <- contains <- [[embeddingengine]]
+- **cosineSimilarity** (uncounted-admin/src/lib/embeddingWorker.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsqrt]]
+  - <- contains <- [[embeddingworker]]
+- **post** (uncounted-admin/src/lib/embeddingWorker.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[embeddingworker]]
+- **ensureListeners** (uncounted-admin/src/lib/network.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - <- contains <- [[network]]
+- **handleOffline** (uncounted-admin/src/lib/network.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcb]]
+  - <- contains <- [[network]]
+- **handleOnline** (uncounted-admin/src/lib/network.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcb]]
+  - <- contains <- [[network]]
+- **post** (uncounted-admin/src/lib/sttWorker.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[sttworker]]
+- **formatBytes** (uncounted-api/src/scripts/purgeDevStorage.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftofixed]]
+  - <- contains <- [[purgedevstorage]]
 - **formatElapsed** (uncounted-app/src/components/domain/ShareProgressPanel.tsx) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
   - <- contains <- [[shareprogresspanel]]
+- **chunkStatsStore** (uncounted-app/src/lib/chunkStatsStore.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefidb]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefaudioanalyzer]]
+- **post** (uncounted-app/src/lib/diarizationWorker.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[diarizationworker]]
+- **cosineSimilarity** (uncounted-app/src/lib/embeddingWorker.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsqrt]]
+  - <- contains <- [[embeddingworker]]
+- **post** (uncounted-app/src/lib/embeddingWorker.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[embeddingworker]]
+- **ensureListeners** (uncounted-app/src/lib/network.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddeventlistener]]
+  - <- contains <- [[network]]
+- **handleOffline** (uncounted-app/src/lib/network.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcb]]
+  - <- contains <- [[network]]
+- **handleOnline** (uncounted-app/src/lib/network.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcb]]
+  - <- contains <- [[network]]
+- **handleSttAuthError** (uncounted-app/src/lib/sttEngine.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflogerror]]
+  - <- contains <- [[sttengine]]
+- **post** (uncounted-app/src/lib/sttWorker.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[sttworker]]
+- **sttWorkerPool** (uncounted-app/src/lib/sttWorkerPool.ts) -- 2 connections
+  - -> contains -> [[sttworkerpool]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftranscriptstore]]
+- **activeCount** (uncounted-app/src/lib/sttWorkerPool.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffilter]]
+  - <- contains <- [[sttworkerpool]]
+- **dispatch** (uncounted-app/src/lib/sttWorkerPool.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpostmessage]]
+  - <- contains <- [[sttworkerpool]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___readline_** () -- 1 connections
+  - <- imports <- [[purgedevstorage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___setcurrentjob** () -- 1 connections
+  - <- calls <- [[getworker]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__allsettled** () -- 1 connections
+  - <- calls <- [[cleanupstalesessions]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__assertdevbucket** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__audiochannels** () -- 1 connections
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__audiocodec** () -- 1 connections
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__audiofrequency** () -- 1 connections
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__cleanuptemp** () -- 1 connections
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__clear** () -- 1 connections
+  - <- calls <- [[terminateall]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__confirm** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__createinterface** () -- 1 connections
+  - <- calls <- [[confirm]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__deletesession** () -- 1 connections
+  - <- calls <- [[cleanupstalesessions]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__detectsilenceboundaries** () -- 1 connections
+  - <- calls <- [[detectbeepintervals]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__dispatchtonative** () -- 1 connections
+  - <- calls <- [[processnext]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__flushqueue** () -- 1 connections
+  - <- calls <- [[syncandflush]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__format** () -- 1 connections
+  - <- calls <- [[runffmpegfilter]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref__formatrelativetime** () -- 1 connections
   - <- calls <- [[syncstatusbadge]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getglobalstate** () -- 1 connections
+  - <- calls <- [[handlesttcomplete]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getuploadendpoint** () -- 1 connections
+  - <- calls <- [[syncandflush]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__handlemessage** () -- 1 connections
+  - <- calls <- [[createslot]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__handleworkererror** () -- 1 connections
+  - <- calls <- [[createslot]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__isonline** () -- 1 connections
+  - <- calls <- [[syncandflush]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__onprogress** () -- 1 connections
+  - <- calls <- [[handlemessage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__processnext** () -- 1 connections
+  - <- calls <- [[processnext]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__purgebucket** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__question** () -- 1 connections
+  - <- calls <- [[confirm]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__registerprocessingtask** () -- 1 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__startsttservice** () -- 1 connections
+  - <- calls <- [[syncforegroundservice]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__stopsttservice** () -- 1 connections
+  - <- calls <- [[syncforegroundservice]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__subscribepipeline** () -- 1 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__syncforegroundservice** () -- 1 connections
+  - <- calls <- [[processnext]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__syncmetadatatouploadqueue** () -- 1 connections
+  - <- calls <- [[syncandflush]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__unregisterprocessingtask** () -- 1 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__unsub** () -- 1 connections
+  - <- calls <- [[registerpostpipelinewatch]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__updatesttprogress** () -- 1 connections
+  - <- calls <- [[syncforegroundservice]]
 - **MetadataInventoryPanelProps** (uncounted-admin/src/components/domain/metadata/MetadataInventoryPanel.tsx) -- 1 connections
   - <- contains <- [[metadatainventorypanel]]
 - **inferNoise** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 1 connections
@@ -507,12 +1208,20 @@ Cohesion: 0.06 | Nodes: 77
   - <- contains <- [[ruleengine]]
 - **inferTone** (uncounted-admin/src/lib/autoLabel/ruleEngine.ts) -- 1 connections
   - <- contains <- [[ruleengine]]
+- **idb** (uncounted-admin/src/lib/idb.ts) -- 1 connections
+  - -> contains -> [[getdb]]
+- **S3Object** (uncounted-api/scripts/verify-migration.ts) -- 1 connections
+  - <- contains <- [[verify-migration]]
 - **inferNoise** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 1 connections
   - <- contains <- [[ruleengine]]
 - **inferPurpose** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 1 connections
   - <- contains <- [[ruleengine]]
 - **inferTone** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 1 connections
   - <- contains <- [[ruleengine]]
+- **idb** (uncounted-app/src/lib/idb.ts) -- 1 connections
+  - -> contains -> [[getdb]]
+- **poolSize** (uncounted-app/src/lib/sttWorkerPool.ts) -- 1 connections
+  - <- contains <- [[sttworkerpool]]
 
 ## Internal Relationships
 - SyncStatusBadge -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__formatrelativetime [EXTRACTED]
@@ -528,6 +1237,8 @@ Cohesion: 0.06 | Nodes: 77
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- audioEnvironmentCollector -> contains -> hourToTimeBucket [EXTRACTED]
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___audioanalyzer_ [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - ruleEngine -> contains -> clamp01 [EXTRACTED]
@@ -549,6 +1260,7 @@ Cohesion: 0.06 | Nodes: 77
 - ruleEngine -> contains -> inferNoise [EXTRACTED]
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___dictionaries_ [EXTRACTED]
 - clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__some [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__countkeywordhits [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__clamp01 [EXTRACTED]
@@ -587,18 +1299,122 @@ Cohesion: 0.06 | Nodes: 77
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- diarizationWorker -> contains -> post [EXTRACTED]
+- diarizationWorker -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____huggingface_transformers_ [EXTRACTED]
+- post -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
+- endsWithInstitution -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__some [EXTRACTED]
+- endsWithInstitution -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__endswith [EXTRACTED]
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getworker [EXTRACTED]
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__removeeventlistener [EXTRACTED]
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getworker [EXTRACTED]
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__removeeventlistener [EXTRACTED]
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- readAndResampleAudio -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- embeddingWorker -> contains -> post [EXTRACTED]
+- embeddingWorker -> contains -> cosineSimilarity [EXTRACTED]
+- embeddingWorker -> contains -> selectBestSegment [EXTRACTED]
+- embeddingWorker -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____huggingface_transformers_ [EXTRACTED]
+- post -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
 - selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- matchesJoinedSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__some [EXTRACTED]
+- idb -> contains -> getDB [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__contains [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__createobjectstore [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- network -> contains -> handleOnline [EXTRACTED]
+- network -> contains -> handleOffline [EXTRACTED]
+- network -> contains -> ensureListeners [EXTRACTED]
+- ensureListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- handleOffline -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__cb [EXTRACTED]
+- handleOnline -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__cb [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
-- hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
-- hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__allsettled [EXTRACTED]
+- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch [EXTRACTED]
+- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__deletesession [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getsttmode [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__syncforegroundservice [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__shift [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__updatejob [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__processnext [EXTRACTED]
+- syncForegroundService -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__then [EXTRACTED]
+- syncForegroundService -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__startsttservice [EXTRACTED]
+- syncForegroundService -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__updatesttprogress [EXTRACTED]
+- syncForegroundService -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__stopsttservice [EXTRACTED]
+- updateJob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- sttWorker -> contains -> post [EXTRACTED]
+- sttWorker -> contains -> mergeChunkTexts [EXTRACTED]
+- sttWorker -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____huggingface_transformers_ [EXTRACTED]
 - mergeChunkTexts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
-- computeQualityScore -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- post -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
+- transcriptStore -> contains -> backupToBackend [EXTRACTED]
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__then [EXTRACTED]
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__import [EXTRACTED]
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch [EXTRACTED]
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__savetranscriptapi [EXTRACTED]
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tofixed [EXTRACTED]
+- verify-migration -> contains -> S3Object [EXTRACTED]
+- verify-migration -> contains -> formatBytes [EXTRACTED]
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tofixed [EXTRACTED]
+- runFfmpegFilter -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__on [EXTRACTED]
+- runFfmpegFilter -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__output [EXTRACTED]
+- runFfmpegFilter -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__format [EXTRACTED]
+- runFfmpegFilter -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__audiofilters [EXTRACTED]
+- runFfmpegFilter -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__ffmpeg [EXTRACTED]
+- runFfmpegFilter -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- runFfmpegFilter -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__on [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__output [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__audiocodec [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__audiochannels [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__audiofrequency [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__audiofilters [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__ffmpeg [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__detectsilenceboundaries [EXTRACTED]
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__cleanuptemp [EXTRACTED]
+- readFileAsBuffer -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__import [EXTRACTED]
+- readFileAsBuffer -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__readfile [EXTRACTED]
+- purgeDevStorage -> contains -> formatBytes [EXTRACTED]
+- purgeDevStorage -> contains -> confirm [EXTRACTED]
+- purgeDevStorage -> contains -> main [EXTRACTED]
+- purgeDevStorage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___readline_ [EXTRACTED]
+- confirm -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__createinterface [EXTRACTED]
+- confirm -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__question [EXTRACTED]
+- confirm -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__close [EXTRACTED]
+- confirm -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tofixed [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__assertdevbucket [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__confirm [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__purgebucket [EXTRACTED]
+- syncAndFlush -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__syncmetadatatouploadqueue [EXTRACTED]
+- syncAndFlush -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__isonline [EXTRACTED]
+- syncAndFlush -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch [EXTRACTED]
+- syncAndFlush -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__flushqueue [EXTRACTED]
+- syncAndFlush -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getuploadendpoint [EXTRACTED]
 - formatElapsed -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
@@ -606,6 +1422,8 @@ Cohesion: 0.06 | Nodes: 77
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- audioEnvironmentCollector -> contains -> hourToTimeBucket [EXTRACTED]
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___audioanalyzer_ [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - ruleEngine -> contains -> clamp01 [EXTRACTED]
@@ -627,6 +1445,7 @@ Cohesion: 0.06 | Nodes: 77
 - ruleEngine -> contains -> inferNoise [EXTRACTED]
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___dictionaries_ [EXTRACTED]
 - clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__some [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__countkeywordhits [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__clamp01 [EXTRACTED]
@@ -665,74 +1484,251 @@ Cohesion: 0.06 | Nodes: 77
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- chunkStatsStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___audioanalyzer_ [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getworker [EXTRACTED]
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__removeeventlistener [EXTRACTED]
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
+- diarizationWorker -> contains -> post [EXTRACTED]
+- diarizationWorker -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____huggingface_transformers_ [EXTRACTED]
+- post -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
+- endsWithInstitution -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__some [EXTRACTED]
+- endsWithInstitution -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__endswith [EXTRACTED]
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref___setcurrentjob [EXTRACTED]
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- embeddingWorker -> contains -> post [EXTRACTED]
+- embeddingWorker -> contains -> cosineSimilarity [EXTRACTED]
+- embeddingWorker -> contains -> selectBestSegment [EXTRACTED]
+- embeddingWorker -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____huggingface_transformers_ [EXTRACTED]
+- post -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
 - selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- matchesJoinedSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__some [EXTRACTED]
+- idb -> contains -> getDB [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__contains [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__createobjectstore [EXTRACTED]
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
+- hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- network -> contains -> handleOnline [EXTRACTED]
+- network -> contains -> handleOffline [EXTRACTED]
+- network -> contains -> ensureListeners [EXTRACTED]
+- ensureListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- handleOffline -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__cb [EXTRACTED]
+- handleOnline -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__cb [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__registerprocessingtask [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__subscribepipeline [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__unsub [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch [EXTRACTED]
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__unregisterprocessingtask [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
-- hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__min [EXTRACTED]
-- hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- handleSttAuthError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logerror [EXTRACTED]
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__delete [EXTRACTED]
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logerror [EXTRACTED]
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getglobalstate [EXTRACTED]
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__updatejob [EXTRACTED]
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch [EXTRACTED]
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__runpoststtforsession [EXTRACTED]
+- handleSttError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logerror [EXTRACTED]
+- handleSttError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__delete [EXTRACTED]
+- handleSttError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__updatejob [EXTRACTED]
+- handleSttError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch [EXTRACTED]
+- handleSttError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__runpoststtforsession [EXTRACTED]
+- handleSttProgress -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logerror [EXTRACTED]
+- handleSttProgress -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__updatejob [EXTRACTED]
+- handleSttState -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logerror [EXTRACTED]
+- handleSttState -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getsttmode [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch [EXTRACTED]
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__dispatchtonative [EXTRACTED]
+- updateJob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__notify [EXTRACTED]
+- sttWorker -> contains -> post [EXTRACTED]
+- sttWorker -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____huggingface_transformers_ [EXTRACTED]
+- post -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
+- SttWorkerPool -> contains -> createSlot [EXTRACTED]
+- SttWorkerPool -> contains -> resize [EXTRACTED]
+- SttWorkerPool -> contains -> submit [EXTRACTED]
+- SttWorkerPool -> contains -> dispatch [EXTRACTED]
+- SttWorkerPool -> contains -> handleMessage [EXTRACTED]
+- SttWorkerPool -> contains -> handleWorkerError [EXTRACTED]
+- SttWorkerPool -> contains -> activeCount [EXTRACTED]
+- SttWorkerPool -> contains -> poolSize [EXTRACTED]
+- SttWorkerPool -> contains -> terminateAll [EXTRACTED]
+- sttWorkerPool -> contains -> SttWorkerPool [EXTRACTED]
+- createSlot -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addeventlistener [EXTRACTED]
+- createSlot -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__handlemessage [EXTRACTED]
+- createSlot -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__handleworkererror [EXTRACTED]
+- dispatch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__postmessage [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__onprogress [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__terminate [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__delete [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__dispatch [EXTRACTED]
+- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__shift [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__terminate [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__delete [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__createslot [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__dispatch [EXTRACTED]
+- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__shift [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__createslot [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__dispatch [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__shift [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__terminate [EXTRACTED]
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__delete [EXTRACTED]
+- submit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__dispatch [EXTRACTED]
+- terminateAll -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reject [EXTRACTED]
+- terminateAll -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__terminate [EXTRACTED]
+- terminateAll -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__clear [EXTRACTED]
+- transcriptStore -> contains -> backupToBackend [EXTRACTED]
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__then [EXTRACTED]
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__import [EXTRACTED]
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch [EXTRACTED]
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__savetranscriptapi [EXTRACTED]
 
 ## Cross-Community Connections
-- MetadataInventoryPanel -> contains -> computePeriodLabel (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- MetadataInventoryPanel -> contains -> formatDate (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- MetadataInventoryPanel -> contains -> computePeriodLabel (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- MetadataInventoryPanel -> contains -> formatDate (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
 - MetadataInventoryPanel -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___react_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
 - MetadataInventoryPanel -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___lib_api_admin_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
-- formatRelativeTime -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- formatRelativeTime -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__gettime (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- estimateExcluded -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- formatRelativeTime -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- formatRelativeTime -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__gettime (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- estimateExcluded -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_metadata_ (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_audioasset_ (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___labeloptions_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
-- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__some (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefabs]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- mergeChunkTexts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- mergeChunkTexts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- computeQualityScore -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__abs (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefabs]])
-- computeQualityScore -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- computeQualityScore -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- diarizationWorker -> contains -> framesToSegments (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- diarizationWorker -> contains -> summarizeSpeakers (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- embeddingWorker -> contains -> selectTopKSegments (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- embeddingWorker -> contains -> extractSingleEmbedding (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- cosineSimilarity -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sqrt (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- matchesJoinedSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__has (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__open (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__loadtranscript (-> [[piisessioncard-runhandlestart]])
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- updateJob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- sttWorker -> contains -> chunkAudio (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- mergeChunkTexts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- mergeChunkTexts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- transcriptStore -> contains -> ensureMigrated (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- transcriptStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___idb_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pow (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- verify-migration -> contains -> listAllObjects (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- verify-migration -> contains -> verifyBucket (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- verify-migration -> contains -> main (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- verify-migration -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_client_s3_ (-> [[unresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefvitest]])
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- formatBytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pow (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- runFfmpegFilter -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__run (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__replace (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__run (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- detectBeepIntervals -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- purgeDevStorage -> contains -> assertDevBucket (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- purgeDevStorage -> contains -> purgeBucket (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- purgeDevStorage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___dotenv_ (-> [[unresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefvitest]])
+- purgeDevStorage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___path_ (-> [[unresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefvitest]])
+- confirm -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- confirm -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__trim (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__exit (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_metadata_ (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- audioEnvironmentCollector -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_audioasset_ (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___labeloptions_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
-- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__some (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefabs]])
-- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- containsAny -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- chunkStatsStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___idb_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- diarizationWorker -> contains -> framesToSegments (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- diarizationWorker -> contains -> summarizeSpeakers (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- embeddingWorker -> contains -> selectTopKSegments (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- embeddingWorker -> contains -> extractSingleEmbedding (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- cosineSimilarity -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sqrt (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- matchesJoinedSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__has (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__open (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- registerPostPipelineWatch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getpipelinesnapshot (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- handleSttError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- handleSttState -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__splice (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- updateJob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- sttWorker -> contains -> estimateWordTimestamps (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- sttWorker -> contains -> chunkAudio (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- sttWorkerPool -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___transcriptstore_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
+- activeCount -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__add (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__add (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- submit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__find (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- submit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- transcriptStore -> contains -> ensureMigrated (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- transcriptStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___idb_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
 
 ## Context
-이 커뮤니티는 __unresolved__::ref::__unresolved____ref____unresolved____ref__min, __unresolved__::ref::__unresolved____ref____unresolved____ref__floor, __unresolved__::ref::__unresolved____ref____unresolved____ref__clamp01를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 MetadataInventoryPanel.tsx, MetadataQualityFilter.tsx, ShareProgressPanel.tsx, activityStateCollector.ts, ambientLightCollector.ts이다.
+이 커뮤니티는 __unresolved__::ref::__unresolved____ref____unresolved____ref__min, __unresolved__::ref::__unresolved____ref____unresolved____ref__floor, __unresolved__::ref::__unresolved____ref____unresolved____ref__clamp01를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 MetadataInventoryPanel.tsx, MetadataQualityFilter.tsx, MetadataUploadSyncInit.tsx, ShareProgressPanel.tsx, activityStateCollector.ts이다.

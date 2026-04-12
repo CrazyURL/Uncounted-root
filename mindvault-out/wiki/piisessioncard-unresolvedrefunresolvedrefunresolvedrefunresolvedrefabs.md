@@ -81,21 +81,6 @@ Cohesion: 0.01 | Nodes: 190
   - <- calls <- [[extractmultiembedding]]
   - <- calls <- [[updatejob]]
   - <- calls <- [[processnext]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sqrt** () -- 14 connections
-  - <- calls <- [[startwebfallback]]
-  - <- calls <- [[cosinesimilarity]]
-  - <- calls <- [[selecttopksegments]]
-  - <- calls <- [[extractsingleembedding]]
-  - <- calls <- [[computeaudiostats]]
-  - <- calls <- [[removeduplicates]]
-  - <- calls <- [[compresssilence]]
-  - <- calls <- [[normalizegain]]
-  - <- calls <- [[startwebfallback]]
-  - <- calls <- [[cosinesimilarity]]
-  - <- calls <- [[selecttopksegments]]
-  - <- calls <- [[extractsingleembedding]]
-  - <- calls <- [[cosinesimilarity]]
-  - <- calls <- [[computereferenceembedding]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__addeventlistener** () -- 13 connections
   - <- calls <- [[startwebfallback]]
   - <- calls <- [[startnativebridge]]
@@ -137,6 +122,18 @@ Cohesion: 0.01 | Nodes: 190
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftrackedtrackfunnel]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftrackednavigate]]
   - <- contains <- [[onboardingpagetest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sqrt** () -- 11 connections
+  - <- calls <- [[startwebfallback]]
+  - <- calls <- [[cosinesimilarity]]
+  - <- calls <- [[selecttopksegments]]
+  - <- calls <- [[extractsingleembedding]]
+  - <- calls <- [[computeaudiostats]]
+  - <- calls <- [[startwebfallback]]
+  - <- calls <- [[cosinesimilarity]]
+  - <- calls <- [[selecttopksegments]]
+  - <- calls <- [[extractsingleembedding]]
+  - <- calls <- [[cosinesimilarity]]
+  - <- calls <- [[computereferenceembedding]]
 - **handleSttComplete** (uncounted-app/src/lib/sttEngine.ts) -- 11 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdelete]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefset]]
@@ -1135,84 +1132,84 @@ Cohesion: 0.01 | Nodes: 190
 - PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__onundodonotshare [EXTRACTED]
 
 ## Cross-Community Connections
-- startWebFallback -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- diarizationWorker -> contains -> framesToSegments (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- diarizationWorker -> contains -> summarizeSpeakers (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- computeReferenceEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- startWebFallback -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- diarizationWorker -> contains -> framesToSegments (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- diarizationWorker -> contains -> summarizeSpeakers (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- computeReferenceEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- extractEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- extractMultiEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - embeddingWorker -> contains -> selectBestSegment (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmin-unresolvedrefunresolvedrefunresolvedrefunresolvedreffloor]])
-- extractSingleEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__from (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- extractSingleEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- selectTopKSegments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- selectTopKSegments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sort (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- matchesJoinedSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__has (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__open (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- updateJob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sttWorker -> contains -> mergeChunkTexts (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sttWorker -> contains -> chunkAudio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- transcriptStore -> contains -> ensureMigrated (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- extractSingleEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__from (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- extractSingleEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- selectTopKSegments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- selectTopKSegments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sort (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- matchesJoinedSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__has (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__open (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- cleanupStaleSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- updateJob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sttWorker -> contains -> mergeChunkTexts (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sttWorker -> contains -> chunkAudio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- transcriptStore -> contains -> ensureMigrated (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - transcriptStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___idb_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- startWebFallback -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- diarizationWorker -> contains -> framesToSegments (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- diarizationWorker -> contains -> summarizeSpeakers (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- startWebFallback -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- runDiarization -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- diarizationWorker -> contains -> framesToSegments (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- diarizationWorker -> contains -> summarizeSpeakers (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- getWorker -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__error (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - embeddingWorker -> contains -> selectBestSegment (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmin-unresolvedrefunresolvedrefunresolvedrefunresolvedreffloor]])
-- extractSingleEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__from (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- extractSingleEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- selectTopKSegments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- selectTopKSegments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sort (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- matchesJoinedSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__has (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__open (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- extractSingleEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__from (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- extractSingleEmbedding -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- selectTopKSegments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- selectTopKSegments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sort (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- matchesJoinedSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__has (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__open (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- getDB -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - registerPostPipelineWatch -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__getpipelinesnapshot (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- handleSttError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- handleSttState -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- handleSttComplete -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- handleSttError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__string (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- handleSttState -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - processNext -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__splice (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- updateJob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sttWorker -> contains -> estimateWordTimestamps (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sttWorker -> contains -> chunkAudio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- updateJob -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sttWorker -> contains -> estimateWordTimestamps (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sttWorker -> contains -> chunkAudio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - sttWorkerPool -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___transcriptstore_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- activeCount -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- activeCount -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- handleMessage -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- handleWorkerError -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- resize -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - submit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__find (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- submit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- transcriptStore -> contains -> ensureMigrated (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- submit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- transcriptStore -> contains -> ensureMigrated (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - transcriptStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___idb_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- backupToBackend -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__warn (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - OnboardingPage.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__setitem (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__getitem (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pop (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__split (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pop (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__split (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tolocalestring (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 
 ## Context
 이 커뮤니티는 PiiSessionCard, __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__abs, __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__notify를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 App.tsx, MetadataUploadSyncInit.tsx, OnboardingPage.test.ts, PiiReviewPage.tsx, activityStateCollector.ts이다.

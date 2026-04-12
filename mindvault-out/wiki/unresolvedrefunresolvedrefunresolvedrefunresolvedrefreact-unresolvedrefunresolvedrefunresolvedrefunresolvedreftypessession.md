@@ -1,8 +1,8 @@
 # __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ & __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_
-Cohesion: 0.01 | Nodes: 613
+Cohesion: 0.01 | Nodes: 623
 
 ## Key Nodes
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_** () -- 125 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_** () -- 122 connections
   - <- imports <- [[main]]
   - <- imports <- [[metadatacollectorinit]]
   - <- imports <- [[errorloggerinit]]
@@ -15,10 +15,8 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[consentrestoreinit]]
   - <- imports <- [[pipelineresumeinit]]
   - <- imports <- [[uploadqueueinit]]
-  - <- imports <- [[sttrecoveryinit]]
   - <- imports <- [[metadatauploadsyncinit]]
   - <- imports <- [[oauthcallbackhandler]]
-  - <- imports <- [[sttlifecycleinit]]
   - <- imports <- [[appshell]]
   - <- imports <- [[countupnumber]]
   - <- imports <- [[stepperprogress]]
@@ -92,7 +90,6 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[audioprocessingsteps]]
   - <- imports <- [[shareprepmodal]]
   - <- imports <- [[skurecipeeditor]]
-  - <- imports <- [[utterancereviewtable]]
   - <- imports <- [[utterancelabelingpanel]]
   - <- imports <- [[metadataheatmap]]
   - <- imports <- [[metadataexportconfirm]]
@@ -128,7 +125,7 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[adminclientspage]]
   - <- imports <- [[adminsettlementpage]]
   - <- imports <- [[admindatasetlistpage]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_** () -- 100 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_** () -- 99 connections
   - <- imports <- [[buildvaluedashboard]]
   - <- imports <- [[sessiondedup]]
   - <- imports <- [[sessionconsentpatch]]
@@ -137,7 +134,6 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[sessionrepository]]
   - <- imports <- [[autoscanonlaunch]]
   - <- imports <- [[autoscanhelpers]]
-  - <- imports <- [[sttlifecycleinit]]
   - <- imports <- [[sessioncard]]
   - <- imports <- [[labelbottomsheet]]
   - <- imports <- [[shareprepmodal]]
@@ -418,12 +414,11 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[adminclientskumappage]]
   - <- imports <- [[adminskucomponentspage]]
   - <- imports <- [[adminbuildwizardpage]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_core_** () -- 31 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_core_** () -- 30 connections
   - <- imports <- [[autoscanonlaunch]]
   - <- imports <- [[storageinitializer]]
   - <- imports <- [[backbuttonhandler]]
   - <- imports <- [[oauthcallbackhandler]]
-  - <- imports <- [[sttlifecycleinit]]
   - <- imports <- [[consentrepo]]
   - <- imports <- [[verificationcacherepo]]
   - <- imports <- [[diarizationengine]]
@@ -479,33 +474,6 @@ Cohesion: 0.01 | Nodes: 613
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibvalueengine]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibledgerengine]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypeseventunit]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_sessionmapper_** () -- 26 connections
-  - <- imports <- [[autoscanonlaunch]]
-  - <- imports <- [[sttrecoveryinit]]
-  - <- imports <- [[sttlifecycleinit]]
-  - <- imports <- [[labelingpage]]
-  - <- imports <- [[valuepage]]
-  - <- imports <- [[reviewqueuepage]]
-  - <- imports <- [[missionspage]]
-  - <- imports <- [[guidedonboardingpage]]
-  - <- imports <- [[campaignspage]]
-  - <- imports <- [[profilepage]]
-  - <- imports <- [[contactcallspage]]
-  - <- imports <- [[refinerypage]]
-  - <- imports <- [[assetspage]]
-  - <- imports <- [[piireviewpage]]
-  - <- imports <- [[sessiondetailpage]]
-  - <- imports <- [[privacycontrolcenterpage]]
-  - <- imports <- [[homepage]]
-  - <- imports <- [[useconsentstate]]
-  - <- imports <- [[adminlabelcatalogpage]]
-  - <- imports <- [[admindashboardpage]]
-  - <- imports <- [[adminbillableunitspage]]
-  - <- imports <- [[adminuserdetailpage]]
-  - <- imports <- [[admindatasetdetailpage]]
-  - <- imports <- [[adminskustudiopage]]
-  - <- imports <- [[adminbuildwizardpage]]
-  - <- imports <- [[admindatasetlistpage]]
 - **AssetsPage** (uncounted-app/src/pages/AssetsPage.tsx) -- 25 connections
   - -> contains -> [[loadgrouprels]]
   - -> contains -> [[savegrouprel]]
@@ -532,6 +500,31 @@ Cohesion: 0.01 | Nodes: 613
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibconsentengine]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibfunnellogger]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibverificationengine]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_sessionmapper_** () -- 24 connections
+  - <- imports <- [[autoscanonlaunch]]
+  - <- imports <- [[labelingpage]]
+  - <- imports <- [[valuepage]]
+  - <- imports <- [[reviewqueuepage]]
+  - <- imports <- [[missionspage]]
+  - <- imports <- [[guidedonboardingpage]]
+  - <- imports <- [[campaignspage]]
+  - <- imports <- [[profilepage]]
+  - <- imports <- [[contactcallspage]]
+  - <- imports <- [[refinerypage]]
+  - <- imports <- [[assetspage]]
+  - <- imports <- [[piireviewpage]]
+  - <- imports <- [[sessiondetailpage]]
+  - <- imports <- [[privacycontrolcenterpage]]
+  - <- imports <- [[homepage]]
+  - <- imports <- [[useconsentstate]]
+  - <- imports <- [[adminlabelcatalogpage]]
+  - <- imports <- [[admindashboardpage]]
+  - <- imports <- [[adminbillableunitspage]]
+  - <- imports <- [[adminuserdetailpage]]
+  - <- imports <- [[admindatasetdetailpage]]
+  - <- imports <- [[adminskustudiopage]]
+  - <- imports <- [[adminbuildwizardpage]]
+  - <- imports <- [[admindatasetlistpage]]
 - **sttEngine** (uncounted-app/src/lib/sttEngine.ts) -- 24 connections
   - -> contains -> [[sttserviceplugin]]
   - -> contains -> [[persistcounts]]
@@ -848,6 +841,23 @@ Cohesion: 0.01 | Nodes: 613
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcomponentsdomainmetadatametadataqualityfilter]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcomponentsdomainmetadatametadataexportconfirm]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcomponentsdomainmetadatametadatawizardsteps]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_** () -- 16 connections
+  - <- imports <- [[consent]]
+  - <- imports <- [[storage]]
+  - <- imports <- [[sessionchunks]]
+  - <- imports <- [[transcripts]]
+  - <- imports <- [[voiceprofile]]
+  - <- imports <- [[clienttest]]
+  - <- imports <- [[transcriptchunks]]
+  - <- imports <- [[sessions]]
+  - <- imports <- [[auth]]
+  - <- imports <- [[logging]]
+  - <- imports <- [[storage]]
+  - <- imports <- [[admin]]
+  - <- imports <- [[transcripts]]
+  - <- imports <- [[sessions]]
+  - <- imports <- [[auth]]
+  - <- imports <- [[logging]]
 - **ledgerEngine** (uncounted-admin/src/lib/ledgerEngine.ts) -- 16 connections
   - -> contains -> [[calclabelmultiplierrange]]
   - -> contains -> [[calccompliancemultiplier]]
@@ -1485,16 +1495,6 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[sessionmapper]]
   - <- imports <- [[verificationengine]]
   - <- imports <- [[resetall]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_api_sessions_** () -- 9 connections
-  - <- imports <- [[sessiondedup]]
-  - <- imports <- [[sessionrepository]]
-  - <- imports <- [[sttrecoveryinit]]
-  - <- imports <- [[sttlifecycleinit]]
-  - <- imports <- [[labelingpage]]
-  - <- imports <- [[reviewqueuepage]]
-  - <- imports <- [[sessiondetailpage]]
-  - <- imports <- [[consentoverridepanel]]
-  - <- imports <- [[adminbuildwizardpage]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_eventunit_** () -- 9 connections
   - <- imports <- [[types]]
   - <- imports <- [[eventunitengine]]
@@ -1603,15 +1603,6 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[stepcomplete]]
   - <- imports <- [[stepprocessing]]
   - <- imports <- [[constants]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_sttengine_** () -- 8 connections
-  - <- imports <- [[sttrecoveryinit]]
-  - <- imports <- [[sttlifecycleinit]]
-  - <- imports <- [[guidedonboardingpage]]
-  - <- imports <- [[profilepage]]
-  - <- imports <- [[assetspage]]
-  - <- imports <- [[homepage]]
-  - <- imports <- [[usesessiontranscript]]
-  - <- imports <- [[transcriptsection]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_tutorialstore_** () -- 8 connections
   - <- imports <- [[guidedonboardingpage]]
   - <- imports <- [[profilepage]]
@@ -1621,15 +1612,6 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[onboardingpage]]
   - <- imports <- [[homepage]]
   - <- imports <- [[questscard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_export_** () -- 8 connections
-  - <- imports <- [[skuinventorycard]]
-  - <- imports <- [[audioprocessingsteps]]
-  - <- imports <- [[utterancereviewtable]]
-  - <- imports <- [[utterancelabelingpanel]]
-  - <- imports <- [[adminstore]]
-  - <- imports <- [[admin]]
-  - <- imports <- [[adminexportjobdetailpage]]
-  - <- imports <- [[adminbuildwizardpage]]
 - **LabelBottomSheet** (uncounted-admin/src/components/domain/LabelBottomSheet.tsx) -- 8 connections
   - -> contains -> [[emptylabel]]
   - -> contains -> [[countfilled]]
@@ -1675,15 +1657,6 @@ Cohesion: 0.01 | Nodes: 613
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefautoscanhelpers]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefautoscanevent]]
-- **SttLifecycleInit** (uncounted-app/src/app/bootstrap/SttLifecycleInit.tsx) -- 8 connections
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcapacitorcore]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcapacitorapp]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibsessionmapper]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibsttengine]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibpipelineorchestrator]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibapisessions]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]]
 - **LabelBottomSheet** (uncounted-app/src/components/domain/LabelBottomSheet.tsx) -- 8 connections
   - -> contains -> [[emptylabel]]
   - -> contains -> [[countfilled]]
@@ -1729,6 +1702,14 @@ Cohesion: 0.01 | Nodes: 613
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibrefineryengine]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessku]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibskutier]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_api_sessions_** () -- 7 connections
+  - <- imports <- [[sessiondedup]]
+  - <- imports <- [[sessionrepository]]
+  - <- imports <- [[labelingpage]]
+  - <- imports <- [[reviewqueuepage]]
+  - <- imports <- [[sessiondetailpage]]
+  - <- imports <- [[consentoverridepanel]]
+  - <- imports <- [[adminbuildwizardpage]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_embeddingengine_** () -- 7 connections
   - <- imports <- [[sessionconsentpatch]]
   - <- imports <- [[storageinitializer]]
@@ -1753,6 +1734,14 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[verificationengine]]
   - <- imports <- [[pipelineorchestrator]]
   - <- imports <- [[sttservicebridge]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_export_** () -- 7 connections
+  - <- imports <- [[skuinventorycard]]
+  - <- imports <- [[audioprocessingsteps]]
+  - <- imports <- [[utterancelabelingpanel]]
+  - <- imports <- [[adminstore]]
+  - <- imports <- [[admin]]
+  - <- imports <- [[adminexportjobdetailpage]]
+  - <- imports <- [[adminbuildwizardpage]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___wavencoder_** () -- 7 connections
   - <- imports <- [[diarizationengine]]
   - <- imports <- [[speakermuter]]
@@ -1932,6 +1921,13 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[profilepage]]
   - <- imports <- [[usehomestats]]
   - <- imports <- [[usevaluebreakdown]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_sttengine_** () -- 6 connections
+  - <- imports <- [[guidedonboardingpage]]
+  - <- imports <- [[profilepage]]
+  - <- imports <- [[assetspage]]
+  - <- imports <- [[homepage]]
+  - <- imports <- [[usesessiontranscript]]
+  - <- imports <- [[transcriptsection]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_toastcontext_** () -- 6 connections
   - <- imports <- [[app]]
   - <- imports <- [[profilepage]]
@@ -2104,12 +2100,6 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[valuepage]]
   - <- imports <- [[usehomestats]]
   - <- imports <- [[usevaluebreakdown]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_pipelineorchestrator_** () -- 5 connections
-  - <- imports <- [[pipelineresumeinit]]
-  - <- imports <- [[sttlifecycleinit]]
-  - <- imports <- [[guidedonboardingpage]]
-  - <- imports <- [[profilepage]]
-  - <- imports <- [[privacycontrolcenterpage]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___metadataexportresolver_** () -- 5 connections
   - <- imports <- [[scanengine]]
   - <- imports <- [[pipelineorchestrator]]
@@ -2266,6 +2256,11 @@ Cohesion: 0.01 | Nodes: 613
   - <- imports <- [[labelingpage]]
   - <- imports <- [[usehomestats]]
   - <- imports <- [[usevaluebreakdown]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_pipelineorchestrator_** () -- 4 connections
+  - <- imports <- [[pipelineresumeinit]]
+  - <- imports <- [[guidedonboardingpage]]
+  - <- imports <- [[profilepage]]
+  - <- imports <- [[privacycontrolcenterpage]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_shareprepengine_** () -- 4 connections
   - <- imports <- [[shareprogresspanel]]
   - <- imports <- [[shareprepmodal]]
@@ -2361,6 +2356,11 @@ Cohesion: 0.01 | Nodes: 613
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypesadmin]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibadminstore]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibbillableunitengine]]
+- **AdminMetaStoragePage** (uncounted-admin/src/pages/admin/AdminMetaStoragePage.tsx) -- 4 connections
+  - -> contains -> [[payloadpreview]]
+  - -> contains -> [[formatdate]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibapiadmin]]
 - **AdminSettlementPage** (uncounted-admin/src/pages/admin/AdminSettlementPage.tsx) -- 4 connections
   - -> contains -> [[groupbyuser]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact]]
@@ -2371,11 +2371,6 @@ Cohesion: 0.01 | Nodes: 613
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefliberrorlogger]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibfunnellogger]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibnetwork]]
-- **SttRecoveryInit** (uncounted-app/src/app/bootstrap/SttRecoveryInit.tsx) -- 4 connections
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibsessionmapper]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibsttengine]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibapisessions]]
 - **ExportOptionsPanel** (uncounted-app/src/components/domain/ExportOptionsPanel.tsx) -- 4 connections
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypesdataset]]
@@ -2466,10 +2461,6 @@ Cohesion: 0.01 | Nodes: 613
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefround]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefkeys]]
   - <- contains <- [[valuepage]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_app_** () -- 3 connections
-  - <- imports <- [[backbuttonhandler]]
-  - <- imports <- [[oauthcallbackhandler]]
-  - <- imports <- [[sttlifecycleinit]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_preferences_** () -- 3 connections
   - <- imports <- [[resetall]]
   - <- imports <- [[embeddingprofile]]
@@ -2758,6 +2749,9 @@ Cohesion: 0.01 | Nodes: 613
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefformatwoncompact]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmap]]
   - <- contains <- [[valuepage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_app_** () -- 2 connections
+  - <- imports <- [[backbuttonhandler]]
+  - <- imports <- [[oauthcallbackhandler]]
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_browser_** () -- 2 connections
   - <- imports <- [[oauthcallbackhandler]]
   - <- imports <- [[auth]]
@@ -2950,9 +2944,6 @@ Cohesion: 0.01 | Nodes: 613
 - **UtteranceLabelingPanel** (uncounted-admin/src/components/domain/UtteranceLabelingPanel.tsx) -- 2 connections
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypesexport]]
-- **UtteranceReviewTable** (uncounted-admin/src/components/domain/UtteranceReviewTable.tsx) -- 2 connections
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypesexport]]
 - **hasBack** (uncounted-admin/src/components/layout/AppShell.tsx) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
   - <- contains <- [[appshell]]
@@ -2965,6 +2956,9 @@ Cohesion: 0.01 | Nodes: 613
 - **buFromRow** (uncounted-admin/src/lib/adminStore.ts) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefnumber]]
   - <- contains <- [[adminstore]]
+- **sessions** (uncounted-admin/src/lib/api/sessions.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
 - **mergeComponentFilters** (uncounted-admin/src/lib/billableUnitEngine.ts) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreffind]]
   - <- contains <- [[billableunitengine]]
@@ -2986,9 +2980,6 @@ Cohesion: 0.01 | Nodes: 613
 - **genId** (uncounted-admin/src/lib/ledgerEngine.ts) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefnow]]
   - <- contains <- [[ledgerengine]]
-- **findWordTimestamp** (uncounted-admin/src/lib/sanitizeCache.ts) -- 2 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefindexof]]
-  - <- contains <- [[sanitizecache]]
 - **loadCache** (uncounted-admin/src/lib/sanitizeCache.ts) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefawaitidbget]]
   - <- contains <- [[sanitizecache]]
@@ -3037,6 +3028,21 @@ Cohesion: 0.01 | Nodes: 613
 - **sessionDedup** (uncounted-app/src/domains/session/sessionDedup.ts) -- 2 connections
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflibapisessions]]
+- **client.test** (uncounted-app/src/lib/api/client.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+- **sessionChunks** (uncounted-app/src/lib/api/sessionChunks.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]]
+- **sessions** (uncounted-app/src/lib/api/sessions.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+- **transcriptChunks** (uncounted-app/src/lib/api/transcriptChunks.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftranscriptstore]]
+- **voiceProfile** (uncounted-app/src/lib/api/voiceProfile.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypesvoicebiometrics]]
 - **audioEnvironmentCollector.test** (uncounted-app/src/lib/audioEnvironmentCollector.test.ts) -- 2 connections
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaudioenvironmentcollector]]
@@ -3352,6 +3358,12 @@ Cohesion: 0.01 | Nodes: 613
   - <- contains <- [[adminstore]]
 - **spToRow** (uncounted-admin/src/lib/adminStore.ts) -- 1 connections
   - <- contains <- [[adminstore]]
+- **logging** (uncounted-admin/src/lib/api/logging.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+- **storage** (uncounted-admin/src/lib/api/storage.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+- **transcripts** (uncounted-admin/src/lib/api/transcripts.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
 - **AuthState** (uncounted-admin/src/lib/AuthContext.tsx) -- 1 connections
   - <- contains <- [[authcontext]]
 - **contactUtils** (uncounted-admin/src/lib/contactUtils.ts) -- 1 connections
@@ -3420,6 +3432,12 @@ Cohesion: 0.01 | Nodes: 613
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact]]
 - **makeSession** (uncounted-app/src/domains/session/sessionDedup.test.ts) -- 1 connections
   - <- contains <- [[sessiondeduptest]]
+- **consent** (uncounted-app/src/lib/api/consent.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+- **logging** (uncounted-app/src/lib/api/logging.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
+- **transcripts** (uncounted-app/src/lib/api/transcripts.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefclient]]
 - **AudioDecoderPlugin** (uncounted-app/src/lib/audioDecoderBridge.ts) -- 1 connections
   - <- contains <- [[audiodecoderbridge]]
 - **AuthState** (uncounted-app/src/lib/AuthContext.tsx) -- 1 connections
@@ -3653,8 +3671,6 @@ Cohesion: 0.01 | Nodes: 613
 - UtteranceLabelingPanel -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
 - UtteranceLabelingPanel -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_export_ [EXTRACTED]
 - UtteranceReviewGuide -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
-- UtteranceReviewTable -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
-- UtteranceReviewTable -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_export_ [EXTRACTED]
 - ValueRangeCard -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
 - ValueRangeCard -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_valueengine_ [EXTRACTED]
 - ValueRangeCard -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_earnings_ [EXTRACTED]
@@ -3722,9 +3738,15 @@ Cohesion: 0.01 | Nodes: 613
 - adminStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___api_admin_ [EXTRACTED]
 - adminStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_ledger_ [EXTRACTED]
 - adminStore -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_export_ [EXTRACTED]
+- admin -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
 - admin -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ [EXTRACTED]
 - admin -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___adminhelpers_ [EXTRACTED]
 - admin -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_export_ [EXTRACTED]
+- logging -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- sessions -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ [EXTRACTED]
+- sessions -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- storage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- transcripts -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
 - audioScanner -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ [EXTRACTED]
 - audioScanner -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_sku_ [EXTRACTED]
 - AuthContext -> contains -> AuthState [EXTRACTED]
@@ -3817,7 +3839,6 @@ Cohesion: 0.01 | Nodes: 613
 - resetAll -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___api_admin_ [EXTRACTED]
 - sanitizeCache -> contains -> loadCache [EXTRACTED]
 - sanitizeCache -> contains -> saveCache [EXTRACTED]
-- sanitizeCache -> contains -> findWordTimestamp [EXTRACTED]
 - sanitizeCache -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ [EXTRACTED]
 - sanitizeCache -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___idb_ [EXTRACTED]
 - sanitizeCache -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___piidetector_ [EXTRACTED]
@@ -3976,6 +3997,8 @@ Cohesion: 0.01 | Nodes: 613
 - AdminMetadataExportPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___components_domain_metadata_metadatainventorypanel_ [EXTRACTED]
 - AdminMetadataExportPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___components_domain_metadata_metadataqualityfilter_ [EXTRACTED]
 - AdminMetadataExportPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___components_domain_metadata_metadataexportconfirm_ [EXTRACTED]
+- AdminMetaStoragePage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
+- AdminMetaStoragePage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_api_admin_ [EXTRACTED]
 - AdminQualityTiersPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
 - AdminQualityTiersPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_admin_ [EXTRACTED]
 - AdminQualityTiersPage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_adminstore_ [EXTRACTED]
@@ -4091,18 +4114,6 @@ Cohesion: 0.01 | Nodes: 613
 - StorageInitializer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
 - StorageInitializer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_core_ [EXTRACTED]
 - StorageInitializer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_embeddingengine_ [EXTRACTED]
-- SttLifecycleInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
-- SttLifecycleInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_core_ [EXTRACTED]
-- SttLifecycleInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_app_ [EXTRACTED]
-- SttLifecycleInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_sessionmapper_ [EXTRACTED]
-- SttLifecycleInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_sttengine_ [EXTRACTED]
-- SttLifecycleInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_pipelineorchestrator_ [EXTRACTED]
-- SttLifecycleInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_api_sessions_ [EXTRACTED]
-- SttLifecycleInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ [EXTRACTED]
-- SttRecoveryInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
-- SttRecoveryInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_sessionmapper_ [EXTRACTED]
-- SttRecoveryInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_sttengine_ [EXTRACTED]
-- SttRecoveryInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_api_sessions_ [EXTRACTED]
 - ThemeInitializer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
 - ThemeInitializer -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_theme_ [EXTRACTED]
 - UploadQueueInit -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ [EXTRACTED]
@@ -4233,6 +4244,18 @@ Cohesion: 0.01 | Nodes: 613
 - types -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_ledgerengine_ [EXTRACTED]
 - types -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_billableunitengine_ [EXTRACTED]
 - types -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_eventunit_ [EXTRACTED]
+- client.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- consent -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- logging -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- sessionChunks -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- sessionChunks -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ [EXTRACTED]
+- sessions -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ [EXTRACTED]
+- sessions -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- transcriptChunks -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- transcriptChunks -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___transcriptstore_ [EXTRACTED]
+- transcripts -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- voiceProfile -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ [EXTRACTED]
+- voiceProfile -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_voicebiometrics_ [EXTRACTED]
 - audioDecoderBridge -> contains -> AudioDecoderPlugin [EXTRACTED]
 - audioDecoderBridge -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_core_ [EXTRACTED]
 - audioDecoderBridge -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____capacitor_filesystem_ [EXTRACTED]
@@ -4843,22 +4866,22 @@ Cohesion: 0.01 | Nodes: 613
 - App -> contains -> ThemeInitializer (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - App -> contains -> ErrorLoggerInit (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - DatasetCreateModal -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___common_modal_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcommonmodal-privacysecuritymodal]])
-- LabelBottomSheet -> contains -> countFilled (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- MetadataEventPreview -> contains -> buildHeatmapFromEvents (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- getDisplayFields -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__replace (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- LabelBottomSheet -> contains -> countFilled (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- MetadataEventPreview -> contains -> buildHeatmapFromEvents (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- getDisplayFields -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__replace (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - MetadataQualityFilter -> contains -> estimateExcluded (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmin-unresolvedrefunresolvedrefunresolvedrefunresolvedreffloor]])
-- PiiMaskingEditor -> contains -> generateId (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiMaskingEditor -> contains -> generateId (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - PiiMaskingEditor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__js_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
 - ShareProgressPanel -> contains -> formatElapsed (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmin-unresolvedrefunresolvedrefunresolvedrefunresolvedreffloor]])
-- calcWeightedPct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- findActiveGroup -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- findActiveGroup -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__match (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AdminShell -> contains -> getTitle (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AppShell -> contains -> getTitle (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- hasBack -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- calcWeightedPct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- findActiveGroup -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- findActiveGroup -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__match (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AdminShell -> contains -> getTitle (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AppShell -> contains -> getTitle (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- hasBack -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - adminHelpers -> contains -> getAudioRef (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- adminHelpers -> contains -> collectContributorInfo (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sessionEligibleSkus -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- adminHelpers -> contains -> collectContributorInfo (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sessionEligibleSkus -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - adminStore -> contains -> clientFromRow (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - adminStore -> contains -> dpFromRow (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - adminStore -> contains -> csrFromRow (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
@@ -4866,17 +4889,16 @@ Cohesion: 0.01 | Nodes: 613
 - adminStore -> contains -> ejFromRow (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - adminStore -> contains -> ledgerEntryFromRow (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - adminStore -> contains -> drFromRow (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- buFromRow -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__number (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- admin -> contains -> buildAdminSessionParams (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- admin -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___client_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- audioScanner -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_audioasset_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- batchProcessor -> contains -> calcGroupStats (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- buFromRow -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__number (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- admin -> contains -> buildAdminSessionParams (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- audioScanner -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_audioasset_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- batchProcessor -> contains -> calcGroupStats (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - billableUnitEngine -> contains -> captureDeviceContext (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- billableUnitEngine -> contains -> fisherYatesSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- billableUnitEngine -> contains -> stratifiedSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- billableUnitEngine -> contains -> fisherYatesSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- billableUnitEngine -> contains -> stratifiedSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - campaigns -> contains -> saveMissionState (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- countDialogActLabels -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- countManualLabels -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- countDialogActLabels -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- countManualLabels -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - diarizationEngine -> contains -> loadCache (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - diarizationEngine -> contains -> saveToCache (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - embeddingEngine -> contains -> loadProfile (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
@@ -4889,107 +4911,110 @@ Cohesion: 0.01 | Nodes: 613
 - embeddingEngine -> contains -> cosineSimilarity (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - embeddingEngine -> contains -> computeReferenceEmbedding (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - embeddingEngine -> contains -> extractMultiEmbedding (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
-- eventUnitEngine -> contains -> assignQuality (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- eventUnitEngine -> contains -> assignQuality (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - globalConsent -> contains -> todayBucket (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - globalConsent -> contains -> matchesJoinedSku (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
-- ledgerEngine -> contains -> createBaseEntry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ledgerEngine -> contains -> createBonusEntry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ledgerEngine -> contains -> getSkuRate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- genId -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- ledgerEngine -> contains -> createBaseEntry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ledgerEngine -> contains -> createBonusEntry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ledgerEngine -> contains -> getSkuRate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- genId -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - metadataExportResolver -> contains -> loadDeviceContextRecords (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- metadataExportResolver -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_metadata_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- pipelineOrchestrator -> contains -> startSttBackground (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- metadataExportResolver -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_metadata_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- pipelineOrchestrator -> contains -> startSttBackground (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - pipelineOrchestrator -> contains -> runPiiForAll (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - pipelineOrchestrator -> contains -> runLabelForAll (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- pipelineOrchestrator -> contains -> runMetadataStage (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- pipelineOrchestrator -> contains -> runMetadataStage (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - pipelineOrchestrator -> contains -> markCurrentStageError (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- findWordTimestamp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__indexof (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- saveCache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__idbset (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- sanitizeCache -> contains -> findWordTimestamp (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- saveCache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__idbset (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - sessionMapper -> contains -> loadVisibilityOverrides (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionMapper -> contains -> saveVisibilityOverrides (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionMapper -> contains -> applyVisibilityOverrides (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionMapper -> contains -> enrichWithFilePaths (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionMapper -> contains -> loadSessionsFromLS (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionMapper -> contains -> saveSessionsToLS (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- sessionMapper -> contains -> loadSessionsFromApi (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sessionMapper -> contains -> saveSessionsToApi (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sessionMapper -> contains -> deduplicateByPath (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- sessionMapper -> contains -> loadSessionsFromApi (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sessionMapper -> contains -> saveSessionsToApi (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sessionMapper -> contains -> deduplicateByPath (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - sessionMapper -> contains -> cleanupStaleSessions (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - sessionMapper -> contains -> cleanupVisibilityOverrides (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionMapper -> contains -> applyGlobalConsent (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionMapper -> contains -> applyVerificationPatches (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- sharePrepEngine -> contains -> saveBatch (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sharePrepEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- sharePrepEngine -> contains -> saveBatch (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sharePrepEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - speakerVerification -> contains -> resolveCallRecordId (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sttEngine -> contains -> updateJob (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - sttEngine -> contains -> syncForegroundService (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - sttEngine -> contains -> processNext (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - verificationEngine -> contains -> notify (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefl-notify]])
-- verificationEngine -> contains -> subscribe (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- verificationEngine -> contains -> subscribe (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - verificationEngine -> contains -> loadFilePaths (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- defaultPriceForSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- StatCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AdminLabelCatalogPage -> contains -> FieldCard (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AdminSessionListPage -> contains -> UserGroupCard (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AdminSettlementPage -> contains -> groupByUser (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AdminSkuCatalogPage -> contains -> makeEmptyForm (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AdminSkuCatalogPage -> contains -> presetToForm (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- defaultPriceForSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- defaultPriceForSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- StatCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AdminLabelCatalogPage -> contains -> FieldCard (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AdminMetaStoragePage -> contains -> PayloadPreview (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AdminMetaStoragePage -> contains -> formatDate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AdminSessionListPage -> contains -> UserGroupCard (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AdminSettlementPage -> contains -> groupByUser (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AdminSkuCatalogPage -> contains -> makeEmptyForm (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AdminSkuCatalogPage -> contains -> presetToForm (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- defaultPriceForSku -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - AutoScanOnLaunch -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___autoscanevent_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
 - MetadataUploadSyncInit -> contains -> syncAndFlush (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
-- LabelBottomSheet -> contains -> countFilled (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- LabelBottomSheet -> contains -> countFilled (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - ShareProgressPanel -> contains -> formatElapsed (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmin-unresolvedrefunresolvedrefunresolvedrefunresolvedreffloor]])
-- calcWeightedPct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AppShell -> contains -> getTitle (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- hasBack -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- calcWeightedPct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AppShell -> contains -> getTitle (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- hasBack -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - sessionDedup.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
 - sessionRepository -> contains -> getLocalFilePathIds (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionRepository -> contains -> loadSessionsFromLS (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sessionRepository -> contains -> saveSessionsToLS (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- sessionRepository -> contains -> loadSessionsFromApi (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sessionRepository -> contains -> saveSessionsToApi (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- audioDecoderBridge -> contains -> validateAudioPath (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- sessionRepository -> contains -> loadSessionsFromApi (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sessionRepository -> contains -> saveSessionsToApi (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- client.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
+- audioDecoderBridge -> contains -> validateAudioPath (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - audioEnvironmentCollector.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
-- audioScanner -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_audioasset_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- batchProcessor -> contains -> calcGroupStats (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- audioScanner -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_audioasset_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- batchProcessor -> contains -> calcGroupStats (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - billableUnitEngine -> contains -> captureDeviceContext (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- billableUnitEngine -> contains -> fisherYatesSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- billableUnitEngine -> contains -> stratifiedSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- billableUnitEngine -> contains -> fisherYatesSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- billableUnitEngine -> contains -> stratifiedSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - campaigns -> contains -> saveMissionState (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- countDialogActLabels -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- countManualLabels -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- countDialogActLabels -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- countManualLabels -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - diarizationEngine -> contains -> loadCache (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - diarizationEngine -> contains -> saveToCache (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - diarizationEngine -> contains -> getWorker (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
-- diarizationEngine -> contains -> mapUserSpeaker (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- diarizationEngine -> contains -> mapUserSpeaker (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - diarizationEngine -> contains -> runDiarization (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - embeddingCache -> contains -> loadVerificationCache (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - embeddingCache -> contains -> persistCache (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - embeddingExtractor -> contains -> getWorker (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - embeddingExtractor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___audiofileloader_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
 - embeddingProfile -> contains -> loadProfile (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- eventUnitEngine -> contains -> assignQuality (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- eventUnitEngine -> contains -> assignQuality (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - globalConsent -> contains -> todayBucket (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - globalConsent -> contains -> matchesJoinedSku (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
-- ledgerGenerator -> contains -> createBaseEntry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ledgerGenerator -> contains -> createBonusEntry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- genId -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- ledgerGenerator -> contains -> createBaseEntry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ledgerGenerator -> contains -> createBonusEntry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- genId -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - metadataExportResolver -> contains -> loadDeviceContextRecords (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- metadataExportResolver -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_metadata_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- pipelineOrchestrator -> contains -> filterSttItems (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- metadataExportResolver -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_metadata_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- pipelineOrchestrator -> contains -> filterSttItems (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - pipelineOrchestrator -> contains -> computeAlreadyDone (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - pipelineOrchestrator -> contains -> registerPostPipelineWatch (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - pipelineOrchestrator -> contains -> runNonSttStages (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- pipelineOrchestrator -> contains -> startSttBackground (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- pipelineOrchestrator -> contains -> startSttBackground (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - pipelineOrchestrator -> contains -> runPiiForAll (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - pipelineOrchestrator -> contains -> runLabelForAll (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- pipelineOrchestrator -> contains -> runMetadataStage (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- pipelineOrchestrator -> contains -> runMetadataStage (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - pipelineOrchestrator -> contains -> markCurrentStageError (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- findWordTimestamp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__indexof (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- saveCache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__idbset (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sharePrepEngine -> contains -> saveBatch (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- sharePrepEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- skuEligibility -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_audioasset_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- findWordTimestamp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__indexof (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- saveCache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__idbset (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sharePrepEngine -> contains -> saveBatch (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- sharePrepEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- skuEligibility -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_audioasset_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - speakerVerification -> contains -> resolveCallRecordId (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sttEngine -> contains -> persistCounts (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - sttEngine -> contains -> updateJob (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
@@ -5000,43 +5025,43 @@ Cohesion: 0.01 | Nodes: 613
 - sttEngine -> contains -> handleSttAuthError (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - sttEngine -> contains -> handleSttState (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - sttEngine -> contains -> setupNativeListeners (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
-- sttEngine -> contains -> dispatchToNative (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- sttEngine -> contains -> dispatchToNative (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - sttEngine -> contains -> processNext (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - sttEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___api_client_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - verificationEngine -> contains -> notify (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefl-notify]])
-- verificationEngine -> contains -> subscribe (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- verificationEngine -> contains -> subscribe (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - verificationEngine -> contains -> loadFilePaths (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - AssetsPage -> contains -> loadGroupRels (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - AssetsPage -> contains -> saveGroupRel (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - AssetsPage -> contains -> ContactGroupCard (-> [[contactgroupcard-infopopup]])
 - ContactCallsPage -> contains -> loadGroupRels (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - ContactCallsPage -> contains -> saveGroupRel (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- sortSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sort (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- GrowthChart -> contains -> buildGrowthData (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- AutoTag -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- sortSessions -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sort (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- GrowthChart -> contains -> buildGrowthData (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- AutoTag -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - LabelingPage -> contains -> loadGroupRels (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - LabelingPage -> contains -> saveGroupRel (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- TierRoadmap -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- MissionsPage -> contains -> getMonthlyCP (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- calcSessionCP -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiReviewPage -> contains -> highlightPiiInSentence (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiReviewPage -> contains -> collectAbsoluteRanges (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- PiiReviewPage -> contains -> renderTranscriptWithPii (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- TierRoadmap -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- MissionsPage -> contains -> getMonthlyCP (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- calcSessionCP -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiReviewPage -> contains -> highlightPiiInSentence (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiReviewPage -> contains -> collectAbsoluteRanges (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- PiiReviewPage -> contains -> renderTranscriptWithPii (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - PiiReviewPage -> contains -> PiiSessionCard (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
 - PrivacyControlCenterPage -> contains -> loadConsents (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
 - PrivacyControlCenterPage -> contains -> saveConsents (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
-- SingleChipGrid -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ValueBoostCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ProfileSetupPage -> contains -> MultiChipGrid (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- GradeBar -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- SingleChipGrid -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ValueBoostCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ProfileSetupPage -> contains -> MultiChipGrid (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- GradeBar -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - RefineryPage -> contains -> GradeDonut (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
-- ConfidenceBar -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ConfirmedVsPotentialSection -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ContributorSection -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- KpiSection -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- KpiSection -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__keys (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- ConfidenceBar -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ConfirmedVsPotentialSection -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ContributorSection -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- KpiSection -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- KpiSection -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__keys (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - ValuePage -> contains -> InfoPopup (-> [[contactgroupcard-infopopup]])
-- VoiceEnrollmentPage -> contains -> classifyEnrollError (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- VoiceEnrollmentPage -> contains -> classifyEnrollError (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 
 ## Context
 이 커뮤니티는 __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_, __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_, __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___framer_motion_를 중심으로 imports 관계로 연결되어 있다. 주요 소스 파일은 AdminBillableUnitsPage.tsx, AdminBuildWizardPage.tsx, AdminClientSkuMapPage.tsx, AdminClientsPage.tsx, AdminConsentsPage.tsx이다.

@@ -1,5 +1,5 @@
 # schemas & __unresolved__::ref::__unresolved____ref____unresolved____ref__basemodel
-Cohesion: 0.03 | Nodes: 92
+Cohesion: 0.03 | Nodes: 95
 
 ## Key Nodes
 - **schemas** (uncounted-voice-api/app/models/schemas.py) -- 18 connections
@@ -125,6 +125,13 @@ Cohesion: 0.03 | Nodes: 92
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftyping]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefapp]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefschemas]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__pathlib** () -- 6 connections
+  - <- imports <- [[sttprocessor]]
+  - <- imports <- [[config]]
+  - <- imports <- [[transcribe]]
+  - <- imports <- [[jobstore]]
+  - <- imports <- [[testparseinstinct]]
+  - <- imports <- [[instinct-cli]]
 - **main** (uncounted-voice-api/app/main.py) -- 6 connections
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedreflogging]]
   - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcontextlib]]
@@ -178,6 +185,11 @@ Cohesion: 0.03 | Nodes: 92
   - <- imports <- [[transcribe]]
   - <- imports <- [[health]]
   - <- imports <- [[jobstore]]
+- **config** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/config.py) -- 4 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
 - **create** (uncounted-voice-api/app/core/job_store.py) -- 4 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftaskinfo]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftime]]
@@ -276,6 +288,9 @@ Cohesion: 0.03 | Nodes: 92
 - **__unresolved__::ref::__unresolved____ref____unresolved____ref__threading** () -- 2 connections
   - <- imports <- [[sttprocessor]]
   - <- imports <- [[jobstore]]
+- **__unresolved__::ref::__unresolved____ref__pathlib** () -- 2 connections
+  - <- imports <- [[sttprocessor]]
+  - <- imports <- [[config]]
 - **get** (uncounted-voice-api/app/core/job_store.py) -- 2 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefget]]
   - <- contains <- [[jobstore]]
@@ -428,6 +443,8 @@ Cohesion: 0.03 | Nodes: 92
 - Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resetall [EXTRACTED]
 - download-wespeaker-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__huggingface_hub [EXTRACTED]
 - download-wespeaker-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__shutil [EXTRACTED]
+- config -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pathlib [EXTRACTED]
+- config -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
 - JobStore -> contains -> __init__ [EXTRACTED]
 - JobStore -> contains -> create [EXTRACTED]
 - JobStore -> contains -> get [EXTRACTED]
@@ -438,6 +455,7 @@ Cohesion: 0.03 | Nodes: 92
 - job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logging [EXTRACTED]
 - job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__shutil [EXTRACTED]
 - job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__threading [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pathlib [EXTRACTED]
 - job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__typing [EXTRACTED]
 - job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__app [EXTRACTED]
 - job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__schemas [EXTRACTED]
@@ -493,6 +511,7 @@ Cohesion: 0.03 | Nodes: 92
 - health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__whisperx_service [EXTRACTED]
 - transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logging [EXTRACTED]
 - transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__uuid [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pathlib [EXTRACTED]
 - transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__typing [EXTRACTED]
 - transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__aiofiles [EXTRACTED]
 - transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__fastapi [EXTRACTED]
@@ -522,23 +541,23 @@ Cohesion: 0.03 | Nodes: 92
 - test_set_result -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__set_result [EXTRACTED]
 
 ## Cross-Community Connections
-- download-wespeaker-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__os (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- JobStore -> contains -> _ensure_results_dir (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- JobStore -> contains -> _get_results_dir (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- JobStore -> contains -> set_audio (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- JobStore -> contains -> get_audio (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- JobStore -> contains -> _cleanup_expired (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__time (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pathlib (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- create -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__time (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- get -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- TaskStatus -> extends -> __unresolved__::ref::__unresolved____ref____unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- download-wespeaker-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__os (-> [[createdocument-generatedocx]])
+- config -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__os (-> [[createdocument-generatedocx]])
+- config -> imports -> __unresolved__::ref::__unresolved____ref__os (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- JobStore -> contains -> _ensure_results_dir (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- JobStore -> contains -> _get_results_dir (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- JobStore -> contains -> set_audio (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- JobStore -> contains -> get_audio (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- JobStore -> contains -> _cleanup_expired (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__time (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- create -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__time (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- get -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- TaskStatus -> extends -> __unresolved__::ref::__unresolved____ref____unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
 - health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__torch (-> [[export-moonshine-onnx-forward]])
-- transcribe -> contains -> _process_audio (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pathlib (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- test_get_nonexistent -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- test_set_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
-- test_set_result -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- transcribe -> contains -> _process_audio (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- test_get_nonexistent -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- test_set_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- test_set_result -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
 
 ## Context
-이 커뮤니티는 schemas, __unresolved__::ref::__unresolved____ref____unresolved____ref__basemodel, Key Findings를 중심으로 references 관계로 연결되어 있다. 주요 소스 파일은 codex.md, download-wespeaker-onnx.py, health.py, job_store.py, main.py이다.
+이 커뮤니티는 schemas, __unresolved__::ref::__unresolved____ref____unresolved____ref__basemodel, Key Findings를 중심으로 imports 관계로 연결되어 있다. 주요 소스 파일은 codex.md, config.py, download-wespeaker-onnx.py, health.py, job_store.py이다.

@@ -1,8 +1,8 @@
 # __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__min & __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__floor
-Cohesion: 0.06 | Nodes: 73
+Cohesion: 0.06 | Nodes: 74
 
 ## Key Nodes
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__min** () -- 65 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__min** () -- 64 connections
   - <- calls <- [[splashsvg]]
   - <- calls <- [[hourtotimebucket]]
   - <- calls <- [[hourtotimebucket]]
@@ -35,9 +35,8 @@ Cohesion: 0.06 | Nodes: 73
   - <- calls <- [[computeaudiostats]]
   - <- calls <- [[extractspeakeraudio]]
   - <- calls <- [[extractutteranceaudio]]
+  - <- calls <- [[extractutteranceaudiolocal]]
   - <- calls <- [[mutenonspeaker]]
-  - <- calls <- [[removeduplicates]]
-  - <- calls <- [[normalizegain]]
   - <- calls <- [[applypadding]]
   - <- calls <- [[estimateexcluded]]
   - <- calls <- [[hourtotimebucket]]
@@ -261,6 +260,12 @@ Cohesion: 0.06 | Nodes: 73
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmin]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefslice]]
   - <- contains <- [[embeddingworker]]
+- **computeQualityScore** (uncounted-api/src/lib/export/qualityMetricsService.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefround]]
+  - <- contains <- [[qualitymetricsservice]]
 - **scoreBIZ** (uncounted-app/src/lib/autoLabel/ruleEngine.ts) -- 5 connections
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcountkeywordhits]]
   - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmin]]
@@ -575,6 +580,7 @@ Cohesion: 0.06 | Nodes: 73
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__floor [EXTRACTED]
+- computeQualityScore -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__min [EXTRACTED]
 - formatElapsed -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__floor [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__min [EXTRACTED]
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__floor [EXTRACTED]
@@ -654,51 +660,54 @@ Cohesion: 0.06 | Nodes: 73
 - hourToTimeBucket -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__floor [EXTRACTED]
 
 ## Cross-Community Connections
-- MetadataInventoryPanel -> contains -> computePeriodLabel (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- MetadataInventoryPanel -> contains -> formatDate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- MetadataInventoryPanel -> contains -> computePeriodLabel (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- MetadataInventoryPanel -> contains -> formatDate (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - MetadataInventoryPanel -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___react_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
 - MetadataInventoryPanel -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___lib_api_admin_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- formatRelativeTime -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- formatRelativeTime -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__gettime (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- estimateExcluded -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ruleEngine -> contains -> containsAny (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- formatRelativeTime -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__now (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- formatRelativeTime -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__gettime (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- estimateExcluded -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ruleEngine -> contains -> containsAny (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___labeloptions_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ruleEngine -> contains -> containsAny (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- computeQualityScore -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__abs (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefunresolvedrefabs]])
+- computeQualityScore -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- computeQualityScore -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ruleEngine -> contains -> containsAny (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- ruleEngine -> contains -> countKeywordHits (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___types_session_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
 - ruleEngine -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___labeloptions_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
-- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- clamp01 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreBIZ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreCLIENT -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreDAILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreEDU -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreFAMILY -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreFINANCE -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreFRIEND -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreLEGAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreMEDICAL -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreSALES -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreTECH -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- scoreWORK -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- selectBestSegment -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 
 ## Context
 이 커뮤니티는 __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__min, __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__floor, __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__clamp01를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 MetadataInventoryPanel.tsx, MetadataQualityFilter.tsx, ShareProgressPanel.tsx, activityStateCollector.ts, ambientLightCollector.ts이다.
