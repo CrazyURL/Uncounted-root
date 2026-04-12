@@ -2,7 +2,7 @@
 Cohesion: 0.19 | Nodes: 16
 
 ## Key Nodes
-- **/mindvault** (.claude/skills/mindvault/SKILL.md) -- 10 connections
+- **/mindvault** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 10 connections
   - -> contains -> [[usage]]
   - -> contains -> [[what-mindvault-does]]
   - -> contains -> [[what-you-must-do-when-invoked]]
@@ -13,7 +13,7 @@ Cohesion: 0.19 | Nodes: 16
   - -> contains -> [[for-mindvault-install]]
   - -> contains -> [[outputs]]
   - <- contains <- [[skill]]
-- **bash** (.claude/skills/mindvault/SKILL.md) -- 9 connections
+- **bash** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 9 connections
   - <- has_code_example <- [[step-1-ensure-mindvault-is-installed]]
   - <- has_code_example <- [[step-2-run-the-full-pipeline]]
   - <- has_code_example <- [[step-3-read-the-report-and-present-findings]]
@@ -23,46 +23,46 @@ Cohesion: 0.19 | Nodes: 16
   - <- has_code_example <- [[for-mindvault-status]]
   - <- has_code_example <- [[for-mindvault-ingest]]
   - <- has_code_example <- [[for-mindvault-install]]
-- **What You Must Do When Invoked** (.claude/skills/mindvault/SKILL.md) -- 5 connections
+- **What You Must Do When Invoked** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 5 connections
   - -> contains -> [[step-1-ensure-mindvault-is-installed]]
   - -> contains -> [[step-2-run-the-full-pipeline]]
   - -> contains -> [[step-3-read-the-report-and-present-findings]]
   - -> contains -> [[step-4-open-the-interactive-graph-optional]]
   - <- contains <- [[mindvault]]
-- **For /mindvault ingest** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **For /mindvault ingest** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[mindvault]]
-- **For /mindvault install** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **For /mindvault install** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[mindvault]]
-- **For /mindvault lint** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **For /mindvault lint** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[mindvault]]
-- **For /mindvault query** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **For /mindvault query** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[mindvault]]
-- **For /mindvault status** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **For /mindvault status** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[mindvault]]
-- **Step 1 -- Ensure mindvault is installed** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **Step 1 -- Ensure mindvault is installed** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[what-you-must-do-when-invoked]]
-- **Step 2 -- Run the full pipeline** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **Step 2 -- Run the full pipeline** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[what-you-must-do-when-invoked]]
-- **Step 3 -- Read the report and present findings** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **Step 3 -- Read the report and present findings** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[what-you-must-do-when-invoked]]
-- **Step 4 -- Open the interactive graph (optional)** (.claude/skills/mindvault/SKILL.md) -- 2 connections
+- **Step 4 -- Open the interactive graph (optional)** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 2 connections
   - -> has_code_example -> [[bash]]
   - <- contains <- [[what-you-must-do-when-invoked]]
-- **SKILL** (.claude/skills/mindvault/SKILL.md) -- 1 connections
+- **SKILL** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 1 connections
   - -> contains -> [[mindvault]]
-- **Outputs** (.claude/skills/mindvault/SKILL.md) -- 1 connections
+- **Outputs** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 1 connections
   - <- contains <- [[mindvault]]
-- **Usage** (.claude/skills/mindvault/SKILL.md) -- 1 connections
+- **Usage** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 1 connections
   - <- contains <- [[mindvault]]
-- **What MindVault does** (.claude/skills/mindvault/SKILL.md) -- 1 connections
+- **What MindVault does** (/Users/gdash/project/uncounted-project/.claude/skills/mindvault/SKILL.md) -- 1 connections
   - <- contains <- [[mindvault]]
 
 ## Internal Relationships

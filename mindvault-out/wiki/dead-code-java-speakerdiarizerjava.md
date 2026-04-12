@@ -2,9 +2,9 @@
 Cohesion: 1.00 | Nodes: 2
 
 ## Key Nodes
-- **함께 삭제 권장 — Dead Code Java 클래스** (uncounted-docs/앱/온디바이스_모델_파일_제거_분석.md) -- 1 connections
+- **함께 삭제 권장 — Dead Code Java 클래스** (/Users/gdash/project/uncounted-project/uncounted-docs/앱/온디바이스_모델_파일_제거_분석.md) -- 1 connections
   - -> contains -> [[speakerdiarizerjava]]
-- **SpeakerDiarizer.java 부분 정리** (uncounted-docs/앱/온디바이스_모델_파일_제거_분석.md) -- 1 connections
+- **SpeakerDiarizer.java 부분 정리** (/Users/gdash/project/uncounted-project/uncounted-docs/앱/온디바이스_모델_파일_제거_분석.md) -- 1 connections
   - <- contains <- [[dead-code-java]]
 
 ## Internal Relationships

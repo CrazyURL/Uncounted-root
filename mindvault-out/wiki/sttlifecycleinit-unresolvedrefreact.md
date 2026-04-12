@@ -2,7 +2,7 @@
 Cohesion: 0.22 | Nodes: 11
 
 ## Key Nodes
-- **SttLifecycleInit** (uncounted-app/src/app/bootstrap/SttLifecycleInit.tsx) -- 7 connections
+- **SttLifecycleInit** (/Users/gdash/project/uncounted-project/uncounted-app/src/app/bootstrap/SttLifecycleInit.tsx) -- 7 connections
   - -> imports -> [[unresolvedrefreact]]
   - -> imports -> [[unresolvedrefcapacitorcore]]
   - -> imports -> [[unresolvedrefcapacitorapp]]
@@ -14,7 +14,7 @@ Cohesion: 0.22 | Nodes: 11
   - <- imports <- [[sttrecoveryinit]]
   - <- imports <- [[sttlifecycleinit]]
   - <- imports <- [[utterancereviewtable]]
-- **SttRecoveryInit** (uncounted-app/src/app/bootstrap/SttRecoveryInit.tsx) -- 3 connections
+- **SttRecoveryInit** (/Users/gdash/project/uncounted-project/uncounted-app/src/app/bootstrap/SttRecoveryInit.tsx) -- 3 connections
   - -> imports -> [[unresolvedrefreact]]
   - -> imports -> [[unresolvedreflibsessionmapper]]
   - -> imports -> [[unresolvedreflibsttengine]]
@@ -24,7 +24,7 @@ Cohesion: 0.22 | Nodes: 11
 - **__unresolved__::ref::_lib_sttengine_** () -- 2 connections
   - <- imports <- [[sttrecoveryinit]]
   - <- imports <- [[sttlifecycleinit]]
-- **UtteranceReviewTable** (uncounted-admin/src/components/domain/UtteranceReviewTable.tsx) -- 2 connections
+- **UtteranceReviewTable** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/UtteranceReviewTable.tsx) -- 2 connections
   - -> imports -> [[unresolvedrefreact]]
   - -> imports -> [[unresolvedreftypesexport]]
 - **__unresolved__::ref::__capacitor_app_** () -- 1 connections

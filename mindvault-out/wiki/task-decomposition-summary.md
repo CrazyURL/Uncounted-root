@@ -1,8 +1,8 @@
 # Task Decomposition & Summary
-Cohesion: 0.07 | Nodes: 27
+Cohesion: 0.08 | Nodes: 26
 
 ## Key Nodes
-- **Task Decomposition** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 11 connections
+- **Task Decomposition** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 10 connections
   - -> contains -> [[task-1-confirm-current-chunk-mode-data-flow]]
   - -> contains -> [[task-2-add-local-audio-slice-helper]]
   - -> contains -> [[task-3-validate-utterance-segmenter-chunk-inputs]]
@@ -12,7 +12,6 @@ Cohesion: 0.07 | Nodes: 27
   - -> contains -> [[task-7-update-api-contract-and-issue-documentation]]
   - -> contains -> [[task-8-client-acceptance-check]]
   - -> contains -> [[task-9-real-sample-and-memory-verification]]
-  - -> contains -> [[task-5-merge-chunked-results-into-transcribe]]
   - <- contains <- [[summary]]
 - **Summary** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 7 connections
   - -> contains -> [[task-decomposition]]
@@ -59,8 +58,6 @@ Cohesion: 0.07 | Nodes: 27
   - <- contains <- [[task-decomposition]]
 - **Task 5: Merge Chunked Results Into `transcribe()`** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
-- **Task 5: Merge Chunked Results Into `transcribe()`** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
-  - <- contains <- [[task-decomposition]]
 - **Task 6: Add Processor Integration Tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
   - <- contains <- [[task-decomposition]]
 - **Task 7: Update API Contract And Issue Documentation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
@@ -103,7 +100,6 @@ Cohesion: 0.07 | Nodes: 27
 - Task Decomposition -> contains -> Task 7: Update API Contract And Issue Documentation [EXTRACTED]
 - Task Decomposition -> contains -> Task 8: Client Acceptance Check [EXTRACTED]
 - Task Decomposition -> contains -> Task 9: Real Sample And Memory Verification [EXTRACTED]
-- Task Decomposition -> contains -> Task 5: Merge Chunked Results Into `transcribe()` [EXTRACTED]
 - Wave Execution Plan -> contains -> Wave 0: Baseline Orientation [EXTRACTED]
 - Wave Execution Plan -> contains -> Wave 1: Independent Helper Work [EXTRACTED]
 - Wave Execution Plan -> contains -> Wave 2: Serialized Processor Integration [EXTRACTED]

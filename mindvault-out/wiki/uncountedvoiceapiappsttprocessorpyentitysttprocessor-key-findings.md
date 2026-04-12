@@ -1,0 +1,601 @@
+# uncounted_voice_api__app__stt_processor_py::entity::stt_processor & Key Findings
+Cohesion: 0.03 | Nodes: 104
+
+## Key Nodes
+- **uncounted_voice_api__app__stt_processor_py::entity::stt_processor** () -- 16 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefre]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsubprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefthreading]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftorch]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwhisperx]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdiarize]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpiimasker]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaudiopreprocessor]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefutterancesegmenter]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaudiosplitter]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefchunkutteranceemitter]]
+- **Key Findings** (uncounted-app/.research/20260322-110953-react-소스를-파악해서-리팩토링-계획을-해주세요-/codex.md) -- 14 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefroutes]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefappshell]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefauthcontext]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftoastcontext]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpipelinestate]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsttengine]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefverificationengine]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefembeddingengine]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefvalueengine]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefbillableunitengine]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefledgerengine]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrefineryengine]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefskutier]]
+- **Sources** (uncounted-app/.research/20260322-165054-multi-device-session-sync-bug/codex.md) -- 13 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftopic]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsessionrepository]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsessiondedup]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsessiondeduptest]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefautoscanonlaunch]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefautoscanevent]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefautoscaneventtest]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefindex]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhomepage]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefscanengine]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsessions]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefresetall]]
+- **JobStore** (uncounted-voice-api/app/core/job_store.py) -- 12 connections
+  - -> contains -> [[init]]
+  - -> contains -> [[ensureresultsdir]]
+  - -> contains -> [[getresultsdir]]
+  - -> contains -> [[create]]
+  - -> contains -> [[get]]
+  - -> contains -> [[updatestatus]]
+  - -> contains -> [[setresult]]
+  - -> contains -> [[seterror]]
+  - -> contains -> [[setaudio]]
+  - -> contains -> [[getaudio]]
+  - -> contains -> [[cleanupexpired]]
+  - <- contains <- [[jobstore]]
+- **transcribe** (uncounted-voice-api/app/routers/transcribe.py) -- 12 connections
+  - -> contains -> [[processaudio]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefuuid]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaiofiles]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffastapi]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefresponses]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjobstore]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefschemas]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwhisperxservice]]
+- **Key Findings** (uncounted-app/.research/20260322-165054-multi-device-session-sync-bug/codex.md) -- 11 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhomepage]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsessionrepository]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsessiondedup]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsessiondeduptest]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefautoscanonlaunch]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefautoscanevent]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefindex]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsessions]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefresetall]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefautoscaneventtest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app** () -- 10 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[main]]
+  - <- imports <- [[transcribe]]
+  - <- imports <- [[health]]
+  - <- imports <- [[jobstore]]
+  - <- imports <- [[uncountedvoiceapiappservicesutterancesegmenterpyentityutterancesegmenter]]
+  - <- imports <- [[whisperxservice]]
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+  - <- references <- [[key-findings]]
+- **job_store** (uncounted-voice-api/app/core/job_store.py) -- 9 connections
+  - -> contains -> [[jobstore]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefshutil]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefthreading]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefschemas]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pytest** () -- 6 connections
+  - <- imports <- [[uncountedvoiceapiteststestutterancesegmenterpyentitytestutterancesegmenter]]
+  - <- imports <- [[uncountedvoiceapitestsconftestpyentityconftest]]
+  - <- imports <- [[uncountedvoiceapiteststestchunkedutterancespyentitytestchunkedutterances]]
+  - <- imports <- [[uncountedvoiceapiteststestaudiopreprocessorpyentitytestaudiopreprocessor]]
+  - <- imports <- [[uncountedvoiceapiteststestaudiosplitterpyentitytestaudiosplitter]]
+  - <- imports <- [[testparseinstinct]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__time** () -- 6 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- calls <- [[loadmodels]]
+  - <- calls <- [[transcribe]]
+  - <- imports <- [[jobstore]]
+  - <- calls <- [[create]]
+  - <- calls <- [[cleanupexpired]]
+- **main** (uncounted-voice-api/app/main.py) -- 6 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcontextlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffastapi]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrouters]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwhisperxservice]]
+- **pii_masker** (uncounted-voice-api/app/pii_masker.py) -- 6 connections
+  - -> contains -> [[matchesexcludeprefix]]
+  - -> contains -> [[islikelynamewithcontext]]
+  - -> contains -> [[maskpii]]
+  - -> contains -> [[masksegments]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefre]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftyping]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pathlib** () -- 5 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[transcribe]]
+  - <- imports <- [[jobstore]]
+  - <- imports <- [[testparseinstinct]]
+  - <- imports <- [[instinct-cli]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__typing** () -- 5 connections
+  - <- imports <- [[piimasker]]
+  - <- imports <- [[transcribe]]
+  - <- imports <- [[schemas]]
+  - <- imports <- [[jobstore]]
+  - <- imports <- [[instinct-cli]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__utterance_segmenter** () -- 5 connections
+  - <- imports <- [[uncountedvoiceapiteststestutterancesegmenterpyentitytestutterancesegmenter]]
+  - <- imports <- [[uncountedvoiceapiteststestaudiosplitterpyentitytestaudiosplitter]]
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[uncountedvoiceapiappservicesaudiosplitterpyentityaudiosplitter]]
+  - <- imports <- [[uncountedvoiceapiappserviceschunkutteranceemitterpyentitychunkutteranceemitter]]
+- **_is_likely_name_with_context** (uncounted-voice-api/app/pii_masker.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmatchesexcludeprefix]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
+  - <- contains <- [[piimasker]]
+- **health** (uncounted-voice-api/app/routers/health.py) -- 5 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftorch]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreffastapi]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefschemas]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwhisperxservice]]
+- **TestJobStore** (uncounted-voice-api/tests/test_health.py) -- 5 connections
+  - -> contains -> [[testcreatetask]]
+  - -> contains -> [[testsetresult]]
+  - -> contains -> [[testseterror]]
+  - -> contains -> [[testgetnonexistent]]
+  - <- contains <- [[testhealth]]
+- **test_set_error** (uncounted-voice-api/tests/test_health.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjobstore]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcreate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseterror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefget]]
+  - <- contains <- [[testjobstore]]
+- **test_set_result** (uncounted-voice-api/tests/test_health.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjobstore]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcreate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetresult]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefget]]
+  - <- contains <- [[testjobstore]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__jobstore** () -- 4 connections
+  - <- calls <- [[testcreatetask]]
+  - <- calls <- [[testsetresult]]
+  - <- calls <- [[testseterror]]
+  - <- calls <- [[testgetnonexistent]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__logging** () -- 4 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[main]]
+  - <- imports <- [[transcribe]]
+  - <- imports <- [[jobstore]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__re** () -- 4 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[piimasker]]
+  - <- imports <- [[instinct-cli]]
+  - <- imports <- [[generatedocx]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__schemas** () -- 4 connections
+  - <- imports <- [[testhealth]]
+  - <- imports <- [[transcribe]]
+  - <- imports <- [[health]]
+  - <- imports <- [[jobstore]]
+- **create** (uncounted-voice-api/app/core/job_store.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftaskinfo]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcleanupexpired]]
+  - <- contains <- [[jobstore]]
+- **mask_segments** (uncounted-voice-api/app/pii_masker.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmaskpii]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefextend]]
+  - <- contains <- [[piimasker]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__audio_splitter** () -- 3 connections
+  - <- imports <- [[uncountedvoiceapiteststestaudiosplitterpyentitytestaudiosplitter]]
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[uncountedvoiceapiappserviceschunkutteranceemitterpyentitychunkutteranceemitter]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__create** () -- 3 connections
+  - <- calls <- [[testcreatetask]]
+  - <- calls <- [[testsetresult]]
+  - <- calls <- [[testseterror]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fastapi** () -- 3 connections
+  - <- imports <- [[main]]
+  - <- imports <- [[transcribe]]
+  - <- imports <- [[health]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__io** () -- 3 connections
+  - <- imports <- [[uncountedvoiceapiteststestchunkedutterancespyentitytestchunkedutterances]]
+  - <- imports <- [[uncountedvoiceapiappservicesaudiosplitterpyentityaudiosplitter]]
+  - <- imports <- [[testparseinstinct]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__job_store** () -- 3 connections
+  - <- imports <- [[testhealth]]
+  - <- imports <- [[uncountedvoiceapitestsconftestpyentityconftest]]
+  - <- imports <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__model_copy** () -- 3 connections
+  - <- calls <- [[updatestatus]]
+  - <- calls <- [[setresult]]
+  - <- calls <- [[seterror]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__torch** () -- 3 connections
+  - <- imports <- [[export-moonshine-onnx]]
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[health]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__whisperx_service** () -- 3 connections
+  - <- imports <- [[main]]
+  - <- imports <- [[transcribe]]
+  - <- imports <- [[health]]
+- **__init__** (uncounted-voice-api/app/core/job_store.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflock]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefensureresultsdir]]
+  - <- contains <- [[jobstore]]
+- **whisperx_service** (uncounted-voice-api/app/services/whisperx_service.py) -- 3 connections
+  - -> contains -> [[whisperxservice]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsttprocessor]]
+- **uncounted_voice_api__tests__test_audio_preprocessor_py::entity::test_audio_preprocessor** () -- 3 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmock]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaudiopreprocessor]]
+- **uncounted_voice_api__tests__test_audio_splitter_py::entity::test_audio_splitter** () -- 3 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaudiosplitter]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefutterancesegmenter]]
+- **uncounted_voice_api__tests__test_chunked_utterances_py::entity::test_chunked_utterances** () -- 3 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefio]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefchunkutteranceemitter]]
+- **test_health** (uncounted-voice-api/tests/test_health.py) -- 3 connections
+  - -> contains -> [[testjobstore]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjobstore]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefschemas]]
+- **test_create_task** (uncounted-voice-api/tests/test_health.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjobstore]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcreate]]
+  - <- contains <- [[testjobstore]]
+- **test_get_nonexistent** (uncounted-voice-api/tests/test_health.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjobstore]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefget]]
+  - <- contains <- [[testjobstore]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__audio_preprocessor** () -- 2 connections
+  - <- imports <- [[uncountedvoiceapiteststestaudiopreprocessorpyentitytestaudiopreprocessor]]
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanevent** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanevent_test** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanonlaunch** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__chunk_utterance_emitter** () -- 2 connections
+  - <- imports <- [[uncountedvoiceapiteststestchunkedutterancespyentitytestchunkedutterances]]
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__homepage** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__index** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pii_masker** () -- 2 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[piiservice]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__resetall** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessiondedup** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessiondedup_test** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessionrepository** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessions** () -- 2 connections
+  - <- references <- [[key-findings]]
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_error** () -- 2 connections
+  - <- calls <- [[testseterror]]
+  - <- calls <- [[processaudio]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_result** () -- 2 connections
+  - <- calls <- [[testsetresult]]
+  - <- calls <- [[processaudio]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__subprocess** () -- 2 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[instinct-cli]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__threading** () -- 2 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+  - <- imports <- [[jobstore]]
+- **get** (uncounted-voice-api/app/core/job_store.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefget]]
+  - <- contains <- [[jobstore]]
+- **set_error** (uncounted-voice-api/app/core/job_store.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmodelcopy]]
+  - <- contains <- [[jobstore]]
+- **set_result** (uncounted-voice-api/app/core/job_store.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmodelcopy]]
+  - <- contains <- [[jobstore]]
+- **update_status** (uncounted-voice-api/app/core/job_store.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmodelcopy]]
+  - <- contains <- [[jobstore]]
+- **_matches_exclude_prefix** (uncounted-voice-api/app/pii_masker.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
+  - <- contains <- [[piimasker]]
+- **uncounted_voice_api__app__services__audio_splitter_py::entity::audio_splitter** () -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefio]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefutterancesegmenter]]
+- **uncounted_voice_api__app__services__chunk_utterance_emitter_py::entity::chunk_utterance_emitter** () -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaudiosplitter]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefutterancesegmenter]]
+- **pii_service** (uncounted-voice-api/app/services/pii_service.py) -- 2 connections
+  - -> contains -> [[piiservice]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpiimasker]]
+- **uncounted_voice_api__app__services__utterance_segmenter_py::entity::utterance_segmenter** () -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdataclasses]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapp]]
+- **uncounted_voice_api__tests__conftest_py::entity::conftest** () -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjobstore]]
+- **uncounted_voice_api__tests__test_utterance_segmenter_py::entity::test_utterance_segmenter** () -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefutterancesegmenter]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___cleanup_expired** () -- 1 connections
+  - <- calls <- [[create]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___ensure_results_dir** () -- 1 connections
+  - <- calls <- [[init]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___matches_exclude_prefix** () -- 1 connections
+  - <- calls <- [[islikelynamewithcontext]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__aiofiles** () -- 1 connections
+  - <- imports <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__appshell** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__authcontext** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__billableunitengine** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__contextlib** () -- 1 connections
+  - <- imports <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dataclasses** () -- 1 connections
+  - <- imports <- [[uncountedvoiceapiappservicesutterancesegmenterpyentityutterancesegmenter]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__diarize** () -- 1 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__embeddingengine** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ledgerengine** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__lock** () -- 1 connections
+  - <- calls <- [[init]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__lstrip** () -- 1 connections
+  - <- calls <- [[islikelynamewithcontext]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mask_pii** () -- 1 connections
+  - <- calls <- [[masksegments]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mock** () -- 1 connections
+  - <- imports <- [[uncountedvoiceapiteststestaudiopreprocessorpyentitytestaudiopreprocessor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pipelinestate** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__refineryengine** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__responses** () -- 1 connections
+  - <- imports <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__routers** () -- 1 connections
+  - <- imports <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__routes** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__scanengine** () -- 1 connections
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__skutier** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__stt_processor** () -- 1 connections
+  - <- imports <- [[whisperxservice]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sttengine** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__taskinfo** () -- 1 connections
+  - <- calls <- [[create]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__toastcontext** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__topic** () -- 1 connections
+  - <- references <- [[sources]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__uuid** () -- 1 connections
+  - <- imports <- [[transcribe]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__valueengine** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__verificationengine** () -- 1 connections
+  - <- references <- [[key-findings]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__whisperx** () -- 1 connections
+  - <- imports <- [[uncountedvoiceapiappsttprocessorpyentitysttprocessor]]
+- **PIIService** (uncounted-voice-api/app/services/pii_service.py) -- 1 connections
+  - <- contains <- [[piiservice]]
+- **WhisperXService** (uncounted-voice-api/app/services/whisperx_service.py) -- 1 connections
+  - <- contains <- [[whisperxservice]]
+
+## Internal Relationships
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__routes [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__appshell [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__authcontext [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__toastcontext [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pipelinestate [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sttengine [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__verificationengine [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__embeddingengine [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__valueengine [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__billableunitengine [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__ledgerengine [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__refineryengine [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__skutier [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__homepage [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessionrepository [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessiondedup [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessiondedup_test [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanonlaunch [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanevent [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__index [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessions [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__resetall [EXTRACTED]
+- Key Findings -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanevent_test [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__topic [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessionrepository [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessiondedup [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessiondedup_test [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanonlaunch [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanevent [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__autoscanevent_test [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__index [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__homepage [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__scanengine [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sessions [EXTRACTED]
+- Sources -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__resetall [EXTRACTED]
+- JobStore -> contains -> __init__ [EXTRACTED]
+- JobStore -> contains -> create [EXTRACTED]
+- JobStore -> contains -> get [EXTRACTED]
+- JobStore -> contains -> update_status [EXTRACTED]
+- JobStore -> contains -> set_result [EXTRACTED]
+- JobStore -> contains -> set_error [EXTRACTED]
+- job_store -> contains -> JobStore [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__logging [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__threading [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__time [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pathlib [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__typing [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__schemas [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__lock [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___ensure_results_dir [EXTRACTED]
+- create -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__taskinfo [EXTRACTED]
+- create -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__time [EXTRACTED]
+- create -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___cleanup_expired [EXTRACTED]
+- set_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__model_copy [EXTRACTED]
+- set_result -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__model_copy [EXTRACTED]
+- update_status -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__model_copy [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__logging [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__contextlib [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fastapi [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__routers [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__whisperx_service [EXTRACTED]
+- pii_masker -> contains -> _matches_exclude_prefix [EXTRACTED]
+- pii_masker -> contains -> _is_likely_name_with_context [EXTRACTED]
+- pii_masker -> contains -> mask_segments [EXTRACTED]
+- pii_masker -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__re [EXTRACTED]
+- pii_masker -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__typing [EXTRACTED]
+- _is_likely_name_with_context -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___matches_exclude_prefix [EXTRACTED]
+- _is_likely_name_with_context -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__lstrip [EXTRACTED]
+- mask_segments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mask_pii [EXTRACTED]
+- health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__torch [EXTRACTED]
+- health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fastapi [EXTRACTED]
+- health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__schemas [EXTRACTED]
+- health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__whisperx_service [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__logging [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__uuid [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pathlib [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__typing [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__aiofiles [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__fastapi [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__responses [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__job_store [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__schemas [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__whisperx_service [EXTRACTED]
+- uncounted_voice_api__app__services__audio_splitter_py::entity::audio_splitter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__io [EXTRACTED]
+- uncounted_voice_api__app__services__audio_splitter_py::entity::audio_splitter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__utterance_segmenter [EXTRACTED]
+- uncounted_voice_api__app__services__chunk_utterance_emitter_py::entity::chunk_utterance_emitter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__audio_splitter [EXTRACTED]
+- uncounted_voice_api__app__services__chunk_utterance_emitter_py::entity::chunk_utterance_emitter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__utterance_segmenter [EXTRACTED]
+- pii_service -> contains -> PIIService [EXTRACTED]
+- pii_service -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pii_masker [EXTRACTED]
+- uncounted_voice_api__app__services__utterance_segmenter_py::entity::utterance_segmenter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__dataclasses [EXTRACTED]
+- uncounted_voice_api__app__services__utterance_segmenter_py::entity::utterance_segmenter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- whisperx_service -> contains -> WhisperXService [EXTRACTED]
+- whisperx_service -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- whisperx_service -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__stt_processor [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__logging [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__re [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__subprocess [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__threading [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__time [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pathlib [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__torch [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__whisperx [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__diarize [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__app [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pii_masker [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__audio_preprocessor [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__utterance_segmenter [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__audio_splitter [EXTRACTED]
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__chunk_utterance_emitter [EXTRACTED]
+- uncounted_voice_api__tests__conftest_py::entity::conftest -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pytest [EXTRACTED]
+- uncounted_voice_api__tests__conftest_py::entity::conftest -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__job_store [EXTRACTED]
+- uncounted_voice_api__tests__test_audio_preprocessor_py::entity::test_audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__mock [EXTRACTED]
+- uncounted_voice_api__tests__test_audio_preprocessor_py::entity::test_audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pytest [EXTRACTED]
+- uncounted_voice_api__tests__test_audio_preprocessor_py::entity::test_audio_preprocessor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__audio_preprocessor [EXTRACTED]
+- uncounted_voice_api__tests__test_audio_splitter_py::entity::test_audio_splitter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pytest [EXTRACTED]
+- uncounted_voice_api__tests__test_audio_splitter_py::entity::test_audio_splitter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__audio_splitter [EXTRACTED]
+- uncounted_voice_api__tests__test_audio_splitter_py::entity::test_audio_splitter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__utterance_segmenter [EXTRACTED]
+- uncounted_voice_api__tests__test_chunked_utterances_py::entity::test_chunked_utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__io [EXTRACTED]
+- uncounted_voice_api__tests__test_chunked_utterances_py::entity::test_chunked_utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pytest [EXTRACTED]
+- uncounted_voice_api__tests__test_chunked_utterances_py::entity::test_chunked_utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__chunk_utterance_emitter [EXTRACTED]
+- TestJobStore -> contains -> test_create_task [EXTRACTED]
+- TestJobStore -> contains -> test_set_result [EXTRACTED]
+- TestJobStore -> contains -> test_set_error [EXTRACTED]
+- TestJobStore -> contains -> test_get_nonexistent [EXTRACTED]
+- test_health -> contains -> TestJobStore [EXTRACTED]
+- test_health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__job_store [EXTRACTED]
+- test_health -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__schemas [EXTRACTED]
+- test_create_task -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__jobstore [EXTRACTED]
+- test_create_task -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__create [EXTRACTED]
+- test_get_nonexistent -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__jobstore [EXTRACTED]
+- test_set_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__jobstore [EXTRACTED]
+- test_set_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__create [EXTRACTED]
+- test_set_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_error [EXTRACTED]
+- test_set_result -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__jobstore [EXTRACTED]
+- test_set_result -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__create [EXTRACTED]
+- test_set_result -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__set_result [EXTRACTED]
+- uncounted_voice_api__tests__test_utterance_segmenter_py::entity::test_utterance_segmenter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pytest [EXTRACTED]
+- uncounted_voice_api__tests__test_utterance_segmenter_py::entity::test_utterance_segmenter -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__utterance_segmenter [EXTRACTED]
+
+## Cross-Community Connections
+- JobStore -> contains -> _ensure_results_dir (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- JobStore -> contains -> _get_results_dir (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- JobStore -> contains -> set_audio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- JobStore -> contains -> get_audio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- JobStore -> contains -> _cleanup_expired (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__shutil (-> [[createdocument-generatedocx]])
+- get -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- pii_masker -> contains -> mask_pii (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _is_likely_name_with_context -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _is_likely_name_with_context -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- _matches_exclude_prefix -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- mask_segments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- mask_segments -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__extend (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- transcribe -> contains -> _process_audio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- uncounted_voice_api__app__stt_processor_py::entity::stt_processor -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__os (-> [[createdocument-generatedocx]])
+- test_get_nonexistent -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_set_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_set_result -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+
+## Context
+이 커뮤니티는 uncounted_voice_api__app__stt_processor_py::entity::stt_processor, Key Findings, Sources를 중심으로 imports 관계로 연결되어 있다. 주요 소스 파일은 codex.md, health.py, job_store.py, main.py, pii_masker.py이다.

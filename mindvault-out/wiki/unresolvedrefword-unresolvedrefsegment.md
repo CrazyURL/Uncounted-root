@@ -1,5 +1,5 @@
 # __unresolved__::ref::_word & __unresolved__::ref::segment
-Cohesion: 0.08 | Nodes: 47
+Cohesion: 0.09 | Nodes: 43
 
 ## Key Nodes
 - **__unresolved__::ref::_word** () -- 21 connections
@@ -41,7 +41,7 @@ Cohesion: 0.08 | Nodes: 47
   - <- calls <- [[testappliespadding]]
   - <- calls <- [[testpaddingclampstozero]]
   - <- calls <- [[testpaddingclampstoduration]]
-- **test_utterance_segmenter** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 10 connections
+- **test_utterance_segmenter** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 10 connections
   - -> contains -> [[word]]
   - -> contains -> [[testsegmentbasic]]
   - -> contains -> [[testspeakerchange]]
@@ -52,7 +52,17 @@ Cohesion: 0.08 | Nodes: 47
   - -> contains -> [[testpadding]]
   - -> imports -> [[unresolvedrefpytest]]
   - -> imports -> [[unresolvedrefutterancesegmenter]]
-- **TestChunkedUtteranceLoop** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 8 connections
+- **test_filenames_and_indices_monotonic_across_many_chunks** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 9 connections
+  - -> calls -> [[unresolvedrefrange]]
+  - -> calls -> [[unresolvedrefappend]]
+  - -> calls -> [[unresolvedrefmakechunk]]
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefrunchunkedutteranceloop]]
+  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefset]]
+  - -> calls -> [[unresolvedrefkeys]]
+  - <- contains <- [[testchunkedutteranceloop]]
+- **TestChunkedUtteranceLoop** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 8 connections
   - -> contains -> [[testemitsutterancesacrosstwochunks]]
   - -> contains -> [[testglobaltimestampsincludecumulativeoffset]]
   - -> contains -> [[testwavbyteshavevalidriffheader]]
@@ -61,7 +71,7 @@ Cohesion: 0.08 | Nodes: 47
   - -> contains -> [[testboundarywordatchunkendclampedbytotalduration]]
   - -> contains -> [[testdoesnotmutateinputchunk]]
   - <- contains <- [[testchunkedutterances]]
-- **test_wav_bytes_have_valid_riff_header** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 8 connections
+- **test_wav_bytes_have_valid_riff_header** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 8 connections
   - -> calls -> [[unresolvedrefmakechunk]]
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefrunchunkedutteranceloop]]
@@ -70,15 +80,6 @@ Cohesion: 0.08 | Nodes: 47
   - -> calls -> [[unresolvedrefread]]
   - -> calls -> [[unresolvedrefbytesio]]
   - <- contains <- [[testchunkedutteranceloop]]
-- **test_chunked_utterances** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 8 connections
-  - -> contains -> [[word]]
-  - -> contains -> [[makechunk]]
-  - -> contains -> [[assegments]]
-  - -> contains -> [[runchunkedutteranceloop]]
-  - -> contains -> [[testchunkedutteranceloop]]
-  - -> imports -> [[unresolvedrefio]]
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefchunkutteranceemitter]]
 - **__unresolved__::ref::_make_chunk** () -- 7 connections
   - <- calls <- [[testemitsutterancesacrosstwochunks]]
   - <- calls <- [[testglobaltimestampsincludecumulativeoffset]]
@@ -95,187 +96,167 @@ Cohesion: 0.08 | Nodes: 47
   - <- calls <- [[testnoutteranceswhennowords]]
   - <- calls <- [[testboundarywordatchunkendclampedbytotalduration]]
   - <- calls <- [[testdoesnotmutateinputchunk]]
-- **__unresolved__::ref::pytest** () -- 6 connections
-  - <- imports <- [[testutterancesegmenter]]
-  - <- imports <- [[conftest]]
-  - <- imports <- [[testchunkedutterances]]
-  - <- imports <- [[testaudiopreprocessor]]
-  - <- imports <- [[testaudiosplitter]]
-  - <- imports <- [[testparseinstinct]]
-- **test_does_not_mutate_input_chunk** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 6 connections
+- **test_does_not_mutate_input_chunk** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 6 connections
   - -> calls -> [[unresolvedrefmakechunk]]
   - -> calls -> [[unresolvedrefcopy]]
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefrunchunkedutteranceloop]]
   - -> calls -> [[unresolvedrefarrayequal]]
   - <- contains <- [[testchunkedutteranceloop]]
-- **TestCaseCBackchannelGuard** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 6 connections
+- **TestCaseCBackchannelGuard** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 6 connections
   - -> contains -> [[testshortcontentdifferentspeakerstaysindependent]]
   - -> contains -> [[testshortcontentsingleworddifferentspeakerstaysindependent]]
   - -> contains -> [[testshortanswerpreservedasindependent]]
   - -> contains -> [[testmicrobackchannelbelowshortanswerminmerged]]
   - -> contains -> [[testthreewordshortcontentstaysindependent]]
   - <- contains <- [[testutterancesegmenter]]
-- **test_boundary_word_at_chunk_end_clamped_by_total_duration** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 5 connections
+- **test_boundary_word_at_chunk_end_clamped_by_total_duration** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 5 connections
   - -> calls -> [[unresolvedrefmakechunk]]
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefrunchunkedutteranceloop]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testchunkedutteranceloop]]
-- **test_global_timestamps_include_cumulative_offset** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 5 connections
+- **test_global_timestamps_include_cumulative_offset** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 5 connections
   - -> calls -> [[unresolvedrefmakechunk]]
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefrunchunkedutteranceloop]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testchunkedutteranceloop]]
-- **test_short_content_different_speaker_stays_independent** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
+- **test_short_content_different_speaker_stays_independent** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - -> calls -> [[unresolvedrefjoin]]
   - <- contains <- [[testcasecbackchannelguard]]
-- **test_short_content_single_word_different_speaker_stays_independent** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
+- **test_short_content_single_word_different_speaker_stays_independent** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - -> calls -> [[unresolvedrefany]]
   - <- contains <- [[testcasecbackchannelguard]]
-- **test_three_word_short_content_stays_independent** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
+- **test_three_word_short_content_stays_independent** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - -> calls -> [[unresolvedrefany]]
   - <- contains <- [[testcasecbackchannelguard]]
-- **__unresolved__::ref::any** () -- 4 connections
-  - <- calls <- [[testshortcontentsingleworddifferentspeakerstaysindependent]]
-  - <- calls <- [[testthreewordshortcontentstaysindependent]]
-  - <- calls <- [[isshortanswer]]
-  - <- calls <- [[promotespecific]]
 - **__unresolved__::ref::copy** () -- 4 connections
   - <- calls <- [[testdoesnotmutateinputchunk]]
   - <- calls <- [[testdoesnotmutateinput]]
   - <- calls <- [[mutenonspeaker]]
   - <- calls <- [[denoise]]
-- **to_wav_bytes** (uncounted-voice-api/app/services/audio_splitter.py) -- 4 connections
-  - -> calls -> [[unresolvedrefbytesio]]
-  - -> calls -> [[unresolvedrefwrite]]
-  - -> calls -> [[unresolvedrefgetvalue]]
-  - <- contains <- [[audiosplitter]]
-- **TestPadding** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **TestPadding** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> contains -> [[testappliespadding]]
   - -> contains -> [[testpaddingclampstozero]]
   - -> contains -> [[testpaddingclampstoduration]]
   - <- contains <- [[testutterancesegmenter]]
-- **TestSegmentBasic** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **TestSegmentBasic** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> contains -> [[testemptywordsreturnsempty]]
   - -> contains -> [[testsingleword]]
   - -> contains -> [[testcontinuousspeechsamespeaker]]
   - <- contains <- [[testutterancesegmenter]]
-- **test_continuous_speech_same_speaker** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **test_continuous_speech_same_speaker** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testsegmentbasic]]
-- **test_merges_short_same_speaker** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **test_merges_short_same_speaker** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testshortutterancemerge]]
-- **test_micro_backchannel_below_short_answer_min_merged** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **test_micro_backchannel_below_short_answer_min_merged** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testcasecbackchannelguard]]
-- **test_preserves_short_answer** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **test_preserves_short_answer** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testshortutterancemerge]]
-- **test_short_answer_preserved_as_independent** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **test_short_answer_preserved_as_independent** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testcasecbackchannelguard]]
-- **test_single_word** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **test_single_word** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testsegmentbasic]]
-- **test_splits_on_silence_gap** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+- **test_splits_on_silence_gap** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - -> calls -> [[unresolvedreflen]]
   - <- contains <- [[testsilencegap]]
-- **__unresolved__::ref::io** () -- 3 connections
-  - <- imports <- [[testchunkedutterances]]
-  - <- imports <- [[audiosplitter]]
-  - <- imports <- [[testparseinstinct]]
-- **_make_chunk** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 3 connections
-  - -> calls -> [[unresolvedreffull]]
-  - -> calls -> [[unresolvedrefint]]
-  - <- contains <- [[testchunkedutterances]]
-- **test_no_utterances_when_no_words** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 3 connections
+- **__unresolved__::ref::any** () -- 3 connections
+  - <- calls <- [[testshortcontentsingleworddifferentspeakerstaysindependent]]
+  - <- calls <- [[testthreewordshortcontentstaysindependent]]
+  - <- calls <- [[isshortanswer]]
+- **__unresolved__::ref::items** () -- 3 connections
+  - <- calls <- [[testwavbyteshavevalidriffheader]]
+  - <- calls <- [[check]]
+  - <- calls <- [[preprocess]]
+- **__unresolved__::ref::set** () -- 3 connections
+  - <- calls <- [[testfilenamesandindicesmonotonicacrossmanychunks]]
+  - <- calls <- [[transcribe]]
+  - <- calls <- [[removeduplicates]]
+- **test_no_utterances_when_no_words** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_chunked_utterances.py) -- 3 connections
   - -> calls -> [[unresolvedrefrunchunkedutteranceloop]]
   - -> calls -> [[unresolvedrefmakechunk]]
   - <- contains <- [[testchunkedutteranceloop]]
-- **TestShortUtteranceMerge** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+- **TestShortUtteranceMerge** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
   - -> contains -> [[testmergesshortsamespeaker]]
   - -> contains -> [[testpreservesshortanswer]]
   - <- contains <- [[testutterancesegmenter]]
-- **test_applies_padding** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+- **test_applies_padding** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - <- contains <- [[testpadding]]
-- **test_padding_clamps_to_duration** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+- **test_padding_clamps_to_duration** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - <- contains <- [[testpadding]]
-- **test_padding_clamps_to_zero** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+- **test_padding_clamps_to_zero** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - <- contains <- [[testpadding]]
-- **test_splits_on_speaker_change** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+- **test_splits_on_speaker_change** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
   - -> calls -> [[unresolvedrefword]]
   - -> calls -> [[unresolvedrefsegment]]
   - <- contains <- [[testspeakerchange]]
 - **__unresolved__::ref::bytesio** () -- 2 connections
   - <- calls <- [[testwavbyteshavevalidriffheader]]
   - <- calls <- [[towavbytes]]
-- **__unresolved__::ref::chunk_utterance_emitter** () -- 2 connections
-  - <- imports <- [[testchunkedutterances]]
-  - <- imports <- [[sttprocessor]]
-- **TestLongUtteranceSplit** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
+- **TestLongUtteranceSplit** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
   - -> contains -> [[testsplitslongutterance]]
   - <- contains <- [[testutterancesegmenter]]
-- **TestSilenceGap** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
+- **TestSilenceGap** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
   - -> contains -> [[testsplitsonsilencegap]]
   - <- contains <- [[testutterancesegmenter]]
-- **TestSpeakerChange** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
+- **TestSpeakerChange** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
   - -> contains -> [[testsplitsonspeakerchange]]
   - <- contains <- [[testutterancesegmenter]]
-- **test_empty_words_returns_empty** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
+- **test_empty_words_returns_empty** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
   - -> calls -> [[unresolvedrefsegment]]
   - <- contains <- [[testsegmentbasic]]
 - **__unresolved__::ref::array_equal** () -- 1 connections
   - <- calls <- [[testdoesnotmutateinputchunk]]
-- **__unresolved__::ref::full** () -- 1 connections
-  - <- calls <- [[makechunk]]
-- **__unresolved__::ref::getvalue** () -- 1 connections
-  - <- calls <- [[towavbytes]]
-- **_word** (uncounted-voice-api/tests/test_chunked_utterances.py) -- 1 connections
-  - <- contains <- [[testchunkedutterances]]
-- **_word** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 1 connections
+- **__unresolved__::ref::keys** () -- 1 connections
+  - <- calls <- [[testfilenamesandindicesmonotonicacrossmanychunks]]
+- **__unresolved__::ref::read** () -- 1 connections
+  - <- calls <- [[testwavbyteshavevalidriffheader]]
+- **_word** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_utterance_segmenter.py) -- 1 connections
   - <- contains <- [[testutterancesegmenter]]
 
 ## Internal Relationships
-- to_wav_bytes -> calls -> __unresolved__::ref::bytesio [EXTRACTED]
-- to_wav_bytes -> calls -> __unresolved__::ref::getvalue [EXTRACTED]
 - TestChunkedUtteranceLoop -> contains -> test_global_timestamps_include_cumulative_offset [EXTRACTED]
 - TestChunkedUtteranceLoop -> contains -> test_wav_bytes_have_valid_riff_header [EXTRACTED]
+- TestChunkedUtteranceLoop -> contains -> test_filenames_and_indices_monotonic_across_many_chunks [EXTRACTED]
 - TestChunkedUtteranceLoop -> contains -> test_no_utterances_when_no_words [EXTRACTED]
 - TestChunkedUtteranceLoop -> contains -> test_boundary_word_at_chunk_end_clamped_by_total_duration [EXTRACTED]
 - TestChunkedUtteranceLoop -> contains -> test_does_not_mutate_input_chunk [EXTRACTED]
-- _make_chunk -> calls -> __unresolved__::ref::full [EXTRACTED]
 - test_boundary_word_at_chunk_end_clamped_by_total_duration -> calls -> __unresolved__::ref::_make_chunk [EXTRACTED]
 - test_boundary_word_at_chunk_end_clamped_by_total_duration -> calls -> __unresolved__::ref::_word [EXTRACTED]
 - test_boundary_word_at_chunk_end_clamped_by_total_duration -> calls -> __unresolved__::ref::_run_chunked_utterance_loop [EXTRACTED]
@@ -284,6 +265,11 @@ Cohesion: 0.08 | Nodes: 47
 - test_does_not_mutate_input_chunk -> calls -> __unresolved__::ref::_word [EXTRACTED]
 - test_does_not_mutate_input_chunk -> calls -> __unresolved__::ref::_run_chunked_utterance_loop [EXTRACTED]
 - test_does_not_mutate_input_chunk -> calls -> __unresolved__::ref::array_equal [EXTRACTED]
+- test_filenames_and_indices_monotonic_across_many_chunks -> calls -> __unresolved__::ref::_make_chunk [EXTRACTED]
+- test_filenames_and_indices_monotonic_across_many_chunks -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_filenames_and_indices_monotonic_across_many_chunks -> calls -> __unresolved__::ref::_run_chunked_utterance_loop [EXTRACTED]
+- test_filenames_and_indices_monotonic_across_many_chunks -> calls -> __unresolved__::ref::set [EXTRACTED]
+- test_filenames_and_indices_monotonic_across_many_chunks -> calls -> __unresolved__::ref::keys [EXTRACTED]
 - test_global_timestamps_include_cumulative_offset -> calls -> __unresolved__::ref::_make_chunk [EXTRACTED]
 - test_global_timestamps_include_cumulative_offset -> calls -> __unresolved__::ref::_word [EXTRACTED]
 - test_global_timestamps_include_cumulative_offset -> calls -> __unresolved__::ref::_run_chunked_utterance_loop [EXTRACTED]
@@ -292,13 +278,9 @@ Cohesion: 0.08 | Nodes: 47
 - test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::_make_chunk [EXTRACTED]
 - test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::_word [EXTRACTED]
 - test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::_run_chunked_utterance_loop [EXTRACTED]
+- test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::items [EXTRACTED]
+- test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::read [EXTRACTED]
 - test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::bytesio [EXTRACTED]
-- test_chunked_utterances -> contains -> _word [EXTRACTED]
-- test_chunked_utterances -> contains -> _make_chunk [EXTRACTED]
-- test_chunked_utterances -> contains -> TestChunkedUtteranceLoop [EXTRACTED]
-- test_chunked_utterances -> imports -> __unresolved__::ref::io [EXTRACTED]
-- test_chunked_utterances -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_chunked_utterances -> imports -> __unresolved__::ref::chunk_utterance_emitter [EXTRACTED]
 - TestCaseCBackchannelGuard -> contains -> test_short_content_different_speaker_stays_independent [EXTRACTED]
 - TestCaseCBackchannelGuard -> contains -> test_short_content_single_word_different_speaker_stays_independent [EXTRACTED]
 - TestCaseCBackchannelGuard -> contains -> test_short_answer_preserved_as_independent [EXTRACTED]
@@ -353,33 +335,29 @@ Cohesion: 0.08 | Nodes: 47
 - test_utterance_segmenter -> contains -> TestLongUtteranceSplit [EXTRACTED]
 - test_utterance_segmenter -> contains -> TestCaseCBackchannelGuard [EXTRACTED]
 - test_utterance_segmenter -> contains -> TestPadding [EXTRACTED]
-- test_utterance_segmenter -> imports -> __unresolved__::ref::pytest [EXTRACTED]
 
 ## Cross-Community Connections
-- to_wav_bytes -> calls -> __unresolved__::ref::write (-> [[unresolvedrefjs-unresolvedrefvitest]])
-- TestChunkedUtteranceLoop -> contains -> test_emits_utterances_across_two_chunks (-> [[unresolvedrefpush-unresolvedreflen]])
-- TestChunkedUtteranceLoop -> contains -> test_filenames_and_indices_monotonic_across_many_chunks (-> [[unresolvedrefpush-unresolvedreflen]])
-- _make_chunk -> calls -> __unresolved__::ref::int (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_boundary_word_at_chunk_end_clamped_by_total_duration -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_global_timestamps_include_cumulative_offset -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::items (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::read (-> [[createdocument-generatedocx]])
-- test_chunked_utterances -> contains -> _as_segments (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_chunked_utterances -> contains -> _run_chunked_utterance_loop (-> [[unresolvedrefpush-unresolvedreflen]])
-- TestLongUtteranceSplit -> contains -> test_splits_long_utterance (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_continuous_speech_same_speaker -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_merges_short_same_speaker -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_micro_backchannel_below_short_answer_min_merged -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_preserves_short_answer -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_short_answer_preserved_as_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_short_content_different_speaker_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_short_content_different_speaker_stays_independent -> calls -> __unresolved__::ref::join (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_short_content_single_word_different_speaker_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_single_word -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_splits_on_silence_gap -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_three_word_short_content_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
-- test_utterance_segmenter -> imports -> __unresolved__::ref::utterance_segmenter (-> [[unresolvedrefpush-unresolvedreflen]])
+- TestChunkedUtteranceLoop -> contains -> test_emits_utterances_across_two_chunks (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_boundary_word_at_chunk_end_clamped_by_total_duration -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_filenames_and_indices_monotonic_across_many_chunks -> calls -> __unresolved__::ref::range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_filenames_and_indices_monotonic_across_many_chunks -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_filenames_and_indices_monotonic_across_many_chunks -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_global_timestamps_include_cumulative_offset -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_wav_bytes_have_valid_riff_header -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- TestLongUtteranceSplit -> contains -> test_splits_long_utterance (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_continuous_speech_same_speaker -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_merges_short_same_speaker -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_micro_backchannel_below_short_answer_min_merged -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_preserves_short_answer -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_short_answer_preserved_as_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_short_content_different_speaker_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_short_content_different_speaker_stays_independent -> calls -> __unresolved__::ref::join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_short_content_single_word_different_speaker_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_single_word -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_splits_on_silence_gap -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_three_word_short_content_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- test_utterance_segmenter -> imports -> __unresolved__::ref::pytest (-> [[denoise-removeduplicates]])
+- test_utterance_segmenter -> imports -> __unresolved__::ref::utterance_segmenter (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
 
 ## Context
-이 커뮤니티는 __unresolved__::ref::_word, __unresolved__::ref::segment, test_utterance_segmenter를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 audio_splitter.py, test_chunked_utterances.py, test_utterance_segmenter.py이다.
+이 커뮤니티는 __unresolved__::ref::_word, __unresolved__::ref::segment, test_utterance_segmenter를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 test_chunked_utterances.py, test_utterance_segmenter.py이다.
