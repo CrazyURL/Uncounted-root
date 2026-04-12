@@ -1,0 +1,120 @@
+# 1. 화면별 데이터 정의서 & 1. 온보딩 (OnboardingPage) — `/`
+Cohesion: 0.07 | Nodes: 28
+
+## Key Nodes
+- **1. 화면별 데이터 정의서** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 27 connections
+  - -> contains -> [[1-onboardingpage]]
+  - -> contains -> [[2-homepage-home]]
+  - -> contains -> [[3-assetspage-assets]]
+  - -> contains -> [[4-contactcallspage-assetscontactcontactname]]
+  - -> contains -> [[5-sessiondetailpage-assetssessionid]]
+  - -> contains -> [[6-labelingpage-valuelabelsessionid]]
+  - -> contains -> [[7-valuepage-value]]
+  - -> contains -> [[8-profilepage-profile]]
+  - -> contains -> [[9-profilesetuppage-profilesetup]]
+  - -> contains -> [[a1-admindashboardpage-admin]]
+  - -> contains -> [[a2-adminsessionlistpage-admincalls]]
+  - -> contains -> [[a3-adminbillableunitspage-adminunits]]
+  - -> contains -> [[a4-adminlabelcatalogpage-adminlabels]]
+  - -> contains -> [[a5-adminconsentspage-adminconsents]]
+  - -> contains -> [[a6-sku-adminskucatalogpage-adminsku-catalog]]
+  - -> contains -> [[a7-sku-adminskucomponentspage-adminsku-components]]
+  - -> contains -> [[a8-adminqualitytierspage-adminquality-tiers]]
+  - -> contains -> [[a9-admindatasetlistpage-admindatasets]]
+  - -> contains -> [[a10-admindatasetdetailpage-admindatasetsid]]
+  - -> contains -> [[a11-adminbuildwizardpage-adminbuild]]
+  - -> contains -> [[a12-adminexportjobspage-adminjobs]]
+  - -> contains -> [[a13-adminexportjobdetailpage-adminjobsid]]
+  - -> contains -> [[a14-adminclientspage-adminclients]]
+  - -> contains -> [[a15-admindeliveryprofilespage-admindelivery-profiles]]
+  - -> contains -> [[a16-sku-adminclientskumappage-adminsku-rules]]
+  - -> contains -> [[a17-adminuserdetailpage-adminusersuserid]]
+  - -> contains -> [[a18-sku-adminskustudiopage-adminstudio]]
+- **1. 온보딩 (OnboardingPage) — `/`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **2. 홈 (HomePage) — `/home`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **3. 에셋 (AssetsPage) — `/assets`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **4. 연락처별 통화 (ContactCallsPage) — `/assets/contact/:contactName`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **5. 세션 상세 (SessionDetailPage) — `/assets/:sessionId`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **6. 라벨링 (LabelingPage) — `/value/label/:sessionId`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **7. 가치 (ValuePage) — `/value`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **8. 프로필 (ProfilePage) — `/profile`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **9. 프로필 설정 (ProfileSetupPage) — `/profile/setup`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A10. 데이터셋 상세 (AdminDatasetDetailPage) — `/admin/datasets/:id`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A11. 빌드 위자드 (AdminBuildWizardPage) — `/admin/build`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A12. 내보내기 작업 (AdminExportJobsPage) — `/admin/jobs`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A13. 작업 상세 (AdminExportJobDetailPage) — `/admin/jobs/:id`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A14. 납품처 관리 (AdminClientsPage) — `/admin/clients`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A15. 납품 프로필 (AdminDeliveryProfilesPage) — `/admin/delivery-profiles`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A16. SKU 규칙 (AdminClientSkuMapPage) — `/admin/sku-rules`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A17. 사용자 상세 (AdminUserDetailPage) — `/admin/users/:userId`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A18. SKU 스튜디오 (AdminSkuStudioPage) — `/admin/studio`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A1. 관리자 대시보드 (AdminDashboardPage) — `/admin`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A2. 통화 목록 (AdminSessionListPage) — `/admin/calls`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A3. 빌링 유닛 (AdminBillableUnitsPage) — `/admin/units`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A4. 라벨 카탈로그 (AdminLabelCatalogPage) — `/admin/labels`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A5. 동의 현황 (AdminConsentsPage) — `/admin/consents`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A6. SKU 카탈로그 (AdminSkuCatalogPage) — `/admin/sku-catalog`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A7. SKU 컴포넌트 (AdminSkuComponentsPage) — `/admin/sku-components`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A8. 품질 등급 (AdminQualityTiersPage) — `/admin/quality-tiers`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+- **A9. 데이터셋 목록 (AdminDatasetListPage) — `/admin/datasets`** (uncounted-docs/앱/화면별 데이터 정의서_v1.0.md) -- 1 connections
+  - <- contains <- [[1]]
+
+## Internal Relationships
+- 1. 화면별 데이터 정의서 -> contains -> 1. 온보딩 (OnboardingPage) — `/` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> 2. 홈 (HomePage) — `/home` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> 3. 에셋 (AssetsPage) — `/assets` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> 4. 연락처별 통화 (ContactCallsPage) — `/assets/contact/:contactName` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> 5. 세션 상세 (SessionDetailPage) — `/assets/:sessionId` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> 6. 라벨링 (LabelingPage) — `/value/label/:sessionId` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> 7. 가치 (ValuePage) — `/value` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> 8. 프로필 (ProfilePage) — `/profile` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> 9. 프로필 설정 (ProfileSetupPage) — `/profile/setup` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A1. 관리자 대시보드 (AdminDashboardPage) — `/admin` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A2. 통화 목록 (AdminSessionListPage) — `/admin/calls` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A3. 빌링 유닛 (AdminBillableUnitsPage) — `/admin/units` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A4. 라벨 카탈로그 (AdminLabelCatalogPage) — `/admin/labels` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A5. 동의 현황 (AdminConsentsPage) — `/admin/consents` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A6. SKU 카탈로그 (AdminSkuCatalogPage) — `/admin/sku-catalog` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A7. SKU 컴포넌트 (AdminSkuComponentsPage) — `/admin/sku-components` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A8. 품질 등급 (AdminQualityTiersPage) — `/admin/quality-tiers` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A9. 데이터셋 목록 (AdminDatasetListPage) — `/admin/datasets` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A10. 데이터셋 상세 (AdminDatasetDetailPage) — `/admin/datasets/:id` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A11. 빌드 위자드 (AdminBuildWizardPage) — `/admin/build` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A12. 내보내기 작업 (AdminExportJobsPage) — `/admin/jobs` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A13. 작업 상세 (AdminExportJobDetailPage) — `/admin/jobs/:id` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A14. 납품처 관리 (AdminClientsPage) — `/admin/clients` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A15. 납품 프로필 (AdminDeliveryProfilesPage) — `/admin/delivery-profiles` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A16. SKU 규칙 (AdminClientSkuMapPage) — `/admin/sku-rules` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A17. 사용자 상세 (AdminUserDetailPage) — `/admin/users/:userId` [EXTRACTED]
+- 1. 화면별 데이터 정의서 -> contains -> A18. SKU 스튜디오 (AdminSkuStudioPage) — `/admin/studio` [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 1. 화면별 데이터 정의서, 1. 온보딩 (OnboardingPage) — `/`, 2. 홈 (HomePage) — `/home`를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 화면별 데이터 정의서_v1.0.md이다.

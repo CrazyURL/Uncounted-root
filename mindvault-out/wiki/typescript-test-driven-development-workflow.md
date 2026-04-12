@@ -1,0 +1,254 @@
+# typescript & Test-Driven Development Workflow
+Cohesion: 0.06 | Nodes: 48
+
+## Key Nodes
+- **typescript** (.claude/skills/tdd-workflow/SKILL.md) -- 14 connections
+  - <- has_code_example <- [[step-2-generate-test-cases]]
+  - <- has_code_example <- [[step-4-implement-code]]
+  - <- has_code_example <- [[unit-test-pattern-jestvitest]]
+  - <- has_code_example <- [[api-integration-test-pattern]]
+  - <- has_code_example <- [[e2e-test-pattern-playwright]]
+  - <- has_code_example <- [[supabase-mock]]
+  - <- has_code_example <- [[redis-mock]]
+  - <- has_code_example <- [[openai-mock]]
+  - <- has_code_example <- [[fail-wrong-testing-implementation-details]]
+  - <- has_code_example <- [[pass-correct-test-user-visible-behavior]]
+  - <- has_code_example <- [[fail-wrong-brittle-selectors]]
+  - <- has_code_example <- [[pass-correct-semantic-selectors]]
+  - <- has_code_example <- [[fail-wrong-no-test-isolation]]
+  - <- has_code_example <- [[pass-correct-independent-tests]]
+- **Test-Driven Development Workflow** (.claude/skills/tdd-workflow/SKILL.md) -- 12 connections
+  - -> contains -> [[when-to-activate]]
+  - -> contains -> [[core-principles]]
+  - -> contains -> [[tdd-workflow-steps]]
+  - -> contains -> [[testing-patterns]]
+  - -> contains -> [[test-file-organization]]
+  - -> contains -> [[mocking-external-services]]
+  - -> contains -> [[test-coverage-verification]]
+  - -> contains -> [[common-testing-mistakes-to-avoid]]
+  - -> contains -> [[continuous-testing]]
+  - -> contains -> [[best-practices]]
+  - -> contains -> [[success-metrics]]
+  - <- contains <- [[skill]]
+- **TDD Workflow Steps** (.claude/skills/tdd-workflow/SKILL.md) -- 8 connections
+  - -> contains -> [[step-1-write-user-journeys]]
+  - -> contains -> [[step-2-generate-test-cases]]
+  - -> contains -> [[step-3-run-tests-they-should-fail]]
+  - -> contains -> [[step-4-implement-code]]
+  - -> contains -> [[step-5-run-tests-again]]
+  - -> contains -> [[step-6-refactor]]
+  - -> contains -> [[step-7-verify-coverage]]
+  - <- contains <- [[test-driven-development-workflow]]
+- **Common Testing Mistakes to Avoid** (.claude/skills/tdd-workflow/SKILL.md) -- 7 connections
+  - -> contains -> [[fail-wrong-testing-implementation-details]]
+  - -> contains -> [[pass-correct-test-user-visible-behavior]]
+  - -> contains -> [[fail-wrong-brittle-selectors]]
+  - -> contains -> [[pass-correct-semantic-selectors]]
+  - -> contains -> [[fail-wrong-no-test-isolation]]
+  - -> contains -> [[pass-correct-independent-tests]]
+  - <- contains <- [[test-driven-development-workflow]]
+- **bash** (.claude/skills/tdd-workflow/SKILL.md) -- 6 connections
+  - <- has_code_example <- [[step-3-run-tests-they-should-fail]]
+  - <- has_code_example <- [[step-5-run-tests-again]]
+  - <- has_code_example <- [[step-7-verify-coverage]]
+  - <- has_code_example <- [[run-coverage-report]]
+  - <- has_code_example <- [[watch-mode-during-development]]
+  - <- has_code_example <- [[pre-commit-hook]]
+- **Core Principles** (.claude/skills/tdd-workflow/SKILL.md) -- 5 connections
+  - -> contains -> [[1-tests-before-code]]
+  - -> contains -> [[2-coverage-requirements]]
+  - -> contains -> [[3-test-types]]
+  - -> contains -> [[4-git-checkpoints]]
+  - <- contains <- [[test-driven-development-workflow]]
+- **3. Test Types** (.claude/skills/tdd-workflow/SKILL.md) -- 4 connections
+  - -> contains -> [[unit-tests]]
+  - -> contains -> [[integration-tests]]
+  - -> contains -> [[e2e-tests-playwright]]
+  - <- contains <- [[core-principles]]
+- **Continuous Testing** (.claude/skills/tdd-workflow/SKILL.md) -- 4 connections
+  - -> contains -> [[watch-mode-during-development]]
+  - -> contains -> [[pre-commit-hook]]
+  - -> contains -> [[cicd-integration]]
+  - <- contains <- [[test-driven-development-workflow]]
+- **Mocking External Services** (.claude/skills/tdd-workflow/SKILL.md) -- 4 connections
+  - -> contains -> [[supabase-mock]]
+  - -> contains -> [[redis-mock]]
+  - -> contains -> [[openai-mock]]
+  - <- contains <- [[test-driven-development-workflow]]
+- **Testing Patterns** (.claude/skills/tdd-workflow/SKILL.md) -- 4 connections
+  - -> contains -> [[unit-test-pattern-jestvitest]]
+  - -> contains -> [[api-integration-test-pattern]]
+  - -> contains -> [[e2e-test-pattern-playwright]]
+  - <- contains <- [[test-driven-development-workflow]]
+- **Test Coverage Verification** (.claude/skills/tdd-workflow/SKILL.md) -- 3 connections
+  - -> contains -> [[run-coverage-report]]
+  - -> contains -> [[coverage-thresholds]]
+  - <- contains <- [[test-driven-development-workflow]]
+- **API Integration Test Pattern** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[testing-patterns]]
+- **CI/CD Integration** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[yaml]]
+  - <- contains <- [[continuous-testing]]
+- **Coverage Thresholds** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[json]]
+  - <- contains <- [[test-coverage-verification]]
+- **E2E Test Pattern (Playwright)** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[testing-patterns]]
+- **FAIL: WRONG: Brittle Selectors** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[common-testing-mistakes-to-avoid]]
+- **FAIL: WRONG: No Test Isolation** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[common-testing-mistakes-to-avoid]]
+- **FAIL: WRONG: Testing Implementation Details** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[common-testing-mistakes-to-avoid]]
+- **OpenAI Mock** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[mocking-external-services]]
+- **PASS: CORRECT: Independent Tests** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[common-testing-mistakes-to-avoid]]
+- **PASS: CORRECT: Semantic Selectors** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[common-testing-mistakes-to-avoid]]
+- **PASS: CORRECT: Test User-Visible Behavior** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[common-testing-mistakes-to-avoid]]
+- **Pre-Commit Hook** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[continuous-testing]]
+- **Redis Mock** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[mocking-external-services]]
+- **Run Coverage Report** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[test-coverage-verification]]
+- **Step 2: Generate Test Cases** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[tdd-workflow-steps]]
+- **Step 3: Run Tests (They Should Fail)** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[tdd-workflow-steps]]
+- **Step 4: Implement Code** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[tdd-workflow-steps]]
+- **Step 5: Run Tests Again** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[tdd-workflow-steps]]
+- **Step 7: Verify Coverage** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[tdd-workflow-steps]]
+- **Supabase Mock** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[mocking-external-services]]
+- **Unit Test Pattern (Jest/Vitest)** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[testing-patterns]]
+- **Watch Mode During Development** (.claude/skills/tdd-workflow/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[continuous-testing]]
+- **json** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- has_code_example <- [[coverage-thresholds]]
+- **yaml** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- has_code_example <- [[cicd-integration]]
+- **SKILL** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - -> contains -> [[test-driven-development-workflow]]
+- **1. Tests BEFORE Code** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[core-principles]]
+- **2. Coverage Requirements** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[core-principles]]
+- **4. Git Checkpoints** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[core-principles]]
+- **Best Practices** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[test-driven-development-workflow]]
+- **E2E Tests (Playwright)** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[3-test-types]]
+- **Integration Tests** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[3-test-types]]
+- **Step 1: Write User Journeys** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[tdd-workflow-steps]]
+- **Step 6: Refactor** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[tdd-workflow-steps]]
+- **Success Metrics** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[test-driven-development-workflow]]
+- **Test File Organization** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[test-driven-development-workflow]]
+- **Unit Tests** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[3-test-types]]
+- **When to Activate** (.claude/skills/tdd-workflow/SKILL.md) -- 1 connections
+  - <- contains <- [[test-driven-development-workflow]]
+
+## Internal Relationships
+- SKILL -> contains -> Test-Driven Development Workflow [EXTRACTED]
+- 3. Test Types -> contains -> Unit Tests [EXTRACTED]
+- 3. Test Types -> contains -> Integration Tests [EXTRACTED]
+- 3. Test Types -> contains -> E2E Tests (Playwright) [EXTRACTED]
+- API Integration Test Pattern -> has_code_example -> typescript [EXTRACTED]
+- CI/CD Integration -> has_code_example -> yaml [EXTRACTED]
+- Common Testing Mistakes to Avoid -> contains -> FAIL: WRONG: Testing Implementation Details [EXTRACTED]
+- Common Testing Mistakes to Avoid -> contains -> PASS: CORRECT: Test User-Visible Behavior [EXTRACTED]
+- Common Testing Mistakes to Avoid -> contains -> FAIL: WRONG: Brittle Selectors [EXTRACTED]
+- Common Testing Mistakes to Avoid -> contains -> PASS: CORRECT: Semantic Selectors [EXTRACTED]
+- Common Testing Mistakes to Avoid -> contains -> FAIL: WRONG: No Test Isolation [EXTRACTED]
+- Common Testing Mistakes to Avoid -> contains -> PASS: CORRECT: Independent Tests [EXTRACTED]
+- Continuous Testing -> contains -> Watch Mode During Development [EXTRACTED]
+- Continuous Testing -> contains -> Pre-Commit Hook [EXTRACTED]
+- Continuous Testing -> contains -> CI/CD Integration [EXTRACTED]
+- Core Principles -> contains -> 1. Tests BEFORE Code [EXTRACTED]
+- Core Principles -> contains -> 2. Coverage Requirements [EXTRACTED]
+- Core Principles -> contains -> 3. Test Types [EXTRACTED]
+- Core Principles -> contains -> 4. Git Checkpoints [EXTRACTED]
+- Coverage Thresholds -> has_code_example -> json [EXTRACTED]
+- E2E Test Pattern (Playwright) -> has_code_example -> typescript [EXTRACTED]
+- FAIL: WRONG: Brittle Selectors -> has_code_example -> typescript [EXTRACTED]
+- FAIL: WRONG: No Test Isolation -> has_code_example -> typescript [EXTRACTED]
+- FAIL: WRONG: Testing Implementation Details -> has_code_example -> typescript [EXTRACTED]
+- Mocking External Services -> contains -> Supabase Mock [EXTRACTED]
+- Mocking External Services -> contains -> Redis Mock [EXTRACTED]
+- Mocking External Services -> contains -> OpenAI Mock [EXTRACTED]
+- OpenAI Mock -> has_code_example -> typescript [EXTRACTED]
+- PASS: CORRECT: Independent Tests -> has_code_example -> typescript [EXTRACTED]
+- PASS: CORRECT: Semantic Selectors -> has_code_example -> typescript [EXTRACTED]
+- PASS: CORRECT: Test User-Visible Behavior -> has_code_example -> typescript [EXTRACTED]
+- Pre-Commit Hook -> has_code_example -> bash [EXTRACTED]
+- Redis Mock -> has_code_example -> typescript [EXTRACTED]
+- Run Coverage Report -> has_code_example -> bash [EXTRACTED]
+- Step 2: Generate Test Cases -> has_code_example -> typescript [EXTRACTED]
+- Step 3: Run Tests (They Should Fail) -> has_code_example -> bash [EXTRACTED]
+- Step 4: Implement Code -> has_code_example -> typescript [EXTRACTED]
+- Step 5: Run Tests Again -> has_code_example -> bash [EXTRACTED]
+- Step 7: Verify Coverage -> has_code_example -> bash [EXTRACTED]
+- Supabase Mock -> has_code_example -> typescript [EXTRACTED]
+- TDD Workflow Steps -> contains -> Step 1: Write User Journeys [EXTRACTED]
+- TDD Workflow Steps -> contains -> Step 2: Generate Test Cases [EXTRACTED]
+- TDD Workflow Steps -> contains -> Step 3: Run Tests (They Should Fail) [EXTRACTED]
+- TDD Workflow Steps -> contains -> Step 4: Implement Code [EXTRACTED]
+- TDD Workflow Steps -> contains -> Step 5: Run Tests Again [EXTRACTED]
+- TDD Workflow Steps -> contains -> Step 6: Refactor [EXTRACTED]
+- TDD Workflow Steps -> contains -> Step 7: Verify Coverage [EXTRACTED]
+- Test Coverage Verification -> contains -> Run Coverage Report [EXTRACTED]
+- Test Coverage Verification -> contains -> Coverage Thresholds [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> When to Activate [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Core Principles [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> TDD Workflow Steps [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Testing Patterns [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Test File Organization [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Mocking External Services [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Test Coverage Verification [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Common Testing Mistakes to Avoid [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Continuous Testing [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Best Practices [EXTRACTED]
+- Test-Driven Development Workflow -> contains -> Success Metrics [EXTRACTED]
+- Testing Patterns -> contains -> Unit Test Pattern (Jest/Vitest) [EXTRACTED]
+- Testing Patterns -> contains -> API Integration Test Pattern [EXTRACTED]
+- Testing Patterns -> contains -> E2E Test Pattern (Playwright) [EXTRACTED]
+- Unit Test Pattern (Jest/Vitest) -> has_code_example -> typescript [EXTRACTED]
+- Watch Mode During Development -> has_code_example -> bash [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 typescript, Test-Driven Development Workflow, TDD Workflow Steps를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 SKILL.md이다.

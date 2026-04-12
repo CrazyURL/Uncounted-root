@@ -1,0 +1,120 @@
+# GEMINI.md — Uncounted Client & MCP 서버 사용 가이드
+Cohesion: 0.07 | Nodes: 28
+
+## Key Nodes
+- **GEMINI.md — Uncounted Client** (uncounted-app/GEMINI.md) -- 8 connections
+  - -> contains -> [[gemini-cli]]
+  - -> contains -> [[mcp]]
+  - -> contains -> [[stt-android-java]]
+  - -> contains -> [[srctypes]]
+  - -> contains -> [[app-srcappapptsx]]
+  - -> contains -> [[srclibcollectorts]]
+  - -> contains -> [[srclib]]
+  - -> contains -> [[localstorage]]
+- **MCP 서버 사용 가이드** (uncounted-app/GEMINI.md) -- 7 connections
+  - -> contains -> [[context7]]
+  - -> contains -> [[exa]]
+  - -> contains -> [[github-github-api]]
+  - -> contains -> [[fetch-http]]
+  - -> contains -> [[jina-reader]]
+  - -> contains -> [[oauth]]
+  - <- contains <- [[geminimd-uncounted-client]]
+- **핵심 라이브러리 모듈 (`src/lib/`)** (uncounted-app/GEMINI.md) -- 7 connections
+  - -> contains -> [[stt]]
+  - -> contains -> [[srclibautolabel]]
+  - -> contains -> [[pii]]
+  - -> contains -> [[api-srclibapi]]
+  - -> contains -> [[js-vite]]
+  - -> contains -> [[android-localproperties]]
+  - <- contains <- [[geminimd-uncounted-client]]
+- **네이티브 STT 파이프라인 (Android Java)** (uncounted-app/GEMINI.md) -- 4 connections
+  - -> contains -> [[java-androidappsrcmainjavacomuncountedapp]]
+  - -> contains -> [[stt-onnx]]
+  - -> contains -> [[capacitor-js]]
+  - <- contains <- [[geminimd-uncounted-client]]
+- **localStorage 키** (uncounted-app/GEMINI.md) -- 3 connections
+  - -> has_code_example -> [[bash]]
+  - -> contains -> [[android]]
+  - <- contains <- [[geminimd-uncounted-client]]
+- **Session (`session.ts`)** (uncounted-app/GEMINI.md) -- 2 connections
+  - -> has_code_example -> [[ts]]
+  - <- contains <- [[srctypes]]
+- **핵심 타입 (`src/types/`)** (uncounted-app/GEMINI.md) -- 2 connections
+  - -> contains -> [[session-sessionts]]
+  - <- contains <- [[geminimd-uncounted-client]]
+- **bash** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- has_code_example <- [[localstorage]]
+- **ts** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- has_code_example <- [[session-sessionts]]
+- **Android 환경 분리 구조** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[localstorage]]
+- **Android 네이티브 (`local.properties`)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[srclib]]
+- **API 클라이언트 (`src/lib/api/`)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[srclib]]
+- **App 초기화 컴포넌트 (`src/app/App.tsx`)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[geminimd-uncounted-client]]
+- **Capacitor 이벤트 (네이티브 → JS)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[stt-android-java]]
+- **context7 — 라이브러리 문서 조회** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[mcp]]
+- **exa — 웹 검색** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[mcp]]
+- **fetch — HTTP 요청** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[mcp]]
+- **Gemini CLI 도구 매핑** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[geminimd-uncounted-client]]
+- **github — GitHub API** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[mcp]]
+- **네이티브 Java 패키지 구조 (`android/app/src/main/java/com/uncounted/app/`)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[stt-android-java]]
+- **jina-reader — 웹 콘텐츠 파싱** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[mcp]]
+- **JS (Vite)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[srclib]]
+- **OAuth 플로우 (네이티브)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[mcp]]
+- **PII + 프라이버시** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[srclib]]
+- **메타데이터 컬렉터 (`src/lib/*Collector.ts`)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[geminimd-uncounted-client]]
+- **라벨링 (`src/lib/autoLabel/`)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[srclib]]
+- **STT/음성 처리** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[srclib]]
+- **STT 모델 (ONNX)** (uncounted-app/GEMINI.md) -- 1 connections
+  - <- contains <- [[stt-android-java]]
+
+## Internal Relationships
+- GEMINI.md — Uncounted Client -> contains -> Gemini CLI 도구 매핑 [EXTRACTED]
+- GEMINI.md — Uncounted Client -> contains -> MCP 서버 사용 가이드 [EXTRACTED]
+- GEMINI.md — Uncounted Client -> contains -> 네이티브 STT 파이프라인 (Android Java) [EXTRACTED]
+- GEMINI.md — Uncounted Client -> contains -> 핵심 타입 (`src/types/`) [EXTRACTED]
+- GEMINI.md — Uncounted Client -> contains -> App 초기화 컴포넌트 (`src/app/App.tsx`) [EXTRACTED]
+- GEMINI.md — Uncounted Client -> contains -> 메타데이터 컬렉터 (`src/lib/*Collector.ts`) [EXTRACTED]
+- GEMINI.md — Uncounted Client -> contains -> 핵심 라이브러리 모듈 (`src/lib/`) [EXTRACTED]
+- GEMINI.md — Uncounted Client -> contains -> localStorage 키 [EXTRACTED]
+- localStorage 키 -> has_code_example -> bash [EXTRACTED]
+- localStorage 키 -> contains -> Android 환경 분리 구조 [EXTRACTED]
+- MCP 서버 사용 가이드 -> contains -> context7 — 라이브러리 문서 조회 [EXTRACTED]
+- MCP 서버 사용 가이드 -> contains -> exa — 웹 검색 [EXTRACTED]
+- MCP 서버 사용 가이드 -> contains -> github — GitHub API [EXTRACTED]
+- MCP 서버 사용 가이드 -> contains -> fetch — HTTP 요청 [EXTRACTED]
+- MCP 서버 사용 가이드 -> contains -> jina-reader — 웹 콘텐츠 파싱 [EXTRACTED]
+- MCP 서버 사용 가이드 -> contains -> OAuth 플로우 (네이티브) [EXTRACTED]
+- Session (`session.ts`) -> has_code_example -> ts [EXTRACTED]
+- 핵심 라이브러리 모듈 (`src/lib/`) -> contains -> STT/음성 처리 [EXTRACTED]
+- 핵심 라이브러리 모듈 (`src/lib/`) -> contains -> 라벨링 (`src/lib/autoLabel/`) [EXTRACTED]
+- 핵심 라이브러리 모듈 (`src/lib/`) -> contains -> PII + 프라이버시 [EXTRACTED]
+- 핵심 라이브러리 모듈 (`src/lib/`) -> contains -> API 클라이언트 (`src/lib/api/`) [EXTRACTED]
+- 핵심 라이브러리 모듈 (`src/lib/`) -> contains -> JS (Vite) [EXTRACTED]
+- 핵심 라이브러리 모듈 (`src/lib/`) -> contains -> Android 네이티브 (`local.properties`) [EXTRACTED]
+- 핵심 타입 (`src/types/`) -> contains -> Session (`session.ts`) [EXTRACTED]
+- 네이티브 STT 파이프라인 (Android Java) -> contains -> 네이티브 Java 패키지 구조 (`android/app/src/main/java/com/uncounted/app/`) [EXTRACTED]
+- 네이티브 STT 파이프라인 (Android Java) -> contains -> STT 모델 (ONNX) [EXTRACTED]
+- 네이티브 STT 파이프라인 (Android Java) -> contains -> Capacitor 이벤트 (네이티브 → JS) [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 GEMINI.md — Uncounted Client, MCP 서버 사용 가이드, 핵심 라이브러리 모듈 (`src/lib/`)를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 GEMINI.md이다.

@@ -1,0 +1,1050 @@
+# __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ & __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_
+Cohesion: 0.02 | Nodes: 176
+
+## Key Nodes
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__js_** () -- 41 connections
+  - <- imports <- [[crypto]]
+  - <- imports <- [[piimaskingeditor]]
+  - <- imports <- [[crypto]]
+  - <- imports <- [[dev]]
+  - <- imports <- [[index]]
+  - <- imports <- [[middleware]]
+  - <- imports <- [[ffmpegprocessortest]]
+  - <- imports <- [[downloadservice]]
+  - <- imports <- [[qualitymetricsrepository]]
+  - <- imports <- [[packagebuilder]]
+  - <- imports <- [[utterancesegmentationservice]]
+  - <- imports <- [[qualitymetricsservice]]
+  - <- imports <- [[metadatapackagebuilder]]
+  - <- imports <- [[utterancerepository]]
+  - <- imports <- [[packagebuildertest]]
+  - <- imports <- [[qualitymetricsservicetest]]
+  - <- imports <- [[utterancesegmentationservicetest]]
+  - <- imports <- [[metadatarepository]]
+  - <- imports <- [[poolingservicetest]]
+  - <- imports <- [[piimasksyncservice]]
+  - <- imports <- [[poolingservice]]
+  - <- imports <- [[piimasksyncservicetest]]
+  - <- imports <- [[inventoryservice]]
+  - <- imports <- [[admin-utterances]]
+  - <- imports <- [[sessions-helpers]]
+  - <- imports <- [[storage]]
+  - <- imports <- [[admin]]
+  - <- imports <- [[sessionstest]]
+  - <- imports <- [[admin-ledger]]
+  - <- imports <- [[admin-exports]]
+  - <- imports <- [[admin-utterances-helperstest]]
+  - <- imports <- [[admin-metadata]]
+  - <- imports <- [[voiceprofiletest]]
+  - <- imports <- [[sessionchunks]]
+  - <- imports <- [[transcripts]]
+  - <- imports <- [[upload]]
+  - <- imports <- [[transcriptchunks]]
+  - <- imports <- [[user]]
+  - <- imports <- [[sessions]]
+  - <- imports <- [[auth]]
+  - <- imports <- [[logging]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_** () -- 29 connections
+  - <- imports <- [[sessiondeduptest]]
+  - <- imports <- [[autoscaneventtest]]
+  - <- imports <- [[audiodedupetest]]
+  - <- imports <- [[audiosanitizertest]]
+  - <- imports <- [[deviceidtest]]
+  - <- imports <- [[audiodecoderbridgetest]]
+  - <- imports <- [[authtest]]
+  - <- imports <- [[audioscannertest]]
+  - <- imports <- [[onnxmodelchecksumtest]]
+  - <- imports <- [[audiofileloadertest]]
+  - <- imports <- [[securekeystoretest]]
+  - <- imports <- [[audioenvironmentcollectortest]]
+  - <- imports <- [[tutorialstoretest]]
+  - <- imports <- [[clienttest]]
+  - <- imports <- [[onboardingpagetest]]
+  - <- imports <- [[guidedonboardingpagetest]]
+  - <- imports <- [[ffmpegprocessortest]]
+  - <- imports <- [[packagebuildertest]]
+  - <- imports <- [[qualitymetricsservicetest]]
+  - <- imports <- [[utterancesegmentationservicetest]]
+  - <- imports <- [[poolingservicetest]]
+  - <- imports <- [[piimasksyncservicetest]]
+  - <- imports <- [[sessionstest]]
+  - <- imports <- [[loggingtest]]
+  - <- imports <- [[admin-utterances-helperstest]]
+  - <- imports <- [[errorhandlertest]]
+  - <- imports <- [[voiceprofiletest]]
+  - <- imports <- [[sessionchunkstest]]
+  - <- imports <- [[sessions-helperstest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___hono_** () -- 21 connections
+  - <- imports <- [[types]]
+  - <- imports <- [[index]]
+  - <- imports <- [[middleware]]
+  - <- imports <- [[admin-utterances]]
+  - <- imports <- [[storage]]
+  - <- imports <- [[admin]]
+  - <- imports <- [[admin-ledger]]
+  - <- imports <- [[loggingtest]]
+  - <- imports <- [[admin-exports]]
+  - <- imports <- [[errorhandlertest]]
+  - <- imports <- [[admin-metadata]]
+  - <- imports <- [[voiceprofiletest]]
+  - <- imports <- [[sessionchunks]]
+  - <- imports <- [[transcripts]]
+  - <- imports <- [[upload]]
+  - <- imports <- [[sessionchunkstest]]
+  - <- imports <- [[transcriptchunks]]
+  - <- imports <- [[user]]
+  - <- imports <- [[sessions]]
+  - <- imports <- [[auth]]
+  - <- imports <- [[logging]]
+- **utteranceSegmentationService** (uncounted-api/src/lib/export/utteranceSegmentationService.ts) -- 12 connections
+  - -> contains -> [[buildutterances3key]]
+  - -> contains -> [[downloadfroms3]]
+  - -> contains -> [[readfileasbuffer]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreffs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreffspromises]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcrypto]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefstream]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefstreampromises]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefawssdkclients3]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **generate** (uncounted-app/scripts/generate-icons.mjs) -- 12 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefforegroundsvg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftofile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpng]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresize]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsharp]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffrom]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflaunchersvg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflog]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefroundsvg]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsplashsvg]]
+  - <- contains <- [[generate-icons]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_client_s3_** () -- 10 connections
+  - <- imports <- [[set-cors]]
+  - <- imports <- [[download-dev-audio]]
+  - <- imports <- [[verify-migration]]
+  - <- imports <- [[migrate-storage]]
+  - <- imports <- [[s3]]
+  - <- imports <- [[packagebuilder]]
+  - <- imports <- [[utterancesegmentationservice]]
+  - <- imports <- [[qualitymetricsservice]]
+  - <- imports <- [[piimasksyncservice]]
+  - <- imports <- [[admin-utterances]]
+- **qualityMetricsService** (uncounted-api/src/lib/export/qualityMetricsService.ts) -- 10 connections
+  - -> contains -> [[computequalitygrade]]
+  - -> contains -> [[computequalityscore]]
+  - -> contains -> [[downloadwavtotemp]]
+  - -> contains -> [[cleanuptemp]]
+  - -> contains -> [[aggregateclientmetrics]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreffspromises]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefawssdkclients3]]
+- **createTestWav** (uncounted-api/src/lib/audio/ffmpegProcessor.test.ts) -- 9 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffloor]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefalloc]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwrite]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwriteuint32le]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwriteuint16le]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwriteint16le]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefround]]
+  - <- contains <- [[ffmpegprocessortest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___path_** () -- 8 connections
+  - <- imports <- [[generate-icons]]
+  - <- imports <- [[reset-all]]
+  - <- imports <- [[purgedevstorage]]
+  - <- imports <- [[ffmpegprocessortest]]
+  - <- imports <- [[utterancesegmentationservice]]
+  - <- imports <- [[qualitymetricsservice]]
+  - <- imports <- [[piimasksyncservice]]
+  - <- imports <- [[admin-utterances]]
+- **download-dev-audio** (uncounted-api/scripts/download-dev-audio.ts) -- 8 connections
+  - -> contains -> [[getarg]]
+  - -> contains -> [[listallobjects]]
+  - -> contains -> [[downloadobject]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefawssdkclients3]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefnodestream]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefnodestreampromises]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefnodefs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefnodepath]]
+- **createToneSilenceWav** (uncounted-api/src/lib/audio/ffmpegProcessor.test.ts) -- 8 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefalloc]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwrite]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwriteuint32le]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwriteuint16le]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwriteint16le]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefround]]
+  - <- contains <- [[ffmpegprocessortest]]
+- **admin-utterances** (uncounted-api/src/routes/admin-utterances.ts) -- 8 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreffspromises]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefawssdkclients3]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefchildprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefutil]]
+- **generate-icons** (uncounted-app/scripts/generate-icons.mjs) -- 8 connections
+  - -> contains -> [[launchersvg]]
+  - -> contains -> [[roundsvg]]
+  - -> contains -> [[foregroundsvg]]
+  - -> contains -> [[splashsvg]]
+  - -> contains -> [[generate]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsharp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreffs]]
+- **ffmpegProcessor.test** (uncounted-api/src/lib/audio/ffmpegProcessor.test.ts) -- 7 connections
+  - -> contains -> [[createtestwav]]
+  - -> contains -> [[createtonesilencewav]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreffs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **auth** (uncounted-api/src/routes/auth.ts) -- 7 connections
+  - -> contains -> [[extractuseridfromjwt]]
+  - -> contains -> [[setauthcookies]]
+  - -> contains -> [[clearauthcookies]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhonocookie]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcrypto]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__charcodeat** () -- 6 connections
+  - <- calls <- [[legacyhashsessionid]]
+  - <- calls <- [[getorcreateaeskey]]
+  - <- calls <- [[writestring]]
+  - <- calls <- [[writestring]]
+  - <- calls <- [[getorcreateaeskey]]
+  - <- calls <- [[writestring]]
+- **downloadObject** (uncounted-api/scripts/download-dev-audio.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmkdirsync]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdirname]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcreatewritestream]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpipeline]]
+  - <- contains <- [[download-dev-audio]]
+- **createApp** (uncounted-api/src/routes/logging.test.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefuse]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefroute]]
+  - <- contains <- [[loggingtest]]
+- **reset-all** (uncounted-app/scripts/reset-all.mjs) -- 6 connections
+  - -> contains -> [[loadenv]]
+  - -> contains -> [[clearsupabase]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreffs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefurl]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsupabasesupabasejs]]
+- **onnxModelChecksum.test** (uncounted-app/src/lib/onnxModelChecksum.test.ts) -- 6 connections
+  - -> contains -> [[computesha256]]
+  - -> contains -> [[extracthashfromjava]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefnodechildprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefnodefs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefnodepath]]
+- **GradeDonut** (uncounted-app/src/pages/RefineryPage.tsx) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcos]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpush]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmap]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefarc]]
+  - <- contains <- [[refinerypage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____supabase_supabase_js_** () -- 5 connections
+  - <- imports <- [[reset-all]]
+  - <- imports <- [[migrate-session-ids]]
+  - <- imports <- [[dedup-sessions]]
+  - <- imports <- [[reset-consent-to-private]]
+  - <- imports <- [[supabase]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___os_** () -- 5 connections
+  - <- imports <- [[ffmpegprocessortest]]
+  - <- imports <- [[utterancesegmentationservice]]
+  - <- imports <- [[qualitymetricsservice]]
+  - <- imports <- [[piimasksyncservice]]
+  - <- imports <- [[admin-utterances]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__next** () -- 5 connections
+  - <- calls <- [[cmdimport]]
+  - <- calls <- [[promotespecific]]
+  - <- calls <- [[createapp]]
+  - <- calls <- [[createapp]]
+  - <- calls <- [[createapp]]
+- **index** (uncounted-api/src/index.ts) -- 5 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhonocors]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhonologger]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhonoswaggerui]]
+- **mockQueryChain** (uncounted-api/src/lib/export/poolingService.test.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefincludes]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmockreturnvalue]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffn]]
+  - <- contains <- [[poolingservicetest]]
+- **admin** (uncounted-api/src/routes/admin.ts) -- 5 connections
+  - -> contains -> [[sessionfromrow]]
+  - -> contains -> [[fetchutterancelabelsforsessions]]
+  - -> contains -> [[applysessionfilters]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **createApp** (uncounted-api/src/routes/sessionChunks.test.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefuse]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefroute]]
+  - <- contains <- [[sessionchunkstest]]
+- **createChainMock** (uncounted-api/src/routes/sessionChunks.test.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmockupdate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmockeq]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmockis]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefresolve]]
+  - <- contains <- [[sessionchunkstest]]
+- **createApp** (uncounted-api/src/routes/voiceProfile.test.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefuse]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefroute]]
+  - <- contains <- [[voiceprofiletest]]
+- **clearSupabase** (uncounted-app/scripts/reset-all.mjs) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflog]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefneq]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdelete]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffrom]]
+  - <- contains <- [[reset-all]]
+- **legacyHashSessionId** (uncounted-app/src/lib/sessionId.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcharcodeat]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpadstart]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftostring]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefabs]]
+  - <- contains <- [[sessionid]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___fs_** () -- 4 connections
+  - <- imports <- [[generate-icons]]
+  - <- imports <- [[reset-all]]
+  - <- imports <- [[ffmpegprocessortest]]
+  - <- imports <- [[utterancesegmentationservice]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___fs_promises_** () -- 4 connections
+  - <- imports <- [[utterancesegmentationservice]]
+  - <- imports <- [[qualitymetricsservice]]
+  - <- imports <- [[piimasksyncservice]]
+  - <- imports <- [[admin-utterances]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___securekeystore_** () -- 4 connections
+  - <- imports <- [[uploadqueue]]
+  - <- imports <- [[authtest]]
+  - <- imports <- [[securekeystoretest]]
+  - <- imports <- [[auth]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__sin** () -- 4 connections
+  - <- calls <- [[gradedonut]]
+  - <- calls <- [[sine]]
+  - <- calls <- [[createtestwav]]
+  - <- calls <- [[createtonesilencewav]]
+- **set-cors** (uncounted-api/scripts/set-cors.ts) -- 4 connections
+  - -> contains -> [[setcors]]
+  - -> contains -> [[main]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefawssdkclients3]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefdotenv]]
+- **main** (uncounted-api/scripts/set-cors.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflog]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetcors]]
+  - <- contains <- [[set-cors]]
+- **metadataRepository** (uncounted-api/src/lib/export/metadataRepository.ts) -- 4 connections
+  - -> contains -> [[datetodayofweek]]
+  - -> contains -> [[getdistributionkeys]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcrypto]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **dateToDayOfWeek** (uncounted-api/src/lib/export/metadataRepository.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefisnan]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgettime]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetday]]
+  - <- contains <- [[metadatarepository]]
+- **poolingService.test** (uncounted-api/src/lib/export/poolingService.test.ts) -- 4 connections
+  - -> contains -> [[mockbu]]
+  - -> contains -> [[mockquerychain]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **downloadFromS3** (uncounted-api/src/lib/export/utteranceSegmentationService.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcreatewritestream]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpipeline]]
+  - <- contains <- [[utterancesegmentationservice]]
+- **middleware** (uncounted-api/src/lib/middleware.ts) -- 4 connections
+  - -> contains -> [[truncatearrays]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhonocookie]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **logging.test** (uncounted-api/src/routes/logging.test.ts) -- 4 connections
+  - -> contains -> [[createapp]]
+  - -> contains -> [[makerequest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+- **sessionChunks.test** (uncounted-api/src/routes/sessionChunks.test.ts) -- 4 connections
+  - -> contains -> [[createchainmock]]
+  - -> contains -> [[createapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+- **voiceProfile.test** (uncounted-api/src/routes/voiceProfile.test.ts) -- 4 connections
+  - -> contains -> [[createapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+- **sessionId** (uncounted-app/src/lib/sessionId.ts) -- 4 connections
+  - -> contains -> [[legacyhashsessionid]]
+  - -> contains -> [[hextobytes]]
+  - -> contains -> [[bytestohex]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefdeviceid]]
+- **to_wav_bytes** (uncounted-voice-api/app/services/audio_splitter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefbytesio]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefwrite]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetvalue]]
+  - <- contains <- [[audiosplitter]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___dotenv_** () -- 3 connections
+  - <- imports <- [[capacitorconfig]]
+  - <- imports <- [[set-cors]]
+  - <- imports <- [[purgedevstorage]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__route** () -- 3 connections
+  - <- calls <- [[createapp]]
+  - <- calls <- [[createapp]]
+  - <- calls <- [[createapp]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setuint8** () -- 3 connections
+  - <- calls <- [[writestring]]
+  - <- calls <- [[writestring]]
+  - <- calls <- [[writestring]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__use** () -- 3 connections
+  - <- calls <- [[createapp]]
+  - <- calls <- [[createapp]]
+  - <- calls <- [[createapp]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__write** () -- 3 connections
+  - <- calls <- [[towavbytes]]
+  - <- calls <- [[createtestwav]]
+  - <- calls <- [[createtonesilencewav]]
+- **writeString** (.orchestrate-consult/20260327-210056/wavEncoder.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetuint8]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcharcodeat]]
+  - <- contains <- [[wavencoder]]
+- **writeString** (uncounted-admin/src/lib/wavEncoder.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetuint8]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcharcodeat]]
+  - <- contains <- [[wavencoder]]
+- **dev** (uncounted-api/src/dev.ts) -- 3 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefdotenvconfig]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhononodeserver]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **poolingService** (uncounted-api/src/lib/export/poolingService.ts) -- 3 connections
+  - -> contains -> [[fetcheligiblebus]]
+  - -> contains -> [[applyqualitygate]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **admin-exports** (uncounted-api/src/routes/admin-exports.ts) -- 3 connections
+  - -> contains -> [[billableunitfromrow]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **billableUnitFromRow** (uncounted-api/src/routes/admin-exports.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefencryptid]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnumber]]
+  - <- contains <- [[admin-exports]]
+- **admin-metadata** (uncounted-api/src/routes/admin-metadata.ts) -- 3 connections
+  - -> contains -> [[metadataexportbody]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **audioSanitizer.test** (uncounted-app/src/lib/audioSanitizer.test.ts) -- 3 connections
+  - -> contains -> [[makemetrics]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefaudiosanitizer]]
+- **auth.test** (uncounted-app/src/lib/auth.test.ts) -- 3 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefauth]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsecurekeystore]]
+- **writeString** (uncounted-app/src/lib/wavEncoder.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetuint8]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcharcodeat]]
+  - <- contains <- [[wavencoder]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___audiofileloader_** () -- 2 connections
+  - <- imports <- [[audiofileloadertest]]
+  - <- imports <- [[embeddingextractor]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___autoscanevent_** () -- 2 connections
+  - <- imports <- [[autoscanonlaunch]]
+  - <- imports <- [[autoscaneventtest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___deviceid_** () -- 2 connections
+  - <- imports <- [[sessionid]]
+  - <- imports <- [[deviceidtest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___hono_cookie_** () -- 2 connections
+  - <- imports <- [[middleware]]
+  - <- imports <- [[auth]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___node_fs_** () -- 2 connections
+  - <- imports <- [[onnxmodelchecksumtest]]
+  - <- imports <- [[download-dev-audio]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___node_path_** () -- 2 connections
+  - <- imports <- [[onnxmodelchecksumtest]]
+  - <- imports <- [[download-dev-audio]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__alloc** () -- 2 connections
+  - <- calls <- [[createtestwav]]
+  - <- calls <- [[createtonesilencewav]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__createwritestream** () -- 2 connections
+  - <- calls <- [[downloadobject]]
+  - <- calls <- [[downloadfroms3]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__encryptid** () -- 2 connections
+  - <- calls <- [[sessionfromrow]]
+  - <- calls <- [[billableunitfromrow]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__pipeline** () -- 2 connections
+  - <- calls <- [[downloadobject]]
+  - <- calls <- [[downloadfroms3]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__tofile** () -- 2 connections
+  - <- calls <- [[generate]]
+  - <- calls <- [[denoise]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__writeint16le** () -- 2 connections
+  - <- calls <- [[createtestwav]]
+  - <- calls <- [[createtonesilencewav]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__writeuint16le** () -- 2 connections
+  - <- calls <- [[createtestwav]]
+  - <- calls <- [[createtonesilencewav]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__writeuint32le** () -- 2 connections
+  - <- calls <- [[createtestwav]]
+  - <- calls <- [[createtonesilencewav]]
+- **getArg** (uncounted-api/scripts/download-dev-audio.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefindexof]]
+  - <- contains <- [[download-dev-audio]]
+- **inventoryService** (uncounted-api/src/lib/export/inventoryService.ts) -- 2 connections
+  - -> contains -> [[skufilter]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **packageBuilder.test** (uncounted-api/src/lib/export/packageBuilder.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **piiMaskSyncService.test** (uncounted-api/src/lib/export/piiMaskSyncService.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **applyQualityGate** (uncounted-api/src/lib/export/poolingService.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreffilter]]
+  - <- contains <- [[poolingservice]]
+- **qualityMetricsService.test** (uncounted-api/src/lib/export/qualityMetricsService.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **cleanupTemp** (uncounted-api/src/lib/export/qualityMetricsService.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunlink]]
+  - <- contains <- [[qualitymetricsservice]]
+- **utteranceSegmentationService.test** (uncounted-api/src/lib/export/utteranceSegmentationService.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **s3** (uncounted-api/src/lib/s3.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefawssdkclients3]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefawssdks3requestpresigner]]
+- **admin-ledger** (uncounted-api/src/routes/admin-ledger.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **sessionFromRow** (uncounted-api/src/routes/admin.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefencryptid]]
+  - <- contains <- [[admin]]
+- **admin-utterances-helpers.test** (uncounted-api/src/routes/admin-utterances-helpers.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **clearAuthCookies** (uncounted-api/src/routes/auth.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefdeletecookie]]
+  - <- contains <- [[auth]]
+- **setAuthCookies** (uncounted-api/src/routes/auth.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetcookie]]
+  - <- contains <- [[auth]]
+- **errorHandler.test** (uncounted-api/src/routes/errorHandler.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+- **makeRequest** (uncounted-api/src/routes/logging.test.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstringify]]
+  - <- contains <- [[loggingtest]]
+- **logging** (uncounted-api/src/routes/logging.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **sessionChunks** (uncounted-api/src/routes/sessionChunks.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **sessions-helpers.test** (uncounted-api/src/routes/sessions-helpers.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsessionshelpers]]
+- **sessions.test** (uncounted-api/src/routes/sessions.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **sessions** (uncounted-api/src/routes/sessions.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **storage** (uncounted-api/src/routes/storage.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **transcriptChunks** (uncounted-api/src/routes/transcriptChunks.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **transcripts** (uncounted-api/src/routes/transcripts.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **upload** (uncounted-api/src/routes/upload.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **user** (uncounted-api/src/routes/user.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **capacitor.config** (uncounted-app/capacitor.config.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefcapacitorcli]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefdotenv]]
+- **foregroundSvg** (uncounted-app/scripts/generate-icons.mjs) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[generate-icons]]
+- **launcherSvg** (uncounted-app/scripts/generate-icons.mjs) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[generate-icons]]
+- **roundSvg** (uncounted-app/scripts/generate-icons.mjs) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[generate-icons]]
+- **autoScanEvent.test** (uncounted-app/src/app/bootstrap/autoScanEvent.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefautoscanevent]]
+- **client.test** (uncounted-app/src/lib/api/client.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefclient]]
+- **audioDedupe.test** (uncounted-app/src/lib/audioDedupe.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefaudiodedupe]]
+- **audioFileLoader.test** (uncounted-app/src/lib/audioFileLoader.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefaudiofileloader]]
+- **audioScanner.test** (uncounted-app/src/lib/audioScanner.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefaudioscanner]]
+- **deviceId.test** (uncounted-app/src/lib/deviceId.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefdeviceid]]
+- **secureKeyStore.test** (uncounted-app/src/lib/secureKeyStore.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsecurekeystore]]
+- **tutorialStore.test** (uncounted-app/src/lib/tutorialStore.test.ts) -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedreftutorialstore]]
+- **GuidedOnboardingPage.test** (uncounted-app/src/pages/GuidedOnboardingPage.test.ts) -- 2 connections
+  - -> contains -> [[runscanlogic]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
+- **runScanLogic** (uncounted-app/src/pages/GuidedOnboardingPage.test.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefscanaudio]]
+  - <- contains <- [[guidedonboardingpagetest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_s3_request_presigner_** () -- 1 connections
+  - <- imports <- [[s3]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____capacitor_cli_** () -- 1 connections
+  - <- imports <- [[capacitorconfig]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____hono_node_server_** () -- 1 connections
+  - <- imports <- [[dev]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____hono_swagger_ui_** () -- 1 connections
+  - <- imports <- [[index]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___audiodedupe_** () -- 1 connections
+  - <- imports <- [[audiodedupetest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___audiosanitizer_** () -- 1 connections
+  - <- imports <- [[audiosanitizertest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___audioscanner_** () -- 1 connections
+  - <- imports <- [[audioscannertest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___child_process_** () -- 1 connections
+  - <- imports <- [[admin-utterances]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___dotenv_config_** () -- 1 connections
+  - <- imports <- [[dev]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___hono_cors_** () -- 1 connections
+  - <- imports <- [[index]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___hono_logger_** () -- 1 connections
+  - <- imports <- [[index]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___node_child_process_** () -- 1 connections
+  - <- imports <- [[onnxmodelchecksumtest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___node_stream_** () -- 1 connections
+  - <- imports <- [[download-dev-audio]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___node_stream_promises_** () -- 1 connections
+  - <- imports <- [[download-dev-audio]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___sessions_helpers_** () -- 1 connections
+  - <- imports <- [[sessions-helperstest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___sharp_** () -- 1 connections
+  - <- imports <- [[generate-icons]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___stream_promises_** () -- 1 connections
+  - <- imports <- [[utterancesegmentationservice]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___tutorialstore_** () -- 1 connections
+  - <- imports <- [[tutorialstoretest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___url_** () -- 1 connections
+  - <- imports <- [[reset-all]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref___util_** () -- 1 connections
+  - <- imports <- [[admin-utterances]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__arc** () -- 1 connections
+  - <- calls <- [[gradedonut]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__bytesio** () -- 1 connections
+  - <- calls <- [[towavbytes]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__cos** () -- 1 connections
+  - <- calls <- [[gradedonut]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__deletecookie** () -- 1 connections
+  - <- calls <- [[clearauthcookies]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__foregroundsvg** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getvalue** () -- 1 connections
+  - <- calls <- [[towavbytes]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__launchersvg** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__mkdirsync** () -- 1 connections
+  - <- calls <- [[downloadobject]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__mockeq** () -- 1 connections
+  - <- calls <- [[createchainmock]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__mockis** () -- 1 connections
+  - <- calls <- [[createchainmock]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__mockreturnvalue** () -- 1 connections
+  - <- calls <- [[mockquerychain]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__mockupdate** () -- 1 connections
+  - <- calls <- [[createchainmock]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__neq** () -- 1 connections
+  - <- calls <- [[clearsupabase]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__png** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__resize** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__roundsvg** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__scanaudio** () -- 1 connections
+  - <- calls <- [[runscanlogic]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setcookie** () -- 1 connections
+  - <- calls <- [[setauthcookies]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setcors** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__sharp** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__splashsvg** () -- 1 connections
+  - <- calls <- [[generate]]
+- **wavEncoder** (.orchestrate-consult/20260327-210056/wavEncoder.ts) -- 1 connections
+  - -> contains -> [[writestring]]
+- **crypto** (uncounted-admin/src/lib/crypto.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **wavEncoder** (uncounted-admin/src/lib/wavEncoder.ts) -- 1 connections
+  - -> contains -> [[writestring]]
+- **reset-consent-to-private** (uncounted-api/scripts/reset-consent-to-private.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsupabasesupabasejs]]
+- **downloadService** (uncounted-api/src/lib/export/downloadService.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **SkuFilter** (uncounted-api/src/lib/export/inventoryService.ts) -- 1 connections
+  - <- contains <- [[inventoryservice]]
+- **getDistributionKeys** (uncounted-api/src/lib/export/metadataRepository.ts) -- 1 connections
+  - <- contains <- [[metadatarepository]]
+- **qualityMetricsRepository** (uncounted-api/src/lib/export/qualityMetricsRepository.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **computeQualityGrade** (uncounted-api/src/lib/export/qualityMetricsService.ts) -- 1 connections
+  - <- contains <- [[qualitymetricsservice]]
+- **utteranceRepository** (uncounted-api/src/lib/export/utteranceRepository.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **buildUtteranceS3Key** (uncounted-api/src/lib/export/utteranceSegmentationService.ts) -- 1 connections
+  - <- contains <- [[utterancesegmentationservice]]
+- **supabase** (uncounted-api/src/lib/supabase.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefsupabasesupabasejs]]
+- **MetadataExportBody** (uncounted-api/src/routes/admin-metadata.ts) -- 1 connections
+  - <- contains <- [[admin-metadata]]
+- **sessions-helpers** (uncounted-api/src/routes/sessions-helpers.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **types** (uncounted-api/src/types.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefhono]]
+- **makeMetrics** (uncounted-app/src/lib/audioSanitizer.test.ts) -- 1 connections
+  - <- contains <- [[audiosanitizertest]]
+- **crypto** (uncounted-app/src/lib/crypto.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefjs]]
+- **wavEncoder** (uncounted-app/src/lib/wavEncoder.ts) -- 1 connections
+  - -> contains -> [[writestring]]
+
+## Internal Relationships
+- wavEncoder -> contains -> writeString [EXTRACTED]
+- writeString -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setuint8 [EXTRACTED]
+- writeString -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__charcodeat [EXTRACTED]
+- crypto -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- wavEncoder -> contains -> writeString [EXTRACTED]
+- writeString -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setuint8 [EXTRACTED]
+- writeString -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__charcodeat [EXTRACTED]
+- download-dev-audio -> contains -> getArg [EXTRACTED]
+- download-dev-audio -> contains -> downloadObject [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_client_s3_ [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___node_stream_ [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___node_stream_promises_ [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___node_fs_ [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___node_path_ [EXTRACTED]
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mkdirsync [EXTRACTED]
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__createwritestream [EXTRACTED]
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pipeline [EXTRACTED]
+- reset-consent-to-private -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____supabase_supabase_js_ [EXTRACTED]
+- set-cors -> contains -> main [EXTRACTED]
+- set-cors -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_client_s3_ [EXTRACTED]
+- set-cors -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___dotenv_ [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setcors [EXTRACTED]
+- dev -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___dotenv_config_ [EXTRACTED]
+- dev -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____hono_node_server_ [EXTRACTED]
+- dev -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- index -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- index -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- index -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_cors_ [EXTRACTED]
+- index -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_logger_ [EXTRACTED]
+- index -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____hono_swagger_ui_ [EXTRACTED]
+- ffmpegProcessor.test -> contains -> createTestWav [EXTRACTED]
+- ffmpegProcessor.test -> contains -> createToneSilenceWav [EXTRACTED]
+- ffmpegProcessor.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- ffmpegProcessor.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___fs_ [EXTRACTED]
+- ffmpegProcessor.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___path_ [EXTRACTED]
+- ffmpegProcessor.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___os_ [EXTRACTED]
+- ffmpegProcessor.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- createTestWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__alloc [EXTRACTED]
+- createTestWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__write [EXTRACTED]
+- createTestWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__writeuint32le [EXTRACTED]
+- createTestWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__writeuint16le [EXTRACTED]
+- createTestWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sin [EXTRACTED]
+- createTestWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__writeint16le [EXTRACTED]
+- createToneSilenceWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__alloc [EXTRACTED]
+- createToneSilenceWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__write [EXTRACTED]
+- createToneSilenceWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__writeuint32le [EXTRACTED]
+- createToneSilenceWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__writeuint16le [EXTRACTED]
+- createToneSilenceWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sin [EXTRACTED]
+- createToneSilenceWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__writeint16le [EXTRACTED]
+- downloadService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- inventoryService -> contains -> SkuFilter [EXTRACTED]
+- inventoryService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- metadataRepository -> contains -> dateToDayOfWeek [EXTRACTED]
+- metadataRepository -> contains -> getDistributionKeys [EXTRACTED]
+- metadataRepository -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- packageBuilder.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- packageBuilder.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- piiMaskSyncService.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- piiMaskSyncService.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- poolingService.test -> contains -> mockQueryChain [EXTRACTED]
+- poolingService.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- poolingService.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- mockQueryChain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mockreturnvalue [EXTRACTED]
+- poolingService -> contains -> applyQualityGate [EXTRACTED]
+- poolingService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- qualityMetricsRepository -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- qualityMetricsService.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- qualityMetricsService.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- qualityMetricsService -> contains -> computeQualityGrade [EXTRACTED]
+- qualityMetricsService -> contains -> cleanupTemp [EXTRACTED]
+- qualityMetricsService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___os_ [EXTRACTED]
+- qualityMetricsService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___path_ [EXTRACTED]
+- qualityMetricsService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___fs_promises_ [EXTRACTED]
+- qualityMetricsService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- qualityMetricsService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_client_s3_ [EXTRACTED]
+- utteranceRepository -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- utteranceSegmentationService.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- utteranceSegmentationService.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- utteranceSegmentationService -> contains -> buildUtteranceS3Key [EXTRACTED]
+- utteranceSegmentationService -> contains -> downloadFromS3 [EXTRACTED]
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___fs_ [EXTRACTED]
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___fs_promises_ [EXTRACTED]
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___path_ [EXTRACTED]
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___os_ [EXTRACTED]
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___stream_promises_ [EXTRACTED]
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_client_s3_ [EXTRACTED]
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- downloadFromS3 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__createwritestream [EXTRACTED]
+- downloadFromS3 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pipeline [EXTRACTED]
+- middleware -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- middleware -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_cookie_ [EXTRACTED]
+- middleware -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- s3 -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_client_s3_ [EXTRACTED]
+- s3 -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_s3_request_presigner_ [EXTRACTED]
+- supabase -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____supabase_supabase_js_ [EXTRACTED]
+- admin-exports -> contains -> billableUnitFromRow [EXTRACTED]
+- admin-exports -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- admin-exports -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- billableUnitFromRow -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__encryptid [EXTRACTED]
+- admin-ledger -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- admin-ledger -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- admin-metadata -> contains -> MetadataExportBody [EXTRACTED]
+- admin-metadata -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- admin-metadata -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- admin -> contains -> sessionFromRow [EXTRACTED]
+- admin -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- admin -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- sessionFromRow -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__encryptid [EXTRACTED]
+- admin-utterances-helpers.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- admin-utterances-helpers.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- admin-utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- admin-utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___os_ [EXTRACTED]
+- admin-utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___path_ [EXTRACTED]
+- admin-utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___fs_promises_ [EXTRACTED]
+- admin-utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- admin-utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____aws_sdk_client_s3_ [EXTRACTED]
+- admin-utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___child_process_ [EXTRACTED]
+- admin-utterances -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___util_ [EXTRACTED]
+- auth -> contains -> setAuthCookies [EXTRACTED]
+- auth -> contains -> clearAuthCookies [EXTRACTED]
+- auth -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- auth -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_cookie_ [EXTRACTED]
+- auth -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- clearAuthCookies -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__deletecookie [EXTRACTED]
+- setAuthCookies -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setcookie [EXTRACTED]
+- errorHandler.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- errorHandler.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- logging.test -> contains -> createApp [EXTRACTED]
+- logging.test -> contains -> makeRequest [EXTRACTED]
+- logging.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- logging.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__use [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__next [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__route [EXTRACTED]
+- logging -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- logging -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- sessionChunks.test -> contains -> createChainMock [EXTRACTED]
+- sessionChunks.test -> contains -> createApp [EXTRACTED]
+- sessionChunks.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- sessionChunks.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__use [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__next [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__route [EXTRACTED]
+- createChainMock -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mockupdate [EXTRACTED]
+- createChainMock -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mockeq [EXTRACTED]
+- createChainMock -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__mockis [EXTRACTED]
+- sessionChunks -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- sessionChunks -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- sessions-helpers.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- sessions-helpers.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___sessions_helpers_ [EXTRACTED]
+- sessions-helpers -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- sessions.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- sessions.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- sessions -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- sessions -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- storage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- storage -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- transcriptChunks -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- transcriptChunks -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- transcripts -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- transcripts -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- upload -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- upload -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- user -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- user -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- voiceProfile.test -> contains -> createApp [EXTRACTED]
+- voiceProfile.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- voiceProfile.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- voiceProfile.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__use [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__next [EXTRACTED]
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__route [EXTRACTED]
+- types -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_ [EXTRACTED]
+- capacitor.config -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____capacitor_cli_ [EXTRACTED]
+- capacitor.config -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___dotenv_ [EXTRACTED]
+- generate-icons -> contains -> launcherSvg [EXTRACTED]
+- generate-icons -> contains -> roundSvg [EXTRACTED]
+- generate-icons -> contains -> foregroundSvg [EXTRACTED]
+- generate-icons -> contains -> generate [EXTRACTED]
+- generate-icons -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___sharp_ [EXTRACTED]
+- generate-icons -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___path_ [EXTRACTED]
+- generate-icons -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___fs_ [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__foregroundsvg [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tofile [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__png [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resize [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sharp [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__launchersvg [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__roundsvg [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__splashsvg [EXTRACTED]
+- reset-all -> contains -> clearSupabase [EXTRACTED]
+- reset-all -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___fs_ [EXTRACTED]
+- reset-all -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___path_ [EXTRACTED]
+- reset-all -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___url_ [EXTRACTED]
+- reset-all -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____supabase_supabase_js_ [EXTRACTED]
+- clearSupabase -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__neq [EXTRACTED]
+- autoScanEvent.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- autoScanEvent.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___autoscanevent_ [EXTRACTED]
+- client.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- audioDedupe.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- audioDedupe.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___audiodedupe_ [EXTRACTED]
+- audioFileLoader.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- audioFileLoader.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___audiofileloader_ [EXTRACTED]
+- audioSanitizer.test -> contains -> makeMetrics [EXTRACTED]
+- audioSanitizer.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- audioSanitizer.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___audiosanitizer_ [EXTRACTED]
+- audioScanner.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- audioScanner.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___audioscanner_ [EXTRACTED]
+- auth.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- auth.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___securekeystore_ [EXTRACTED]
+- crypto -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref__js_ [EXTRACTED]
+- deviceId.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- deviceId.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___deviceid_ [EXTRACTED]
+- onnxModelChecksum.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- onnxModelChecksum.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___node_child_process_ [EXTRACTED]
+- onnxModelChecksum.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___node_fs_ [EXTRACTED]
+- onnxModelChecksum.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___node_path_ [EXTRACTED]
+- secureKeyStore.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- secureKeyStore.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___securekeystore_ [EXTRACTED]
+- sessionId -> contains -> legacyHashSessionId [EXTRACTED]
+- sessionId -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___deviceid_ [EXTRACTED]
+- legacyHashSessionId -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__charcodeat [EXTRACTED]
+- tutorialStore.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- tutorialStore.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___tutorialstore_ [EXTRACTED]
+- wavEncoder -> contains -> writeString [EXTRACTED]
+- writeString -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setuint8 [EXTRACTED]
+- writeString -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__charcodeat [EXTRACTED]
+- GuidedOnboardingPage.test -> contains -> runScanLogic [EXTRACTED]
+- GuidedOnboardingPage.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ [EXTRACTED]
+- runScanLogic -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__scanaudio [EXTRACTED]
+- GradeDonut -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__cos [EXTRACTED]
+- GradeDonut -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sin [EXTRACTED]
+- GradeDonut -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__arc [EXTRACTED]
+- to_wav_bytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__bytesio [EXTRACTED]
+- to_wav_bytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__write [EXTRACTED]
+- to_wav_bytes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getvalue [EXTRACTED]
+
+## Cross-Community Connections
+- download-dev-audio -> contains -> listAllObjects (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__send (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__dirname (-> [[createdocument-generatedocx]])
+- getArg -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__indexof (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- set-cors -> contains -> setCors (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__join (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- createTestWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__floor (-> [[unresolvedrefunresolvedrefunresolvedrefmin-unresolvedrefunresolvedrefunresolvedreffloor]])
+- createTestWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- createToneSilenceWav -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- metadataRepository -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___crypto_ (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- dateToDayOfWeek -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__isnan (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- dateToDayOfWeek -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__gettime (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- dateToDayOfWeek -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getday (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- poolingService.test -> contains -> mockBU (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- mockQueryChain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- mockQueryChain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__includes (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- mockQueryChain -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__fn (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
+- poolingService -> contains -> fetchEligibleBUs (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- applyQualityGate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__filter (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- qualityMetricsService -> contains -> computeQualityScore (-> [[unresolvedrefunresolvedrefunresolvedrefmin-unresolvedrefunresolvedrefunresolvedreffloor]])
+- qualityMetricsService -> contains -> downloadWavToTemp (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- qualityMetricsService -> contains -> aggregateClientMetrics (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- cleanupTemp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__unlink (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- utteranceSegmentationService -> contains -> readFileAsBuffer (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefabs]])
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___crypto_ (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- utteranceSegmentationService -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___stream_ (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- downloadFromS3 -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__send (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- middleware -> contains -> truncateArrays (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- billableUnitFromRow -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__number (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- admin -> contains -> fetchUtteranceLabelsForSessions (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- admin -> contains -> applySessionFilters (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- auth -> contains -> extractUserIdFromJwt (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___crypto_ (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- makeRequest -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__stringify (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- createChainMock -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- createApp -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- generate-icons -> contains -> splashSvg (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- foregroundSvg -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__replace (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__join (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__from (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- generate -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- launcherSvg -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__replace (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- roundSvg -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__replace (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- reset-all -> contains -> loadEnv (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- clearSupabase -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__log (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- clearSupabase -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__delete (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefabs]])
+- clearSupabase -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__from (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- client.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___client_ (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
+- auth.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___auth_ (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
+- onnxModelChecksum.test -> contains -> computeSha256 (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- onnxModelChecksum.test -> contains -> extractHashFromJava (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- sessionId -> contains -> hexToBytes (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- sessionId -> contains -> bytesToHex (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- legacyHashSessionId -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__padstart (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- legacyHashSessionId -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tostring (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- legacyHashSessionId -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__abs (-> [[piisessioncard-unresolvedrefunresolvedrefunresolvedrefabs]])
+- GradeDonut -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+- GradeDonut -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefpush-testparseinstinct]])
+
+## Context
+이 커뮤니티는 __unresolved__::ref::__unresolved____ref____unresolved____ref__js_, __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_, __unresolved__::ref::__unresolved____ref____unresolved____ref___hono_를 중심으로 imports 관계로 연결되어 있다. 주요 소스 파일은 GuidedOnboardingPage.test.ts, RefineryPage.tsx, admin-exports.ts, admin-ledger.ts, admin-metadata.ts이다.

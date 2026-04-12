@@ -1,0 +1,378 @@
+# __unresolved__::ref::segment & __unresolved__::ref::_word
+Cohesion: 0.08 | Nodes: 49
+
+## Key Nodes
+- **__unresolved__::ref::segment** () -- 16 connections
+  - <- calls <- [[testemptywordsreturnsempty]]
+  - <- calls <- [[testsingleword]]
+  - <- calls <- [[testcontinuousspeechsamespeaker]]
+  - <- calls <- [[testsplitsonspeakerchange]]
+  - <- calls <- [[testsplitsonsilencegap]]
+  - <- calls <- [[testmergesshortsamespeaker]]
+  - <- calls <- [[testpreservesshortanswer]]
+  - <- calls <- [[testsplitslongutterance]]
+  - <- calls <- [[testshortcontentdifferentspeakerstaysindependent]]
+  - <- calls <- [[testshortcontentsingleworddifferentspeakerstaysindependent]]
+  - <- calls <- [[testshortanswerpreservedasindependent]]
+  - <- calls <- [[testmicrobackchannelbelowshortanswerminmerged]]
+  - <- calls <- [[testthreewordshortcontentstaysindependent]]
+  - <- calls <- [[testappliespadding]]
+  - <- calls <- [[testpaddingclampstozero]]
+  - <- calls <- [[testpaddingclampstoduration]]
+- **__unresolved__::ref::_word** () -- 15 connections
+  - <- calls <- [[testsingleword]]
+  - <- calls <- [[testcontinuousspeechsamespeaker]]
+  - <- calls <- [[testsplitsonspeakerchange]]
+  - <- calls <- [[testsplitsonsilencegap]]
+  - <- calls <- [[testmergesshortsamespeaker]]
+  - <- calls <- [[testpreservesshortanswer]]
+  - <- calls <- [[testsplitslongutterance]]
+  - <- calls <- [[testshortcontentdifferentspeakerstaysindependent]]
+  - <- calls <- [[testshortcontentsingleworddifferentspeakerstaysindependent]]
+  - <- calls <- [[testshortanswerpreservedasindependent]]
+  - <- calls <- [[testmicrobackchannelbelowshortanswerminmerged]]
+  - <- calls <- [[testthreewordshortcontentstaysindependent]]
+  - <- calls <- [[testappliespadding]]
+  - <- calls <- [[testpaddingclampstozero]]
+  - <- calls <- [[testpaddingclampstoduration]]
+- **test_utterance_segmenter** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 10 connections
+  - -> contains -> [[word]]
+  - -> contains -> [[testsegmentbasic]]
+  - -> contains -> [[testspeakerchange]]
+  - -> contains -> [[testsilencegap]]
+  - -> contains -> [[testshortutterancemerge]]
+  - -> contains -> [[testlongutterancesplit]]
+  - -> contains -> [[testcasecbackchannelguard]]
+  - -> contains -> [[testpadding]]
+  - -> imports -> [[unresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefutterancesegmenter]]
+- **test_audio_splitter** (uncounted-voice-api/tests/test_audio_splitter.py) -- 8 connections
+  - -> contains -> [[seg]]
+  - -> contains -> [[testextractspeakeraudio]]
+  - -> contains -> [[testextractutteranceaudio]]
+  - -> contains -> [[testmutenonspeaker]]
+  - -> contains -> [[testtowavbytes]]
+  - -> imports -> [[unresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefaudiosplitter]]
+  - -> imports -> [[unresolvedrefutterancesegmenter]]
+- **test_extracts_single_speaker** (uncounted-voice-api/tests/test_audio_splitter.py) -- 7 connections
+  - -> calls -> [[unresolvedrefones]]
+  - -> calls -> [[unresolvedrefseg]]
+  - -> calls -> [[unresolvedrefextractspeakeraudio]]
+  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefabs]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testextractspeakeraudio]]
+- **__unresolved__::ref::ones** () -- 6 connections
+  - <- calls <- [[forward]]
+  - <- calls <- [[testextractssinglespeaker]]
+  - <- calls <- [[testreturnsnoneforshortduration]]
+  - <- calls <- [[testreturnsnoneformissingspeaker]]
+  - <- calls <- [[testmutesotherspeakers]]
+  - <- calls <- [[testdoesnotmutateoriginal]]
+- **test_mutes_other_speakers** (uncounted-voice-api/tests/test_audio_splitter.py) -- 6 connections
+  - -> calls -> [[unresolvedrefones]]
+  - -> calls -> [[unresolvedrefseg]]
+  - -> calls -> [[unresolvedrefmutenonspeaker]]
+  - -> calls -> [[unresolvedrefall]]
+  - -> calls -> [[unresolvedrefint]]
+  - <- contains <- [[testmutenonspeaker]]
+- **TestCaseCBackchannelGuard** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 6 connections
+  - -> contains -> [[testshortcontentdifferentspeakerstaysindependent]]
+  - -> contains -> [[testshortcontentsingleworddifferentspeakerstaysindependent]]
+  - -> contains -> [[testshortanswerpreservedasindependent]]
+  - -> contains -> [[testmicrobackchannelbelowshortanswerminmerged]]
+  - -> contains -> [[testthreewordshortcontentstaysindependent]]
+  - <- contains <- [[testutterancesegmenter]]
+- **__unresolved__::ref::_seg** () -- 5 connections
+  - <- calls <- [[testextractssinglespeaker]]
+  - <- calls <- [[testreturnsnoneforshortduration]]
+  - <- calls <- [[testreturnsnoneformissingspeaker]]
+  - <- calls <- [[testmutesotherspeakers]]
+  - <- calls <- [[testdoesnotmutateoriginal]]
+- **__unresolved__::ref::pytest** () -- 5 connections
+  - <- imports <- [[testutterancesegmenter]]
+  - <- imports <- [[conftest]]
+  - <- imports <- [[testaudiopreprocessor]]
+  - <- imports <- [[testaudiosplitter]]
+  - <- imports <- [[testparseinstinct]]
+- **__unresolved__::ref::utterance_segmenter** () -- 5 connections
+  - <- imports <- [[testutterancesegmenter]]
+  - <- imports <- [[testaudiosplitter]]
+  - <- imports <- [[sttprocessor]]
+  - <- imports <- [[utterancesegmenter]]
+  - <- imports <- [[audiosplitter]]
+- **test_does_not_mutate_original** (uncounted-voice-api/tests/test_audio_splitter.py) -- 5 connections
+  - -> calls -> [[unresolvedrefones]]
+  - -> calls -> [[unresolvedrefseg]]
+  - -> calls -> [[unresolvedrefmutenonspeaker]]
+  - -> calls -> [[unresolvedrefall]]
+  - <- contains <- [[testmutenonspeaker]]
+- **test_short_content_different_speaker_stays_independent** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefjoin]]
+  - <- contains <- [[testcasecbackchannelguard]]
+- **test_short_content_single_word_different_speaker_stays_independent** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefany]]
+  - <- contains <- [[testcasecbackchannelguard]]
+- **test_three_word_short_content_stays_independent** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 5 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefany]]
+  - <- contains <- [[testcasecbackchannelguard]]
+- **__unresolved__::ref::all** () -- 4 connections
+  - <- calls <- [[testmutesotherspeakers]]
+  - <- calls <- [[testdoesnotmutateoriginal]]
+  - <- calls <- [[isbackchannel]]
+  - <- calls <- [[verifybucket]]
+- **__unresolved__::ref::any** () -- 4 connections
+  - <- calls <- [[testshortcontentsingleworddifferentspeakerstaysindependent]]
+  - <- calls <- [[testthreewordshortcontentstaysindependent]]
+  - <- calls <- [[isshortanswer]]
+  - <- calls <- [[promotespecific]]
+- **conftest** (uncounted-voice-api/tests/conftest.py) -- 4 connections
+  - -> imports -> [[unresolvedrefpytest]]
+  - -> imports -> [[unresolvedreftestclient]]
+  - -> imports -> [[unresolvedrefmain]]
+  - -> imports -> [[unresolvedrefjobstore]]
+- **TestExtractSpeakerAudio** (uncounted-voice-api/tests/test_audio_splitter.py) -- 4 connections
+  - -> contains -> [[testextractssinglespeaker]]
+  - -> contains -> [[testreturnsnoneforshortduration]]
+  - -> contains -> [[testreturnsnoneformissingspeaker]]
+  - <- contains <- [[testaudiosplitter]]
+- **test_returns_none_for_missing_speaker** (uncounted-voice-api/tests/test_audio_splitter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefones]]
+  - -> calls -> [[unresolvedrefseg]]
+  - -> calls -> [[unresolvedrefextractspeakeraudio]]
+  - <- contains <- [[testextractspeakeraudio]]
+- **test_returns_none_for_short_duration** (uncounted-voice-api/tests/test_audio_splitter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefones]]
+  - -> calls -> [[unresolvedrefseg]]
+  - -> calls -> [[unresolvedrefextractspeakeraudio]]
+  - <- contains <- [[testextractspeakeraudio]]
+- **TestPadding** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> contains -> [[testappliespadding]]
+  - -> contains -> [[testpaddingclampstozero]]
+  - -> contains -> [[testpaddingclampstoduration]]
+  - <- contains <- [[testutterancesegmenter]]
+- **TestSegmentBasic** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> contains -> [[testemptywordsreturnsempty]]
+  - -> contains -> [[testsingleword]]
+  - -> contains -> [[testcontinuousspeechsamespeaker]]
+  - <- contains <- [[testutterancesegmenter]]
+- **test_continuous_speech_same_speaker** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testsegmentbasic]]
+- **test_merges_short_same_speaker** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testshortutterancemerge]]
+- **test_micro_backchannel_below_short_answer_min_merged** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testcasecbackchannelguard]]
+- **test_preserves_short_answer** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testshortutterancemerge]]
+- **test_short_answer_preserved_as_independent** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testcasecbackchannelguard]]
+- **test_single_word** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testsegmentbasic]]
+- **test_splits_on_silence_gap** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 4 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testsilencegap]]
+- **__unresolved__::ref::extract_speaker_audio** () -- 3 connections
+  - <- calls <- [[testextractssinglespeaker]]
+  - <- calls <- [[testreturnsnoneforshortduration]]
+  - <- calls <- [[testreturnsnoneformissingspeaker]]
+- **__unresolved__::ref::mute_non_speaker** () -- 3 connections
+  - <- calls <- [[testmutesotherspeakers]]
+  - <- calls <- [[testdoesnotmutateoriginal]]
+  - <- calls <- [[transcribe]]
+- **TestMuteNonSpeaker** (uncounted-voice-api/tests/test_audio_splitter.py) -- 3 connections
+  - -> contains -> [[testmutesotherspeakers]]
+  - -> contains -> [[testdoesnotmutateoriginal]]
+  - <- contains <- [[testaudiosplitter]]
+- **TestShortUtteranceMerge** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+  - -> contains -> [[testmergesshortsamespeaker]]
+  - -> contains -> [[testpreservesshortanswer]]
+  - <- contains <- [[testutterancesegmenter]]
+- **test_applies_padding** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - <- contains <- [[testpadding]]
+- **test_padding_clamps_to_duration** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - <- contains <- [[testpadding]]
+- **test_padding_clamps_to_zero** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - <- contains <- [[testpadding]]
+- **test_splits_on_speaker_change** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 3 connections
+  - -> calls -> [[unresolvedrefword]]
+  - -> calls -> [[unresolvedrefsegment]]
+  - <- contains <- [[testspeakerchange]]
+- **__unresolved__::ref::audio_splitter** () -- 2 connections
+  - <- imports <- [[testaudiosplitter]]
+  - <- imports <- [[sttprocessor]]
+- **TestExtractUtteranceAudio** (uncounted-voice-api/tests/test_audio_splitter.py) -- 2 connections
+  - -> contains -> [[testextractswithpadding]]
+  - <- contains <- [[testaudiosplitter]]
+- **TestLongUtteranceSplit** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
+  - -> contains -> [[testsplitslongutterance]]
+  - <- contains <- [[testutterancesegmenter]]
+- **TestSilenceGap** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
+  - -> contains -> [[testsplitsonsilencegap]]
+  - <- contains <- [[testutterancesegmenter]]
+- **TestSpeakerChange** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
+  - -> contains -> [[testsplitsonspeakerchange]]
+  - <- contains <- [[testutterancesegmenter]]
+- **test_empty_words_returns_empty** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 2 connections
+  - -> calls -> [[unresolvedrefsegment]]
+  - <- contains <- [[testsegmentbasic]]
+- **__unresolved__::ref::main** () -- 1 connections
+  - <- imports <- [[conftest]]
+- **__unresolved__::ref::testclient** () -- 1 connections
+  - <- imports <- [[conftest]]
+- **utterance_segmenter** (uncounted-voice-api/app/utterance_segmenter.py) -- 1 connections
+  - -> imports -> [[unresolvedrefutterancesegmenter]]
+- **_seg** (uncounted-voice-api/tests/test_audio_splitter.py) -- 1 connections
+  - <- contains <- [[testaudiosplitter]]
+- **_word** (uncounted-voice-api/tests/test_utterance_segmenter.py) -- 1 connections
+  - <- contains <- [[testutterancesegmenter]]
+
+## Internal Relationships
+- utterance_segmenter -> imports -> __unresolved__::ref::utterance_segmenter [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::pytest [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::testclient [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::main [EXTRACTED]
+- TestExtractSpeakerAudio -> contains -> test_extracts_single_speaker [EXTRACTED]
+- TestExtractSpeakerAudio -> contains -> test_returns_none_for_short_duration [EXTRACTED]
+- TestExtractSpeakerAudio -> contains -> test_returns_none_for_missing_speaker [EXTRACTED]
+- TestMuteNonSpeaker -> contains -> test_mutes_other_speakers [EXTRACTED]
+- TestMuteNonSpeaker -> contains -> test_does_not_mutate_original [EXTRACTED]
+- test_does_not_mutate_original -> calls -> __unresolved__::ref::ones [EXTRACTED]
+- test_does_not_mutate_original -> calls -> __unresolved__::ref::_seg [EXTRACTED]
+- test_does_not_mutate_original -> calls -> __unresolved__::ref::mute_non_speaker [EXTRACTED]
+- test_does_not_mutate_original -> calls -> __unresolved__::ref::all [EXTRACTED]
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::ones [EXTRACTED]
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::_seg [EXTRACTED]
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::extract_speaker_audio [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::ones [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::_seg [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::mute_non_speaker [EXTRACTED]
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::all [EXTRACTED]
+- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::ones [EXTRACTED]
+- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::_seg [EXTRACTED]
+- test_returns_none_for_missing_speaker -> calls -> __unresolved__::ref::extract_speaker_audio [EXTRACTED]
+- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::ones [EXTRACTED]
+- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::_seg [EXTRACTED]
+- test_returns_none_for_short_duration -> calls -> __unresolved__::ref::extract_speaker_audio [EXTRACTED]
+- test_audio_splitter -> contains -> _seg [EXTRACTED]
+- test_audio_splitter -> contains -> TestExtractSpeakerAudio [EXTRACTED]
+- test_audio_splitter -> contains -> TestExtractUtteranceAudio [EXTRACTED]
+- test_audio_splitter -> contains -> TestMuteNonSpeaker [EXTRACTED]
+- test_audio_splitter -> imports -> __unresolved__::ref::pytest [EXTRACTED]
+- test_audio_splitter -> imports -> __unresolved__::ref::audio_splitter [EXTRACTED]
+- test_audio_splitter -> imports -> __unresolved__::ref::utterance_segmenter [EXTRACTED]
+- TestCaseCBackchannelGuard -> contains -> test_short_content_different_speaker_stays_independent [EXTRACTED]
+- TestCaseCBackchannelGuard -> contains -> test_short_content_single_word_different_speaker_stays_independent [EXTRACTED]
+- TestCaseCBackchannelGuard -> contains -> test_short_answer_preserved_as_independent [EXTRACTED]
+- TestCaseCBackchannelGuard -> contains -> test_micro_backchannel_below_short_answer_min_merged [EXTRACTED]
+- TestCaseCBackchannelGuard -> contains -> test_three_word_short_content_stays_independent [EXTRACTED]
+- TestPadding -> contains -> test_applies_padding [EXTRACTED]
+- TestPadding -> contains -> test_padding_clamps_to_zero [EXTRACTED]
+- TestPadding -> contains -> test_padding_clamps_to_duration [EXTRACTED]
+- TestSegmentBasic -> contains -> test_empty_words_returns_empty [EXTRACTED]
+- TestSegmentBasic -> contains -> test_single_word [EXTRACTED]
+- TestSegmentBasic -> contains -> test_continuous_speech_same_speaker [EXTRACTED]
+- TestShortUtteranceMerge -> contains -> test_merges_short_same_speaker [EXTRACTED]
+- TestShortUtteranceMerge -> contains -> test_preserves_short_answer [EXTRACTED]
+- TestSilenceGap -> contains -> test_splits_on_silence_gap [EXTRACTED]
+- TestSpeakerChange -> contains -> test_splits_on_speaker_change [EXTRACTED]
+- test_applies_padding -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_applies_padding -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_continuous_speech_same_speaker -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_continuous_speech_same_speaker -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_empty_words_returns_empty -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_merges_short_same_speaker -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_merges_short_same_speaker -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_micro_backchannel_below_short_answer_min_merged -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_micro_backchannel_below_short_answer_min_merged -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_padding_clamps_to_duration -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_padding_clamps_to_duration -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_padding_clamps_to_zero -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_padding_clamps_to_zero -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_preserves_short_answer -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_preserves_short_answer -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_short_answer_preserved_as_independent -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_short_answer_preserved_as_independent -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_short_content_different_speaker_stays_independent -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_short_content_different_speaker_stays_independent -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_short_content_single_word_different_speaker_stays_independent -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_short_content_single_word_different_speaker_stays_independent -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_short_content_single_word_different_speaker_stays_independent -> calls -> __unresolved__::ref::any [EXTRACTED]
+- test_single_word -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_single_word -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_splits_on_silence_gap -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_splits_on_silence_gap -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_splits_on_speaker_change -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_splits_on_speaker_change -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_three_word_short_content_stays_independent -> calls -> __unresolved__::ref::_word [EXTRACTED]
+- test_three_word_short_content_stays_independent -> calls -> __unresolved__::ref::segment [EXTRACTED]
+- test_three_word_short_content_stays_independent -> calls -> __unresolved__::ref::any [EXTRACTED]
+- test_utterance_segmenter -> contains -> _word [EXTRACTED]
+- test_utterance_segmenter -> contains -> TestSegmentBasic [EXTRACTED]
+- test_utterance_segmenter -> contains -> TestSpeakerChange [EXTRACTED]
+- test_utterance_segmenter -> contains -> TestSilenceGap [EXTRACTED]
+- test_utterance_segmenter -> contains -> TestShortUtteranceMerge [EXTRACTED]
+- test_utterance_segmenter -> contains -> TestLongUtteranceSplit [EXTRACTED]
+- test_utterance_segmenter -> contains -> TestCaseCBackchannelGuard [EXTRACTED]
+- test_utterance_segmenter -> contains -> TestPadding [EXTRACTED]
+- test_utterance_segmenter -> imports -> __unresolved__::ref::pytest [EXTRACTED]
+- test_utterance_segmenter -> imports -> __unresolved__::ref::utterance_segmenter [EXTRACTED]
+
+## Cross-Community Connections
+- conftest -> imports -> __unresolved__::ref::job_store (-> [[schemas-unresolvedrefbasemodel]])
+- TestExtractUtteranceAudio -> contains -> test_extracts_with_padding (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::int (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::abs (-> [[unresolvedrefresolve-runpiiforall]])
+- test_extracts_single_speaker -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_mutes_other_speakers -> calls -> __unresolved__::ref::int (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_audio_splitter -> contains -> TestToWavBytes (-> [[unresolvedrefsine-testdoesnotmutateinput]])
+- TestLongUtteranceSplit -> contains -> test_splits_long_utterance (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_continuous_speech_same_speaker -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_merges_short_same_speaker -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_micro_backchannel_below_short_answer_min_merged -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_preserves_short_answer -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_short_answer_preserved_as_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_short_content_different_speaker_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_short_content_different_speaker_stays_independent -> calls -> __unresolved__::ref::join (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_short_content_single_word_different_speaker_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_single_word -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_splits_on_silence_gap -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_three_word_short_content_stays_independent -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+
+## Context
+이 커뮤니티는 __unresolved__::ref::segment, __unresolved__::ref::_word, test_utterance_segmenter를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 conftest.py, test_audio_splitter.py, test_utterance_segmenter.py, utterance_segmenter.py이다.

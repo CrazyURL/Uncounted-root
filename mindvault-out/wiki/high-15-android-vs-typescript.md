@@ -1,0 +1,172 @@
+# HIGH (15건) & Android vs TypeScript 로직 불일치 분석
+Cohesion: 0.06 | Nodes: 38
+
+## Key Nodes
+- **HIGH (15건)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 16 connections
+  - -> contains -> [[h1-export]]
+  - -> contains -> [[h2-consolelog-uri]]
+  - -> contains -> [[h3-dos]]
+  - -> contains -> [[h4-js]]
+  - -> contains -> [[h5-mime]]
+  - -> contains -> [[h6-checkwavexists]]
+  - -> contains -> [[h7-onnx-embeddingextractor]]
+  - -> contains -> [[h8-onnx-onnxsttrunner]]
+  - -> contains -> [[h9-wav-chunksize]]
+  - -> contains -> [[h10]]
+  - -> contains -> [[h11]]
+  - -> contains -> [[h12-classifyqualitygrade]]
+  - -> contains -> [[h13-localstorage-poisoning]]
+  - -> contains -> [[h14-audiodedupets]]
+  - -> contains -> [[h15]]
+  - <- contains <- [[a2]]
+- **Android vs TypeScript 로직 불일치 분석** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 9 connections
+  - -> contains -> [[d1-critical]]
+  - -> contains -> [[d2-critical]]
+  - -> contains -> [[d3-high-ts]]
+  - -> contains -> [[d5-high-ts]]
+  - -> contains -> [[d6-high]]
+  - -> contains -> [[d7-high]]
+  - -> contains -> [[d8-medium]]
+  - -> contains -> [[android]]
+  - <- contains <- [[a2]]
+- **A2 파일 스캔 & 품질 분석 — 보안/품질 리뷰 결과** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 6 connections
+  - -> contains -> [[critical-5]]
+  - -> contains -> [[high-15]]
+  - -> contains -> [[medium-23]]
+  - -> contains -> [[low-17]]
+  - -> contains -> [[stride]]
+  - -> contains -> [[android-vs-typescript]]
+- **CRITICAL (5건)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 6 connections
+  - -> contains -> [[c1-pii-pii]]
+  - -> contains -> [[c2-resolvefilepath]]
+  - -> contains -> [[c3-getordecodewav]]
+  - -> contains -> [[c4-decodeaudiototempwav]]
+  - -> contains -> [[c5-3]]
+  - <- contains <- [[a2]]
+- **java** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 5 connections
+  - <- has_code_example <- [[c2-resolvefilepath]]
+  - <- has_code_example <- [[d1-critical]]
+  - <- has_code_example <- [[d3-high-ts]]
+  - <- has_code_example <- [[d5-high-ts]]
+  - <- has_code_example <- [[d6-high]]
+- **D1. 무음 감지 임계값 (CRITICAL)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 3 connections
+  - -> has_code_example -> [[java]]
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[android-vs-typescript]]
+- **C2. 경로 순회 무검증 — resolveFilePath()** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 2 connections
+  - -> has_code_example -> [[java]]
+  - <- contains <- [[critical-5]]
+- **D3. 게인 정규화 (HIGH — TS에 미구현)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 2 connections
+  - -> has_code_example -> [[java]]
+  - <- contains <- [[android-vs-typescript]]
+- **D5. 무음 가드 프레임 (HIGH — TS에 미구현)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 2 connections
+  - -> has_code_example -> [[java]]
+  - <- contains <- [[android-vs-typescript]]
+- **D6. 노이즈 리덕션 (HIGH — 파이프라인 미연결)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 2 connections
+  - -> has_code_example -> [[java]]
+  - <- contains <- [[android-vs-typescript]]
+- **STRIDE 위협 매핑** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 2 connections
+  - -> contains -> [[sprint]]
+  - <- contains <- [[a2]]
+- **typescript** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- has_code_example <- [[d1-critical]]
+- **수정 우선순위 (Android 정본 기준)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[android-vs-typescript]]
+- **C1. PII 마스킹 순서 오류 — PII 음성 노출 위험** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[critical-5]]
+- **C3. 경로 순회 무검증 — getOrDecodeWav()** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[critical-5]]
+- **C4. 경로 순회 무검증 — decodeAudioToTempWav()** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[critical-5]]
+- **C5. 등급 기준 3원화 불일치 — 클라이언트-서버 등급 불일치** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[critical-5]]
+- **D2. 파이프라인 순서 (CRITICAL)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[android-vs-typescript]]
+- **D7. 품질 스코어링 이중화 (HIGH)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[android-vs-typescript]]
+- **D8. 핑거프린트 방식 차이 (MEDIUM)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[android-vs-typescript]]
+- **H10. 배열 크기 계산 정수 오버플로우** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H11. 품질 점수 서버 측 재검증 없음** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H12. classifyQualityGrade 입력 도메인 불일치** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H13. localStorage 캐시 poisoning — 런타임 검증 없음** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H14. audioDedupe.ts 테스트 파일 부재** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H15. 동시 스캔 잠금 없음 — 경쟁 조건** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H1. 경로 검증 없는 export 함수** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H2. console.log에 전체 경로/URI 노출** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H3. 디코딩 타임아웃/크기 제한 없음 (DoS)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H4. 에러 메시지에 파일 경로 노출 (JS까지 전달)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H5. 파일 확장자/MIME 검증 없음** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H6. checkWavExists — 임의 경로 존재 확인 오라클** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H7. ONNX 모델 체크섬 검증 없음 — EmbeddingExtractor** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H8. ONNX 모델 체크섬 검증 없음 — OnnxSttRunner** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **H9. WAV chunkSize 정수 오버플로우** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[high-15]]
+- **LOW (17건)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[a2]]
+- **MEDIUM (23건)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[a2]]
+- **즉시 (이번 Sprint)** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 1 connections
+  - <- contains <- [[stride]]
+
+## Internal Relationships
+- A2 파일 스캔 & 품질 분석 — 보안/품질 리뷰 결과 -> contains -> CRITICAL (5건) [EXTRACTED]
+- A2 파일 스캔 & 품질 분석 — 보안/품질 리뷰 결과 -> contains -> HIGH (15건) [EXTRACTED]
+- A2 파일 스캔 & 품질 분석 — 보안/품질 리뷰 결과 -> contains -> MEDIUM (23건) [EXTRACTED]
+- A2 파일 스캔 & 품질 분석 — 보안/품질 리뷰 결과 -> contains -> LOW (17건) [EXTRACTED]
+- A2 파일 스캔 & 품질 분석 — 보안/품질 리뷰 결과 -> contains -> STRIDE 위협 매핑 [EXTRACTED]
+- A2 파일 스캔 & 품질 분석 — 보안/품질 리뷰 결과 -> contains -> Android vs TypeScript 로직 불일치 분석 [EXTRACTED]
+- Android vs TypeScript 로직 불일치 분석 -> contains -> D1. 무음 감지 임계값 (CRITICAL) [EXTRACTED]
+- Android vs TypeScript 로직 불일치 분석 -> contains -> D2. 파이프라인 순서 (CRITICAL) [EXTRACTED]
+- Android vs TypeScript 로직 불일치 분석 -> contains -> D3. 게인 정규화 (HIGH — TS에 미구현) [EXTRACTED]
+- Android vs TypeScript 로직 불일치 분석 -> contains -> D5. 무음 가드 프레임 (HIGH — TS에 미구현) [EXTRACTED]
+- Android vs TypeScript 로직 불일치 분석 -> contains -> D6. 노이즈 리덕션 (HIGH — 파이프라인 미연결) [EXTRACTED]
+- Android vs TypeScript 로직 불일치 분석 -> contains -> D7. 품질 스코어링 이중화 (HIGH) [EXTRACTED]
+- Android vs TypeScript 로직 불일치 분석 -> contains -> D8. 핑거프린트 방식 차이 (MEDIUM) [EXTRACTED]
+- Android vs TypeScript 로직 불일치 분석 -> contains -> 수정 우선순위 (Android 정본 기준) [EXTRACTED]
+- C2. 경로 순회 무검증 — resolveFilePath() -> has_code_example -> java [EXTRACTED]
+- CRITICAL (5건) -> contains -> C1. PII 마스킹 순서 오류 — PII 음성 노출 위험 [EXTRACTED]
+- CRITICAL (5건) -> contains -> C2. 경로 순회 무검증 — resolveFilePath() [EXTRACTED]
+- CRITICAL (5건) -> contains -> C3. 경로 순회 무검증 — getOrDecodeWav() [EXTRACTED]
+- CRITICAL (5건) -> contains -> C4. 경로 순회 무검증 — decodeAudioToTempWav() [EXTRACTED]
+- CRITICAL (5건) -> contains -> C5. 등급 기준 3원화 불일치 — 클라이언트-서버 등급 불일치 [EXTRACTED]
+- D1. 무음 감지 임계값 (CRITICAL) -> has_code_example -> java [EXTRACTED]
+- D1. 무음 감지 임계값 (CRITICAL) -> has_code_example -> typescript [EXTRACTED]
+- D3. 게인 정규화 (HIGH — TS에 미구현) -> has_code_example -> java [EXTRACTED]
+- D5. 무음 가드 프레임 (HIGH — TS에 미구현) -> has_code_example -> java [EXTRACTED]
+- D6. 노이즈 리덕션 (HIGH — 파이프라인 미연결) -> has_code_example -> java [EXTRACTED]
+- HIGH (15건) -> contains -> H1. 경로 검증 없는 export 함수 [EXTRACTED]
+- HIGH (15건) -> contains -> H2. console.log에 전체 경로/URI 노출 [EXTRACTED]
+- HIGH (15건) -> contains -> H3. 디코딩 타임아웃/크기 제한 없음 (DoS) [EXTRACTED]
+- HIGH (15건) -> contains -> H4. 에러 메시지에 파일 경로 노출 (JS까지 전달) [EXTRACTED]
+- HIGH (15건) -> contains -> H5. 파일 확장자/MIME 검증 없음 [EXTRACTED]
+- HIGH (15건) -> contains -> H6. checkWavExists — 임의 경로 존재 확인 오라클 [EXTRACTED]
+- HIGH (15건) -> contains -> H7. ONNX 모델 체크섬 검증 없음 — EmbeddingExtractor [EXTRACTED]
+- HIGH (15건) -> contains -> H8. ONNX 모델 체크섬 검증 없음 — OnnxSttRunner [EXTRACTED]
+- HIGH (15건) -> contains -> H9. WAV chunkSize 정수 오버플로우 [EXTRACTED]
+- HIGH (15건) -> contains -> H10. 배열 크기 계산 정수 오버플로우 [EXTRACTED]
+- HIGH (15건) -> contains -> H11. 품질 점수 서버 측 재검증 없음 [EXTRACTED]
+- HIGH (15건) -> contains -> H12. classifyQualityGrade 입력 도메인 불일치 [EXTRACTED]
+- HIGH (15건) -> contains -> H13. localStorage 캐시 poisoning — 런타임 검증 없음 [EXTRACTED]
+- HIGH (15건) -> contains -> H14. audioDedupe.ts 테스트 파일 부재 [EXTRACTED]
+- HIGH (15건) -> contains -> H15. 동시 스캔 잠금 없음 — 경쟁 조건 [EXTRACTED]
+- STRIDE 위협 매핑 -> contains -> 즉시 (이번 Sprint) [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 HIGH (15건), Android vs TypeScript 로직 불일치 분석, A2 파일 스캔 & 품질 분석 — 보안/품질 리뷰 결과를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 A2-file-scan-quality-review.md이다.

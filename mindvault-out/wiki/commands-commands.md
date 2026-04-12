@@ -1,0 +1,562 @@
+# Commands & Commands
+Cohesion: 0.02 | Nodes: 131
+
+## Key Nodes
+- **Commands** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 12 connections
+  - -> contains -> [[wiki-setup-name-name-language-en]]
+  - -> contains -> [[wiki-init-name-name-language-en-with-qmd-no-obsidian]]
+  - -> contains -> [[wiki-ingest-fileorurl-category-cat]]
+  - -> contains -> [[wiki-batch-ingest-folder-category-cat]]
+  - -> contains -> [[wiki-compile]]
+  - -> contains -> [[wiki-ingestcompile-file-category-cat]]
+  - -> contains -> [[wiki-query-question]]
+  - -> contains -> [[wiki-digest-topic]]
+  - -> contains -> [[wiki-lint]]
+  - -> contains -> [[wiki-status]]
+  - -> contains -> [[wiki-graph]]
+  - <- contains <- [[llm-wiki-knowledge-base-manager]]
+- **Commands** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 12 connections
+  - -> contains -> [[wiki-setup-name-name-language-en]]
+  - -> contains -> [[wiki-init-name-name-language-en-with-qmd-no-obsidian]]
+  - -> contains -> [[wiki-ingest-fileorurl-category-cat]]
+  - -> contains -> [[wiki-batch-ingest-folder-category-cat]]
+  - -> contains -> [[wiki-compile]]
+  - -> contains -> [[wiki-ingestcompile-file-category-cat]]
+  - -> contains -> [[wiki-query-question]]
+  - -> contains -> [[wiki-digest-topic]]
+  - -> contains -> [[wiki-lint]]
+  - -> contains -> [[wiki-status]]
+  - -> contains -> [[wiki-graph]]
+  - <- contains <- [[llm-wiki-knowledge-base-manager]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks** () -- 10 connections
+  - <- references <- [[mindvault]]
+  - <- references <- [[phase-5]]
+  - <- references <- [[key-rules]]
+  - <- references <- [[stage-3-generate]]
+  - <- references <- [[query-ai-powered-mandatory-feedback-loop]]
+  - <- references <- [[key-rules]]
+  - <- references <- [[key-rules]]
+  - <- references <- [[stage-3-generate]]
+  - <- references <- [[query-ai-powered-mandatory-feedback-loop]]
+  - <- references <- [[key-rules]]
+- **{wiki_name} Knowledge Base** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 9 connections
+  - -> contains -> [[about]]
+  - -> contains -> [[conventions]]
+  - -> contains -> [[workflows]]
+  - -> contains -> [[page-types]]
+  - -> contains -> [[logmd-rules]]
+  - -> contains -> [[security]]
+  - -> contains -> [[scripts]]
+  - -> contains -> [[search-strategy]]
+  - -> contains -> [[directory-structure]]
+- **Workflows** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 9 connections
+  - -> contains -> [[ingest-script-no-ai-needed]]
+  - -> contains -> [[batch-ingest]]
+  - -> contains -> [[compile-ai-powered]]
+  - -> contains -> [[query-ai-powered-mandatory-feedback-loop]]
+  - -> contains -> [[citation-format]]
+  - -> contains -> [[digest-ai-powered-deep-synthesis]]
+  - -> contains -> [[lint]]
+  - -> contains -> [[graph]]
+  - <- contains <- [[wikiname-knowledge-base]]
+- **{wiki_name} Knowledge Base** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 9 connections
+  - -> contains -> [[about]]
+  - -> contains -> [[conventions]]
+  - -> contains -> [[workflows]]
+  - -> contains -> [[page-types]]
+  - -> contains -> [[logmd-rules]]
+  - -> contains -> [[security]]
+  - -> contains -> [[scripts]]
+  - -> contains -> [[search-strategy]]
+  - -> contains -> [[directory-structure]]
+- **Workflows** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 9 connections
+  - -> contains -> [[ingest-script-no-ai-needed]]
+  - -> contains -> [[batch-ingest]]
+  - -> contains -> [[compile-ai-powered]]
+  - -> contains -> [[query-ai-powered-mandatory-feedback-loop]]
+  - -> contains -> [[citation-format]]
+  - -> contains -> [[digest-ai-powered-deep-synthesis]]
+  - -> contains -> [[lint]]
+  - -> contains -> [[graph]]
+  - <- contains <- [[wikiname-knowledge-base]]
+- **For Developers** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 8 connections
+  - -> contains -> [[directory-structure]]
+  - -> contains -> [[scripts-reference]]
+  - -> contains -> [[configuration]]
+  - -> contains -> [[adding-new-page-types]]
+  - -> contains -> [[frontmatter-schema]]
+  - -> contains -> [[cross-references]]
+  - -> contains -> [[qmd-search-strongly-recommended]]
+  - -> contains -> [[contributing]]
+- **For Developers** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 8 connections
+  - -> contains -> [[directory-structure]]
+  - -> contains -> [[scripts-reference]]
+  - -> contains -> [[configuration]]
+  - -> contains -> [[adding-new-page-types]]
+  - -> contains -> [[frontmatter-schema]]
+  - -> contains -> [[cross-references]]
+  - -> contains -> [[qmd-search-strongly-recommended]]
+  - -> contains -> [[contributing]]
+- **MindVault 도입 계획 — 기존 llm-wiki → MindVault 마이그레이션** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 7 connections
+  - -> contains -> [[llm-wiki]]
+  - -> contains -> [[mindvault]]
+  - -> contains -> [[phase-1]]
+  - -> contains -> [[phase-2-wiki-mindvault]]
+  - -> contains -> [[phase-3]]
+  - -> contains -> [[phase-4-claudemd]]
+  - -> contains -> [[phase-5]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__page_name** () -- 6 connections
+  - <- references <- [[conventions]]
+  - <- references <- [[query-ai-powered-mandatory-feedback-loop]]
+  - <- references <- [[cross-references]]
+  - <- references <- [[conventions]]
+  - <- references <- [[query-ai-powered-mandatory-feedback-loop]]
+  - <- references <- [[cross-references]]
+- **Compile (AI-powered)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 4 connections
+  - -> contains -> [[stage-1-diff]]
+  - -> contains -> [[stage-2-extract]]
+  - -> contains -> [[stage-3-generate]]
+  - <- contains <- [[workflows]]
+- **Stage 3: Generate** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 4 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefsourcea]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefsourceb]]
+  - <- contains <- [[compile-ai-powered]]
+- **llm-wiki — Knowledge Base Manager** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 4 connections
+  - -> contains -> [[commands]]
+  - -> contains -> [[security]]
+  - -> contains -> [[key-rules]]
+  - <- contains <- [[skill]]
+- **Compile (AI-powered)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 4 connections
+  - -> contains -> [[stage-1-diff]]
+  - -> contains -> [[stage-2-extract]]
+  - -> contains -> [[stage-3-generate]]
+  - <- contains <- [[workflows]]
+- **Stage 3: Generate** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 4 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefsourcea]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefsourceb]]
+  - <- contains <- [[compile-ai-powered]]
+- **llm-wiki — Knowledge Base Manager** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 4 connections
+  - -> contains -> [[commands]]
+  - -> contains -> [[security]]
+  - -> contains -> [[key-rules]]
+  - <- contains <- [[skill]]
+- **Cross-References** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 3 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefpagename]]
+  - -> has_code_example -> [[markdown]]
+  - <- contains <- [[for-developers]]
+- **Query (AI-powered — mandatory feedback loop)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 3 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefpagename]]
+  - <- contains <- [[workflows]]
+- **Security** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 3 connections
+  - -> contains -> [[untrusted-content]]
+  - -> contains -> [[git-commits]]
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Wiki Instructions** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/claude-md.md) -- 3 connections
+  - -> contains -> [[quick-reference]]
+  - -> contains -> [[key-rules]]
+  - <- contains <- [[claudemd]]
+- **Security** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 3 connections
+  - -> contains -> [[untrusted-content-indirect-prompt-injection-risk]]
+  - -> contains -> [[git-commits]]
+  - <- contains <- [[llm-wiki-knowledge-base-manager]]
+- **Cross-References** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 3 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefpagename]]
+  - -> has_code_example -> [[markdown]]
+  - <- contains <- [[for-developers]]
+- **Query (AI-powered — mandatory feedback loop)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 3 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefpagename]]
+  - <- contains <- [[workflows]]
+- **Security** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 3 connections
+  - -> contains -> [[untrusted-content]]
+  - -> contains -> [[git-commits]]
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Wiki Instructions** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/claude-md.md) -- 3 connections
+  - -> contains -> [[quick-reference]]
+  - -> contains -> [[key-rules]]
+  - <- contains <- [[claudemd]]
+- **Security** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 3 connections
+  - -> contains -> [[untrusted-content-indirect-prompt-injection-risk]]
+  - -> contains -> [[git-commits]]
+  - <- contains <- [[llm-wiki-knowledge-base-manager]]
+- **bash** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 3 connections
+  - <- has_code_example <- [[phase-1]]
+  - <- has_code_example <- [[phase-2-wiki-mindvault]]
+  - <- has_code_example <- [[phase-3]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__source_a** () -- 2 connections
+  - <- references <- [[stage-3-generate]]
+  - <- references <- [[stage-3-generate]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__source_b** () -- 2 connections
+  - <- references <- [[stage-3-generate]]
+  - <- references <- [[stage-3-generate]]
+- **Configuration** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 2 connections
+  - -> has_code_example -> [[toml]]
+  - <- contains <- [[for-developers]]
+- **Frontmatter Schema** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 2 connections
+  - -> has_code_example -> [[yaml]]
+  - <- contains <- [[for-developers]]
+- **qmd Search (Strongly Recommended)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[for-developers]]
+- **Citation Format** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 2 connections
+  - -> has_code_example -> [[yaml]]
+  - <- contains <- [[workflows]]
+- **Conventions** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefpagename]]
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Key Rules** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/claude-md.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - <- contains <- [[wiki-instructions]]
+- **Key Rules** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - <- contains <- [[llm-wiki-knowledge-base-manager]]
+- **Configuration** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 2 connections
+  - -> has_code_example -> [[toml]]
+  - <- contains <- [[for-developers]]
+- **Frontmatter Schema** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 2 connections
+  - -> has_code_example -> [[yaml]]
+  - <- contains <- [[for-developers]]
+- **qmd Search (Strongly Recommended)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[for-developers]]
+- **Citation Format** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 2 connections
+  - -> has_code_example -> [[yaml]]
+  - <- contains <- [[workflows]]
+- **Conventions** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefpagename]]
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Key Rules** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/claude-md.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - <- contains <- [[wiki-instructions]]
+- **Key Rules** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - <- contains <- [[llm-wiki-knowledge-base-manager]]
+- **도입 대상: MindVault** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - <- contains <- [[mindvault-llm-wiki-mindvault]]
+- **Phase 1: 설치 및 초기 설정** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[mindvault-llm-wiki-mindvault]]
+- **Phase 2: 기존 wiki → MindVault 인제스트** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[mindvault-llm-wiki-mindvault]]
+- **Phase 3: 코드베이스 인덱싱** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 2 connections
+  - -> has_code_example -> [[bash]]
+  - <- contains <- [[mindvault-llm-wiki-mindvault]]
+- **Phase 5: 검증 및 정리** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilinks]]
+  - <- contains <- [[mindvault-llm-wiki-mindvault]]
+- **Adding New Page Types** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- contains <- [[for-developers]]
+- **bash** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- has_code_example <- [[qmd-search-strongly-recommended]]
+- **Contributing** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- contains <- [[for-developers]]
+- **Directory Structure** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- contains <- [[for-developers]]
+- **markdown** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- has_code_example <- [[cross-references]]
+- **Scripts Reference** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- contains <- [[for-developers]]
+- **toml** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- has_code_example <- [[configuration]]
+- **yaml** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- has_code_example <- [[frontmatter-schema]]
+- **About** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Batch-Ingest** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **Digest (AI-powered — deep synthesis)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **Directory Structure** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Git Commits** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[security]]
+- **Graph** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **Ingest (script — no AI needed)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **Lint** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **log.md Rules** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Page Types** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Scripts** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Search Strategy** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Stage 1: Diff** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[compile-ai-powered]]
+- **Stage 2: Extract** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[compile-ai-powered]]
+- **Untrusted Content** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[security]]
+- **yaml** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- has_code_example <- [[citation-format]]
+- **CLAUDE.md** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/claude-md.md) -- 1 connections
+  - -> contains -> [[wiki-instructions]]
+- **Quick Reference** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/references/claude-md.md) -- 1 connections
+  - <- contains <- [[wiki-instructions]]
+- **SKILL** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - -> contains -> [[llm-wiki-knowledge-base-manager]]
+- **`/wiki batch-ingest <folder> [--category <cat>]`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki compile`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki digest <topic>`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki graph`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki ingest <file_or_url> [--category <cat>]`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki ingest+compile <file> [--category <cat>]`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki init [--name "Name"] [--language en] [--with-qmd] [--no-obsidian]`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki lint`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki query <question>`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki setup [--name "Name"] [--language en]`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki status`** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **Git Commits** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[security]]
+- **Untrusted Content (Indirect Prompt Injection Risk)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[security]]
+- **Adding New Page Types** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- contains <- [[for-developers]]
+- **bash** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- has_code_example <- [[qmd-search-strongly-recommended]]
+- **Contributing** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- contains <- [[for-developers]]
+- **Directory Structure** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- contains <- [[for-developers]]
+- **markdown** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- has_code_example <- [[cross-references]]
+- **Scripts Reference** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- contains <- [[for-developers]]
+- **toml** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- has_code_example <- [[configuration]]
+- **yaml** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/for-developers.md) -- 1 connections
+  - <- has_code_example <- [[frontmatter-schema]]
+- **About** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Batch-Ingest** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **Digest (AI-powered — deep synthesis)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **Directory Structure** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Git Commits** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[security]]
+- **Graph** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **Ingest (script — no AI needed)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **Lint** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[workflows]]
+- **log.md Rules** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Page Types** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Scripts** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Search Strategy** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[wikiname-knowledge-base]]
+- **Stage 1: Diff** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[compile-ai-powered]]
+- **Stage 2: Extract** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[compile-ai-powered]]
+- **Untrusted Content** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- contains <- [[security]]
+- **yaml** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/agents-md.md) -- 1 connections
+  - <- has_code_example <- [[citation-format]]
+- **CLAUDE.md** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/claude-md.md) -- 1 connections
+  - -> contains -> [[wiki-instructions]]
+- **Quick Reference** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/references/claude-md.md) -- 1 connections
+  - <- contains <- [[wiki-instructions]]
+- **SKILL** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - -> contains -> [[llm-wiki-knowledge-base-manager]]
+- **`/wiki batch-ingest <folder> [--category <cat>]`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki compile`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki digest <topic>`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki graph`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki ingest <file_or_url> [--category <cat>]`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki ingest+compile <file> [--category <cat>]`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki init [--name "Name"] [--language en] [--with-qmd] [--no-obsidian]`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki lint`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki query <question>`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki setup [--name "Name"] [--language en]`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **`/wiki status`** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[commands]]
+- **Git Commits** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[security]]
+- **Untrusted Content (Indirect Prompt Injection Risk)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/SKILL.md) -- 1 connections
+  - <- contains <- [[security]]
+- **현재 상태: llm-wiki (수동 운영)** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[mindvault-llm-wiki-mindvault]]
+- **Phase 4: CLAUDE.md 및 워크플로우 통합** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[mindvault-llm-wiki-mindvault]]
+
+## Internal Relationships
+- Configuration -> has_code_example -> toml [EXTRACTED]
+- Cross-References -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__page_name [EXTRACTED]
+- Cross-References -> has_code_example -> markdown [EXTRACTED]
+- For Developers -> contains -> Directory Structure [EXTRACTED]
+- For Developers -> contains -> Scripts Reference [EXTRACTED]
+- For Developers -> contains -> Configuration [EXTRACTED]
+- For Developers -> contains -> Adding New Page Types [EXTRACTED]
+- For Developers -> contains -> Frontmatter Schema [EXTRACTED]
+- For Developers -> contains -> Cross-References [EXTRACTED]
+- For Developers -> contains -> qmd Search (Strongly Recommended) [EXTRACTED]
+- For Developers -> contains -> Contributing [EXTRACTED]
+- Frontmatter Schema -> has_code_example -> yaml [EXTRACTED]
+- qmd Search (Strongly Recommended) -> has_code_example -> bash [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> About [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Conventions [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Workflows [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Page Types [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> log.md Rules [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Security [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Scripts [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Search Strategy [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Directory Structure [EXTRACTED]
+- Citation Format -> has_code_example -> yaml [EXTRACTED]
+- Compile (AI-powered) -> contains -> Stage 1: Diff [EXTRACTED]
+- Compile (AI-powered) -> contains -> Stage 2: Extract [EXTRACTED]
+- Compile (AI-powered) -> contains -> Stage 3: Generate [EXTRACTED]
+- Conventions -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__page_name [EXTRACTED]
+- Query (AI-powered — mandatory feedback loop) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- Query (AI-powered — mandatory feedback loop) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__page_name [EXTRACTED]
+- Security -> contains -> Untrusted Content [EXTRACTED]
+- Security -> contains -> Git Commits [EXTRACTED]
+- Stage 3: Generate -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- Stage 3: Generate -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__source_a [EXTRACTED]
+- Stage 3: Generate -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__source_b [EXTRACTED]
+- Workflows -> contains -> Ingest (script — no AI needed) [EXTRACTED]
+- Workflows -> contains -> Batch-Ingest [EXTRACTED]
+- Workflows -> contains -> Compile (AI-powered) [EXTRACTED]
+- Workflows -> contains -> Query (AI-powered — mandatory feedback loop) [EXTRACTED]
+- Workflows -> contains -> Citation Format [EXTRACTED]
+- Workflows -> contains -> Digest (AI-powered — deep synthesis) [EXTRACTED]
+- Workflows -> contains -> Lint [EXTRACTED]
+- Workflows -> contains -> Graph [EXTRACTED]
+- CLAUDE.md -> contains -> Wiki Instructions [EXTRACTED]
+- Key Rules -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- Wiki Instructions -> contains -> Quick Reference [EXTRACTED]
+- Wiki Instructions -> contains -> Key Rules [EXTRACTED]
+- SKILL -> contains -> llm-wiki — Knowledge Base Manager [EXTRACTED]
+- Commands -> contains -> `/wiki setup [--name "Name"] [--language en]` [EXTRACTED]
+- Commands -> contains -> `/wiki init [--name "Name"] [--language en] [--with-qmd] [--no-obsidian]` [EXTRACTED]
+- Commands -> contains -> `/wiki ingest <file_or_url> [--category <cat>]` [EXTRACTED]
+- Commands -> contains -> `/wiki batch-ingest <folder> [--category <cat>]` [EXTRACTED]
+- Commands -> contains -> `/wiki compile` [EXTRACTED]
+- Commands -> contains -> `/wiki ingest+compile <file> [--category <cat>]` [EXTRACTED]
+- Commands -> contains -> `/wiki query <question>` [EXTRACTED]
+- Commands -> contains -> `/wiki digest <topic>` [EXTRACTED]
+- Commands -> contains -> `/wiki lint` [EXTRACTED]
+- Commands -> contains -> `/wiki status` [EXTRACTED]
+- Commands -> contains -> `/wiki graph` [EXTRACTED]
+- Key Rules -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- llm-wiki — Knowledge Base Manager -> contains -> Commands [EXTRACTED]
+- llm-wiki — Knowledge Base Manager -> contains -> Security [EXTRACTED]
+- llm-wiki — Knowledge Base Manager -> contains -> Key Rules [EXTRACTED]
+- Security -> contains -> Untrusted Content (Indirect Prompt Injection Risk) [EXTRACTED]
+- Security -> contains -> Git Commits [EXTRACTED]
+- Configuration -> has_code_example -> toml [EXTRACTED]
+- Cross-References -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__page_name [EXTRACTED]
+- Cross-References -> has_code_example -> markdown [EXTRACTED]
+- For Developers -> contains -> Directory Structure [EXTRACTED]
+- For Developers -> contains -> Scripts Reference [EXTRACTED]
+- For Developers -> contains -> Configuration [EXTRACTED]
+- For Developers -> contains -> Adding New Page Types [EXTRACTED]
+- For Developers -> contains -> Frontmatter Schema [EXTRACTED]
+- For Developers -> contains -> Cross-References [EXTRACTED]
+- For Developers -> contains -> qmd Search (Strongly Recommended) [EXTRACTED]
+- For Developers -> contains -> Contributing [EXTRACTED]
+- Frontmatter Schema -> has_code_example -> yaml [EXTRACTED]
+- qmd Search (Strongly Recommended) -> has_code_example -> bash [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> About [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Conventions [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Workflows [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Page Types [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> log.md Rules [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Security [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Scripts [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Search Strategy [EXTRACTED]
+- {wiki_name} Knowledge Base -> contains -> Directory Structure [EXTRACTED]
+- Citation Format -> has_code_example -> yaml [EXTRACTED]
+- Compile (AI-powered) -> contains -> Stage 1: Diff [EXTRACTED]
+- Compile (AI-powered) -> contains -> Stage 2: Extract [EXTRACTED]
+- Compile (AI-powered) -> contains -> Stage 3: Generate [EXTRACTED]
+- Conventions -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__page_name [EXTRACTED]
+- Query (AI-powered — mandatory feedback loop) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- Query (AI-powered — mandatory feedback loop) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__page_name [EXTRACTED]
+- Security -> contains -> Untrusted Content [EXTRACTED]
+- Security -> contains -> Git Commits [EXTRACTED]
+- Stage 3: Generate -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- Stage 3: Generate -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__source_a [EXTRACTED]
+- Stage 3: Generate -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__source_b [EXTRACTED]
+- Workflows -> contains -> Ingest (script — no AI needed) [EXTRACTED]
+- Workflows -> contains -> Batch-Ingest [EXTRACTED]
+- Workflows -> contains -> Compile (AI-powered) [EXTRACTED]
+- Workflows -> contains -> Query (AI-powered — mandatory feedback loop) [EXTRACTED]
+- Workflows -> contains -> Citation Format [EXTRACTED]
+- Workflows -> contains -> Digest (AI-powered — deep synthesis) [EXTRACTED]
+- Workflows -> contains -> Lint [EXTRACTED]
+- Workflows -> contains -> Graph [EXTRACTED]
+- CLAUDE.md -> contains -> Wiki Instructions [EXTRACTED]
+- Key Rules -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- Wiki Instructions -> contains -> Quick Reference [EXTRACTED]
+- Wiki Instructions -> contains -> Key Rules [EXTRACTED]
+- SKILL -> contains -> llm-wiki — Knowledge Base Manager [EXTRACTED]
+- Commands -> contains -> `/wiki setup [--name "Name"] [--language en]` [EXTRACTED]
+- Commands -> contains -> `/wiki init [--name "Name"] [--language en] [--with-qmd] [--no-obsidian]` [EXTRACTED]
+- Commands -> contains -> `/wiki ingest <file_or_url> [--category <cat>]` [EXTRACTED]
+- Commands -> contains -> `/wiki batch-ingest <folder> [--category <cat>]` [EXTRACTED]
+- Commands -> contains -> `/wiki compile` [EXTRACTED]
+- Commands -> contains -> `/wiki ingest+compile <file> [--category <cat>]` [EXTRACTED]
+- Commands -> contains -> `/wiki query <question>` [EXTRACTED]
+- Commands -> contains -> `/wiki digest <topic>` [EXTRACTED]
+- Commands -> contains -> `/wiki lint` [EXTRACTED]
+- Commands -> contains -> `/wiki status` [EXTRACTED]
+- Commands -> contains -> `/wiki graph` [EXTRACTED]
+- Key Rules -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- llm-wiki — Knowledge Base Manager -> contains -> Commands [EXTRACTED]
+- llm-wiki — Knowledge Base Manager -> contains -> Security [EXTRACTED]
+- llm-wiki — Knowledge Base Manager -> contains -> Key Rules [EXTRACTED]
+- Security -> contains -> Untrusted Content (Indirect Prompt Injection Risk) [EXTRACTED]
+- Security -> contains -> Git Commits [EXTRACTED]
+- 도입 대상: MindVault -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+- MindVault 도입 계획 — 기존 llm-wiki → MindVault 마이그레이션 -> contains -> 현재 상태: llm-wiki (수동 운영) [EXTRACTED]
+- MindVault 도입 계획 — 기존 llm-wiki → MindVault 마이그레이션 -> contains -> 도입 대상: MindVault [EXTRACTED]
+- MindVault 도입 계획 — 기존 llm-wiki → MindVault 마이그레이션 -> contains -> Phase 1: 설치 및 초기 설정 [EXTRACTED]
+- MindVault 도입 계획 — 기존 llm-wiki → MindVault 마이그레이션 -> contains -> Phase 2: 기존 wiki → MindVault 인제스트 [EXTRACTED]
+- MindVault 도입 계획 — 기존 llm-wiki → MindVault 마이그레이션 -> contains -> Phase 3: 코드베이스 인덱싱 [EXTRACTED]
+- MindVault 도입 계획 — 기존 llm-wiki → MindVault 마이그레이션 -> contains -> Phase 4: CLAUDE.md 및 워크플로우 통합 [EXTRACTED]
+- MindVault 도입 계획 — 기존 llm-wiki → MindVault 마이그레이션 -> contains -> Phase 5: 검증 및 정리 [EXTRACTED]
+- Phase 1: 설치 및 초기 설정 -> has_code_example -> bash [EXTRACTED]
+- Phase 2: 기존 wiki → MindVault 인제스트 -> has_code_example -> bash [EXTRACTED]
+- Phase 3: 코드베이스 인덱싱 -> has_code_example -> bash [EXTRACTED]
+- Phase 5: 검증 및 정리 -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Commands, Commands, __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilinks를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 SKILL.md, agents-md.md, claude-md.md, for-developers.md, prompt_plan.md이다.

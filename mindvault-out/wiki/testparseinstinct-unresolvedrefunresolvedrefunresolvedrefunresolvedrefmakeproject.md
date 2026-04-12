@@ -1,0 +1,830 @@
+# test_parse_instinct & __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project
+Cohesion: 0.03 | Nodes: 110
+
+## Key Nodes
+- **test_parse_instinct** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 64 connections
+  - -> contains -> [[makeproject]]
+  - -> contains -> [[testmultipleinstinctspreservecontent]]
+  - -> contains -> [[testsingleinstinctpreservescontent]]
+  - -> contains -> [[testemptycontentnoerror]]
+  - -> contains -> [[testparsenoidskipped]]
+  - -> contains -> [[testparseconfidenceisfloat]]
+  - -> contains -> [[testparsetriggerstripsquotes]]
+  - -> contains -> [[testparseemptystring]]
+  - -> contains -> [[testparsegarbageinput]]
+  - -> contains -> [[testvalidatenormalpath]]
+  - -> contains -> [[testvalidaterejectsetc]]
+  - -> contains -> [[testvalidaterejectsvarlog]]
+  - -> contains -> [[testvalidaterejectsusr]]
+  - -> contains -> [[testvalidaterejectsproc]]
+  - -> contains -> [[testvalidatemustexistfails]]
+  - -> contains -> [[testvalidatehomeexpansion]]
+  - -> contains -> [[testvalidaterelativepath]]
+  - -> contains -> [[testdetectprojectglobalfallback]]
+  - -> contains -> [[testdetectprojectfromenv]]
+  - -> contains -> [[testdetectprojectgittimeout]]
+  - -> contains -> [[testdetectprojectcreatesdirectories]]
+  - -> contains -> [[testloadfromemptydir]]
+  - -> contains -> [[testloadfromnonexistentdir]]
+  - -> contains -> [[testloadannotatesmetadata]]
+  - -> contains -> [[testloaddefaultsscopefromlabel]]
+  - -> contains -> [[testloadpreservesexplicitscope]]
+  - -> contains -> [[testupdateregistryatomicreplacesfile]]
+  - -> contains -> [[testloadsupportsymlextension]]
+  - -> contains -> [[testloadsupportsmdextension]]
+  - -> contains -> [[testloadinstinctsfromdirusesutf8encoding]]
+  - -> contains -> [[testloadallprojectandglobal]]
+  - -> contains -> [[testloadallprojectoverridesglobal]]
+  - -> contains -> [[testloadallglobalonly]]
+  - -> contains -> [[testloadprojectonlyexcludesglobal]]
+  - -> contains -> [[testloadprojectonlyglobalfallbackloadsglobal]]
+  - -> contains -> [[testloadallempty]]
+  - -> contains -> [[testcmdstatusnoinstincts]]
+  - -> contains -> [[testcmdstatuswithinstincts]]
+  - -> contains -> [[testcmdstatusreturnsint]]
+  - -> contains -> [[testcmdprojectsemptyregistry]]
+  - -> contains -> [[testcmdprojectswithregistry]]
+  - -> contains -> [[testpromotespecificnotfound]]
+  - -> contains -> [[testpromotespecificrejectsinvalidid]]
+  - -> contains -> [[testpromotespecificalreadyglobal]]
+  - -> contains -> [[testpromotespecificsuccess]]
+  - -> contains -> [[testpromoteautonocandidates]]
+  - -> contains -> [[testpromoteautodryrun]]
+  - -> contains -> [[testpromoteautoskipsinvalidid]]
+  - -> contains -> [[testfindcrossprojectemptyregistry]]
+  - -> contains -> [[testfindcrossprojectsingleproject]]
+  - -> contains -> [[testfindcrossprojectsharedinstinct]]
+  - -> contains -> [[testloadregistrycorruptjson]]
+  - -> contains -> [[testloadregistryvalid]]
+  - -> contains -> [[testloadregistryusesutf8encoding]]
+  - -> contains -> [[testvalidateinstinctid]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefutil]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefio]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftypes]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunittest]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpytest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project** () -- 18 connections
+  - <- calls <- [[testupdateregistryatomicreplacesfile]]
+  - <- calls <- [[testloadallprojectandglobal]]
+  - <- calls <- [[testloadallprojectoverridesglobal]]
+  - <- calls <- [[testloadprojectonlyexcludesglobal]]
+  - <- calls <- [[testloadallempty]]
+  - <- calls <- [[testcmdstatusnoinstincts]]
+  - <- calls <- [[testcmdstatuswithinstincts]]
+  - <- calls <- [[testcmdstatusreturnsint]]
+  - <- calls <- [[testcmdprojectswithregistry]]
+  - <- calls <- [[testpromotespecificnotfound]]
+  - <- calls <- [[testpromotespecificrejectsinvalidid]]
+  - <- calls <- [[testpromotespecificalreadyglobal]]
+  - <- calls <- [[testpromotespecificsuccess]]
+  - <- calls <- [[testpromoteautonocandidates]]
+  - <- calls <- [[testpromoteautodryrun]]
+  - <- calls <- [[testpromoteautoskipsinvalidid]]
+  - <- calls <- [[testfindcrossprojectsingleproject]]
+  - <- calls <- [[testfindcrossprojectsharedinstinct]]
+- **main** (.claude/skills/continuous-learning-v2/scripts/instinct-cli.py) -- 15 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefensureglobaldirs]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefargumentparser]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddsubparsers]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddparser]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefaddargument]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseargs]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdstatus]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdimport]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdexport]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdevolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdpromote]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdprojects]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdprune]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefprinthelp]]
+  - <- contains <- [[instinct-cli]]
+- **export-moonshine-onnx** (uncounted-app/scripts/export-moonshine-onnx.py) -- 13 connections
+  - -> contains -> [[getencoder]]
+  - -> contains -> [[encoderwrapper]]
+  - -> contains -> [[getdecoder]]
+  - -> contains -> [[decoderwrapper]]
+  - -> contains -> [[onnxcausalmask]]
+  - -> contains -> [[onnxbidirectionalmask]]
+  - -> contains -> [[makekvcache]]
+  - -> contains -> [[decoderwithpaststacked]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftorch]]
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftransformers]]
+- **forward** (uncounted-app/scripts/export-moonshine-onnx.py) -- 13 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefenc]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefones]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdec]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefproj]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftensor]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakekvcache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstack]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
+  - <- contains <- [[encoderwrapper]]
+  - <- contains <- [[decoderwrapper]]
+  - <- contains <- [[decoderwithpaststacked]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr** () -- 11 connections
+  - <- calls <- [[testcmdstatusnoinstincts]]
+  - <- calls <- [[testcmdstatuswithinstincts]]
+  - <- calls <- [[testcmdprojectsemptyregistry]]
+  - <- calls <- [[testcmdprojectswithregistry]]
+  - <- calls <- [[testpromotespecificnotfound]]
+  - <- calls <- [[testpromotespecificrejectsinvalidid]]
+  - <- calls <- [[testpromotespecificalreadyglobal]]
+  - <- calls <- [[testpromotespecificsuccess]]
+  - <- calls <- [[testpromoteautonocandidates]]
+  - <- calls <- [[testpromoteautodryrun]]
+  - <- calls <- [[testpromoteautoskipsinvalidid]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_file_path** () -- 10 connections
+  - <- calls <- [[testvalidatenormalpath]]
+  - <- calls <- [[testvalidaterejectsetc]]
+  - <- calls <- [[testvalidaterejectsvarlog]]
+  - <- calls <- [[testvalidaterejectsusr]]
+  - <- calls <- [[testvalidaterejectsproc]]
+  - <- calls <- [[testvalidatemustexistfails]]
+  - <- calls <- [[testvalidatehomeexpansion]]
+  - <- calls <- [[testvalidaterelativepath]]
+  - <- calls <- [[cmdimport]]
+  - <- calls <- [[cmdexport]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file** () -- 10 connections
+  - <- calls <- [[testmultipleinstinctspreservecontent]]
+  - <- calls <- [[testsingleinstinctpreservescontent]]
+  - <- calls <- [[testemptycontentnoerror]]
+  - <- calls <- [[testparsenoidskipped]]
+  - <- calls <- [[testparseconfidenceisfloat]]
+  - <- calls <- [[testparsetriggerstripsquotes]]
+  - <- calls <- [[testparseemptystring]]
+  - <- calls <- [[testparsegarbageinput]]
+  - <- calls <- [[loadinstinctsfromdir]]
+  - <- calls <- [[cmdimport]]
+- **_make_kv_cache** (uncounted-app/scripts/export-moonshine-onnx.py) -- 9 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftuple]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefrange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdynamiccache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdl]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefml]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefencoderdecodercache]]
+  - <- contains <- [[export-moonshine-onnx]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dumps** () -- 7 connections
+  - <- calls <- [[testupdateregistryatomicreplacesfile]]
+  - <- calls <- [[testcmdprojectswithregistry]]
+  - <- calls <- [[testpromoteautodryrun]]
+  - <- calls <- [[testpromoteautoskipsinvalidid]]
+  - <- calls <- [[testfindcrossprojectsingleproject]]
+  - <- calls <- [[testfindcrossprojectsharedinstinct]]
+  - <- calls <- [[testloadregistryvalid]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__simplenamespace** () -- 7 connections
+  - <- calls <- [[testdetectprojectfromenv]]
+  - <- calls <- [[testdetectprojectcreatesdirectories]]
+  - <- calls <- [[testcmdstatusnoinstincts]]
+  - <- calls <- [[testcmdstatuswithinstincts]]
+  - <- calls <- [[testcmdstatusreturnsint]]
+  - <- calls <- [[testcmdprojectsemptyregistry]]
+  - <- calls <- [[testcmdprojectswithregistry]]
+- **test_cmd_projects_with_registry** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsimplenamespace]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdprojects]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - <- contains <- [[testparseinstinct]]
+- **test_cmd_status_with_instincts** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsimplenamespace]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdstatus]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - <- contains <- [[testparseinstinct]]
+- **test_promote_auto_dry_run** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpromoteauto]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefexists]]
+  - <- contains <- [[testparseinstinct]]
+- **test_promote_auto_skips_invalid_id** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpromoteauto]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefexists]]
+  - <- contains <- [[testparseinstinct]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__isinstance** () -- 6 connections
+  - <- calls <- [[forward]]
+  - <- calls <- [[testreturnsndarraysamedtype]]
+  - <- calls <- [[testreturnsvalidwavbytes]]
+  - <- calls <- [[tofloat]]
+  - <- calls <- [[testparseconfidenceisfloat]]
+  - <- calls <- [[testcmdstatusreturnsint]]
+- **test_cmd_status_no_instincts** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsimplenamespace]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdstatus]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - <- contains <- [[testparseinstinct]]
+- **test_cmd_status_returns_int** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsimplenamespace]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdstatus]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefisinstance]]
+  - <- contains <- [[testparseinstinct]]
+- **test_find_cross_project_shared_instinct** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreffindcrossprojectinstincts]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
+  - <- contains <- [[testparseinstinct]]
+- **get_encoder** (uncounted-app/scripts/export-moonshine-onnx.py) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetencoder]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefattributeerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
+  - <- contains <- [[export-moonshine-onnx]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___find_cross_project_instincts** () -- 5 connections
+  - <- calls <- [[testfindcrossprojectemptyregistry]]
+  - <- calls <- [[testfindcrossprojectsingleproject]]
+  - <- calls <- [[testfindcrossprojectsharedinstinct]]
+  - <- calls <- [[showpromotioncandidates]]
+  - <- calls <- [[promoteauto]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_auto** () -- 5 connections
+  - <- calls <- [[testupdateregistryatomicreplacesfile]]
+  - <- calls <- [[testpromoteautonocandidates]]
+  - <- calls <- [[testpromoteautodryrun]]
+  - <- calls <- [[testpromoteautoskipsinvalidid]]
+  - <- calls <- [[cmdpromote]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_specific** () -- 5 connections
+  - <- calls <- [[testpromotespecificnotfound]]
+  - <- calls <- [[testpromotespecificrejectsinvalidid]]
+  - <- calls <- [[testpromotespecificalreadyglobal]]
+  - <- calls <- [[testpromotespecificsuccess]]
+  - <- calls <- [[cmdpromote]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__raises** () -- 5 connections
+  - <- calls <- [[testvalidaterejectsetc]]
+  - <- calls <- [[testvalidaterejectsvarlog]]
+  - <- calls <- [[testvalidaterejectsusr]]
+  - <- calls <- [[testvalidaterejectsproc]]
+  - <- calls <- [[testvalidatemustexistfails]]
+- **test_detect_project_git_timeout** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdelenv]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreftimeoutexpired]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdetectproject]]
+  - <- contains <- [[testparseinstinct]]
+- **test_detect_project_global_fallback** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdelenv]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreffilenotfounderror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdetectproject]]
+  - <- contains <- [[testparseinstinct]]
+- **test_find_cross_project_single_project** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreffindcrossprojectinstincts]]
+  - <- contains <- [[testparseinstinct]]
+- **test_promote_auto_no_candidates** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpromoteauto]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - <- contains <- [[testparseinstinct]]
+- **test_promote_specific_already_global** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpromotespecific]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - <- contains <- [[testparseinstinct]]
+- **test_validate_home_expansion** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvalidatefilepath]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhome]]
+  - <- contains <- [[testparseinstinct]]
+- **test_validate_relative_path** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefchdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvalidatefilepath]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefresolve]]
+  - <- contains <- [[testparseinstinct]]
+- **__init__** (uncounted-app/scripts/export-moonshine-onnx.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefinit]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsuper]]
+  - <- contains <- [[encoderwrapper]]
+  - <- contains <- [[decoderwrapper]]
+  - <- contains <- [[decoderwithpaststacked]]
+- **get_decoder** (uncounted-app/scripts/export-moonshine-onnx.py) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefattributeerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
+  - <- contains <- [[export-moonshine-onnx]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_status** () -- 4 connections
+  - <- calls <- [[testcmdstatusnoinstincts]]
+  - <- calls <- [[testcmdstatuswithinstincts]]
+  - <- calls <- [[testcmdstatusreturnsint]]
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr** () -- 4 connections
+  - <- calls <- [[getencoder]]
+  - <- calls <- [[forward]]
+  - <- calls <- [[getdecoder]]
+  - <- calls <- [[makekvcache]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sys** () -- 4 connections
+  - <- imports <- [[export-moonshine-onnx]]
+  - <- imports <- [[audiopreprocessor]]
+  - <- imports <- [[testparseinstinct]]
+  - <- imports <- [[instinct-cli]]
+- **cmd_promote** (.claude/skills/continuous-learning-v2/scripts/instinct-cli.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdetectproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpromotespecific]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpromoteauto]]
+  - <- contains <- [[instinct-cli]]
+- **test_cmd_projects_empty_registry** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsimplenamespace]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefcmdprojects]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - <- contains <- [[testparseinstinct]]
+- **test_load_all_project_and_global** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefloadallinstincts]]
+  - <- contains <- [[testparseinstinct]]
+- **test_load_project_only_excludes_global** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefloadprojectonlyinstincts]]
+  - <- contains <- [[testparseinstinct]]
+- **test_load_registry_valid** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefloadregistry]]
+  - <- contains <- [[testparseinstinct]]
+- **test_parse_confidence_is_float** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseinstinctfile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefapprox]]
+  - <- contains <- [[testparseinstinct]]
+- **test_promote_specific_not_found** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpromotespecific]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - <- contains <- [[testparseinstinct]]
+- **test_promote_specific_rejects_invalid_id** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpromotespecific]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefreadouterr]]
+  - <- contains <- [[testparseinstinct]]
+- **test_validate_must_exist_fails** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefraises]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvalidatefilepath]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefstr]]
+  - <- contains <- [[testparseinstinct]]
+- **_onnx_causal_mask** (uncounted-app/scripts/export-moonshine-onnx.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunsqueeze]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreffloat]]
+  - <- contains <- [[export-moonshine-onnx]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_instinct_id** () -- 3 connections
+  - <- calls <- [[testvalidateinstinctid]]
+  - <- calls <- [[promotespecific]]
+  - <- calls <- [[promoteauto]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_projects** () -- 3 connections
+  - <- calls <- [[testcmdprojectsemptyregistry]]
+  - <- calls <- [[testcmdprojectswithregistry]]
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__torch** () -- 3 connections
+  - <- imports <- [[export-moonshine-onnx]]
+  - <- imports <- [[sttprocessor]]
+  - <- imports <- [[health]]
+- **test_empty_content_no_error** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseinstinctfile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
+  - <- contains <- [[testparseinstinct]]
+- **test_find_cross_project_empty_registry** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreffindcrossprojectinstincts]]
+  - <- contains <- [[testparseinstinct]]
+- **test_load_all_empty** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefmakeproject]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefloadallinstincts]]
+  - <- contains <- [[testparseinstinct]]
+- **test_multiple_instincts_preserve_content** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseinstinctfile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
+  - <- contains <- [[testparseinstinct]]
+- **test_parse_no_id_skipped** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseinstinctfile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
+  - <- contains <- [[testparseinstinct]]
+- **test_single_instinct_preserves_content** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseinstinctfile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]]
+  - <- contains <- [[testparseinstinct]]
+- **test_validate_rejects_etc** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefraises]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvalidatefilepath]]
+  - <- contains <- [[testparseinstinct]]
+- **test_validate_rejects_proc** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefraises]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvalidatefilepath]]
+  - <- contains <- [[testparseinstinct]]
+- **test_validate_rejects_usr** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefraises]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvalidatefilepath]]
+  - <- contains <- [[testparseinstinct]]
+- **test_validate_rejects_var_log** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefraises]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvalidatefilepath]]
+  - <- contains <- [[testparseinstinct]]
+- **DecoderWithPastStacked** (uncounted-app/scripts/export-moonshine-onnx.py) -- 3 connections
+  - -> contains -> [[init]]
+  - -> contains -> [[forward]]
+  - <- contains <- [[export-moonshine-onnx]]
+- **DecoderWrapper** (uncounted-app/scripts/export-moonshine-onnx.py) -- 3 connections
+  - -> contains -> [[init]]
+  - -> contains -> [[forward]]
+  - <- contains <- [[export-moonshine-onnx]]
+- **EncoderWrapper** (uncounted-app/scripts/export-moonshine-onnx.py) -- 3 connections
+  - -> contains -> [[init]]
+  - -> contains -> [[forward]]
+  - <- contains <- [[export-moonshine-onnx]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__arange** () -- 2 connections
+  - <- calls <- [[onnxcausalmask]]
+  - <- calls <- [[testextractswithpadding]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__attributeerror** () -- 2 connections
+  - <- calls <- [[getencoder]]
+  - <- calls <- [[getdecoder]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__delenv** () -- 2 connections
+  - <- calls <- [[testdetectprojectglobalfallback]]
+  - <- calls <- [[testdetectprojectgittimeout]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dir** () -- 2 connections
+  - <- calls <- [[getencoder]]
+  - <- calls <- [[getdecoder]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__io** () -- 2 connections
+  - <- imports <- [[audiosplitter]]
+  - <- imports <- [[testparseinstinct]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tuple** () -- 2 connections
+  - <- calls <- [[makekvcache]]
+  - <- calls <- [[applypadding]]
+- **test_load_from_empty_dir** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefloadinstinctsfromdir]]
+  - <- contains <- [[testparseinstinct]]
+- **test_load_from_nonexistent_dir** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefloadinstinctsfromdir]]
+  - <- contains <- [[testparseinstinct]]
+- **test_parse_empty_string** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseinstinctfile]]
+  - <- contains <- [[testparseinstinct]]
+- **test_parse_garbage_input** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseinstinctfile]]
+  - <- contains <- [[testparseinstinct]]
+- **test_parse_trigger_strips_quotes** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefparseinstinctfile]]
+  - <- contains <- [[testparseinstinct]]
+- **test_validate_instinct_id** (.claude/skills/continuous-learning-v2/scripts/test_parse_instinct.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefvalidateinstinctid]]
+  - <- contains <- [[testparseinstinct]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____init__** () -- 1 connections
+  - <- calls <- [[init]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___dl** () -- 1 connections
+  - <- calls <- [[makekvcache]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___ensure_global_dirs** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_kv_cache** () -- 1 connections
+  - <- calls <- [[forward]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___ml** () -- 1 connections
+  - <- calls <- [[makekvcache]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_argument** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_parser** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_subparsers** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__approx** () -- 1 connections
+  - <- calls <- [[testparseconfidenceisfloat]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__argumentparser** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__chdir** () -- 1 connections
+  - <- calls <- [[testvalidaterelativepath]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_evolve** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_export** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_import** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_promote** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_prune** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dec** () -- 1 connections
+  - <- calls <- [[forward]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dynamiccache** () -- 1 connections
+  - <- calls <- [[makekvcache]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__enc** () -- 1 connections
+  - <- calls <- [[forward]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__encoderdecodercache** () -- 1 connections
+  - <- calls <- [[makekvcache]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filenotfounderror** () -- 1 connections
+  - <- calls <- [[testdetectprojectglobalfallback]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_encoder** () -- 1 connections
+  - <- calls <- [[getencoder]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__home** () -- 1 connections
+  - <- calls <- [[testvalidatehomeexpansion]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_args** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__print_help** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__proj** () -- 1 connections
+  - <- calls <- [[forward]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__stack** () -- 1 connections
+  - <- calls <- [[forward]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__super** () -- 1 connections
+  - <- calls <- [[init]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tensor** () -- 1 connections
+  - <- calls <- [[forward]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__timeoutexpired** () -- 1 connections
+  - <- calls <- [[testdetectprojectgittimeout]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__transformers** () -- 1 connections
+  - <- imports <- [[export-moonshine-onnx]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__types** () -- 1 connections
+  - <- imports <- [[testparseinstinct]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__unittest** () -- 1 connections
+  - <- imports <- [[testparseinstinct]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__unsqueeze** () -- 1 connections
+  - <- calls <- [[onnxcausalmask]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__util** () -- 1 connections
+  - <- imports <- [[testparseinstinct]]
+- **_onnx_bidirectional_mask** (uncounted-app/scripts/export-moonshine-onnx.py) -- 1 connections
+  - <- contains <- [[export-moonshine-onnx]]
+
+## Internal Relationships
+- cmd_promote -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_specific [EXTRACTED]
+- cmd_promote -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_auto [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___ensure_global_dirs [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__argumentparser [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_subparsers [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_parser [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__add_argument [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_args [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_status [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_import [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_export [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_evolve [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_promote [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_projects [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_prune [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__print_help [EXTRACTED]
+- test_parse_instinct -> contains -> test_multiple_instincts_preserve_content [EXTRACTED]
+- test_parse_instinct -> contains -> test_single_instinct_preserves_content [EXTRACTED]
+- test_parse_instinct -> contains -> test_empty_content_no_error [EXTRACTED]
+- test_parse_instinct -> contains -> test_parse_no_id_skipped [EXTRACTED]
+- test_parse_instinct -> contains -> test_parse_confidence_is_float [EXTRACTED]
+- test_parse_instinct -> contains -> test_parse_trigger_strips_quotes [EXTRACTED]
+- test_parse_instinct -> contains -> test_parse_empty_string [EXTRACTED]
+- test_parse_instinct -> contains -> test_parse_garbage_input [EXTRACTED]
+- test_parse_instinct -> contains -> test_validate_rejects_etc [EXTRACTED]
+- test_parse_instinct -> contains -> test_validate_rejects_var_log [EXTRACTED]
+- test_parse_instinct -> contains -> test_validate_rejects_usr [EXTRACTED]
+- test_parse_instinct -> contains -> test_validate_rejects_proc [EXTRACTED]
+- test_parse_instinct -> contains -> test_validate_must_exist_fails [EXTRACTED]
+- test_parse_instinct -> contains -> test_validate_home_expansion [EXTRACTED]
+- test_parse_instinct -> contains -> test_validate_relative_path [EXTRACTED]
+- test_parse_instinct -> contains -> test_detect_project_global_fallback [EXTRACTED]
+- test_parse_instinct -> contains -> test_detect_project_git_timeout [EXTRACTED]
+- test_parse_instinct -> contains -> test_load_from_empty_dir [EXTRACTED]
+- test_parse_instinct -> contains -> test_load_from_nonexistent_dir [EXTRACTED]
+- test_parse_instinct -> contains -> test_load_all_project_and_global [EXTRACTED]
+- test_parse_instinct -> contains -> test_load_project_only_excludes_global [EXTRACTED]
+- test_parse_instinct -> contains -> test_load_all_empty [EXTRACTED]
+- test_parse_instinct -> contains -> test_cmd_status_no_instincts [EXTRACTED]
+- test_parse_instinct -> contains -> test_cmd_status_with_instincts [EXTRACTED]
+- test_parse_instinct -> contains -> test_cmd_status_returns_int [EXTRACTED]
+- test_parse_instinct -> contains -> test_cmd_projects_empty_registry [EXTRACTED]
+- test_parse_instinct -> contains -> test_cmd_projects_with_registry [EXTRACTED]
+- test_parse_instinct -> contains -> test_promote_specific_not_found [EXTRACTED]
+- test_parse_instinct -> contains -> test_promote_specific_rejects_invalid_id [EXTRACTED]
+- test_parse_instinct -> contains -> test_promote_specific_already_global [EXTRACTED]
+- test_parse_instinct -> contains -> test_promote_auto_no_candidates [EXTRACTED]
+- test_parse_instinct -> contains -> test_promote_auto_dry_run [EXTRACTED]
+- test_parse_instinct -> contains -> test_promote_auto_skips_invalid_id [EXTRACTED]
+- test_parse_instinct -> contains -> test_find_cross_project_empty_registry [EXTRACTED]
+- test_parse_instinct -> contains -> test_find_cross_project_single_project [EXTRACTED]
+- test_parse_instinct -> contains -> test_find_cross_project_shared_instinct [EXTRACTED]
+- test_parse_instinct -> contains -> test_load_registry_valid [EXTRACTED]
+- test_parse_instinct -> contains -> test_validate_instinct_id [EXTRACTED]
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__util [EXTRACTED]
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__io [EXTRACTED]
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sys [EXTRACTED]
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__types [EXTRACTED]
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__unittest [EXTRACTED]
+- test_cmd_projects_empty_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__simplenamespace [EXTRACTED]
+- test_cmd_projects_empty_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_projects [EXTRACTED]
+- test_cmd_projects_empty_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_cmd_projects_with_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_cmd_projects_with_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dumps [EXTRACTED]
+- test_cmd_projects_with_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__simplenamespace [EXTRACTED]
+- test_cmd_projects_with_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_projects [EXTRACTED]
+- test_cmd_projects_with_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_cmd_status_no_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_cmd_status_no_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__simplenamespace [EXTRACTED]
+- test_cmd_status_no_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_status [EXTRACTED]
+- test_cmd_status_no_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_cmd_status_returns_int -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_cmd_status_returns_int -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__simplenamespace [EXTRACTED]
+- test_cmd_status_returns_int -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_status [EXTRACTED]
+- test_cmd_status_returns_int -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__isinstance [EXTRACTED]
+- test_cmd_status_with_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_cmd_status_with_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__simplenamespace [EXTRACTED]
+- test_cmd_status_with_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__cmd_status [EXTRACTED]
+- test_cmd_status_with_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_detect_project_git_timeout -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__delenv [EXTRACTED]
+- test_detect_project_git_timeout -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__timeoutexpired [EXTRACTED]
+- test_detect_project_global_fallback -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__delenv [EXTRACTED]
+- test_detect_project_global_fallback -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__filenotfounderror [EXTRACTED]
+- test_empty_content_no_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file [EXTRACTED]
+- test_find_cross_project_empty_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___find_cross_project_instincts [EXTRACTED]
+- test_find_cross_project_shared_instinct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_find_cross_project_shared_instinct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dumps [EXTRACTED]
+- test_find_cross_project_shared_instinct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___find_cross_project_instincts [EXTRACTED]
+- test_find_cross_project_single_project -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_find_cross_project_single_project -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dumps [EXTRACTED]
+- test_find_cross_project_single_project -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___find_cross_project_instincts [EXTRACTED]
+- test_load_all_empty -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_load_all_project_and_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_load_project_only_excludes_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_load_registry_valid -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dumps [EXTRACTED]
+- test_multiple_instincts_preserve_content -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file [EXTRACTED]
+- test_parse_confidence_is_float -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file [EXTRACTED]
+- test_parse_confidence_is_float -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__isinstance [EXTRACTED]
+- test_parse_confidence_is_float -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__approx [EXTRACTED]
+- test_parse_empty_string -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file [EXTRACTED]
+- test_parse_garbage_input -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file [EXTRACTED]
+- test_parse_no_id_skipped -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file [EXTRACTED]
+- test_parse_trigger_strips_quotes -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file [EXTRACTED]
+- test_promote_auto_dry_run -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_promote_auto_dry_run -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dumps [EXTRACTED]
+- test_promote_auto_dry_run -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_auto [EXTRACTED]
+- test_promote_auto_dry_run -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_promote_auto_no_candidates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_promote_auto_no_candidates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_auto [EXTRACTED]
+- test_promote_auto_no_candidates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_promote_auto_skips_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_promote_auto_skips_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dumps [EXTRACTED]
+- test_promote_auto_skips_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_auto [EXTRACTED]
+- test_promote_auto_skips_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_promote_specific_already_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_promote_specific_already_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_specific [EXTRACTED]
+- test_promote_specific_already_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_promote_specific_not_found -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_promote_specific_not_found -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_specific [EXTRACTED]
+- test_promote_specific_not_found -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_promote_specific_rejects_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project [EXTRACTED]
+- test_promote_specific_rejects_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___promote_specific [EXTRACTED]
+- test_promote_specific_rejects_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__readouterr [EXTRACTED]
+- test_single_instinct_preserves_content -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__parse_instinct_file [EXTRACTED]
+- test_validate_home_expansion -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_file_path [EXTRACTED]
+- test_validate_home_expansion -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__home [EXTRACTED]
+- test_validate_instinct_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_instinct_id [EXTRACTED]
+- test_validate_must_exist_fails -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__raises [EXTRACTED]
+- test_validate_must_exist_fails -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_file_path [EXTRACTED]
+- test_validate_rejects_etc -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__raises [EXTRACTED]
+- test_validate_rejects_etc -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_file_path [EXTRACTED]
+- test_validate_rejects_proc -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__raises [EXTRACTED]
+- test_validate_rejects_proc -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_file_path [EXTRACTED]
+- test_validate_rejects_usr -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__raises [EXTRACTED]
+- test_validate_rejects_usr -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_file_path [EXTRACTED]
+- test_validate_rejects_var_log -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__raises [EXTRACTED]
+- test_validate_rejects_var_log -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_file_path [EXTRACTED]
+- test_validate_relative_path -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__chdir [EXTRACTED]
+- test_validate_relative_path -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___validate_file_path [EXTRACTED]
+- DecoderWithPastStacked -> contains -> __init__ [EXTRACTED]
+- DecoderWithPastStacked -> contains -> forward [EXTRACTED]
+- DecoderWrapper -> contains -> __init__ [EXTRACTED]
+- DecoderWrapper -> contains -> forward [EXTRACTED]
+- EncoderWrapper -> contains -> __init__ [EXTRACTED]
+- EncoderWrapper -> contains -> forward [EXTRACTED]
+- export-moonshine-onnx -> contains -> get_encoder [EXTRACTED]
+- export-moonshine-onnx -> contains -> EncoderWrapper [EXTRACTED]
+- export-moonshine-onnx -> contains -> get_decoder [EXTRACTED]
+- export-moonshine-onnx -> contains -> DecoderWrapper [EXTRACTED]
+- export-moonshine-onnx -> contains -> _onnx_causal_mask [EXTRACTED]
+- export-moonshine-onnx -> contains -> _onnx_bidirectional_mask [EXTRACTED]
+- export-moonshine-onnx -> contains -> _make_kv_cache [EXTRACTED]
+- export-moonshine-onnx -> contains -> DecoderWithPastStacked [EXTRACTED]
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__sys [EXTRACTED]
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__torch [EXTRACTED]
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__transformers [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____init__ [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__super [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tuple [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dynamiccache [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___dl [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___ml [EXTRACTED]
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__encoderdecodercache [EXTRACTED]
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__unsqueeze [EXTRACTED]
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__arange [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__enc [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__isinstance [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dec [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__proj [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__tensor [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_kv_cache [EXTRACTED]
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__stack [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__attributeerror [EXTRACTED]
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dir [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__hasattr [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__get_encoder [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__attributeerror [EXTRACTED]
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__dir [EXTRACTED]
+
+## Cross-Community Connections
+- cmd_promote -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__detect_project (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> _make_project (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_validate_normal_path (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_detect_project_from_env (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_detect_project_creates_directories (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_annotates_metadata (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_defaults_scope_from_label (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_preserves_explicit_scope (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_update_registry_atomic_replaces_file (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_supports_yml_extension (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_supports_md_extension (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_instincts_from_dir_uses_utf8_encoding (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_all_project_overrides_global (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_all_global_only (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_project_only_global_fallback_loads_global (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_promote_specific_success (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_registry_corrupt_json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> contains -> test_load_registry_uses_utf8_encoding (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__os (-> [[createdocument-generatedocx]])
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pathlib (-> [[schemas-unresolvedrefunresolvedrefunresolvedrefunresolvedrefbasemodel]])
+- test_parse_instinct -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__pytest (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsine-testdoesnotmutateinput]])
+- test_cmd_projects_with_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_cmd_status_no_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__setattr (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_cmd_status_returns_int -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__setattr (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_cmd_status_with_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__setattr (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_cmd_status_with_instincts -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_detect_project_git_timeout -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__setattr (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_detect_project_git_timeout -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__detect_project (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_detect_project_global_fallback -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__setattr (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_detect_project_global_fallback -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__detect_project (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_empty_content_no_error -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_find_cross_project_empty_registry -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_find_cross_project_shared_instinct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_find_cross_project_shared_instinct -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_find_cross_project_single_project -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_all_empty -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__load_all_instincts (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_all_project_and_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_all_project_and_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__load_all_instincts (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_from_empty_dir -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___load_instincts_from_dir (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_from_nonexistent_dir -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___load_instincts_from_dir (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_project_only_excludes_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_project_only_excludes_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__load_project_only_instincts (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_registry_valid -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_load_registry_valid -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__load_registry (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_multiple_instincts_preserve_content -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_parse_no_id_skipped -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_promote_auto_dry_run -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_promote_auto_dry_run -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__exists (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_promote_auto_no_candidates -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_promote_auto_skips_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_promote_auto_skips_invalid_id -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__exists (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_promote_specific_already_global -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_single_instinct_preserves_content -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_validate_home_expansion -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_validate_home_expansion -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_validate_must_exist_fails -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_validate_relative_path -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__write_text (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_validate_relative_path -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__resolve (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- export-moonshine-onnx -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__os (-> [[createdocument-generatedocx]])
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _make_kv_cache -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _onnx_causal_mask -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__ones (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefsine-testdoesnotmutateinput]])
+- forward -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- get_decoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- get_encoder -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+
+## Context
+이 커뮤니티는 test_parse_instinct, __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref___make_project, main를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 export-moonshine-onnx.py, instinct-cli.py, test_parse_instinct.py이다.

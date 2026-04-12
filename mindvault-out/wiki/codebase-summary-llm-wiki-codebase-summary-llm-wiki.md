@@ -1,0 +1,116 @@
+# Codebase Summary: llm-wiki & Codebase Summary: llm-wiki
+Cohesion: 0.07 | Nodes: 27
+
+## Key Nodes
+- **Codebase Summary: llm-wiki** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 9 connections
+  - -> contains -> [[project-overview]]
+  - -> contains -> [[architecture]]
+  - -> contains -> [[core-components]]
+  - -> contains -> [[key-constants-schemas]]
+  - -> contains -> [[workflows]]
+  - -> contains -> [[configuration]]
+  - -> contains -> [[dependencies]]
+  - -> contains -> [[design-principles]]
+  - -> contains -> [[entry-points]]
+- **Codebase Summary: llm-wiki** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 9 connections
+  - -> contains -> [[project-overview]]
+  - -> contains -> [[architecture]]
+  - -> contains -> [[core-components]]
+  - -> contains -> [[key-constants-schemas]]
+  - -> contains -> [[workflows]]
+  - -> contains -> [[configuration]]
+  - -> contains -> [[dependencies]]
+  - -> contains -> [[design-principles]]
+  - -> contains -> [[entry-points]]
+- **Core Components** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 4 connections
+  - -> contains -> [[scripts-scripts]]
+  - -> contains -> [[claude-code-skill-skill]]
+  - -> contains -> [[documentation-docs]]
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Core Components** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 4 connections
+  - -> contains -> [[scripts-scripts]]
+  - -> contains -> [[claude-code-skill-skill]]
+  - -> contains -> [[documentation-docs]]
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__wikilink** () -- 2 connections
+  - <- references <- [[scripts-scripts]]
+  - <- references <- [[scripts-scripts]]
+- **Scripts (`scripts/`)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilink]]
+  - <- contains <- [[core-components]]
+- **Scripts (`scripts/`)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 2 connections
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefwikilink]]
+  - <- contains <- [[core-components]]
+- **Architecture** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Claude Code Skill (`skill/`)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[core-components]]
+- **Configuration** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Dependencies** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Design Principles** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Documentation (`docs/`)** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[core-components]]
+- **Entry Points** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Key Constants & Schemas** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Project Overview** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Workflows** (/Users/gdash/project/uncounted-project/.agents/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Architecture** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Claude Code Skill (`skill/`)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[core-components]]
+- **Configuration** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Dependencies** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Design Principles** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Documentation (`docs/`)** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[core-components]]
+- **Entry Points** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Key Constants & Schemas** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Project Overview** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+- **Workflows** (/Users/gdash/project/uncounted-project/.claude/skills/llm-wiki/docs/codebase-summary.md) -- 1 connections
+  - <- contains <- [[codebase-summary-llm-wiki]]
+
+## Internal Relationships
+- Codebase Summary: llm-wiki -> contains -> Project Overview [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Architecture [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Core Components [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Key Constants & Schemas [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Workflows [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Configuration [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Dependencies [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Design Principles [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Entry Points [EXTRACTED]
+- Core Components -> contains -> Scripts (`scripts/`) [EXTRACTED]
+- Core Components -> contains -> Claude Code Skill (`skill/`) [EXTRACTED]
+- Core Components -> contains -> Documentation (`docs/`) [EXTRACTED]
+- Scripts (`scripts/`) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilink [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Project Overview [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Architecture [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Core Components [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Key Constants & Schemas [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Workflows [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Configuration [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Dependencies [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Design Principles [EXTRACTED]
+- Codebase Summary: llm-wiki -> contains -> Entry Points [EXTRACTED]
+- Core Components -> contains -> Scripts (`scripts/`) [EXTRACTED]
+- Core Components -> contains -> Claude Code Skill (`skill/`) [EXTRACTED]
+- Core Components -> contains -> Documentation (`docs/`) [EXTRACTED]
+- Scripts (`scripts/`) -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref__wikilink [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Codebase Summary: llm-wiki, Codebase Summary: llm-wiki, Core Components를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 codebase-summary.md이다.

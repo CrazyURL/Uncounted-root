@@ -1,0 +1,112 @@
+# Supabase 테이블 & 2. DB 스키마 정의서 (v1.7)
+Cohesion: 0.08 | Nodes: 26
+
+## Key Nodes
+- **Supabase 테이블** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 22 connections
+  - -> contains -> [[1-sessions]]
+  - -> contains -> [[2-usersprofile]]
+  - -> contains -> [[3-billableunits]]
+  - -> contains -> [[4-buqualitymetrics-bu-v17-migration-022]]
+  - -> contains -> [[5-clients]]
+  - -> contains -> [[6-deliveryprofiles]]
+  - -> contains -> [[7-clientskurules-sku]]
+  - -> contains -> [[8-skupresets-sku]]
+  - -> contains -> [[9-exportjobs]]
+  - -> contains -> [[10-exportpackageitems-v17-migration-021]]
+  - -> contains -> [[11-userassetledger]]
+  - -> contains -> [[12-deliveryrecords-per-client]]
+  - -> contains -> [[13-sessionchunks-wav]]
+  - -> contains -> [[14-utterances-v17-migration-026-029]]
+  - -> contains -> [[15-transcriptchunks-stt]]
+  - -> contains -> [[16-transcripts-stt]]
+  - -> contains -> [[17-metadataevents-v17-migration-024]]
+  - -> contains -> [[18-voiceprofiles-v17-migration-030]]
+  - -> contains -> [[19-pkcestore-pkce-oauth-v17-migration-018]]
+  - -> contains -> [[20-errorlogs]]
+  - -> contains -> [[21-funnelevents]]
+  - <- contains <- [[2-db-v17]]
+- **2. DB 스키마 정의서 (v1.7)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 3 connections
+  - -> contains -> [[supabase]]
+  - -> contains -> [[migration]]
+  - -> contains -> [[er]]
+- **1. sessions (핵심 세션 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 2 connections
+  - -> has_code_example -> [[json]]
+  - <- contains <- [[supabase]]
+- **json** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- has_code_example <- [[1-sessions]]
+- **10. export_package_items (납품 패키지 파일 항목) — *v1.7 신규 (Migration 021)*** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **11. user_asset_ledger (정산 원장)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **12. delivery_records (Per-client 납품 이력)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **13. session_chunks (청크 테이블 — 물리 WAV + 논리 청크)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **14. utterances (발화 단위 테이블) — *v1.7 신규 (Migration 026 + 029)*** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **15. transcript_chunks (청크별 STT 텍스트 + 오디오 통계)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **16. transcripts (STT 텍스트 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **17. metadata_events (메타데이터 이벤트 테이블) — *v1.7 신규 (Migration 024)*** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **18. voice_profiles (목소리 등록 프로필) — *v1.7 신규 (Migration 030)*** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **19. pkce_store (PKCE OAuth 상태 저장) — *v1.7 신규 (Migration 018)*** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **20. error_logs (에러 로그)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **21. funnel_events (퍼널 이벤트)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **2. users_profile (사용자 프로필 + 동의 관리)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **3. billable_units (빌링 유닛 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **4. bu_quality_metrics (BU 오디오 품질 분석) — *v1.7 신규 (Migration 022)*** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **5. clients (납품처 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **6. delivery_profiles (납품 프로필 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **7. client_sku_rules (납품처별 SKU 규칙)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **8. sku_presets (SKU 프리셋 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **9. export_jobs (내보내기 작업 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **ER 다이어그램 (관계도)** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[2-db-v17]]
+- **Migration 히스토리** (uncounted-docs/백앤드/schema/DB스키마_v1.7.md) -- 1 connections
+  - <- contains <- [[2-db-v17]]
+
+## Internal Relationships
+- 1. sessions (핵심 세션 테이블) -> has_code_example -> json [EXTRACTED]
+- 2. DB 스키마 정의서 (v1.7) -> contains -> Supabase 테이블 [EXTRACTED]
+- 2. DB 스키마 정의서 (v1.7) -> contains -> Migration 히스토리 [EXTRACTED]
+- 2. DB 스키마 정의서 (v1.7) -> contains -> ER 다이어그램 (관계도) [EXTRACTED]
+- Supabase 테이블 -> contains -> 1. sessions (핵심 세션 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 2. users_profile (사용자 프로필 + 동의 관리) [EXTRACTED]
+- Supabase 테이블 -> contains -> 3. billable_units (빌링 유닛 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 4. bu_quality_metrics (BU 오디오 품질 분석) — *v1.7 신규 (Migration 022)* [EXTRACTED]
+- Supabase 테이블 -> contains -> 5. clients (납품처 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 6. delivery_profiles (납품 프로필 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 7. client_sku_rules (납품처별 SKU 규칙) [EXTRACTED]
+- Supabase 테이블 -> contains -> 8. sku_presets (SKU 프리셋 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 9. export_jobs (내보내기 작업 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 10. export_package_items (납품 패키지 파일 항목) — *v1.7 신규 (Migration 021)* [EXTRACTED]
+- Supabase 테이블 -> contains -> 11. user_asset_ledger (정산 원장) [EXTRACTED]
+- Supabase 테이블 -> contains -> 12. delivery_records (Per-client 납품 이력) [EXTRACTED]
+- Supabase 테이블 -> contains -> 13. session_chunks (청크 테이블 — 물리 WAV + 논리 청크) [EXTRACTED]
+- Supabase 테이블 -> contains -> 14. utterances (발화 단위 테이블) — *v1.7 신규 (Migration 026 + 029)* [EXTRACTED]
+- Supabase 테이블 -> contains -> 15. transcript_chunks (청크별 STT 텍스트 + 오디오 통계) [EXTRACTED]
+- Supabase 테이블 -> contains -> 16. transcripts (STT 텍스트 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 17. metadata_events (메타데이터 이벤트 테이블) — *v1.7 신규 (Migration 024)* [EXTRACTED]
+- Supabase 테이블 -> contains -> 18. voice_profiles (목소리 등록 프로필) — *v1.7 신규 (Migration 030)* [EXTRACTED]
+- Supabase 테이블 -> contains -> 19. pkce_store (PKCE OAuth 상태 저장) — *v1.7 신규 (Migration 018)* [EXTRACTED]
+- Supabase 테이블 -> contains -> 20. error_logs (에러 로그) [EXTRACTED]
+- Supabase 테이블 -> contains -> 21. funnel_events (퍼널 이벤트) [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Supabase 테이블, 2. DB 스키마 정의서 (v1.7), 1. sessions (핵심 세션 테이블)를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 DB스키마_v1.7.md이다.

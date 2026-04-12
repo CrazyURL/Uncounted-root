@@ -1,0 +1,119 @@
+# Preset Catalog & Style Presets Reference
+Cohesion: 0.08 | Nodes: 27
+
+## Key Nodes
+- **Preset Catalog** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 13 connections
+  - -> contains -> [[1-bold-signal]]
+  - -> contains -> [[2-electric-studio]]
+  - -> contains -> [[3-creative-voltage]]
+  - -> contains -> [[4-dark-botanical]]
+  - -> contains -> [[5-notebook-tabs]]
+  - -> contains -> [[6-pastel-geometry]]
+  - -> contains -> [[7-split-pastel]]
+  - -> contains -> [[8-vintage-editorial]]
+  - -> contains -> [[9-neon-cyber]]
+  - -> contains -> [[10-terminal-green]]
+  - -> contains -> [[11-swiss-modern]]
+  - -> contains -> [[12-paper-ink]]
+  - <- contains <- [[style-presets-reference]]
+- **Style Presets Reference** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 10 connections
+  - -> contains -> [[viewport-fit-is-non-negotiable]]
+  - -> contains -> [[mandatory-base-css]]
+  - -> contains -> [[viewport-checklist]]
+  - -> contains -> [[mood-to-preset-mapping]]
+  - -> contains -> [[preset-catalog]]
+  - -> contains -> [[direct-selection-prompts]]
+  - -> contains -> [[animation-feel-mapping]]
+  - -> contains -> [[css-gotcha-negating-functions]]
+  - -> contains -> [[validation-sizes]]
+  - -> contains -> [[anti-patterns]]
+- **Viewport Fit Is Non-Negotiable** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 3 connections
+  - -> contains -> [[golden-rule]]
+  - -> contains -> [[density-limits]]
+  - <- contains <- [[style-presets-reference]]
+- **css** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 2 connections
+  - <- has_code_example <- [[mandatory-base-css]]
+  - <- has_code_example <- [[css-gotcha-negating-functions]]
+- **CSS Gotcha: Negating Functions** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 2 connections
+  - -> has_code_example -> [[css]]
+  - <- contains <- [[style-presets-reference]]
+- **Golden Rule** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 2 connections
+  - -> has_code_example -> [[text]]
+  - <- contains <- [[viewport-fit-is-non-negotiable]]
+- **Mandatory Base CSS** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 2 connections
+  - -> has_code_example -> [[css]]
+  - <- contains <- [[style-presets-reference]]
+- **text** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- has_code_example <- [[golden-rule]]
+- **10. Terminal Green** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **11. Swiss Modern** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **12. Paper & Ink** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **1. Bold Signal** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **2. Electric Studio** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **3. Creative Voltage** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **4. Dark Botanical** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **5. Notebook Tabs** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **6. Pastel Geometry** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **7. Split Pastel** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **8. Vintage Editorial** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **9. Neon Cyber** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[preset-catalog]]
+- **Animation Feel Mapping** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[style-presets-reference]]
+- **Anti-Patterns** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[style-presets-reference]]
+- **Density Limits** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[viewport-fit-is-non-negotiable]]
+- **Direct Selection Prompts** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[style-presets-reference]]
+- **Mood to Preset Mapping** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[style-presets-reference]]
+- **Validation Sizes** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[style-presets-reference]]
+- **Viewport Checklist** (.claude/skills/frontend-slides/STYLE_PRESETS.md) -- 1 connections
+  - <- contains <- [[style-presets-reference]]
+
+## Internal Relationships
+- CSS Gotcha: Negating Functions -> has_code_example -> css [EXTRACTED]
+- Golden Rule -> has_code_example -> text [EXTRACTED]
+- Mandatory Base CSS -> has_code_example -> css [EXTRACTED]
+- Preset Catalog -> contains -> 1. Bold Signal [EXTRACTED]
+- Preset Catalog -> contains -> 2. Electric Studio [EXTRACTED]
+- Preset Catalog -> contains -> 3. Creative Voltage [EXTRACTED]
+- Preset Catalog -> contains -> 4. Dark Botanical [EXTRACTED]
+- Preset Catalog -> contains -> 5. Notebook Tabs [EXTRACTED]
+- Preset Catalog -> contains -> 6. Pastel Geometry [EXTRACTED]
+- Preset Catalog -> contains -> 7. Split Pastel [EXTRACTED]
+- Preset Catalog -> contains -> 8. Vintage Editorial [EXTRACTED]
+- Preset Catalog -> contains -> 9. Neon Cyber [EXTRACTED]
+- Preset Catalog -> contains -> 10. Terminal Green [EXTRACTED]
+- Preset Catalog -> contains -> 11. Swiss Modern [EXTRACTED]
+- Preset Catalog -> contains -> 12. Paper & Ink [EXTRACTED]
+- Style Presets Reference -> contains -> Viewport Fit Is Non-Negotiable [EXTRACTED]
+- Style Presets Reference -> contains -> Mandatory Base CSS [EXTRACTED]
+- Style Presets Reference -> contains -> Viewport Checklist [EXTRACTED]
+- Style Presets Reference -> contains -> Mood to Preset Mapping [EXTRACTED]
+- Style Presets Reference -> contains -> Preset Catalog [EXTRACTED]
+- Style Presets Reference -> contains -> Direct Selection Prompts [EXTRACTED]
+- Style Presets Reference -> contains -> Animation Feel Mapping [EXTRACTED]
+- Style Presets Reference -> contains -> CSS Gotcha: Negating Functions [EXTRACTED]
+- Style Presets Reference -> contains -> Validation Sizes [EXTRACTED]
+- Style Presets Reference -> contains -> Anti-Patterns [EXTRACTED]
+- Viewport Fit Is Non-Negotiable -> contains -> Golden Rule [EXTRACTED]
+- Viewport Fit Is Non-Negotiable -> contains -> Density Limits [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Preset Catalog, Style Presets Reference, Viewport Fit Is Non-Negotiable를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 STYLE_PRESETS.md이다.

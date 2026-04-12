@@ -1,0 +1,142 @@
+# kotlin & Android Clean Architecture
+Cohesion: 0.11 | Nodes: 26
+
+## Key Nodes
+- **kotlin** (.claude/skills/android-clean-architecture/SKILL.md) -- 11 connections
+  - <- has_code_example <- [[usecase-pattern]]
+  - <- has_code_example <- [[domain-models]]
+  - <- has_code_example <- [[repository-interfaces]]
+  - <- has_code_example <- [[repository-implementation]]
+  - <- has_code_example <- [[mapper-pattern]]
+  - <- has_code_example <- [[room-database-android]]
+  - <- has_code_example <- [[ktor-network-client-kmp]]
+  - <- has_code_example <- [[koin-kmp-friendly]]
+  - <- has_code_example <- [[hilt-android-only]]
+  - <- has_code_example <- [[resulttry-pattern]]
+  - <- has_code_example <- [[convention-plugins-gradle]]
+- **Android Clean Architecture** (.claude/skills/android-clean-architecture/SKILL.md) -- 10 connections
+  - -> contains -> [[when-to-activate]]
+  - -> contains -> [[module-structure]]
+  - -> contains -> [[domain-layer]]
+  - -> contains -> [[data-layer]]
+  - -> contains -> [[dependency-injection]]
+  - -> contains -> [[error-handling]]
+  - -> contains -> [[convention-plugins-gradle]]
+  - -> contains -> [[anti-patterns-to-avoid]]
+  - -> contains -> [[references]]
+  - <- contains <- [[skill]]
+- **Data Layer** (.claude/skills/android-clean-architecture/SKILL.md) -- 6 connections
+  - -> contains -> [[repository-implementation]]
+  - -> contains -> [[mapper-pattern]]
+  - -> contains -> [[room-database-android]]
+  - -> contains -> [[sqldelight-kmp]]
+  - -> contains -> [[ktor-network-client-kmp]]
+  - <- contains <- [[android-clean-architecture]]
+- **Domain Layer** (.claude/skills/android-clean-architecture/SKILL.md) -- 4 connections
+  - -> contains -> [[usecase-pattern]]
+  - -> contains -> [[domain-models]]
+  - -> contains -> [[repository-interfaces]]
+  - <- contains <- [[android-clean-architecture]]
+- **Dependency Injection** (.claude/skills/android-clean-architecture/SKILL.md) -- 3 connections
+  - -> contains -> [[koin-kmp-friendly]]
+  - -> contains -> [[hilt-android-only]]
+  - <- contains <- [[android-clean-architecture]]
+- **Module Structure** (.claude/skills/android-clean-architecture/SKILL.md) -- 3 connections
+  - -> contains -> [[recommended-layout]]
+  - -> contains -> [[dependency-rules]]
+  - <- contains <- [[android-clean-architecture]]
+- **Convention Plugins (Gradle)** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[android-clean-architecture]]
+- **Domain Models** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[domain-layer]]
+- **Error Handling** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> contains -> [[resulttry-pattern]]
+  - <- contains <- [[android-clean-architecture]]
+- **Hilt (Android-only)** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[dependency-injection]]
+- **Koin (KMP-friendly)** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[dependency-injection]]
+- **Ktor Network Client (KMP)** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[data-layer]]
+- **Mapper Pattern** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[data-layer]]
+- **Repository Implementation** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[data-layer]]
+- **Repository Interfaces** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[domain-layer]]
+- **Result/Try Pattern** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[error-handling]]
+- **Room Database (Android)** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[data-layer]]
+- **SQLDelight (KMP)** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[sql]]
+  - <- contains <- [[data-layer]]
+- **UseCase Pattern** (.claude/skills/android-clean-architecture/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[kotlin]]
+  - <- contains <- [[domain-layer]]
+- **sql** (.claude/skills/android-clean-architecture/SKILL.md) -- 1 connections
+  - <- has_code_example <- [[sqldelight-kmp]]
+- **SKILL** (.claude/skills/android-clean-architecture/SKILL.md) -- 1 connections
+  - -> contains -> [[android-clean-architecture]]
+- **Anti-Patterns to Avoid** (.claude/skills/android-clean-architecture/SKILL.md) -- 1 connections
+  - <- contains <- [[android-clean-architecture]]
+- **Dependency Rules** (.claude/skills/android-clean-architecture/SKILL.md) -- 1 connections
+  - <- contains <- [[module-structure]]
+- **Recommended Layout** (.claude/skills/android-clean-architecture/SKILL.md) -- 1 connections
+  - <- contains <- [[module-structure]]
+- **References** (.claude/skills/android-clean-architecture/SKILL.md) -- 1 connections
+  - <- contains <- [[android-clean-architecture]]
+- **When to Activate** (.claude/skills/android-clean-architecture/SKILL.md) -- 1 connections
+  - <- contains <- [[android-clean-architecture]]
+
+## Internal Relationships
+- SKILL -> contains -> Android Clean Architecture [EXTRACTED]
+- Android Clean Architecture -> contains -> When to Activate [EXTRACTED]
+- Android Clean Architecture -> contains -> Module Structure [EXTRACTED]
+- Android Clean Architecture -> contains -> Domain Layer [EXTRACTED]
+- Android Clean Architecture -> contains -> Data Layer [EXTRACTED]
+- Android Clean Architecture -> contains -> Dependency Injection [EXTRACTED]
+- Android Clean Architecture -> contains -> Error Handling [EXTRACTED]
+- Android Clean Architecture -> contains -> Convention Plugins (Gradle) [EXTRACTED]
+- Android Clean Architecture -> contains -> Anti-Patterns to Avoid [EXTRACTED]
+- Android Clean Architecture -> contains -> References [EXTRACTED]
+- Convention Plugins (Gradle) -> has_code_example -> kotlin [EXTRACTED]
+- Data Layer -> contains -> Repository Implementation [EXTRACTED]
+- Data Layer -> contains -> Mapper Pattern [EXTRACTED]
+- Data Layer -> contains -> Room Database (Android) [EXTRACTED]
+- Data Layer -> contains -> SQLDelight (KMP) [EXTRACTED]
+- Data Layer -> contains -> Ktor Network Client (KMP) [EXTRACTED]
+- Dependency Injection -> contains -> Koin (KMP-friendly) [EXTRACTED]
+- Dependency Injection -> contains -> Hilt (Android-only) [EXTRACTED]
+- Domain Layer -> contains -> UseCase Pattern [EXTRACTED]
+- Domain Layer -> contains -> Domain Models [EXTRACTED]
+- Domain Layer -> contains -> Repository Interfaces [EXTRACTED]
+- Domain Models -> has_code_example -> kotlin [EXTRACTED]
+- Error Handling -> contains -> Result/Try Pattern [EXTRACTED]
+- Hilt (Android-only) -> has_code_example -> kotlin [EXTRACTED]
+- Koin (KMP-friendly) -> has_code_example -> kotlin [EXTRACTED]
+- Ktor Network Client (KMP) -> has_code_example -> kotlin [EXTRACTED]
+- Mapper Pattern -> has_code_example -> kotlin [EXTRACTED]
+- Module Structure -> contains -> Recommended Layout [EXTRACTED]
+- Module Structure -> contains -> Dependency Rules [EXTRACTED]
+- Repository Implementation -> has_code_example -> kotlin [EXTRACTED]
+- Repository Interfaces -> has_code_example -> kotlin [EXTRACTED]
+- Result/Try Pattern -> has_code_example -> kotlin [EXTRACTED]
+- Room Database (Android) -> has_code_example -> kotlin [EXTRACTED]
+- SQLDelight (KMP) -> has_code_example -> sql [EXTRACTED]
+- UseCase Pattern -> has_code_example -> kotlin [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 kotlin, Android Clean Architecture, Data Layer를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 SKILL.md이다.

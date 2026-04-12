@@ -1,0 +1,112 @@
+# Task Decomposition & Summary
+Cohesion: 0.08 | Nodes: 26
+
+## Key Nodes
+- **Task Decomposition** (.orchestrate-consult/20260412-121319/codex.md) -- 10 connections
+  - -> contains -> [[task-1-confirm-current-chunk-mode-data-flow]]
+  - -> contains -> [[task-2-add-local-audio-slice-helper]]
+  - -> contains -> [[task-3-validate-utterance-segmenter-chunk-inputs]]
+  - -> contains -> [[task-4-integrate-chunk-utterance-wav-generation]]
+  - -> contains -> [[task-5-merge-chunked-results-into-transcribe]]
+  - -> contains -> [[task-6-add-processor-integration-tests]]
+  - -> contains -> [[task-7-update-api-contract-and-issue-documentation]]
+  - -> contains -> [[task-8-client-acceptance-check]]
+  - -> contains -> [[task-9-real-sample-and-memory-verification]]
+  - <- contains <- [[summary]]
+- **Summary** (.orchestrate-consult/20260412-121319/codex.md) -- 7 connections
+  - -> contains -> [[task-decomposition]]
+  - -> contains -> [[dependency-analysis]]
+  - -> contains -> [[team-composition-recommendation]]
+  - -> contains -> [[wave-execution-plan]]
+  - -> contains -> [[risk-assessment]]
+  - -> contains -> [[alternative-strategies]]
+  - -> contains -> [[confidence-level]]
+- **Wave Execution Plan** (.orchestrate-consult/20260412-121319/codex.md) -- 6 connections
+  - -> contains -> [[wave-0-baseline-orientation]]
+  - -> contains -> [[wave-1-independent-helper-work]]
+  - -> contains -> [[wave-2-serialized-processor-integration]]
+  - -> contains -> [[wave-3-contract-and-client-acceptance]]
+  - -> contains -> [[wave-4-runtime-verification]]
+  - <- contains <- [[summary]]
+- **Alternative Strategies** (.orchestrate-consult/20260412-121319/codex.md) -- 5 connections
+  - -> contains -> [[option-a-chunk-local-utterance-wav-generation]]
+  - -> contains -> [[option-b-load-full-audio-after-chunked-stt-to-reuse-existing-splitter]]
+  - -> contains -> [[option-c-file-backed-artifact-generation-during-chunk-processing]]
+  - -> contains -> [[option-d-defer-wav-generation-to-a-post-processing-queue]]
+  - <- contains <- [[summary]]
+- **Confidence Level** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[summary]]
+- **Dependency Analysis** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[summary]]
+- **Option A: Chunk-Local Utterance WAV Generation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[alternative-strategies]]
+- **Option B: Load Full Audio After Chunked STT To Reuse Existing Splitter** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[alternative-strategies]]
+- **Option C: File-Backed Artifact Generation During Chunk Processing** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[alternative-strategies]]
+- **Option D: Defer WAV Generation To A Post-Processing Queue** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[alternative-strategies]]
+- **Risk Assessment** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[summary]]
+- **Task 1: Confirm Current Chunk-Mode Data Flow** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 2: Add Local Audio Slice Helper** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 3: Validate Utterance Segmenter Chunk Inputs** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 4: Integrate Chunk Utterance WAV Generation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 5: Merge Chunked Results Into `transcribe()`** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 6: Add Processor Integration Tests** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 7: Update API Contract And Issue Documentation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 8: Client Acceptance Check** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Task 9: Real Sample And Memory Verification** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition]]
+- **Team Composition Recommendation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[summary]]
+- **Wave 0: Baseline Orientation** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan]]
+- **Wave 1: Independent Helper Work** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan]]
+- **Wave 2: Serialized Processor Integration** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan]]
+- **Wave 3: Contract And Client Acceptance** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan]]
+- **Wave 4: Runtime Verification** (.orchestrate-consult/20260412-121319/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan]]
+
+## Internal Relationships
+- Alternative Strategies -> contains -> Option A: Chunk-Local Utterance WAV Generation [EXTRACTED]
+- Alternative Strategies -> contains -> Option B: Load Full Audio After Chunked STT To Reuse Existing Splitter [EXTRACTED]
+- Alternative Strategies -> contains -> Option C: File-Backed Artifact Generation During Chunk Processing [EXTRACTED]
+- Alternative Strategies -> contains -> Option D: Defer WAV Generation To A Post-Processing Queue [EXTRACTED]
+- Summary -> contains -> Task Decomposition [EXTRACTED]
+- Summary -> contains -> Dependency Analysis [EXTRACTED]
+- Summary -> contains -> Team Composition Recommendation [EXTRACTED]
+- Summary -> contains -> Wave Execution Plan [EXTRACTED]
+- Summary -> contains -> Risk Assessment [EXTRACTED]
+- Summary -> contains -> Alternative Strategies [EXTRACTED]
+- Summary -> contains -> Confidence Level [EXTRACTED]
+- Task Decomposition -> contains -> Task 1: Confirm Current Chunk-Mode Data Flow [EXTRACTED]
+- Task Decomposition -> contains -> Task 2: Add Local Audio Slice Helper [EXTRACTED]
+- Task Decomposition -> contains -> Task 3: Validate Utterance Segmenter Chunk Inputs [EXTRACTED]
+- Task Decomposition -> contains -> Task 4: Integrate Chunk Utterance WAV Generation [EXTRACTED]
+- Task Decomposition -> contains -> Task 5: Merge Chunked Results Into `transcribe()` [EXTRACTED]
+- Task Decomposition -> contains -> Task 6: Add Processor Integration Tests [EXTRACTED]
+- Task Decomposition -> contains -> Task 7: Update API Contract And Issue Documentation [EXTRACTED]
+- Task Decomposition -> contains -> Task 8: Client Acceptance Check [EXTRACTED]
+- Task Decomposition -> contains -> Task 9: Real Sample And Memory Verification [EXTRACTED]
+- Wave Execution Plan -> contains -> Wave 0: Baseline Orientation [EXTRACTED]
+- Wave Execution Plan -> contains -> Wave 1: Independent Helper Work [EXTRACTED]
+- Wave Execution Plan -> contains -> Wave 2: Serialized Processor Integration [EXTRACTED]
+- Wave Execution Plan -> contains -> Wave 3: Contract And Client Acceptance [EXTRACTED]
+- Wave Execution Plan -> contains -> Wave 4: Runtime Verification [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Task Decomposition, Summary, Wave Execution Plan를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 codex.md이다.

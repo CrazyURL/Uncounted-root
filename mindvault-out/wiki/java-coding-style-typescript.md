@@ -1,0 +1,167 @@
+# Java Coding Style & typescript
+Cohesion: 0.08 | Nodes: 33
+
+## Key Nodes
+- **Java Coding Style** (.claude/rules/java/coding-style.md) -- 10 connections
+  - -> references -> [[unresolvedrefcodingstyle]]
+  - -> contains -> [[formatting]]
+  - -> contains -> [[immutability]]
+  - -> contains -> [[naming]]
+  - -> contains -> [[modern-java-features]]
+  - -> contains -> [[optional-usage]]
+  - -> contains -> [[error-handling]]
+  - -> contains -> [[streams]]
+  - -> contains -> [[references]]
+  - <- contains <- [[coding-style]]
+- **typescript** (.claude/rules/typescript/coding-style.md) -- 7 connections
+  - <- has_code_example <- [[public-apis]]
+  - <- has_code_example <- [[interfaces-vs-type-aliases]]
+  - <- has_code_example <- [[avoid-any]]
+  - <- has_code_example <- [[react-props]]
+  - <- has_code_example <- [[immutability]]
+  - <- has_code_example <- [[error-handling]]
+  - <- has_code_example <- [[input-validation]]
+- **TypeScript/JavaScript Coding Style** (.claude/rules/typescript/coding-style.md) -- 7 connections
+  - -> references -> [[unresolvedrefcodingstyle]]
+  - -> contains -> [[types-and-interfaces]]
+  - -> contains -> [[immutability]]
+  - -> contains -> [[error-handling]]
+  - -> contains -> [[input-validation]]
+  - -> contains -> [[consolelog]]
+  - <- contains <- [[coding-style]]
+- **Python Coding Style** (.claude/rules/python/coding-style.md) -- 6 connections
+  - -> references -> [[unresolvedrefcodingstyle]]
+  - -> contains -> [[standards]]
+  - -> contains -> [[immutability]]
+  - -> contains -> [[formatting]]
+  - -> contains -> [[reference]]
+  - <- contains <- [[coding-style]]
+- **Types and Interfaces** (.claude/rules/typescript/coding-style.md) -- 6 connections
+  - -> contains -> [[public-apis]]
+  - -> contains -> [[interfaces-vs-type-aliases]]
+  - -> contains -> [[avoid-any]]
+  - -> contains -> [[react-props]]
+  - -> contains -> [[javascript-files]]
+  - <- contains <- [[typescriptjavascript-coding-style]]
+- **java** (.claude/rules/java/coding-style.md) -- 4 connections
+  - <- has_code_example <- [[immutability]]
+  - <- has_code_example <- [[modern-java-features]]
+  - <- has_code_example <- [[optional-usage]]
+  - <- has_code_example <- [[error-handling]]
+- **__unresolved__::ref::coding_style** () -- 3 connections
+  - <- references <- [[python-coding-style]]
+  - <- references <- [[typescriptjavascript-coding-style]]
+  - <- references <- [[java-coding-style]]
+- **Error Handling** (.claude/rules/java/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[java]]
+  - <- contains <- [[java-coding-style]]
+- **Immutability** (.claude/rules/java/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[java]]
+  - <- contains <- [[java-coding-style]]
+- **Modern Java Features** (.claude/rules/java/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[java]]
+  - <- contains <- [[java-coding-style]]
+- **Optional Usage** (.claude/rules/java/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[java]]
+  - <- contains <- [[java-coding-style]]
+- **Immutability** (.claude/rules/python/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[python]]
+  - <- contains <- [[python-coding-style]]
+- **Avoid `any`** (.claude/rules/typescript/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[types-and-interfaces]]
+- **Error Handling** (.claude/rules/typescript/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-coding-style]]
+- **Immutability** (.claude/rules/typescript/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-coding-style]]
+- **Input Validation** (.claude/rules/typescript/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-coding-style]]
+- **Interfaces vs. Type Aliases** (.claude/rules/typescript/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[types-and-interfaces]]
+- **JavaScript Files** (.claude/rules/typescript/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[javascript]]
+  - <- contains <- [[types-and-interfaces]]
+- **Public APIs** (.claude/rules/typescript/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[types-and-interfaces]]
+- **React Props** (.claude/rules/typescript/coding-style.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[types-and-interfaces]]
+- **coding-style** (.claude/rules/java/coding-style.md) -- 1 connections
+  - -> contains -> [[java-coding-style]]
+- **Formatting** (.claude/rules/java/coding-style.md) -- 1 connections
+  - <- contains <- [[java-coding-style]]
+- **Naming** (.claude/rules/java/coding-style.md) -- 1 connections
+  - <- contains <- [[java-coding-style]]
+- **References** (.claude/rules/java/coding-style.md) -- 1 connections
+  - <- contains <- [[java-coding-style]]
+- **Streams** (.claude/rules/java/coding-style.md) -- 1 connections
+  - <- contains <- [[java-coding-style]]
+- **python** (.claude/rules/python/coding-style.md) -- 1 connections
+  - <- has_code_example <- [[immutability]]
+- **coding-style** (.claude/rules/python/coding-style.md) -- 1 connections
+  - -> contains -> [[python-coding-style]]
+- **Formatting** (.claude/rules/python/coding-style.md) -- 1 connections
+  - <- contains <- [[python-coding-style]]
+- **Reference** (.claude/rules/python/coding-style.md) -- 1 connections
+  - <- contains <- [[python-coding-style]]
+- **Standards** (.claude/rules/python/coding-style.md) -- 1 connections
+  - <- contains <- [[python-coding-style]]
+- **javascript** (.claude/rules/typescript/coding-style.md) -- 1 connections
+  - <- has_code_example <- [[javascript-files]]
+- **coding-style** (.claude/rules/typescript/coding-style.md) -- 1 connections
+  - -> contains -> [[typescriptjavascript-coding-style]]
+- **Console.log** (.claude/rules/typescript/coding-style.md) -- 1 connections
+  - <- contains <- [[typescriptjavascript-coding-style]]
+
+## Internal Relationships
+- coding-style -> contains -> Java Coding Style [EXTRACTED]
+- Error Handling -> has_code_example -> java [EXTRACTED]
+- Immutability -> has_code_example -> java [EXTRACTED]
+- Java Coding Style -> references -> __unresolved__::ref::coding_style [EXTRACTED]
+- Java Coding Style -> contains -> Formatting [EXTRACTED]
+- Java Coding Style -> contains -> Immutability [EXTRACTED]
+- Java Coding Style -> contains -> Naming [EXTRACTED]
+- Java Coding Style -> contains -> Modern Java Features [EXTRACTED]
+- Java Coding Style -> contains -> Optional Usage [EXTRACTED]
+- Java Coding Style -> contains -> Error Handling [EXTRACTED]
+- Java Coding Style -> contains -> Streams [EXTRACTED]
+- Java Coding Style -> contains -> References [EXTRACTED]
+- Modern Java Features -> has_code_example -> java [EXTRACTED]
+- Optional Usage -> has_code_example -> java [EXTRACTED]
+- coding-style -> contains -> Python Coding Style [EXTRACTED]
+- Immutability -> has_code_example -> python [EXTRACTED]
+- Python Coding Style -> references -> __unresolved__::ref::coding_style [EXTRACTED]
+- Python Coding Style -> contains -> Standards [EXTRACTED]
+- Python Coding Style -> contains -> Immutability [EXTRACTED]
+- Python Coding Style -> contains -> Formatting [EXTRACTED]
+- Python Coding Style -> contains -> Reference [EXTRACTED]
+- coding-style -> contains -> TypeScript/JavaScript Coding Style [EXTRACTED]
+- Avoid `any` -> has_code_example -> typescript [EXTRACTED]
+- Error Handling -> has_code_example -> typescript [EXTRACTED]
+- Immutability -> has_code_example -> typescript [EXTRACTED]
+- Input Validation -> has_code_example -> typescript [EXTRACTED]
+- Interfaces vs. Type Aliases -> has_code_example -> typescript [EXTRACTED]
+- JavaScript Files -> has_code_example -> javascript [EXTRACTED]
+- Public APIs -> has_code_example -> typescript [EXTRACTED]
+- React Props -> has_code_example -> typescript [EXTRACTED]
+- Types and Interfaces -> contains -> Public APIs [EXTRACTED]
+- Types and Interfaces -> contains -> Interfaces vs. Type Aliases [EXTRACTED]
+- Types and Interfaces -> contains -> Avoid `any` [EXTRACTED]
+- Types and Interfaces -> contains -> React Props [EXTRACTED]
+- Types and Interfaces -> contains -> JavaScript Files [EXTRACTED]
+- TypeScript/JavaScript Coding Style -> references -> __unresolved__::ref::coding_style [EXTRACTED]
+- TypeScript/JavaScript Coding Style -> contains -> Types and Interfaces [EXTRACTED]
+- TypeScript/JavaScript Coding Style -> contains -> Immutability [EXTRACTED]
+- TypeScript/JavaScript Coding Style -> contains -> Error Handling [EXTRACTED]
+- TypeScript/JavaScript Coding Style -> contains -> Input Validation [EXTRACTED]
+- TypeScript/JavaScript Coding Style -> contains -> Console.log [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Java Coding Style, typescript, TypeScript/JavaScript Coding Style를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 coding-style.md이다.

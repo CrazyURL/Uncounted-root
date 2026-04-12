@@ -1,0 +1,727 @@
+# __unresolved__::ref::__unresolved____ref__replace & generate
+Cohesion: 0.03 | Nodes: 103
+
+## Key Nodes
+- **__unresolved__::ref::__unresolved____ref__replace** () -- 30 connections
+  - <- calls <- [[launchersvg]]
+  - <- calls <- [[roundsvg]]
+  - <- calls <- [[foregroundsvg]]
+  - <- calls <- [[splashsvg]]
+  - <- calls <- [[gettitle]]
+  - <- calls <- [[maskstring]]
+  - <- calls <- [[isphonenumber]]
+  - <- calls <- [[maskphone]]
+  - <- calls <- [[maskallkoreannames]]
+  - <- calls <- [[generatecodeverifier]]
+  - <- calls <- [[generatecodechallenge]]
+  - <- calls <- [[testloadallprojectoverridesglobal]]
+  - <- calls <- [[yamlquote]]
+  - <- calls <- [[updateregistry]]
+  - <- calls <- [[parseinstinctfile]]
+  - <- calls <- [[cmdevolve]]
+  - <- calls <- [[promotespecific]]
+  - <- calls <- [[promoteauto]]
+  - <- calls <- [[generateevolved]]
+  - <- calls <- [[parsecreateddate]]
+  - <- calls <- [[gettitle]]
+  - <- calls <- [[getdisplayfields]]
+  - <- calls <- [[maskstring]]
+  - <- calls <- [[isphonenumber]]
+  - <- calls <- [[maskphone]]
+  - <- calls <- [[maskallkoreannames]]
+  - <- calls <- [[createdocument]]
+  - <- calls <- [[stripversion]]
+  - <- calls <- [[getjsonlfilename]]
+  - <- calls <- [[detectbeepintervals]]
+- **generate** (uncounted-app/scripts/generate-icons.mjs) -- 12 connections
+  - -> calls -> [[unresolvedrefunresolvedrefforegroundsvg]]
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedreftofile]]
+  - -> calls -> [[unresolvedrefunresolvedrefpng]]
+  - -> calls -> [[unresolvedrefunresolvedrefresize]]
+  - -> calls -> [[unresolvedrefunresolvedrefsharp]]
+  - -> calls -> [[unresolvedrefunresolvedreffrom]]
+  - -> calls -> [[unresolvedrefunresolvedreflaunchersvg]]
+  - -> calls -> [[unresolvedrefunresolvedreflog]]
+  - -> calls -> [[unresolvedrefunresolvedrefroundsvg]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplashsvg]]
+  - <- contains <- [[generate-icons]]
+- **getOrCreateAesKey** (uncounted-app/src/lib/uploadQueue.ts) -- 12 connections
+  - -> calls -> [[unresolvedrefunresolvedrefgetsecureitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefmigratekeyfromlocalstorage]]
+  - -> calls -> [[unresolvedrefunresolvedreffrom]]
+  - -> calls -> [[unresolvedrefunresolvedrefatob]]
+  - -> calls -> [[unresolvedrefunresolvedrefcharcodeat]]
+  - -> calls -> [[unresolvedrefunresolvedrefimportkey]]
+  - -> calls -> [[unresolvedrefunresolvedrefgeneratekey]]
+  - -> calls -> [[unresolvedrefunresolvedrefexportkey]]
+  - -> calls -> [[unresolvedrefunresolvedrefsetsecureitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefbtoa]]
+  - -> calls -> [[unresolvedrefunresolvedreffromcharcode]]
+  - <- contains <- [[uploadqueue]]
+- **__unresolved__::ref::__unresolved____ref__find** () -- 9 connections
+  - <- calls <- [[deduplicatedetections]]
+  - <- calls <- [[computealreadydone]]
+  - <- calls <- [[mergecomponentfilters]]
+  - <- calls <- [[submit]]
+  - <- calls <- [[deduplicatedetections]]
+  - <- calls <- [[getskurate]]
+  - <- calls <- [[mergecomponentfilters]]
+  - <- calls <- [[defaultpriceforsku]]
+  - <- calls <- [[defaultpriceforsku]]
+- **displayMask** (uncounted-admin/src/lib/displayMask.ts) -- 9 connections
+  - -> contains -> [[endswithinstitution]]
+  - -> contains -> [[isphonenumber]]
+  - -> contains -> [[maskphone]]
+  - -> contains -> [[applynamemask]]
+  - -> contains -> [[maskkoreanname]]
+  - -> contains -> [[islikelyname]]
+  - -> contains -> [[masknamesintokens]]
+  - -> contains -> [[maskallkoreannames]]
+  - -> imports -> [[unresolvedrefunresolvedrefcontactutils]]
+- **auth** (uncounted-app/src/lib/auth.ts) -- 9 connections
+  - -> contains -> [[generatecodeverifier]]
+  - -> contains -> [[generatecodechallenge]]
+  - -> contains -> [[getorcreatepid]]
+  - -> imports -> [[unresolvedrefunresolvedrefcapacitorcore]]
+  - -> imports -> [[unresolvedrefunresolvedrefcapacitorbrowser]]
+  - -> imports -> [[unresolvedrefunresolvedrefapiauth]]
+  - -> imports -> [[unresolvedrefunresolvedrefuuid]]
+  - -> imports -> [[unresolvedrefunresolvedrefcrypto]]
+  - -> imports -> [[unresolvedrefunresolvedrefsecurekeystore]]
+- **displayMask** (uncounted-app/src/lib/displayMask.ts) -- 9 connections
+  - -> contains -> [[endswithinstitution]]
+  - -> contains -> [[isphonenumber]]
+  - -> contains -> [[maskphone]]
+  - -> contains -> [[applynamemask]]
+  - -> contains -> [[maskkoreanname]]
+  - -> contains -> [[islikelyname]]
+  - -> contains -> [[masknamesintokens]]
+  - -> contains -> [[maskallkoreannames]]
+  - -> imports -> [[unresolvedrefunresolvedrefcontactutils]]
+- **__unresolved__::ref::__unresolved____ref__indexof** () -- 8 connections
+  - <- calls <- [[deduplicatedetections]]
+  - <- calls <- [[findwordtimestamp]]
+  - <- calls <- [[maskkoreanname]]
+  - <- calls <- [[deduplicatedetections]]
+  - <- calls <- [[findwordtimestamp]]
+  - <- calls <- [[maskkoreanname]]
+  - <- calls <- [[getarg]]
+  - <- calls <- [[getarg]]
+- **download-dev-audio** (uncounted-api/scripts/download-dev-audio.ts) -- 8 connections
+  - -> contains -> [[getarg]]
+  - -> contains -> [[listallobjects]]
+  - -> contains -> [[downloadobject]]
+  - -> imports -> [[unresolvedrefunresolvedrefawssdkclients3]]
+  - -> imports -> [[unresolvedrefunresolvedrefnodestream]]
+  - -> imports -> [[unresolvedrefunresolvedrefnodestreampromises]]
+  - -> imports -> [[unresolvedrefunresolvedrefnodefs]]
+  - -> imports -> [[unresolvedrefunresolvedrefnodepath]]
+- **generate-icons** (uncounted-app/scripts/generate-icons.mjs) -- 8 connections
+  - -> contains -> [[launchersvg]]
+  - -> contains -> [[roundsvg]]
+  - -> contains -> [[foregroundsvg]]
+  - -> contains -> [[splashsvg]]
+  - -> contains -> [[generate]]
+  - -> imports -> [[unresolvedrefunresolvedrefsharp]]
+  - -> imports -> [[unresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedreffs]]
+- **MetadataEventPreview** (uncounted-admin/src/components/domain/metadata/MetadataEventPreview.tsx) -- 7 connections
+  - -> contains -> [[metadataeventpreviewprops]]
+  - -> contains -> [[getdisplayfields]]
+  - -> contains -> [[buildheatmapfromevents]]
+  - -> imports -> [[unresolvedrefunresolvedrefreact]]
+  - -> imports -> [[unresolvedrefunresolvedreflibapiadmin]]
+  - -> imports -> [[unresolvedrefunresolvedrefmetadataheatmap]]
+  - -> imports -> [[unresolvedrefunresolvedrefmetadatadistributionchart]]
+- **maskNamesInTokens** (uncounted-admin/src/lib/displayMask.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefmap]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefmatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefislikelyname]]
+  - -> calls -> [[unresolvedrefunresolvedrefapplynamemask]]
+  - <- contains <- [[displaymask]]
+- **generateCodeChallenge** (uncounted-app/src/lib/auth.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefencode]]
+  - -> calls -> [[unresolvedrefunresolvedrefdigest]]
+  - -> calls -> [[unresolvedrefunresolvedrefsha256sync]]
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefbtoa]]
+  - -> calls -> [[unresolvedrefunresolvedreffromcharcode]]
+  - <- contains <- [[auth]]
+- **maskNamesInTokens** (uncounted-app/src/lib/displayMask.ts) -- 7 connections
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefmap]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefmatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefislikelyname]]
+  - -> calls -> [[unresolvedrefunresolvedrefapplynamemask]]
+  - <- contains <- [[displaymask]]
+- **__unresolved__::ref::__unresolved____ref__trim** () -- 6 connections
+  - <- calls <- [[loadenv]]
+  - <- calls <- [[splitsentences]]
+  - <- calls <- [[estimatewordtimestamps]]
+  - <- calls <- [[computesha256]]
+  - <- calls <- [[splitsentences]]
+  - <- calls <- [[confirm]]
+- **maskAllKoreanNames** (uncounted-admin/src/lib/displayMask.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefmasknamesintokens]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefmap]]
+  - <- contains <- [[displaymask]]
+- **downloadObject** (uncounted-api/scripts/download-dev-audio.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefsend]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdirsync]]
+  - -> calls -> [[unresolvedrefunresolvedrefdirname]]
+  - -> calls -> [[unresolvedrefunresolvedrefcreatewritestream]]
+  - -> calls -> [[unresolvedrefunresolvedrefpipeline]]
+  - <- contains <- [[download-dev-audio]]
+- **reset-all** (uncounted-app/scripts/reset-all.mjs) -- 6 connections
+  - -> contains -> [[loadenv]]
+  - -> contains -> [[clearsupabase]]
+  - -> imports -> [[unresolvedrefunresolvedreffs]]
+  - -> imports -> [[unresolvedrefunresolvedrefpath]]
+  - -> imports -> [[unresolvedrefunresolvedrefurl]]
+  - -> imports -> [[unresolvedrefunresolvedrefsupabasesupabasejs]]
+- **maskAllKoreanNames** (uncounted-app/src/lib/displayMask.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefmasknamesintokens]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefmap]]
+  - <- contains <- [[displaymask]]
+- **onnxModelChecksum.test** (uncounted-app/src/lib/onnxModelChecksum.test.ts) -- 6 connections
+  - -> contains -> [[computesha256]]
+  - -> contains -> [[extracthashfromjava]]
+  - -> imports -> [[unresolvedrefunresolvedrefvitest]]
+  - -> imports -> [[unresolvedrefunresolvedrefnodechildprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefnodefs]]
+  - -> imports -> [[unresolvedrefunresolvedrefnodepath]]
+- **__unresolved__::ref::__unresolved____ref____supabase_supabase_js_** () -- 5 connections
+  - <- imports <- [[reset-all]]
+  - <- imports <- [[migrate-session-ids]]
+  - <- imports <- [[dedup-sessions]]
+  - <- imports <- [[reset-consent-to-private]]
+  - <- imports <- [[supabase]]
+- **getTitle** (uncounted-admin/src/components/layout/AppShell.tsx) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefdecodeuricomponent]]
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
+  - <- contains <- [[appshell]]
+- **auth** (uncounted-admin/src/lib/auth.ts) -- 5 connections
+  - -> contains -> [[getorcreatepid]]
+  - -> imports -> [[unresolvedrefunresolvedrefapiauth]]
+  - -> imports -> [[unresolvedrefunresolvedrefapiadmin]]
+  - -> imports -> [[unresolvedrefunresolvedrefapiclient]]
+  - -> imports -> [[unresolvedrefunresolvedrefuuid]]
+- **maskKoreanName** (uncounted-admin/src/lib/displayMask.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefindexof]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
+  - -> calls -> [[unresolvedrefunresolvedrefendswithinstitution]]
+  - -> calls -> [[unresolvedrefunresolvedrefapplynamemask]]
+  - <- contains <- [[displaymask]]
+- **maskPhone** (uncounted-admin/src/lib/displayMask.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefincludes]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
+  - <- contains <- [[displaymask]]
+- **deduplicateDetections** (uncounted-admin/src/lib/piiDetector.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefsort]]
+  - -> calls -> [[unresolvedrefunresolvedreffind]]
+  - -> calls -> [[unresolvedrefunresolvedrefindexof]]
+  - -> calls -> [[unresolvedrefunresolvedrefpush]]
+  - <- contains <- [[piidetector]]
+- **splitSentences** (uncounted-admin/src/lib/piiDetector.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedreffilter]]
+  - -> calls -> [[unresolvedrefunresolvedrefmap]]
+  - -> calls -> [[unresolvedrefunresolvedreftrim]]
+  - <- contains <- [[piidetector]]
+- **getTitle** (uncounted-app/src/components/layout/AppShell.tsx) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefdecodeuricomponent]]
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
+  - <- contains <- [[appshell]]
+- **generateCodeVerifier** (uncounted-app/src/lib/auth.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefgetrandomvalues]]
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefbtoa]]
+  - -> calls -> [[unresolvedrefunresolvedreffromcharcode]]
+  - <- contains <- [[auth]]
+- **maskKoreanName** (uncounted-app/src/lib/displayMask.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefindexof]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
+  - -> calls -> [[unresolvedrefunresolvedrefendswithinstitution]]
+  - -> calls -> [[unresolvedrefunresolvedrefapplynamemask]]
+  - <- contains <- [[displaymask]]
+- **maskPhone** (uncounted-app/src/lib/displayMask.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefincludes]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
+  - <- contains <- [[displaymask]]
+- **computeSha256** (uncounted-app/src/lib/onnxModelChecksum.test.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedreftrim]]
+  - -> calls -> [[unresolvedrefunresolvedreftostring]]
+  - -> calls -> [[unresolvedrefunresolvedrefexecsync]]
+  - <- contains <- [[onnxmodelchecksumtest]]
+- **deduplicateDetections** (uncounted-app/src/lib/piiDetector.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefsort]]
+  - -> calls -> [[unresolvedrefunresolvedreffind]]
+  - -> calls -> [[unresolvedrefunresolvedrefindexof]]
+  - -> calls -> [[unresolvedrefunresolvedrefpush]]
+  - <- contains <- [[piidetector]]
+- **splitSentences** (uncounted-app/src/lib/piiDetector.ts) -- 5 connections
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedreffilter]]
+  - -> calls -> [[unresolvedrefunresolvedrefmap]]
+  - -> calls -> [[unresolvedrefunresolvedreftrim]]
+  - <- contains <- [[piidetector]]
+- **__unresolved__::ref::__unresolved____ref___fs_** () -- 4 connections
+  - <- imports <- [[generate-icons]]
+  - <- imports <- [[reset-all]]
+  - <- imports <- [[ffmpegprocessortest]]
+  - <- imports <- [[utterancesegmentationservice]]
+- **__unresolved__::ref::__unresolved____ref__applynamemask** () -- 4 connections
+  - <- calls <- [[maskkoreanname]]
+  - <- calls <- [[masknamesintokens]]
+  - <- calls <- [[maskkoreanname]]
+  - <- calls <- [[masknamesintokens]]
+- **__unresolved__::ref::__unresolved____ref__btoa** () -- 4 connections
+  - <- calls <- [[getorcreateaeskey]]
+  - <- calls <- [[generatecodeverifier]]
+  - <- calls <- [[generatecodechallenge]]
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref__endswithinstitution** () -- 4 connections
+  - <- calls <- [[maskkoreanname]]
+  - <- calls <- [[islikelyname]]
+  - <- calls <- [[maskkoreanname]]
+  - <- calls <- [[islikelyname]]
+- **__unresolved__::ref::__unresolved____ref__fromcharcode** () -- 4 connections
+  - <- calls <- [[getorcreateaeskey]]
+  - <- calls <- [[generatecodeverifier]]
+  - <- calls <- [[generatecodechallenge]]
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref__test** () -- 4 connections
+  - <- calls <- [[isphonenumber]]
+  - <- calls <- [[islikelyname]]
+  - <- calls <- [[isphonenumber]]
+  - <- calls <- [[islikelyname]]
+- **isLikelyName** (uncounted-admin/src/lib/displayMask.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedreftest]]
+  - -> calls -> [[unresolvedrefunresolvedrefhas]]
+  - -> calls -> [[unresolvedrefunresolvedrefendswithinstitution]]
+  - <- contains <- [[displaymask]]
+- **maskString** (uncounted-admin/src/lib/piiDetector.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - <- contains <- [[piidetector]]
+- **downloadFromS3** (uncounted-api/src/lib/export/utteranceSegmentationService.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefsend]]
+  - -> calls -> [[unresolvedrefunresolvedrefcreatewritestream]]
+  - -> calls -> [[unresolvedrefunresolvedrefpipeline]]
+  - <- contains <- [[utterancesegmentationservice]]
+- **splashSvg** (uncounted-app/scripts/generate-icons.mjs) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefmin]]
+  - -> calls -> [[unresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[generate-icons]]
+- **isLikelyName** (uncounted-app/src/lib/displayMask.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedreftest]]
+  - -> calls -> [[unresolvedrefunresolvedrefhas]]
+  - -> calls -> [[unresolvedrefunresolvedrefendswithinstitution]]
+  - <- contains <- [[displaymask]]
+- **maskString** (uncounted-app/src/lib/piiDetector.ts) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - <- contains <- [[piidetector]]
+- **__unresolved__::ref::__unresolved____ref__encode** () -- 3 connections
+  - <- calls <- [[hashfingerprint]]
+  - <- calls <- [[generatecodechallenge]]
+  - <- calls <- [[detectproject]]
+- **isPhoneNumber** (uncounted-admin/src/lib/displayMask.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedreftest]]
+  - <- contains <- [[displaymask]]
+- **piiDetector** (uncounted-admin/src/lib/piiDetector.ts) -- 3 connections
+  - -> contains -> [[maskstring]]
+  - -> contains -> [[deduplicatedetections]]
+  - -> contains -> [[splitsentences]]
+- **defaultPriceForSku** (uncounted-admin/src/pages/admin/AdminClientSkuMapPage.tsx) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedreffind]]
+  - -> calls -> [[unresolvedrefunresolvedrefround]]
+  - <- contains <- [[adminclientskumappage]]
+- **defaultPriceForSku** (uncounted-admin/src/pages/admin/AdminSkuCatalogPage.tsx) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedreffind]]
+  - -> calls -> [[unresolvedrefunresolvedrefround]]
+  - <- contains <- [[adminskucatalogpage]]
+- **isPhoneNumber** (uncounted-app/src/lib/displayMask.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedreftest]]
+  - <- contains <- [[displaymask]]
+- **piiDetector** (uncounted-app/src/lib/piiDetector.ts) -- 3 connections
+  - -> contains -> [[maskstring]]
+  - -> contains -> [[deduplicatedetections]]
+  - -> contains -> [[splitsentences]]
+- **__unresolved__::ref::__unresolved____ref___api_auth_** () -- 2 connections
+  - <- imports <- [[auth]]
+  - <- imports <- [[auth]]
+- **__unresolved__::ref::__unresolved____ref___api_client_** () -- 2 connections
+  - <- imports <- [[sttengine]]
+  - <- imports <- [[auth]]
+- **__unresolved__::ref::__unresolved____ref___node_fs_** () -- 2 connections
+  - <- imports <- [[onnxmodelchecksumtest]]
+  - <- imports <- [[download-dev-audio]]
+- **__unresolved__::ref::__unresolved____ref___node_path_** () -- 2 connections
+  - <- imports <- [[onnxmodelchecksumtest]]
+  - <- imports <- [[download-dev-audio]]
+- **__unresolved__::ref::__unresolved____ref__atob** () -- 2 connections
+  - <- calls <- [[getorcreateaeskey]]
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref__createwritestream** () -- 2 connections
+  - <- calls <- [[downloadobject]]
+  - <- calls <- [[downloadfroms3]]
+- **__unresolved__::ref::__unresolved____ref__decodeuricomponent** () -- 2 connections
+  - <- calls <- [[gettitle]]
+  - <- calls <- [[gettitle]]
+- **__unresolved__::ref::__unresolved____ref__exportkey** () -- 2 connections
+  - <- calls <- [[getorcreateaeskey]]
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref__generatekey** () -- 2 connections
+  - <- calls <- [[getorcreateaeskey]]
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref__importkey** () -- 2 connections
+  - <- calls <- [[getorcreateaeskey]]
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref__islikelyname** () -- 2 connections
+  - <- calls <- [[masknamesintokens]]
+  - <- calls <- [[masknamesintokens]]
+- **__unresolved__::ref::__unresolved____ref__masknamesintokens** () -- 2 connections
+  - <- calls <- [[maskallkoreannames]]
+  - <- calls <- [[maskallkoreannames]]
+- **__unresolved__::ref::__unresolved____ref__pipeline** () -- 2 connections
+  - <- calls <- [[downloadobject]]
+  - <- calls <- [[downloadfroms3]]
+- **__unresolved__::ref::__unresolved____ref__tofile** () -- 2 connections
+  - <- calls <- [[generate]]
+  - <- calls <- [[denoise]]
+- **_yaml_quote** (.claude/skills/continuous-learning-v2/scripts/instinct-cli.py) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[instinct-cli]]
+- **getDisplayFields** (uncounted-admin/src/components/domain/metadata/MetadataEventPreview.tsx) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[metadataeventpreview]]
+- **mergeComponentFilters** (uncounted-admin/src/lib/billableUnitEngine.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedreffind]]
+  - <- contains <- [[billableunitengine]]
+- **applyNameMask** (uncounted-admin/src/lib/displayMask.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefrepeat]]
+  - <- contains <- [[displaymask]]
+- **findWordTimestamp** (uncounted-admin/src/lib/sanitizeCache.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefindexof]]
+  - <- contains <- [[sanitizecache]]
+- **getArg** (uncounted-api/scripts/download-dev-audio.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefindexof]]
+  - <- contains <- [[download-dev-audio]]
+- **getArg** (uncounted-api/scripts/migrate-session-ids.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefindexof]]
+  - <- contains <- [[migrate-session-ids]]
+- **stripVersion** (uncounted-api/src/lib/export/metadataPackageBuilder.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[metadatapackagebuilder]]
+- **foregroundSvg** (uncounted-app/scripts/generate-icons.mjs) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[generate-icons]]
+- **launcherSvg** (uncounted-app/scripts/generate-icons.mjs) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[generate-icons]]
+- **roundSvg** (uncounted-app/scripts/generate-icons.mjs) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - <- contains <- [[generate-icons]]
+- **mergeComponentFilters** (uncounted-app/src/lib/billableUnitEngine.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedreffind]]
+  - <- contains <- [[billableunitengine]]
+- **applyNameMask** (uncounted-app/src/lib/displayMask.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefrepeat]]
+  - <- contains <- [[displaymask]]
+- **findWordTimestamp** (uncounted-app/src/lib/sanitizeCache.ts) -- 2 connections
+  - -> calls -> [[unresolvedrefunresolvedrefindexof]]
+  - <- contains <- [[sanitizecache]]
+- **__unresolved__::ref::__unresolved____ref___metadatadistributionchart_** () -- 1 connections
+  - <- imports <- [[metadataeventpreview]]
+- **__unresolved__::ref::__unresolved____ref___metadataheatmap_** () -- 1 connections
+  - <- imports <- [[metadataeventpreview]]
+- **__unresolved__::ref::__unresolved____ref___node_child_process_** () -- 1 connections
+  - <- imports <- [[onnxmodelchecksumtest]]
+- **__unresolved__::ref::__unresolved____ref___node_stream_** () -- 1 connections
+  - <- imports <- [[download-dev-audio]]
+- **__unresolved__::ref::__unresolved____ref___node_stream_promises_** () -- 1 connections
+  - <- imports <- [[download-dev-audio]]
+- **__unresolved__::ref::__unresolved____ref___sharp_** () -- 1 connections
+  - <- imports <- [[generate-icons]]
+- **__unresolved__::ref::__unresolved____ref___url_** () -- 1 connections
+  - <- imports <- [[reset-all]]
+- **__unresolved__::ref::__unresolved____ref__execsync** () -- 1 connections
+  - <- calls <- [[computesha256]]
+- **__unresolved__::ref::__unresolved____ref__foregroundsvg** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref__getsecureitem** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref__launchersvg** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref__migratekeyfromlocalstorage** () -- 1 connections
+  - <- calls <- [[getorcreateaeskey]]
+- **__unresolved__::ref::__unresolved____ref__mkdirsync** () -- 1 connections
+  - <- calls <- [[downloadobject]]
+- **__unresolved__::ref::__unresolved____ref__png** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref__resize** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref__roundsvg** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref__sha256sync** () -- 1 connections
+  - <- calls <- [[generatecodechallenge]]
+- **__unresolved__::ref::__unresolved____ref__sharp** () -- 1 connections
+  - <- calls <- [[generate]]
+- **__unresolved__::ref::__unresolved____ref__splashsvg** () -- 1 connections
+  - <- calls <- [[generate]]
+- **MetadataEventPreviewProps** (uncounted-admin/src/components/domain/metadata/MetadataEventPreview.tsx) -- 1 connections
+  - <- contains <- [[metadataeventpreview]]
+- **reset-consent-to-private** (uncounted-api/scripts/reset-consent-to-private.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefsupabasesupabasejs]]
+- **supabase** (uncounted-api/src/lib/supabase.ts) -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefsupabasesupabasejs]]
+
+## Internal Relationships
+- _yaml_quote -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- MetadataEventPreview -> contains -> MetadataEventPreviewProps [EXTRACTED]
+- MetadataEventPreview -> contains -> getDisplayFields [EXTRACTED]
+- MetadataEventPreview -> imports -> __unresolved__::ref::__unresolved____ref___metadataheatmap_ [EXTRACTED]
+- MetadataEventPreview -> imports -> __unresolved__::ref::__unresolved____ref___metadatadistributionchart_ [EXTRACTED]
+- getDisplayFields -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- getTitle -> calls -> __unresolved__::ref::__unresolved____ref__decodeuricomponent [EXTRACTED]
+- getTitle -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___api_auth_ [EXTRACTED]
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___api_client_ [EXTRACTED]
+- mergeComponentFilters -> calls -> __unresolved__::ref::__unresolved____ref__find [EXTRACTED]
+- displayMask -> contains -> isPhoneNumber [EXTRACTED]
+- displayMask -> contains -> maskPhone [EXTRACTED]
+- displayMask -> contains -> applyNameMask [EXTRACTED]
+- displayMask -> contains -> maskKoreanName [EXTRACTED]
+- displayMask -> contains -> isLikelyName [EXTRACTED]
+- displayMask -> contains -> maskNamesInTokens [EXTRACTED]
+- displayMask -> contains -> maskAllKoreanNames [EXTRACTED]
+- isLikelyName -> calls -> __unresolved__::ref::__unresolved____ref__test [EXTRACTED]
+- isLikelyName -> calls -> __unresolved__::ref::__unresolved____ref__endswithinstitution [EXTRACTED]
+- isPhoneNumber -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- isPhoneNumber -> calls -> __unresolved__::ref::__unresolved____ref__test [EXTRACTED]
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__masknamesintokens [EXTRACTED]
+- maskKoreanName -> calls -> __unresolved__::ref::__unresolved____ref__indexof [EXTRACTED]
+- maskKoreanName -> calls -> __unresolved__::ref::__unresolved____ref__endswithinstitution [EXTRACTED]
+- maskKoreanName -> calls -> __unresolved__::ref::__unresolved____ref__applynamemask [EXTRACTED]
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__islikelyname [EXTRACTED]
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__applynamemask [EXTRACTED]
+- maskPhone -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- piiDetector -> contains -> maskString [EXTRACTED]
+- piiDetector -> contains -> deduplicateDetections [EXTRACTED]
+- piiDetector -> contains -> splitSentences [EXTRACTED]
+- deduplicateDetections -> calls -> __unresolved__::ref::__unresolved____ref__find [EXTRACTED]
+- deduplicateDetections -> calls -> __unresolved__::ref::__unresolved____ref__indexof [EXTRACTED]
+- maskString -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- splitSentences -> calls -> __unresolved__::ref::__unresolved____ref__trim [EXTRACTED]
+- findWordTimestamp -> calls -> __unresolved__::ref::__unresolved____ref__indexof [EXTRACTED]
+- defaultPriceForSku -> calls -> __unresolved__::ref::__unresolved____ref__find [EXTRACTED]
+- defaultPriceForSku -> calls -> __unresolved__::ref::__unresolved____ref__find [EXTRACTED]
+- download-dev-audio -> contains -> getArg [EXTRACTED]
+- download-dev-audio -> contains -> downloadObject [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref___node_stream_ [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref___node_stream_promises_ [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref___node_fs_ [EXTRACTED]
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref___node_path_ [EXTRACTED]
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref__mkdirsync [EXTRACTED]
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref__createwritestream [EXTRACTED]
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref__pipeline [EXTRACTED]
+- getArg -> calls -> __unresolved__::ref::__unresolved____ref__indexof [EXTRACTED]
+- getArg -> calls -> __unresolved__::ref::__unresolved____ref__indexof [EXTRACTED]
+- reset-consent-to-private -> imports -> __unresolved__::ref::__unresolved____ref____supabase_supabase_js_ [EXTRACTED]
+- stripVersion -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- downloadFromS3 -> calls -> __unresolved__::ref::__unresolved____ref__createwritestream [EXTRACTED]
+- downloadFromS3 -> calls -> __unresolved__::ref::__unresolved____ref__pipeline [EXTRACTED]
+- supabase -> imports -> __unresolved__::ref::__unresolved____ref____supabase_supabase_js_ [EXTRACTED]
+- generate-icons -> contains -> launcherSvg [EXTRACTED]
+- generate-icons -> contains -> roundSvg [EXTRACTED]
+- generate-icons -> contains -> foregroundSvg [EXTRACTED]
+- generate-icons -> contains -> splashSvg [EXTRACTED]
+- generate-icons -> contains -> generate [EXTRACTED]
+- generate-icons -> imports -> __unresolved__::ref::__unresolved____ref___sharp_ [EXTRACTED]
+- generate-icons -> imports -> __unresolved__::ref::__unresolved____ref___fs_ [EXTRACTED]
+- foregroundSvg -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__foregroundsvg [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__tofile [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__png [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__resize [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__sharp [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__launchersvg [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__roundsvg [EXTRACTED]
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__splashsvg [EXTRACTED]
+- launcherSvg -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- roundSvg -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- splashSvg -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- reset-all -> imports -> __unresolved__::ref::__unresolved____ref___fs_ [EXTRACTED]
+- reset-all -> imports -> __unresolved__::ref::__unresolved____ref___url_ [EXTRACTED]
+- reset-all -> imports -> __unresolved__::ref::__unresolved____ref____supabase_supabase_js_ [EXTRACTED]
+- getTitle -> calls -> __unresolved__::ref::__unresolved____ref__decodeuricomponent [EXTRACTED]
+- getTitle -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- auth -> contains -> generateCodeVerifier [EXTRACTED]
+- auth -> contains -> generateCodeChallenge [EXTRACTED]
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___api_auth_ [EXTRACTED]
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__encode [EXTRACTED]
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__sha256sync [EXTRACTED]
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__btoa [EXTRACTED]
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__fromcharcode [EXTRACTED]
+- generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__btoa [EXTRACTED]
+- generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__fromcharcode [EXTRACTED]
+- mergeComponentFilters -> calls -> __unresolved__::ref::__unresolved____ref__find [EXTRACTED]
+- displayMask -> contains -> isPhoneNumber [EXTRACTED]
+- displayMask -> contains -> maskPhone [EXTRACTED]
+- displayMask -> contains -> applyNameMask [EXTRACTED]
+- displayMask -> contains -> maskKoreanName [EXTRACTED]
+- displayMask -> contains -> isLikelyName [EXTRACTED]
+- displayMask -> contains -> maskNamesInTokens [EXTRACTED]
+- displayMask -> contains -> maskAllKoreanNames [EXTRACTED]
+- isLikelyName -> calls -> __unresolved__::ref::__unresolved____ref__test [EXTRACTED]
+- isLikelyName -> calls -> __unresolved__::ref::__unresolved____ref__endswithinstitution [EXTRACTED]
+- isPhoneNumber -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- isPhoneNumber -> calls -> __unresolved__::ref::__unresolved____ref__test [EXTRACTED]
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__masknamesintokens [EXTRACTED]
+- maskKoreanName -> calls -> __unresolved__::ref::__unresolved____ref__indexof [EXTRACTED]
+- maskKoreanName -> calls -> __unresolved__::ref::__unresolved____ref__endswithinstitution [EXTRACTED]
+- maskKoreanName -> calls -> __unresolved__::ref::__unresolved____ref__applynamemask [EXTRACTED]
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__islikelyname [EXTRACTED]
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__applynamemask [EXTRACTED]
+- maskPhone -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- onnxModelChecksum.test -> contains -> computeSha256 [EXTRACTED]
+- onnxModelChecksum.test -> imports -> __unresolved__::ref::__unresolved____ref___node_child_process_ [EXTRACTED]
+- onnxModelChecksum.test -> imports -> __unresolved__::ref::__unresolved____ref___node_fs_ [EXTRACTED]
+- onnxModelChecksum.test -> imports -> __unresolved__::ref::__unresolved____ref___node_path_ [EXTRACTED]
+- computeSha256 -> calls -> __unresolved__::ref::__unresolved____ref__trim [EXTRACTED]
+- computeSha256 -> calls -> __unresolved__::ref::__unresolved____ref__execsync [EXTRACTED]
+- piiDetector -> contains -> maskString [EXTRACTED]
+- piiDetector -> contains -> deduplicateDetections [EXTRACTED]
+- piiDetector -> contains -> splitSentences [EXTRACTED]
+- deduplicateDetections -> calls -> __unresolved__::ref::__unresolved____ref__find [EXTRACTED]
+- deduplicateDetections -> calls -> __unresolved__::ref::__unresolved____ref__indexof [EXTRACTED]
+- maskString -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- splitSentences -> calls -> __unresolved__::ref::__unresolved____ref__trim [EXTRACTED]
+- findWordTimestamp -> calls -> __unresolved__::ref::__unresolved____ref__indexof [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__getsecureitem [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__migratekeyfromlocalstorage [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__atob [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__importkey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__generatekey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__exportkey [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__btoa [EXTRACTED]
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__fromcharcode [EXTRACTED]
+
+## Cross-Community Connections
+- MetadataEventPreview -> contains -> buildHeatmapFromEvents (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- MetadataEventPreview -> imports -> __unresolved__::ref::__unresolved____ref___react_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
+- MetadataEventPreview -> imports -> __unresolved__::ref::__unresolved____ref___lib_api_admin_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
+- getTitle -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- getTitle -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- auth -> contains -> getOrCreatePid (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___api_admin_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- displayMask -> contains -> endsWithInstitution (-> [[unresolvedrefunresolvedrefresolve-unresolvedrefunresolvedrefabs]])
+- displayMask -> imports -> __unresolved__::ref::__unresolved____ref___contactutils_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
+- applyNameMask -> calls -> __unresolved__::ref::__unresolved____ref__repeat (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- isLikelyName -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskKoreanName -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__match (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- maskPhone -> calls -> __unresolved__::ref::__unresolved____ref__includes (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskPhone -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- maskPhone -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- deduplicateDetections -> calls -> __unresolved__::ref::__unresolved____ref__sort (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- deduplicateDetections -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskString -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskString -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- splitSentences -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- splitSentences -> calls -> __unresolved__::ref::__unresolved____ref__filter (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- splitSentences -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- defaultPriceForSku -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- defaultPriceForSku -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- download-dev-audio -> contains -> listAllObjects (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- download-dev-audio -> imports -> __unresolved__::ref::__unresolved____ref____aws_sdk_client_s3_ (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref__send (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- downloadObject -> calls -> __unresolved__::ref::__unresolved____ref__dirname (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- downloadFromS3 -> calls -> __unresolved__::ref::__unresolved____ref__send (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- generate-icons -> imports -> __unresolved__::ref::__unresolved____ref___path_ (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__from (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- generate -> calls -> __unresolved__::ref::__unresolved____ref__log (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- splashSvg -> calls -> __unresolved__::ref::__unresolved____ref__min (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- splashSvg -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- reset-all -> contains -> loadEnv (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- reset-all -> contains -> clearSupabase (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- reset-all -> imports -> __unresolved__::ref::__unresolved____ref___path_ (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- getTitle -> calls -> __unresolved__::ref::__unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- getTitle -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- auth -> contains -> getOrCreatePid (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref____capacitor_core_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref____capacitor_browser_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___uuid_ (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___crypto_ (-> [[unresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefvitest]])
+- auth -> imports -> __unresolved__::ref::__unresolved____ref___securekeystore_ (-> [[unresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefvitest]])
+- generateCodeChallenge -> calls -> __unresolved__::ref::__unresolved____ref__digest (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- generateCodeVerifier -> calls -> __unresolved__::ref::__unresolved____ref__getrandomvalues (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- displayMask -> contains -> endsWithInstitution (-> [[unresolvedrefunresolvedrefresolve-unresolvedrefunresolvedrefabs]])
+- displayMask -> imports -> __unresolved__::ref::__unresolved____ref___contactutils_ (-> [[unresolvedrefunresolvedrefreact-unresolvedrefunresolvedreftypessession]])
+- applyNameMask -> calls -> __unresolved__::ref::__unresolved____ref__repeat (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- isLikelyName -> calls -> __unresolved__::ref::__unresolved____ref__has (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskAllKoreanNames -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskKoreanName -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- maskNamesInTokens -> calls -> __unresolved__::ref::__unresolved____ref__match (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- maskPhone -> calls -> __unresolved__::ref::__unresolved____ref__includes (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskPhone -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- maskPhone -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- onnxModelChecksum.test -> contains -> extractHashFromJava (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- onnxModelChecksum.test -> imports -> __unresolved__::ref::__unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefvitest]])
+- computeSha256 -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- computeSha256 -> calls -> __unresolved__::ref::__unresolved____ref__tostring (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- deduplicateDetections -> calls -> __unresolved__::ref::__unresolved____ref__sort (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- deduplicateDetections -> calls -> __unresolved__::ref::__unresolved____ref__push (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskString -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- maskString -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- splitSentences -> calls -> __unresolved__::ref::__unresolved____ref__split (-> [[unresolvedrefunresolvedrefmin-testparseinstinct]])
+- splitSentences -> calls -> __unresolved__::ref::__unresolved____ref__filter (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- splitSentences -> calls -> __unresolved__::ref::__unresolved____ref__map (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__from (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__charcodeat (-> [[unresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefvitest]])
+- getOrCreateAesKey -> calls -> __unresolved__::ref::__unresolved____ref__setsecureitem (-> [[unresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefpush]])
+
+## Context
+이 커뮤니티는 __unresolved__::ref::__unresolved____ref__replace, generate, getOrCreateAesKey를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 AdminClientSkuMapPage.tsx, AdminSkuCatalogPage.tsx, AppShell.tsx, MetadataEventPreview.tsx, auth.ts이다.

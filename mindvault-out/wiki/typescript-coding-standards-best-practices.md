@@ -1,0 +1,243 @@
+# typescript & Coding Standards & Best Practices
+Cohesion: 0.07 | Nodes: 43
+
+## Key Nodes
+- **typescript** (.claude/skills/coding-standards/SKILL.md) -- 22 connections
+  - <- has_code_example <- [[variable-naming]]
+  - <- has_code_example <- [[function-naming]]
+  - <- has_code_example <- [[immutability-pattern-critical]]
+  - <- has_code_example <- [[error-handling]]
+  - <- has_code_example <- [[asyncawait-best-practices]]
+  - <- has_code_example <- [[type-safety]]
+  - <- has_code_example <- [[component-structure]]
+  - <- has_code_example <- [[custom-hooks]]
+  - <- has_code_example <- [[state-management]]
+  - <- has_code_example <- [[conditional-rendering]]
+  - <- has_code_example <- [[response-format]]
+  - <- has_code_example <- [[input-validation]]
+  - <- has_code_example <- [[when-to-comment]]
+  - <- has_code_example <- [[jsdoc-for-public-apis]]
+  - <- has_code_example <- [[memoization]]
+  - <- has_code_example <- [[lazy-loading]]
+  - <- has_code_example <- [[database-queries]]
+  - <- has_code_example <- [[test-structure-aaa-pattern]]
+  - <- has_code_example <- [[test-naming]]
+  - <- has_code_example <- [[1-long-functions]]
+  - <- has_code_example <- [[2-deep-nesting]]
+  - <- has_code_example <- [[3-magic-numbers]]
+- **Coding Standards & Best Practices** (.claude/skills/coding-standards/SKILL.md) -- 12 connections
+  - -> contains -> [[when-to-activate]]
+  - -> contains -> [[scope-boundaries]]
+  - -> contains -> [[code-quality-principles]]
+  - -> contains -> [[typescriptjavascript-standards]]
+  - -> contains -> [[react-best-practices]]
+  - -> contains -> [[api-design-standards]]
+  - -> contains -> [[file-organization]]
+  - -> contains -> [[comments-documentation]]
+  - -> contains -> [[performance-best-practices]]
+  - -> contains -> [[testing-standards]]
+  - -> contains -> [[code-smell-detection]]
+  - <- contains <- [[skill]]
+- **TypeScript/JavaScript Standards** (.claude/skills/coding-standards/SKILL.md) -- 7 connections
+  - -> contains -> [[variable-naming]]
+  - -> contains -> [[function-naming]]
+  - -> contains -> [[immutability-pattern-critical]]
+  - -> contains -> [[error-handling]]
+  - -> contains -> [[asyncawait-best-practices]]
+  - -> contains -> [[type-safety]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **Code Quality Principles** (.claude/skills/coding-standards/SKILL.md) -- 5 connections
+  - -> contains -> [[1-readability-first]]
+  - -> contains -> [[2-kiss-keep-it-simple-stupid]]
+  - -> contains -> [[3-dry-dont-repeat-yourself]]
+  - -> contains -> [[4-yagni-you-arent-gonna-need-it]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **React Best Practices** (.claude/skills/coding-standards/SKILL.md) -- 5 connections
+  - -> contains -> [[component-structure]]
+  - -> contains -> [[custom-hooks]]
+  - -> contains -> [[state-management]]
+  - -> contains -> [[conditional-rendering]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **API Design Standards** (.claude/skills/coding-standards/SKILL.md) -- 4 connections
+  - -> contains -> [[rest-api-conventions]]
+  - -> contains -> [[response-format]]
+  - -> contains -> [[input-validation]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **Code Smell Detection** (.claude/skills/coding-standards/SKILL.md) -- 4 connections
+  - -> contains -> [[1-long-functions]]
+  - -> contains -> [[2-deep-nesting]]
+  - -> contains -> [[3-magic-numbers]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **Performance Best Practices** (.claude/skills/coding-standards/SKILL.md) -- 4 connections
+  - -> contains -> [[memoization]]
+  - -> contains -> [[lazy-loading]]
+  - -> contains -> [[database-queries]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **Comments & Documentation** (.claude/skills/coding-standards/SKILL.md) -- 3 connections
+  - -> contains -> [[when-to-comment]]
+  - -> contains -> [[jsdoc-for-public-apis]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **File Organization** (.claude/skills/coding-standards/SKILL.md) -- 3 connections
+  - -> contains -> [[project-structure]]
+  - -> contains -> [[file-naming]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **Testing Standards** (.claude/skills/coding-standards/SKILL.md) -- 3 connections
+  - -> contains -> [[test-structure-aaa-pattern]]
+  - -> contains -> [[test-naming]]
+  - <- contains <- [[coding-standards-best-practices]]
+- **1. Long Functions** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[code-smell-detection]]
+- **2. Deep Nesting** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[code-smell-detection]]
+- **3. Magic Numbers** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[code-smell-detection]]
+- **Async/Await Best Practices** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-standards]]
+- **Component Structure** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[react-best-practices]]
+- **Conditional Rendering** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[react-best-practices]]
+- **Custom Hooks** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[react-best-practices]]
+- **Database Queries** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[performance-best-practices]]
+- **Error Handling** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-standards]]
+- **Function Naming** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-standards]]
+- **Immutability Pattern (CRITICAL)** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-standards]]
+- **Input Validation** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[api-design-standards]]
+- **JSDoc for Public APIs** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[comments-documentation]]
+- **Lazy Loading** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[performance-best-practices]]
+- **Memoization** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[performance-best-practices]]
+- **Response Format** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[api-design-standards]]
+- **State Management** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[react-best-practices]]
+- **Test Naming** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[testing-standards]]
+- **Test Structure (AAA Pattern)** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[testing-standards]]
+- **Type Safety** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-standards]]
+- **Variable Naming** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[typescriptjavascript-standards]]
+- **When to Comment** (.claude/skills/coding-standards/SKILL.md) -- 2 connections
+  - -> has_code_example -> [[typescript]]
+  - <- contains <- [[comments-documentation]]
+- **SKILL** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - -> contains -> [[coding-standards-best-practices]]
+- **1. Readability First** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[code-quality-principles]]
+- **2. KISS (Keep It Simple, Stupid)** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[code-quality-principles]]
+- **3. DRY (Don't Repeat Yourself)** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[code-quality-principles]]
+- **4. YAGNI (You Aren't Gonna Need It)** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[code-quality-principles]]
+- **File Naming** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[file-organization]]
+- **Project Structure** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[file-organization]]
+- **REST API Conventions** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[api-design-standards]]
+- **Scope Boundaries** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[coding-standards-best-practices]]
+- **When to Activate** (.claude/skills/coding-standards/SKILL.md) -- 1 connections
+  - <- contains <- [[coding-standards-best-practices]]
+
+## Internal Relationships
+- SKILL -> contains -> Coding Standards & Best Practices [EXTRACTED]
+- 1. Long Functions -> has_code_example -> typescript [EXTRACTED]
+- 2. Deep Nesting -> has_code_example -> typescript [EXTRACTED]
+- 3. Magic Numbers -> has_code_example -> typescript [EXTRACTED]
+- API Design Standards -> contains -> REST API Conventions [EXTRACTED]
+- API Design Standards -> contains -> Response Format [EXTRACTED]
+- API Design Standards -> contains -> Input Validation [EXTRACTED]
+- Async/Await Best Practices -> has_code_example -> typescript [EXTRACTED]
+- Code Quality Principles -> contains -> 1. Readability First [EXTRACTED]
+- Code Quality Principles -> contains -> 2. KISS (Keep It Simple, Stupid) [EXTRACTED]
+- Code Quality Principles -> contains -> 3. DRY (Don't Repeat Yourself) [EXTRACTED]
+- Code Quality Principles -> contains -> 4. YAGNI (You Aren't Gonna Need It) [EXTRACTED]
+- Code Smell Detection -> contains -> 1. Long Functions [EXTRACTED]
+- Code Smell Detection -> contains -> 2. Deep Nesting [EXTRACTED]
+- Code Smell Detection -> contains -> 3. Magic Numbers [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> When to Activate [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> Scope Boundaries [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> Code Quality Principles [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> TypeScript/JavaScript Standards [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> React Best Practices [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> API Design Standards [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> File Organization [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> Comments & Documentation [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> Performance Best Practices [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> Testing Standards [EXTRACTED]
+- Coding Standards & Best Practices -> contains -> Code Smell Detection [EXTRACTED]
+- Comments & Documentation -> contains -> When to Comment [EXTRACTED]
+- Comments & Documentation -> contains -> JSDoc for Public APIs [EXTRACTED]
+- Component Structure -> has_code_example -> typescript [EXTRACTED]
+- Conditional Rendering -> has_code_example -> typescript [EXTRACTED]
+- Custom Hooks -> has_code_example -> typescript [EXTRACTED]
+- Database Queries -> has_code_example -> typescript [EXTRACTED]
+- Error Handling -> has_code_example -> typescript [EXTRACTED]
+- File Organization -> contains -> Project Structure [EXTRACTED]
+- File Organization -> contains -> File Naming [EXTRACTED]
+- Function Naming -> has_code_example -> typescript [EXTRACTED]
+- Immutability Pattern (CRITICAL) -> has_code_example -> typescript [EXTRACTED]
+- Input Validation -> has_code_example -> typescript [EXTRACTED]
+- JSDoc for Public APIs -> has_code_example -> typescript [EXTRACTED]
+- Lazy Loading -> has_code_example -> typescript [EXTRACTED]
+- Memoization -> has_code_example -> typescript [EXTRACTED]
+- Performance Best Practices -> contains -> Memoization [EXTRACTED]
+- Performance Best Practices -> contains -> Lazy Loading [EXTRACTED]
+- Performance Best Practices -> contains -> Database Queries [EXTRACTED]
+- React Best Practices -> contains -> Component Structure [EXTRACTED]
+- React Best Practices -> contains -> Custom Hooks [EXTRACTED]
+- React Best Practices -> contains -> State Management [EXTRACTED]
+- React Best Practices -> contains -> Conditional Rendering [EXTRACTED]
+- Response Format -> has_code_example -> typescript [EXTRACTED]
+- State Management -> has_code_example -> typescript [EXTRACTED]
+- Test Naming -> has_code_example -> typescript [EXTRACTED]
+- Test Structure (AAA Pattern) -> has_code_example -> typescript [EXTRACTED]
+- Testing Standards -> contains -> Test Structure (AAA Pattern) [EXTRACTED]
+- Testing Standards -> contains -> Test Naming [EXTRACTED]
+- Type Safety -> has_code_example -> typescript [EXTRACTED]
+- TypeScript/JavaScript Standards -> contains -> Variable Naming [EXTRACTED]
+- TypeScript/JavaScript Standards -> contains -> Function Naming [EXTRACTED]
+- TypeScript/JavaScript Standards -> contains -> Immutability Pattern (CRITICAL) [EXTRACTED]
+- TypeScript/JavaScript Standards -> contains -> Error Handling [EXTRACTED]
+- TypeScript/JavaScript Standards -> contains -> Async/Await Best Practices [EXTRACTED]
+- TypeScript/JavaScript Standards -> contains -> Type Safety [EXTRACTED]
+- Variable Naming -> has_code_example -> typescript [EXTRACTED]
+- When to Comment -> has_code_example -> typescript [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 typescript, Coding Standards & Best Practices, TypeScript/JavaScript Standards를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 SKILL.md이다.

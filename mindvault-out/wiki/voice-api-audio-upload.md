@@ -1,0 +1,112 @@
+# Voice API & Audio Upload
+Cohesion: 0.08 | Nodes: 26
+
+## Key Nodes
+- **Voice API** (path) -- 13 connections
+  - -> references -> [[speech-to-text]]
+  - -> references -> [[diarization]]
+  - -> references -> [[pii-masking]]
+  - -> references -> [[utterance-splitting]]
+  - <- related_to <- [[android-on-device-pipeline]]
+  - <- related_to <- [[gpu]]
+  - <- implements <- [[application]]
+  - <- implements <- [[fallback-mechanism]]
+  - <- implements <- [[audio-upload]]
+  - <- implements <- [[stt-processing-service]]
+  - <- related_to <- [[task-management]]
+  - <- related_to <- [[output-contract]]
+  - <- related_to <- [[integration]]
+- **Audio Upload** (path) -- 4 connections
+  - -> implements -> [[voice-api]]
+  - <- related_to <- [[job-status-polling]]
+  - <- related_to <- [[consent-gating]]
+  - <- implements <- [[audio-file]]
+- **Application** (path) -- 3 connections
+  - -> implements -> [[voice-api]]
+  - <- references <- [[transcript-store]]
+  - <- references <- [[stt-mode]]
+- **Fallback Mechanism** (path) -- 3 connections
+  - -> implements -> [[voice-api]]
+  - <- related_to <- [[error-handling]]
+  - <- related_to <- [[network-conditions]]
+- **STT Mode** (path) -- 3 connections
+  - -> references -> [[application]]
+  - <- implements <- [[profile-page]]
+  - <- related_to <- [[user-experience]]
+- **PII Masking** (path) -- 2 connections
+  - <- references <- [[voice-api]]
+  - <- related_to <- [[privacy]]
+- **Transcript Store** (path) -- 2 connections
+  - -> references -> [[application]]
+  - <- references <- [[transcripts-api]]
+- **Transcripts API** (path) -- 2 connections
+  - -> references -> [[transcript-store]]
+  - <- related_to <- [[upload-pipeline]]
+- **Android On-device Pipeline** (path) -- 1 connections
+  - -> related_to -> [[voice-api]]
+- **Audio File** (path) -- 1 connections
+  - -> implements -> [[audio-upload]]
+- **Consent Gating** (path) -- 1 connections
+  - -> related_to -> [[audio-upload]]
+- **Diarization** (path) -- 1 connections
+  - <- references <- [[voice-api]]
+- **Error Handling** (path) -- 1 connections
+  - -> related_to -> [[fallback-mechanism]]
+- **GPU** (path) -- 1 connections
+  - -> related_to -> [[voice-api]]
+- **Integration** (path) -- 1 connections
+  - -> related_to -> [[voice-api]]
+- **Job Status Polling** (path) -- 1 connections
+  - -> related_to -> [[audio-upload]]
+- **Network Conditions** (path) -- 1 connections
+  - -> related_to -> [[fallback-mechanism]]
+- **Output Contract** (path) -- 1 connections
+  - -> related_to -> [[voice-api]]
+- **Privacy** (path) -- 1 connections
+  - -> related_to -> [[pii-masking]]
+- **Profile Page** (path) -- 1 connections
+  - -> implements -> [[stt-mode]]
+- **Speech-to-Text** (path) -- 1 connections
+  - <- references <- [[voice-api]]
+- **STT Processing Service** (path) -- 1 connections
+  - -> implements -> [[voice-api]]
+- **Task Management** (path) -- 1 connections
+  - -> related_to -> [[voice-api]]
+- **Upload Pipeline** (path) -- 1 connections
+  - -> related_to -> [[transcripts-api]]
+- **User Experience** (path) -- 1 connections
+  - -> related_to -> [[stt-mode]]
+- **Utterance Splitting** (path) -- 1 connections
+  - <- references <- [[voice-api]]
+
+## Internal Relationships
+- Android On-device Pipeline -> related_to -> Voice API [EXTRACTED]
+- Application -> implements -> Voice API [EXTRACTED]
+- Audio File -> implements -> Audio Upload [EXTRACTED]
+- Audio Upload -> implements -> Voice API [EXTRACTED]
+- Consent Gating -> related_to -> Audio Upload [EXTRACTED]
+- Error Handling -> related_to -> Fallback Mechanism [INFERRED]
+- Fallback Mechanism -> implements -> Voice API [EXTRACTED]
+- GPU -> related_to -> Voice API [EXTRACTED]
+- Integration -> related_to -> Voice API [EXTRACTED]
+- Job Status Polling -> related_to -> Audio Upload [EXTRACTED]
+- Network Conditions -> related_to -> Fallback Mechanism [INFERRED]
+- Output Contract -> related_to -> Voice API [EXTRACTED]
+- Privacy -> related_to -> PII Masking [INFERRED]
+- Profile Page -> implements -> STT Mode [EXTRACTED]
+- STT Mode -> references -> Application [EXTRACTED]
+- STT Processing Service -> implements -> Voice API [EXTRACTED]
+- Task Management -> related_to -> Voice API [INFERRED]
+- Transcript Store -> references -> Application [EXTRACTED]
+- Transcripts API -> references -> Transcript Store [EXTRACTED]
+- Upload Pipeline -> related_to -> Transcripts API [EXTRACTED]
+- User Experience -> related_to -> STT Mode [INFERRED]
+- Voice API -> references -> Speech-to-Text [EXTRACTED]
+- Voice API -> references -> Diarization [EXTRACTED]
+- Voice API -> references -> PII Masking [EXTRACTED]
+- Voice API -> references -> Utterance Splitting [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Voice API, Audio Upload, Application를 중심으로 related_to 관계로 연결되어 있다. 주요 소스 파일은 path이다.

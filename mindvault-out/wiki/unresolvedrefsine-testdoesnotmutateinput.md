@@ -1,0 +1,333 @@
+# __unresolved__::ref::_sine & test_does_not_mutate_input
+Cohesion: 0.13 | Nodes: 36
+
+## Key Nodes
+- **__unresolved__::ref::_sine** () -- 12 connections
+  - <- calls <- [[testreturnsinputwhenworkernotready]]
+  - <- calls <- [[testreturnsndarraysamedtype]]
+  - <- calls <- [[testdoesnotmutateinput]]
+  - <- calls <- [[testskipswhenworkernone]]
+  - <- calls <- [[testoutputis1d]]
+  - <- calls <- [[testremovesrepeatedsegment]]
+  - <- calls <- [[testkeepsuniquesegments]]
+  - <- calls <- [[testskipssilentregions]]
+  - <- calls <- [[testhandlesshortaudio]]
+  - <- calls <- [[testcompresseslongsilence]]
+  - <- calls <- [[testpreservesshortsilence]]
+  - <- calls <- [[testoutputshorterwithgaps]]
+- **test_does_not_mutate_input** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 12 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefcopy]]
+  - -> calls -> [[unresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefassertarrayequal]]
+  - -> calls -> [[unresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefcompresssilence]]
+  - <- contains <- [[testdenoise]]
+  - <- contains <- [[testremoveduplicates]]
+  - <- contains <- [[testcompresssilence]]
+- **__unresolved__::ref::concatenate** () -- 10 connections
+  - <- calls <- [[testremovesrepeatedsegment]]
+  - <- calls <- [[testkeepsuniquesegments]]
+  - <- calls <- [[testskipssilentregions]]
+  - <- calls <- [[testdoesnotmutateinput]]
+  - <- calls <- [[testcompresseslongsilence]]
+  - <- calls <- [[testpreservesshortsilence]]
+  - <- calls <- [[testoutputshorterwithgaps]]
+  - <- calls <- [[extractspeakeraudio]]
+  - <- calls <- [[removeduplicates]]
+  - <- calls <- [[compresssilence]]
+- **test_audio_preprocessor** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 9 connections
+  - -> contains -> [[sine]]
+  - -> contains -> [[silence]]
+  - -> contains -> [[testdenoise]]
+  - -> contains -> [[testremoveduplicates]]
+  - -> contains -> [[testcompresssilence]]
+  - -> contains -> [[testpreprocess]]
+  - -> imports -> [[unresolvedrefmock]]
+  - -> imports -> [[unresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefaudiopreprocessor]]
+- **test_output_shorter_with_gaps** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 8 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefcompresssilence]]
+  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefabs]]
+  - <- contains <- [[testcompresssilence]]
+- **__unresolved__::ref::denoise** () -- 7 connections
+  - <- calls <- [[testreturnsinputwhenworkernotready]]
+  - <- calls <- [[testreturnsndarraysamedtype]]
+  - <- calls <- [[testdoesnotmutateinput]]
+  - <- calls <- [[testskipswhenworkernone]]
+  - <- calls <- [[testoutputis1d]]
+  - <- calls <- [[testhandlessilenceinput]]
+  - <- calls <- [[preprocess]]
+- **TestDenoise** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 7 connections
+  - -> contains -> [[testreturnsinputwhenworkernotready]]
+  - -> contains -> [[testreturnsndarraysamedtype]]
+  - -> contains -> [[testdoesnotmutateinput]]
+  - -> contains -> [[testskipswhenworkernone]]
+  - -> contains -> [[testoutputis1d]]
+  - -> contains -> [[testhandlessilenceinput]]
+  - <- contains <- [[testaudiopreprocessor]]
+- **test_compresses_long_silence** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 7 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefcompresssilence]]
+  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefint]]
+  - <- contains <- [[testcompresssilence]]
+- **__unresolved__::ref::_silence** () -- 6 connections
+  - <- calls <- [[testhandlessilenceinput]]
+  - <- calls <- [[testskipssilentregions]]
+  - <- calls <- [[testcompresseslongsilence]]
+  - <- calls <- [[testpreservesshortsilence]]
+  - <- calls <- [[testdoesnotmutateinput]]
+  - <- calls <- [[testoutputshorterwithgaps]]
+- **__unresolved__::ref::patch** () -- 6 connections
+  - <- calls <- [[testreturnsinputwhenworkernotready]]
+  - <- calls <- [[testreturnsndarraysamedtype]]
+  - <- calls <- [[testdoesnotmutateinput]]
+  - <- calls <- [[testskipswhenworkernone]]
+  - <- calls <- [[testoutputis1d]]
+  - <- calls <- [[testhandlessilenceinput]]
+- **__unresolved__::ref::remove_duplicates** () -- 6 connections
+  - <- calls <- [[testremovesrepeatedsegment]]
+  - <- calls <- [[testkeepsuniquesegments]]
+  - <- calls <- [[testskipssilentregions]]
+  - <- calls <- [[testdoesnotmutateinput]]
+  - <- calls <- [[testhandlesshortaudio]]
+  - <- calls <- [[preprocess]]
+- **TestRemoveDuplicates** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 6 connections
+  - -> contains -> [[testremovesrepeatedsegment]]
+  - -> contains -> [[testkeepsuniquesegments]]
+  - -> contains -> [[testskipssilentregions]]
+  - -> contains -> [[testdoesnotmutateinput]]
+  - -> contains -> [[testhandlesshortaudio]]
+  - <- contains <- [[testaudiopreprocessor]]
+- **test_preserves_short_silence** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 6 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefcompresssilence]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testcompresssilence]]
+- **test_returns_ndarray_same_dtype** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 6 connections
+  - -> calls -> [[unresolvedrefastype]]
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefisinstance]]
+  - <- contains <- [[testdenoise]]
+- **test_skips_silent_regions** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 6 connections
+  - -> calls -> [[unresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testremoveduplicates]]
+- **test_returns_valid_wav_bytes** (uncounted-voice-api/tests/test_audio_splitter.py) -- 6 connections
+  - -> calls -> [[unresolvedrefastype]]
+  - -> calls -> [[unresolvedrefrandn]]
+  - -> calls -> [[unresolvedreftowavbytes]]
+  - -> calls -> [[unresolvedrefisinstance]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testtowavbytes]]
+- **__unresolved__::ref::compress_silence** () -- 5 connections
+  - <- calls <- [[testcompresseslongsilence]]
+  - <- calls <- [[testpreservesshortsilence]]
+  - <- calls <- [[testdoesnotmutateinput]]
+  - <- calls <- [[testoutputshorterwithgaps]]
+  - <- calls <- [[preprocess]]
+- **TestCompressSilence** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
+  - -> contains -> [[testcompresseslongsilence]]
+  - -> contains -> [[testpreservesshortsilence]]
+  - -> contains -> [[testdoesnotmutateinput]]
+  - -> contains -> [[testoutputshorterwithgaps]]
+  - <- contains <- [[testaudiopreprocessor]]
+- **test_handles_silence_input** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
+  - -> calls -> [[unresolvedrefsilence]]
+  - -> calls -> [[unresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefdenoise]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testdenoise]]
+- **test_keeps_unique_segments** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testremoveduplicates]]
+- **test_removes_repeated_segment** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefconcatenate]]
+  - -> calls -> [[unresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedreflen]]
+  - <- contains <- [[testremoveduplicates]]
+- **test_returns_input_when_worker_not_ready** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefassertarrayequal]]
+  - <- contains <- [[testdenoise]]
+- **test_skips_when_worker_none** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 5 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefdenoise]]
+  - -> calls -> [[unresolvedrefassertarrayequal]]
+  - <- contains <- [[testdenoise]]
+- **__unresolved__::ref::assert_array_equal** () -- 4 connections
+  - <- calls <- [[testreturnsinputwhenworkernotready]]
+  - <- calls <- [[testdoesnotmutateinput]]
+  - <- calls <- [[testskipswhenworkernone]]
+  - <- calls <- [[testhandlesshortaudio]]
+- **__unresolved__::ref::astype** () -- 4 connections
+  - <- calls <- [[testreturnsndarraysamedtype]]
+  - <- calls <- [[testreturnsvalidwavbytes]]
+  - <- calls <- [[denoise]]
+  - <- calls <- [[normalizegain]]
+- **_sine** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 4 connections
+  - -> calls -> [[unresolvedreflinspace]]
+  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefsin]]
+  - <- contains <- [[testaudiopreprocessor]]
+- **test_handles_short_audio** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 4 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefremoveduplicates]]
+  - -> calls -> [[unresolvedrefassertarrayequal]]
+  - <- contains <- [[testremoveduplicates]]
+- **test_output_is_1d** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 4 connections
+  - -> calls -> [[unresolvedrefsine]]
+  - -> calls -> [[unresolvedrefpatch]]
+  - -> calls -> [[unresolvedrefdenoise]]
+  - <- contains <- [[testdenoise]]
+- **_silence** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 3 connections
+  - -> calls -> [[unresolvedrefzeros]]
+  - -> calls -> [[unresolvedrefint]]
+  - <- contains <- [[testaudiopreprocessor]]
+- **__unresolved__::ref::audio_preprocessor** () -- 2 connections
+  - <- imports <- [[testaudiopreprocessor]]
+  - <- imports <- [[sttprocessor]]
+- **__unresolved__::ref::zeros** () -- 2 connections
+  - <- calls <- [[silence]]
+  - <- calls <- [[compresssilence]]
+- **TestToWavBytes** (uncounted-voice-api/tests/test_audio_splitter.py) -- 2 connections
+  - -> contains -> [[testreturnsvalidwavbytes]]
+  - <- contains <- [[testaudiosplitter]]
+- **__unresolved__::ref::linspace** () -- 1 connections
+  - <- calls <- [[sine]]
+- **__unresolved__::ref::mock** () -- 1 connections
+  - <- imports <- [[testaudiopreprocessor]]
+- **__unresolved__::ref::randn** () -- 1 connections
+  - <- calls <- [[testreturnsvalidwavbytes]]
+- **TestPreprocess** (uncounted-voice-api/tests/test_audio_preprocessor.py) -- 1 connections
+  - <- contains <- [[testaudiopreprocessor]]
+
+## Internal Relationships
+- TestCompressSilence -> contains -> test_compresses_long_silence [EXTRACTED]
+- TestCompressSilence -> contains -> test_preserves_short_silence [EXTRACTED]
+- TestCompressSilence -> contains -> test_does_not_mutate_input [EXTRACTED]
+- TestCompressSilence -> contains -> test_output_shorter_with_gaps [EXTRACTED]
+- TestDenoise -> contains -> test_returns_input_when_worker_not_ready [EXTRACTED]
+- TestDenoise -> contains -> test_returns_ndarray_same_dtype [EXTRACTED]
+- TestDenoise -> contains -> test_does_not_mutate_input [EXTRACTED]
+- TestDenoise -> contains -> test_skips_when_worker_none [EXTRACTED]
+- TestDenoise -> contains -> test_output_is_1d [EXTRACTED]
+- TestDenoise -> contains -> test_handles_silence_input [EXTRACTED]
+- TestRemoveDuplicates -> contains -> test_removes_repeated_segment [EXTRACTED]
+- TestRemoveDuplicates -> contains -> test_keeps_unique_segments [EXTRACTED]
+- TestRemoveDuplicates -> contains -> test_skips_silent_regions [EXTRACTED]
+- TestRemoveDuplicates -> contains -> test_does_not_mutate_input [EXTRACTED]
+- TestRemoveDuplicates -> contains -> test_handles_short_audio [EXTRACTED]
+- _silence -> calls -> __unresolved__::ref::zeros [EXTRACTED]
+- _sine -> calls -> __unresolved__::ref::linspace [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::_silence [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
+- test_compresses_long_silence -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::patch [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::denoise [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::assert_array_equal [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::_silence [EXTRACTED]
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
+- test_handles_short_audio -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_handles_short_audio -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
+- test_handles_short_audio -> calls -> __unresolved__::ref::assert_array_equal [EXTRACTED]
+- test_handles_silence_input -> calls -> __unresolved__::ref::_silence [EXTRACTED]
+- test_handles_silence_input -> calls -> __unresolved__::ref::patch [EXTRACTED]
+- test_handles_silence_input -> calls -> __unresolved__::ref::denoise [EXTRACTED]
+- test_keeps_unique_segments -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_keeps_unique_segments -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
+- test_keeps_unique_segments -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
+- test_output_is_1d -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_output_is_1d -> calls -> __unresolved__::ref::patch [EXTRACTED]
+- test_output_is_1d -> calls -> __unresolved__::ref::denoise [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::_silence [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
+- test_preserves_short_silence -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_preserves_short_silence -> calls -> __unresolved__::ref::_silence [EXTRACTED]
+- test_preserves_short_silence -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
+- test_preserves_short_silence -> calls -> __unresolved__::ref::compress_silence [EXTRACTED]
+- test_removes_repeated_segment -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_removes_repeated_segment -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
+- test_removes_repeated_segment -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
+- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::patch [EXTRACTED]
+- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::denoise [EXTRACTED]
+- test_returns_input_when_worker_not_ready -> calls -> __unresolved__::ref::assert_array_equal [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::astype [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::patch [EXTRACTED]
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::denoise [EXTRACTED]
+- test_skips_silent_regions -> calls -> __unresolved__::ref::concatenate [EXTRACTED]
+- test_skips_silent_regions -> calls -> __unresolved__::ref::_silence [EXTRACTED]
+- test_skips_silent_regions -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_skips_silent_regions -> calls -> __unresolved__::ref::remove_duplicates [EXTRACTED]
+- test_skips_when_worker_none -> calls -> __unresolved__::ref::_sine [EXTRACTED]
+- test_skips_when_worker_none -> calls -> __unresolved__::ref::patch [EXTRACTED]
+- test_skips_when_worker_none -> calls -> __unresolved__::ref::denoise [EXTRACTED]
+- test_skips_when_worker_none -> calls -> __unresolved__::ref::assert_array_equal [EXTRACTED]
+- test_audio_preprocessor -> contains -> _sine [EXTRACTED]
+- test_audio_preprocessor -> contains -> _silence [EXTRACTED]
+- test_audio_preprocessor -> contains -> TestDenoise [EXTRACTED]
+- test_audio_preprocessor -> contains -> TestRemoveDuplicates [EXTRACTED]
+- test_audio_preprocessor -> contains -> TestCompressSilence [EXTRACTED]
+- test_audio_preprocessor -> contains -> TestPreprocess [EXTRACTED]
+- test_audio_preprocessor -> imports -> __unresolved__::ref::mock [EXTRACTED]
+- test_audio_preprocessor -> imports -> __unresolved__::ref::audio_preprocessor [EXTRACTED]
+- TestToWavBytes -> contains -> test_returns_valid_wav_bytes [EXTRACTED]
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::astype [EXTRACTED]
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::randn [EXTRACTED]
+
+## Cross-Community Connections
+- _silence -> calls -> __unresolved__::ref::int (-> [[unresolvedrefpush-unresolvedreflen]])
+- _sine -> calls -> __unresolved__::ref::int (-> [[unresolvedrefpush-unresolvedreflen]])
+- _sine -> calls -> __unresolved__::ref::sin (-> [[unresolvedrefjs-unresolvedrefvitest]])
+- test_compresses_long_silence -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_compresses_long_silence -> calls -> __unresolved__::ref::int (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_does_not_mutate_input -> calls -> __unresolved__::ref::copy (-> [[unresolvedrefword-unresolvedrefsegment]])
+- test_handles_silence_input -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_keeps_unique_segments -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::int (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_output_shorter_with_gaps -> calls -> __unresolved__::ref::abs (-> [[unresolvedrefresolve-runpiiforall]])
+- test_preserves_short_silence -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_removes_repeated_segment -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_returns_ndarray_same_dtype -> calls -> __unresolved__::ref::isinstance (-> [[testparseinstinct-unresolvedrefwritetext]])
+- test_skips_silent_regions -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_audio_preprocessor -> imports -> __unresolved__::ref::pytest (-> [[unresolvedrefword-unresolvedrefsegment]])
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::to_wav_bytes (-> [[unresolvedrefpush-unresolvedreflen]])
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::isinstance (-> [[testparseinstinct-unresolvedrefwritetext]])
+- test_returns_valid_wav_bytes -> calls -> __unresolved__::ref::len (-> [[unresolvedrefpush-unresolvedreflen]])
+
+## Context
+이 커뮤니티는 __unresolved__::ref::_sine, test_does_not_mutate_input, __unresolved__::ref::concatenate를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 test_audio_preprocessor.py, test_audio_splitter.py이다.

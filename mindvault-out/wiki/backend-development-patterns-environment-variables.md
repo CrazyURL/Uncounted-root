@@ -1,0 +1,188 @@
+# Backend Development Patterns & Environment Variables
+Cohesion: 0.04 | Nodes: 45
+
+## Key Nodes
+- **Backend Development Patterns** (path) -- 11 connections
+  - -> related_to -> [[restful-api-structure]]
+  - -> related_to -> [[repository-pattern]]
+  - -> related_to -> [[service-layer-pattern]]
+  - -> related_to -> [[middleware-pattern]]
+  - -> related_to -> [[database-patterns]]
+  - -> related_to -> [[caching-strategies]]
+  - -> related_to -> [[error-handling-patterns]]
+  - -> related_to -> [[authentication-authorization]]
+  - -> related_to -> [[rate-limiting]]
+  - -> related_to -> [[background-jobs-queues]]
+  - -> related_to -> [[logging-monitoring]]
+- **Environment Variables** (path) -- 10 connections
+  - -> related_to -> [[api-key-configuration]]
+  - -> references -> [[supabaseurl]]
+  - -> references -> [[encryptionkey]]
+  - -> references -> [[corsorigin]]
+  - -> references -> [[hftoken]]
+  - -> references -> [[hotwords]]
+  - -> references -> [[initialprompt]]
+  - -> references -> [[viteapiurl]]
+  - <- related_to <- [[development-environment]]
+  - <- related_to <- [[secret-management]]
+- **Mandatory Security Checks** (path) -- 9 connections
+  - -> related_to -> [[hardcoded-secrets]]
+  - -> related_to -> [[user-input-validation]]
+  - -> related_to -> [[sql-injection-prevention]]
+  - -> related_to -> [[xss-prevention]]
+  - -> related_to -> [[csrf-protection]]
+  - -> related_to -> [[authenticationauthorization-verification]]
+  - -> related_to -> [[rate-limiting]]
+  - -> related_to -> [[error-message-sensitivity]]
+  - <- references <- [[commit-security]]
+- **Development Environment** (path) -- 5 connections
+  - -> related_to -> [[environment-separation]]
+  - -> related_to -> [[dev-server-commands]]
+  - -> related_to -> [[environment-variables]]
+  - -> related_to -> [[caveats]]
+  - <- related_to <- [[environment-variable]]
+- **Secret Management** (path) -- 4 connections
+  - -> references -> [[hardcoded-secrets]]
+  - -> related_to -> [[environment-variables]]
+  - -> references -> [[security-reviewer-skill]]
+  - -> related_to -> [[secret-rotation]]
+- **Caveats** (path) -- 3 connections
+  - -> related_to -> [[gitignore]]
+  - -> related_to -> [[onnx-model-files]]
+  - <- related_to <- [[development-environment]]
+- **Environment Variable** (path) -- 2 connections
+  - -> related_to -> [[development-environment]]
+  - -> related_to -> [[live-environment]]
+- **Hardcoded Secrets** (path) -- 2 connections
+  - <- references <- [[secret-management]]
+  - <- related_to <- [[mandatory-security-checks]]
+- **Rate Limiting** (path) -- 2 connections
+  - <- related_to <- [[mandatory-security-checks]]
+  - <- related_to <- [[backend-development-patterns]]
+- **Repository Pattern** (path) -- 2 connections
+  - -> references -> [[data-access]]
+  - <- related_to <- [[backend-development-patterns]]
+- **Security Reviewer Skill** (path) -- 2 connections
+  - -> related_to -> [[comprehensive-security-audits]]
+  - <- references <- [[secret-management]]
+- **ONNX model files** (path) -- 2 connections
+  - -> references -> [[androidappsrcmainassetsstt]]
+  - <- related_to <- [[caveats]]
+- **SUPABASE_URL** (path) -- 2 connections
+  - <- references <- [[environment-variables]]
+  - <- implements <- [[unresolvedrefunresolvedrefunresolvedrefeapi]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__eapi** () -- 1 connections
+  - -> implements -> [[supabaseurl]]
+- **API Key Configuration** (path) -- 1 connections
+  - <- related_to <- [[environment-variables]]
+- **Authentication & Authorization** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **Authentication/Authorization Verification** (path) -- 1 connections
+  - <- related_to <- [[mandatory-security-checks]]
+- **Background Jobs & Queues** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **Caching Strategies** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **Commit Security** (path) -- 1 connections
+  - -> references -> [[mandatory-security-checks]]
+- **Comprehensive Security Audits** (path) -- 1 connections
+  - <- related_to <- [[security-reviewer-skill]]
+- **CSRF Protection** (path) -- 1 connections
+  - <- related_to <- [[mandatory-security-checks]]
+- **Data Access** (path) -- 1 connections
+  - <- references <- [[repository-pattern]]
+- **Database Patterns** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **Dev Server Commands** (path) -- 1 connections
+  - <- related_to <- [[development-environment]]
+- **Environment Separation** (path) -- 1 connections
+  - <- related_to <- [[development-environment]]
+- **Error Handling Patterns** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **Error Message Sensitivity** (path) -- 1 connections
+  - <- related_to <- [[mandatory-security-checks]]
+- **Live Environment** (path) -- 1 connections
+  - <- related_to <- [[environment-variable]]
+- **Logging & Monitoring** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **Middleware Pattern** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **RESTful API Structure** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **Secret Rotation** (path) -- 1 connections
+  - <- related_to <- [[secret-management]]
+- **Service Layer Pattern** (path) -- 1 connections
+  - <- related_to <- [[backend-development-patterns]]
+- **SQL Injection Prevention** (path) -- 1 connections
+  - <- related_to <- [[mandatory-security-checks]]
+- **User Input Validation** (path) -- 1 connections
+  - <- related_to <- [[mandatory-security-checks]]
+- **XSS Prevention** (path) -- 1 connections
+  - <- related_to <- [[mandatory-security-checks]]
+- **.gitignore** (path) -- 1 connections
+  - <- related_to <- [[caveats]]
+- **android/app/src/main/assets/stt/** (path) -- 1 connections
+  - <- references <- [[onnx-model-files]]
+- **CORS_ORIGIN** (path) -- 1 connections
+  - <- references <- [[environment-variables]]
+- **ENCRYPTION_KEY** (path) -- 1 connections
+  - <- references <- [[environment-variables]]
+- **HF_TOKEN** (path) -- 1 connections
+  - <- references <- [[environment-variables]]
+- **HOTWORDS** (path) -- 1 connections
+  - <- references <- [[environment-variables]]
+- **INITIAL_PROMPT** (path) -- 1 connections
+  - <- references <- [[environment-variables]]
+- **VITE_API_URL** (path) -- 1 connections
+  - <- references <- [[environment-variables]]
+
+## Internal Relationships
+- __unresolved__::ref::__unresolved____ref____unresolved____ref__eapi -> implements -> SUPABASE_URL [EXTRACTED]
+- Backend Development Patterns -> related_to -> RESTful API Structure [EXTRACTED]
+- Backend Development Patterns -> related_to -> Repository Pattern [EXTRACTED]
+- Backend Development Patterns -> related_to -> Service Layer Pattern [EXTRACTED]
+- Backend Development Patterns -> related_to -> Middleware Pattern [EXTRACTED]
+- Backend Development Patterns -> related_to -> Database Patterns [EXTRACTED]
+- Backend Development Patterns -> related_to -> Caching Strategies [EXTRACTED]
+- Backend Development Patterns -> related_to -> Error Handling Patterns [EXTRACTED]
+- Backend Development Patterns -> related_to -> Authentication & Authorization [EXTRACTED]
+- Backend Development Patterns -> related_to -> Rate Limiting [EXTRACTED]
+- Backend Development Patterns -> related_to -> Background Jobs & Queues [EXTRACTED]
+- Backend Development Patterns -> related_to -> Logging & Monitoring [EXTRACTED]
+- Caveats -> related_to -> .gitignore [EXTRACTED]
+- Caveats -> related_to -> ONNX model files [EXTRACTED]
+- Commit Security -> references -> Mandatory Security Checks [EXTRACTED]
+- Development Environment -> related_to -> Environment Separation [EXTRACTED]
+- Development Environment -> related_to -> Dev Server Commands [EXTRACTED]
+- Development Environment -> related_to -> Environment Variables [EXTRACTED]
+- Development Environment -> related_to -> Caveats [EXTRACTED]
+- Environment Variable -> related_to -> Development Environment [EXTRACTED]
+- Environment Variable -> related_to -> Live Environment [EXTRACTED]
+- Environment Variables -> related_to -> API Key Configuration [INFERRED]
+- Environment Variables -> references -> SUPABASE_URL [EXTRACTED]
+- Environment Variables -> references -> ENCRYPTION_KEY [EXTRACTED]
+- Environment Variables -> references -> CORS_ORIGIN [EXTRACTED]
+- Environment Variables -> references -> HF_TOKEN [EXTRACTED]
+- Environment Variables -> references -> HOTWORDS [EXTRACTED]
+- Environment Variables -> references -> INITIAL_PROMPT [EXTRACTED]
+- Environment Variables -> references -> VITE_API_URL [EXTRACTED]
+- Mandatory Security Checks -> related_to -> Hardcoded Secrets [EXTRACTED]
+- Mandatory Security Checks -> related_to -> User Input Validation [EXTRACTED]
+- Mandatory Security Checks -> related_to -> SQL Injection Prevention [EXTRACTED]
+- Mandatory Security Checks -> related_to -> XSS Prevention [EXTRACTED]
+- Mandatory Security Checks -> related_to -> CSRF Protection [EXTRACTED]
+- Mandatory Security Checks -> related_to -> Authentication/Authorization Verification [EXTRACTED]
+- Mandatory Security Checks -> related_to -> Rate Limiting [EXTRACTED]
+- Mandatory Security Checks -> related_to -> Error Message Sensitivity [EXTRACTED]
+- Repository Pattern -> references -> Data Access [EXTRACTED]
+- Secret Management -> references -> Hardcoded Secrets [EXTRACTED]
+- Secret Management -> related_to -> Environment Variables [EXTRACTED]
+- Secret Management -> references -> Security Reviewer Skill [EXTRACTED]
+- Secret Management -> related_to -> Secret Rotation [EXTRACTED]
+- Security Reviewer Skill -> related_to -> Comprehensive Security Audits [INFERRED]
+- ONNX model files -> references -> android/app/src/main/assets/stt/ [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Backend Development Patterns, Environment Variables, Mandatory Security Checks를 중심으로 related_to 관계로 연결되어 있다. 주요 소스 파일은 path이다.

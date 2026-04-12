@@ -1,0 +1,137 @@
+# A2 File Scan Quality Review & SttProcessingService.java
+Cohesion: 0.07 | Nodes: 30
+
+## Key Nodes
+- **A2 File Scan Quality Review** (uncounted-docs/bugfix/A2-file-scan-quality-review.md) -- 10 connections
+  - -> references -> [[audiodecoderplugin]]
+  - -> references -> [[scan-engine]]
+  - -> references -> [[audio-file-loader]]
+  - -> references -> [[audio-decoder-bridge]]
+  - -> references -> [[audioprocessor]]
+  - -> references -> [[wavparser]]
+  - -> references -> [[onnxsttrunner]]
+  - -> references -> [[wav-encoder]]
+  - -> references -> [[audio-dedupe]]
+  - -> references -> [[audio-scanner]]
+- **SttProcessingService.java** (android/.../service/SttProcessingService.java) -- 8 connections
+  - <- implements <- [[moonshine-ko-onnx]]
+  - <- utilizes <- [[piimasker]]
+  - <- utilizes <- [[utterancesegmenter]]
+  - <- utilizes <- [[audioprocessor]]
+  - <- utilizes <- [[voicelabeler]]
+  - <- utilizes <- [[textlabeler]]
+  - <- related_to <- [[audio-file-loader]]
+  - <- monitors <- [[pipeline-state]]
+- **AudioDecoderPlugin** (AudioDecoderPlugin.java) -- 4 connections
+  - -> related_to -> [[cwe-459]]
+  - -> related_to -> [[cwe-190]]
+  - -> related_to -> [[cwe-532]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **Audio Dedupe** (audioDedupe.ts) -- 3 connections
+  - -> related_to -> [[cwe-922]]
+  - -> related_to -> [[cwe-359]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **Audio File Loader** (audioFileLoader.ts) -- 3 connections
+  - -> related_to -> [[sttprocessingservicejava]]
+  - -> related_to -> [[cwe-209]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **Scan Engine** (scanEngine.ts) -- 3 connections
+  - -> related_to -> [[cwe-22]]
+  - -> related_to -> [[cwe-755]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **CWE-190** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 3 connections
+  - <- related_to <- [[audiodecoderplugin]]
+  - <- related_to <- [[audioprocessor]]
+  - <- related_to <- [[wavparser]]
+- **Audio Decoder Bridge** (audioDecoderBridge.ts) -- 2 connections
+  - -> related_to -> [[cwe-209]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **AudioProcessor** (AudioProcessor.java) -- 2 connections
+  - -> related_to -> [[cwe-190]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **Audio Scanner** (audioScanner.ts) -- 2 connections
+  - -> related_to -> [[cwe-682]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **OnnxSttRunner** (OnnxSttRunner.java) -- 2 connections
+  - -> related_to -> [[cwe-400]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **CWE-209** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 2 connections
+  - <- related_to <- [[audio-file-loader]]
+  - <- related_to <- [[audio-decoder-bridge]]
+- **Wav Encoder** (wavEncoder.ts) -- 2 connections
+  - -> related_to -> [[unresolvedrefunresolvedrefunresolvedrefcwe200]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **WavParser** (WavParser.java) -- 2 connections
+  - -> related_to -> [[cwe-190]]
+  - <- references <- [[a2-file-scan-quality-review]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__cwe_200** () -- 1 connections
+  - <- related_to <- [[wav-encoder]]
+- **AudioProcessor** (AudioProcessor) -- 1 connections
+  - -> utilizes -> [[sttprocessingservicejava]]
+- **Moonshine-ko ONNX** (on_device) -- 1 connections
+  - -> implements -> [[sttprocessingservicejava]]
+- **PiiMasker** (PiiMasker.java) -- 1 connections
+  - -> utilizes -> [[sttprocessingservicejava]]
+- **Pipeline State** (pipelineState.ts) -- 1 connections
+  - -> monitors -> [[sttprocessingservicejava]]
+- **TextLabeler** (TextLabeler.java) -- 1 connections
+  - -> utilizes -> [[sttprocessingservicejava]]
+- **CWE-22** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 1 connections
+  - <- related_to <- [[scan-engine]]
+- **CWE-359** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 1 connections
+  - <- related_to <- [[audio-dedupe]]
+- **CWE-400** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 1 connections
+  - <- related_to <- [[onnxsttrunner]]
+- **CWE-459** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 1 connections
+  - <- related_to <- [[audiodecoderplugin]]
+- **CWE-532** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 1 connections
+  - <- related_to <- [[audiodecoderplugin]]
+- **CWE-682** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 1 connections
+  - <- related_to <- [[audio-scanner]]
+- **CWE-755** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 1 connections
+  - <- related_to <- [[scan-engine]]
+- **CWE-922** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260331-162426/prompt_plan.md) -- 1 connections
+  - <- related_to <- [[audio-dedupe]]
+- **UtteranceSegmenter** (UtteranceSegmenter.java) -- 1 connections
+  - -> utilizes -> [[sttprocessingservicejava]]
+- **VoiceLabeler** (VoiceLabeler.java) -- 1 connections
+  - -> utilizes -> [[sttprocessingservicejava]]
+
+## Internal Relationships
+- Audio Decoder Bridge -> related_to -> CWE-209 [EXTRACTED]
+- AudioDecoderPlugin -> related_to -> CWE-459 [EXTRACTED]
+- AudioDecoderPlugin -> related_to -> CWE-190 [EXTRACTED]
+- AudioDecoderPlugin -> related_to -> CWE-532 [EXTRACTED]
+- Audio Dedupe -> related_to -> CWE-922 [EXTRACTED]
+- Audio Dedupe -> related_to -> CWE-359 [EXTRACTED]
+- Audio File Loader -> related_to -> SttProcessingService.java [INFERRED]
+- Audio File Loader -> related_to -> CWE-209 [EXTRACTED]
+- AudioProcessor -> utilizes -> SttProcessingService.java [EXTRACTED]
+- AudioProcessor -> related_to -> CWE-190 [EXTRACTED]
+- Audio Scanner -> related_to -> CWE-682 [EXTRACTED]
+- Moonshine-ko ONNX -> implements -> SttProcessingService.java [EXTRACTED]
+- OnnxSttRunner -> related_to -> CWE-400 [EXTRACTED]
+- PiiMasker -> utilizes -> SttProcessingService.java [EXTRACTED]
+- Pipeline State -> monitors -> SttProcessingService.java [EXTRACTED]
+- Scan Engine -> related_to -> CWE-22 [EXTRACTED]
+- Scan Engine -> related_to -> CWE-755 [EXTRACTED]
+- TextLabeler -> utilizes -> SttProcessingService.java [EXTRACTED]
+- A2 File Scan Quality Review -> references -> AudioDecoderPlugin [EXTRACTED]
+- A2 File Scan Quality Review -> references -> Scan Engine [EXTRACTED]
+- A2 File Scan Quality Review -> references -> Audio File Loader [EXTRACTED]
+- A2 File Scan Quality Review -> references -> Audio Decoder Bridge [EXTRACTED]
+- A2 File Scan Quality Review -> references -> AudioProcessor [EXTRACTED]
+- A2 File Scan Quality Review -> references -> WavParser [EXTRACTED]
+- A2 File Scan Quality Review -> references -> OnnxSttRunner [EXTRACTED]
+- A2 File Scan Quality Review -> references -> Wav Encoder [EXTRACTED]
+- A2 File Scan Quality Review -> references -> Audio Dedupe [EXTRACTED]
+- A2 File Scan Quality Review -> references -> Audio Scanner [EXTRACTED]
+- UtteranceSegmenter -> utilizes -> SttProcessingService.java [EXTRACTED]
+- VoiceLabeler -> utilizes -> SttProcessingService.java [EXTRACTED]
+- Wav Encoder -> related_to -> __unresolved__::ref::__unresolved____ref____unresolved____ref__cwe_200 [EXTRACTED]
+- WavParser -> related_to -> CWE-190 [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 A2 File Scan Quality Review, SttProcessingService.java, AudioDecoderPlugin를 중심으로 related_to 관계로 연결되어 있다. 주요 소스 파일은 A2-file-scan-quality-review.md, AudioDecoderPlugin.java, AudioProcessor, AudioProcessor.java, OnnxSttRunner.java이다.

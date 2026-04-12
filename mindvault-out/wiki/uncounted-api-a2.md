@@ -1,0 +1,968 @@
+# uncounted-api & A2. 파일 스캔 & 품질 분석
+Cohesion: 0.01 | Nodes: 210
+
+## Key Nodes
+- **uncounted-api** (path) -- 40 connections
+  - -> references -> [[hono-framework]]
+  - -> references -> [[supabase-database]]
+  - -> references -> [[iwinv-s3-storage]]
+  - -> references -> [[aes-256-gcm-encryption]]
+  - -> runs_on -> [[nodejs]]
+  - -> uses -> [[typescript]]
+  - -> references -> [[vitest-testing]]
+  - -> provides -> [[swagger-ui]]
+  - -> references -> [[openapi-specification]]
+  - -> deployed_on -> [[rendercom]]
+  - -> implemented_in -> [[cors]]
+  - -> related_to -> [[body-decrypt-middleware]]
+  - -> related_to -> [[auth-middleware]]
+  - -> related_to -> [[optional-auth-middleware]]
+  - -> related_to -> [[api-authentication]]
+  - -> related_to -> [[api-sessions]]
+  - -> related_to -> [[api-storage]]
+  - -> related_to -> [[api-transcripts]]
+  - -> related_to -> [[db-migration]]
+  - -> related_to -> [[google-oauth]]
+  - -> implements -> [[hono]]
+  - -> uses -> [[supabase]]
+  - -> uses -> [[iwinv-s3]]
+  - -> uses -> [[aes-256-gcm]]
+  - -> utilizes -> [[vitest]]
+  - -> provides -> [[openapi-json]]
+  - -> includes -> [[authmiddleware]]
+  - -> includes -> [[optionalauthmiddleware]]
+  - -> manages -> [[session-management]]
+  - -> manages -> [[file-management]]
+  - -> manages -> [[transcript-management]]
+  - -> provides -> [[admin-api]]
+  - -> utilizes -> [[logging]]
+  - -> includes -> [[db-migrations]]
+  - -> involves -> [[authorization]]
+  - -> requires -> [[environment-variables]]
+  - -> implements -> [[meta-jsonl]]
+  - -> references -> [[get-adminstoragemetas]]
+  - -> references -> [[post-adminstoragemetasigned-url]]
+  - -> uses -> [[s3metabucket]]
+- **A2. 파일 스캔 & 품질 분석** (path) -- 19 connections
+  - -> implements -> [[web-audio-api]]
+  - -> references -> [[]]
+  - -> references -> [[]]
+  - -> references -> [[wave]]
+  - -> references -> [[]]
+  - -> references -> [[]]
+  - -> references -> [[cwe-22-path-traversal]]
+  - -> references -> [[cwe-400-resource-consumption]]
+  - -> references -> [[cwe-119-buffer-overflow]]
+  - -> references -> [[cwe-327-brokenrisky-crypto]]
+  - -> references -> [[cwe-200-sensitive-info-exposure]]
+  - -> references -> [[cwe-502-deserialization-of-untrusted-data]]
+  - -> related_to -> [[stride]]
+  - -> implements -> [[audioscannerts]]
+  - <- conducts <- [[security-reviewer-a]]
+  - <- conducts <- [[security-reviewer-b]]
+  - <- oversees <- [[lead-security-architect]]
+  - <- reviews <- [[mobilenative-security-engineer]]
+  - <- reviews <- [[tsfull-stack-engineer]]
+- **로컬 테스트** (path) -- 18 connections
+  - -> references -> [[supabase]]
+  - -> references -> [[font-pretendard]]
+  - -> references -> [[]]
+  - -> references -> [[wav-pcm]]
+  - -> implements -> [[audiometrics]]
+  - -> related_to -> [[snr]]
+  - -> related_to -> [[abc]]
+  - -> references -> [[]]
+  - -> implements -> [[]]
+  - -> references -> [[]]
+  - -> references -> [[]]
+  - -> references -> [[]]
+  - <- references <- [[a2]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- enables <- [[]]
+  - <- implements <- [[typecast]]
+- **오디오 기술 사양** (path) -- 16 connections
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[pii]]
+  - -> related_to -> [[android]]
+  - -> related_to -> [[]]
+  - -> references -> [[]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[a]]
+  - -> related_to -> [[]]
+  - <- references <- [[a2]]
+  - <- related_to <- [[]]
+  - <- references <- [[]]
+  - <- references <- [[]]
+  - <- related_to <- [[]]
+  - <- implements <- [[pipa]]
+- **Android Memory Optimization** (path) -- 14 connections
+  - -> related_to -> [[memory-management]]
+  - -> related_to -> [[garbage-collection]]
+  - -> related_to -> [[memory-leaks]]
+  - -> related_to -> [[resource-management]]
+  - -> related_to -> [[efficient-coding-practices]]
+  - -> related_to -> [[profile-memory-usage]]
+  - -> related_to -> [[performance-tuning]]
+  - -> related_to -> [[memory-management]]
+  - -> related_to -> [[garbage-collection]]
+  - -> related_to -> [[heap-size]]
+  - -> related_to -> [[memory-leaks]]
+  - -> related_to -> [[performance-tuning]]
+  - -> related_to -> [[coding-practices]]
+  - -> related_to -> [[profiling-tools]]
+- **API Connector Builder** (path) -- 14 connections
+  - -> references -> [[repo-native-integration]]
+  - -> related_to -> [[error-handling]]
+  - -> related_to -> [[auth-model]]
+  - -> related_to -> [[config-schema]]
+  - -> related_to -> [[test-style]]
+  - -> related_to -> [[registrationdiscovery-wiring]]
+  - -> related_to -> [[connector-layout]]
+  - -> provides_example_for -> [[jira-connector]]
+  - -> provides_example_for -> [[slack-provider]]
+  - -> provides_example_for -> [[api-integration]]
+  - -> provides_example_for -> [[plugin]]
+  - -> related_to -> [[backend-patterns]]
+  - -> related_to -> [[mcp-server-patterns]]
+  - -> related_to -> [[github-ops]]
+- **대시보드** (path) -- 13 connections
+  - -> related_to -> [[gemini]]
+  - -> related_to -> [[codex]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[sku]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[sku]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[sku]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - <- references <- [[a2]]
+  - <- related_to <- [[]]
+- **개발 서버 실행** (path) -- 13 connections
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - -> enables -> [[]]
+  - -> related_to -> [[3]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[uncounted-app]]
+  - -> related_to -> [[uncounted-api]]
+  - <- implements <- [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- implements <- [[hono-api]]
+- **비식별화 처리 상세** (path) -- 8 connections
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - -> implements -> [[uuid]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- implements <- [[typecast]]
+- **납품 확정 (정산 시작)** (path) -- 8 connections
+  - -> related_to -> [[reviewer-a-webappsec]]
+  - -> related_to -> [[reviewer-b-mobilenative]]
+  - -> related_to -> [[reviewer-c-privacyaudio]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - <- references <- [[a2]]
+  - <- related_to <- [[]]
+- **High-Accuracy STT Architecture** (path) -- 8 connections
+  - -> references -> [[silero-vad]]
+  - -> references -> [[wespeaker]]
+  - -> references -> [[clova-speech]]
+  - -> related_to -> [[diarization-methods]]
+  - <- related_to <- [[performance-tuning]]
+  - <- related_to <- [[risk-management]]
+  - <- related_to <- [[team-composition]]
+  - <- related_to <- [[alternative-strategies]]
+- **Supabase** (path) -- 8 connections
+  - -> references -> [[ledger]]
+  - <- references <- [[clova-speech]]
+  - <- implements <- [[hono-rest-api]]
+  - <- references <- [[]]
+  - <- references <- [[uncounted-client-cto]]
+  - <- related_to <- [[hono-api]]
+  - <- uses <- [[uncounted-api]]
+  - <- applies_to <- [[db-migrations]]
+- **audioAnalyzer.ts** (path) -- 7 connections
+  - -> references -> [[web-audio-api]]
+  - -> implements -> [[sha-256-hashing]]
+  - -> related_to -> [[ffmpegwasm]]
+  - -> implements -> [[audioprocessorjava]]
+  - -> related_to -> [[audiodecoderpluginjava]]
+  - -> uses -> [[java-processaudio-method]]
+  - <- related_to <- [[wavencoderts]]
+- **CLOVA Speech** (path) -- 7 connections
+  - -> references -> [[sku-v3]]
+  - -> references -> [[hono-rest-api]]
+  - -> references -> [[supabase]]
+  - <- implements <- [[api-integration]]
+  - <- references <- [[high-accuracy-stt-architecture]]
+  - <- related_to <- [[server-side-processing]]
+  - <- implements <- [[sku-v3]]
+- **납품 구조** (path) -- 6 connections
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- references <- [[]]
+- **SKU 데이터셋 추출 시스템 v3** (path) -- 6 connections
+  - -> references -> [[clova-speech]]
+  - -> related_to -> [[phase-1]]
+  - <- references <- [[clova-speech]]
+  - <- part_of <- [[react-capacitor]]
+  - <- part_of <- [[react-vite]]
+  - <- related_to <- [[e2e]]
+- **Ledger** (path) -- 6 connections
+  - -> references -> [[deliveryrecords]]
+  - -> references -> [[exportjobs]]
+  - -> references -> [[userassetledger]]
+  - -> references -> [[clients]]
+  - -> references -> [[billableunits]]
+  - <- references <- [[supabase]]
+- **uncounted-app** (path) -- 6 connections
+  - <- related_to <- [[]]
+  - <- references <- [[critical-plaintext-localstorage-accesstoken]]
+  - <- related_to <- [[high-pipa-compliance-issue]]
+  - <- references <- [[high-store-pkce-codeverifier-in-localstorage]]
+  - <- references <- [[medium-update-withdrawalnotifiedat-on-pipa-withdrawal]]
+  - <- references <- [[low-privacy-policy-link-legal-risk]]
+- **리스크** (path) -- 5 connections
+  - -> references -> [[material-symbols-outlined]]
+  - -> documents -> [[d]]
+  - <- related_to <- [[api]]
+  - <- related_to <- [[zip]]
+  - <- related_to <- [[e2e]]
+- **필수 환경변수** (path) -- 5 connections
+  - <- references <- [[]]
+  - <- related_to <- [[]]
+  - <- related_to <- [[]]
+  - <- implements <- [[hono-api]]
+  - <- defines <- [[env]]
+- **Hono 기반 백엔드 API** (path) -- 5 connections
+  - -> related_to -> [[supabase]]
+  - -> implements -> [[env]]
+  - -> implements -> [[]]
+  - -> implements -> [[]]
+  - -> implements -> [[api]]
+- **U-M Metadata SKU Admin Extraction System** (path) -- 5 connections
+  - -> references -> [[inventory-api]]
+  - -> references -> [[sku-stats-api]]
+  - -> references -> [[preview-api]]
+  - -> references -> [[metadata-package-builder]]
+  - -> references -> [[export-api]]
+- **uncounted-api** (path) -- 5 connections
+  - <- related_to <- [[]]
+  - <- references <- [[critical-plaintext-production-secret-files]]
+  - <- references <- [[critical-unvalidated-oauth-redirect-parameter]]
+  - <- references <- [[high-logging-endpoint-without-authentication]]
+  - <- references <- [[medium-csrf-vulnerability-in-samesite-cookie]]
+- **신뢰도 검증 알고리즘** (path) -- 4 connections
+  - -> related_to -> [[]]
+  - -> related_to -> [[]]
+  - <- references <- [[]]
+  - <- related_to <- [[]]
+- **Typecast (네오사피엔스)** (path) -- 4 connections
+  - -> related_to -> [[caio]]
+  - -> implements -> [[]]
+  - -> implements -> [[pipa]]
+  - -> implements -> [[]]
+- **audioScanner.ts** (path) -- 4 connections
+  - -> related_to -> [[scanenginets]]
+  - -> related_to -> [[audiofileloaderts]]
+  - -> calls -> [[sanitizeaudio-function]]
+  - <- implements <- [[a2]]
+- **Export API** (path) -- 4 connections
+  - -> related_to -> [[db-migration]]
+  - -> related_to -> [[export-job]]
+  - <- related_to <- [[sessionapiclient]]
+  - <- references <- [[u-m-metadata-sku-admin-extraction-system]]
+- **wavEncoder.ts** (path) -- 4 connections
+  - -> references -> [[web-audio-api]]
+  - -> uses -> [[dataview]]
+  - -> related_to -> [[audioanalyzerts]]
+  - -> implements -> [[audiosanitizerts]]
+- **개인정보보호법(PIPA)** (path) -- 3 connections
+  - -> references -> [[pii]]
+  - -> implements -> [[]]
+  - <- implements <- [[typecast]]
+- **GET /admin/storage/metas** (path) -- 3 connections
+  - <- references <- [[uncounted-api]]
+  - <- implements <- [[s3-utility]]
+  - <- modifies <- [[admints]]
+- **POST /admin/storage/meta/signed-url** (path) -- 3 connections
+  - <- references <- [[uncounted-api]]
+  - <- implements <- [[s3-utility]]
+  - <- modifies <- [[admints]]
+- **불일치 D 시리즈** (path) -- 3 connections
+  - <- documents <- [[]]
+  - <- addresses <- [[audiodedupets]]
+  - <- references <- [[a2]]
+- **API Integration** (path) -- 3 connections
+  - -> implements -> [[clova-speech]]
+  - <- provides_example_for <- [[api-connector-builder]]
+  - <- implements <- [[end-to-end-delivery-loop]]
+- **audioDedupe.ts** (path) -- 3 connections
+  - -> implements -> [[sessiondedupts]]
+  - -> related_to -> [[wavparserjava]]
+  - -> addresses -> [[d]]
+- **Hybrid Architecture** (path) -- 3 connections
+  - -> implements -> [[on-device-processing]]
+  - -> implements -> [[server-side-processing]]
+  - <- related_to <- [[metadata-driven-approach]]
+- **Node.js** (path) -- 3 connections
+  - <- runs_on <- [[uncounted-api]]
+  - <- used_with <- [[typescript]]
+  - <- supports <- [[hono]]
+- **On-Device Processing** (path) -- 3 connections
+  - -> related_to -> [[silero-vad]]
+  - -> related_to -> [[wespeaker]]
+  - <- implements <- [[hybrid-architecture]]
+- **scanEngine.ts** (path) -- 3 connections
+  - -> related_to -> [[uncountedfilepaths]]
+  - -> references -> [[filesystemdirectoryhandle]]
+  - <- related_to <- [[audioscannerts]]
+- **Silero VAD** (path) -- 3 connections
+  - <- references <- [[high-accuracy-stt-architecture]]
+  - <- related_to <- [[on-device-processing]]
+  - <- implements <- [[audio-segmentation]]
+- **Web Audio API** (path) -- 3 connections
+  - <- implements <- [[a2]]
+  - <- references <- [[audioanalyzerts]]
+  - <- references <- [[wavencoderts]]
+- **WeSpeaker** (path) -- 3 connections
+  - <- references <- [[high-accuracy-stt-architecture]]
+  - <- related_to <- [[on-device-processing]]
+  - <- implements <- [[speaker-embedding-extraction]]
+- **해시/중복 탐지 무결성** (path) -- 2 connections
+  - -> related_to -> [[]]
+  - <- related_to <- [[]]
+- **파일럿 데이터셋 기술 사양서** (path) -- 2 connections
+  - -> references -> [[]]
+  - <- related_to <- [[]]
+- **.env 파일 설정** (path) -- 2 connections
+  - -> defines -> [[]]
+  - <- implements <- [[hono-api]]
+- **admin.ts** (path) -- 2 connections
+  - -> modifies -> [[get-adminstoragemetas]]
+  - -> modifies -> [[post-adminstoragemetasigned-url]]
+- **API 엔드포인트** (path) -- 2 connections
+  - -> related_to -> [[]]
+  - <- implements <- [[hono-api]]
+- **Meta JSONL** (path) -- 2 connections
+  - -> stored_in -> [[s3metabucket]]
+  - <- implements <- [[uncounted-api]]
+- **S3 utility** (path) -- 2 connections
+  - -> implements -> [[get-adminstoragemetas]]
+  - -> implements -> [[post-adminstoragemetasigned-url]]
+- **상호작용 모드** (path) -- 2 connections
+  - -> references -> [[]]
+  - <- references <- [[]]
+- **AudioMetrics** (path) -- 2 connections
+  - <- creates <- [[java-processaudio-method]]
+  - <- returns <- [[getaudiometrics-function]]
+- **DB Migration** (path) -- 2 connections
+  - <- related_to <- [[export-api]]
+  - <- related_to <- [[uncounted-api]]
+- **DB Migrations** (path) -- 2 connections
+  - -> applies_to -> [[supabase]]
+  - <- includes <- [[uncounted-api]]
+- **Error Handling** (path) -- 2 connections
+  - <- related_to <- [[api-connector-builder]]
+  - <- is_related_to <- [[logging]]
+- **Hono** (path) -- 2 connections
+  - -> supports -> [[nodejs]]
+  - <- implements <- [[uncounted-api]]
+- **Hono REST API** (path) -- 2 connections
+  - -> implements -> [[supabase]]
+  - <- references <- [[clova-speech]]
+- **Inventory API** (path) -- 2 connections
+  - -> related_to -> [[device-status]]
+  - <- references <- [[u-m-metadata-sku-admin-extraction-system]]
+- **iwinv S3** (path) -- 2 connections
+  - -> integrates_with -> [[rendercom]]
+  - <- uses <- [[uncounted-api]]
+- **Java processAudio method** (path) -- 2 connections
+  - -> creates -> [[audiometrics]]
+  - <- uses <- [[audioanalyzerts]]
+- **Logging** (path) -- 2 connections
+  - -> is_related_to -> [[error-handling]]
+  - <- utilizes <- [[uncounted-api]]
+- **Performance Tuning** (path) -- 2 connections
+  - -> related_to -> [[high-accuracy-stt-architecture]]
+  - <- related_to <- [[android-memory-optimization]]
+- **Preview API** (path) -- 2 connections
+  - -> related_to -> [[metadata-preview-data]]
+  - <- references <- [[u-m-metadata-sku-admin-extraction-system]]
+- **Render.com** (path) -- 2 connections
+  - <- deployed_on <- [[uncounted-api]]
+  - <- integrates_with <- [[iwinv-s3]]
+- **sanitizeAudio function** (path) -- 2 connections
+  - -> returns -> [[unresolvedrefunresolvedrefunresolvedrefprocessedpath]]
+  - <- calls <- [[audioscannerts]]
+- **Server-Side Processing** (path) -- 2 connections
+  - -> related_to -> [[clova-speech]]
+  - <- implements <- [[hybrid-architecture]]
+- **Speaker Embedding Extraction** (path) -- 2 connections
+  - -> implements -> [[wespeaker]]
+  - <- related_to <- [[speaker-clustering]]
+- **TypeScript** (path) -- 2 connections
+  - -> used_with -> [[nodejs]]
+  - <- uses <- [[uncounted-api]]
+- **U-M01 통화 메타데이터 SKU** (path) -- 2 connections
+  - -> references -> [[androidmanifestxml]]
+  - <- related_to <- [[sku-v3]]
+- **uncounted_file_paths** (path) -- 2 connections
+  - -> related_to -> [[capacitor-secure-storage]]
+  - <- related_to <- [[scanenginets]]
+- **SKU 데이터셋 추출 시스템 v3** (uncounted-docs/SKU_데이터셋_추출_최종기획서_v3.html) -- 2 connections
+  - -> implements -> [[clova-speech]]
+  - -> related_to -> [[u-m01-sku]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref__processedpath** () -- 1 connections
+  - <- returns <- [[sanitizeaudio-function]]
+- **AndroidManifest.xml** (android/.../AndroidManifest.xml) -- 1 connections
+  - <- references <- [[u-m01-sku]]
+- **모션** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **숫자 최대 3개 표시** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **오디오 분석 & 메모리 안전성** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **신호 대 잡음 비율 (SNR)** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **품질 등급 A/B/C** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **클라이언트-SKU 규칙** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **A2 보안/품질 리뷰** (path) -- 1 connections
+  - -> references -> [[d]]
+- **Android 네이티브 보안** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **AudioMetrics 자동 측정 시스템** (path) -- 1 connections
+  - <- implements <- [[]]
+- **CAIO/기술 의사결정자** (path) -- 1 connections
+  - <- related_to <- [[typecast]]
+- **CLOVA Speech** (path) -- 1 connections
+  - <- references <- [[sku-v3]]
+- **Codex만 발견** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **Diarization Methods** (path) -- 1 connections
+  - <- related_to <- [[high-accuracy-stt-architecture]]
+- **E2E 통합 검증** (path) -- 1 connections
+  - -> related_to -> [[]]
+- **Efficient Coding Practices** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Font: Pretendard** (path) -- 1 connections
+  - <- references <- [[]]
+- **Garbage Collection** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Gemini만 발견** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **Material Symbols Outlined** (path) -- 1 connections
+  - <- references <- [[]]
+- **Memory Leaks** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Memory Management** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Performance Tuning** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **PII 마스킹** (path) -- 1 connections
+  - <- references <- [[pipa]]
+- **PII 마스킹 보안** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **Profile Memory Usage** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Resource Management** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Reviewer A (Web/AppSec)** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **Reviewer B (Mobile/Native)** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **Reviewer C (Privacy/Audio)** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **S3_META_BUCKET** (path) -- 1 connections
+  - <- uses <- [[uncounted-api]]
+- **SKU 스튜디오** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **SKU 구성 요소** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **WAV PCM** (path) -- 1 connections
+  - <- references <- [[]]
+- **Wave 구조 합의** (path) -- 1 connections
+  - <- references <- [[a2]]
+- **ZIP 엔진** (path) -- 1 connections
+  - -> related_to -> [[]]
+- **배경 소음 수준** (path) -- 1 connections
+  - <- references <- [[]]
+- **품질 점수 산출 공식** (path) -- 1 connections
+  - <- references <- [[]]
+- **A등급** (path) -- 1 connections
+  - <- related_to <- [[]]
+- **Admin API** (path) -- 1 connections
+  - <- provides <- [[uncounted-api]]
+- **AES-256-GCM** (path) -- 1 connections
+  - <- uses <- [[uncounted-api]]
+- **AES-256-GCM Encryption** (path) -- 1 connections
+  - <- references <- [[uncounted-api]]
+- **Alternative Strategies** (path) -- 1 connections
+  - -> related_to -> [[high-accuracy-stt-architecture]]
+- **API Authentication** (path) -- 1 connections
+  - <- related_to <- [[uncounted-api]]
+- **API Sessions** (path) -- 1 connections
+  - <- related_to <- [[uncounted-api]]
+- **API Storage** (path) -- 1 connections
+  - <- related_to <- [[uncounted-api]]
+- **API Transcripts** (path) -- 1 connections
+  - <- related_to <- [[uncounted-api]]
+- **Audio Segmentation** (path) -- 1 connections
+  - -> implements -> [[silero-vad]]
+- **AudioDecoderPlugin.java** (path) -- 1 connections
+  - <- related_to <- [[audioanalyzerts]]
+- **audioFileLoader.ts** (path) -- 1 connections
+  - <- related_to <- [[audioscannerts]]
+- **AudioProcessor.java** (path) -- 1 connections
+  - <- implements <- [[audioanalyzerts]]
+- **audioSanitizer.ts** (path) -- 1 connections
+  - <- implements <- [[wavencoderts]]
+- **Auth Middleware** (path) -- 1 connections
+  - <- related_to <- [[uncounted-api]]
+- **Auth Model** (path) -- 1 connections
+  - <- related_to <- [[api-connector-builder]]
+- **authMiddleware** (path) -- 1 connections
+  - <- includes <- [[uncounted-api]]
+- **Backend Patterns** (path) -- 1 connections
+  - <- related_to <- [[api-connector-builder]]
+- **billable_units** (path) -- 1 connections
+  - <- references <- [[ledger]]
+- **Body Decrypt Middleware** (path) -- 1 connections
+  - <- related_to <- [[uncounted-api]]
+- **Capacitor Secure Storage** (path) -- 1 connections
+  - <- related_to <- [[uncountedfilepaths]]
+- **clients** (path) -- 1 connections
+  - <- references <- [[ledger]]
+- **Coding Practices** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Config Schema** (path) -- 1 connections
+  - <- related_to <- [[api-connector-builder]]
+- **Connector Layout** (path) -- 1 connections
+  - <- related_to <- [[api-connector-builder]]
+- **CORS** (path) -- 1 connections
+  - <- implemented_in <- [[uncounted-api]]
+- **CRITICAL: Plaintext localStorage access_token** (path) -- 1 connections
+  - -> references -> [[uncounted-app]]
+- **CRITICAL: Plaintext Production Secret Files** (path) -- 1 connections
+  - -> references -> [[uncounted-api]]
+- **CRITICAL: Unvalidated OAuth redirect parameter** (path) -- 1 connections
+  - -> references -> [[uncounted-api]]
+- **CWE-119 (Buffer Overflow)** (path) -- 1 connections
+  - <- references <- [[a2]]
+- **CWE-200 (Sensitive Info Exposure)** (path) -- 1 connections
+  - <- references <- [[a2]]
+- **CWE-22 (Path Traversal)** (path) -- 1 connections
+  - <- references <- [[a2]]
+- **CWE-327 (Broken/Risky Crypto)** (path) -- 1 connections
+  - <- references <- [[a2]]
+- **CWE-400 (Resource Consumption)** (path) -- 1 connections
+  - <- references <- [[a2]]
+- **CWE-502 (Deserialization of Untrusted Data)** (path) -- 1 connections
+  - <- references <- [[a2]]
+- **DataView** (path) -- 1 connections
+  - <- uses <- [[wavencoderts]]
+- **delivery_records** (path) -- 1 connections
+  - <- references <- [[ledger]]
+- **Device Status** (path) -- 1 connections
+  - <- related_to <- [[inventory-api]]
+- **E2E 흐름 검증** (path) -- 1 connections
+  - -> related_to -> [[sku-v3]]
+- **End-to-End Delivery Loop** (path) -- 1 connections
+  - -> implements -> [[api-integration]]
+- **Environment Variables** (path) -- 1 connections
+  - <- requires <- [[uncounted-api]]
+- **Export Job** (path) -- 1 connections
+  - <- related_to <- [[export-api]]
+- **export_jobs** (path) -- 1 connections
+  - <- references <- [[ledger]]
+- **ffmpeg.wasm** (path) -- 1 connections
+  - <- related_to <- [[audioanalyzerts]]
+- **File Management** (path) -- 1 connections
+  - <- manages <- [[uncounted-api]]
+- **FileSystemDirectoryHandle** (path) -- 1 connections
+  - <- references <- [[scanenginets]]
+- **Garbage Collection** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **getAudioMetrics function** (path) -- 1 connections
+  - -> returns -> [[audiometrics]]
+- **GitHub Ops** (path) -- 1 connections
+  - <- related_to <- [[api-connector-builder]]
+- **Google OAuth** (path) -- 1 connections
+  - <- related_to <- [[uncounted-api]]
+- **Heap Size** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **HIGH: Logging endpoint without authentication** (path) -- 1 connections
+  - -> references -> [[uncounted-api]]
+- **HIGH: PIPA Compliance Issue** (path) -- 1 connections
+  - -> related_to -> [[uncounted-app]]
+- **HIGH: Store PKCE code_verifier in localStorage** (path) -- 1 connections
+  - -> references -> [[uncounted-app]]
+- **Hono Framework** (path) -- 1 connections
+  - <- references <- [[uncounted-api]]
+- **iwinv S3 Storage** (path) -- 1 connections
+  - <- references <- [[uncounted-api]]
+- **Jira Connector** (path) -- 1 connections
+  - <- provides_example_for <- [[api-connector-builder]]
+- **Lead Security Architect** (path) -- 1 connections
+  - -> oversees -> [[a2]]
+- **LOW: Privacy policy link legal risk** (path) -- 1 connections
+  - -> references -> [[uncounted-app]]
+- **MCP Server Patterns** (path) -- 1 connections
+  - <- related_to <- [[api-connector-builder]]
+- **MEDIUM: CSRF vulnerability in SameSite cookie** (path) -- 1 connections
+  - -> references -> [[uncounted-api]]
+- **MEDIUM: Update withdrawalNotifiedAt on PIPA withdrawal** (path) -- 1 connections
+  - -> references -> [[uncounted-app]]
+- **Memory Leaks** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Memory Management** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **Metadata-Driven Approach** (path) -- 1 connections
+  - -> related_to -> [[hybrid-architecture]]
+- **Metadata Package Builder** (path) -- 1 connections
+  - <- references <- [[u-m-metadata-sku-admin-extraction-system]]
+- **Metadata Preview Data** (path) -- 1 connections
+  - <- related_to <- [[preview-api]]
+- **Mobile/Native Security Engineer** (path) -- 1 connections
+  - -> reviews -> [[a2]]
+- **OpenAPI JSON** (path) -- 1 connections
+  - <- provides <- [[uncounted-api]]
+- **OpenAPI Specification** (path) -- 1 connections
+  - <- references <- [[uncounted-api]]
+- **Optional Auth Middleware** (path) -- 1 connections
+  - <- related_to <- [[uncounted-api]]
+- **optionalAuthMiddleware** (path) -- 1 connections
+  - <- includes <- [[uncounted-api]]
+- **Phase 1** (path) -- 1 connections
+  - <- related_to <- [[sku-v3]]
+- **Plugin** (path) -- 1 connections
+  - <- provides_example_for <- [[api-connector-builder]]
+- **Profiling Tools** (path) -- 1 connections
+  - <- related_to <- [[android-memory-optimization]]
+- **React + Capacitor** (path) -- 1 connections
+  - -> part_of -> [[sku-v3]]
+- **React + Vite** (path) -- 1 connections
+  - -> part_of -> [[sku-v3]]
+- **Registration/Discovery Wiring** (path) -- 1 connections
+  - <- related_to <- [[api-connector-builder]]
+- **Repo Native Integration** (path) -- 1 connections
+  - <- references <- [[api-connector-builder]]
+- **Risk Management** (path) -- 1 connections
+  - -> related_to -> [[high-accuracy-stt-architecture]]
+- **S3_META_BUCKET** (path) -- 1 connections
+  - <- stored_in <- [[meta-jsonl]]
+- **Security Reviewer A** (path) -- 1 connections
+  - -> conducts -> [[a2]]
+- **Security Reviewer B** (path) -- 1 connections
+  - -> conducts -> [[a2]]
+- **Session Management** (path) -- 1 connections
+  - <- manages <- [[uncounted-api]]
+- **SessionApiClient** (path) -- 1 connections
+  - -> related_to -> [[export-api]]
+- **sessionDedup.ts** (path) -- 1 connections
+  - <- implements <- [[audiodedupets]]
+- **SHA-256 Hashing** (path) -- 1 connections
+  - <- implements <- [[audioanalyzerts]]
+- **SKU Stats API** (path) -- 1 connections
+  - <- references <- [[u-m-metadata-sku-admin-extraction-system]]
+- **Slack Provider** (path) -- 1 connections
+  - <- provides_example_for <- [[api-connector-builder]]
+- **Speaker Clustering** (path) -- 1 connections
+  - -> related_to -> [[speaker-embedding-extraction]]
+- **STRIDE 모델링** (path) -- 1 connections
+  - <- related_to <- [[a2]]
+- **Supabase Database** (path) -- 1 connections
+  - <- references <- [[uncounted-api]]
+- **Swagger UI** (path) -- 1 connections
+  - <- provides <- [[uncounted-api]]
+- **Team Composition** (path) -- 1 connections
+  - -> related_to -> [[high-accuracy-stt-architecture]]
+- **Test Style** (path) -- 1 connections
+  - <- related_to <- [[api-connector-builder]]
+- **Transcript Management** (path) -- 1 connections
+  - <- manages <- [[uncounted-api]]
+- **TS/Full-stack Engineer** (path) -- 1 connections
+  - -> reviews -> [[a2]]
+- **user_asset_ledger** (path) -- 1 connections
+  - <- references <- [[ledger]]
+- **UUID 파일명 부여** (path) -- 1 connections
+  - <- implements <- [[]]
+- **Vitest** (path) -- 1 connections
+  - <- utilizes <- [[uncounted-api]]
+- **Vitest Testing** (path) -- 1 connections
+  - <- references <- [[uncounted-api]]
+- **WavParser.java** (path) -- 1 connections
+  - <- related_to <- [[audiodedupets]]
+
+## Internal Relationships
+- 리스크 -> references -> Material Symbols Outlined [EXTRACTED]
+- 리스크 -> documents -> 불일치 D 시리즈 [EXTRACTED]
+- 대시보드 -> related_to -> Gemini만 발견 [EXTRACTED]
+- 대시보드 -> related_to -> Codex만 발견 [EXTRACTED]
+- 대시보드 -> related_to -> 납품 구조 [EXTRACTED]
+- 대시보드 -> related_to -> SKU 스튜디오 [EXTRACTED]
+- 대시보드 -> related_to -> 개발 서버 실행 [EXTRACTED]
+- 대시보드 -> related_to -> SKU 구성 요소 [EXTRACTED]
+- 대시보드 -> related_to -> 필수 환경변수 [EXTRACTED]
+- 대시보드 -> related_to -> 클라이언트-SKU 규칙 [EXTRACTED]
+- 대시보드 -> related_to -> 로컬 테스트 [EXTRACTED]
+- 대시보드 -> related_to -> 모션 [EXTRACTED]
+- 대시보드 -> related_to -> 비식별화 처리 상세 [EXTRACTED]
+- 납품 구조 -> related_to -> 로컬 테스트 [EXTRACTED]
+- 납품 구조 -> related_to -> 납품 구조 [EXTRACTED]
+- 로컬 테스트 -> references -> Supabase [EXTRACTED]
+- 로컬 테스트 -> references -> Font: Pretendard [EXTRACTED]
+- 로컬 테스트 -> references -> 필수 환경변수 [EXTRACTED]
+- 로컬 테스트 -> references -> WAV PCM [EXTRACTED]
+- 로컬 테스트 -> implements -> AudioMetrics 자동 측정 시스템 [EXTRACTED]
+- 로컬 테스트 -> related_to -> 신호 대 잡음 비율 (SNR) [EXTRACTED]
+- 로컬 테스트 -> related_to -> 품질 등급 A/B/C [EXTRACTED]
+- 로컬 테스트 -> references -> 신뢰도 검증 알고리즘 [EXTRACTED]
+- 로컬 테스트 -> implements -> 개발 서버 실행 [EXTRACTED]
+- 로컬 테스트 -> references -> 오디오 기술 사양 [EXTRACTED]
+- 로컬 테스트 -> references -> 상호작용 모드 [EXTRACTED]
+- 로컬 테스트 -> references -> 배경 소음 수준 [EXTRACTED]
+- 개발 서버 실행 -> related_to -> 개발 서버 실행 [INFERRED]
+- 개발 서버 실행 -> related_to -> 신뢰도 검증 알고리즘 [EXTRACTED]
+- 개발 서버 실행 -> enables -> 로컬 테스트 [INFERRED]
+- 개발 서버 실행 -> related_to -> 숫자 최대 3개 표시 [INFERRED]
+- 개발 서버 실행 -> related_to -> 필수 환경변수 [INFERRED]
+- 개발 서버 실행 -> related_to -> uncounted-app [EXTRACTED]
+- 개발 서버 실행 -> related_to -> uncounted-api [EXTRACTED]
+- 오디오 기술 사양 -> related_to -> 파일럿 데이터셋 기술 사양서 [EXTRACTED]
+- 오디오 기술 사양 -> related_to -> 오디오 분석 & 메모리 안전성 [EXTRACTED]
+- 오디오 기술 사양 -> related_to -> 해시/중복 탐지 무결성 [EXTRACTED]
+- 오디오 기술 사양 -> related_to -> PII 마스킹 보안 [EXTRACTED]
+- 오디오 기술 사양 -> related_to -> Android 네이티브 보안 [EXTRACTED]
+- 오디오 기술 사양 -> related_to -> 오디오 기술 사양 [INFERRED]
+- 오디오 기술 사양 -> references -> 품질 점수 산출 공식 [EXTRACTED]
+- 오디오 기술 사양 -> related_to -> 비식별화 처리 상세 [INFERRED]
+- 오디오 기술 사양 -> related_to -> A등급 [INFERRED]
+- 오디오 기술 사양 -> related_to -> 납품 구조 [INFERRED]
+- 비식별화 처리 상세 -> related_to -> 납품 확정 (정산 시작) [EXTRACTED]
+- 비식별화 처리 상세 -> related_to -> 비식별화 처리 상세 [INFERRED]
+- 비식별화 처리 상세 -> implements -> UUID 파일명 부여 [EXTRACTED]
+- 신뢰도 검증 알고리즘 -> related_to -> 비식별화 처리 상세 [EXTRACTED]
+- 신뢰도 검증 알고리즘 -> related_to -> 개발 서버 실행 [EXTRACTED]
+- 해시/중복 탐지 무결성 -> related_to -> 대시보드 [EXTRACTED]
+- 납품 확정 (정산 시작) -> related_to -> Reviewer A (Web/AppSec) [EXTRACTED]
+- 납품 확정 (정산 시작) -> related_to -> Reviewer B (Mobile/Native) [EXTRACTED]
+- 납품 확정 (정산 시작) -> related_to -> Reviewer C (Privacy/Audio) [EXTRACTED]
+- 납품 확정 (정산 시작) -> related_to -> 로컬 테스트 [EXTRACTED]
+- 납품 확정 (정산 시작) -> related_to -> 오디오 기술 사양 [EXTRACTED]
+- 납품 확정 (정산 시작) -> related_to -> 개발 서버 실행 [EXTRACTED]
+- 파일럿 데이터셋 기술 사양서 -> references -> 오디오 기술 사양 [EXTRACTED]
+- 개인정보보호법(PIPA) -> references -> PII 마스킹 [EXTRACTED]
+- 개인정보보호법(PIPA) -> implements -> 오디오 기술 사양 [EXTRACTED]
+- .env 파일 설정 -> defines -> 필수 환경변수 [EXTRACTED]
+- A2 보안/품질 리뷰 -> references -> 불일치 D 시리즈 [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> implements -> Web Audio API [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> 오디오 기술 사양 [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> 로컬 테스트 [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> Wave 구조 합의 [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> 대시보드 [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> 납품 확정 (정산 시작) [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> CWE-22 (Path Traversal) [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> CWE-400 (Resource Consumption) [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> CWE-119 (Buffer Overflow) [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> CWE-327 (Broken/Risky Crypto) [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> CWE-200 (Sensitive Info Exposure) [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> references -> CWE-502 (Deserialization of Untrusted Data) [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> related_to -> STRIDE 모델링 [EXTRACTED]
+- A2. 파일 스캔 & 품질 분석 -> implements -> audioScanner.ts [EXTRACTED]
+- admin.ts -> modifies -> GET /admin/storage/metas [EXTRACTED]
+- admin.ts -> modifies -> POST /admin/storage/meta/signed-url [EXTRACTED]
+- Android Memory Optimization -> related_to -> Memory Management [EXTRACTED]
+- Android Memory Optimization -> related_to -> Garbage Collection [EXTRACTED]
+- Android Memory Optimization -> related_to -> Memory Leaks [EXTRACTED]
+- Android Memory Optimization -> related_to -> Resource Management [EXTRACTED]
+- Android Memory Optimization -> related_to -> Efficient Coding Practices [EXTRACTED]
+- Android Memory Optimization -> related_to -> Profile Memory Usage [EXTRACTED]
+- Android Memory Optimization -> related_to -> Performance Tuning [EXTRACTED]
+- Android Memory Optimization -> related_to -> Memory Management [EXTRACTED]
+- Android Memory Optimization -> related_to -> Garbage Collection [EXTRACTED]
+- Android Memory Optimization -> related_to -> Heap Size [EXTRACTED]
+- Android Memory Optimization -> related_to -> Memory Leaks [EXTRACTED]
+- Android Memory Optimization -> related_to -> Performance Tuning [EXTRACTED]
+- Android Memory Optimization -> related_to -> Coding Practices [EXTRACTED]
+- Android Memory Optimization -> related_to -> Profiling Tools [EXTRACTED]
+- API 엔드포인트 -> related_to -> 리스크 [INFERRED]
+- API Connector Builder -> references -> Repo Native Integration [EXTRACTED]
+- API Connector Builder -> related_to -> Error Handling [EXTRACTED]
+- API Connector Builder -> related_to -> Auth Model [EXTRACTED]
+- API Connector Builder -> related_to -> Config Schema [EXTRACTED]
+- API Connector Builder -> related_to -> Test Style [EXTRACTED]
+- API Connector Builder -> related_to -> Registration/Discovery Wiring [EXTRACTED]
+- API Connector Builder -> related_to -> Connector Layout [EXTRACTED]
+- API Connector Builder -> provides_example_for -> Jira Connector [EXTRACTED]
+- API Connector Builder -> provides_example_for -> Slack Provider [EXTRACTED]
+- API Connector Builder -> provides_example_for -> API Integration [EXTRACTED]
+- API Connector Builder -> provides_example_for -> Plugin [EXTRACTED]
+- API Connector Builder -> related_to -> Backend Patterns [INFERRED]
+- API Connector Builder -> related_to -> MCP Server Patterns [INFERRED]
+- API Connector Builder -> related_to -> GitHub Ops [INFERRED]
+- E2E 통합 검증 -> related_to -> 리스크 [INFERRED]
+- High-Accuracy STT Architecture -> references -> Silero VAD [EXTRACTED]
+- High-Accuracy STT Architecture -> references -> WeSpeaker [EXTRACTED]
+- High-Accuracy STT Architecture -> references -> CLOVA Speech [EXTRACTED]
+- High-Accuracy STT Architecture -> related_to -> Diarization Methods [INFERRED]
+- Hono 기반 백엔드 API -> related_to -> Supabase [EXTRACTED]
+- Hono 기반 백엔드 API -> implements -> .env 파일 설정 [EXTRACTED]
+- Hono 기반 백엔드 API -> implements -> 개발 서버 실행 [EXTRACTED]
+- Hono 기반 백엔드 API -> implements -> 필수 환경변수 [EXTRACTED]
+- Hono 기반 백엔드 API -> implements -> API 엔드포인트 [EXTRACTED]
+- Meta JSONL -> stored_in -> S3_META_BUCKET [EXTRACTED]
+- S3 utility -> implements -> GET /admin/storage/metas [EXTRACTED]
+- S3 utility -> implements -> POST /admin/storage/meta/signed-url [EXTRACTED]
+- SKU 데이터셋 추출 시스템 v3 -> references -> CLOVA Speech [EXTRACTED]
+- SKU 데이터셋 추출 시스템 v3 -> related_to -> Phase 1 [EXTRACTED]
+- Typecast (네오사피엔스) -> related_to -> CAIO/기술 의사결정자 [EXTRACTED]
+- Typecast (네오사피엔스) -> implements -> 로컬 테스트 [EXTRACTED]
+- Typecast (네오사피엔스) -> implements -> 개인정보보호법(PIPA) [EXTRACTED]
+- Typecast (네오사피엔스) -> implements -> 비식별화 처리 상세 [EXTRACTED]
+- U-M Metadata SKU Admin Extraction System -> references -> Inventory API [EXTRACTED]
+- U-M Metadata SKU Admin Extraction System -> references -> SKU Stats API [EXTRACTED]
+- U-M Metadata SKU Admin Extraction System -> references -> Preview API [EXTRACTED]
+- U-M Metadata SKU Admin Extraction System -> references -> Metadata Package Builder [EXTRACTED]
+- U-M Metadata SKU Admin Extraction System -> references -> Export API [EXTRACTED]
+- uncounted-api -> references -> Hono Framework [EXTRACTED]
+- uncounted-api -> references -> Supabase Database [EXTRACTED]
+- uncounted-api -> references -> iwinv S3 Storage [EXTRACTED]
+- uncounted-api -> references -> AES-256-GCM Encryption [EXTRACTED]
+- uncounted-api -> runs_on -> Node.js [EXTRACTED]
+- uncounted-api -> uses -> TypeScript [EXTRACTED]
+- uncounted-api -> references -> Vitest Testing [EXTRACTED]
+- uncounted-api -> provides -> Swagger UI [EXTRACTED]
+- uncounted-api -> references -> OpenAPI Specification [EXTRACTED]
+- uncounted-api -> deployed_on -> Render.com [EXTRACTED]
+- uncounted-api -> implemented_in -> CORS [EXTRACTED]
+- uncounted-api -> related_to -> Body Decrypt Middleware [INFERRED]
+- uncounted-api -> related_to -> Auth Middleware [INFERRED]
+- uncounted-api -> related_to -> Optional Auth Middleware [INFERRED]
+- uncounted-api -> related_to -> API Authentication [INFERRED]
+- uncounted-api -> related_to -> API Sessions [INFERRED]
+- uncounted-api -> related_to -> API Storage [INFERRED]
+- uncounted-api -> related_to -> API Transcripts [INFERRED]
+- uncounted-api -> related_to -> DB Migration [INFERRED]
+- uncounted-api -> related_to -> Google OAuth [INFERRED]
+- uncounted-api -> implements -> Hono [EXTRACTED]
+- uncounted-api -> uses -> Supabase [EXTRACTED]
+- uncounted-api -> uses -> iwinv S3 [EXTRACTED]
+- uncounted-api -> uses -> AES-256-GCM [EXTRACTED]
+- uncounted-api -> utilizes -> Vitest [EXTRACTED]
+- uncounted-api -> provides -> OpenAPI JSON [EXTRACTED]
+- uncounted-api -> includes -> authMiddleware [EXTRACTED]
+- uncounted-api -> includes -> optionalAuthMiddleware [EXTRACTED]
+- uncounted-api -> manages -> Session Management [EXTRACTED]
+- uncounted-api -> manages -> File Management [EXTRACTED]
+- uncounted-api -> manages -> Transcript Management [EXTRACTED]
+- uncounted-api -> provides -> Admin API [EXTRACTED]
+- uncounted-api -> utilizes -> Logging [EXTRACTED]
+- uncounted-api -> includes -> DB Migrations [EXTRACTED]
+- uncounted-api -> requires -> Environment Variables [EXTRACTED]
+- uncounted-api -> implements -> Meta JSONL [EXTRACTED]
+- uncounted-api -> references -> GET /admin/storage/metas [EXTRACTED]
+- uncounted-api -> references -> POST /admin/storage/meta/signed-url [EXTRACTED]
+- uncounted-api -> uses -> S3_META_BUCKET [EXTRACTED]
+- ZIP 엔진 -> related_to -> 리스크 [INFERRED]
+- 상호작용 모드 -> references -> 납품 구조 [EXTRACTED]
+- Alternative Strategies -> related_to -> High-Accuracy STT Architecture [INFERRED]
+- API Integration -> implements -> CLOVA Speech [EXTRACTED]
+- Audio Segmentation -> implements -> Silero VAD [EXTRACTED]
+- audioAnalyzer.ts -> references -> Web Audio API [EXTRACTED]
+- audioAnalyzer.ts -> implements -> SHA-256 Hashing [EXTRACTED]
+- audioAnalyzer.ts -> related_to -> ffmpeg.wasm [INFERRED]
+- audioAnalyzer.ts -> implements -> AudioProcessor.java [EXTRACTED]
+- audioAnalyzer.ts -> related_to -> AudioDecoderPlugin.java [INFERRED]
+- audioAnalyzer.ts -> uses -> Java processAudio method [EXTRACTED]
+- audioDedupe.ts -> implements -> sessionDedup.ts [EXTRACTED]
+- audioDedupe.ts -> related_to -> WavParser.java [INFERRED]
+- audioDedupe.ts -> addresses -> 불일치 D 시리즈 [INFERRED]
+- audioScanner.ts -> related_to -> scanEngine.ts [INFERRED]
+- audioScanner.ts -> related_to -> audioFileLoader.ts [INFERRED]
+- audioScanner.ts -> calls -> sanitizeAudio function [EXTRACTED]
+- CLOVA Speech -> references -> SKU 데이터셋 추출 시스템 v3 [EXTRACTED]
+- CLOVA Speech -> references -> Hono REST API [INFERRED]
+- CLOVA Speech -> references -> Supabase [INFERRED]
+- CRITICAL: Plaintext localStorage access_token -> references -> uncounted-app [EXTRACTED]
+- CRITICAL: Plaintext Production Secret Files -> references -> uncounted-api [EXTRACTED]
+- CRITICAL: Unvalidated OAuth redirect parameter -> references -> uncounted-api [EXTRACTED]
+- DB Migrations -> applies_to -> Supabase [INFERRED]
+- E2E 흐름 검증 -> related_to -> SKU 데이터셋 추출 시스템 v3 [INFERRED]
+- End-to-End Delivery Loop -> implements -> API Integration [EXTRACTED]
+- Export API -> related_to -> DB Migration [EXTRACTED]
+- Export API -> related_to -> Export Job [EXTRACTED]
+- getAudioMetrics function -> returns -> AudioMetrics [EXTRACTED]
+- HIGH: Logging endpoint without authentication -> references -> uncounted-api [EXTRACTED]
+- HIGH: PIPA Compliance Issue -> related_to -> uncounted-app [EXTRACTED]
+- HIGH: Store PKCE code_verifier in localStorage -> references -> uncounted-app [EXTRACTED]
+- Hono -> supports -> Node.js [EXTRACTED]
+- Hono REST API -> implements -> Supabase [EXTRACTED]
+- Hybrid Architecture -> implements -> On-Device Processing [EXTRACTED]
+- Hybrid Architecture -> implements -> Server-Side Processing [EXTRACTED]
+- Inventory API -> related_to -> Device Status [EXTRACTED]
+- iwinv S3 -> integrates_with -> Render.com [INFERRED]
+- Java processAudio method -> creates -> AudioMetrics [EXTRACTED]
+- Lead Security Architect -> oversees -> A2. 파일 스캔 & 품질 분석 [EXTRACTED]
+- Ledger -> references -> delivery_records [EXTRACTED]
+- Ledger -> references -> export_jobs [EXTRACTED]
+- Ledger -> references -> user_asset_ledger [EXTRACTED]
+- Ledger -> references -> clients [EXTRACTED]
+- Ledger -> references -> billable_units [EXTRACTED]
+- Logging -> is_related_to -> Error Handling [INFERRED]
+- LOW: Privacy policy link legal risk -> references -> uncounted-app [EXTRACTED]
+- MEDIUM: CSRF vulnerability in SameSite cookie -> references -> uncounted-api [EXTRACTED]
+- MEDIUM: Update withdrawalNotifiedAt on PIPA withdrawal -> references -> uncounted-app [EXTRACTED]
+- Metadata-Driven Approach -> related_to -> Hybrid Architecture [EXTRACTED]
+- Mobile/Native Security Engineer -> reviews -> A2. 파일 스캔 & 품질 분석 [EXTRACTED]
+- On-Device Processing -> related_to -> Silero VAD [EXTRACTED]
+- On-Device Processing -> related_to -> WeSpeaker [EXTRACTED]
+- Performance Tuning -> related_to -> High-Accuracy STT Architecture [INFERRED]
+- Preview API -> related_to -> Metadata Preview Data [EXTRACTED]
+- React + Capacitor -> part_of -> SKU 데이터셋 추출 시스템 v3 [INFERRED]
+- React + Vite -> part_of -> SKU 데이터셋 추출 시스템 v3 [INFERRED]
+- Risk Management -> related_to -> High-Accuracy STT Architecture [INFERRED]
+- sanitizeAudio function -> returns -> __unresolved__::ref::__unresolved____ref____unresolved____ref__processedpath [EXTRACTED]
+- scanEngine.ts -> related_to -> uncounted_file_paths [EXTRACTED]
+- scanEngine.ts -> references -> FileSystemDirectoryHandle [EXTRACTED]
+- Security Reviewer A -> conducts -> A2. 파일 스캔 & 품질 분석 [EXTRACTED]
+- Security Reviewer B -> conducts -> A2. 파일 스캔 & 품질 분석 [EXTRACTED]
+- Server-Side Processing -> related_to -> CLOVA Speech [EXTRACTED]
+- SessionApiClient -> related_to -> Export API [INFERRED]
+- Speaker Clustering -> related_to -> Speaker Embedding Extraction [INFERRED]
+- Speaker Embedding Extraction -> implements -> WeSpeaker [EXTRACTED]
+- Supabase -> references -> Ledger [EXTRACTED]
+- Team Composition -> related_to -> High-Accuracy STT Architecture [INFERRED]
+- TS/Full-stack Engineer -> reviews -> A2. 파일 스캔 & 품질 분석 [EXTRACTED]
+- TypeScript -> used_with -> Node.js [EXTRACTED]
+- U-M01 통화 메타데이터 SKU -> references -> AndroidManifest.xml [EXTRACTED]
+- uncounted_file_paths -> related_to -> Capacitor Secure Storage [EXTRACTED]
+- wavEncoder.ts -> references -> Web Audio API [EXTRACTED]
+- wavEncoder.ts -> uses -> DataView [EXTRACTED]
+- wavEncoder.ts -> related_to -> audioAnalyzer.ts [INFERRED]
+- wavEncoder.ts -> implements -> audioSanitizer.ts [EXTRACTED]
+- SKU 데이터셋 추출 시스템 v3 -> implements -> CLOVA Speech [EXTRACTED]
+- SKU 데이터셋 추출 시스템 v3 -> related_to -> U-M01 통화 메타데이터 SKU [INFERRED]
+
+## Cross-Community Connections
+- uncounted-api -> involves -> Authorization (-> [[security-review-skill-agent-payment-execution-x402]])
+
+## Context
+이 커뮤니티는 uncounted-api, A2. 파일 스캔 & 품질 분석, 로컬 테스트를 중심으로 related_to 관계로 연결되어 있다. 주요 소스 파일은 AndroidManifest.xml, SKU_데이터셋_추출_최종기획서_v3.html, path이다.

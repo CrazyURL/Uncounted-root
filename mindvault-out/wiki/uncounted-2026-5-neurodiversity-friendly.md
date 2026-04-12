@@ -1,0 +1,118 @@
+# 접근성 체크리스트 — Uncounted 2026 & 5. 신경다양성 친화 설계 (Neurodiversity-friendly)
+Cohesion: 0.08 | Nodes: 26
+
+## Key Nodes
+- **접근성 체크리스트 — Uncounted 2026** (uncounted-docs/앱/accessibility-checklist.md) -- 7 connections
+  - -> contains -> [[1-perceivable]]
+  - -> contains -> [[2-operable]]
+  - -> contains -> [[3-understandable]]
+  - -> contains -> [[4-robust]]
+  - -> contains -> [[5-neurodiversity-friendly]]
+  - -> contains -> [[6-pr]]
+  - -> contains -> [[7]]
+- **5. 신경다양성 친화 설계 (Neurodiversity-friendly)** (uncounted-docs/앱/accessibility-checklist.md) -- 6 connections
+  - -> contains -> [[51]]
+  - -> contains -> [[52]]
+  - -> contains -> [[53]]
+  - -> contains -> [[54-anxiety-reducing-ux]]
+  - -> contains -> [[55-adhd]]
+  - <- contains <- [[uncounted-2026]]
+- **2. 운용 가능성 (Operable)** (uncounted-docs/앱/accessibility-checklist.md) -- 5 connections
+  - -> contains -> [[21]]
+  - -> contains -> [[22]]
+  - -> contains -> [[23]]
+  - -> contains -> [[24]]
+  - <- contains <- [[uncounted-2026]]
+- **1. 지각 가능성 (Perceivable)** (uncounted-docs/앱/accessibility-checklist.md) -- 4 connections
+  - -> contains -> [[11]]
+  - -> contains -> [[12]]
+  - -> contains -> [[13]]
+  - <- contains <- [[uncounted-2026]]
+- **3. 이해 가능성 (Understandable)** (uncounted-docs/앱/accessibility-checklist.md) -- 4 connections
+  - -> contains -> [[31]]
+  - -> contains -> [[32]]
+  - -> contains -> [[33]]
+  - <- contains <- [[uncounted-2026]]
+- **tsx** (uncounted-docs/앱/accessibility-checklist.md) -- 3 connections
+  - <- has_code_example <- [[13]]
+  - <- has_code_example <- [[21]]
+  - <- has_code_example <- [[42-aria]]
+- **4. 견고성 (Robust)** (uncounted-docs/앱/accessibility-checklist.md) -- 3 connections
+  - -> contains -> [[41-html]]
+  - -> contains -> [[42-aria]]
+  - <- contains <- [[uncounted-2026]]
+- **1.3 텍스트 대안** (uncounted-docs/앱/accessibility-checklist.md) -- 2 connections
+  - -> has_code_example -> [[tsx]]
+  - <- contains <- [[1-perceivable]]
+- **2.1 키보드 접근성** (uncounted-docs/앱/accessibility-checklist.md) -- 2 connections
+  - -> has_code_example -> [[tsx]]
+  - <- contains <- [[2-operable]]
+- **4.2 ARIA** (uncounted-docs/앱/accessibility-checklist.md) -- 2 connections
+  - -> has_code_example -> [[tsx]]
+  - <- contains <- [[4-robust]]
+- **1.1 색상 대비** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[1-perceivable]]
+- **1.2 색상 외 정보 전달** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[1-perceivable]]
+- **2.2 터치 타겟 크기** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[2-operable]]
+- **2.3 시간 제한** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[2-operable]]
+- **2.4 발작 유발 방지** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[2-operable]]
+- **3.1 언어** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[3-understandable]]
+- **3.2 오류 처리** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[3-understandable]]
+- **3.3 일관성** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[3-understandable]]
+- **4.1 시멘틱 HTML** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[4-robust]]
+- **5.1 인지 부하 감소** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[5-neurodiversity-friendly]]
+- **5.2 읽기 용이성** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[5-neurodiversity-friendly]]
+- **5.3 감각 민감성** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[5-neurodiversity-friendly]]
+- **5.4 불안 감소 (Anxiety-reducing UX)** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[5-neurodiversity-friendly]]
+- **5.5 ADHD 친화** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[5-neurodiversity-friendly]]
+- **6. PR 리뷰 체크 항목** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[uncounted-2026]]
+- **7. 자동화 테스트 도구** (uncounted-docs/앱/accessibility-checklist.md) -- 1 connections
+  - <- contains <- [[uncounted-2026]]
+
+## Internal Relationships
+- 1.3 텍스트 대안 -> has_code_example -> tsx [EXTRACTED]
+- 1. 지각 가능성 (Perceivable) -> contains -> 1.1 색상 대비 [EXTRACTED]
+- 1. 지각 가능성 (Perceivable) -> contains -> 1.2 색상 외 정보 전달 [EXTRACTED]
+- 1. 지각 가능성 (Perceivable) -> contains -> 1.3 텍스트 대안 [EXTRACTED]
+- 2.1 키보드 접근성 -> has_code_example -> tsx [EXTRACTED]
+- 2. 운용 가능성 (Operable) -> contains -> 2.1 키보드 접근성 [EXTRACTED]
+- 2. 운용 가능성 (Operable) -> contains -> 2.2 터치 타겟 크기 [EXTRACTED]
+- 2. 운용 가능성 (Operable) -> contains -> 2.3 시간 제한 [EXTRACTED]
+- 2. 운용 가능성 (Operable) -> contains -> 2.4 발작 유발 방지 [EXTRACTED]
+- 3. 이해 가능성 (Understandable) -> contains -> 3.1 언어 [EXTRACTED]
+- 3. 이해 가능성 (Understandable) -> contains -> 3.2 오류 처리 [EXTRACTED]
+- 3. 이해 가능성 (Understandable) -> contains -> 3.3 일관성 [EXTRACTED]
+- 4.2 ARIA -> has_code_example -> tsx [EXTRACTED]
+- 4. 견고성 (Robust) -> contains -> 4.1 시멘틱 HTML [EXTRACTED]
+- 4. 견고성 (Robust) -> contains -> 4.2 ARIA [EXTRACTED]
+- 5. 신경다양성 친화 설계 (Neurodiversity-friendly) -> contains -> 5.1 인지 부하 감소 [EXTRACTED]
+- 5. 신경다양성 친화 설계 (Neurodiversity-friendly) -> contains -> 5.2 읽기 용이성 [EXTRACTED]
+- 5. 신경다양성 친화 설계 (Neurodiversity-friendly) -> contains -> 5.3 감각 민감성 [EXTRACTED]
+- 5. 신경다양성 친화 설계 (Neurodiversity-friendly) -> contains -> 5.4 불안 감소 (Anxiety-reducing UX) [EXTRACTED]
+- 5. 신경다양성 친화 설계 (Neurodiversity-friendly) -> contains -> 5.5 ADHD 친화 [EXTRACTED]
+- 접근성 체크리스트 — Uncounted 2026 -> contains -> 1. 지각 가능성 (Perceivable) [EXTRACTED]
+- 접근성 체크리스트 — Uncounted 2026 -> contains -> 2. 운용 가능성 (Operable) [EXTRACTED]
+- 접근성 체크리스트 — Uncounted 2026 -> contains -> 3. 이해 가능성 (Understandable) [EXTRACTED]
+- 접근성 체크리스트 — Uncounted 2026 -> contains -> 4. 견고성 (Robust) [EXTRACTED]
+- 접근성 체크리스트 — Uncounted 2026 -> contains -> 5. 신경다양성 친화 설계 (Neurodiversity-friendly) [EXTRACTED]
+- 접근성 체크리스트 — Uncounted 2026 -> contains -> 6. PR 리뷰 체크 항목 [EXTRACTED]
+- 접근성 체크리스트 — Uncounted 2026 -> contains -> 7. 자동화 테스트 도구 [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 접근성 체크리스트 — Uncounted 2026, 5. 신경다양성 친화 설계 (Neurodiversity-friendly), 2. 운용 가능성 (Operable)를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 accessibility-checklist.md이다.

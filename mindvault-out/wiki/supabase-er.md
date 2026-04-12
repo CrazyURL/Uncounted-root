@@ -1,0 +1,142 @@
+# Supabase 테이블 & ER 다이어그램 (관계도)
+Cohesion: 0.07 | Nodes: 32
+
+## Key Nodes
+- **Supabase 테이블** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 14 connections
+  - -> contains -> [[1-sessions]]
+  - -> contains -> [[2-billableunits]]
+  - -> contains -> [[3-clients]]
+  - -> contains -> [[4-deliveryprofiles]]
+  - -> contains -> [[5-clientskurules-sku]]
+  - -> contains -> [[6-skupresets-sku]]
+  - -> contains -> [[7-exportjobs]]
+  - -> contains -> [[8-userassetledger]]
+  - -> contains -> [[9-deliveryrecords-per-client]]
+  - -> contains -> [[transcriptchunks-stt]]
+  - -> contains -> [[10-transcripts-stt]]
+  - -> contains -> [[9-errorlogs]]
+  - -> contains -> [[10-funnelevents]]
+  - <- contains <- [[2-db-v14]]
+- **ER 다이어그램 (관계도)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 12 connections
+  - -> contains -> [[campaigns-001-005-campaigns]]
+  - -> contains -> [[campaignmatches-001]]
+  - -> contains -> [[consents-001]]
+  - -> contains -> [[labels-001]]
+  - -> contains -> [[missions-001]]
+  - -> contains -> [[missionprogress-001]]
+  - -> contains -> [[peers-002]]
+  - -> contains -> [[scorecomponents-001]]
+  - -> contains -> [[sessionlabels-002]]
+  - -> contains -> [[sharebatches-002]]
+  - -> contains -> [[usersprofile-001]]
+  - <- contains <- [[2-db-v14]]
+- **2. DB 스키마 정의서 (v1.4)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 5 connections
+  - -> contains -> [[supabase]]
+  - -> contains -> [[localstorage]]
+  - -> contains -> [[indexeddb]]
+  - -> contains -> [[er]]
+  - -> contains -> [[migration-005006]]
+- **json** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 3 connections
+  - <- has_code_example <- [[1-sessions]]
+  - <- has_code_example <- [[7-exportjobs]]
+  - <- has_code_example <- [[10-transcripts-stt]]
+- **10. transcripts (STT 텍스트 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 2 connections
+  - -> has_code_example -> [[json]]
+  - <- contains <- [[supabase]]
+- **1. sessions (핵심 세션 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 2 connections
+  - -> has_code_example -> [[json]]
+  - <- contains <- [[supabase]]
+- **7. export_jobs (내보내기 작업 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 2 connections
+  - -> has_code_example -> [[json]]
+  - <- contains <- [[supabase]]
+- **localStorage 키 목록** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 2 connections
+  - -> contains -> [[phase-2]]
+  - <- contains <- [[2-db-v14]]
+- **10. funnel_events (퍼널 이벤트)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **2. billable_units (빌링 유닛 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **3. clients (납품처 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **4. delivery_profiles (납품 프로필 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **5. client_sku_rules (납품처별 SKU 규칙)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **6. sku_presets (SKU 프리셋 테이블)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **8. user_asset_ledger (정산 원장)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **9. delivery_records (Per-client 납품 이력)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **9. error_logs (에러 로그)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **campaign_matches (001 레거시)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **campaigns (001 레거시 — 005의 campaigns와 구조 다름)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **consents (001 레거시)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **IndexedDB 저장소** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[2-db-v14]]
+- **labels (001 레거시)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **부록: 미적용 Migration (005/006)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[2-db-v14]]
+- **mission_progress (001 레거시)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **missions (001 레거시)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **peers (002)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **음성 생체인증 (Phase 2)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[localstorage]]
+- **score_components (001 레거시)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **session_labels (002)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **share_batches (002)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+- **transcript_chunks (청크별 STT 텍스트 + 오디오 통계)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[supabase]]
+- **users_profile (001 레거시)** (uncounted-docs/백앤드/schema/DB스키마_v1.4.md) -- 1 connections
+  - <- contains <- [[er]]
+
+## Internal Relationships
+- 10. transcripts (STT 텍스트 테이블) -> has_code_example -> json [EXTRACTED]
+- 1. sessions (핵심 세션 테이블) -> has_code_example -> json [EXTRACTED]
+- 2. DB 스키마 정의서 (v1.4) -> contains -> Supabase 테이블 [EXTRACTED]
+- 2. DB 스키마 정의서 (v1.4) -> contains -> localStorage 키 목록 [EXTRACTED]
+- 2. DB 스키마 정의서 (v1.4) -> contains -> IndexedDB 저장소 [EXTRACTED]
+- 2. DB 스키마 정의서 (v1.4) -> contains -> ER 다이어그램 (관계도) [EXTRACTED]
+- 2. DB 스키마 정의서 (v1.4) -> contains -> 부록: 미적용 Migration (005/006) [EXTRACTED]
+- 7. export_jobs (내보내기 작업 테이블) -> has_code_example -> json [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> campaigns (001 레거시 — 005의 campaigns와 구조 다름) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> campaign_matches (001 레거시) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> consents (001 레거시) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> labels (001 레거시) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> missions (001 레거시) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> mission_progress (001 레거시) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> peers (002) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> score_components (001 레거시) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> session_labels (002) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> share_batches (002) [EXTRACTED]
+- ER 다이어그램 (관계도) -> contains -> users_profile (001 레거시) [EXTRACTED]
+- localStorage 키 목록 -> contains -> 음성 생체인증 (Phase 2) [EXTRACTED]
+- Supabase 테이블 -> contains -> 1. sessions (핵심 세션 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 2. billable_units (빌링 유닛 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 3. clients (납품처 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 4. delivery_profiles (납품 프로필 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 5. client_sku_rules (납품처별 SKU 규칙) [EXTRACTED]
+- Supabase 테이블 -> contains -> 6. sku_presets (SKU 프리셋 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 7. export_jobs (내보내기 작업 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 8. user_asset_ledger (정산 원장) [EXTRACTED]
+- Supabase 테이블 -> contains -> 9. delivery_records (Per-client 납품 이력) [EXTRACTED]
+- Supabase 테이블 -> contains -> transcript_chunks (청크별 STT 텍스트 + 오디오 통계) [EXTRACTED]
+- Supabase 테이블 -> contains -> 10. transcripts (STT 텍스트 테이블) [EXTRACTED]
+- Supabase 테이블 -> contains -> 9. error_logs (에러 로그) [EXTRACTED]
+- Supabase 테이블 -> contains -> 10. funnel_events (퍼널 이벤트) [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Supabase 테이블, ER 다이어그램 (관계도), 2. DB 스키마 정의서 (v1.4)를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 DB스키마_v1.4.md이다.
