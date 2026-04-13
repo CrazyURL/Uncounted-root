@@ -1,28 +1,31 @@
 # Environment Variables & Configuration & PII Masking
-Cohesion: 0.25 | Nodes: 8
+Cohesion: 0.22 | Nodes: 9
 
 ## Key Nodes
-- **Environment Variables** (uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 6 connections
+- **Environment Variables** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 7 connections
   - -> contains -> [[core]]
   - -> contains -> [[whisperx-model]]
   - -> contains -> [[storage-upload]]
   - -> contains -> [[audio-preprocessing]]
   - -> contains -> [[large-audio-chunking]]
+  - -> contains -> [[queue-backpressure]]
   - <- contains <- [[configuration-pii-masking]]
-- **Configuration & PII Masking** (uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 2 connections
+- **Configuration & PII Masking** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 2 connections
   - -> contains -> [[environment-variables]]
   - -> contains -> [[pii-masking-details]]
-- **Audio Preprocessing** (uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
+- **Audio Preprocessing** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
   - <- contains <- [[environment-variables]]
-- **Core** (uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
+- **Core** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
   - <- contains <- [[environment-variables]]
-- **Large Audio Chunking** (uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
+- **Large Audio Chunking** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
   - <- contains <- [[environment-variables]]
-- **PII Masking Details** (uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
+- **PII Masking Details** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
   - <- contains <- [[configuration-pii-masking]]
-- **Storage & Upload** (uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
+- **Queue Backpressure** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
   - <- contains <- [[environment-variables]]
-- **WhisperX Model** (uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
+- **Storage & Upload** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
+  - <- contains <- [[environment-variables]]
+- **WhisperX Model** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/config-and-pii.md) -- 1 connections
   - <- contains <- [[environment-variables]]
 
 ## Internal Relationships
@@ -33,6 +36,7 @@ Cohesion: 0.25 | Nodes: 8
 - Environment Variables -> contains -> Storage & Upload [EXTRACTED]
 - Environment Variables -> contains -> Audio Preprocessing [EXTRACTED]
 - Environment Variables -> contains -> Large Audio Chunking [EXTRACTED]
+- Environment Variables -> contains -> Queue Backpressure [EXTRACTED]
 
 ## Cross-Community Connections
 

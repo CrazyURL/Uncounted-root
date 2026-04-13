@@ -1,28 +1,37 @@
 # STT Pipeline Architecture & stt-pipeline
-Cohesion: 0.25 | Nodes: 8
+Cohesion: 0.18 | Nodes: 11
 
 ## Key Nodes
-- **STT Pipeline Architecture** (uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 7 connections
+- **STT Pipeline Architecture** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 10 connections
   - -> contains -> [[processing-flow]]
   - -> contains -> [[key-components]]
   - -> contains -> [[gpu-singleton-pattern]]
   - -> contains -> [[chunked-mode-large-audio]]
   - -> contains -> [[async-job-pattern]]
   - -> contains -> [[audio-file-storage]]
+  - -> contains -> [[chunked-mode-large-audio]]
+  - -> contains -> [[queue-backpressure-503]]
+  - -> contains -> [[test-environment]]
   - <- contains <- [[stt-pipeline]]
-- **stt-pipeline** (uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+- **stt-pipeline** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
   - -> contains -> [[stt-pipeline-architecture]]
-- **Async Job Pattern** (uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+- **Async Job Pattern** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
   - <- contains <- [[stt-pipeline-architecture]]
-- **Audio File Storage** (uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+- **Audio File Storage** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+  - <- contains <- [[stt-pipeline-architecture]]
+- **Chunked Mode (Large Audio)** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
   - <- contains <- [[stt-pipeline-architecture]]
 - **Chunked Mode (Large Audio)** (uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
   - <- contains <- [[stt-pipeline-architecture]]
-- **GPU Singleton Pattern** (uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+- **GPU Singleton Pattern** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
   - <- contains <- [[stt-pipeline-architecture]]
-- **Key Components** (uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+- **Key Components** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
   - <- contains <- [[stt-pipeline-architecture]]
-- **Processing Flow** (uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+- **Processing Flow** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+  - <- contains <- [[stt-pipeline-architecture]]
+- **Queue Backpressure (503)** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
+  - <- contains <- [[stt-pipeline-architecture]]
+- **Test Environment** (/Users/gdash/project/uncounted-project/uncounted-voice-api/.claude/rules/python/stt-pipeline.md) -- 1 connections
   - <- contains <- [[stt-pipeline-architecture]]
 
 ## Internal Relationships
@@ -33,6 +42,9 @@ Cohesion: 0.25 | Nodes: 8
 - STT Pipeline Architecture -> contains -> Chunked Mode (Large Audio) [EXTRACTED]
 - STT Pipeline Architecture -> contains -> Async Job Pattern [EXTRACTED]
 - STT Pipeline Architecture -> contains -> Audio File Storage [EXTRACTED]
+- STT Pipeline Architecture -> contains -> Chunked Mode (Large Audio) [EXTRACTED]
+- STT Pipeline Architecture -> contains -> Queue Backpressure (503) [EXTRACTED]
+- STT Pipeline Architecture -> contains -> Test Environment [EXTRACTED]
 
 ## Cross-Community Connections
 
