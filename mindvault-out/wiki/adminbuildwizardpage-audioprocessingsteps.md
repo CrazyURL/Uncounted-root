@@ -1,0 +1,197 @@
+# AdminBuildWizardPage & AudioProcessingSteps
+Cohesion: 0.06 | Nodes: 39
+
+## Key Nodes
+- **AdminBuildWizardPage** (/Users/gdash/project/uncounted-project/uncounted-admin/src/pages/admin/AdminBuildWizardPage.tsx) -- 17 connections
+  - -> imports -> [[unresolvedrefreact]]
+  - -> imports -> [[unresolvedreftypessession]]
+  - -> imports -> [[unresolvedreftypessku]]
+  - -> imports -> [[unresolvedreftypesadmin]]
+  - -> imports -> [[unresolvedreftypesexport]]
+  - -> imports -> [[unresolvedreflibsessionmapper]]
+  - -> imports -> [[unresolvedreflibbillableunitengine]]
+  - -> imports -> [[unresolvedreflibskustudio]]
+  - -> imports -> [[unresolvedreflibapisessions]]
+  - -> imports -> [[unresolvedreflibadminstore]]
+  - -> imports -> [[unresolvedreflibapiadmin]]
+  - -> imports -> [[unresolvedreflibuuid]]
+  - -> imports -> [[unresolvedrefcomponentsdomainskuinventorycard]]
+  - -> imports -> [[unresolvedrefcomponentsdomainaudioprocessingsteps]]
+  - -> imports -> [[unresolvedrefcomponentsdomainmetadatametadataqualityfilter]]
+  - -> imports -> [[unresolvedrefcomponentsdomainmetadatametadataexportconfirm]]
+  - -> imports -> [[unresolvedrefcomponentsdomainmetadatametadatawizardsteps]]
+- **AudioProcessingSteps** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/AudioProcessingSteps.tsx) -- 10 connections
+  - -> contains -> [[audioprocessingstepsprops]]
+  - -> imports -> [[unresolvedrefreact]]
+  - -> imports -> [[unresolvedrefreactrouterdom]]
+  - -> imports -> [[unresolvedreftypesexport]]
+  - -> imports -> [[unresolvedreflibadminstore]]
+  - -> imports -> [[unresolvedrefutterancereviewtable]]
+  - -> imports -> [[unresolvedrefutterancereviewguide]]
+  - -> imports -> [[unresolvedrefutterancelabelingpanel]]
+  - -> imports -> [[unresolvedrefpiimaskingeditor]]
+  - -> imports -> [[unresolvedrefcommonloadingoverlay]]
+- **billableUnitEngine** (/Users/gdash/project/uncounted-project/uncounted-admin/src/lib/billableUnitEngine.ts) -- 10 connections
+  - -> contains -> [[capturedevicecontext]]
+  - -> contains -> [[calcbillableseconds]]
+  - -> contains -> [[mergecomponentfilters]]
+  - -> contains -> [[fisheryatessample]]
+  - -> contains -> [[stratifiedsample]]
+  - -> imports -> [[unresolvedreftypessession]]
+  - -> imports -> [[unresolvedreftypesadmin]]
+  - -> imports -> [[unresolvedreftypessku]]
+  - -> imports -> [[unresolvedrefvalueengine]]
+  - -> imports -> [[unresolvedrefnetworkcollector]]
+- **MetadataExportConfirm** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/metadata/MetadataExportConfirm.tsx) -- 6 connections
+  - -> contains -> [[metadataexportconfirmprops]]
+  - -> contains -> [[statusbadge]]
+  - -> imports -> [[unresolvedrefreact]]
+  - -> imports -> [[unresolvedreflibapiadmin]]
+  - -> imports -> [[unresolvedrefmetadataqualityfilter]]
+  - -> imports -> [[unresolvedrefcommonloadingoverlay]]
+- **calcBillableSeconds** (/Users/gdash/project/uncounted-project/uncounted-admin/src/lib/billableUnitEngine.ts) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcalceffectiveseconds]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcalcqualitygrade]]
+  - -> calls -> [[unresolvedrefcalceffectiveseconds]]
+  - -> calls -> [[unresolvedrefcalcqualitygrade]]
+  - <- contains <- [[billableunitengine]]
+  - <- contains <- [[billableunitengine]]
+- **__unresolved__::ref::_react_** () -- 3 connections
+  - <- imports <- [[audioprocessingsteps]]
+  - <- imports <- [[metadataexportconfirm]]
+  - <- imports <- [[adminbuildwizardpage]]
+- **calcBillableSeconds** (uncounted-app/src/lib/billableUnitEngine.ts) -- 3 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcalceffectiveseconds]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcalcqualitygrade]]
+  - <- contains <- [[billableunitengine]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__calceffectiveseconds** () -- 2 connections
+  - <- calls <- [[calcbillableseconds]]
+  - <- calls <- [[calcbillableseconds]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__calcqualitygrade** () -- 2 connections
+  - <- calls <- [[calcbillableseconds]]
+  - <- calls <- [[calcbillableseconds]]
+- **__unresolved__::ref::_common_loadingoverlay_** () -- 2 connections
+  - <- imports <- [[audioprocessingsteps]]
+  - <- imports <- [[metadataexportconfirm]]
+- **__unresolved__::ref::_lib_adminstore_** () -- 2 connections
+  - <- imports <- [[audioprocessingsteps]]
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_lib_api_admin_** () -- 2 connections
+  - <- imports <- [[metadataexportconfirm]]
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_types_admin_** () -- 2 connections
+  - <- imports <- [[billableunitengine]]
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_types_export_** () -- 2 connections
+  - <- imports <- [[audioprocessingsteps]]
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_types_session_** () -- 2 connections
+  - <- imports <- [[billableunitengine]]
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_types_sku_** () -- 2 connections
+  - <- imports <- [[billableunitengine]]
+  - <- imports <- [[adminbuildwizardpage]]
+- **AudioProcessingStepsProps** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/AudioProcessingSteps.tsx) -- 2 connections
+  - <- contains <- [[audioprocessingsteps]]
+  - <- contains <- [[audioprocessingsteps]]
+- **MetadataExportConfirmProps** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/metadata/MetadataExportConfirm.tsx) -- 2 connections
+  - <- contains <- [[metadataexportconfirm]]
+  - <- contains <- [[metadataexportconfirm]]
+- **__unresolved__::ref::_components_domain_audioprocessingsteps_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_components_domain_metadata_metadataexportconfirm_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_components_domain_metadata_metadataqualityfilter_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_components_domain_metadata_metadatawizardsteps_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_components_domain_skuinventorycard_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_lib_api_sessions_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_lib_billableunitengine_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_lib_sessionmapper_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_lib_skustudio_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_lib_uuid_** () -- 1 connections
+  - <- imports <- [[adminbuildwizardpage]]
+- **__unresolved__::ref::_metadataqualityfilter_** () -- 1 connections
+  - <- imports <- [[metadataexportconfirm]]
+- **__unresolved__::ref::_networkcollector_** () -- 1 connections
+  - <- imports <- [[billableunitengine]]
+- **__unresolved__::ref::_piimaskingeditor_** () -- 1 connections
+  - <- imports <- [[audioprocessingsteps]]
+- **__unresolved__::ref::_react_router_dom_** () -- 1 connections
+  - <- imports <- [[audioprocessingsteps]]
+- **__unresolved__::ref::_utterancelabelingpanel_** () -- 1 connections
+  - <- imports <- [[audioprocessingsteps]]
+- **__unresolved__::ref::_utterancereviewguide_** () -- 1 connections
+  - <- imports <- [[audioprocessingsteps]]
+- **__unresolved__::ref::_utterancereviewtable_** () -- 1 connections
+  - <- imports <- [[audioprocessingsteps]]
+- **__unresolved__::ref::_valueengine_** () -- 1 connections
+  - <- imports <- [[billableunitengine]]
+- **__unresolved__::ref::calceffectiveseconds** () -- 1 connections
+  - <- calls <- [[calcbillableseconds]]
+- **__unresolved__::ref::calcqualitygrade** () -- 1 connections
+  - <- calls <- [[calcbillableseconds]]
+- **StatusBadge** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/metadata/MetadataExportConfirm.tsx) -- 1 connections
+  - <- contains <- [[metadataexportconfirm]]
+
+## Internal Relationships
+- AudioProcessingSteps -> contains -> AudioProcessingStepsProps [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_react_ [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_react_router_dom_ [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_types_export_ [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_lib_adminstore_ [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_utterancereviewtable_ [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_utterancereviewguide_ [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_utterancelabelingpanel_ [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_piimaskingeditor_ [EXTRACTED]
+- AudioProcessingSteps -> imports -> __unresolved__::ref::_common_loadingoverlay_ [EXTRACTED]
+- MetadataExportConfirm -> contains -> MetadataExportConfirmProps [EXTRACTED]
+- MetadataExportConfirm -> contains -> StatusBadge [EXTRACTED]
+- MetadataExportConfirm -> imports -> __unresolved__::ref::_react_ [EXTRACTED]
+- MetadataExportConfirm -> imports -> __unresolved__::ref::_lib_api_admin_ [EXTRACTED]
+- MetadataExportConfirm -> imports -> __unresolved__::ref::_metadataqualityfilter_ [EXTRACTED]
+- MetadataExportConfirm -> imports -> __unresolved__::ref::_common_loadingoverlay_ [EXTRACTED]
+- calcBillableSeconds -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__calceffectiveseconds [EXTRACTED]
+- calcBillableSeconds -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__calcqualitygrade [EXTRACTED]
+- calcBillableSeconds -> calls -> __unresolved__::ref::calceffectiveseconds [EXTRACTED]
+- calcBillableSeconds -> calls -> __unresolved__::ref::calcqualitygrade [EXTRACTED]
+- billableUnitEngine -> contains -> calcBillableSeconds [EXTRACTED]
+- billableUnitEngine -> imports -> __unresolved__::ref::_types_session_ [EXTRACTED]
+- billableUnitEngine -> imports -> __unresolved__::ref::_types_admin_ [EXTRACTED]
+- billableUnitEngine -> imports -> __unresolved__::ref::_types_sku_ [EXTRACTED]
+- billableUnitEngine -> imports -> __unresolved__::ref::_valueengine_ [EXTRACTED]
+- billableUnitEngine -> imports -> __unresolved__::ref::_networkcollector_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_react_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_types_session_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_types_sku_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_types_admin_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_types_export_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_lib_sessionmapper_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_lib_billableunitengine_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_lib_skustudio_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_lib_api_sessions_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_lib_adminstore_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_lib_api_admin_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_lib_uuid_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_components_domain_skuinventorycard_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_components_domain_audioprocessingsteps_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_components_domain_metadata_metadataqualityfilter_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_components_domain_metadata_metadataexportconfirm_ [EXTRACTED]
+- AdminBuildWizardPage -> imports -> __unresolved__::ref::_components_domain_metadata_metadatawizardsteps_ [EXTRACTED]
+- calcBillableSeconds -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__calceffectiveseconds [EXTRACTED]
+- calcBillableSeconds -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__calcqualitygrade [EXTRACTED]
+
+## Cross-Community Connections
+- billableUnitEngine -> contains -> captureDeviceContext (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- billableUnitEngine -> contains -> mergeComponentFilters (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
+- billableUnitEngine -> contains -> fisherYatesSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- billableUnitEngine -> contains -> stratifiedSample (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+
+## Context
+이 커뮤니티는 AdminBuildWizardPage, AudioProcessingSteps, billableUnitEngine를 중심으로 imports 관계로 연결되어 있다. 주요 소스 파일은 AdminBuildWizardPage.tsx, AudioProcessingSteps.tsx, MetadataExportConfirm.tsx, billableUnitEngine.ts이다.

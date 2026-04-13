@@ -2,7 +2,7 @@
 Cohesion: 1.00 | Nodes: 1
 
 ## Key Nodes
-- **export** (uncounted-admin/src/types/export.ts) -- 0 connections
+- **export** (/Users/gdash/project/uncounted-project/uncounted-admin/src/types/export.ts) -- 0 connections
 
 ## Internal Relationships
 

@@ -1,279 +1,276 @@
 # PiiSessionCard & runHandleStart
-Cohesion: 0.04 | Nodes: 57
+Cohesion: 0.04 | Nodes: 56
 
 ## Key Nodes
 - **PiiSessionCard** (uncounted-app/src/pages/PiiReviewPage.tsx) -- 48 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefusestate]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefuseref]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefuseeffect]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetdetailloading]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetsanitizecache]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetcacheentry]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefloadtranscript]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsettranscript]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetaudiourl]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefparse]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetitem]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefisnativeplatform]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetaudioloading]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreadfile]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftolowercase]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpop]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsplit]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefloaddata]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefstartswith]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrevokeobjecturl]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefusememo]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpush]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmax]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefflatmap]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmap]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcollectabsoluteranges]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefusecallback]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefonselectaction]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetpreviewaction]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetprocessingpreview]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsanitizeaudio]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetprocessedaudiourl]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreadasdataurl]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcreateobjecturl]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefreduce]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetexpanded]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefmasksessiontitle]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftolocalestring]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsettranscriptview]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrendertranscriptwithpii]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpiitypelabel]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefseekto]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefformatduration]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefround]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefhighlightpiiinsentence]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefhandlepreview]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefonundodonotshare]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefusestate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefuseref]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefuseeffect]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetdetailloading]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetsanitizecache]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetcacheentry]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadtranscript]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsettranscript]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetaudiourl]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefparse]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefisnativeplatform]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetaudioloading]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefreadfile]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftolowercase]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpop]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloaddata]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrevokeobjecturl]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefusememo]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefflatmap]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmap]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcollectabsoluteranges]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefusecallback]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefonselectaction]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetpreviewaction]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetprocessingpreview]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsanitizeaudio]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetprocessedaudiourl]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefreadasdataurl]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcreateobjecturl]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefreduce]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetexpanded]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefmasksessiontitle]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftolocalestring]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsettranscriptview]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrendertranscriptwithpii]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpiitypelabel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseekto]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefformatduration]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhighlightpiiinsentence]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefhandlepreview]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefonundodonotshare]]
   - <- contains <- [[piireviewpage]]
 - **runHandleStart** (uncounted-app/src/pages/OnboardingPage.test.ts) -- 12 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefpush]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefnavigate]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftrackfunnel]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetloading]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefseterror]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetpermissiondenied]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefisnativeplatform]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefrequestpermissions]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefsetitem]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftrackedtrackfunnel]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreftrackednavigate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefnavigate]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftrackfunnel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetloading]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefseterror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetpermissiondenied]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefisnativeplatform]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefrequestpermissions]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftrackedtrackfunnel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftrackednavigate]]
   - <- contains <- [[onboardingpagetest]]
 - **ErrorLoggerInit** (uncounted-admin/src/app/App.tsx) -- 7 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefuseeffect]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefinstallglobalerrorhandler]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefonnetworkchange]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefcatch]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefflusherrorlog]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefflushfunnelevents]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefuseeffect]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefinstallglobalerrorhandler]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefonnetworkchange]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefflusherrorlog]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefflushfunnelevents]]
   - <- contains <- [[app]]
 - **setupNativeListeners** (uncounted-app/src/lib/sttEngine.ts) -- 5 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefisnativeplatform]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedreflogerror]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefgetplatform]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefaddlistener]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefisnativeplatform]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflogerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetplatform]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefaddlistener]]
   - <- contains <- [[sttengine]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__isnativeplatform** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__isnativeplatform** () -- 4 connections
   - <- calls <- [[setupnativelisteners]]
   - <- calls <- [[persistcache]]
   - <- calls <- [[runhandlestart]]
   - <- calls <- [[piisessioncard]]
 - **ThemeInitializer** (uncounted-admin/src/app/App.tsx) -- 4 connections
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefuseeffect]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefapplytheme]]
-  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefloadthememode]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefuseeffect]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefapplytheme]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadthememode]]
   - <- contains <- [[app]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__useeffect** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__useeffect** () -- 3 connections
   - <- calls <- [[piisessioncard]]
   - <- calls <- [[themeinitializer]]
   - <- calls <- [[errorloggerinit]]
 - **OnboardingPage.test** (uncounted-app/src/pages/OnboardingPage.test.ts) -- 3 connections
   - -> contains -> [[handlestartdeps]]
   - -> contains -> [[runhandlestart]]
-  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefvitest]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__loadtranscript** () -- 2 connections
-  - <- calls <- [[piisessioncard]]
-  - <- calls <- [[processnext]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__usememo** () -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__usememo** () -- 2 connections
   - <- calls <- [[piisessioncard]]
   - <- calls <- [[fieldcard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__addlistener** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__addlistener** () -- 1 connections
   - <- calls <- [[setupnativelisteners]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__applytheme** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__applytheme** () -- 1 connections
   - <- calls <- [[themeinitializer]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__collectabsoluteranges** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__collectabsoluteranges** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__createobjecturl** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__createobjecturl** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__flatmap** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__flatmap** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__flusherrorlog** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__flusherrorlog** () -- 1 connections
   - <- calls <- [[errorloggerinit]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__flushfunnelevents** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__flushfunnelevents** () -- 1 connections
   - <- calls <- [[errorloggerinit]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__formatduration** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__formatduration** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getplatform** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__getplatform** () -- 1 connections
   - <- calls <- [[setupnativelisteners]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__getsanitizecache** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__getsanitizecache** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__handlepreview** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__handlepreview** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__highlightpiiinsentence** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__highlightpiiinsentence** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__installglobalerrorhandler** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__installglobalerrorhandler** () -- 1 connections
   - <- calls <- [[errorloggerinit]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__loaddata** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__loaddata** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__loadthememode** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__loadthememode** () -- 1 connections
   - <- calls <- [[themeinitializer]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__masksessiontitle** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__masksessiontitle** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__navigate** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__navigate** () -- 1 connections
   - <- calls <- [[runhandlestart]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__onnetworkchange** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__onnetworkchange** () -- 1 connections
   - <- calls <- [[errorloggerinit]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__onselectaction** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__onselectaction** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__onundodonotshare** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__onundodonotshare** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__piitypelabel** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__piitypelabel** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__readasdataurl** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__readasdataurl** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__rendertranscriptwithpii** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__rendertranscriptwithpii** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__requestpermissions** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__requestpermissions** () -- 1 connections
   - <- calls <- [[runhandlestart]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__revokeobjecturl** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__revokeobjecturl** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__sanitizeaudio** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sanitizeaudio** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__seekto** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__seekto** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setaudioloading** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setaudioloading** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setaudiourl** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setaudiourl** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setcacheentry** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setcacheentry** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setdetailloading** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setdetailloading** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__seterror** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__seterror** () -- 1 connections
   - <- calls <- [[runhandlestart]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setexpanded** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setexpanded** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setloading** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setloading** () -- 1 connections
   - <- calls <- [[runhandlestart]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setpermissiondenied** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setpermissiondenied** () -- 1 connections
   - <- calls <- [[runhandlestart]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setpreviewaction** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setpreviewaction** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setprocessedaudiourl** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setprocessedaudiourl** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__setprocessingpreview** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setprocessingpreview** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__settranscript** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__settranscript** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__settranscriptview** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__settranscriptview** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__trackednavigate** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__trackednavigate** () -- 1 connections
   - <- calls <- [[runhandlestart]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__trackedtrackfunnel** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__trackedtrackfunnel** () -- 1 connections
   - <- calls <- [[runhandlestart]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__trackfunnel** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__trackfunnel** () -- 1 connections
   - <- calls <- [[runhandlestart]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__usecallback** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__usecallback** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__useref** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__useref** () -- 1 connections
   - <- calls <- [[piisessioncard]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref__usestate** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__usestate** () -- 1 connections
   - <- calls <- [[piisessioncard]]
 - **HandleStartDeps** (uncounted-app/src/pages/OnboardingPage.test.ts) -- 1 connections
   - <- contains <- [[onboardingpagetest]]
 
 ## Internal Relationships
-- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__useeffect [EXTRACTED]
-- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__installglobalerrorhandler [EXTRACTED]
-- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__onnetworkchange [EXTRACTED]
-- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__flusherrorlog [EXTRACTED]
-- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__flushfunnelevents [EXTRACTED]
-- ThemeInitializer -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__useeffect [EXTRACTED]
-- ThemeInitializer -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__applytheme [EXTRACTED]
-- ThemeInitializer -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__loadthememode [EXTRACTED]
-- setupNativeListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__isnativeplatform [EXTRACTED]
-- setupNativeListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getplatform [EXTRACTED]
-- setupNativeListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__addlistener [EXTRACTED]
+- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__useeffect [EXTRACTED]
+- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__installglobalerrorhandler [EXTRACTED]
+- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__onnetworkchange [EXTRACTED]
+- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__flusherrorlog [EXTRACTED]
+- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__flushfunnelevents [EXTRACTED]
+- ThemeInitializer -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__useeffect [EXTRACTED]
+- ThemeInitializer -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__applytheme [EXTRACTED]
+- ThemeInitializer -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__loadthememode [EXTRACTED]
+- setupNativeListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__isnativeplatform [EXTRACTED]
+- setupNativeListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__getplatform [EXTRACTED]
+- setupNativeListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__addlistener [EXTRACTED]
 - OnboardingPage.test -> contains -> HandleStartDeps [EXTRACTED]
 - OnboardingPage.test -> contains -> runHandleStart [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__navigate [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__trackfunnel [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setloading [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__seterror [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setpermissiondenied [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__isnativeplatform [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__requestpermissions [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__trackedtrackfunnel [EXTRACTED]
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__trackednavigate [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__usestate [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__useref [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__useeffect [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setdetailloading [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getsanitizecache [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setcacheentry [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__loadtranscript [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__settranscript [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setaudiourl [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__isnativeplatform [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setaudioloading [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__loaddata [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__revokeobjecturl [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__usememo [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__flatmap [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__collectabsoluteranges [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__usecallback [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__onselectaction [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setpreviewaction [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setprocessingpreview [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__sanitizeaudio [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setprocessedaudiourl [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__readasdataurl [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__createobjecturl [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setexpanded [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__masksessiontitle [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__settranscriptview [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__rendertranscriptwithpii [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__piitypelabel [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__seekto [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__formatduration [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__highlightpiiinsentence [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__handlepreview [EXTRACTED]
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__onundodonotshare [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__navigate [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__trackfunnel [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setloading [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__seterror [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setpermissiondenied [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__isnativeplatform [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__requestpermissions [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__trackedtrackfunnel [EXTRACTED]
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__trackednavigate [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__usestate [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__useref [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__useeffect [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setdetailloading [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__getsanitizecache [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setcacheentry [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__settranscript [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setaudiourl [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__isnativeplatform [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setaudioloading [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__loaddata [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__revokeobjecturl [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__usememo [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__flatmap [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__collectabsoluteranges [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__usecallback [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__onselectaction [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setpreviewaction [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setprocessingpreview [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__sanitizeaudio [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setprocessedaudiourl [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__readasdataurl [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__createobjecturl [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setexpanded [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__masksessiontitle [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__settranscriptview [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__rendertranscriptwithpii [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__piitypelabel [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__seekto [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__formatduration [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__highlightpiiinsentence [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__handlepreview [EXTRACTED]
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__onundodonotshare [EXTRACTED]
 
 ## Cross-Community Connections
-- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__catch (-> [[unresolvedrefunresolvedrefunresolvedrefresolve-unresolvedrefunresolvedrefunresolvedrefabs]])
-- setupNativeListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__logerror (-> [[unresolvedrefunresolvedrefunresolvedrefresolve-unresolvedrefunresolvedrefunresolvedrefabs]])
-- OnboardingPage.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefvitest]])
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__setitem (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__parse (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__getitem (-> [[unresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefsetitem]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__readfile (-> [[unresolvedrefunresolvedrefunresolvedrefresolve-unresolvedrefunresolvedrefunresolvedrefabs]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__pop (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__split (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__tolocalestring (-> [[unresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedreftypessession]])
-- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedreflen]])
+- ErrorLoggerInit -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__catch (-> [[runpiiforall-runpiiforall]])
+- setupNativeListeners -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__logerror (-> [[runpiiforall-runpiiforall]])
+- OnboardingPage.test -> imports -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___vitest_ (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefjs-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefvitest]])
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- runHandleStart -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__setitem (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__loadtranscript (-> [[runpiiforall-runpiiforall]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__parse (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__getitem (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__readfile (-> [[runpiiforall-runpiiforall]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tolowercase (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__pop (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__split (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__startswith (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__push (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__map (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__reduce (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__tolocalestring (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefreact-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftypessession]])
+- PiiSessionCard -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
 
 ## Context
 이 커뮤니티는 PiiSessionCard, runHandleStart, ErrorLoggerInit를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 App.tsx, OnboardingPage.test.ts, PiiReviewPage.tsx, sttEngine.ts이다.

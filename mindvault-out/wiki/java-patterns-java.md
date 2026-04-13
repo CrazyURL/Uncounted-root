@@ -3,7 +3,7 @@ Cohesion: 0.11 | Nodes: 25
 
 ## Key Nodes
 - **Java Patterns** (.claude/rules/java/patterns.md) -- 10 connections
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpatterns]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpatterns]]
   - -> contains -> [[repository-pattern]]
   - -> contains -> [[service-layer]]
   - -> contains -> [[constructor-injection]]
@@ -22,19 +22,19 @@ Cohesion: 0.11 | Nodes: 25
   - <- has_code_example <- [[sealed-types-for-domain-models]]
   - <- has_code_example <- [[api-response-envelope]]
 - **Python Patterns** (.claude/rules/python/patterns.md) -- 6 connections
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpatterns]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpatterns]]
   - -> contains -> [[protocol-duck-typing]]
   - -> contains -> [[dataclasses-as-dtos]]
   - -> contains -> [[context-managers-generators]]
   - -> contains -> [[reference]]
   - <- contains <- [[patterns]]
 - **TypeScript/JavaScript Patterns** (.claude/rules/typescript/patterns.md) -- 5 connections
-  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpatterns]]
+  - -> references -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpatterns]]
   - -> contains -> [[api-response-format]]
   - -> contains -> [[custom-hooks-pattern]]
   - -> contains -> [[repository-pattern]]
   - <- contains <- [[patterns]]
-- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__patterns** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__patterns** () -- 3 connections
   - <- references <- [[python-patterns]]
   - <- references <- [[typescriptjavascript-patterns]]
   - <- references <- [[java-patterns]]
@@ -100,7 +100,7 @@ Cohesion: 0.11 | Nodes: 25
 - Builder Pattern -> has_code_example -> java [EXTRACTED]
 - Constructor Injection -> has_code_example -> java [EXTRACTED]
 - DTO Mapping -> has_code_example -> java [EXTRACTED]
-- Java Patterns -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__patterns [EXTRACTED]
+- Java Patterns -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__patterns [EXTRACTED]
 - Java Patterns -> contains -> Repository Pattern [EXTRACTED]
 - Java Patterns -> contains -> Service Layer [EXTRACTED]
 - Java Patterns -> contains -> Constructor Injection [EXTRACTED]
@@ -115,7 +115,7 @@ Cohesion: 0.11 | Nodes: 25
 - patterns -> contains -> Python Patterns [EXTRACTED]
 - Dataclasses as DTOs -> has_code_example -> python [EXTRACTED]
 - Protocol (Duck Typing) -> has_code_example -> python [EXTRACTED]
-- Python Patterns -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__patterns [EXTRACTED]
+- Python Patterns -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__patterns [EXTRACTED]
 - Python Patterns -> contains -> Protocol (Duck Typing) [EXTRACTED]
 - Python Patterns -> contains -> Dataclasses as DTOs [EXTRACTED]
 - Python Patterns -> contains -> Context Managers & Generators [EXTRACTED]
@@ -124,7 +124,7 @@ Cohesion: 0.11 | Nodes: 25
 - API Response Format -> has_code_example -> typescript [EXTRACTED]
 - Custom Hooks Pattern -> has_code_example -> typescript [EXTRACTED]
 - Repository Pattern -> has_code_example -> typescript [EXTRACTED]
-- TypeScript/JavaScript Patterns -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__patterns [EXTRACTED]
+- TypeScript/JavaScript Patterns -> references -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__patterns [EXTRACTED]
 - TypeScript/JavaScript Patterns -> contains -> API Response Format [EXTRACTED]
 - TypeScript/JavaScript Patterns -> contains -> Custom Hooks Pattern [EXTRACTED]
 - TypeScript/JavaScript Patterns -> contains -> Repository Pattern [EXTRACTED]
