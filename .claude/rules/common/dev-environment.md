@@ -26,6 +26,10 @@ cd uncounted-admin && yarn dev         # port 15173
 - Admin: `.env` (VITE_API_URL)
 - All env files are `.gitignore`d
 
+## DB Migrations
+
+`uncounted-api/supabase/migrations/` — 번호 순차 증가. 컬럼 변경 시 `uncounted-docs/` 문서도 업데이트.
+
 ## Caveats
 
 - Each subfolder is an independent Git repo — commit/PR per project

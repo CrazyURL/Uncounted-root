@@ -44,18 +44,7 @@ cd uncounted-app && npm run dev        # port 5173
 cd uncounted-admin && yarn dev         # port 15173
 ```
 
-## DB 마이그레이션
-
-`uncounted-api/supabase/migrations/` — 번호 순차 증가. 컬럼 변경 시 `uncounted-docs/` 문서도 업데이트.
-
 ## 상세 참조
 
-| 문서 | 내용 |
-|------|------|
-| `uncounted-api/CLAUDE.md` | 엔드포인트 목록, 미들웨어 체인, 인증 상세 |
-| `uncounted-voice-api/CLAUDE.md` | WhisperX STT 엔드포인트, 화자분리, PII 마스킹 |
-| `uncounted-app/CLAUDE.md` | 라우트, 네이티브 STT 파이프라인, 타입, localStorage |
-| `uncounted-admin/CLAUDE.md` | 관리자 라우트, 디렉토리 구조 |
-| `.claude/rules/common/architecture.md` | 암호화 통신, 인증 흐름, API 클라이언트 패턴 |
-| `.claude/rules/common/dev-environment.md` | 환경 분리, 환경변수, 주의사항 |
-| `.claude/rules/common/agents.md` | 에이전트 소유권, 크로스 프로젝트 규칙 |
+- 서브프로젝트별: `uncounted-{api,voice-api,app,admin}/CLAUDE.md`
+- 공통 규칙: `.claude/rules/common/*.md` (architecture · dev-environment · agents · DB 마이그레이션)
