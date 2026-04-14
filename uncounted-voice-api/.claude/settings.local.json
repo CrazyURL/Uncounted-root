@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/gdash/.claude/plugins/marketplaces/sangrokjung-claude-forge/**)",
+      "Read(//home/gdash/.claude/plugins/marketplaces/sangrokjung-claude-forge/.claude-plugin/**)"
+    ]
+  }
+}
