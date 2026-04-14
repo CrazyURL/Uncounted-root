@@ -1,99 +1,57 @@
 # extract_embedding & main
-Cohesion: 0.01 | Nodes: 266
+Cohesion: 0.01 | Nodes: 239
 
 ## Key Nodes
 - **extract_embedding** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_embedding.py) -- 27 connections
-  - -> calls -> [[unresolvedrefload]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefembeddingunavailable]]
-  - -> calls -> [[unresolvedrefmean]]
-  - -> calls -> [[unresolvedrefissubdtype]]
-  - -> calls -> [[unresolvedrefiinfo]]
-  - -> calls -> [[unresolvedrefastype]]
-  - -> calls -> [[unresolvedrefmax]]
-  - -> calls -> [[unresolvedrefabs]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefarange]]
-  - -> calls -> [[unresolvedreflinspace]]
-  - -> calls -> [[unresolvedrefinterp]]
-  - -> calls -> [[unresolvedrefto]]
-  - -> calls -> [[unresolvedrefreshape]]
-  - -> calls -> [[unresolvedreffromnumpy]]
-  - -> calls -> [[unresolvedrefnograd]]
-  - -> calls -> [[unresolvedrefmodel]]
-  - -> calls -> [[unresolvedrefhasattr]]
-  - -> calls -> [[unresolvedrefnumpy]]
-  - -> calls -> [[unresolvedrefcpu]]
-  - -> calls -> [[unresolvedrefdetach]]
-  - -> calls -> [[unresolvedrefasarray]]
-  - -> calls -> [[unresolvedrefsqueeze]]
-  - -> calls -> [[unresolvedreffloat]]
-  - -> calls -> [[unresolvedrefnorm]]
+  - -> calls -> [[unresolvedrefunresolvedrefload]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefembeddingunavailable]]
+  - -> calls -> [[unresolvedrefunresolvedrefmean]]
+  - -> calls -> [[unresolvedrefunresolvedrefissubdtype]]
+  - -> calls -> [[unresolvedrefunresolvedrefiinfo]]
+  - -> calls -> [[unresolvedrefunresolvedrefastype]]
+  - -> calls -> [[unresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefabs]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedreflinspace]]
+  - -> calls -> [[unresolvedrefunresolvedrefinterp]]
+  - -> calls -> [[unresolvedrefunresolvedrefto]]
+  - -> calls -> [[unresolvedrefunresolvedrefreshape]]
+  - -> calls -> [[unresolvedrefunresolvedreffromnumpy]]
+  - -> calls -> [[unresolvedrefunresolvedrefnograd]]
+  - -> calls -> [[unresolvedrefunresolvedrefmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefhasattr]]
+  - -> calls -> [[unresolvedrefunresolvedrefnumpy]]
+  - -> calls -> [[unresolvedrefunresolvedrefcpu]]
+  - -> calls -> [[unresolvedrefunresolvedrefdetach]]
+  - -> calls -> [[unresolvedrefunresolvedrefasarray]]
+  - -> calls -> [[unresolvedrefunresolvedrefsqueeze]]
+  - -> calls -> [[unresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefnorm]]
   - <- contains <- [[speakerembeddingmodel]]
 - **main** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 22 connections
-  - -> calls -> [[unresolvedrefargumentparser]]
-  - -> calls -> [[unresolvedrefaddargument]]
-  - -> calls -> [[unresolvedrefparseargs]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - -> calls -> [[unresolvedrefsplit]]
-  - -> calls -> [[unresolvedrefprint]]
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefdiscovertasks]]
-  - -> calls -> [[unresolvedrefexit]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefpath]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefspeakerembeddingmodel]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefvalidatetask]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefprintexc]]
-  - -> calls -> [[unresolvedrefstr]]
-  - -> calls -> [[unresolvedrefwritetext]]
-  - -> calls -> [[unresolvedrefdumps]]
-  - -> calls -> [[unresolvedrefrenderreport]]
-  - <- contains <- [[validatereclusteroffline]]
-- **__unresolved__::ref::len** () -- 20 connections
-  - <- calls <- [[reconstructpseudoaudio]]
-  - <- calls <- [[permutationinvariantmatch]]
-  - <- calls <- [[validatetask]]
-  - <- calls <- [[main]]
-  - <- calls <- [[collectspeakerstats]]
-  - <- calls <- [[testreject400logomitsfilename]]
-  - <- calls <- [[computeaudiostats]]
-  - <- calls <- [[transcribechunk]]
-  - <- calls <- [[transcribechunked]]
-  - <- calls <- [[transcribe]]
-  - <- calls <- [[processaudio]]
-  - <- calls <- [[setaudio]]
-  - <- calls <- [[cleanupexpired]]
-  - <- calls <- [[buildembeddingwindows]]
-  - <- calls <- [[clustertwo]]
-  - <- calls <- [[computeconfidence]]
-  - <- calls <- [[maybereclusterspeakers]]
-  - <- calls <- [[extractembedding]]
-  - <- calls <- [[speakercount]]
-  - <- calls <- [[wordlevelspeakeraccuracy]]
-- **_validate_task** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 20 connections
-  - -> calls -> [[unresolvedrefprint]]
-  - -> calls -> [[unresolvedrefloadtaskjson]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefflattenwords]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedreflabeldistribution]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefloadrealaudio]]
-  - -> calls -> [[unresolvedrefreconstructpseudoaudio]]
-  - -> calls -> [[unresolvedrefmaybereclusterspeakers]]
-  - -> calls -> [[unresolvedrefprintexc]]
-  - -> calls -> [[unresolvedreflist]]
-  - -> calls -> [[unresolvedrefsum]]
-  - -> calls -> [[unresolvedrefzip]]
-  - -> calls -> [[unresolvedrefpermutationinvariantmatch]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefround]]
-  - -> calls -> [[unresolvedreffloat]]
-  - -> calls -> [[unresolvedrefbool]]
+  - -> calls -> [[unresolvedrefunresolvedrefargumentparser]]
+  - -> calls -> [[unresolvedrefunresolvedrefaddargument]]
+  - -> calls -> [[unresolvedrefunresolvedrefparseargs]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefdiscovertasks]]
+  - -> calls -> [[unresolvedrefunresolvedrefexit]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefpath]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefspeakerembeddingmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefvalidatetask]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefprintexc]]
+  - -> calls -> [[unresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefrenderreport]]
   - <- contains <- [[validatereclusteroffline]]
 - **validate_recluster_offline** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 20 connections
   - -> contains -> [[loadtaskjson]]
@@ -106,66 +64,88 @@ Cohesion: 0.01 | Nodes: 266
   - -> contains -> [[discovertasks]]
   - -> contains -> [[renderreport]]
   - -> contains -> [[main]]
-  - -> imports -> [[unresolvedrefargparse]]
-  - -> imports -> [[unresolvedrefitertools]]
-  - -> imports -> [[unresolvedrefjson]]
-  - -> imports -> [[unresolvedrefsys]]
-  - -> imports -> [[unresolvedreftime]]
-  - -> imports -> [[unresolvedrefpathlib]]
-  - -> imports -> [[unresolvedreftyping]]
-  - -> imports -> [[unresolvedrefservices]]
-  - -> imports -> [[unresolvedrefspeakerembedding]]
-  - -> imports -> [[unresolvedrefspeakerrecluster]]
-- **_reconstruct_pseudo_audio** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 17 connections
-  - -> calls -> [[unresolvedreffloat]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefmax]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefzeros]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefread]]
-  - -> calls -> [[unresolvedrefstr]]
-  - -> calls -> [[unresolvedrefprint]]
-  - -> calls -> [[unresolvedrefmean]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefarange]]
-  - -> calls -> [[unresolvedreflinspace]]
-  - -> calls -> [[unresolvedrefastype]]
-  - -> calls -> [[unresolvedrefinterp]]
-  - -> calls -> [[unresolvedrefpad]]
+  - -> imports -> [[unresolvedrefunresolvedrefargparse]]
+  - -> imports -> [[unresolvedrefunresolvedrefitertools]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefservices]]
+  - -> imports -> [[unresolvedrefunresolvedrefspeakerembedding]]
+  - -> imports -> [[unresolvedrefunresolvedrefspeakerrecluster]]
+- **_validate_task** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 20 connections
+  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadtaskjson]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefflattenwords]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedreflabeldistribution]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadrealaudio]]
+  - -> calls -> [[unresolvedrefunresolvedrefreconstructpseudoaudio]]
+  - -> calls -> [[unresolvedrefunresolvedrefmaybereclusterspeakers]]
+  - -> calls -> [[unresolvedrefunresolvedrefprintexc]]
+  - -> calls -> [[unresolvedrefunresolvedreflist]]
+  - -> calls -> [[unresolvedrefunresolvedrefsum]]
+  - -> calls -> [[unresolvedrefunresolvedrefzip]]
+  - -> calls -> [[unresolvedrefunresolvedrefpermutationinvariantmatch]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefbool]]
   - <- contains <- [[validatereclusteroffline]]
-- **__unresolved__::ref::json** () -- 16 connections
-  - <- imports <- [[validatereclusteroffline]]
-  - <- calls <- [[posttranscribe]]
-  - <- calls <- [[polljob]]
-  - <- imports <- [[verifyreclusteroptionb]]
-  - <- imports <- [[conftest]]
-  - <- calls <- [[testqueuefullreturns503]]
-  - <- calls <- [[testunderlimitproceedspastqueuecheck]]
-  - <- calls <- [[testamrextensionaccepted]]
-  - <- calls <- [[testhealthincludesqueuewhenempty]]
-  - <- calls <- [[testhealthreflectsactivejobs]]
-  - <- calls <- [[testhealthutilizationatcapacity]]
-  - <- calls <- [[testhealthcompletedtasksexcludedfromqueue]]
-  - <- imports <- [[testdiarizationlongcall]]
-  - <- calls <- [[refreshtokenonce]]
-  - <- calls <- [[apifetch]]
-  - <- calls <- [[posttranscribe]]
+- **load_models** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/stt_processor.py) -- 17 connections
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefcleanuptempfiles]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloadalignmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefdiarizationpipeline]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefloaddfmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefcleanuptempfiles]]
+  - -> calls -> [[unresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadalignmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefdiarizationpipeline]]
+  - -> calls -> [[unresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefloaddfmodel]]
+  - <- contains <- [[sttprocessor]]
+- **_reconstruct_pseudo_audio** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 17 connections
+  - -> calls -> [[unresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefzeros]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefread]]
+  - -> calls -> [[unresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedrefmean]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefarange]]
+  - -> calls -> [[unresolvedrefunresolvedreflinspace]]
+  - -> calls -> [[unresolvedrefunresolvedrefastype]]
+  - -> calls -> [[unresolvedrefunresolvedrefinterp]]
+  - -> calls -> [[unresolvedrefunresolvedrefpad]]
+  - <- contains <- [[validatereclusteroffline]]
 - **maybe_recluster_speakers** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_recluster.py) -- 15 connections
-  - -> calls -> [[unresolvedrefreclusterresult]]
-  - -> calls -> [[unresolvedreftuple]]
-  - -> calls -> [[unresolvedrefdict]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedreffloat]]
-  - -> calls -> [[unresolvedrefbuildembeddingwindows]]
-  - -> calls -> [[unresolvedrefenumerate]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefastype]]
-  - -> calls -> [[unresolvedrefextractembedding]]
-  - -> calls -> [[unresolvedrefisinstance]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefvstack]]
-  - -> calls -> [[unresolvedrefreclusterspeakers]]
+  - -> calls -> [[unresolvedrefunresolvedrefreclusterresult]]
+  - -> calls -> [[unresolvedrefunresolvedreftuple]]
+  - -> calls -> [[unresolvedrefunresolvedrefdict]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefbuildembeddingwindows]]
+  - -> calls -> [[unresolvedrefunresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefastype]]
+  - -> calls -> [[unresolvedrefunresolvedrefextractembedding]]
+  - -> calls -> [[unresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefvstack]]
+  - -> calls -> [[unresolvedrefunresolvedrefreclusterspeakers]]
   - <- contains <- [[speakerrecluster]]
 - **verify_recluster_option_b** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/verify_recluster_option_b.py) -- 15 connections
   - -> contains -> [[posttranscribe]]
@@ -176,42 +156,42 @@ Cohesion: 0.01 | Nodes: 266
   - -> contains -> [[loadsummary]]
   - -> contains -> [[compare]]
   - -> contains -> [[main]]
-  - -> imports -> [[unresolvedrefjson]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefsys]]
-  - -> imports -> [[unresolvedreftime]]
-  - -> imports -> [[unresolvedrefpathlib]]
-  - -> imports -> [[unresolvedreftyping]]
-  - -> imports -> [[unresolvedrefrequests]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefrequests]]
 - **_cleanup_expired** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 14 connections
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefitems]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefwarning]]
-  - -> calls -> [[unresolvedrefmodelcopy]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefsorted]]
-  - -> calls -> [[unresolvedrefgetresultsdir]]
-  - -> calls -> [[unresolvedrefpop]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefrmtree]]
-  - -> calls -> [[unresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefitems]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefmodelcopy]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefsorted]]
+  - -> calls -> [[unresolvedrefunresolvedrefgetresultsdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefpop]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefrmtree]]
+  - -> calls -> [[unresolvedrefunresolvedrefinfo]]
   - <- contains <- [[jobstore]]
-- **__unresolved__::ref::time** () -- 13 connections
-  - <- calls <- [[validatetask]]
-  - <- imports <- [[validatereclusteroffline]]
-  - <- calls <- [[polljob]]
-  - <- calls <- [[runone]]
-  - <- imports <- [[verifyreclusteroptionb]]
-  - <- imports <- [[testdiarizationlongcall]]
-  - <- calls <- [[applyreclustering]]
+- **__unresolved__::ref::__unresolved____ref__time** () -- 13 connections
   - <- calls <- [[loadmodels]]
   - <- calls <- [[transcribe]]
+  - <- imports <- [[validatereclusteroffline]]
+  - <- calls <- [[validatetask]]
+  - <- imports <- [[verifyreclusteroptionb]]
+  - <- calls <- [[polljob]]
+  - <- calls <- [[runone]]
+  - <- imports <- [[testdiarizationlongcall]]
   - <- imports <- [[sttprocessor]]
+  - <- calls <- [[applyreclustering]]
+  - <- imports <- [[jobstore]]
   - <- calls <- [[create]]
   - <- calls <- [[cleanupexpired]]
-  - <- imports <- [[jobstore]]
 - **JobStore** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 13 connections
   - -> contains -> [[init]]
   - -> contains -> [[ensureresultsdir]]
@@ -227,72 +207,72 @@ Cohesion: 0.01 | Nodes: 266
   - -> contains -> [[cleanupexpired]]
   - <- contains <- [[jobstore]]
 - **_apply_reclustering** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/stt_processor.py) -- 13 connections
-  - -> calls -> [[unresolvedreffromenv]]
-  - -> calls -> [[unresolvedrefisenabledfor]]
-  - -> calls -> [[unresolvedrefspeakerembeddingmodel]]
-  - -> calls -> [[unresolvedrefenumerate]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefmaybereclusterspeakers]]
-  - -> calls -> [[unresolvedreflist]]
-  - -> calls -> [[unresolvedrefdict]]
-  - -> calls -> [[unresolvedrefzip]]
-  - -> calls -> [[unresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedreffromenv]]
+  - -> calls -> [[unresolvedrefunresolvedrefisenabledfor]]
+  - -> calls -> [[unresolvedrefunresolvedrefspeakerembeddingmodel]]
+  - -> calls -> [[unresolvedrefunresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefmaybereclusterspeakers]]
+  - -> calls -> [[unresolvedrefunresolvedreflist]]
+  - -> calls -> [[unresolvedrefunresolvedrefdict]]
+  - -> calls -> [[unresolvedrefunresolvedrefzip]]
+  - -> calls -> [[unresolvedrefunresolvedrefinfo]]
   - <- contains <- [[sttprocessor]]
-- **__unresolved__::ref::exists** () -- 12 connections
+- **__unresolved__::ref::__unresolved____ref__exists** () -- 12 connections
+  - <- calls <- [[cleanuptempfiles]]
+  - <- calls <- [[transcribe]]
   - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[discovertasks]]
   - <- calls <- [[main]]
   - <- calls <- [[runone]]
   - <- calls <- [[loadsummary]]
   - <- calls <- [[shouldskip]]
-  - <- calls <- [[cleanuptempfiles]]
-  - <- calls <- [[transcribe]]
   - <- calls <- [[ensureresultsdir]]
   - <- calls <- [[getresultsdir]]
   - <- calls <- [[getaudio]]
   - <- calls <- [[cleanupexpired]]
 - **transcribe** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/routers/transcribe.py) -- 12 connections
   - -> contains -> [[processaudio]]
-  - -> imports -> [[unresolvedreflogging]]
-  - -> imports -> [[unresolvedrefuuid]]
-  - -> imports -> [[unresolvedrefpathlib]]
-  - -> imports -> [[unresolvedreftyping]]
-  - -> imports -> [[unresolvedrefaiofiles]]
-  - -> imports -> [[unresolvedreffastapi]]
-  - -> imports -> [[unresolvedrefresponses]]
-  - -> imports -> [[unresolvedrefapp]]
-  - -> imports -> [[unresolvedrefjobstore]]
-  - -> imports -> [[unresolvedrefschemas]]
-  - -> imports -> [[unresolvedrefwhisperxservice]]
+  - -> imports -> [[unresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefuuid]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefaiofiles]]
+  - -> imports -> [[unresolvedrefunresolvedreffastapi]]
+  - -> imports -> [[unresolvedrefunresolvedrefresponses]]
+  - -> imports -> [[unresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefjobstore]]
+  - -> imports -> [[unresolvedrefunresolvedrefschemas]]
+  - -> imports -> [[unresolvedrefunresolvedrefwhisperxservice]]
 - **_permutation_invariant_match** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 12 connections
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedreflab]]
-  - -> calls -> [[unresolvedrefsorted]]
-  - -> calls -> [[unresolvedrefset]]
-  - -> calls -> [[unresolvedreflist]]
-  - -> calls -> [[unresolvedreffromkeys]]
-  - -> calls -> [[unresolvedrefpermutations]]
-  - -> calls -> [[unresolvedrefdict]]
-  - -> calls -> [[unresolvedrefzip]]
-  - -> calls -> [[unresolvedrefsum]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedreflab]]
+  - -> calls -> [[unresolvedrefunresolvedrefsorted]]
+  - -> calls -> [[unresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedreflist]]
+  - -> calls -> [[unresolvedrefunresolvedreffromkeys]]
+  - -> calls -> [[unresolvedrefunresolvedrefpermutations]]
+  - -> calls -> [[unresolvedrefunresolvedrefdict]]
+  - -> calls -> [[unresolvedrefunresolvedrefzip]]
+  - -> calls -> [[unresolvedrefunresolvedrefsum]]
   - <- contains <- [[validatereclusteroffline]]
 - **_run_one** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/verify_recluster_option_b.py) -- 12 connections
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedreffilenotfounderror]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefprint]]
-  - -> calls -> [[unresolvedrefposttranscribe]]
-  - -> calls -> [[unresolvedrefpolljob]]
-  - -> calls -> [[unresolvedrefcollectspeakerstats]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefround]]
-  - -> calls -> [[unresolvedrefwritetext]]
-  - -> calls -> [[unresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedreffilenotfounderror]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedrefposttranscribe]]
+  - -> calls -> [[unresolvedrefunresolvedrefpolljob]]
+  - -> calls -> [[unresolvedrefunresolvedrefcollectspeakerstats]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefdumps]]
   - <- contains <- [[verifyreclusteroptionb]]
-- **__unresolved__::ref::pytest** () -- 11 connections
+- **__unresolved__::ref::__unresolved____ref__pytest** () -- 11 connections
   - <- imports <- [[teststtprocessordiarizationoptions]]
   - <- imports <- [[conftest]]
   - <- imports <- [[testdiarizationregression]]
@@ -312,22 +292,11 @@ Cohesion: 0.01 | Nodes: 266
   - -> contains -> [[computeconfidence]]
   - -> contains -> [[canonicalizelabels]]
   - -> contains -> [[maybereclusterspeakers]]
-  - -> imports -> [[unresolvedrefdataclasses]]
-  - -> imports -> [[unresolvedreftyping]]
-  - -> imports -> [[unresolvedrefcluster]]
-  - -> imports -> [[unresolvedrefspeakerembedding]]
-- **__unresolved__::ref::create** () -- 10 connections
-  - <- calls <- [[testpendingcountsasactive]]
-  - <- calls <- [[testprocessingcountsasactive]]
-  - <- calls <- [[testcompleteddoesnotcount]]
-  - <- calls <- [[testfaileddoesnotcount]]
-  - <- calls <- [[testmixed]]
-  - <- calls <- [[testqueuefullreturns503]]
-  - <- calls <- [[testcompletedtasksdonotblock]]
-  - <- calls <- [[testhealthreflectsactivejobs]]
-  - <- calls <- [[testhealthutilizationatcapacity]]
-  - <- calls <- [[testhealthcompletedtasksexcludedfromqueue]]
-- **__unresolved__::ref::os** () -- 10 connections
+  - -> imports -> [[unresolvedrefunresolvedrefdataclasses]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefcluster]]
+  - -> imports -> [[unresolvedrefunresolvedrefspeakerembedding]]
+- **__unresolved__::ref::__unresolved____ref__os** () -- 10 connections
   - <- imports <- [[verifyreclusteroptionb]]
   - <- imports <- [[conftest]]
   - <- imports <- [[conftest]]
@@ -338,140 +307,92 @@ Cohesion: 0.01 | Nodes: 266
   - <- imports <- [[diarizationconfig]]
   - <- imports <- [[reclusterconfig]]
   - <- imports <- [[speakerembedding]]
-- **__unresolved__::ref::setattr** () -- 10 connections
-  - <- calls <- [[testqueuefullreturns503]]
-  - <- calls <- [[testunderlimitproceedspastqueuecheck]]
-  - <- calls <- [[testcompletedtasksdonotblock]]
-  - <- calls <- [[testamrextensionaccepted]]
-  - <- calls <- [[test3gpextensionaccepted]]
-  - <- calls <- [[testreject400logomitsfilename]]
-  - <- calls <- [[testhealthincludesqueuewhenempty]]
-  - <- calls <- [[testhealthreflectsactivejobs]]
-  - <- calls <- [[testhealthutilizationatcapacity]]
-  - <- calls <- [[testhealthcompletedtasksexcludedfromqueue]]
-- **build_embedding_windows** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_recluster.py) -- 10 connections
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefgetspeaker]]
-  - -> calls -> [[unresolvedrefrange]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedreftuple]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefmin]]
-  - -> calls -> [[unresolvedrefembeddingwindow]]
-  - <- contains <- [[speakerrecluster]]
 - **job_store** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 9 connections
   - -> contains -> [[jobstore]]
-  - -> imports -> [[unresolvedreflogging]]
-  - -> imports -> [[unresolvedrefshutil]]
-  - -> imports -> [[unresolvedrefthreading]]
-  - -> imports -> [[unresolvedreftime]]
-  - -> imports -> [[unresolvedrefpathlib]]
-  - -> imports -> [[unresolvedreftyping]]
-  - -> imports -> [[unresolvedrefapp]]
-  - -> imports -> [[unresolvedrefschemas]]
+  - -> imports -> [[unresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefshutil]]
+  - -> imports -> [[unresolvedrefunresolvedrefthreading]]
+  - -> imports -> [[unresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefschemas]]
 - **_cluster_two** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_recluster.py) -- 9 connections
-  - -> calls -> [[unresolvedrefzeros]]
-  - -> calls -> [[unresolvedrefarray]]
-  - -> calls -> [[unresolvedrefrange]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedreffloat]]
-  - -> calls -> [[unresolvedrefextend]]
-  - -> calls -> [[unresolvedrefpop]]
-  - -> calls -> [[unresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefunresolvedrefzeros]]
+  - -> calls -> [[unresolvedrefunresolvedrefarray]]
+  - -> calls -> [[unresolvedrefunresolvedrefrange]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefextend]]
+  - -> calls -> [[unresolvedrefunresolvedrefpop]]
+  - -> calls -> [[unresolvedrefunresolvedrefenumerate]]
   - <- contains <- [[speakerrecluster]]
 - **recluster_speakers** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_recluster.py) -- 9 connections
-  - -> calls -> [[unresolvedrefclustertwo]]
-  - -> calls -> [[unresolvedrefcomputeconfidence]]
-  - -> calls -> [[unresolvedreftuple]]
-  - -> calls -> [[unresolvedrefdict]]
-  - -> calls -> [[unresolvedrefenumerate]]
-  - -> calls -> [[unresolvedrefcanonicalizelabels]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefclustertwo]]
+  - -> calls -> [[unresolvedrefunresolvedrefcomputeconfidence]]
+  - -> calls -> [[unresolvedrefunresolvedreftuple]]
+  - -> calls -> [[unresolvedrefunresolvedrefdict]]
+  - -> calls -> [[unresolvedrefunresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefunresolvedrefcanonicalizelabels]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
   - <- contains <- [[speakerrecluster]]
 - **_run_all** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/verify_recluster_option_b.py) -- 9 connections
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefrunone]]
-  - -> calls -> [[unresolvedrefprint]]
-  - -> calls -> [[unresolvedrefstr]]
-  - -> calls -> [[unresolvedrefstrftime]]
-  - -> calls -> [[unresolvedrefwritetext]]
-  - -> calls -> [[unresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefrunone]]
+  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefdumps]]
   - <- contains <- [[verifyreclusteroptionb]]
-- **__unresolved__::ref::strip** () -- 8 connections
-  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref__strip** () -- 8 connections
   - <- calls <- [[getaudioduration]]
   - <- calls <- [[cleansegments]]
+  - <- calls <- [[main]]
   - <- calls <- [[parsebool]]
   - <- calls <- [[parseendpoints]]
   - <- calls <- [[parsebool]]
   - <- calls <- [[parseendpoints]]
   - <- calls <- [[parsefloat]]
 - **get_audio** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 8 connections
-  - -> calls -> [[unresolvedrefgetresultsdir]]
-  - -> calls -> [[unresolvedrefresolve]]
-  - -> calls -> [[unresolvedrefstartswith]]
-  - -> calls -> [[unresolvedrefstr]]
-  - -> calls -> [[unresolvedrefwarning]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefisfile]]
+  - -> calls -> [[unresolvedrefunresolvedrefgetresultsdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefresolve]]
+  - -> calls -> [[unresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefisfile]]
   - <- contains <- [[jobstore]]
 - **main** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/main.py) -- 8 connections
-  - -> imports -> [[unresolvedreflogging]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefcontextlib]]
-  - -> imports -> [[unresolvedreffastapi]]
-  - -> imports -> [[unresolvedrefcors]]
-  - -> imports -> [[unresolvedrefapp]]
-  - -> imports -> [[unresolvedrefrouters]]
-  - -> imports -> [[unresolvedrefwhisperxservice]]
+  - -> imports -> [[unresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefcontextlib]]
+  - -> imports -> [[unresolvedrefunresolvedreffastapi]]
+  - -> imports -> [[unresolvedrefunresolvedrefcors]]
+  - -> imports -> [[unresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefrouters]]
+  - -> imports -> [[unresolvedrefunresolvedrefwhisperxservice]]
 - **_load** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_embedding.py) -- 8 connections
-  - -> calls -> [[unresolvedrefembeddingunavailable]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedreflower]]
-  - -> calls -> [[unresolvedrefisavailable]]
-  - -> calls -> [[unresolvedreffrompretrained]]
-  - -> calls -> [[unresolvedrefeval]]
-  - -> calls -> [[unresolvedrefto]]
+  - -> calls -> [[unresolvedrefunresolvedrefembeddingunavailable]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedreflower]]
+  - -> calls -> [[unresolvedrefunresolvedrefisavailable]]
+  - -> calls -> [[unresolvedrefunresolvedreffrompretrained]]
+  - -> calls -> [[unresolvedrefunresolvedrefeval]]
+  - -> calls -> [[unresolvedrefunresolvedrefto]]
   - <- contains <- [[speakerembeddingmodel]]
-- **_compute_confidence** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_recluster.py) -- 8 connections
-  - -> calls -> [[unresolvedrefrange]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefmean]]
-  - -> calls -> [[unresolvedrefmax]]
-  - -> calls -> [[unresolvedrefmin]]
-  - -> calls -> [[unresolvedreffloat]]
-  - <- contains <- [[speakerrecluster]]
 - **_poll_job** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/verify_recluster_option_b.py) -- 8 connections
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefraiseforstatus]]
-  - -> calls -> [[unresolvedrefjson]]
-  - -> calls -> [[unresolvedrefruntimeerror]]
-  - -> calls -> [[unresolvedrefsleep]]
-  - -> calls -> [[unresolvedreftimeouterror]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefraiseforstatus]]
+  - -> calls -> [[unresolvedrefunresolvedrefjson]]
+  - -> calls -> [[unresolvedrefunresolvedrefruntimeerror]]
+  - -> calls -> [[unresolvedrefunresolvedrefsleep]]
+  - -> calls -> [[unresolvedrefunresolvedreftimeouterror]]
   - <- contains <- [[verifyreclusteroptionb]]
-- **test_queue_full_returns_503** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 8 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefactivecount]]
-  - -> calls -> [[unresolvedrefpost]]
-  - -> calls -> [[unresolvedrefjson]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefstr]]
-  - <- contains <- [[testqueuedepthendpoint]]
-- **__unresolved__::ref::active_count** () -- 7 connections
-  - <- calls <- [[testpendingcountsasactive]]
-  - <- calls <- [[testprocessingcountsasactive]]
-  - <- calls <- [[testcompleteddoesnotcount]]
-  - <- calls <- [[testfaileddoesnotcount]]
-  - <- calls <- [[testmixed]]
-  - <- calls <- [[testqueuefullreturns503]]
-  - <- calls <- [[testcompletedtasksdonotblock]]
-- **__unresolved__::ref::pathlib** () -- 7 connections
+- **__unresolved__::ref::__unresolved____ref__pathlib** () -- 7 connections
   - <- imports <- [[validatereclusteroffline]]
   - <- imports <- [[verifyreclusteroptionb]]
   - <- imports <- [[testdiarizationlongcall]]
@@ -479,394 +400,291 @@ Cohesion: 0.01 | Nodes: 266
   - <- imports <- [[config]]
   - <- imports <- [[transcribe]]
   - <- imports <- [[jobstore]]
-- **__unresolved__::ref::post** () -- 7 connections
-  - <- calls <- [[posttranscribe]]
-  - <- calls <- [[testqueuefullreturns503]]
-  - <- calls <- [[testunderlimitproceedspastqueuecheck]]
-  - <- calls <- [[testcompletedtasksdonotblock]]
-  - <- calls <- [[testamrextensionaccepted]]
-  - <- calls <- [[test3gpextensionaccepted]]
-  - <- calls <- [[testreject400logomitsfilename]]
 - **set_audio** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 7 connections
-  - -> calls -> [[unresolvedrefgetresultsdir]]
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefitems]]
-  - -> calls -> [[unresolvedrefwritebytes]]
-  - -> calls -> [[unresolvedrefinfo]]
-  - -> calls -> [[unresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefgetresultsdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefitems]]
+  - -> calls -> [[unresolvedrefunresolvedrefwritebytes]]
+  - -> calls -> [[unresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
   - <- contains <- [[jobstore]]
 - **test_diarization_long_call** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/integration/test_diarization_long_call.py) -- 7 connections
   - -> contains -> [[shouldskip]]
-  - -> imports -> [[unresolvedrefjson]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedreftime]]
-  - -> imports -> [[unresolvedrefpathlib]]
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefsoundfile]]
-- **test_completed_tasks_do_not_block** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 7 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefsetresult]]
-  - -> calls -> [[unresolvedrefseterror]]
-  - -> calls -> [[unresolvedrefactivecount]]
-  - -> calls -> [[unresolvedrefpost]]
-  - <- contains <- [[testqueuedepthendpoint]]
-- **test_mixed** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 7 connections
-  - -> calls -> [[unresolvedrefjobstore]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefupdatestatus]]
-  - -> calls -> [[unresolvedrefsetresult]]
-  - -> calls -> [[unresolvedrefseterror]]
-  - -> calls -> [[unresolvedrefactivecount]]
-  - <- contains <- [[testactivecount]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefsoundfile]]
 - **test_queue_depth** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 7 connections
   - -> contains -> [[testactivecount]]
   - -> contains -> [[testqueuedepthendpoint]]
   - -> contains -> [[testextensionvalidation]]
   - -> contains -> [[testhealthqueuefield]]
-  - -> imports -> [[unresolvedrefapp]]
-  - -> imports -> [[unresolvedrefjobstore]]
-  - -> imports -> [[unresolvedrefschemas]]
+  - -> imports -> [[unresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefjobstore]]
+  - -> imports -> [[unresolvedrefunresolvedrefschemas]]
 - **test_speaker_embedding** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_speaker_embedding.py) -- 7 connections
   - -> contains -> [[installfakepyannote]]
   - -> contains -> [[reloadmodule]]
-  - -> imports -> [[unresolvedrefsys]]
-  - -> imports -> [[unresolvedreftypes]]
-  - -> imports -> [[unresolvedrefmock]]
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedreftorch]]
-- **__unresolved__::ref::app** () -- 6 connections
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedreftypes]]
+  - -> imports -> [[unresolvedrefunresolvedrefmock]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedreftorch]]
+- **__unresolved__::ref::__unresolved____ref__app** () -- 6 connections
   - <- imports <- [[testqueuedepth]]
   - <- imports <- [[teststtprocessorreclusterintegration]]
   - <- imports <- [[sttprocessor]]
   - <- imports <- [[main]]
   - <- imports <- [[transcribe]]
   - <- imports <- [[jobstore]]
-- **__unresolved__::ref::enumerate** () -- 6 connections
-  - <- calls <- [[applyreclustering]]
+- **__unresolved__::ref::__unresolved____ref__enumerate** () -- 6 connections
   - <- calls <- [[transcribe]]
+  - <- calls <- [[applyreclustering]]
   - <- calls <- [[reclusterspeakers]]
   - <- calls <- [[clustertwo]]
   - <- calls <- [[canonicalizelabels]]
   - <- calls <- [[maybereclusterspeakers]]
-- **__unresolved__::ref::print** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref__print** () -- 6 connections
   - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[validatetask]]
   - <- calls <- [[main]]
   - <- calls <- [[runone]]
   - <- calls <- [[runall]]
   - <- calls <- [[compare]]
-- **__unresolved__::ref::sorted** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref__sorted** () -- 6 connections
+  - <- calls <- [[transcribe]]
   - <- calls <- [[permutationinvariantmatch]]
   - <- calls <- [[discovertasks]]
-  - <- calls <- [[transcribe]]
   - <- calls <- [[cleanupexpired]]
   - <- calls <- [[canonicalizelabels]]
   - <- calls <- [[wordlevelspeakeraccuracy]]
-- **__unresolved__::ref::typing** () -- 6 connections
+- **__unresolved__::ref::__unresolved____ref__typing** () -- 6 connections
   - <- imports <- [[validatereclusteroffline]]
   - <- imports <- [[verifyreclusteroptionb]]
   - <- imports <- [[transcribe]]
   - <- imports <- [[jobstore]]
   - <- imports <- [[speakerrecluster]]
   - <- imports <- [[diarizationmetrics]]
+- **__unresolved__::ref::__unresolved____ref__warning** () -- 6 connections
+  - <- calls <- [[loadmodels]]
+  - <- calls <- [[transcribechunk]]
+  - <- calls <- [[transcribe]]
+  - <- calls <- [[ensureresultsdir]]
+  - <- calls <- [[getaudio]]
+  - <- calls <- [[cleanupexpired]]
 - **_parse_bool** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/diarization_config.py) -- 6 connections
-  - -> calls -> [[unresolvedrefisinstance]]
-  - -> calls -> [[unresolvedrefdiarizationconfigerror]]
-  - -> calls -> [[unresolvedreftype]]
-  - -> calls -> [[unresolvedreflower]]
-  - -> calls -> [[unresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefdiarizationconfigerror]]
+  - -> calls -> [[unresolvedrefunresolvedreftype]]
+  - -> calls -> [[unresolvedrefunresolvedreflower]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
   - <- contains <- [[diarizationconfig]]
-- **_parse_bool** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/recluster_config.py) -- 6 connections
-  - -> calls -> [[unresolvedrefisinstance]]
-  - -> calls -> [[unresolvedrefreclusterconfigerror]]
-  - -> calls -> [[unresolvedreftype]]
-  - -> calls -> [[unresolvedreflower]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - <- contains <- [[reclusterconfig]]
 - **recluster_config** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/recluster_config.py) -- 6 connections
   - -> contains -> [[reclusterconfigerror]]
   - -> contains -> [[parsebool]]
   - -> contains -> [[parseendpoints]]
   - -> contains -> [[parsefloat]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefdataclasses]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefdataclasses]]
+- **_parse_bool** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/recluster_config.py) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefreclusterconfigerror]]
+  - -> calls -> [[unresolvedrefunresolvedreftype]]
+  - -> calls -> [[unresolvedrefunresolvedreflower]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - <- contains <- [[reclusterconfig]]
 - **_discover_tasks** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 6 connections
-  - -> calls -> [[unresolvedrefsorted]]
-  - -> calls -> [[unresolvedrefglob]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefisdir]]
-  - -> calls -> [[unresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefsorted]]
+  - -> calls -> [[unresolvedrefunresolvedrefglob]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefisdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
   - <- contains <- [[validatereclusteroffline]]
 - **conftest** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/conftest.py) -- 6 connections
-  - -> imports -> [[unresolvedrefjson]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefsys]]
-  - -> imports -> [[unresolvedrefmock]]
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefjobstore]]
-- **TestActiveCount** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 6 connections
-  - -> contains -> [[testpendingcountsasactive]]
-  - -> contains -> [[testprocessingcountsasactive]]
-  - -> contains -> [[testcompleteddoesnotcount]]
-  - -> contains -> [[testfaileddoesnotcount]]
-  - -> contains -> [[testmixed]]
-  - <- contains <- [[testqueuedepth]]
-- **test_health_completed_tasks_excluded_from_queue** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 6 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefsetresult]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefjson]]
-  - <- contains <- [[testhealthqueuefield]]
-- **test_reject_400_log_omits_filename** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 6 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefsetlevel]]
-  - -> calls -> [[unresolvedrefpost]]
-  - -> calls -> [[unresolvedrefgetmessage]]
-  - -> calls -> [[unresolvedreflen]]
-  - <- contains <- [[testextensionvalidation]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefmock]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefjobstore]]
 - **test_stt_processor_recluster_integration** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_stt_processor_recluster_integration.py) -- 6 connections
   - -> contains -> [[whisperxsegments]]
-  - -> imports -> [[unresolvedrefmock]]
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefapp]]
-  - -> imports -> [[unresolvedrefspeakerembedding]]
-  - -> imports -> [[unresolvedrefspeakerrecluster]]
-- **__unresolved__::ref::dumps** () -- 5 connections
+  - -> imports -> [[unresolvedrefunresolvedrefmock]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefapp]]
+  - -> imports -> [[unresolvedrefunresolvedrefspeakerembedding]]
+  - -> imports -> [[unresolvedrefunresolvedrefspeakerrecluster]]
+- **__unresolved__::ref::__unresolved____ref__dumps** () -- 5 connections
   - <- calls <- [[renderreport]]
   - <- calls <- [[main]]
   - <- calls <- [[runone]]
   - <- calls <- [[runall]]
   - <- calls <- [[compare]]
-- **__unresolved__::ref::int** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__int** () -- 5 connections
   - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[validatetask]]
   - <- calls <- [[buildembeddingwindows]]
   - <- calls <- [[maybereclusterspeakers]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::jobstore** () -- 5 connections
-  - <- calls <- [[testpendingcountsasactive]]
-  - <- calls <- [[testprocessingcountsasactive]]
-  - <- calls <- [[testcompleteddoesnotcount]]
-  - <- calls <- [[testfaileddoesnotcount]]
-  - <- calls <- [[testmixed]]
-- **__unresolved__::ref::list** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__list** () -- 5 connections
+  - <- calls <- [[transcribe]]
   - <- calls <- [[permutationinvariantmatch]]
   - <- calls <- [[validatetask]]
   - <- calls <- [[applyreclustering]]
-  - <- calls <- [[transcribe]]
   - <- calls <- [[processaudio]]
-- **__unresolved__::ref::max** () -- 5 connections
-  - <- calls <- [[reconstructpseudoaudio]]
-  - <- calls <- [[computeaudiostats]]
-  - <- calls <- [[computeconfidence]]
-  - <- calls <- [[extractembedding]]
-  - <- calls <- [[wordlevelspeakeraccuracy]]
-- **__unresolved__::ref::mkdir** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__mkdir** () -- 5 connections
   - <- calls <- [[main]]
   - <- calls <- [[runall]]
   - <- calls <- [[main]]
   - <- calls <- [[ensureresultsdir]]
   - <- calls <- [[setaudio]]
-- **__unresolved__::ref::path** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__path** () -- 5 connections
+  - <- calls <- [[transcribe]]
   - <- calls <- [[main]]
   - <- calls <- [[shouldskip]]
-  - <- calls <- [[transcribe]]
   - <- calls <- [[ensureresultsdir]]
   - <- calls <- [[getresultsdir]]
-- **__unresolved__::ref::range** () -- 5 connections
-  - <- calls <- [[transcribechunked]]
-  - <- calls <- [[buildembeddingwindows]]
-  - <- calls <- [[clustertwo]]
-  - <- calls <- [[computeconfidence]]
-  - <- calls <- [[fetcheventsbyschema]]
-- **__unresolved__::ref::set_result** () -- 5 connections
-  - <- calls <- [[testcompleteddoesnotcount]]
-  - <- calls <- [[testmixed]]
-  - <- calls <- [[testcompletedtasksdonotblock]]
-  - <- calls <- [[testhealthcompletedtasksexcludedfromqueue]]
-  - <- calls <- [[processaudio]]
-- **__unresolved__::ref::split** () -- 5 connections
-  - <- calls <- [[main]]
-  - <- calls <- [[parseendpoints]]
-  - <- calls <- [[parseendpoints]]
-  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref__split** () -- 5 connections
   - <- calls <- [[buildskuartifacts]]
-- **__unresolved__::ref::sum** () -- 5 connections
+  - <- calls <- [[main]]
+  - <- calls <- [[parseendpoints]]
+  - <- calls <- [[parseendpoints]]
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref__sum** () -- 5 connections
+  - <- calls <- [[computeaudiostats]]
   - <- calls <- [[permutationinvariantmatch]]
   - <- calls <- [[validatetask]]
-  - <- calls <- [[computeaudiostats]]
   - <- calls <- [[activecount]]
   - <- calls <- [[countspeakerlabel]]
-- **__unresolved__::ref::sys** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__sys** () -- 5 connections
   - <- imports <- [[validatereclusteroffline]]
   - <- imports <- [[verifyreclusteroptionb]]
   - <- imports <- [[conftest]]
   - <- imports <- [[testspeakerembedding]]
   - <- imports <- [[conftest]]
 - **_ensure_results_dir** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 5 connections
-  - -> calls -> [[unresolvedrefpath]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefwarning]]
-  - -> calls -> [[unresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefpath]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefwarning]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
   - <- contains <- [[jobstore]]
 - **diarization_config** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/diarization_config.py) -- 5 connections
   - -> contains -> [[diarizationconfigerror]]
   - -> contains -> [[parsebool]]
   - -> contains -> [[parseendpoints]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefdataclasses]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefdataclasses]]
 - **diarization_metrics** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/diarization_metrics.py) -- 5 connections
   - -> contains -> [[speakercount]]
   - -> contains -> [[countspeakerlabel]]
   - -> contains -> [[wordlevelspeakeraccuracy]]
-  - -> imports -> [[unresolvedrefcollections]]
-  - -> imports -> [[unresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefcollections]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
 - **_load_real_audio** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 5 connections
-  - -> calls -> [[unresolvedrefstr]]
-  - -> calls -> [[unresolvedrefrun]]
-  - -> calls -> [[unresolvedrefcopy]]
-  - -> calls -> [[unresolvedreffrombuffer]]
+  - -> calls -> [[unresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedrefrun]]
+  - -> calls -> [[unresolvedrefunresolvedrefcopy]]
+  - -> calls -> [[unresolvedrefunresolvedreffrombuffer]]
   - <- contains <- [[validatereclusteroffline]]
 - **_render_report** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 5 connections
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefstrftime]]
-  - -> calls -> [[unresolvedrefdumps]]
-  - -> calls -> [[unresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefdumps]]
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
   - <- contains <- [[validatereclusteroffline]]
 - **_post_transcribe** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/verify_recluster_option_b.py) -- 5 connections
-  - -> calls -> [[unresolvedrefopen]]
-  - -> calls -> [[unresolvedrefpost]]
-  - -> calls -> [[unresolvedrefraiseforstatus]]
-  - -> calls -> [[unresolvedrefjson]]
+  - -> calls -> [[unresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefpost]]
+  - -> calls -> [[unresolvedrefunresolvedrefraiseforstatus]]
+  - -> calls -> [[unresolvedrefunresolvedrefjson]]
   - <- contains <- [[verifyreclusteroptionb]]
 - **_should_skip** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/integration/test_diarization_long_call.py) -- 5 connections
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefisabs]]
-  - -> calls -> [[unresolvedrefpath]]
-  - -> calls -> [[unresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefisabs]]
+  - -> calls -> [[unresolvedrefunresolvedrefpath]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
   - <- contains <- [[testdiarizationlongcall]]
-- **TestHealthQueueField** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 5 connections
-  - -> contains -> [[testhealthincludesqueuewhenempty]]
-  - -> contains -> [[testhealthreflectsactivejobs]]
-  - -> contains -> [[testhealthutilizationatcapacity]]
-  - -> contains -> [[testhealthcompletedtasksexcludedfromqueue]]
-  - <- contains <- [[testqueuedepth]]
-- **test_completed_does_not_count** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 5 connections
-  - -> calls -> [[unresolvedrefjobstore]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefsetresult]]
-  - -> calls -> [[unresolvedrefactivecount]]
-  - <- contains <- [[testactivecount]]
-- **test_failed_does_not_count** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 5 connections
-  - -> calls -> [[unresolvedrefjobstore]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefseterror]]
-  - -> calls -> [[unresolvedrefactivecount]]
-  - <- contains <- [[testactivecount]]
-- **test_health_reflects_active_jobs** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 5 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefjson]]
-  - <- contains <- [[testhealthqueuefield]]
-- **test_health_utilization_at_capacity** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 5 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefjson]]
-  - <- contains <- [[testhealthqueuefield]]
-- **test_processing_counts_as_active** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 5 connections
-  - -> calls -> [[unresolvedrefjobstore]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefupdatestatus]]
-  - -> calls -> [[unresolvedrefactivecount]]
-  - <- contains <- [[testactivecount]]
-- **__unresolved__::ref::dataclasses** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__dataclasses** () -- 4 connections
   - <- imports <- [[speakerrecluster]]
   - <- imports <- [[diarizationconfig]]
   - <- imports <- [[reclusterconfig]]
   - <- imports <- [[speakerembedding]]
-- **__unresolved__::ref::dict** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__dict** () -- 4 connections
   - <- calls <- [[permutationinvariantmatch]]
   - <- calls <- [[applyreclustering]]
   - <- calls <- [[reclusterspeakers]]
   - <- calls <- [[maybereclusterspeakers]]
-- **__unresolved__::ref::isinstance** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__isinstance** () -- 4 connections
   - <- calls <- [[compare]]
   - <- calls <- [[maybereclusterspeakers]]
   - <- calls <- [[parsebool]]
   - <- calls <- [[parsebool]]
-- **__unresolved__::ref::logging** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__logging** () -- 4 connections
   - <- imports <- [[sttprocessor]]
   - <- imports <- [[main]]
   - <- imports <- [[transcribe]]
   - <- imports <- [[jobstore]]
-- **__unresolved__::ref::lower** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__lower** () -- 4 connections
   - <- calls <- [[transcribe]]
   - <- calls <- [[parsebool]]
   - <- calls <- [[parsebool]]
   - <- calls <- [[load]]
-- **__unresolved__::ref::mean** () -- 4 connections
-  - <- calls <- [[reconstructpseudoaudio]]
+- **__unresolved__::ref::__unresolved____ref__mean** () -- 4 connections
   - <- calls <- [[computeaudiostats]]
+  - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[computeconfidence]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::model_copy** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__model_copy** () -- 4 connections
   - <- calls <- [[updatestatus]]
   - <- calls <- [[setresult]]
   - <- calls <- [[seterror]]
   - <- calls <- [[cleanupexpired]]
-- **__unresolved__::ref::pop** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__pop** () -- 4 connections
   - <- calls <- [[reloadmodule]]
   - <- calls <- [[processaudio]]
   - <- calls <- [[cleanupexpired]]
   - <- calls <- [[clustertwo]]
-- **__unresolved__::ref::set_error** () -- 4 connections
-  - <- calls <- [[testfaileddoesnotcount]]
-  - <- calls <- [[testmixed]]
-  - <- calls <- [[testcompletedtasksdonotblock]]
-  - <- calls <- [[processaudio]]
-- **__unresolved__::ref::speaker_embedding** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__speaker_embedding** () -- 4 connections
   - <- imports <- [[validatereclusteroffline]]
   - <- imports <- [[teststtprocessorreclusterintegration]]
   - <- imports <- [[sttprocessor]]
   - <- imports <- [[speakerrecluster]]
-- **__unresolved__::ref::speaker_recluster** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__speaker_recluster** () -- 4 connections
   - <- imports <- [[validatereclusteroffline]]
   - <- imports <- [[testspeakerreclusterwindows]]
   - <- imports <- [[teststtprocessorreclusterintegration]]
   - <- imports <- [[sttprocessor]]
-- **__unresolved__::ref::write_text** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__write_text** () -- 4 connections
   - <- calls <- [[main]]
   - <- calls <- [[runone]]
   - <- calls <- [[runall]]
   - <- calls <- [[compare]]
-- **__unresolved__::ref::zip** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__zip** () -- 4 connections
+  - <- calls <- [[detectsilencepoints]]
   - <- calls <- [[permutationinvariantmatch]]
   - <- calls <- [[validatetask]]
-  - <- calls <- [[detectsilencepoints]]
   - <- calls <- [[applyreclustering]]
 - **create** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 4 connections
-  - -> calls -> [[unresolvedreftaskinfo]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefcleanupexpired]]
+  - -> calls -> [[unresolvedrefunresolvedreftaskinfo]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefcleanupexpired]]
   - <- contains <- [[jobstore]]
 - **_parse_endpoints** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/diarization_config.py) -- 4 connections
-  - -> calls -> [[unresolvedreffrozenset]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - -> calls -> [[unresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedreffrozenset]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
   - <- contains <- [[diarizationconfig]]
 - **_parse_endpoints** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/recluster_config.py) -- 4 connections
-  - -> calls -> [[unresolvedreffrozenset]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - -> calls -> [[unresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedreffrozenset]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
   - <- contains <- [[reclusterconfig]]
 - **_parse_float** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/recluster_config.py) -- 4 connections
-  - -> calls -> [[unresolvedreffloat]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - -> calls -> [[unresolvedrefreclusterconfigerror]]
+  - -> calls -> [[unresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefreclusterconfigerror]]
   - <- contains <- [[reclusterconfig]]
 - **SpeakerEmbeddingModel** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_embedding.py) -- 4 connections
   - -> contains -> [[init]]
@@ -874,427 +692,394 @@ Cohesion: 0.01 | Nodes: 266
   - -> contains -> [[extractembedding]]
   - <- contains <- [[speakerembedding]]
 - **_canonicalize_labels** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_recluster.py) -- 4 connections
-  - -> calls -> [[unresolvedrefenumerate]]
-  - -> calls -> [[unresolvedrefsorted]]
-  - -> calls -> [[unresolvedrefkeys]]
+  - -> calls -> [[unresolvedrefunresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefunresolvedrefsorted]]
+  - -> calls -> [[unresolvedrefunresolvedrefkeys]]
   - <- contains <- [[speakerrecluster]]
 - **_load_summary** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/verify_recluster_option_b.py) -- 4 connections
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefloads]]
-  - -> calls -> [[unresolvedrefreadtext]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefloads]]
+  - -> calls -> [[unresolvedrefunresolvedrefreadtext]]
   - <- contains <- [[verifyreclusteroptionb]]
 - **main** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/verify_recluster_option_b.py) -- 4 connections
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefcompare]]
-  - -> calls -> [[unresolvedrefrunall]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefcompare]]
+  - -> calls -> [[unresolvedrefunresolvedrefrunall]]
   - <- contains <- [[verifyreclusteroptionb]]
-- **TestExtensionValidation** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 4 connections
-  - -> contains -> [[testamrextensionaccepted]]
-  - -> contains -> [[test3gpextensionaccepted]]
-  - -> contains -> [[testreject400logomitsfilename]]
-  - <- contains <- [[testqueuedepth]]
-- **TestQueueDepthEndpoint** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 4 connections
-  - -> contains -> [[testqueuefullreturns503]]
-  - -> contains -> [[testunderlimitproceedspastqueuecheck]]
-  - -> contains -> [[testcompletedtasksdonotblock]]
-  - <- contains <- [[testqueuedepth]]
-- **test_amr_extension_accepted** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 4 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefpost]]
-  - -> calls -> [[unresolvedrefjson]]
-  - <- contains <- [[testextensionvalidation]]
-- **test_health_includes_queue_when_empty** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 4 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefjson]]
-  - <- contains <- [[testhealthqueuefield]]
-- **test_pending_counts_as_active** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 4 connections
-  - -> calls -> [[unresolvedrefjobstore]]
-  - -> calls -> [[unresolvedrefcreate]]
-  - -> calls -> [[unresolvedrefactivecount]]
-  - <- contains <- [[testactivecount]]
-- **test_under_limit_proceeds_past_queue_check** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 4 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefpost]]
-  - -> calls -> [[unresolvedrefjson]]
-  - <- contains <- [[testqueuedepthendpoint]]
 - **_install_fake_pyannote** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_speaker_embedding.py) -- 4 connections
-  - -> calls -> [[unresolvedrefmoduletype]]
-  - -> calls -> [[unresolvedreffakemodelfactory]]
-  - -> calls -> [[unresolvedrefsetitem]]
+  - -> calls -> [[unresolvedrefunresolvedrefmoduletype]]
+  - -> calls -> [[unresolvedrefunresolvedreffakemodelfactory]]
+  - -> calls -> [[unresolvedrefunresolvedrefsetitem]]
   - <- contains <- [[testspeakerembedding]]
-- **__unresolved__::ref::_get_results_dir** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref___get_results_dir** () -- 3 connections
   - <- calls <- [[setaudio]]
   - <- calls <- [[getaudio]]
   - <- calls <- [[cleanupexpired]]
-- **__unresolved__::ref::astype** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__astype** () -- 3 connections
   - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[maybereclusterspeakers]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::job_store** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__job_store** () -- 3 connections
   - <- imports <- [[conftest]]
   - <- imports <- [[testqueuedepth]]
   - <- imports <- [[transcribe]]
-- **__unresolved__::ref::mock** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__mock** () -- 3 connections
   - <- imports <- [[conftest]]
   - <- imports <- [[testspeakerembedding]]
   - <- imports <- [[teststtprocessorreclusterintegration]]
-- **__unresolved__::ref::schemas** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__schemas** () -- 3 connections
   - <- imports <- [[testqueuedepth]]
   - <- imports <- [[transcribe]]
   - <- imports <- [[jobstore]]
-- **__unresolved__::ref::strftime** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__strftime** () -- 3 connections
   - <- calls <- [[renderreport]]
   - <- calls <- [[runall]]
   - <- calls <- [[compare]]
-- **__unresolved__::ref::tuple** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__tuple** () -- 3 connections
   - <- calls <- [[buildembeddingwindows]]
   - <- calls <- [[reclusterspeakers]]
   - <- calls <- [[maybereclusterspeakers]]
-- **__unresolved__::ref::update_status** () -- 3 connections
-  - <- calls <- [[testprocessingcountsasactive]]
-  - <- calls <- [[testmixed]]
-  - <- calls <- [[processaudio]]
 - **resolveStage** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/PackagingStageChecklist.tsx) -- 3 connections
-  - -> calls -> [[unresolvedrefstartswith]]
-  - -> calls -> [[unresolvedrefslice]]
+  - -> calls -> [[unresolvedrefunresolvedrefstartswith]]
+  - -> calls -> [[unresolvedrefunresolvedrefslice]]
   - <- contains <- [[packagingstagechecklist]]
 - **__init__** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 3 connections
-  - -> calls -> [[unresolvedreflock]]
-  - -> calls -> [[unresolvedrefensureresultsdir]]
+  - -> calls -> [[unresolvedrefunresolvedreflock]]
+  - -> calls -> [[unresolvedrefunresolvedrefensureresultsdir]]
   - <- contains <- [[jobstore]]
 - **_get_results_dir** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 3 connections
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefpath]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefpath]]
   - <- contains <- [[jobstore]]
 - **active_count** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 3 connections
-  - -> calls -> [[unresolvedrefsum]]
-  - -> calls -> [[unresolvedrefvalues]]
+  - -> calls -> [[unresolvedrefunresolvedrefsum]]
+  - -> calls -> [[unresolvedrefunresolvedrefvalues]]
   - <- contains <- [[jobstore]]
-- **speaker_count** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/diarization_metrics.py) -- 3 connections
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefset]]
-  - <- contains <- [[diarizationmetrics]]
 - **speaker_embedding** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_embedding.py) -- 3 connections
   - -> contains -> [[speakerembeddingmodel]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefdataclasses]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefdataclasses]]
 - **_load_task_json** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 3 connections
-  - -> calls -> [[unresolvedrefloads]]
-  - -> calls -> [[unresolvedrefreadtext]]
+  - -> calls -> [[unresolvedrefunresolvedrefloads]]
+  - -> calls -> [[unresolvedrefunresolvedrefreadtext]]
   - <- contains <- [[validatereclusteroffline]]
-- **_collect_speaker_stats** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/verify_recluster_option_b.py) -- 3 connections
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedreflen]]
-  - <- contains <- [[verifyreclusteroptionb]]
 - **conftest** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/integration/conftest.py) -- 3 connections
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefsys]]
-  - -> imports -> [[unresolvedrefpytest]]
-- **test_3gp_extension_accepted** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_queue_depth.py) -- 3 connections
-  - -> calls -> [[unresolvedrefsetattr]]
-  - -> calls -> [[unresolvedrefpost]]
-  - <- contains <- [[testextensionvalidation]]
-- **__unresolved__::ref::arange** () -- 2 connections
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_df_model** () -- 2 connections
+  - <- calls <- [[loadmodels]]
+  - <- calls <- [[ensureworker]]
+- **__unresolved__::ref::__unresolved____ref__arange** () -- 2 connections
   - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::embeddingunavailable** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__embeddingunavailable** () -- 2 connections
   - <- calls <- [[load]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::exception** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__exception** () -- 2 connections
   - <- extends <- [[diarizationconfigerror]]
   - <- extends <- [[reclusterconfigerror]]
-- **__unresolved__::ref::extend** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__extend** () -- 2 connections
   - <- calls <- [[transcribechunked]]
   - <- calls <- [[clustertwo]]
-- **__unresolved__::ref::fastapi** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__fastapi** () -- 2 connections
   - <- imports <- [[main]]
   - <- imports <- [[transcribe]]
-- **__unresolved__::ref::from_env** () -- 2 connections
-  - <- calls <- [[applyreclustering]]
+- **__unresolved__::ref::__unresolved____ref__from_env** () -- 2 connections
   - <- calls <- [[transcribe]]
-- **__unresolved__::ref::frozenset** () -- 2 connections
+  - <- calls <- [[applyreclustering]]
+- **__unresolved__::ref::__unresolved____ref__frozenset** () -- 2 connections
   - <- calls <- [[parseendpoints]]
   - <- calls <- [[parseendpoints]]
-- **__unresolved__::ref::interp** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__interp** () -- 2 connections
   - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::is_dir** () -- 2 connections
-  - <- calls <- [[discovertasks]]
+- **__unresolved__::ref::__unresolved____ref__is_dir** () -- 2 connections
   - <- calls <- [[cleanuptempfiles]]
-- **__unresolved__::ref::items** () -- 2 connections
+  - <- calls <- [[discovertasks]]
+- **__unresolved__::ref::__unresolved____ref__items** () -- 2 connections
   - <- calls <- [[setaudio]]
   - <- calls <- [[cleanupexpired]]
-- **__unresolved__::ref::linspace** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__linspace** () -- 2 connections
   - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::loads** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__loads** () -- 2 connections
   - <- calls <- [[loadtaskjson]]
   - <- calls <- [[loadsummary]]
-- **__unresolved__::ref::maybe_recluster_speakers** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__maybe_recluster_speakers** () -- 2 connections
   - <- calls <- [[validatetask]]
   - <- calls <- [[applyreclustering]]
-- **__unresolved__::ref::print_exc** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__print_exc** () -- 2 connections
   - <- calls <- [[validatetask]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::raise_for_status** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__raise_for_status** () -- 2 connections
   - <- calls <- [[posttranscribe]]
   - <- calls <- [[polljob]]
-- **__unresolved__::ref::read_text** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__read_text** () -- 2 connections
   - <- calls <- [[loadtaskjson]]
   - <- calls <- [[loadsummary]]
-- **__unresolved__::ref::reclusterconfigerror** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__reclusterconfigerror** () -- 2 connections
   - <- calls <- [[parsebool]]
   - <- calls <- [[parsefloat]]
-- **__unresolved__::ref::reshape** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__reshape** () -- 2 connections
   - <- calls <- [[computeaudiostats]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::resolve** () -- 2 connections
-  - <- calls <- [[getaudio]]
+- **__unresolved__::ref::__unresolved____ref__resolve** () -- 2 connections
   - <- calls <- [[createmetadatazip]]
-- **__unresolved__::ref::rmtree** () -- 2 connections
+  - <- calls <- [[getaudio]]
+- **__unresolved__::ref::__unresolved____ref__rmtree** () -- 2 connections
   - <- calls <- [[cleanuptempfiles]]
   - <- calls <- [[cleanupexpired]]
-- **__unresolved__::ref::speakerembeddingmodel** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__speakerembeddingmodel** () -- 2 connections
   - <- calls <- [[main]]
   - <- calls <- [[applyreclustering]]
-- **__unresolved__::ref::startswith** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__startswith** () -- 2 connections
   - <- calls <- [[getaudio]]
   - <- calls <- [[resolvestage]]
-- **__unresolved__::ref::threading** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__threading** () -- 2 connections
   - <- imports <- [[sttprocessor]]
   - <- imports <- [[jobstore]]
-- **__unresolved__::ref::to** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__to** () -- 2 connections
   - <- calls <- [[load]]
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::torch** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__torch** () -- 2 connections
   - <- imports <- [[testspeakerembedding]]
   - <- imports <- [[sttprocessor]]
-- **__unresolved__::ref::type** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__type** () -- 2 connections
   - <- calls <- [[parsebool]]
   - <- calls <- [[parsebool]]
-- **__unresolved__::ref::whisperx_service** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__whisperx_service** () -- 2 connections
   - <- imports <- [[main]]
   - <- imports <- [[transcribe]]
-- **__unresolved__::ref::zeros** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__zeros** () -- 2 connections
   - <- calls <- [[reconstructpseudoaudio]]
   - <- calls <- [[clustertwo]]
 - **PackagingStageChecklist** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/PackagingStageChecklist.tsx) -- 2 connections
   - -> contains -> [[resolvestage]]
   - -> contains -> [[packagingstagechecklistprops]]
 - **config** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/config.py) -- 2 connections
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
 - **get** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 2 connections
-  - -> calls -> [[unresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
   - <- contains <- [[jobstore]]
 - **set_error** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 2 connections
-  - -> calls -> [[unresolvedrefmodelcopy]]
+  - -> calls -> [[unresolvedrefunresolvedrefmodelcopy]]
   - <- contains <- [[jobstore]]
 - **set_result** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 2 connections
-  - -> calls -> [[unresolvedrefmodelcopy]]
+  - -> calls -> [[unresolvedrefunresolvedrefmodelcopy]]
   - <- contains <- [[jobstore]]
 - **update_status** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/core/job_store.py) -- 2 connections
-  - -> calls -> [[unresolvedrefmodelcopy]]
+  - -> calls -> [[unresolvedrefunresolvedrefmodelcopy]]
   - <- contains <- [[jobstore]]
 - **DiarizationConfigError** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/diarization_config.py) -- 2 connections
-  - -> extends -> [[unresolvedrefexception]]
+  - -> extends -> [[unresolvedrefunresolvedrefexception]]
   - <- contains <- [[diarizationconfig]]
 - **count_speaker_label** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/diarization_metrics.py) -- 2 connections
-  - -> calls -> [[unresolvedrefsum]]
+  - -> calls -> [[unresolvedrefunresolvedrefsum]]
   - <- contains <- [[diarizationmetrics]]
 - **ReclusterConfigError** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/recluster_config.py) -- 2 connections
-  - -> extends -> [[unresolvedrefexception]]
+  - -> extends -> [[unresolvedrefunresolvedrefexception]]
   - <- contains <- [[reclusterconfig]]
 - **_label_distribution** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/validate_recluster_offline.py) -- 2 connections
-  - -> calls -> [[unresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
   - <- contains <- [[validatereclusteroffline]]
 - **test_diarization_regression** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_diarization_regression.py) -- 2 connections
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefdiarizationmetrics]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefdiarizationmetrics]]
 - **_reload_module** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_speaker_embedding.py) -- 2 connections
-  - -> calls -> [[unresolvedrefpop]]
+  - -> calls -> [[unresolvedrefunresolvedrefpop]]
   - <- contains <- [[testspeakerembedding]]
 - **test_speaker_recluster_windows** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_speaker_recluster_windows.py) -- 2 connections
-  - -> imports -> [[unresolvedrefpytest]]
-  - -> imports -> [[unresolvedrefspeakerrecluster]]
-- **__unresolved__::ref::_canonicalize_labels** () -- 1 connections
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefspeakerrecluster]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___cleanup_temp_files** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__diarizationpipeline** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_align_model** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_model** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref___canonicalize_labels** () -- 1 connections
   - <- calls <- [[reclusterspeakers]]
-- **__unresolved__::ref::_cleanup_expired** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___cleanup_expired** () -- 1 connections
   - <- calls <- [[create]]
-- **__unresolved__::ref::_cluster_two** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___cleanup_temp_files** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref___cluster_two** () -- 1 connections
   - <- calls <- [[reclusterspeakers]]
-- **__unresolved__::ref::_collect_speaker_stats** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___collect_speaker_stats** () -- 1 connections
   - <- calls <- [[runone]]
-- **__unresolved__::ref::_compare** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___compare** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::_compute_confidence** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___compute_confidence** () -- 1 connections
   - <- calls <- [[reclusterspeakers]]
-- **__unresolved__::ref::_discover_tasks** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___discover_tasks** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::_ensure_results_dir** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___ensure_results_dir** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::_flatten_words** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___flatten_words** () -- 1 connections
   - <- calls <- [[validatetask]]
-- **__unresolved__::ref::_lab** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___lab** () -- 1 connections
   - <- calls <- [[permutationinvariantmatch]]
-- **__unresolved__::ref::_label_distribution** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___label_distribution** () -- 1 connections
   - <- calls <- [[validatetask]]
-- **__unresolved__::ref::_load** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___load** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::_load_real_audio** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___load_real_audio** () -- 1 connections
   - <- calls <- [[validatetask]]
-- **__unresolved__::ref::_load_task_json** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___load_task_json** () -- 1 connections
   - <- calls <- [[validatetask]]
-- **__unresolved__::ref::_model** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___model** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::_permutation_invariant_match** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___permutation_invariant_match** () -- 1 connections
   - <- calls <- [[validatetask]]
-- **__unresolved__::ref::_poll_job** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___poll_job** () -- 1 connections
   - <- calls <- [[runone]]
-- **__unresolved__::ref::_post_transcribe** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___post_transcribe** () -- 1 connections
   - <- calls <- [[runone]]
-- **__unresolved__::ref::_reconstruct_pseudo_audio** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___reconstruct_pseudo_audio** () -- 1 connections
   - <- calls <- [[validatetask]]
-- **__unresolved__::ref::_render_report** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___render_report** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::_run_all** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___run_all** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::_run_one** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___run_one** () -- 1 connections
   - <- calls <- [[runall]]
-- **__unresolved__::ref::_validate_task** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref___validate_task** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::add_argument** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__add_argument** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::aiofiles** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__aiofiles** () -- 1 connections
   - <- imports <- [[transcribe]]
-- **__unresolved__::ref::argparse** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__argparse** () -- 1 connections
   - <- imports <- [[validatereclusteroffline]]
-- **__unresolved__::ref::argumentparser** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__argumentparser** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::array** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__array** () -- 1 connections
   - <- calls <- [[clustertwo]]
-- **__unresolved__::ref::asarray** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__asarray** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::bool** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__bool** () -- 1 connections
   - <- calls <- [[validatetask]]
-- **__unresolved__::ref::build_embedding_windows** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__build_embedding_windows** () -- 1 connections
   - <- calls <- [[maybereclusterspeakers]]
-- **__unresolved__::ref::cluster** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__cluster** () -- 1 connections
   - <- imports <- [[speakerrecluster]]
-- **__unresolved__::ref::collections** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__collections** () -- 1 connections
   - <- imports <- [[diarizationmetrics]]
-- **__unresolved__::ref::contextlib** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__contextlib** () -- 1 connections
   - <- imports <- [[main]]
-- **__unresolved__::ref::copy** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__copy** () -- 1 connections
   - <- calls <- [[loadrealaudio]]
-- **__unresolved__::ref::cors** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__cors** () -- 1 connections
   - <- imports <- [[main]]
-- **__unresolved__::ref::cpu** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__cpu** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::detach** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__detach** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::diarization_metrics** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__diarization_metrics** () -- 1 connections
   - <- imports <- [[testdiarizationregression]]
-- **__unresolved__::ref::diarizationconfigerror** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__diarizationconfigerror** () -- 1 connections
   - <- calls <- [[parsebool]]
-- **__unresolved__::ref::embeddingwindow** () -- 1 connections
-  - <- calls <- [[buildembeddingwindows]]
-- **__unresolved__::ref::eval** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__diarizationpipeline** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref__eval** () -- 1 connections
   - <- calls <- [[load]]
-- **__unresolved__::ref::extract_embedding** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__extract_embedding** () -- 1 connections
   - <- calls <- [[maybereclusterspeakers]]
-- **__unresolved__::ref::fake_model_factory** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__fake_model_factory** () -- 1 connections
   - <- calls <- [[installfakepyannote]]
-- **__unresolved__::ref::filenotfounderror** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__filenotfounderror** () -- 1 connections
   - <- calls <- [[runone]]
-- **__unresolved__::ref::from_numpy** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__from_numpy** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::from_pretrained** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__from_pretrained** () -- 1 connections
   - <- calls <- [[load]]
-- **__unresolved__::ref::frombuffer** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__frombuffer** () -- 1 connections
   - <- calls <- [[loadrealaudio]]
-- **__unresolved__::ref::fromkeys** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__fromkeys** () -- 1 connections
   - <- calls <- [[permutationinvariantmatch]]
-- **__unresolved__::ref::get_speaker** () -- 1 connections
-  - <- calls <- [[buildembeddingwindows]]
-- **__unresolved__::ref::getmessage** () -- 1 connections
-  - <- calls <- [[testreject400logomitsfilename]]
-- **__unresolved__::ref::hasattr** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__hasattr** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::iinfo** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__iinfo** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::is_available** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__is_available** () -- 1 connections
   - <- calls <- [[load]]
-- **__unresolved__::ref::is_enabled_for** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__is_enabled_for** () -- 1 connections
   - <- calls <- [[applyreclustering]]
-- **__unresolved__::ref::is_file** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__is_file** () -- 1 connections
   - <- calls <- [[getaudio]]
-- **__unresolved__::ref::isabs** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__isabs** () -- 1 connections
   - <- calls <- [[shouldskip]]
-- **__unresolved__::ref::issubdtype** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__issubdtype** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::itertools** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__itertools** () -- 1 connections
   - <- imports <- [[validatereclusteroffline]]
-- **__unresolved__::ref::lock** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__load_align_model** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref__load_df_model** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref__load_model** () -- 1 connections
+  - <- calls <- [[loadmodels]]
+- **__unresolved__::ref::__unresolved____ref__lock** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::moduletype** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__moduletype** () -- 1 connections
   - <- calls <- [[installfakepyannote]]
-- **__unresolved__::ref::no_grad** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__no_grad** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::norm** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__norm** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::numpy** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__numpy** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::open** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__open** () -- 1 connections
   - <- calls <- [[posttranscribe]]
-- **__unresolved__::ref::pad** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__pad** () -- 1 connections
   - <- calls <- [[reconstructpseudoaudio]]
-- **__unresolved__::ref::parse_args** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__parse_args** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::permutations** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__permutations** () -- 1 connections
   - <- calls <- [[permutationinvariantmatch]]
-- **__unresolved__::ref::read** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__read** () -- 1 connections
   - <- calls <- [[reconstructpseudoaudio]]
-- **__unresolved__::ref::recluster_speakers** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__recluster_speakers** () -- 1 connections
   - <- calls <- [[maybereclusterspeakers]]
-- **__unresolved__::ref::reclusterresult** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__reclusterresult** () -- 1 connections
   - <- calls <- [[maybereclusterspeakers]]
-- **__unresolved__::ref::requests** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__requests** () -- 1 connections
   - <- imports <- [[verifyreclusteroptionb]]
-- **__unresolved__::ref::responses** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__responses** () -- 1 connections
   - <- imports <- [[transcribe]]
-- **__unresolved__::ref::routers** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__routers** () -- 1 connections
   - <- imports <- [[main]]
-- **__unresolved__::ref::runtimeerror** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__runtimeerror** () -- 1 connections
   - <- calls <- [[polljob]]
-- **__unresolved__::ref::services** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__services** () -- 1 connections
   - <- imports <- [[validatereclusteroffline]]
-- **__unresolved__::ref::set_level** () -- 1 connections
-  - <- calls <- [[testreject400logomitsfilename]]
-- **__unresolved__::ref::setitem** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__setitem** () -- 1 connections
   - <- calls <- [[installfakepyannote]]
-- **__unresolved__::ref::shutil** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__shutil** () -- 1 connections
   - <- imports <- [[jobstore]]
-- **__unresolved__::ref::sleep** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__sleep** () -- 1 connections
   - <- calls <- [[polljob]]
-- **__unresolved__::ref::soundfile** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__soundfile** () -- 1 connections
   - <- imports <- [[testdiarizationlongcall]]
-- **__unresolved__::ref::squeeze** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__squeeze** () -- 1 connections
   - <- calls <- [[extractembedding]]
-- **__unresolved__::ref::taskinfo** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__taskinfo** () -- 1 connections
   - <- calls <- [[create]]
-- **__unresolved__::ref::timeouterror** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__timeouterror** () -- 1 connections
   - <- calls <- [[polljob]]
-- **__unresolved__::ref::types** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__types** () -- 1 connections
   - <- imports <- [[testspeakerembedding]]
-- **__unresolved__::ref::uuid** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__uuid** () -- 1 connections
   - <- imports <- [[transcribe]]
-- **__unresolved__::ref::values** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__values** () -- 1 connections
   - <- calls <- [[activecount]]
-- **__unresolved__::ref::vstack** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__vstack** () -- 1 connections
   - <- calls <- [[maybereclusterspeakers]]
-- **__unresolved__::ref::write_bytes** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__write_bytes** () -- 1 connections
   - <- calls <- [[setaudio]]
 - **PackagingStageChecklistProps** (/Users/gdash/project/uncounted-project/uncounted-admin/src/components/domain/PackagingStageChecklist.tsx) -- 1 connections
   - <- contains <- [[packagingstagechecklist]]
@@ -1303,22 +1088,22 @@ Cohesion: 0.01 | Nodes: 266
 - **chunk_offset_to_absolute** (/Users/gdash/project/uncounted-project/uncounted-voice-api/app/services/speaker_recluster.py) -- 1 connections
   - <- contains <- [[speakerrecluster]]
 - **test_diarization_config** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_diarization_config.py) -- 1 connections
-  - -> imports -> [[unresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
 - **test_recluster_config** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_recluster_config.py) -- 1 connections
-  - -> imports -> [[unresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
 - **test_speaker_recluster** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_speaker_recluster.py) -- 1 connections
-  - -> imports -> [[unresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
 - **test_stt_processor_diarization_options** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_stt_processor_diarization_options.py) -- 1 connections
-  - -> imports -> [[unresolvedrefpytest]]
+  - -> imports -> [[unresolvedrefunresolvedrefpytest]]
 - **_whisperx_segments** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/test_stt_processor_recluster_integration.py) -- 1 connections
   - <- contains <- [[teststtprocessorreclusterintegration]]
 
 ## Internal Relationships
-- resolveStage -> calls -> __unresolved__::ref::startswith [EXTRACTED]
 - PackagingStageChecklist -> contains -> resolveStage [EXTRACTED]
 - PackagingStageChecklist -> contains -> PackagingStageChecklistProps [EXTRACTED]
-- config -> imports -> __unresolved__::ref::os [EXTRACTED]
-- config -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
+- resolveStage -> calls -> __unresolved__::ref::__unresolved____ref__startswith [EXTRACTED]
+- config -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- config -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
 - JobStore -> contains -> __init__ [EXTRACTED]
 - JobStore -> contains -> _ensure_results_dir [EXTRACTED]
 - JobStore -> contains -> _get_results_dir [EXTRACTED]
@@ -1331,262 +1116,192 @@ Cohesion: 0.01 | Nodes: 266
 - JobStore -> contains -> set_audio [EXTRACTED]
 - JobStore -> contains -> get_audio [EXTRACTED]
 - JobStore -> contains -> _cleanup_expired [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::lock [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::_ensure_results_dir [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::time [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::items [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::model_copy [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::len [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::sorted [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::_get_results_dir [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::pop [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- _cleanup_expired -> calls -> __unresolved__::ref::rmtree [EXTRACTED]
-- _ensure_results_dir -> calls -> __unresolved__::ref::path [EXTRACTED]
-- _ensure_results_dir -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- _ensure_results_dir -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- _get_results_dir -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- _get_results_dir -> calls -> __unresolved__::ref::path [EXTRACTED]
-- active_count -> calls -> __unresolved__::ref::sum [EXTRACTED]
-- active_count -> calls -> __unresolved__::ref::values [EXTRACTED]
-- create -> calls -> __unresolved__::ref::taskinfo [EXTRACTED]
-- create -> calls -> __unresolved__::ref::time [EXTRACTED]
-- create -> calls -> __unresolved__::ref::_cleanup_expired [EXTRACTED]
-- get_audio -> calls -> __unresolved__::ref::_get_results_dir [EXTRACTED]
-- get_audio -> calls -> __unresolved__::ref::resolve [EXTRACTED]
-- get_audio -> calls -> __unresolved__::ref::startswith [EXTRACTED]
-- get_audio -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- get_audio -> calls -> __unresolved__::ref::is_file [EXTRACTED]
-- set_audio -> calls -> __unresolved__::ref::_get_results_dir [EXTRACTED]
-- set_audio -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- set_audio -> calls -> __unresolved__::ref::items [EXTRACTED]
-- set_audio -> calls -> __unresolved__::ref::write_bytes [EXTRACTED]
-- set_audio -> calls -> __unresolved__::ref::len [EXTRACTED]
-- set_error -> calls -> __unresolved__::ref::model_copy [EXTRACTED]
-- set_result -> calls -> __unresolved__::ref::model_copy [EXTRACTED]
-- update_status -> calls -> __unresolved__::ref::model_copy [EXTRACTED]
 - job_store -> contains -> JobStore [EXTRACTED]
-- job_store -> imports -> __unresolved__::ref::logging [EXTRACTED]
-- job_store -> imports -> __unresolved__::ref::shutil [EXTRACTED]
-- job_store -> imports -> __unresolved__::ref::threading [EXTRACTED]
-- job_store -> imports -> __unresolved__::ref::time [EXTRACTED]
-- job_store -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
-- job_store -> imports -> __unresolved__::ref::typing [EXTRACTED]
-- job_store -> imports -> __unresolved__::ref::app [EXTRACTED]
-- job_store -> imports -> __unresolved__::ref::schemas [EXTRACTED]
-- main -> imports -> __unresolved__::ref::logging [EXTRACTED]
-- main -> imports -> __unresolved__::ref::os [EXTRACTED]
-- main -> imports -> __unresolved__::ref::contextlib [EXTRACTED]
-- main -> imports -> __unresolved__::ref::fastapi [EXTRACTED]
-- main -> imports -> __unresolved__::ref::cors [EXTRACTED]
-- main -> imports -> __unresolved__::ref::app [EXTRACTED]
-- main -> imports -> __unresolved__::ref::routers [EXTRACTED]
-- main -> imports -> __unresolved__::ref::whisperx_service [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::logging [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::uuid [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::typing [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::aiofiles [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::fastapi [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::responses [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::app [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::job_store [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::schemas [EXTRACTED]
-- transcribe -> imports -> __unresolved__::ref::whisperx_service [EXTRACTED]
-- DiarizationConfigError -> extends -> __unresolved__::ref::exception [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::isinstance [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::diarizationconfigerror [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::type [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::lower [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- _parse_endpoints -> calls -> __unresolved__::ref::frozenset [EXTRACTED]
-- _parse_endpoints -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- _parse_endpoints -> calls -> __unresolved__::ref::split [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref__logging [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref__shutil [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref__threading [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref__app [EXTRACTED]
+- job_store -> imports -> __unresolved__::ref::__unresolved____ref__schemas [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref__lock [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref___ensure_results_dir [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__items [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__warning [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__model_copy [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__sorted [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref___get_results_dir [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__pop [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__rmtree [EXTRACTED]
+- _ensure_results_dir -> calls -> __unresolved__::ref::__unresolved____ref__path [EXTRACTED]
+- _ensure_results_dir -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- _ensure_results_dir -> calls -> __unresolved__::ref::__unresolved____ref__warning [EXTRACTED]
+- _ensure_results_dir -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- _get_results_dir -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- _get_results_dir -> calls -> __unresolved__::ref::__unresolved____ref__path [EXTRACTED]
+- active_count -> calls -> __unresolved__::ref::__unresolved____ref__sum [EXTRACTED]
+- active_count -> calls -> __unresolved__::ref::__unresolved____ref__values [EXTRACTED]
+- create -> calls -> __unresolved__::ref::__unresolved____ref__taskinfo [EXTRACTED]
+- create -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- create -> calls -> __unresolved__::ref::__unresolved____ref___cleanup_expired [EXTRACTED]
+- get_audio -> calls -> __unresolved__::ref::__unresolved____ref___get_results_dir [EXTRACTED]
+- get_audio -> calls -> __unresolved__::ref::__unresolved____ref__resolve [EXTRACTED]
+- get_audio -> calls -> __unresolved__::ref::__unresolved____ref__startswith [EXTRACTED]
+- get_audio -> calls -> __unresolved__::ref::__unresolved____ref__warning [EXTRACTED]
+- get_audio -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- get_audio -> calls -> __unresolved__::ref::__unresolved____ref__is_file [EXTRACTED]
+- set_audio -> calls -> __unresolved__::ref::__unresolved____ref___get_results_dir [EXTRACTED]
+- set_audio -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- set_audio -> calls -> __unresolved__::ref::__unresolved____ref__items [EXTRACTED]
+- set_audio -> calls -> __unresolved__::ref::__unresolved____ref__write_bytes [EXTRACTED]
+- set_error -> calls -> __unresolved__::ref::__unresolved____ref__model_copy [EXTRACTED]
+- set_result -> calls -> __unresolved__::ref::__unresolved____ref__model_copy [EXTRACTED]
+- update_status -> calls -> __unresolved__::ref::__unresolved____ref__model_copy [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref__logging [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref__contextlib [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref__fastapi [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref__cors [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref__app [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref__routers [EXTRACTED]
+- main -> imports -> __unresolved__::ref::__unresolved____ref__whisperx_service [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__logging [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__uuid [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__aiofiles [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__fastapi [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__responses [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__app [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__job_store [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__schemas [EXTRACTED]
+- transcribe -> imports -> __unresolved__::ref::__unresolved____ref__whisperx_service [EXTRACTED]
+- DiarizationConfigError -> extends -> __unresolved__::ref::__unresolved____ref__exception [EXTRACTED]
 - diarization_config -> contains -> DiarizationConfigError [EXTRACTED]
 - diarization_config -> contains -> _parse_bool [EXTRACTED]
 - diarization_config -> contains -> _parse_endpoints [EXTRACTED]
-- diarization_config -> imports -> __unresolved__::ref::os [EXTRACTED]
-- diarization_config -> imports -> __unresolved__::ref::dataclasses [EXTRACTED]
-- count_speaker_label -> calls -> __unresolved__::ref::sum [EXTRACTED]
-- speaker_count -> calls -> __unresolved__::ref::len [EXTRACTED]
-- diarization_metrics -> contains -> speaker_count [EXTRACTED]
+- diarization_config -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- diarization_config -> imports -> __unresolved__::ref::__unresolved____ref__dataclasses [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__isinstance [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__diarizationconfigerror [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__type [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__lower [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- _parse_endpoints -> calls -> __unresolved__::ref::__unresolved____ref__frozenset [EXTRACTED]
+- _parse_endpoints -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- _parse_endpoints -> calls -> __unresolved__::ref::__unresolved____ref__split [EXTRACTED]
 - diarization_metrics -> contains -> count_speaker_label [EXTRACTED]
-- diarization_metrics -> imports -> __unresolved__::ref::collections [EXTRACTED]
-- diarization_metrics -> imports -> __unresolved__::ref::typing [EXTRACTED]
-- ReclusterConfigError -> extends -> __unresolved__::ref::exception [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::isinstance [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::reclusterconfigerror [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::type [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::lower [EXTRACTED]
-- _parse_bool -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- _parse_endpoints -> calls -> __unresolved__::ref::frozenset [EXTRACTED]
-- _parse_endpoints -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- _parse_endpoints -> calls -> __unresolved__::ref::split [EXTRACTED]
-- _parse_float -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- _parse_float -> calls -> __unresolved__::ref::reclusterconfigerror [EXTRACTED]
+- diarization_metrics -> imports -> __unresolved__::ref::__unresolved____ref__collections [EXTRACTED]
+- diarization_metrics -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- count_speaker_label -> calls -> __unresolved__::ref::__unresolved____ref__sum [EXTRACTED]
+- ReclusterConfigError -> extends -> __unresolved__::ref::__unresolved____ref__exception [EXTRACTED]
 - recluster_config -> contains -> ReclusterConfigError [EXTRACTED]
 - recluster_config -> contains -> _parse_bool [EXTRACTED]
 - recluster_config -> contains -> _parse_endpoints [EXTRACTED]
 - recluster_config -> contains -> _parse_float [EXTRACTED]
-- recluster_config -> imports -> __unresolved__::ref::os [EXTRACTED]
-- recluster_config -> imports -> __unresolved__::ref::dataclasses [EXTRACTED]
+- recluster_config -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- recluster_config -> imports -> __unresolved__::ref::__unresolved____ref__dataclasses [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__isinstance [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__reclusterconfigerror [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__type [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__lower [EXTRACTED]
+- _parse_bool -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- _parse_endpoints -> calls -> __unresolved__::ref::__unresolved____ref__frozenset [EXTRACTED]
+- _parse_endpoints -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- _parse_endpoints -> calls -> __unresolved__::ref::__unresolved____ref__split [EXTRACTED]
+- _parse_float -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- _parse_float -> calls -> __unresolved__::ref::__unresolved____ref__reclusterconfigerror [EXTRACTED]
 - SpeakerEmbeddingModel -> contains -> __init__ [EXTRACTED]
 - SpeakerEmbeddingModel -> contains -> _load [EXTRACTED]
 - SpeakerEmbeddingModel -> contains -> extract_embedding [EXTRACTED]
-- _load -> calls -> __unresolved__::ref::embeddingunavailable [EXTRACTED]
-- _load -> calls -> __unresolved__::ref::lower [EXTRACTED]
-- _load -> calls -> __unresolved__::ref::is_available [EXTRACTED]
-- _load -> calls -> __unresolved__::ref::from_pretrained [EXTRACTED]
-- _load -> calls -> __unresolved__::ref::eval [EXTRACTED]
-- _load -> calls -> __unresolved__::ref::to [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::_load [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::len [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::embeddingunavailable [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::mean [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::issubdtype [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::iinfo [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::astype [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::max [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::int [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::arange [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::linspace [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::interp [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::to [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::reshape [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::from_numpy [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::no_grad [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::_model [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::hasattr [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::numpy [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::cpu [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::detach [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::asarray [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::squeeze [EXTRACTED]
-- extract_embedding -> calls -> __unresolved__::ref::norm [EXTRACTED]
 - speaker_embedding -> contains -> SpeakerEmbeddingModel [EXTRACTED]
-- speaker_embedding -> imports -> __unresolved__::ref::os [EXTRACTED]
-- speaker_embedding -> imports -> __unresolved__::ref::dataclasses [EXTRACTED]
-- _canonicalize_labels -> calls -> __unresolved__::ref::enumerate [EXTRACTED]
-- _canonicalize_labels -> calls -> __unresolved__::ref::sorted [EXTRACTED]
-- _cluster_two -> calls -> __unresolved__::ref::zeros [EXTRACTED]
-- _cluster_two -> calls -> __unresolved__::ref::array [EXTRACTED]
-- _cluster_two -> calls -> __unresolved__::ref::range [EXTRACTED]
-- _cluster_two -> calls -> __unresolved__::ref::len [EXTRACTED]
-- _cluster_two -> calls -> __unresolved__::ref::extend [EXTRACTED]
-- _cluster_two -> calls -> __unresolved__::ref::pop [EXTRACTED]
-- _cluster_two -> calls -> __unresolved__::ref::enumerate [EXTRACTED]
-- _compute_confidence -> calls -> __unresolved__::ref::range [EXTRACTED]
-- _compute_confidence -> calls -> __unresolved__::ref::len [EXTRACTED]
-- _compute_confidence -> calls -> __unresolved__::ref::mean [EXTRACTED]
-- _compute_confidence -> calls -> __unresolved__::ref::max [EXTRACTED]
-- build_embedding_windows -> calls -> __unresolved__::ref::get_speaker [EXTRACTED]
-- build_embedding_windows -> calls -> __unresolved__::ref::range [EXTRACTED]
-- build_embedding_windows -> calls -> __unresolved__::ref::len [EXTRACTED]
-- build_embedding_windows -> calls -> __unresolved__::ref::tuple [EXTRACTED]
-- build_embedding_windows -> calls -> __unresolved__::ref::int [EXTRACTED]
-- build_embedding_windows -> calls -> __unresolved__::ref::embeddingwindow [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::reclusterresult [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::tuple [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::dict [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::len [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::build_embedding_windows [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::enumerate [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::int [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::astype [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::extract_embedding [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::isinstance [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::vstack [EXTRACTED]
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::recluster_speakers [EXTRACTED]
-- recluster_speakers -> calls -> __unresolved__::ref::_cluster_two [EXTRACTED]
-- recluster_speakers -> calls -> __unresolved__::ref::_compute_confidence [EXTRACTED]
-- recluster_speakers -> calls -> __unresolved__::ref::tuple [EXTRACTED]
-- recluster_speakers -> calls -> __unresolved__::ref::dict [EXTRACTED]
-- recluster_speakers -> calls -> __unresolved__::ref::enumerate [EXTRACTED]
-- recluster_speakers -> calls -> __unresolved__::ref::_canonicalize_labels [EXTRACTED]
+- speaker_embedding -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- speaker_embedding -> imports -> __unresolved__::ref::__unresolved____ref__dataclasses [EXTRACTED]
+- _load -> calls -> __unresolved__::ref::__unresolved____ref__embeddingunavailable [EXTRACTED]
+- _load -> calls -> __unresolved__::ref::__unresolved____ref__lower [EXTRACTED]
+- _load -> calls -> __unresolved__::ref::__unresolved____ref__is_available [EXTRACTED]
+- _load -> calls -> __unresolved__::ref::__unresolved____ref__from_pretrained [EXTRACTED]
+- _load -> calls -> __unresolved__::ref::__unresolved____ref__eval [EXTRACTED]
+- _load -> calls -> __unresolved__::ref::__unresolved____ref__to [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref___load [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__embeddingunavailable [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__mean [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__issubdtype [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__iinfo [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__astype [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__arange [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__linspace [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__interp [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__to [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__reshape [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__from_numpy [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__no_grad [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref___model [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__hasattr [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__numpy [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__cpu [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__detach [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__asarray [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__squeeze [EXTRACTED]
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__norm [EXTRACTED]
 - speaker_recluster -> contains -> chunk_offset_to_absolute [EXTRACTED]
-- speaker_recluster -> contains -> build_embedding_windows [EXTRACTED]
 - speaker_recluster -> contains -> recluster_speakers [EXTRACTED]
 - speaker_recluster -> contains -> _cluster_two [EXTRACTED]
-- speaker_recluster -> contains -> _compute_confidence [EXTRACTED]
 - speaker_recluster -> contains -> _canonicalize_labels [EXTRACTED]
 - speaker_recluster -> contains -> maybe_recluster_speakers [EXTRACTED]
-- speaker_recluster -> imports -> __unresolved__::ref::dataclasses [EXTRACTED]
-- speaker_recluster -> imports -> __unresolved__::ref::typing [EXTRACTED]
-- speaker_recluster -> imports -> __unresolved__::ref::cluster [EXTRACTED]
-- speaker_recluster -> imports -> __unresolved__::ref::speaker_embedding [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::from_env [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::is_enabled_for [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::speakerembeddingmodel [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::enumerate [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::time [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::maybe_recluster_speakers [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::list [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::dict [EXTRACTED]
-- _apply_reclustering -> calls -> __unresolved__::ref::zip [EXTRACTED]
-- _discover_tasks -> calls -> __unresolved__::ref::sorted [EXTRACTED]
-- _discover_tasks -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- _discover_tasks -> calls -> __unresolved__::ref::is_dir [EXTRACTED]
-- _load_real_audio -> calls -> __unresolved__::ref::copy [EXTRACTED]
-- _load_real_audio -> calls -> __unresolved__::ref::frombuffer [EXTRACTED]
-- _load_task_json -> calls -> __unresolved__::ref::loads [EXTRACTED]
-- _load_task_json -> calls -> __unresolved__::ref::read_text [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::len [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::_lab [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::sorted [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::list [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::fromkeys [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::permutations [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::dict [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::zip [EXTRACTED]
-- _permutation_invariant_match -> calls -> __unresolved__::ref::sum [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::max [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::int [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::zeros [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::read [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::print [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::mean [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::len [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::arange [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::linspace [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::astype [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::interp [EXTRACTED]
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::pad [EXTRACTED]
-- _render_report -> calls -> __unresolved__::ref::strftime [EXTRACTED]
-- _render_report -> calls -> __unresolved__::ref::dumps [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::print [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::_load_task_json [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::_flatten_words [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::len [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::_label_distribution [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::time [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::_load_real_audio [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::_reconstruct_pseudo_audio [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::maybe_recluster_speakers [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::print_exc [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::list [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::sum [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::zip [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::_permutation_invariant_match [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::int [EXTRACTED]
-- _validate_task -> calls -> __unresolved__::ref::bool [EXTRACTED]
-- main -> calls -> __unresolved__::ref::argumentparser [EXTRACTED]
-- main -> calls -> __unresolved__::ref::add_argument [EXTRACTED]
-- main -> calls -> __unresolved__::ref::parse_args [EXTRACTED]
-- main -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- main -> calls -> __unresolved__::ref::split [EXTRACTED]
-- main -> calls -> __unresolved__::ref::print [EXTRACTED]
-- main -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- main -> calls -> __unresolved__::ref::_discover_tasks [EXTRACTED]
-- main -> calls -> __unresolved__::ref::len [EXTRACTED]
-- main -> calls -> __unresolved__::ref::path [EXTRACTED]
-- main -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- main -> calls -> __unresolved__::ref::speakerembeddingmodel [EXTRACTED]
-- main -> calls -> __unresolved__::ref::_validate_task [EXTRACTED]
-- main -> calls -> __unresolved__::ref::print_exc [EXTRACTED]
-- main -> calls -> __unresolved__::ref::write_text [EXTRACTED]
-- main -> calls -> __unresolved__::ref::dumps [EXTRACTED]
-- main -> calls -> __unresolved__::ref::_render_report [EXTRACTED]
+- speaker_recluster -> imports -> __unresolved__::ref::__unresolved____ref__dataclasses [EXTRACTED]
+- speaker_recluster -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- speaker_recluster -> imports -> __unresolved__::ref::__unresolved____ref__cluster [EXTRACTED]
+- speaker_recluster -> imports -> __unresolved__::ref::__unresolved____ref__speaker_embedding [EXTRACTED]
+- _canonicalize_labels -> calls -> __unresolved__::ref::__unresolved____ref__enumerate [EXTRACTED]
+- _canonicalize_labels -> calls -> __unresolved__::ref::__unresolved____ref__sorted [EXTRACTED]
+- _cluster_two -> calls -> __unresolved__::ref::__unresolved____ref__zeros [EXTRACTED]
+- _cluster_two -> calls -> __unresolved__::ref::__unresolved____ref__array [EXTRACTED]
+- _cluster_two -> calls -> __unresolved__::ref::__unresolved____ref__extend [EXTRACTED]
+- _cluster_two -> calls -> __unresolved__::ref::__unresolved____ref__pop [EXTRACTED]
+- _cluster_two -> calls -> __unresolved__::ref::__unresolved____ref__enumerate [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__reclusterresult [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__tuple [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__dict [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__build_embedding_windows [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__enumerate [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__astype [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__extract_embedding [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__isinstance [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__vstack [EXTRACTED]
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__recluster_speakers [EXTRACTED]
+- recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref___cluster_two [EXTRACTED]
+- recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref___compute_confidence [EXTRACTED]
+- recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__tuple [EXTRACTED]
+- recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__dict [EXTRACTED]
+- recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__enumerate [EXTRACTED]
+- recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref___canonicalize_labels [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__from_env [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__is_enabled_for [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__speakerembeddingmodel [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__enumerate [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__maybe_recluster_speakers [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__list [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__dict [EXTRACTED]
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__zip [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref___cleanup_temp_files [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_align_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__diarizationpipeline [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__load_df_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref___cleanup_temp_files [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__load_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__load_align_model [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__diarizationpipeline [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__warning [EXTRACTED]
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__load_df_model [EXTRACTED]
 - validate_recluster_offline -> contains -> _load_task_json [EXTRACTED]
 - validate_recluster_offline -> contains -> _load_real_audio [EXTRACTED]
 - validate_recluster_offline -> contains -> _reconstruct_pseudo_audio [EXTRACTED]
@@ -1596,253 +1311,241 @@ Cohesion: 0.01 | Nodes: 266
 - validate_recluster_offline -> contains -> _discover_tasks [EXTRACTED]
 - validate_recluster_offline -> contains -> _render_report [EXTRACTED]
 - validate_recluster_offline -> contains -> main [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::argparse [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::itertools [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::json [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::sys [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::time [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::typing [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::services [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::speaker_embedding [EXTRACTED]
-- validate_recluster_offline -> imports -> __unresolved__::ref::speaker_recluster [EXTRACTED]
-- _collect_speaker_stats -> calls -> __unresolved__::ref::len [EXTRACTED]
-- _load_summary -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- _load_summary -> calls -> __unresolved__::ref::loads [EXTRACTED]
-- _load_summary -> calls -> __unresolved__::ref::read_text [EXTRACTED]
-- _poll_job -> calls -> __unresolved__::ref::time [EXTRACTED]
-- _poll_job -> calls -> __unresolved__::ref::raise_for_status [EXTRACTED]
-- _poll_job -> calls -> __unresolved__::ref::json [EXTRACTED]
-- _poll_job -> calls -> __unresolved__::ref::runtimeerror [EXTRACTED]
-- _poll_job -> calls -> __unresolved__::ref::sleep [EXTRACTED]
-- _poll_job -> calls -> __unresolved__::ref::timeouterror [EXTRACTED]
-- _post_transcribe -> calls -> __unresolved__::ref::open [EXTRACTED]
-- _post_transcribe -> calls -> __unresolved__::ref::post [EXTRACTED]
-- _post_transcribe -> calls -> __unresolved__::ref::raise_for_status [EXTRACTED]
-- _post_transcribe -> calls -> __unresolved__::ref::json [EXTRACTED]
-- _run_all -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- _run_all -> calls -> __unresolved__::ref::_run_one [EXTRACTED]
-- _run_all -> calls -> __unresolved__::ref::print [EXTRACTED]
-- _run_all -> calls -> __unresolved__::ref::strftime [EXTRACTED]
-- _run_all -> calls -> __unresolved__::ref::write_text [EXTRACTED]
-- _run_all -> calls -> __unresolved__::ref::dumps [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::filenotfounderror [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::time [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::print [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::_post_transcribe [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::_poll_job [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::_collect_speaker_stats [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::write_text [EXTRACTED]
-- _run_one -> calls -> __unresolved__::ref::dumps [EXTRACTED]
-- main -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- main -> calls -> __unresolved__::ref::_compare [EXTRACTED]
-- main -> calls -> __unresolved__::ref::_run_all [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__argparse [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__itertools [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__services [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__speaker_embedding [EXTRACTED]
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__speaker_recluster [EXTRACTED]
+- _discover_tasks -> calls -> __unresolved__::ref::__unresolved____ref__sorted [EXTRACTED]
+- _discover_tasks -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- _discover_tasks -> calls -> __unresolved__::ref::__unresolved____ref__is_dir [EXTRACTED]
+- _load_real_audio -> calls -> __unresolved__::ref::__unresolved____ref__copy [EXTRACTED]
+- _load_real_audio -> calls -> __unresolved__::ref::__unresolved____ref__frombuffer [EXTRACTED]
+- _load_task_json -> calls -> __unresolved__::ref::__unresolved____ref__loads [EXTRACTED]
+- _load_task_json -> calls -> __unresolved__::ref::__unresolved____ref__read_text [EXTRACTED]
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref___lab [EXTRACTED]
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__sorted [EXTRACTED]
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__list [EXTRACTED]
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__fromkeys [EXTRACTED]
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__permutations [EXTRACTED]
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__dict [EXTRACTED]
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__zip [EXTRACTED]
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__sum [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__zeros [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__read [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__print [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__mean [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__arange [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__linspace [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__astype [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__interp [EXTRACTED]
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__pad [EXTRACTED]
+- _render_report -> calls -> __unresolved__::ref::__unresolved____ref__strftime [EXTRACTED]
+- _render_report -> calls -> __unresolved__::ref::__unresolved____ref__dumps [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__print [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref___load_task_json [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref___flatten_words [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref___label_distribution [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref___load_real_audio [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref___reconstruct_pseudo_audio [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__maybe_recluster_speakers [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__print_exc [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__list [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__sum [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__zip [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref___permutation_invariant_match [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__bool [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__argumentparser [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__add_argument [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__parse_args [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__split [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__print [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref___discover_tasks [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__path [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__speakerembeddingmodel [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref___validate_task [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__print_exc [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__write_text [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__dumps [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref___render_report [EXTRACTED]
 - verify_recluster_option_b -> contains -> _post_transcribe [EXTRACTED]
 - verify_recluster_option_b -> contains -> _poll_job [EXTRACTED]
-- verify_recluster_option_b -> contains -> _collect_speaker_stats [EXTRACTED]
 - verify_recluster_option_b -> contains -> _run_one [EXTRACTED]
 - verify_recluster_option_b -> contains -> _run_all [EXTRACTED]
 - verify_recluster_option_b -> contains -> _load_summary [EXTRACTED]
 - verify_recluster_option_b -> contains -> main [EXTRACTED]
-- verify_recluster_option_b -> imports -> __unresolved__::ref::json [EXTRACTED]
-- verify_recluster_option_b -> imports -> __unresolved__::ref::os [EXTRACTED]
-- verify_recluster_option_b -> imports -> __unresolved__::ref::sys [EXTRACTED]
-- verify_recluster_option_b -> imports -> __unresolved__::ref::time [EXTRACTED]
-- verify_recluster_option_b -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
-- verify_recluster_option_b -> imports -> __unresolved__::ref::typing [EXTRACTED]
-- verify_recluster_option_b -> imports -> __unresolved__::ref::requests [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::json [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::os [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::sys [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::mock [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::job_store [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::os [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::sys [EXTRACTED]
-- conftest -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- _should_skip -> calls -> __unresolved__::ref::isabs [EXTRACTED]
-- _should_skip -> calls -> __unresolved__::ref::path [EXTRACTED]
-- _should_skip -> calls -> __unresolved__::ref::exists [EXTRACTED]
+- verify_recluster_option_b -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- verify_recluster_option_b -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
+- verify_recluster_option_b -> imports -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- verify_recluster_option_b -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- verify_recluster_option_b -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- verify_recluster_option_b -> imports -> __unresolved__::ref::__unresolved____ref__requests [EXTRACTED]
+- _load_summary -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- _load_summary -> calls -> __unresolved__::ref::__unresolved____ref__loads [EXTRACTED]
+- _load_summary -> calls -> __unresolved__::ref::__unresolved____ref__read_text [EXTRACTED]
+- _poll_job -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- _poll_job -> calls -> __unresolved__::ref::__unresolved____ref__raise_for_status [EXTRACTED]
+- _poll_job -> calls -> __unresolved__::ref::__unresolved____ref__runtimeerror [EXTRACTED]
+- _poll_job -> calls -> __unresolved__::ref::__unresolved____ref__sleep [EXTRACTED]
+- _poll_job -> calls -> __unresolved__::ref::__unresolved____ref__timeouterror [EXTRACTED]
+- _post_transcribe -> calls -> __unresolved__::ref::__unresolved____ref__open [EXTRACTED]
+- _post_transcribe -> calls -> __unresolved__::ref::__unresolved____ref__raise_for_status [EXTRACTED]
+- _run_all -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- _run_all -> calls -> __unresolved__::ref::__unresolved____ref___run_one [EXTRACTED]
+- _run_all -> calls -> __unresolved__::ref::__unresolved____ref__print [EXTRACTED]
+- _run_all -> calls -> __unresolved__::ref::__unresolved____ref__strftime [EXTRACTED]
+- _run_all -> calls -> __unresolved__::ref::__unresolved____ref__write_text [EXTRACTED]
+- _run_all -> calls -> __unresolved__::ref::__unresolved____ref__dumps [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref__filenotfounderror [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref__print [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref___post_transcribe [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref___poll_job [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref___collect_speaker_stats [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref__write_text [EXTRACTED]
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref__dumps [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref___compare [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref___run_all [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__mock [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__job_store [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
 - test_diarization_long_call -> contains -> _should_skip [EXTRACTED]
-- test_diarization_long_call -> imports -> __unresolved__::ref::json [EXTRACTED]
-- test_diarization_long_call -> imports -> __unresolved__::ref::os [EXTRACTED]
-- test_diarization_long_call -> imports -> __unresolved__::ref::time [EXTRACTED]
-- test_diarization_long_call -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
-- test_diarization_long_call -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_diarization_long_call -> imports -> __unresolved__::ref::soundfile [EXTRACTED]
-- test_diarization_config -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_diarization_regression -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_diarization_regression -> imports -> __unresolved__::ref::diarization_metrics [EXTRACTED]
-- TestActiveCount -> contains -> test_pending_counts_as_active [EXTRACTED]
-- TestActiveCount -> contains -> test_processing_counts_as_active [EXTRACTED]
-- TestActiveCount -> contains -> test_completed_does_not_count [EXTRACTED]
-- TestActiveCount -> contains -> test_failed_does_not_count [EXTRACTED]
-- TestActiveCount -> contains -> test_mixed [EXTRACTED]
-- TestExtensionValidation -> contains -> test_amr_extension_accepted [EXTRACTED]
-- TestExtensionValidation -> contains -> test_3gp_extension_accepted [EXTRACTED]
-- TestExtensionValidation -> contains -> test_reject_400_log_omits_filename [EXTRACTED]
-- TestHealthQueueField -> contains -> test_health_includes_queue_when_empty [EXTRACTED]
-- TestHealthQueueField -> contains -> test_health_reflects_active_jobs [EXTRACTED]
-- TestHealthQueueField -> contains -> test_health_utilization_at_capacity [EXTRACTED]
-- TestHealthQueueField -> contains -> test_health_completed_tasks_excluded_from_queue [EXTRACTED]
-- TestQueueDepthEndpoint -> contains -> test_queue_full_returns_503 [EXTRACTED]
-- TestQueueDepthEndpoint -> contains -> test_under_limit_proceeds_past_queue_check [EXTRACTED]
-- TestQueueDepthEndpoint -> contains -> test_completed_tasks_do_not_block [EXTRACTED]
-- test_3gp_extension_accepted -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_3gp_extension_accepted -> calls -> __unresolved__::ref::post [EXTRACTED]
-- test_amr_extension_accepted -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_amr_extension_accepted -> calls -> __unresolved__::ref::post [EXTRACTED]
-- test_amr_extension_accepted -> calls -> __unresolved__::ref::json [EXTRACTED]
-- test_completed_does_not_count -> calls -> __unresolved__::ref::jobstore [EXTRACTED]
-- test_completed_does_not_count -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_completed_does_not_count -> calls -> __unresolved__::ref::set_result [EXTRACTED]
-- test_completed_does_not_count -> calls -> __unresolved__::ref::active_count [EXTRACTED]
-- test_completed_tasks_do_not_block -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_completed_tasks_do_not_block -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_completed_tasks_do_not_block -> calls -> __unresolved__::ref::set_result [EXTRACTED]
-- test_completed_tasks_do_not_block -> calls -> __unresolved__::ref::set_error [EXTRACTED]
-- test_completed_tasks_do_not_block -> calls -> __unresolved__::ref::active_count [EXTRACTED]
-- test_completed_tasks_do_not_block -> calls -> __unresolved__::ref::post [EXTRACTED]
-- test_failed_does_not_count -> calls -> __unresolved__::ref::jobstore [EXTRACTED]
-- test_failed_does_not_count -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_failed_does_not_count -> calls -> __unresolved__::ref::set_error [EXTRACTED]
-- test_failed_does_not_count -> calls -> __unresolved__::ref::active_count [EXTRACTED]
-- test_health_completed_tasks_excluded_from_queue -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_health_completed_tasks_excluded_from_queue -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_health_completed_tasks_excluded_from_queue -> calls -> __unresolved__::ref::set_result [EXTRACTED]
-- test_health_completed_tasks_excluded_from_queue -> calls -> __unresolved__::ref::json [EXTRACTED]
-- test_health_includes_queue_when_empty -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_health_includes_queue_when_empty -> calls -> __unresolved__::ref::json [EXTRACTED]
-- test_health_reflects_active_jobs -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_health_reflects_active_jobs -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_health_reflects_active_jobs -> calls -> __unresolved__::ref::json [EXTRACTED]
-- test_health_utilization_at_capacity -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_health_utilization_at_capacity -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_health_utilization_at_capacity -> calls -> __unresolved__::ref::json [EXTRACTED]
-- test_mixed -> calls -> __unresolved__::ref::jobstore [EXTRACTED]
-- test_mixed -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_mixed -> calls -> __unresolved__::ref::update_status [EXTRACTED]
-- test_mixed -> calls -> __unresolved__::ref::set_result [EXTRACTED]
-- test_mixed -> calls -> __unresolved__::ref::set_error [EXTRACTED]
-- test_mixed -> calls -> __unresolved__::ref::active_count [EXTRACTED]
-- test_pending_counts_as_active -> calls -> __unresolved__::ref::jobstore [EXTRACTED]
-- test_pending_counts_as_active -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_pending_counts_as_active -> calls -> __unresolved__::ref::active_count [EXTRACTED]
-- test_processing_counts_as_active -> calls -> __unresolved__::ref::jobstore [EXTRACTED]
-- test_processing_counts_as_active -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_processing_counts_as_active -> calls -> __unresolved__::ref::update_status [EXTRACTED]
-- test_processing_counts_as_active -> calls -> __unresolved__::ref::active_count [EXTRACTED]
-- test_queue_full_returns_503 -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_queue_full_returns_503 -> calls -> __unresolved__::ref::create [EXTRACTED]
-- test_queue_full_returns_503 -> calls -> __unresolved__::ref::active_count [EXTRACTED]
-- test_queue_full_returns_503 -> calls -> __unresolved__::ref::post [EXTRACTED]
-- test_queue_full_returns_503 -> calls -> __unresolved__::ref::json [EXTRACTED]
-- test_reject_400_log_omits_filename -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_reject_400_log_omits_filename -> calls -> __unresolved__::ref::set_level [EXTRACTED]
-- test_reject_400_log_omits_filename -> calls -> __unresolved__::ref::post [EXTRACTED]
-- test_reject_400_log_omits_filename -> calls -> __unresolved__::ref::getmessage [EXTRACTED]
-- test_reject_400_log_omits_filename -> calls -> __unresolved__::ref::len [EXTRACTED]
-- test_under_limit_proceeds_past_queue_check -> calls -> __unresolved__::ref::setattr [EXTRACTED]
-- test_under_limit_proceeds_past_queue_check -> calls -> __unresolved__::ref::post [EXTRACTED]
-- test_under_limit_proceeds_past_queue_check -> calls -> __unresolved__::ref::json [EXTRACTED]
-- test_queue_depth -> contains -> TestActiveCount [EXTRACTED]
-- test_queue_depth -> contains -> TestQueueDepthEndpoint [EXTRACTED]
-- test_queue_depth -> contains -> TestExtensionValidation [EXTRACTED]
-- test_queue_depth -> contains -> TestHealthQueueField [EXTRACTED]
-- test_queue_depth -> imports -> __unresolved__::ref::app [EXTRACTED]
-- test_queue_depth -> imports -> __unresolved__::ref::job_store [EXTRACTED]
-- test_queue_depth -> imports -> __unresolved__::ref::schemas [EXTRACTED]
-- test_recluster_config -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- _install_fake_pyannote -> calls -> __unresolved__::ref::moduletype [EXTRACTED]
-- _install_fake_pyannote -> calls -> __unresolved__::ref::fake_model_factory [EXTRACTED]
-- _install_fake_pyannote -> calls -> __unresolved__::ref::setitem [EXTRACTED]
-- _reload_module -> calls -> __unresolved__::ref::pop [EXTRACTED]
+- test_diarization_long_call -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- test_diarization_long_call -> imports -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- test_diarization_long_call -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- test_diarization_long_call -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_diarization_long_call -> imports -> __unresolved__::ref::__unresolved____ref__soundfile [EXTRACTED]
+- _should_skip -> calls -> __unresolved__::ref::__unresolved____ref__isabs [EXTRACTED]
+- _should_skip -> calls -> __unresolved__::ref::__unresolved____ref__path [EXTRACTED]
+- _should_skip -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- test_diarization_config -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_diarization_regression -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_diarization_regression -> imports -> __unresolved__::ref::__unresolved____ref__diarization_metrics [EXTRACTED]
+- test_queue_depth -> imports -> __unresolved__::ref::__unresolved____ref__app [EXTRACTED]
+- test_queue_depth -> imports -> __unresolved__::ref::__unresolved____ref__job_store [EXTRACTED]
+- test_queue_depth -> imports -> __unresolved__::ref::__unresolved____ref__schemas [EXTRACTED]
+- test_recluster_config -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
 - test_speaker_embedding -> contains -> _install_fake_pyannote [EXTRACTED]
 - test_speaker_embedding -> contains -> _reload_module [EXTRACTED]
-- test_speaker_embedding -> imports -> __unresolved__::ref::sys [EXTRACTED]
-- test_speaker_embedding -> imports -> __unresolved__::ref::types [EXTRACTED]
-- test_speaker_embedding -> imports -> __unresolved__::ref::mock [EXTRACTED]
-- test_speaker_embedding -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_speaker_embedding -> imports -> __unresolved__::ref::torch [EXTRACTED]
-- test_speaker_recluster -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_speaker_recluster_windows -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_speaker_recluster_windows -> imports -> __unresolved__::ref::speaker_recluster [EXTRACTED]
-- test_stt_processor_diarization_options -> imports -> __unresolved__::ref::pytest [EXTRACTED]
+- test_speaker_embedding -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
+- test_speaker_embedding -> imports -> __unresolved__::ref::__unresolved____ref__types [EXTRACTED]
+- test_speaker_embedding -> imports -> __unresolved__::ref::__unresolved____ref__mock [EXTRACTED]
+- test_speaker_embedding -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_speaker_embedding -> imports -> __unresolved__::ref::__unresolved____ref__torch [EXTRACTED]
+- _install_fake_pyannote -> calls -> __unresolved__::ref::__unresolved____ref__moduletype [EXTRACTED]
+- _install_fake_pyannote -> calls -> __unresolved__::ref::__unresolved____ref__fake_model_factory [EXTRACTED]
+- _install_fake_pyannote -> calls -> __unresolved__::ref::__unresolved____ref__setitem [EXTRACTED]
+- _reload_module -> calls -> __unresolved__::ref::__unresolved____ref__pop [EXTRACTED]
+- test_speaker_recluster -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_speaker_recluster_windows -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_speaker_recluster_windows -> imports -> __unresolved__::ref::__unresolved____ref__speaker_recluster [EXTRACTED]
+- test_stt_processor_diarization_options -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
 - test_stt_processor_recluster_integration -> contains -> _whisperx_segments [EXTRACTED]
-- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::mock [EXTRACTED]
-- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::pytest [EXTRACTED]
-- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::app [EXTRACTED]
-- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::speaker_embedding [EXTRACTED]
-- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::speaker_recluster [EXTRACTED]
+- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::__unresolved____ref__mock [EXTRACTED]
+- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::__unresolved____ref__pytest [EXTRACTED]
+- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::__unresolved____ref__app [EXTRACTED]
+- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::__unresolved____ref__speaker_embedding [EXTRACTED]
+- test_stt_processor_recluster_integration -> imports -> __unresolved__::ref::__unresolved____ref__speaker_recluster [EXTRACTED]
 
 ## Cross-Community Connections
-- resolveStage -> calls -> __unresolved__::ref::slice (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _cleanup_expired -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _cleanup_expired -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _cleanup_expired -> calls -> __unresolved__::ref::warning (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _cleanup_expired -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _ensure_results_dir -> calls -> __unresolved__::ref::warning (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- get -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- get_audio -> calls -> __unresolved__::ref::str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- get_audio -> calls -> __unresolved__::ref::warning (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- set_audio -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- transcribe -> contains -> _process_audio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- speaker_count -> calls -> __unresolved__::ref::set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- diarization_metrics -> contains -> word_level_speaker_accuracy (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _parse_float -> calls -> __unresolved__::ref::float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _load -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- extract_embedding -> calls -> __unresolved__::ref::abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- extract_embedding -> calls -> __unresolved__::ref::float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _canonicalize_labels -> calls -> __unresolved__::ref::keys (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _cluster_two -> calls -> __unresolved__::ref::float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _compute_confidence -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _compute_confidence -> calls -> __unresolved__::ref::min (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _compute_confidence -> calls -> __unresolved__::ref::float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- build_embedding_windows -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- build_embedding_windows -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- build_embedding_windows -> calls -> __unresolved__::ref::min (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- maybe_recluster_speakers -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- recluster_speakers -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- recluster_speakers -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _apply_reclustering -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _apply_reclustering -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _apply_reclustering -> calls -> __unresolved__::ref::info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _discover_tasks -> calls -> __unresolved__::ref::glob (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _discover_tasks -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _label_distribution -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _load_real_audio -> calls -> __unresolved__::ref::str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _load_real_audio -> calls -> __unresolved__::ref::run (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _permutation_invariant_match -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _permutation_invariant_match -> calls -> __unresolved__::ref::set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _render_report -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _render_report -> calls -> __unresolved__::ref::join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _validate_task -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _validate_task -> calls -> __unresolved__::ref::round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _validate_task -> calls -> __unresolved__::ref::float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- main -> calls -> __unresolved__::ref::exit (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- main -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- main -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- main -> calls -> __unresolved__::ref::str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- validate_recluster_offline -> contains -> _flatten_words (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _collect_speaker_stats -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _poll_job -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _run_all -> calls -> __unresolved__::ref::append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _run_all -> calls -> __unresolved__::ref::str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _run_one -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _run_one -> calls -> __unresolved__::ref::round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- verify_recluster_option_b -> contains -> _compare (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- _should_skip -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_health_completed_tasks_excluded_from_queue -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_health_includes_queue_when_empty -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_health_reflects_active_jobs -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_health_utilization_at_capacity -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_queue_full_returns_503 -> calls -> __unresolved__::ref::get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
-- test_queue_full_returns_503 -> calls -> __unresolved__::ref::str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-transcribe]])
+- resolveStage -> calls -> __unresolved__::ref::__unresolved____ref__slice (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _cleanup_expired -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- get -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- get_audio -> calls -> __unresolved__::ref::__unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- set_audio -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- set_audio -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- transcribe -> contains -> _process_audio (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- diarization_metrics -> contains -> speaker_count (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- diarization_metrics -> contains -> word_level_speaker_accuracy (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _parse_float -> calls -> __unresolved__::ref::__unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _load -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__abs (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- extract_embedding -> calls -> __unresolved__::ref::__unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- speaker_recluster -> contains -> build_embedding_windows (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- speaker_recluster -> contains -> _compute_confidence (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _canonicalize_labels -> calls -> __unresolved__::ref::__unresolved____ref__keys (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _cluster_two -> calls -> __unresolved__::ref::__unresolved____ref__range (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _cluster_two -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _cluster_two -> calls -> __unresolved__::ref::__unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- maybe_recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- recluster_speakers -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _apply_reclustering -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__time (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref____unresolved____ref__warning (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- load_models -> calls -> __unresolved__::ref::__unresolved____ref__info (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- validate_recluster_offline -> contains -> _flatten_words (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- validate_recluster_offline -> imports -> __unresolved__::ref::__unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- _discover_tasks -> calls -> __unresolved__::ref::__unresolved____ref__glob (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _discover_tasks -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _label_distribution -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _load_real_audio -> calls -> __unresolved__::ref::__unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _load_real_audio -> calls -> __unresolved__::ref::__unresolved____ref__run (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _permutation_invariant_match -> calls -> __unresolved__::ref::__unresolved____ref__set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__max (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _reconstruct_pseudo_audio -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _render_report -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _render_report -> calls -> __unresolved__::ref::__unresolved____ref__join (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _validate_task -> calls -> __unresolved__::ref::__unresolved____ref__float (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref__exit (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref__len (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- main -> calls -> __unresolved__::ref::__unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- verify_recluster_option_b -> contains -> _collect_speaker_stats (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- verify_recluster_option_b -> contains -> _compare (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- verify_recluster_option_b -> imports -> __unresolved__::ref::__unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- _poll_job -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _poll_job -> calls -> __unresolved__::ref::__unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- _post_transcribe -> calls -> __unresolved__::ref::__unresolved____ref__post (-> [[unresolvedrefunresolvedrefcreate-unresolvedrefunresolvedrefsetattr]])
+- _post_transcribe -> calls -> __unresolved__::ref::__unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- _run_all -> calls -> __unresolved__::ref::__unresolved____ref__append (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _run_all -> calls -> __unresolved__::ref::__unresolved____ref__str (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- _run_one -> calls -> __unresolved__::ref::__unresolved____ref__round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- conftest -> imports -> __unresolved__::ref::__unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- test_diarization_long_call -> imports -> __unresolved__::ref::__unresolved____ref__json (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefgetitem-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefsetitem]])
+- _should_skip -> calls -> __unresolved__::ref::__unresolved____ref__get (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
+- test_queue_depth -> contains -> TestActiveCount (-> [[unresolvedrefunresolvedrefcreate-unresolvedrefunresolvedrefsetattr]])
+- test_queue_depth -> contains -> TestQueueDepthEndpoint (-> [[unresolvedrefunresolvedrefcreate-unresolvedrefunresolvedrefsetattr]])
+- test_queue_depth -> contains -> TestExtensionValidation (-> [[unresolvedrefunresolvedrefcreate-unresolvedrefunresolvedrefsetattr]])
+- test_queue_depth -> contains -> TestHealthQueueField (-> [[unresolvedrefunresolvedrefcreate-unresolvedrefunresolvedrefsetattr]])
 
 ## Context
-이 커뮤니티는 extract_embedding, main, __unresolved__::ref::len를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 PackagingStageChecklist.tsx, config.py, conftest.py, diarization_config.py, diarization_metrics.py이다.
+이 커뮤니티는 extract_embedding, main, validate_recluster_offline를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 PackagingStageChecklist.tsx, config.py, conftest.py, diarization_config.py, diarization_metrics.py이다.
