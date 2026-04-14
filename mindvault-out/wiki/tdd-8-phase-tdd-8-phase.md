@@ -1,0 +1,148 @@
+# TDD 8-Phase & TDD 8-Phase
+Cohesion: 0.06 | Nodes: 35
+
+## Key Nodes
+- **TDD 8-Phase** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 13 connections
+  - -> contains -> [[phase-0-fixture-metric-harness]]
+  - -> contains -> [[phase-1-option-d-config-contract]]
+  - -> contains -> [[phase-2-option-d-pyannote-invocation]]
+  - -> contains -> [[phase-3-option-d-slow-integration-gate]]
+  - -> contains -> [[phase-4-option-b-wespeaker-runtime-wrapper]]
+  - -> contains -> [[phase-5-option-b-window-selection]]
+  - -> contains -> [[phase-6-option-b-reclustering-relabeling]]
+  - -> contains -> [[phase-7-option-b-pipeline-integration]]
+  - -> contains -> [[phase-8-regression-performance-gate]]
+  - -> contains -> [[dev-d]]
+  - -> contains -> [[live-d]]
+  - -> contains -> [[dev-live-b]]
+  - <- contains <- [[voice-api-d-b-tdd-8-phase]]
+- **TDD 8-Phase** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 13 connections
+  - -> contains -> [[phase-0-fixture-metric-harness]]
+  - -> contains -> [[phase-1-option-d-config-contract]]
+  - -> contains -> [[phase-2-option-d-pyannote-invocation]]
+  - -> contains -> [[phase-3-option-d-slow-integration-gate]]
+  - -> contains -> [[phase-4-option-b-wespeaker-runtime-wrapper]]
+  - -> contains -> [[phase-5-option-b-window-selection]]
+  - -> contains -> [[phase-6-option-b-reclustering-relabeling]]
+  - -> contains -> [[phase-7-option-b-pipeline-integration]]
+  - -> contains -> [[phase-8-regression-performance-gate]]
+  - -> contains -> [[dev-d]]
+  - -> contains -> [[live-d]]
+  - -> contains -> [[dev-live-b]]
+  - <- contains <- [[voice-api-d-b-tdd-8-phase]]
+- **후속 (Backlog)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 3 connections
+  - -> references -> [[unresolvedreflargev3turbo]]
+  - -> contains -> [[phase]]
+  - <- contains <- [[voice-api-d-b-tdd-8-phase]]
+- **voice-api 화자 분리 정확도 개선 (옵션 D + B, TDD 8-Phase)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 3 connections
+  - -> contains -> [[feature-flags]]
+  - -> contains -> [[tdd-8-phase]]
+  - -> contains -> [[backlog]]
+- **후속 (Backlog)** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 3 connections
+  - -> references -> [[unresolvedreflargev3turbo]]
+  - -> contains -> [[phase]]
+  - <- contains <- [[voice-api-d-b-tdd-8-phase]]
+- **voice-api 화자 분리 정확도 개선 (옵션 D + B, TDD 8-Phase)** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 3 connections
+  - -> contains -> [[feature-flags]]
+  - -> contains -> [[tdd-8-phase]]
+  - -> contains -> [[backlog]]
+- **__unresolved__::ref::large_v3_turbo___** () -- 2 connections
+  - <- references <- [[backlog]]
+  - <- references <- [[backlog]]
+- **Dev 단계 (옵션 D 먼저)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Dev → Live 단계 (옵션 B)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Feature Flags** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[voice-api-d-b-tdd-8-phase]]
+- **Live 단계 (옵션 D)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 완료 현황** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[backlog]]
+- **Phase 0: Fixture + Metric Harness** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 1: Option D — Config Contract** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 2: Option D — Pyannote Invocation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 3: Option D — Slow Integration Gate** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 4: Option B — WeSpeaker Runtime Wrapper** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 5: Option B — Window Selection** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 6: Option B — Reclustering & Relabeling** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 7: Option B — Pipeline Integration** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 8: Regression + Performance Gate** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Dev 단계 (옵션 D 먼저)** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Dev → Live 단계 (옵션 B)** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Feature Flags** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[voice-api-d-b-tdd-8-phase]]
+- **Live 단계 (옵션 D)** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 완료 현황** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[backlog]]
+- **Phase 0: Fixture + Metric Harness** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 1: Option D — Config Contract** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 2: Option D — Pyannote Invocation** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 3: Option D — Slow Integration Gate** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 4: Option B — WeSpeaker Runtime Wrapper** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 5: Option B — Window Selection** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 6: Option B — Reclustering & Relabeling** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 7: Option B — Pipeline Integration** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+- **Phase 8: Regression + Performance Gate** (/Users/gdash/project/uncounted-project/prompt_plan.md) -- 1 connections
+  - <- contains <- [[tdd-8-phase]]
+
+## Internal Relationships
+- 후속 (Backlog) -> references -> __unresolved__::ref::large_v3_turbo___ [EXTRACTED]
+- 후속 (Backlog) -> contains -> Phase 완료 현황 [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 0: Fixture + Metric Harness [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 1: Option D — Config Contract [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 2: Option D — Pyannote Invocation [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 3: Option D — Slow Integration Gate [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 4: Option B — WeSpeaker Runtime Wrapper [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 5: Option B — Window Selection [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 6: Option B — Reclustering & Relabeling [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 7: Option B — Pipeline Integration [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 8: Regression + Performance Gate [EXTRACTED]
+- TDD 8-Phase -> contains -> Dev 단계 (옵션 D 먼저) [EXTRACTED]
+- TDD 8-Phase -> contains -> Live 단계 (옵션 D) [EXTRACTED]
+- TDD 8-Phase -> contains -> Dev → Live 단계 (옵션 B) [EXTRACTED]
+- voice-api 화자 분리 정확도 개선 (옵션 D + B, TDD 8-Phase) -> contains -> Feature Flags [EXTRACTED]
+- voice-api 화자 분리 정확도 개선 (옵션 D + B, TDD 8-Phase) -> contains -> TDD 8-Phase [EXTRACTED]
+- voice-api 화자 분리 정확도 개선 (옵션 D + B, TDD 8-Phase) -> contains -> 후속 (Backlog) [EXTRACTED]
+- 후속 (Backlog) -> references -> __unresolved__::ref::large_v3_turbo___ [EXTRACTED]
+- 후속 (Backlog) -> contains -> Phase 완료 현황 [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 0: Fixture + Metric Harness [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 1: Option D — Config Contract [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 2: Option D — Pyannote Invocation [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 3: Option D — Slow Integration Gate [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 4: Option B — WeSpeaker Runtime Wrapper [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 5: Option B — Window Selection [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 6: Option B — Reclustering & Relabeling [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 7: Option B — Pipeline Integration [EXTRACTED]
+- TDD 8-Phase -> contains -> Phase 8: Regression + Performance Gate [EXTRACTED]
+- TDD 8-Phase -> contains -> Dev 단계 (옵션 D 먼저) [EXTRACTED]
+- TDD 8-Phase -> contains -> Live 단계 (옵션 D) [EXTRACTED]
+- TDD 8-Phase -> contains -> Dev → Live 단계 (옵션 B) [EXTRACTED]
+- voice-api 화자 분리 정확도 개선 (옵션 D + B, TDD 8-Phase) -> contains -> Feature Flags [EXTRACTED]
+- voice-api 화자 분리 정확도 개선 (옵션 D + B, TDD 8-Phase) -> contains -> TDD 8-Phase [EXTRACTED]
+- voice-api 화자 분리 정확도 개선 (옵션 D + B, TDD 8-Phase) -> contains -> 후속 (Backlog) [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 TDD 8-Phase, TDD 8-Phase, 후속 (Backlog)를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 prompt_plan.md이다.

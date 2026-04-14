@@ -1,0 +1,148 @@
+# Task Decomposition (atomic tasks with acceptance criteria and specific file paths) & Orchestration Strategy: voice-api diarization accuracy
+Cohesion: 0.06 | Nodes: 35
+
+## Key Nodes
+- **Task Decomposition (atomic tasks with acceptance criteria and specific file paths)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 18 connections
+  - -> contains -> [[t01-regression-fixtures]]
+  - -> contains -> [[t02-diarization-metric-unit-tests]]
+  - -> contains -> [[t03-diarization-metrics-implementation]]
+  - -> contains -> [[t11-option-d-config-contract-tests]]
+  - -> contains -> [[t12-option-d-config-implementation]]
+  - -> contains -> [[t21-pyannote-invocation-tests]]
+  - -> contains -> [[t22-pyannote-invocation-implementation]]
+  - -> contains -> [[t31-long-call-integration-gate]]
+  - -> contains -> [[t41-wespeaker-runtime-tests]]
+  - -> contains -> [[t42-wespeaker-runtime-implementation]]
+  - -> contains -> [[t51-window-selection-tests]]
+  - -> contains -> [[t52-window-selection-implementation]]
+  - -> contains -> [[t61-reclustering-tests]]
+  - -> contains -> [[t62-reclustering-implementation]]
+  - -> contains -> [[t71-pipeline-integration-tests]]
+  - -> contains -> [[t72-pipeline-integration-implementation]]
+  - -> contains -> [[t81-regressionperformance-gate]]
+  - <- contains <- [[orchestration-strategy-voice-api-diarization-accuracy]]
+- **Orchestration Strategy: voice-api diarization accuracy** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 8 connections
+  - -> contains -> [[summary]]
+  - -> contains -> [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+  - -> contains -> [[dependency-analysis-ordering-file-ownership-conflicts-parallelizable-groups]]
+  - -> contains -> [[team-composition-team-type-refactorfeaturebugfix-agent-count-1-3-role-assignments]]
+  - -> contains -> [[wave-execution-plan-wave-1-independent-wave-2-depends-on-1-with-complexity-lmh-per-task]]
+  - -> contains -> [[risk-assessment-file-conflict-dependency-ordering-integration-risk]]
+  - -> contains -> [[alternative-strategies]]
+  - -> contains -> [[confidence-level]]
+- **Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 7 connections
+  - -> contains -> [[wave-1-foundation-serialized]]
+  - -> contains -> [[wave-2-option-d-unit-path]]
+  - -> contains -> [[wave-3-option-d-pr1-integration-gate]]
+  - -> contains -> [[wave-4-option-b-isolated-services-parallel-after-interface-freeze]]
+  - -> contains -> [[wave-5-option-b-pipeline-integration]]
+  - -> contains -> [[wave-6-final-regression-and-performance-gate]]
+  - <- contains <- [[orchestration-strategy-voice-api-diarization-accuracy]]
+- **Alternative Strategies** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 4 connections
+  - -> contains -> [[alternative-a-single-sequential-agent]]
+  - -> contains -> [[alternative-b-two-agent-split]]
+  - -> contains -> [[alternative-c-full-parallel-from-phase-1-onward]]
+  - <- contains <- [[orchestration-strategy-voice-api-diarization-accuracy]]
+- **Alternative A: Single sequential agent** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[alternative-strategies]]
+- **Alternative B: Two-agent split** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[alternative-strategies]]
+- **Alternative C: Full parallel from Phase 1 onward** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[alternative-strategies]]
+- **Confidence Level** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[orchestration-strategy-voice-api-diarization-accuracy]]
+- **Dependency Analysis (ordering, file ownership conflicts, parallelizable groups)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[orchestration-strategy-voice-api-diarization-accuracy]]
+- **Risk Assessment (file conflict, dependency ordering, integration risk)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[orchestration-strategy-voice-api-diarization-accuracy]]
+- **Summary** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[orchestration-strategy-voice-api-diarization-accuracy]]
+- **T0.1: Regression fixtures** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T0.2: Diarization metric unit tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T0.3: Diarization metrics implementation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T1.1: Option D config contract tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T1.2: Option D config implementation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T2.1: pyannote invocation tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T2.2: pyannote invocation implementation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T3.1: Long-call integration gate** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T4.1: WeSpeaker runtime tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T4.2: WeSpeaker runtime implementation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T5.1: Window selection tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T5.2: Window selection implementation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T6.1: Reclustering tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T6.2: Reclustering implementation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T7.1: Pipeline integration tests** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T7.2: Pipeline integration implementation** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **T8.1: Regression/performance gate** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[task-decomposition-atomic-tasks-with-acceptance-criteria-and-specific-file-paths]]
+- **Team Composition (team type refactor/feature/bugfix, agent count 1-3, role assignments)** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[orchestration-strategy-voice-api-diarization-accuracy]]
+- **Wave 1: Foundation, serialized** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan-wave-1-independent-wave-2-depends-on-1-with-complexity-lmh-per-task]]
+- **Wave 2: Option D unit path** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan-wave-1-independent-wave-2-depends-on-1-with-complexity-lmh-per-task]]
+- **Wave 3: Option D PR1 integration gate** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan-wave-1-independent-wave-2-depends-on-1-with-complexity-lmh-per-task]]
+- **Wave 4: Option B isolated services, parallel after interface freeze** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan-wave-1-independent-wave-2-depends-on-1-with-complexity-lmh-per-task]]
+- **Wave 5: Option B pipeline integration** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan-wave-1-independent-wave-2-depends-on-1-with-complexity-lmh-per-task]]
+- **Wave 6: Final regression and performance gate** (/Users/gdash/project/uncounted-project/.orchestrate-consult/20260413-191850/codex.md) -- 1 connections
+  - <- contains <- [[wave-execution-plan-wave-1-independent-wave-2-depends-on-1-with-complexity-lmh-per-task]]
+
+## Internal Relationships
+- Alternative Strategies -> contains -> Alternative A: Single sequential agent [EXTRACTED]
+- Alternative Strategies -> contains -> Alternative B: Two-agent split [EXTRACTED]
+- Alternative Strategies -> contains -> Alternative C: Full parallel from Phase 1 onward [EXTRACTED]
+- Orchestration Strategy: voice-api diarization accuracy -> contains -> Summary [EXTRACTED]
+- Orchestration Strategy: voice-api diarization accuracy -> contains -> Task Decomposition (atomic tasks with acceptance criteria and specific file paths) [EXTRACTED]
+- Orchestration Strategy: voice-api diarization accuracy -> contains -> Dependency Analysis (ordering, file ownership conflicts, parallelizable groups) [EXTRACTED]
+- Orchestration Strategy: voice-api diarization accuracy -> contains -> Team Composition (team type refactor/feature/bugfix, agent count 1-3, role assignments) [EXTRACTED]
+- Orchestration Strategy: voice-api diarization accuracy -> contains -> Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task) [EXTRACTED]
+- Orchestration Strategy: voice-api diarization accuracy -> contains -> Risk Assessment (file conflict, dependency ordering, integration risk) [EXTRACTED]
+- Orchestration Strategy: voice-api diarization accuracy -> contains -> Alternative Strategies [EXTRACTED]
+- Orchestration Strategy: voice-api diarization accuracy -> contains -> Confidence Level [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T0.1: Regression fixtures [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T0.2: Diarization metric unit tests [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T0.3: Diarization metrics implementation [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T1.1: Option D config contract tests [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T1.2: Option D config implementation [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T2.1: pyannote invocation tests [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T2.2: pyannote invocation implementation [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T3.1: Long-call integration gate [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T4.1: WeSpeaker runtime tests [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T4.2: WeSpeaker runtime implementation [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T5.1: Window selection tests [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T5.2: Window selection implementation [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T6.1: Reclustering tests [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T6.2: Reclustering implementation [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T7.1: Pipeline integration tests [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T7.2: Pipeline integration implementation [EXTRACTED]
+- Task Decomposition (atomic tasks with acceptance criteria and specific file paths) -> contains -> T8.1: Regression/performance gate [EXTRACTED]
+- Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task) -> contains -> Wave 1: Foundation, serialized [EXTRACTED]
+- Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task) -> contains -> Wave 2: Option D unit path [EXTRACTED]
+- Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task) -> contains -> Wave 3: Option D PR1 integration gate [EXTRACTED]
+- Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task) -> contains -> Wave 4: Option B isolated services, parallel after interface freeze [EXTRACTED]
+- Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task) -> contains -> Wave 5: Option B pipeline integration [EXTRACTED]
+- Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task) -> contains -> Wave 6: Final regression and performance gate [EXTRACTED]
+
+## Cross-Community Connections
+
+## Context
+이 커뮤니티는 Task Decomposition (atomic tasks with acceptance criteria and specific file paths), Orchestration Strategy: voice-api diarization accuracy, Wave Execution Plan (Wave 1: independent, Wave 2: depends on 1, ..., with complexity L/M/H per task)를 중심으로 contains 관계로 연결되어 있다. 주요 소스 파일은 codex.md이다.

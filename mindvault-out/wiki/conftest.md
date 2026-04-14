@@ -2,7 +2,7 @@
 Cohesion: 1.00 | Nodes: 1
 
 ## Key Nodes
-- **._conftest** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/._conftest.py) -- 0 connections
+- **._conftest** (/Users/gdash/project/uncounted-project/uncounted-voice-api/tests/integration/._conftest.py) -- 0 connections
 
 ## Internal Relationships
 

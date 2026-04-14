@@ -1,67 +1,67 @@
 # main & main
-Cohesion: 0.03 | Nodes: 94
+Cohesion: 0.03 | Nodes: 96
 
 ## Key Nodes
 - **main** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 38 connections
-  - -> calls -> [[unresolvedrefparseargs]]
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefsetuplogging]]
-  - -> calls -> [[unresolvedrefgetlogger]]
-  - -> calls -> [[unresolvedrefopen]]
-  - -> calls -> [[unresolvedrefload]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedreferror]]
-  - -> calls -> [[unresolvedrefpop]]
-  - -> calls -> [[unresolvedrefinfo]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefloadmodels]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefsplitlines]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - -> calls -> [[unresolvedrefcheckoutput]]
-  - -> calls -> [[unresolvedrefenumerate]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefpath]]
-  - -> calls -> [[unresolvedrefmkdtemp]]
-  - -> calls -> [[unresolvedrefcopy2]]
-  - -> calls -> [[unresolvedrefvramsampler]]
-  - -> calls -> [[unresolvedrefstart]]
-  - -> calls -> [[unresolvedreftranscribe]]
-  - -> calls -> [[unresolvedrefstr]]
-  - -> calls -> [[unresolvedreftype]]
-  - -> calls -> [[unresolvedrefexception]]
-  - -> calls -> [[unresolvedrefstop]]
-  - -> calls -> [[unresolvedrefjoin]]
-  - -> calls -> [[unresolvedrefmax]]
-  - -> calls -> [[unresolvedrefrmtree]]
-  - -> calls -> [[unresolvedrefstripbytes]]
-  - -> calls -> [[unresolvedrefdump]]
-  - -> calls -> [[unresolvedrefround]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefsum]]
+  - -> calls -> [[unresolvedrefunresolvedrefparseargs]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefsetuplogging]]
+  - -> calls -> [[unresolvedrefunresolvedrefgetlogger]]
+  - -> calls -> [[unresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefload]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedreferror]]
+  - -> calls -> [[unresolvedrefunresolvedrefpop]]
+  - -> calls -> [[unresolvedrefunresolvedrefinfo]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadmodels]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplitlines]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefcheckoutput]]
+  - -> calls -> [[unresolvedrefunresolvedrefenumerate]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefpath]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdtemp]]
+  - -> calls -> [[unresolvedrefunresolvedrefcopy2]]
+  - -> calls -> [[unresolvedrefunresolvedrefvramsampler]]
+  - -> calls -> [[unresolvedrefunresolvedrefstart]]
+  - -> calls -> [[unresolvedrefunresolvedreftranscribe]]
+  - -> calls -> [[unresolvedrefunresolvedrefstr]]
+  - -> calls -> [[unresolvedrefunresolvedreftype]]
+  - -> calls -> [[unresolvedrefunresolvedrefexception]]
+  - -> calls -> [[unresolvedrefunresolvedrefstop]]
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefrmtree]]
+  - -> calls -> [[unresolvedrefunresolvedrefstripbytes]]
+  - -> calls -> [[unresolvedrefunresolvedrefdump]]
+  - -> calls -> [[unresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefsum]]
   - <- contains <- [[benchstt]]
 - **main** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_diff.py) -- 21 connections
-  - -> calls -> [[unresolvedrefargumentparser]]
-  - -> calls -> [[unresolvedrefaddargument]]
-  - -> calls -> [[unresolvedrefparseargs]]
-  - -> calls -> [[unresolvedrefreplace]]
-  - -> calls -> [[unresolvedrefglob]]
-  - -> calls -> [[unresolvedrefsorted]]
-  - -> calls -> [[unresolvedrefset]]
-  - -> calls -> [[unresolvedrefkeys]]
-  - -> calls -> [[unresolvedrefprint]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedrefloadtranscript]]
-  - -> calls -> [[unresolvedrefwer]]
-  - -> calls -> [[unresolvedrefcer]]
-  - -> calls -> [[unresolvedrefround]]
-  - -> calls -> [[unresolvedrefmax]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefsum]]
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefopen]]
-  - -> calls -> [[unresolvedrefdump]]
+  - -> calls -> [[unresolvedrefunresolvedrefargumentparser]]
+  - -> calls -> [[unresolvedrefunresolvedrefaddargument]]
+  - -> calls -> [[unresolvedrefunresolvedrefparseargs]]
+  - -> calls -> [[unresolvedrefunresolvedrefreplace]]
+  - -> calls -> [[unresolvedrefunresolvedrefglob]]
+  - -> calls -> [[unresolvedrefunresolvedrefsorted]]
+  - -> calls -> [[unresolvedrefunresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefkeys]]
+  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadtranscript]]
+  - -> calls -> [[unresolvedrefunresolvedrefwer]]
+  - -> calls -> [[unresolvedrefunresolvedrefcer]]
+  - -> calls -> [[unresolvedrefunresolvedrefround]]
+  - -> calls -> [[unresolvedrefunresolvedrefmax]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefsum]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefdump]]
   - <- contains <- [[benchdiff]]
 - **bench_stt** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 17 connections
   - -> contains -> [[stripbytes]]
@@ -69,494 +69,498 @@ Cohesion: 0.03 | Nodes: 94
   - -> contains -> [[vramsampler]]
   - -> contains -> [[setuplogging]]
   - -> contains -> [[main]]
-  - -> imports -> [[unresolvedrefargparse]]
-  - -> imports -> [[unresolvedrefjson]]
-  - -> imports -> [[unresolvedreflogging]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefshutil]]
-  - -> imports -> [[unresolvedrefsubprocess]]
-  - -> imports -> [[unresolvedrefsys]]
-  - -> imports -> [[unresolvedreftempfile]]
-  - -> imports -> [[unresolvedrefthreading]]
-  - -> imports -> [[unresolvedreftime]]
-  - -> imports -> [[unresolvedrefpathlib]]
-  - -> imports -> [[unresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefargparse]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedreflogging]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefshutil]]
+  - -> imports -> [[unresolvedrefunresolvedrefsubprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedreftempfile]]
+  - -> imports -> [[unresolvedrefunresolvedrefthreading]]
+  - -> imports -> [[unresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
 - **main** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_compare.py) -- 16 connections
-  - -> calls -> [[unresolvedrefargumentparser]]
-  - -> calls -> [[unresolvedrefaddargument]]
-  - -> calls -> [[unresolvedrefparseargs]]
-  - -> calls -> [[unresolvedrefexists]]
-  - -> calls -> [[unresolvedrefprint]]
-  - -> calls -> [[unresolvedrefloadsegments]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefsort]]
-  - -> calls -> [[unresolvedreflen]]
-  - -> calls -> [[unresolvedreffmttime]]
-  - -> calls -> [[unresolvedrefjoin]]
-  - -> calls -> [[unresolvedrefunifieddiff]]
-  - -> calls -> [[unresolvedrefsplit]]
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefwritetext]]
+  - -> calls -> [[unresolvedrefunresolvedrefargumentparser]]
+  - -> calls -> [[unresolvedrefunresolvedrefaddargument]]
+  - -> calls -> [[unresolvedrefunresolvedrefparseargs]]
+  - -> calls -> [[unresolvedrefunresolvedrefexists]]
+  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadsegments]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefsort]]
+  - -> calls -> [[unresolvedrefunresolvedreflen]]
+  - -> calls -> [[unresolvedrefunresolvedreffmttime]]
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
+  - -> calls -> [[unresolvedrefunresolvedrefunifieddiff]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplit]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefwritetext]]
   - <- contains <- [[benchcompare]]
 - **bench_compare** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_compare.py) -- 8 connections
   - -> contains -> [[loadsegments]]
   - -> contains -> [[fmttime]]
   - -> contains -> [[main]]
-  - -> imports -> [[unresolvedrefargparse]]
-  - -> imports -> [[unresolvedrefdifflib]]
-  - -> imports -> [[unresolvedrefjson]]
-  - -> imports -> [[unresolvedrefpathlib]]
-  - -> imports -> [[unresolvedreftyping]]
+  - -> imports -> [[unresolvedrefunresolvedrefargparse]]
+  - -> imports -> [[unresolvedrefunresolvedrefdifflib]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
 - **run** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 8 connections
-  - -> calls -> [[unresolvedrefisset]]
-  - -> calls -> [[unresolvedrefcheckoutput]]
-  - -> calls -> [[unresolvedrefint]]
-  - -> calls -> [[unresolvedrefsplitlines]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - -> calls -> [[unresolvedrefappend]]
-  - -> calls -> [[unresolvedrefwait]]
+  - -> calls -> [[unresolvedrefunresolvedrefisset]]
+  - -> calls -> [[unresolvedrefunresolvedrefcheckoutput]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefsplitlines]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefappend]]
+  - -> calls -> [[unresolvedrefunresolvedrefwait]]
   - <- contains <- [[vramsampler]]
 - **main** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/turbo_load_probe.py) -- 8 connections
-  - -> calls -> [[unresolvedrefpop]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefprint]]
-  - -> calls -> [[unresolvedreftime]]
-  - -> calls -> [[unresolvedrefloadmodels]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - -> calls -> [[unresolvedrefcheckoutput]]
+  - -> calls -> [[unresolvedrefunresolvedrefpop]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefprint]]
+  - -> calls -> [[unresolvedrefunresolvedreftime]]
+  - -> calls -> [[unresolvedrefunresolvedrefloadmodels]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefcheckoutput]]
   - <- contains <- [[turboloadprobe]]
-- **__unresolved__::ref::get** () -- 6 connections
+- **load_segments** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_compare.py) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefload]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedreffloat]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - <- contains <- [[benchcompare]]
+- **bench_diff** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_diff.py) -- 6 connections
+  - -> contains -> [[loadtranscript]]
+  - -> contains -> [[main]]
+  - -> imports -> [[unresolvedrefunresolvedrefargparse]]
+  - -> imports -> [[unresolvedrefunresolvedrefjson]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+  - -> imports -> [[unresolvedrefunresolvedreftyping]]
+- **load_transcript** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_diff.py) -- 6 connections
+  - -> calls -> [[unresolvedrefunresolvedrefopen]]
+  - -> calls -> [[unresolvedrefunresolvedrefload]]
+  - -> calls -> [[unresolvedrefunresolvedrefget]]
+  - -> calls -> [[unresolvedrefunresolvedrefstrip]]
+  - -> calls -> [[unresolvedrefunresolvedrefjoin]]
+  - <- contains <- [[benchdiff]]
+- **turbo_load_probe** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/turbo_load_probe.py) -- 6 connections
+  - -> contains -> [[main]]
+  - -> imports -> [[unresolvedrefunresolvedrefos]]
+  - -> imports -> [[unresolvedrefunresolvedrefsubprocess]]
+  - -> imports -> [[unresolvedrefunresolvedrefsys]]
+  - -> imports -> [[unresolvedrefunresolvedreftime]]
+  - -> imports -> [[unresolvedrefunresolvedrefpathlib]]
+- **__unresolved__::ref::__unresolved____ref__get** () -- 5 connections
+  - <- calls <- [[fetcheligiblebus]]
   - <- calls <- [[main]]
   - <- calls <- [[loadsegments]]
   - <- calls <- [[loadtranscript]]
   - <- calls <- [[main]]
-  - <- calls <- [[createziparchive]]
-  - <- calls <- [[fetcheligiblebus]]
-- **load_segments** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_compare.py) -- 6 connections
-  - -> calls -> [[unresolvedrefopen]]
-  - -> calls -> [[unresolvedrefload]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedreffloat]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - <- contains <- [[benchcompare]]
-- **load_transcript** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_diff.py) -- 6 connections
-  - -> calls -> [[unresolvedrefopen]]
-  - -> calls -> [[unresolvedrefload]]
-  - -> calls -> [[unresolvedrefget]]
-  - -> calls -> [[unresolvedrefstrip]]
-  - -> calls -> [[unresolvedrefjoin]]
-  - <- contains <- [[benchdiff]]
-- **bench_diff** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_diff.py) -- 6 connections
-  - -> contains -> [[loadtranscript]]
-  - -> contains -> [[main]]
-  - -> imports -> [[unresolvedrefargparse]]
-  - -> imports -> [[unresolvedrefjson]]
-  - -> imports -> [[unresolvedrefpathlib]]
-  - -> imports -> [[unresolvedreftyping]]
-- **turbo_load_probe** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/turbo_load_probe.py) -- 6 connections
-  - -> contains -> [[main]]
-  - -> imports -> [[unresolvedrefos]]
-  - -> imports -> [[unresolvedrefsubprocess]]
-  - -> imports -> [[unresolvedrefsys]]
-  - -> imports -> [[unresolvedreftime]]
-  - -> imports -> [[unresolvedrefpathlib]]
-- **__unresolved__::ref::append** () -- 5 connections
-  - <- calls <- [[main]]
-  - <- calls <- [[main]]
-  - <- calls <- [[run]]
-  - <- calls <- [[main]]
-  - <- calls <- [[createziparchive]]
-- **__unresolved__::ref::strip** () -- 5 connections
+- **__unresolved__::ref::__unresolved____ref__strip** () -- 5 connections
   - <- calls <- [[main]]
   - <- calls <- [[loadsegments]]
   - <- calls <- [[loadtranscript]]
   - <- calls <- [[run]]
   - <- calls <- [[main]]
 - **setup_logging** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 5 connections
-  - -> calls -> [[unresolvedrefmkdir]]
-  - -> calls -> [[unresolvedrefstreamhandler]]
-  - -> calls -> [[unresolvedreffilehandler]]
-  - -> calls -> [[unresolvedrefbasicconfig]]
+  - -> calls -> [[unresolvedrefunresolvedrefmkdir]]
+  - -> calls -> [[unresolvedrefunresolvedrefstreamhandler]]
+  - -> calls -> [[unresolvedrefunresolvedreffilehandler]]
+  - -> calls -> [[unresolvedrefunresolvedrefbasicconfig]]
   - <- contains <- [[benchstt]]
-- **__unresolved__::ref::join** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__append** () -- 4 connections
   - <- calls <- [[main]]
-  - <- calls <- [[loadtranscript]]
   - <- calls <- [[main]]
-  - <- calls <- [[createziparchive]]
-- **__unresolved__::ref::mkdir** () -- 4 connections
+  - <- calls <- [[run]]
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref__mkdir** () -- 4 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
   - <- calls <- [[setuplogging]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::open** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__open** () -- 4 connections
   - <- calls <- [[loadsegments]]
   - <- calls <- [[loadtranscript]]
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::parse_args** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__parse_args** () -- 4 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
   - <- calls <- [[parseargs]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::pathlib** () -- 4 connections
+- **__unresolved__::ref::__unresolved____ref__pathlib** () -- 4 connections
   - <- imports <- [[turboloadprobe]]
   - <- imports <- [[benchcompare]]
   - <- imports <- [[benchdiff]]
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::time** () -- 4 connections
-  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref__time** () -- 4 connections
   - <- imports <- [[turboloadprobe]]
   - <- calls <- [[main]]
   - <- imports <- [[benchstt]]
+  - <- calls <- [[main]]
 - **VramSampler** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 4 connections
   - -> contains -> [[init]]
   - -> contains -> [[run]]
   - -> contains -> [[stop]]
   - <- contains <- [[benchstt]]
+- **__init__** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 4 connections
+  - -> calls -> [[unresolvedrefunresolvedrefinit]]
+  - -> calls -> [[unresolvedrefunresolvedrefsuper]]
+  - -> calls -> [[unresolvedrefunresolvedrefevent]]
+  - <- contains <- [[vramsampler]]
 - **_strip_bytes** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 4 connections
-  - -> calls -> [[unresolvedrefisinstance]]
-  - -> calls -> [[unresolvedrefstripbytes]]
-  - -> calls -> [[unresolvedrefitems]]
+  - -> calls -> [[unresolvedrefunresolvedrefisinstance]]
+  - -> calls -> [[unresolvedrefunresolvedrefstripbytes]]
+  - -> calls -> [[unresolvedrefunresolvedrefitems]]
   - <- contains <- [[benchstt]]
 - **parse_args** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 4 connections
-  - -> calls -> [[unresolvedrefargumentparser]]
-  - -> calls -> [[unresolvedrefaddargument]]
-  - -> calls -> [[unresolvedrefparseargs]]
+  - -> calls -> [[unresolvedrefunresolvedrefargumentparser]]
+  - -> calls -> [[unresolvedrefunresolvedrefaddargument]]
+  - -> calls -> [[unresolvedrefunresolvedrefparseargs]]
   - <- contains <- [[benchstt]]
-- **__init__** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 4 connections
-  - -> calls -> [[unresolvedrefinit]]
-  - -> calls -> [[unresolvedrefsuper]]
-  - -> calls -> [[unresolvedrefevent]]
-  - <- contains <- [[vramsampler]]
-- **__unresolved__::ref::add_argument** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__add_argument** () -- 3 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
   - <- calls <- [[parseargs]]
-- **__unresolved__::ref::argparse** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__argparse** () -- 3 connections
   - <- imports <- [[benchcompare]]
   - <- imports <- [[benchdiff]]
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::argumentparser** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__argumentparser** () -- 3 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
   - <- calls <- [[parseargs]]
-- **__unresolved__::ref::check_output** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__check_output** () -- 3 connections
   - <- calls <- [[main]]
   - <- calls <- [[run]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::int** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__int** () -- 3 connections
   - <- calls <- [[fmttime]]
   - <- calls <- [[run]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::json** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__join** () -- 3 connections
+  - <- calls <- [[main]]
+  - <- calls <- [[loadtranscript]]
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref__json** () -- 3 connections
   - <- imports <- [[benchcompare]]
   - <- imports <- [[benchdiff]]
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::len** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__len** () -- 3 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::load** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__load** () -- 3 connections
   - <- calls <- [[loadsegments]]
   - <- calls <- [[loadtranscript]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::print** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__print** () -- 3 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::typing** () -- 3 connections
+- **__unresolved__::ref::__unresolved____ref__round** () -- 3 connections
+  - <- calls <- [[stratifiedsample]]
+  - <- calls <- [[main]]
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref__set** () -- 3 connections
+  - <- calls <- [[fetcheligiblebus]]
+  - <- calls <- [[main]]
+  - <- calls <- [[stop]]
+- **__unresolved__::ref::__unresolved____ref__typing** () -- 3 connections
   - <- imports <- [[benchcompare]]
   - <- imports <- [[benchdiff]]
   - <- imports <- [[benchstt]]
 - **fmt_time** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_compare.py) -- 3 connections
-  - -> calls -> [[unresolvedrefdivmod]]
-  - -> calls -> [[unresolvedrefint]]
+  - -> calls -> [[unresolvedrefunresolvedrefdivmod]]
+  - -> calls -> [[unresolvedrefunresolvedrefint]]
   - <- contains <- [[benchcompare]]
-- **__unresolved__::ref::_strip_bytes** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref___strip_bytes** () -- 2 connections
   - <- calls <- [[stripbytes]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::dump** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__dump** () -- 2 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::error** () -- 2 connections
-  - <- calls <- [[main]]
-  - <- calls <- [[createziparchive]]
-- **__unresolved__::ref::exists** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__exists** () -- 2 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::load_models** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__load_models** () -- 2 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::max** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__max** () -- 2 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::os** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__os** () -- 2 connections
   - <- imports <- [[turboloadprobe]]
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::pop** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__pop** () -- 2 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::splitlines** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__splitlines** () -- 2 connections
   - <- calls <- [[run]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::subprocess** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__subprocess** () -- 2 connections
   - <- imports <- [[turboloadprobe]]
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::sum** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__sum** () -- 2 connections
   - <- calls <- [[main]]
   - <- calls <- [[main]]
-- **__unresolved__::ref::sys** () -- 2 connections
+- **__unresolved__::ref::__unresolved____ref__sys** () -- 2 connections
   - <- imports <- [[turboloadprobe]]
   - <- imports <- [[benchstt]]
 - **stop** (/Users/gdash/project/uncounted-project/uncounted-voice-api/scripts/bench_stt.py) -- 2 connections
-  - -> calls -> [[unresolvedrefset]]
+  - -> calls -> [[unresolvedrefunresolvedrefset]]
   - <- contains <- [[vramsampler]]
-- **__unresolved__::ref::__init__** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref____init__** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::basicconfig** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__basicconfig** () -- 1 connections
   - <- calls <- [[setuplogging]]
-- **__unresolved__::ref::cer** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__cer** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::copy2** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__copy2** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::difflib** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__difflib** () -- 1 connections
   - <- imports <- [[benchcompare]]
-- **__unresolved__::ref::divmod** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__divmod** () -- 1 connections
   - <- calls <- [[fmttime]]
-- **__unresolved__::ref::enumerate** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__enumerate** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::event** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__error** () -- 1 connections
+  - <- calls <- [[main]]
+- **__unresolved__::ref::__unresolved____ref__event** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::exception** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__exception** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::filehandler** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__filehandler** () -- 1 connections
   - <- calls <- [[setuplogging]]
-- **__unresolved__::ref::float** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__float** () -- 1 connections
   - <- calls <- [[loadsegments]]
-- **__unresolved__::ref::fmt_time** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__fmt_time** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::getlogger** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__getlogger** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::glob** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__glob** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::info** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__info** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::is_set** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__is_set** () -- 1 connections
   - <- calls <- [[run]]
-- **__unresolved__::ref::isinstance** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__isinstance** () -- 1 connections
   - <- calls <- [[stripbytes]]
-- **__unresolved__::ref::items** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__items** () -- 1 connections
   - <- calls <- [[stripbytes]]
-- **__unresolved__::ref::keys** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__keys** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::load_segments** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__load_segments** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::load_transcript** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__load_transcript** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::logging** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__logging** () -- 1 connections
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::mkdtemp** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__mkdtemp** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::path** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__path** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::replace** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__replace** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::rmtree** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__rmtree** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::setup_logging** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__setup_logging** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::shutil** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__shutil** () -- 1 connections
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::sort** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__sort** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::sorted** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__sorted** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::split** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__split** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::start** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__start** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::stop** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__stop** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::str** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__str** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::streamhandler** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__streamhandler** () -- 1 connections
   - <- calls <- [[setuplogging]]
-- **__unresolved__::ref::super** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__super** () -- 1 connections
   - <- calls <- [[init]]
-- **__unresolved__::ref::tempfile** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__tempfile** () -- 1 connections
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::threading** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__threading** () -- 1 connections
   - <- imports <- [[benchstt]]
-- **__unresolved__::ref::transcribe** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__transcribe** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::type** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__type** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::unified_diff** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__unified_diff** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::vramsampler** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__vramsampler** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::wait** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__wait** () -- 1 connections
   - <- calls <- [[run]]
-- **__unresolved__::ref::wer** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__wer** () -- 1 connections
   - <- calls <- [[main]]
-- **__unresolved__::ref::write_text** () -- 1 connections
+- **__unresolved__::ref::__unresolved____ref__write_text** () -- 1 connections
   - <- calls <- [[main]]
 
 ## Internal Relationships
-- fmt_time -> calls -> __unresolved__::ref::divmod [EXTRACTED]
-- fmt_time -> calls -> __unresolved__::ref::int [EXTRACTED]
-- load_segments -> calls -> __unresolved__::ref::open [EXTRACTED]
-- load_segments -> calls -> __unresolved__::ref::load [EXTRACTED]
-- load_segments -> calls -> __unresolved__::ref::get [EXTRACTED]
-- load_segments -> calls -> __unresolved__::ref::float [EXTRACTED]
-- load_segments -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- main -> calls -> __unresolved__::ref::argumentparser [EXTRACTED]
-- main -> calls -> __unresolved__::ref::add_argument [EXTRACTED]
-- main -> calls -> __unresolved__::ref::parse_args [EXTRACTED]
-- main -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- main -> calls -> __unresolved__::ref::print [EXTRACTED]
-- main -> calls -> __unresolved__::ref::load_segments [EXTRACTED]
-- main -> calls -> __unresolved__::ref::append [EXTRACTED]
-- main -> calls -> __unresolved__::ref::sort [EXTRACTED]
-- main -> calls -> __unresolved__::ref::len [EXTRACTED]
-- main -> calls -> __unresolved__::ref::fmt_time [EXTRACTED]
-- main -> calls -> __unresolved__::ref::join [EXTRACTED]
-- main -> calls -> __unresolved__::ref::unified_diff [EXTRACTED]
-- main -> calls -> __unresolved__::ref::split [EXTRACTED]
-- main -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- main -> calls -> __unresolved__::ref::write_text [EXTRACTED]
 - bench_compare -> contains -> load_segments [EXTRACTED]
 - bench_compare -> contains -> fmt_time [EXTRACTED]
 - bench_compare -> contains -> main [EXTRACTED]
-- bench_compare -> imports -> __unresolved__::ref::argparse [EXTRACTED]
-- bench_compare -> imports -> __unresolved__::ref::difflib [EXTRACTED]
-- bench_compare -> imports -> __unresolved__::ref::json [EXTRACTED]
-- bench_compare -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
-- bench_compare -> imports -> __unresolved__::ref::typing [EXTRACTED]
-- load_transcript -> calls -> __unresolved__::ref::open [EXTRACTED]
-- load_transcript -> calls -> __unresolved__::ref::load [EXTRACTED]
-- load_transcript -> calls -> __unresolved__::ref::get [EXTRACTED]
-- load_transcript -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- load_transcript -> calls -> __unresolved__::ref::join [EXTRACTED]
-- main -> calls -> __unresolved__::ref::argumentparser [EXTRACTED]
-- main -> calls -> __unresolved__::ref::add_argument [EXTRACTED]
-- main -> calls -> __unresolved__::ref::parse_args [EXTRACTED]
-- main -> calls -> __unresolved__::ref::replace [EXTRACTED]
-- main -> calls -> __unresolved__::ref::glob [EXTRACTED]
-- main -> calls -> __unresolved__::ref::sorted [EXTRACTED]
-- main -> calls -> __unresolved__::ref::keys [EXTRACTED]
-- main -> calls -> __unresolved__::ref::print [EXTRACTED]
-- main -> calls -> __unresolved__::ref::len [EXTRACTED]
-- main -> calls -> __unresolved__::ref::load_transcript [EXTRACTED]
-- main -> calls -> __unresolved__::ref::wer [EXTRACTED]
-- main -> calls -> __unresolved__::ref::cer [EXTRACTED]
-- main -> calls -> __unresolved__::ref::max [EXTRACTED]
-- main -> calls -> __unresolved__::ref::append [EXTRACTED]
-- main -> calls -> __unresolved__::ref::sum [EXTRACTED]
-- main -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- main -> calls -> __unresolved__::ref::open [EXTRACTED]
-- main -> calls -> __unresolved__::ref::dump [EXTRACTED]
+- bench_compare -> imports -> __unresolved__::ref::__unresolved____ref__argparse [EXTRACTED]
+- bench_compare -> imports -> __unresolved__::ref::__unresolved____ref__difflib [EXTRACTED]
+- bench_compare -> imports -> __unresolved__::ref::__unresolved____ref__json [EXTRACTED]
+- bench_compare -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- bench_compare -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- fmt_time -> calls -> __unresolved__::ref::__unresolved____ref__divmod [EXTRACTED]
+- fmt_time -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- load_segments -> calls -> __unresolved__::ref::__unresolved____ref__open [EXTRACTED]
+- load_segments -> calls -> __unresolved__::ref::__unresolved____ref__load [EXTRACTED]
+- load_segments -> calls -> __unresolved__::ref::__unresolved____ref__get [EXTRACTED]
+- load_segments -> calls -> __unresolved__::ref::__unresolved____ref__float [EXTRACTED]
+- load_segments -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__argumentparser [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__add_argument [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__parse_args [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__print [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__load_segments [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__append [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__sort [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__len [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__fmt_time [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__join [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__unified_diff [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__split [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__write_text [EXTRACTED]
 - bench_diff -> contains -> load_transcript [EXTRACTED]
 - bench_diff -> contains -> main [EXTRACTED]
-- bench_diff -> imports -> __unresolved__::ref::argparse [EXTRACTED]
-- bench_diff -> imports -> __unresolved__::ref::json [EXTRACTED]
-- bench_diff -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
-- bench_diff -> imports -> __unresolved__::ref::typing [EXTRACTED]
+- bench_diff -> imports -> __unresolved__::ref::__unresolved____ref__argparse [EXTRACTED]
+- bench_diff -> imports -> __unresolved__::ref::__unresolved____ref__json [EXTRACTED]
+- bench_diff -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- bench_diff -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- load_transcript -> calls -> __unresolved__::ref::__unresolved____ref__open [EXTRACTED]
+- load_transcript -> calls -> __unresolved__::ref::__unresolved____ref__load [EXTRACTED]
+- load_transcript -> calls -> __unresolved__::ref::__unresolved____ref__get [EXTRACTED]
+- load_transcript -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- load_transcript -> calls -> __unresolved__::ref::__unresolved____ref__join [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__argumentparser [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__add_argument [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__parse_args [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__replace [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__glob [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__sorted [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__set [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__keys [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__print [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__len [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__load_transcript [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__wer [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__cer [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__round [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__max [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__append [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__sum [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__open [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__dump [EXTRACTED]
 - VramSampler -> contains -> __init__ [EXTRACTED]
 - VramSampler -> contains -> run [EXTRACTED]
 - VramSampler -> contains -> stop [EXTRACTED]
-- _strip_bytes -> calls -> __unresolved__::ref::isinstance [EXTRACTED]
-- _strip_bytes -> calls -> __unresolved__::ref::_strip_bytes [EXTRACTED]
-- _strip_bytes -> calls -> __unresolved__::ref::items [EXTRACTED]
-- main -> calls -> __unresolved__::ref::parse_args [EXTRACTED]
-- main -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- main -> calls -> __unresolved__::ref::setup_logging [EXTRACTED]
-- main -> calls -> __unresolved__::ref::getlogger [EXTRACTED]
-- main -> calls -> __unresolved__::ref::open [EXTRACTED]
-- main -> calls -> __unresolved__::ref::load [EXTRACTED]
-- main -> calls -> __unresolved__::ref::get [EXTRACTED]
-- main -> calls -> __unresolved__::ref::error [EXTRACTED]
-- main -> calls -> __unresolved__::ref::pop [EXTRACTED]
-- main -> calls -> __unresolved__::ref::info [EXTRACTED]
-- main -> calls -> __unresolved__::ref::len [EXTRACTED]
-- main -> calls -> __unresolved__::ref::time [EXTRACTED]
-- main -> calls -> __unresolved__::ref::load_models [EXTRACTED]
-- main -> calls -> __unresolved__::ref::int [EXTRACTED]
-- main -> calls -> __unresolved__::ref::splitlines [EXTRACTED]
-- main -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- main -> calls -> __unresolved__::ref::check_output [EXTRACTED]
-- main -> calls -> __unresolved__::ref::enumerate [EXTRACTED]
-- main -> calls -> __unresolved__::ref::exists [EXTRACTED]
-- main -> calls -> __unresolved__::ref::path [EXTRACTED]
-- main -> calls -> __unresolved__::ref::mkdtemp [EXTRACTED]
-- main -> calls -> __unresolved__::ref::copy2 [EXTRACTED]
-- main -> calls -> __unresolved__::ref::vramsampler [EXTRACTED]
-- main -> calls -> __unresolved__::ref::start [EXTRACTED]
-- main -> calls -> __unresolved__::ref::transcribe [EXTRACTED]
-- main -> calls -> __unresolved__::ref::str [EXTRACTED]
-- main -> calls -> __unresolved__::ref::type [EXTRACTED]
-- main -> calls -> __unresolved__::ref::exception [EXTRACTED]
-- main -> calls -> __unresolved__::ref::stop [EXTRACTED]
-- main -> calls -> __unresolved__::ref::join [EXTRACTED]
-- main -> calls -> __unresolved__::ref::max [EXTRACTED]
-- main -> calls -> __unresolved__::ref::rmtree [EXTRACTED]
-- main -> calls -> __unresolved__::ref::_strip_bytes [EXTRACTED]
-- main -> calls -> __unresolved__::ref::dump [EXTRACTED]
-- main -> calls -> __unresolved__::ref::append [EXTRACTED]
-- main -> calls -> __unresolved__::ref::sum [EXTRACTED]
-- parse_args -> calls -> __unresolved__::ref::argumentparser [EXTRACTED]
-- parse_args -> calls -> __unresolved__::ref::add_argument [EXTRACTED]
-- parse_args -> calls -> __unresolved__::ref::parse_args [EXTRACTED]
-- setup_logging -> calls -> __unresolved__::ref::mkdir [EXTRACTED]
-- setup_logging -> calls -> __unresolved__::ref::streamhandler [EXTRACTED]
-- setup_logging -> calls -> __unresolved__::ref::filehandler [EXTRACTED]
-- setup_logging -> calls -> __unresolved__::ref::basicconfig [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::__init__ [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::super [EXTRACTED]
-- __init__ -> calls -> __unresolved__::ref::event [EXTRACTED]
-- run -> calls -> __unresolved__::ref::is_set [EXTRACTED]
-- run -> calls -> __unresolved__::ref::check_output [EXTRACTED]
-- run -> calls -> __unresolved__::ref::int [EXTRACTED]
-- run -> calls -> __unresolved__::ref::splitlines [EXTRACTED]
-- run -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- run -> calls -> __unresolved__::ref::append [EXTRACTED]
-- run -> calls -> __unresolved__::ref::wait [EXTRACTED]
 - bench_stt -> contains -> _strip_bytes [EXTRACTED]
 - bench_stt -> contains -> parse_args [EXTRACTED]
 - bench_stt -> contains -> VramSampler [EXTRACTED]
 - bench_stt -> contains -> setup_logging [EXTRACTED]
 - bench_stt -> contains -> main [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::argparse [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::json [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::logging [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::os [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::shutil [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::subprocess [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::sys [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::tempfile [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::threading [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::time [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
-- bench_stt -> imports -> __unresolved__::ref::typing [EXTRACTED]
-- main -> calls -> __unresolved__::ref::pop [EXTRACTED]
-- main -> calls -> __unresolved__::ref::get [EXTRACTED]
-- main -> calls -> __unresolved__::ref::print [EXTRACTED]
-- main -> calls -> __unresolved__::ref::time [EXTRACTED]
-- main -> calls -> __unresolved__::ref::load_models [EXTRACTED]
-- main -> calls -> __unresolved__::ref::strip [EXTRACTED]
-- main -> calls -> __unresolved__::ref::check_output [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__argparse [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__json [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__logging [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__shutil [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__subprocess [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__tempfile [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__threading [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- bench_stt -> imports -> __unresolved__::ref::__unresolved____ref__typing [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref____init__ [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref__super [EXTRACTED]
+- __init__ -> calls -> __unresolved__::ref::__unresolved____ref__event [EXTRACTED]
+- _strip_bytes -> calls -> __unresolved__::ref::__unresolved____ref__isinstance [EXTRACTED]
+- _strip_bytes -> calls -> __unresolved__::ref::__unresolved____ref___strip_bytes [EXTRACTED]
+- _strip_bytes -> calls -> __unresolved__::ref::__unresolved____ref__items [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__parse_args [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__setup_logging [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__getlogger [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__open [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__load [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__get [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__error [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__pop [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__info [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__len [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__load_models [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__splitlines [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__check_output [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__enumerate [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__exists [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__path [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__mkdtemp [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__copy2 [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__vramsampler [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__start [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__transcribe [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__str [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__type [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__exception [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__stop [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__join [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__max [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__rmtree [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref___strip_bytes [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__dump [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__round [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__append [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__sum [EXTRACTED]
+- parse_args -> calls -> __unresolved__::ref::__unresolved____ref__argumentparser [EXTRACTED]
+- parse_args -> calls -> __unresolved__::ref::__unresolved____ref__add_argument [EXTRACTED]
+- parse_args -> calls -> __unresolved__::ref::__unresolved____ref__parse_args [EXTRACTED]
+- run -> calls -> __unresolved__::ref::__unresolved____ref__is_set [EXTRACTED]
+- run -> calls -> __unresolved__::ref::__unresolved____ref__check_output [EXTRACTED]
+- run -> calls -> __unresolved__::ref::__unresolved____ref__int [EXTRACTED]
+- run -> calls -> __unresolved__::ref::__unresolved____ref__splitlines [EXTRACTED]
+- run -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- run -> calls -> __unresolved__::ref::__unresolved____ref__append [EXTRACTED]
+- run -> calls -> __unresolved__::ref::__unresolved____ref__wait [EXTRACTED]
+- setup_logging -> calls -> __unresolved__::ref::__unresolved____ref__mkdir [EXTRACTED]
+- setup_logging -> calls -> __unresolved__::ref::__unresolved____ref__streamhandler [EXTRACTED]
+- setup_logging -> calls -> __unresolved__::ref::__unresolved____ref__filehandler [EXTRACTED]
+- setup_logging -> calls -> __unresolved__::ref::__unresolved____ref__basicconfig [EXTRACTED]
+- stop -> calls -> __unresolved__::ref::__unresolved____ref__set [EXTRACTED]
 - turbo_load_probe -> contains -> main [EXTRACTED]
-- turbo_load_probe -> imports -> __unresolved__::ref::os [EXTRACTED]
-- turbo_load_probe -> imports -> __unresolved__::ref::subprocess [EXTRACTED]
-- turbo_load_probe -> imports -> __unresolved__::ref::sys [EXTRACTED]
-- turbo_load_probe -> imports -> __unresolved__::ref::time [EXTRACTED]
-- turbo_load_probe -> imports -> __unresolved__::ref::pathlib [EXTRACTED]
+- turbo_load_probe -> imports -> __unresolved__::ref::__unresolved____ref__os [EXTRACTED]
+- turbo_load_probe -> imports -> __unresolved__::ref::__unresolved____ref__subprocess [EXTRACTED]
+- turbo_load_probe -> imports -> __unresolved__::ref::__unresolved____ref__sys [EXTRACTED]
+- turbo_load_probe -> imports -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- turbo_load_probe -> imports -> __unresolved__::ref::__unresolved____ref__pathlib [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__pop [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__get [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__print [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__time [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__load_models [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__strip [EXTRACTED]
+- main -> calls -> __unresolved__::ref::__unresolved____ref__check_output [EXTRACTED]
 
 ## Cross-Community Connections
-- main -> calls -> __unresolved__::ref::set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- main -> calls -> __unresolved__::ref::round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- main -> calls -> __unresolved__::ref::round (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
-- stop -> calls -> __unresolved__::ref::set (-> [[unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefpush-unresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedrefunresolvedreflen]])
 
 ## Context
 이 커뮤니티는 main, main, bench_stt를 중심으로 calls 관계로 연결되어 있다. 주요 소스 파일은 bench_compare.py, bench_diff.py, bench_stt.py, turbo_load_probe.py이다.
