@@ -9,6 +9,15 @@
             "command": "$CLAUDE_PROJECT_DIR/.claude/skills/strategic-compact/suggest-compact.sh"
           }
         ]
+      },
+      {
+        "matcher": "Glob|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f graphify-out/graph.json ] && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"additionalContext\":\"graphify: Knowledge graph exists. Read graphify-out/GRAPH_REPORT.md for god nodes and community structure before searching raw files.\"}}' || true"
+          }
+        ]
       }
     ],
     "PostToolUse": [
@@ -49,7 +58,7 @@
         "hooks": [
           {
             "type": "agent",
-            "prompt": "먼저 $CLAUDE_PROJECT_DIR/.claude/skills/agent-introspection-debugging/SKILL.md 파일을 읽어 4단계 디버깅 워크플로우를 파악하세요. 그런 다음 완료된 태스크 출력($ARGUMENTS)을 분석하여, 실패 신호(에러, 루프, 컨텍스트 오염, 환각)가 감지되면 스킬의 Phase 1~4를 수행하고 디버그 리포트를 출력하세요. 정상 완료면 아무것도 출력하지 마세요.",
+            "prompt": "\uba3c\uc800 $CLAUDE_PROJECT_DIR/.claude/skills/agent-introspection-debugging/SKILL.md \ud30c\uc77c\uc744 \uc77d\uc5b4 4\ub2e8\uacc4 \ub514\ubc84\uae45 \uc6cc\ud06c\ud50c\ub85c\uc6b0\ub97c \ud30c\uc545\ud558\uc138\uc694. \uadf8\ub7f0 \ub2e4\uc74c \uc644\ub8cc\ub41c \ud0dc\uc2a4\ud06c \ucd9c\ub825($ARGUMENTS)\uc744 \ubd84\uc11d\ud558\uc5ec, \uc2e4\ud328 \uc2e0\ud638(\uc5d0\ub7ec, \ub8e8\ud504, \ucee8\ud14d\uc2a4\ud2b8 \uc624\uc5fc, \ud658\uac01)\uac00 \uac10\uc9c0\ub418\uba74 \uc2a4\ud0ac\uc758 Phase 1~4\ub97c \uc218\ud589\ud558\uace0 \ub514\ubc84\uadf8 \ub9ac\ud3ec\ud2b8\ub97c \ucd9c\ub825\ud558\uc138\uc694. \uc815\uc0c1 \uc644\ub8cc\uba74 \uc544\ubb34\uac83\ub3c4 \ucd9c\ub825\ud558\uc9c0 \ub9c8\uc138\uc694.",
             "timeout": 60
           }
         ]

@@ -1,0 +1,3039 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "hyperedge_01_sku_data_pipeline",
+        "label": "SKU Data Collection Pipeline - All Tiers",
+        "nodes": [
+          "sku_u_a01_voice_raw",
+          "sku_u_a02_voice_context",
+          "sku_u_a03_dialog_act",
+          "audio_scan_pipeline",
+          "quality_trust_value_engines"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md"
+      },
+      {
+        "id": "hyperedge_02_encryption_auth_compliance",
+        "label": "Security & Privacy Enforcement",
+        "nodes": [
+          "aes256_encryption",
+          "auth_flow_pkce",
+          "pii_masking_enforcement",
+          "user_consent_api"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md"
+      },
+      {
+        "id": "hyperedge_03_admin_delivery_system",
+        "label": "Admin Export & Settlement Workflow",
+        "nodes": [
+          "admin_api",
+          "billable_units_management",
+          "export_requests_workflow",
+          "utterance_review_filter_feature"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md"
+      },
+      {
+        "id": "consent_system_flow",
+        "type": "multi_participant_system",
+        "label": "Consent System Flow",
+        "description": "GlobalConsent state machine with RecordVisibility control, batch apply logic, edge case handling, and 10 test scenarios. Involves: consent_state_machine, PrivacyControlCenterPage, consent_edge_cases, batch_apply_consent, consent_test_cases",
+        "participants": [
+          "consent_state_machine",
+          "PrivacyControlCenterPage",
+          "consent_edge_cases",
+          "batch_apply_consent",
+          "consent_test_cases"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "id": "audio_processing_architecture",
+        "type": "multi_participant_system",
+        "label": "Audio Processing Architecture",
+        "description": "Unified audio pipeline spanning preprocessing, speaker verification, diarization, and STT. Java source-of-truth with TS bridge. Includes MFCC similarity, WeSpeaker embeddings, and WhisperX optimization. Participants: audio_pipeline_unification, voice_enrollment_level2, pyannote_diarization_issue, diarization_improvement_options, mfcc_speaker_similarity, whisperx_turbo_transition",
+        "participants": [
+          "audio_pipeline_unification",
+          "voice_enrollment_level2",
+          "pyannote_diarization_issue",
+          "diarization_improvement_options",
+          "mfcc_speaker_similarity",
+          "whisperx_turbo_transition"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "id": "sku_export_pipeline",
+        "type": "multi_participant_system",
+        "label": "SKU Export Pipeline",
+        "description": "Complete export workflow from upload through packaging. Critical blockers: S3 chunk merge (I1) and transcript coverage (I2). Fixed 12 bugs spanning API integration, security, memory management, and authorization. Participants: s3_chunk_merge_missing, transcript_coverage_low, esm_require_error, sku_inventory_api_404, inventory_map_typeerror, http_method_mismatch, status_validation_error, upsert_billable_units_stackoverflow, admin_role_validation_missing, rls_policy_too_permissive, audio_cleanup_memory_leak, mock_data_silent_fallback, admin_exports_800_line_limit, handle_execute_double_lock",
+        "participants": [
+          "s3_chunk_merge_missing",
+          "transcript_coverage_low",
+          "esm_require_error",
+          "sku_inventory_api_404",
+          "inventory_map_typeerror",
+          "http_method_mismatch",
+          "status_validation_error",
+          "upsert_billable_units_stackoverflow",
+          "admin_role_validation_missing",
+          "rls_policy_too_permissive",
+          "audio_cleanup_memory_leak",
+          "mock_data_silent_fallback",
+          "admin_exports_800_line_limit",
+          "handle_execute_double_lock"
+        ],
+        "critical_blockers": 2,
+        "bugs_fixed": 12,
+        "confidence": 1.0
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "generate_docx.py",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L1",
+      "id": "uncounted_docs_scripts_generate_docx_py",
+      "community": 3,
+      "norm_label": "generate_docx.py"
+    },
+    {
+      "label": "set_font()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L15",
+      "id": "generate_docx_set_font",
+      "community": 3,
+      "norm_label": "set_font()"
+    },
+    {
+      "label": "add_p()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L24",
+      "id": "generate_docx_add_p",
+      "community": 3,
+      "norm_label": "add_p()"
+    },
+    {
+      "label": "add_heading()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L36",
+      "id": "generate_docx_add_heading",
+      "community": 3,
+      "norm_label": "add_heading()"
+    },
+    {
+      "label": "shade_cell()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L42",
+      "id": "generate_docx_shade_cell",
+      "community": 3,
+      "norm_label": "shade_cell()"
+    },
+    {
+      "label": "header_cell()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L45",
+      "id": "generate_docx_header_cell",
+      "community": 3,
+      "norm_label": "header_cell()"
+    },
+    {
+      "label": "content_cell()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L52",
+      "id": "generate_docx_content_cell",
+      "community": 3,
+      "norm_label": "content_cell()"
+    },
+    {
+      "label": "make_overview_table()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L59",
+      "id": "generate_docx_make_overview_table",
+      "community": 3,
+      "norm_label": "make_overview_table()"
+    },
+    {
+      "label": "read_md()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L81",
+      "id": "generate_docx_read_md",
+      "community": 3,
+      "norm_label": "read_md()"
+    },
+    {
+      "label": "create_document()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L86",
+      "id": "generate_docx_create_document",
+      "community": 3,
+      "norm_label": "create_document()"
+    },
+    {
+      "label": "\ub370\uc774\ud130\ubc14\uc6b0\ucc98 \uc0ac\uc5c5\uc218\ud589\uacc4\ud68d\uc11c DOCX \uc0dd\uc131 \u2014 \uadf9\ub300\ud654 \ubc84\uc804 \ub9c8\ud06c\ub2e4\uc6b4 \uc6d0\ubcf8(\ub370\uc774\ud130\ubc14\uc6b0\ucc98_\uc0ac\uc5c5\uc218\ud589\uacc4\ud68d\uc11c_\ucd08\uc548.md)\uc744 \uae30\ubc18\uc73c\ub85c \uc11c\uc2dd 1\ud638 \uc591\uc2dd\uc5d0 \ub9de\ucd98",
+      "file_type": "rationale",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L1",
+      "id": "generate_docx_rationale_1",
+      "community": 3,
+      "norm_label": "\u1103\u1166\u110b\u1175\u1110\u1165\u1107\u1161\u110b\u116e\u110e\u1165 \u1109\u1161\u110b\u1165\u11b8\u1109\u116e\u1112\u1162\u11bc\u1100\u1168\u1112\u116c\u11a8\u1109\u1165 docx \u1109\u1162\u11bc\u1109\u1165\u11bc \u2014 \u1100\u1173\u11a8\u1103\u1162\u1112\u116a \u1107\u1165\u110c\u1165\u11ab \u1106\u1161\u110f\u1173\u1103\u1161\u110b\u116e\u11ab \u110b\u116f\u11ab\u1107\u1169\u11ab(\u1103\u1166\u110b\u1175\u1110\u1165\u1107\u1161\u110b\u116e\u110e\u1165_\u1109\u1161\u110b\u1165\u11b8\u1109\u116e\u1112\u1162\u11bc\u1100\u1168\u1112\u116c\u11a8\u1109\u1165_\u110e\u1169\u110b\u1161\u11ab.md)\u110b\u1173\u11af \u1100\u1175\u1107\u1161\u11ab\u110b\u1173\u1105\u1169 \u1109\u1165\u1109\u1175\u11a8 1\u1112\u1169 \u110b\u1163\u11bc\u1109\u1175\u11a8\u110b\u1166 \u1106\u1161\u11bd\u110e\u116e\u11ab"
+    },
+    {
+      "label": "generate_gstar_docx.py",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L1",
+      "id": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "community": 2,
+      "norm_label": "generate_gstar_docx.py"
+    },
+    {
+      "label": "set_font()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L13",
+      "id": "generate_gstar_docx_set_font",
+      "community": 2,
+      "norm_label": "set_font()"
+    },
+    {
+      "label": "add_p()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L22",
+      "id": "generate_gstar_docx_add_p",
+      "community": 2,
+      "norm_label": "add_p()"
+    },
+    {
+      "label": "shade_cell()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L31",
+      "id": "generate_gstar_docx_shade_cell",
+      "community": 2,
+      "norm_label": "shade_cell()"
+    },
+    {
+      "label": "cell_text()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L35",
+      "id": "generate_gstar_docx_cell_text",
+      "community": 2,
+      "norm_label": "cell_text()"
+    },
+    {
+      "label": "add_section_heading()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L42",
+      "id": "generate_gstar_docx_add_section_heading",
+      "community": 2,
+      "norm_label": "add_section_heading()"
+    },
+    {
+      "label": "add_sub_heading()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L50",
+      "id": "generate_gstar_docx_add_sub_heading",
+      "community": 2,
+      "norm_label": "add_sub_heading()"
+    },
+    {
+      "label": "add_bullet()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L57",
+      "id": "generate_gstar_docx_add_bullet",
+      "community": 2,
+      "norm_label": "add_bullet()"
+    },
+    {
+      "label": "add_dash()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L66",
+      "id": "generate_gstar_docx_add_dash",
+      "community": 2,
+      "norm_label": "add_dash()"
+    },
+    {
+      "label": "create_document()",
+      "file_type": "code",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L70",
+      "id": "generate_gstar_docx_create_document",
+      "community": 2,
+      "norm_label": "create_document()"
+    },
+    {
+      "label": "G\uc2a4\ud0c0 \uc624\ub514\uc158 \uc608\ube44\u00b7\ucd08\uae30\ub9ac\uadf8 \ucc38\uac00\uc2e0\uccad\uc11c + \uc0ac\uc5c5\uacc4\ud68d\uc11c DOCX \uc0dd\uc131 \uc591\uc2dd1 \uae30\ubc18: \ucc38\uac00\uc2e0\uccad\uc11c(1p) + \uc0ac\uc5c5\uacc4\ud68d\uc11c(10p \uc774\ub0b4) + \uae30\ud0c0\ud604\ud669(1",
+      "file_type": "rationale",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L1",
+      "id": "generate_gstar_docx_rationale_1",
+      "community": 2,
+      "norm_label": "g\u1109\u1173\u1110\u1161 \u110b\u1169\u1103\u1175\u1109\u1167\u11ab \u110b\u1168\u1107\u1175\u00b7\u110e\u1169\u1100\u1175\u1105\u1175\u1100\u1173 \u110e\u1161\u11b7\u1100\u1161\u1109\u1175\u11ab\u110e\u1165\u11bc\u1109\u1165 + \u1109\u1161\u110b\u1165\u11b8\u1100\u1168\u1112\u116c\u11a8\u1109\u1165 docx \u1109\u1162\u11bc\u1109\u1165\u11bc \u110b\u1163\u11bc\u1109\u1175\u11a81 \u1100\u1175\u1107\u1161\u11ab: \u110e\u1161\u11b7\u1100\u1161\u1109\u1175\u11ab\u110e\u1165\u11bc\u1109\u1165(1p) + \u1109\u1161\u110b\u1165\u11b8\u1100\u1168\u1112\u116c\u11a8\u1109\u1165(10p \u110b\u1175\u1102\u1162) + \u1100\u1175\u1110\u1161\u1112\u1167\u11ab\u1112\u116a\u11bc(1"
+    },
+    {
+      "label": "\uc0ac\uc5c5\uacc4\ud68d\uc11c \uc139\uc158 \uc81c\ubaa9 (\ud68c\uc0c9 \ubc30\uacbd \ub77c\uc6b4\ub4dc \ub290\ub08c)",
+      "file_type": "rationale",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L43",
+      "id": "generate_gstar_docx_rationale_43",
+      "community": 2,
+      "norm_label": "\u1109\u1161\u110b\u1165\u11b8\u1100\u1168\u1112\u116c\u11a8\u1109\u1165 \u1109\u1166\u11a8\u1109\u1167\u11ab \u110c\u1166\u1106\u1169\u11a8 (\u1112\u116c\u1109\u1162\u11a8 \u1107\u1162\u1100\u1167\u11bc \u1105\u1161\u110b\u116e\u11ab\u1103\u1173 \u1102\u1173\u1101\u1175\u11b7)"
+    },
+    {
+      "label": "Hono REST API Backend",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "backend_api_hono",
+      "community": 4,
+      "norm_label": "hono rest api backend"
+    },
+    {
+      "label": "AES-256-GCM Encryption System",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L47-L60",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "aes256_encryption",
+      "community": 4,
+      "norm_label": "aes-256-gcm encryption system"
+    },
+    {
+      "label": "PKCE OAuth 2.0 Authentication",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L106-L123",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "auth_flow_pkce",
+      "community": 4,
+      "norm_label": "pkce oauth 2.0 authentication"
+    },
+    {
+      "label": "Sessions API Endpoints",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L125-L141",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sessions_api",
+      "community": 1,
+      "norm_label": "sessions api endpoints"
+    },
+    {
+      "label": "Storage & Upload API",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L159-L181",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "storage_api",
+      "community": 4,
+      "norm_label": "storage & upload api"
+    },
+    {
+      "label": "User Consent & Voice Profile API",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L183-L211",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "user_consent_api",
+      "community": 4,
+      "norm_label": "user consent & voice profile api"
+    },
+    {
+      "label": "Admin API Endpoints",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L253-L389",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "admin_api",
+      "community": 8,
+      "norm_label": "admin api endpoints"
+    },
+    {
+      "label": "Billable Units Locking & Settlement",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L304-L321",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "billable_units_management",
+      "community": 8,
+      "norm_label": "billable units locking & settlement"
+    },
+    {
+      "label": "Export Requests Delivery Pipeline",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L345-L355",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "export_requests_workflow",
+      "community": 8,
+      "norm_label": "export requests delivery pipeline"
+    },
+    {
+      "label": "Metadata Events NDJSON Batch Upload",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L232-L244",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "metadata_events_upload",
+      "community": 4,
+      "norm_label": "metadata events ndjson batch upload"
+    },
+    {
+      "label": "Data Spec v2 - Core Constraints",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L6-L15",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "data_spec_v2",
+      "community": 0,
+      "norm_label": "data spec v2 - core constraints"
+    },
+    {
+      "label": "Pseudo ID Generation & Management",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L20-L26",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "pseudo_id_infrastructure",
+      "community": 0,
+      "norm_label": "pseudo id generation & management"
+    },
+    {
+      "label": "Time Bucket 2H Bucketing Rules",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L28-L37",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "time_bucket_rules",
+      "community": 0,
+      "norm_label": "time bucket 2h bucketing rules"
+    },
+    {
+      "label": "SKU U-A01 - Anonymous Voice Source",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L85-L160",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sku_u_a01_voice_raw",
+      "community": 0,
+      "norm_label": "sku u-a01 - anonymous voice source"
+    },
+    {
+      "label": "SKU U-A02 - Voice + Context Labels",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L169-L217",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sku_u_a02_voice_context",
+      "community": 0,
+      "norm_label": "sku u-a02 - voice + context labels"
+    },
+    {
+      "label": "SKU U-A03 - Voice + Dialog Act Labels",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L221-L262",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sku_u_a03_dialog_act",
+      "community": 0,
+      "norm_label": "sku u-a03 - voice + dialog act labels"
+    },
+    {
+      "label": "SKU U-M01 - Call Metadata",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L265-L300",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sku_u_m01_call_metadata",
+      "community": 0,
+      "norm_label": "sku u-m01 - call metadata"
+    },
+    {
+      "label": "SKU Data Engine Specification",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/sku-data-engine-spec.md",
+      "source_location": "L1-L20",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sku_data_engine_spec",
+      "community": 0,
+      "norm_label": "sku data engine specification"
+    },
+    {
+      "label": "Quality, Trust & Value Aggregation",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/sku-data-engine-spec.md",
+      "source_location": "L174-L191",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "quality_trust_value_engines",
+      "community": 0,
+      "norm_label": "quality, trust & value aggregation"
+    },
+    {
+      "label": "Device Bucket Classification (Wifi/Mobile/Charging)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/sku-data-engine-spec.md",
+      "source_location": "L57-L69",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "device_bucket_rules",
+      "community": 0,
+      "norm_label": "device bucket classification (wifi/mobile/charging)"
+    },
+    {
+      "label": "App Bootstrap Component Sequence",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L7-L26",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_bootstrap_sequence",
+      "community": 4,
+      "norm_label": "app bootstrap component sequence"
+    },
+    {
+      "label": "Scan \u2192 Upload Pipeline (Phase 1-4)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L27-L175",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "scan_upload_flow",
+      "community": 4,
+      "norm_label": "scan \u2192 upload pipeline (phase 1-4)"
+    },
+    {
+      "label": "Audio Scan Pipeline with VAD",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L54-L65",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "audio_scan_pipeline",
+      "community": 4,
+      "norm_label": "audio scan pipeline with vad"
+    },
+    {
+      "label": "Upload Queue Retry Strategy (Exponential Backoff)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L147-L174",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "upload_queue_retry_strategy",
+      "community": 4,
+      "norm_label": "upload queue retry strategy (exponential backoff)"
+    },
+    {
+      "label": "PII Masking & Audio Sanitization",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L96-L100",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "pii_masking_enforcement",
+      "community": 4,
+      "norm_label": "pii masking & audio sanitization"
+    },
+    {
+      "label": "Session vs Chunk Distinction",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L169-L176",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "session_chunk_semantics",
+      "community": 1,
+      "norm_label": "session vs chunk distinction"
+    },
+    {
+      "label": "Design System - Flat Minimal",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L1-L42",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "design_system_flat_minimal",
+      "community": 1,
+      "norm_label": "design system - flat minimal"
+    },
+    {
+      "label": "Color Tokens (Light + Dark Mode)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L11-L35",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "color_tokens_light_dark",
+      "community": 1,
+      "norm_label": "color tokens (light + dark mode)"
+    },
+    {
+      "label": "Typography System (Pretendard 400/600)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L47-L53",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "typography_system",
+      "community": 1,
+      "norm_label": "typography system (pretendard 400/600)"
+    },
+    {
+      "label": "Motion Animation Constraints (Flat, No Loops)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L107-L112",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "motion_animation_constraints",
+      "community": 1,
+      "norm_label": "motion animation constraints (flat, no loops)"
+    },
+    {
+      "label": "Information Reduction Principle (1 Action Per Screen)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L116-L128",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "information_reduction_principle",
+      "community": 1,
+      "norm_label": "information reduction principle (1 action per screen)"
+    },
+    {
+      "label": "HomePage - Status + Next Action + Summary",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L23-L60",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "home_page_spec",
+      "community": 1,
+      "norm_label": "homepage - status + next action + summary"
+    },
+    {
+      "label": "AssetsPage - Contact Search + Groups",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L67-L94",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_page_spec",
+      "community": 1,
+      "norm_label": "assetspage - contact search + groups"
+    },
+    {
+      "label": "SessionDetailPage - Audio + Key Info + Details",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L97-L132",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "session_detail_page_spec",
+      "community": 1,
+      "norm_label": "sessiondetailpage - audio + key info + details"
+    },
+    {
+      "label": "ValuePage - Estimated Value + Actions",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L134-L165",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "value_page_spec",
+      "community": 1,
+      "norm_label": "valuepage - estimated value + actions"
+    },
+    {
+      "label": "ProfilePage - Profile Card + Settings",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L168-L197",
+      "cached_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "profile_page_spec",
+      "community": 1,
+      "norm_label": "profilepage - profile card + settings"
+    },
+    {
+      "label": "BottomNav - 4 Tab Navigation",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L7-L20",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bottom_nav_component",
+      "community": 1,
+      "norm_label": "bottomnav - 4 tab navigation"
+    },
+    {
+      "label": "Utterance Review Filter Toggle",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\uc5b4\ub4dc\ubbfc/feature-utterance-review-filter.md",
+      "source_location": "L1-L100",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "utterance_review_filter_feature",
+      "community": 8,
+      "norm_label": "utterance review filter toggle"
+    },
+    {
+      "label": "Uncounted x Typecast Data Partnership",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L1-L100",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "typecast_partnership_proposal",
+      "community": 0,
+      "norm_label": "uncounted x typecast data partnership"
+    },
+    {
+      "label": "Real-World Conversational Speech Data Offering",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L66-L79",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "typecast_natural_conversation_data",
+      "community": 0,
+      "norm_label": "real-world conversational speech data offering"
+    },
+    {
+      "label": "Emotion Synthesis MOS Improvement Scenario",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L158-L176",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "emotion_synthesis_improvement",
+      "community": 0,
+      "norm_label": "emotion synthesis mos improvement scenario"
+    },
+    {
+      "label": "Conversational AI with Dialog Act Labels",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L178-L193",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "conversational_ai_dialogue_act",
+      "community": 0,
+      "norm_label": "conversational ai with dialog act labels"
+    },
+    {
+      "label": "Label Trust Score Calculation (Anti Click-Farming)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L104-L124",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "trust_score_algorithm",
+      "community": 0,
+      "norm_label": "label trust score calculation (anti click-farming)"
+    },
+    {
+      "label": "RATIONALE: GPU Inference Ban (Medical Device Risk)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L6-L8",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "rationale_gpu_inference_ban",
+      "community": 0,
+      "norm_label": "rationale: gpu inference ban (medical device risk)"
+    },
+    {
+      "label": "RATIONALE: User-Labeled Only (Trust Guarantee)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L9-L10",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "rationale_user_labeled_only",
+      "community": 0,
+      "norm_label": "rationale: user-labeled only (trust guarantee)"
+    },
+    {
+      "label": "RATIONALE: No GPS/WiFi/CellID (PIPA Article 15)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L13",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "rationale_no_precise_location",
+      "community": 0,
+      "norm_label": "rationale: no gps/wifi/cellid (pipa article 15)"
+    },
+    {
+      "label": "RATIONALE: Value Range Display Not Single \u20a9 (Precision Avoidance)",
+      "file_type": "document",
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L145-L147",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "rationale_value_range_not_single",
+      "community": 1,
+      "norm_label": "rationale: value range display not single \u20a9 (precision avoidance)"
+    },
+    {
+      "type": "concept",
+      "label": "WCAG 2.1 AA + Neurodiversity Design",
+      "description": "Accessibility standards with anti-false-expectation principle. No countup animations, no single confirmed values.",
+      "source_files": [
+        "accessibility-checklist.md"
+      ],
+      "confidence": 1.0,
+      "id": "accessibility_standards",
+      "community": 9,
+      "norm_label": "wcag 2.1 aa + neurodiversity design"
+    },
+    {
+      "type": "concept",
+      "label": "3-Space Information Architecture",
+      "description": "Mobile app IA with ValueRangeCard, VaultCard, RefineryReportCard, ReadinessSKUCard components and data binding matrix",
+      "source_files": [
+        "ux-design-spec.md"
+      ],
+      "confidence": 1.0,
+      "id": "3_space_ia",
+      "community": 6,
+      "norm_label": "3-space information architecture"
+    },
+    {
+      "type": "concept",
+      "label": "Motion Design Rules",
+      "description": "Allowed: fade+slide 12px, scale tap, slide-up sheet, badge stamp, bar fill. Forbidden: bounce, infinite loops, >1s duration, layout animations, color transitions. Financial prohibition: countup animation, single highlight, confetti, real-time changes.",
+      "source_files": [
+        "motion-checklist.md"
+      ],
+      "confidence": 1.0,
+      "id": "motion_design",
+      "community": 9,
+      "norm_label": "motion design rules"
+    },
+    {
+      "type": "concept",
+      "label": "GlobalConsent State Machine",
+      "description": "OFF \u2192 ON transitions with version tracking. RecordVisibility: PUBLIC_CONSENTED, PRIVATE. Sources: GLOBAL_DEFAULT, MANUAL, SKU_DEFAULT.",
+      "source_files": [
+        "consent-design-spec.md"
+      ],
+      "confidence": 1.0,
+      "id": "consent_state_machine",
+      "community": 7,
+      "norm_label": "globalconsent state machine"
+    },
+    {
+      "type": "bug",
+      "label": "STT Worker Memory Leak",
+      "description": "CRITICAL: Unclosed worker.terminate() in STT Worker causes memory leak",
+      "source_files": [
+        "\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ucf54\ub4dc_\uac1c\uc120\uc0ac\ud56d.md"
+      ],
+      "severity": "CRITICAL",
+      "confidence": 1.0,
+      "id": "stt_worker_memory_leak",
+      "community": 10,
+      "norm_label": "stt worker memory leak"
+    },
+    {
+      "type": "bug",
+      "label": "UploadQueue Concurrency Race Condition",
+      "description": "CRITICAL: Race condition in flushQueue() from concurrent task execution",
+      "source_files": [
+        "\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ucf54\ub4dc_\uac1c\uc120\uc0ac\ud56d.md"
+      ],
+      "severity": "CRITICAL",
+      "confidence": 1.0,
+      "id": "upload_queue_race_condition",
+      "community": 10,
+      "norm_label": "uploadqueue concurrency race condition"
+    },
+    {
+      "type": "bug",
+      "label": "StorageInitializer Race Condition",
+      "description": "HIGH: Race condition between storage initialization and early sync attempts",
+      "source_files": [
+        "\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ucf54\ub4dc_\uac1c\uc120\uc0ac\ud56d.md"
+      ],
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "id": "storage_initializer_race",
+      "community": 11,
+      "norm_label": "storageinitializer race condition"
+    },
+    {
+      "type": "bug",
+      "label": "Scan Status Document-Code Mismatch",
+      "description": "HIGH: DocumentScanStatus enum and document field definitions inconsistent",
+      "source_files": [
+        "\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ucf54\ub4dc_\uac1c\uc120\uc0ac\ud56d.md"
+      ],
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "id": "scan_status_document_mismatch",
+      "community": 20,
+      "norm_label": "scan status document-code mismatch"
+    },
+    {
+      "type": "bug",
+      "label": "STT Network Restart Missing",
+      "description": "HIGH: No STT service restart on network failure",
+      "source_files": [
+        "\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ucf54\ub4dc_\uac1c\uc120\uc0ac\ud56d.md"
+      ],
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "id": "stt_network_restart_missing",
+      "community": 11,
+      "norm_label": "stt network restart missing"
+    },
+    {
+      "type": "security_issue",
+      "label": "Encryption Key localStorage Vulnerability",
+      "description": "HIGH: Encryption key stored in unencrypted localStorage creates plaintext material leak",
+      "source_files": [
+        "\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ucf54\ub4dc_\uac1c\uc120\uc0ac\ud56d.md"
+      ],
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "id": "encryption_key_localstorage",
+      "community": 12,
+      "norm_label": "encryption key localstorage vulnerability"
+    },
+    {
+      "type": "security_issue",
+      "label": "Access Token Plaintext localStorage (FIXED)",
+      "description": "CRITICAL: access_token stored in plaintext localStorage. Status: Fixed by moving to httpOnly cookie",
+      "source_files": [
+        "A1-onboarding-auth-review.md"
+      ],
+      "severity": "CRITICAL",
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "access_token_plaintext",
+      "community": 12,
+      "norm_label": "access token plaintext localstorage (fixed)"
+    },
+    {
+      "type": "security_issue",
+      "label": "OAuth Redirect Unvalidated",
+      "description": "CRITICAL: OAuth callback redirect_uri not validated against allowlist",
+      "source_files": [
+        "A1-onboarding-auth-review.md"
+      ],
+      "severity": "CRITICAL",
+      "confidence": 1.0,
+      "id": "oauth_redirect_unvalidated",
+      "community": 13,
+      "norm_label": "oauth redirect unvalidated"
+    },
+    {
+      "type": "security_issue",
+      "label": "Rate Limiting Missing",
+      "description": "HIGH: No rate limiting on API endpoints. Applies to auth, upload, export endpoints.",
+      "source_files": [
+        "A1-onboarding-auth-review.md"
+      ],
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "id": "rate_limiting_missing",
+      "community": 13,
+      "norm_label": "rate limiting missing"
+    },
+    {
+      "type": "security_issue",
+      "label": "Admin Role Validation Missing (FIXED)",
+      "description": "CRITICAL: Admin APIs accessible to any authenticated user. Status: Fixed by adding adminMiddleware",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "severity": "CRITICAL",
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "admin_role_validation_missing",
+      "community": 14,
+      "norm_label": "admin role validation missing (fixed)"
+    },
+    {
+      "type": "security_issue",
+      "label": "RLS Policy Too Permissive (FIXED)",
+      "description": "CRITICAL: export_package_items and bu_quality_metrics tables have USING(true) RLS. Status: Fixed by changing to USING(false)",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "severity": "CRITICAL",
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "rls_policy_too_permissive",
+      "community": 14,
+      "norm_label": "rls policy too permissive (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "S3 Chunk Merge Not Implemented",
+      "description": "CRITICAL: S3 stores chunks ({sessionId}-001.wav, -002.wav) but code expects single file. NoSuchKey error.",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "severity": "CRITICAL",
+      "confidence": 1.0,
+      "id": "s3_chunk_merge_missing",
+      "community": 15,
+      "norm_label": "s3 chunk merge not implemented"
+    },
+    {
+      "type": "bug",
+      "label": "Transcript Coverage Low",
+      "description": "CRITICAL: Only 1/32 sessions have transcript_chunks. Blocks 1-hour package generation with requireTranscript=true",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "severity": "CRITICAL",
+      "confidence": 1.0,
+      "id": "transcript_coverage_low",
+      "community": 15,
+      "norm_label": "transcript coverage low"
+    },
+    {
+      "type": "architectural_plan",
+      "label": "Audio Pipeline Unification",
+      "description": "Move preprocessing from TS (incomplete) to Java (source of truth). Six phases. Solves D1-D10 mismatches (silence threshold, order, gain normalization, guard frames, noise reduction, fingerprinting).",
+      "source_files": [
+        "A2-audio-pipeline-unification-plan.md"
+      ],
+      "phases": 6,
+      "confidence": 1.0,
+      "id": "audio_pipeline_unification",
+      "community": 5,
+      "norm_label": "audio pipeline unification"
+    },
+    {
+      "type": "feature_spec",
+      "label": "Voice Enrollment Level 2",
+      "description": "Segment-level speaker labeling (USER vs PEER). Two approaches: A (JS\u2192Java embedding transfer), B (Java self-embedding)",
+      "source_files": [
+        "\ubcf4\uc774\uc2a4\uc5d4\ub864\uba3c\ud2b8_Level2_\uac1c\ub150.md"
+      ],
+      "confidence": 1.0,
+      "id": "voice_enrollment_level2",
+      "community": 5,
+      "norm_label": "voice enrollment level 2"
+    },
+    {
+      "type": "concept",
+      "label": "MFCC Speaker Similarity",
+      "description": "Pipeline: pre-emphasis \u2192 framing \u2192 windowing \u2192 FFT \u2192 Mel filter \u2192 log \u2192 DCT. Methods: cosine, DTW, GMM. Limitations: emotion-sensitive, noise-vulnerable, 1-2s minimum. Alternative: deep learning embeddings.",
+      "source_files": [
+        "MFCC_\ud654\uc790\uc720\uc0ac\ub3c4_\uac1c\ub150.md"
+      ],
+      "confidence": 1.0,
+      "id": "mfcc_speaker_similarity",
+      "community": 5,
+      "norm_label": "mfcc speaker similarity"
+    },
+    {
+      "type": "bug",
+      "label": "Pyannote Speaker Diarization Accuracy",
+      "description": "Merges similar-sounding voices in Korean calls (utterance 431: 29.59s single label). Causes: Korean language limitation, similar timbre, short turn-taking, chunk-wise independence, missing min_speakers hint.",
+      "source_files": [
+        "\ud654\uc790\ubd84\ub9ac_\uc815\ud655\ub3c4_\uc774\uc288.md"
+      ],
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "id": "pyannote_diarization_issue",
+      "community": 5,
+      "norm_label": "pyannote speaker diarization accuracy"
+    },
+    {
+      "type": "solution_options",
+      "label": "Diarization Improvement Options",
+      "description": "A: Model upgrade (3.1), B: WeSpeaker post-processing (recommended mid-term), C: Chunk inter-speaker mapping, D: min_speakers hint (recommended immediate), E: Streaming mode (refactor). Phased approach: Phase 1 (D), Phase 2 (B), Phase 3 (C+A).",
+      "source_files": [
+        "\ud654\uc790\ubd84\ub9ac_\uc815\ud655\ub3c4_\uc774\uc288.md"
+      ],
+      "confidence": 1.0,
+      "id": "diarization_improvement_options",
+      "community": 5,
+      "norm_label": "diarization improvement options"
+    },
+    {
+      "type": "optimization",
+      "label": "WhisperX large-v3-turbo Transition",
+      "description": "Dev only. Results: VRAM \u221231.7% (5393\u21923685 MiB), 2.4x speedup (RTF 0.114\u21920.048), quality maintained (no Q. hallucinations). 139 test tasks, 0 errors.",
+      "source_files": [
+        "large-v3-turbo-\uc804\ud658.md"
+      ],
+      "environment": "dev",
+      "confidence": 1.0,
+      "id": "whisperx_turbo_transition",
+      "community": 5,
+      "norm_label": "whisperx large-v3-turbo transition"
+    },
+    {
+      "type": "component",
+      "label": "ValueRangeCard",
+      "description": "Displays value range (\u20a9X~\u20a9Y) with conditional display. Part of 3-Space IA.",
+      "source_files": [
+        "ux-design-spec.md"
+      ],
+      "confidence": 1.0,
+      "id": "ValueRangeCard",
+      "community": 6,
+      "norm_label": "valuerangecard"
+    },
+    {
+      "type": "component",
+      "label": "VaultCard",
+      "description": "Part of 3-Space IA. Displays vault/storage information.",
+      "source_files": [
+        "ux-design-spec.md"
+      ],
+      "confidence": 1.0,
+      "id": "VaultCard",
+      "community": 6,
+      "norm_label": "vaultcard"
+    },
+    {
+      "type": "component",
+      "label": "RefineryReportCard",
+      "description": "Part of 3-Space IA. Displays refinery/quality report.",
+      "source_files": [
+        "ux-design-spec.md"
+      ],
+      "confidence": 1.0,
+      "id": "RefineryReportCard",
+      "community": 6,
+      "norm_label": "refineryreportcard"
+    },
+    {
+      "type": "component",
+      "label": "ReadinessSKUCard",
+      "description": "Part of 3-Space IA. Displays SKU readiness status.",
+      "source_files": [
+        "ux-design-spec.md"
+      ],
+      "confidence": 1.0,
+      "id": "ReadinessSKUCard",
+      "community": 6,
+      "norm_label": "readinessskucard"
+    },
+    {
+      "type": "page",
+      "label": "PrivacyControlCenterPage",
+      "description": "2-step delete confirmation flow. Part of consent and privacy management.",
+      "source_files": [
+        "ux-design-spec.md"
+      ],
+      "confidence": 1.0,
+      "id": "PrivacyControlCenterPage",
+      "community": 7,
+      "norm_label": "privacycontrolcenterpage"
+    },
+    {
+      "type": "specification",
+      "label": "Consent Edge Cases",
+      "description": "Five edge cases (EC-01 through EC-05) with handling logic for GlobalConsent state transitions",
+      "source_files": [
+        "consent-design-spec.md"
+      ],
+      "count": 5,
+      "confidence": 1.0,
+      "id": "consent_edge_cases",
+      "community": 7,
+      "norm_label": "consent edge cases"
+    },
+    {
+      "type": "specification",
+      "label": "Consent Test Cases",
+      "description": "Ten test cases (T01-T10) covering unit and integration scenarios",
+      "source_files": [
+        "consent-design-spec.md"
+      ],
+      "count": 10,
+      "confidence": 1.0,
+      "id": "consent_test_cases",
+      "community": 7,
+      "norm_label": "consent test cases"
+    },
+    {
+      "type": "bug",
+      "label": "ESM require Error (FIXED)",
+      "description": "B1: ffmpegProcessor.ts required() in ES module scope. Fixed: import ffmpegStatic with as unknown as string cast.",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "esm_require_error",
+      "community": 16,
+      "norm_label": "esm require error (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "SKU Inventory API 404 (FIXED)",
+      "description": "B2: Frontend /api/admin/sku-inventory vs backend /api/admin/inventory path mismatch. Fixed: Changed frontend to /api/admin/inventory",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "sku_inventory_api_404",
+      "community": 16,
+      "norm_label": "sku inventory api 404 (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "inventory.map TypeError (FIXED)",
+      "description": "B3: API response not array. Fixed: Added Array.isArray() guards in adminStore.ts and AdminBuildWizardPage.tsx",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "inventory_map_typeerror",
+      "community": 17,
+      "norm_label": "inventory.map typeerror (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "HTTP Method Mismatch (FIXED)",
+      "description": "B4: POST /export-requests/:id/confirm vs backend PUT. Fixed: Changed frontend POST to PUT (2 locations).",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "http_method_mismatch",
+      "community": 17,
+      "norm_label": "http method mismatch (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "Status Validation Error (FIXED)",
+      "description": "B5: Cannot process, current status draft, expected queued. Fixed: Added saveExportJob() and confirmExportRequest() sequence in handleExecute.",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "status_validation_error",
+      "community": 21,
+      "norm_label": "status validation error (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "upsertBillableUnits Stack Overflow (FIXED)",
+      "description": "B6: 2,206 BUs caused stack overflow in JSON.stringify + AES-256-GCM. Fixed: 200-unit batching.",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "upsert_billable_units_stackoverflow",
+      "community": 18,
+      "norm_label": "upsertbillableunits stack overflow (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "Audio Cleanup Memory Leak (FIXED)",
+      "description": "B9: <audio> elements not cleaned up on component unmount. Fixed: Added pause() + src='' in useEffect cleanup.",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "audio_cleanup_memory_leak",
+      "community": 19,
+      "norm_label": "audio cleanup memory leak (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "Mock Data Silent Fallback (FIXED)",
+      "description": "B10: API failures displayed mock data silently. Fixed: Removed MOCK constants, use empty arrays, error idle recovery.",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "mock_data_silent_fallback",
+      "community": 22,
+      "norm_label": "mock data silent fallback (fixed)"
+    },
+    {
+      "type": "refactoring",
+      "label": "admin-exports.ts 800-Line Limit (FIXED)",
+      "description": "B11: 884 lines exceeded 800 limit. Fixed: Extracted ledger-entries + delivery-records to admin-ledger.ts (884\u2192684 lines).",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "admin_exports_800_line_limit",
+      "community": 23,
+      "norm_label": "admin-exports.ts 800-line limit (fixed)"
+    },
+    {
+      "type": "bug",
+      "label": "handleExecute Double-Lock Issue (FIXED)",
+      "description": "B12: Wizard locked BUs, process API found 0 available. Fixed: Removed locking/delivery/settlement from handleExecute; process API handles it.",
+      "source_files": [
+        "SKU-export-phase1-bugfix.md"
+      ],
+      "status": "fixed",
+      "confidence": 1.0,
+      "id": "handle_execute_double_lock",
+      "community": 24,
+      "norm_label": "handleexecute double-lock issue (fixed)"
+    },
+    {
+      "type": "feature",
+      "label": "Batch Apply Consent",
+      "description": "500-unit chunking with cancellation support for applying consent changes to multiple records",
+      "source_files": [
+        "consent-design-spec.md"
+      ],
+      "chunk_size": 500,
+      "confidence": 1.0,
+      "id": "batch_apply_consent",
+      "community": 7,
+      "norm_label": "batch apply consent"
+    },
+    {
+      "type": "bug",
+      "label": "readFile stat() Pre-Check Missing",
+      "description": "NEW: 3 locations missing stat() pre-check before readFile operations",
+      "source_files": [
+        "\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ucf54\ub4dc_\uac1c\uc120\uc0ac\ud56d.md"
+      ],
+      "confidence": 1.0,
+      "id": "readfile_stat_missing",
+      "community": 18,
+      "norm_label": "readfile stat() pre-check missing"
+    },
+    {
+      "type": "bug",
+      "label": "Base64 Conversion OOM",
+      "description": "LOW: 50MB+ file causes OOM from base64 conversion in 3 locations",
+      "source_files": [
+        "\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ucf54\ub4dc_\uac1c\uc120\uc0ac\ud56d.md"
+      ],
+      "confidence": 1.0,
+      "id": "base64_oom",
+      "community": 19,
+      "norm_label": "base64 conversion oom"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_set_font",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_set_font",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_add_p",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_add_p",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_add_heading",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_add_heading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_shade_cell",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_shade_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_header_cell",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_header_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_content_cell",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_content_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_make_overview_table",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_make_overview_table",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_read_md",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_read_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_docx_py",
+      "_tgt": "generate_docx_create_document",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "generate_docx_rationale_1",
+      "_tgt": "uncounted_docs_scripts_generate_docx_py",
+      "source": "uncounted_docs_scripts_generate_docx_py",
+      "target": "generate_docx_rationale_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_src": "generate_docx_add_p",
+      "_tgt": "generate_docx_set_font",
+      "source": "generate_docx_set_font",
+      "target": "generate_docx_add_p",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_src": "generate_docx_header_cell",
+      "_tgt": "generate_docx_set_font",
+      "source": "generate_docx_set_font",
+      "target": "generate_docx_header_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_src": "generate_docx_content_cell",
+      "_tgt": "generate_docx_set_font",
+      "source": "generate_docx_set_font",
+      "target": "generate_docx_content_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_src": "generate_docx_make_overview_table",
+      "_tgt": "generate_docx_set_font",
+      "source": "generate_docx_set_font",
+      "target": "generate_docx_make_overview_table",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_src": "generate_docx_create_document",
+      "_tgt": "generate_docx_set_font",
+      "source": "generate_docx_set_font",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_src": "generate_docx_add_heading",
+      "_tgt": "generate_docx_add_p",
+      "source": "generate_docx_add_p",
+      "target": "generate_docx_add_heading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_src": "generate_docx_create_document",
+      "_tgt": "generate_docx_add_p",
+      "source": "generate_docx_add_p",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_src": "generate_docx_create_document",
+      "_tgt": "generate_docx_add_heading",
+      "source": "generate_docx_add_heading",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_src": "generate_docx_header_cell",
+      "_tgt": "generate_docx_shade_cell",
+      "source": "generate_docx_shade_cell",
+      "target": "generate_docx_header_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_src": "generate_docx_create_document",
+      "_tgt": "generate_docx_shade_cell",
+      "source": "generate_docx_shade_cell",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_src": "generate_docx_make_overview_table",
+      "_tgt": "generate_docx_header_cell",
+      "source": "generate_docx_header_cell",
+      "target": "generate_docx_make_overview_table",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L278",
+      "weight": 1.0,
+      "_src": "generate_docx_create_document",
+      "_tgt": "generate_docx_header_cell",
+      "source": "generate_docx_header_cell",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L281",
+      "weight": 1.0,
+      "_src": "generate_docx_create_document",
+      "_tgt": "generate_docx_content_cell",
+      "source": "generate_docx_content_cell",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_src": "generate_docx_create_document",
+      "_tgt": "generate_docx_make_overview_table",
+      "source": "generate_docx_make_overview_table",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_docx.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_src": "generate_docx_create_document",
+      "_tgt": "generate_docx_read_md",
+      "source": "generate_docx_read_md",
+      "target": "generate_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_set_font",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_set_font",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_add_p",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_add_p",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_shade_cell",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_shade_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_cell_text",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_cell_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_add_section_heading",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_add_section_heading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_add_sub_heading",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_add_sub_heading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_add_bullet",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_add_bullet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_add_dash",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_add_dash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_src": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "_tgt": "generate_gstar_docx_create_document",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_rationale_1",
+      "_tgt": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "source": "uncounted_docs_scripts_generate_gstar_docx_py",
+      "target": "generate_gstar_docx_rationale_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_add_p",
+      "_tgt": "generate_gstar_docx_set_font",
+      "source": "generate_gstar_docx_set_font",
+      "target": "generate_gstar_docx_add_p",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_cell_text",
+      "_tgt": "generate_gstar_docx_set_font",
+      "source": "generate_gstar_docx_set_font",
+      "target": "generate_gstar_docx_cell_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_add_section_heading",
+      "_tgt": "generate_gstar_docx_set_font",
+      "source": "generate_gstar_docx_set_font",
+      "target": "generate_gstar_docx_add_section_heading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_add_sub_heading",
+      "_tgt": "generate_gstar_docx_set_font",
+      "source": "generate_gstar_docx_set_font",
+      "target": "generate_gstar_docx_add_sub_heading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_add_bullet",
+      "_tgt": "generate_gstar_docx_set_font",
+      "source": "generate_gstar_docx_set_font",
+      "target": "generate_gstar_docx_add_bullet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_create_document",
+      "_tgt": "generate_gstar_docx_add_p",
+      "source": "generate_gstar_docx_add_p",
+      "target": "generate_gstar_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_create_document",
+      "_tgt": "generate_gstar_docx_shade_cell",
+      "source": "generate_gstar_docx_shade_cell",
+      "target": "generate_gstar_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_create_document",
+      "_tgt": "generate_gstar_docx_cell_text",
+      "source": "generate_gstar_docx_cell_text",
+      "target": "generate_gstar_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_create_document",
+      "_tgt": "generate_gstar_docx_add_section_heading",
+      "source": "generate_gstar_docx_add_section_heading",
+      "target": "generate_gstar_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_rationale_43",
+      "_tgt": "generate_gstar_docx_add_section_heading",
+      "source": "generate_gstar_docx_add_section_heading",
+      "target": "generate_gstar_docx_rationale_43",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_create_document",
+      "_tgt": "generate_gstar_docx_add_sub_heading",
+      "source": "generate_gstar_docx_add_sub_heading",
+      "target": "generate_gstar_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_add_dash",
+      "_tgt": "generate_gstar_docx_add_bullet",
+      "source": "generate_gstar_docx_add_bullet",
+      "target": "generate_gstar_docx_add_dash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_create_document",
+      "_tgt": "generate_gstar_docx_add_bullet",
+      "source": "generate_gstar_docx_add_bullet",
+      "target": "generate_gstar_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "uncounted-docs/scripts/generate_gstar_docx.py",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_src": "generate_gstar_docx_create_document",
+      "_tgt": "generate_gstar_docx_add_dash",
+      "source": "generate_gstar_docx_add_dash",
+      "target": "generate_gstar_docx_create_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L47-L60",
+      "weight": 1.0,
+      "_src": "backend_api_hono",
+      "_tgt": "aes256_encryption",
+      "source": "backend_api_hono",
+      "target": "aes256_encryption"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L106-L123",
+      "weight": 1.0,
+      "_src": "backend_api_hono",
+      "_tgt": "auth_flow_pkce",
+      "source": "backend_api_hono",
+      "target": "auth_flow_pkce"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L125-L141",
+      "weight": 1.0,
+      "_src": "backend_api_hono",
+      "_tgt": "sessions_api",
+      "source": "backend_api_hono",
+      "target": "sessions_api"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L159-L181",
+      "weight": 1.0,
+      "_src": "backend_api_hono",
+      "_tgt": "storage_api",
+      "source": "backend_api_hono",
+      "target": "storage_api"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L183-L211",
+      "weight": 1.0,
+      "_src": "backend_api_hono",
+      "_tgt": "user_consent_api",
+      "source": "backend_api_hono",
+      "target": "user_consent_api"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L253-L389",
+      "weight": 1.0,
+      "_src": "backend_api_hono",
+      "_tgt": "admin_api",
+      "source": "backend_api_hono",
+      "target": "admin_api"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L232-L244",
+      "weight": 1.0,
+      "_src": "backend_api_hono",
+      "_tgt": "metadata_events_upload",
+      "source": "backend_api_hono",
+      "target": "metadata_events_upload"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L47-L60",
+      "weight": 1.0,
+      "_src": "aes256_encryption",
+      "_tgt": "pii_masking_enforcement",
+      "source": "aes256_encryption",
+      "target": "pii_masking_enforcement"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L97-L132",
+      "weight": 1.0,
+      "_src": "sessions_api",
+      "_tgt": "session_detail_page_spec",
+      "source": "sessions_api",
+      "target": "session_detail_page_spec"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L90-L125",
+      "weight": 1.0,
+      "_src": "scan_upload_flow",
+      "_tgt": "storage_api",
+      "source": "storage_api",
+      "target": "scan_upload_flow"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L147-L174",
+      "weight": 1.0,
+      "_src": "storage_api",
+      "_tgt": "upload_queue_retry_strategy",
+      "source": "storage_api",
+      "target": "upload_queue_retry_strategy"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L183-L211",
+      "weight": 1.0,
+      "_src": "user_consent_api",
+      "_tgt": "data_spec_v2",
+      "source": "user_consent_api",
+      "target": "data_spec_v2"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L304-L313",
+      "weight": 1.0,
+      "_src": "admin_api",
+      "_tgt": "billable_units_management",
+      "source": "admin_api",
+      "target": "billable_units_management"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L345-L355",
+      "weight": 1.0,
+      "_src": "admin_api",
+      "_tgt": "export_requests_workflow",
+      "source": "admin_api",
+      "target": "export_requests_workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\uc5b4\ub4dc\ubbfc/feature-utterance-review-filter.md",
+      "source_location": "L1-L5",
+      "weight": 1.0,
+      "_src": "admin_api",
+      "_tgt": "utterance_review_filter_feature",
+      "source": "admin_api",
+      "target": "utterance_review_filter_feature"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md",
+      "source_location": "L304-L355",
+      "weight": 1.0,
+      "_src": "billable_units_management",
+      "_tgt": "export_requests_workflow",
+      "source": "billable_units_management",
+      "target": "export_requests_workflow"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L124-L125",
+      "weight": 1.0,
+      "_src": "scan_upload_flow",
+      "_tgt": "metadata_events_upload",
+      "source": "metadata_events_upload",
+      "target": "scan_upload_flow"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L6-L8",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "rationale_gpu_inference_ban",
+      "source": "data_spec_v2",
+      "target": "rationale_gpu_inference_ban"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L9-L10",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "rationale_user_labeled_only",
+      "source": "data_spec_v2",
+      "target": "rationale_user_labeled_only"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "rationale_no_precise_location",
+      "source": "data_spec_v2",
+      "target": "rationale_no_precise_location"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L20-L26",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "pseudo_id_infrastructure",
+      "source": "data_spec_v2",
+      "target": "pseudo_id_infrastructure"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "unccounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L28-L37",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "time_bucket_rules",
+      "source": "data_spec_v2",
+      "target": "time_bucket_rules"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L85-L160",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "sku_u_a01_voice_raw",
+      "source": "data_spec_v2",
+      "target": "sku_u_a01_voice_raw"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L169-L217",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "sku_u_a02_voice_context",
+      "source": "data_spec_v2",
+      "target": "sku_u_a02_voice_context"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L221-L262",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "sku_u_a03_dialog_act",
+      "source": "data_spec_v2",
+      "target": "sku_u_a03_dialog_act"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md",
+      "source_location": "L265-L300",
+      "weight": 1.0,
+      "_src": "data_spec_v2",
+      "_tgt": "sku_u_m01_call_metadata",
+      "source": "data_spec_v2",
+      "target": "sku_u_m01_call_metadata"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/sku-data-engine-spec.md",
+      "source_location": "L8-L19",
+      "weight": 1.0,
+      "_src": "sku_data_engine_spec",
+      "_tgt": "data_spec_v2",
+      "source": "data_spec_v2",
+      "target": "sku_data_engine_spec"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L83-L96",
+      "weight": 1.0,
+      "_src": "typecast_natural_conversation_data",
+      "_tgt": "sku_u_a02_voice_context",
+      "source": "sku_u_a02_voice_context",
+      "target": "typecast_natural_conversation_data"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L94-L96",
+      "weight": 1.0,
+      "_src": "conversational_ai_dialogue_act",
+      "_tgt": "sku_u_a03_dialog_act",
+      "source": "sku_u_a03_dialog_act",
+      "target": "conversational_ai_dialogue_act"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/sku-data-engine-spec.md",
+      "source_location": "L57-L69",
+      "weight": 1.0,
+      "_src": "sku_data_engine_spec",
+      "_tgt": "device_bucket_rules",
+      "source": "sku_data_engine_spec",
+      "target": "device_bucket_rules"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/sku-data-engine-spec.md",
+      "source_location": "L174-L191",
+      "weight": 1.0,
+      "_src": "sku_data_engine_spec",
+      "_tgt": "quality_trust_value_engines",
+      "source": "sku_data_engine_spec",
+      "target": "quality_trust_value_engines"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/sku-data-engine-spec.md",
+      "source_location": "L174-L191",
+      "weight": 1.0,
+      "_src": "trust_score_algorithm",
+      "_tgt": "quality_trust_value_engines",
+      "source": "quality_trust_value_engines",
+      "target": "trust_score_algorithm"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L7-L175",
+      "weight": 1.0,
+      "_src": "app_bootstrap_sequence",
+      "_tgt": "scan_upload_flow",
+      "source": "app_bootstrap_sequence",
+      "target": "scan_upload_flow"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L54-L65",
+      "weight": 1.0,
+      "_src": "scan_upload_flow",
+      "_tgt": "audio_scan_pipeline",
+      "source": "scan_upload_flow",
+      "target": "audio_scan_pipeline"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L147-L174",
+      "weight": 1.0,
+      "_src": "scan_upload_flow",
+      "_tgt": "upload_queue_retry_strategy",
+      "source": "scan_upload_flow",
+      "target": "upload_queue_retry_strategy"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\uc571/\uc2a4\uce94_\uc5c5\ub85c\ub4dc_\ud50c\ub85c\uc6b0.md",
+      "source_location": "L96-L100",
+      "weight": 1.0,
+      "_src": "scan_upload_flow",
+      "_tgt": "pii_masking_enforcement",
+      "source": "scan_upload_flow",
+      "target": "pii_masking_enforcement"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L97-L132",
+      "weight": 1.0,
+      "_src": "session_chunk_semantics",
+      "_tgt": "session_detail_page_spec",
+      "source": "session_chunk_semantics",
+      "target": "session_detail_page_spec"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L11-L35",
+      "weight": 1.0,
+      "_src": "design_system_flat_minimal",
+      "_tgt": "color_tokens_light_dark",
+      "source": "design_system_flat_minimal",
+      "target": "color_tokens_light_dark"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L47-L53",
+      "weight": 1.0,
+      "_src": "design_system_flat_minimal",
+      "_tgt": "typography_system",
+      "source": "design_system_flat_minimal",
+      "target": "typography_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L107-L112",
+      "weight": 1.0,
+      "_src": "design_system_flat_minimal",
+      "_tgt": "motion_animation_constraints",
+      "source": "design_system_flat_minimal",
+      "target": "motion_animation_constraints"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/00-design-system.md",
+      "source_location": "L116-L128",
+      "weight": 1.0,
+      "_src": "design_system_flat_minimal",
+      "_tgt": "information_reduction_principle",
+      "source": "design_system_flat_minimal",
+      "target": "information_reduction_principle"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L23-L60",
+      "weight": 1.0,
+      "_src": "information_reduction_principle",
+      "_tgt": "home_page_spec",
+      "source": "information_reduction_principle",
+      "target": "home_page_spec"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L67-L94",
+      "weight": 1.0,
+      "_src": "information_reduction_principle",
+      "_tgt": "assets_page_spec",
+      "source": "information_reduction_principle",
+      "target": "assets_page_spec"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L97-L132",
+      "weight": 1.0,
+      "_src": "information_reduction_principle",
+      "_tgt": "session_detail_page_spec",
+      "source": "information_reduction_principle",
+      "target": "session_detail_page_spec"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L134-L165",
+      "weight": 1.0,
+      "_src": "information_reduction_principle",
+      "_tgt": "value_page_spec",
+      "source": "information_reduction_principle",
+      "target": "value_page_spec"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L168-L197",
+      "weight": 1.0,
+      "_src": "information_reduction_principle",
+      "_tgt": "profile_page_spec",
+      "source": "information_reduction_principle",
+      "target": "profile_page_spec"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L49-L50",
+      "weight": 1.0,
+      "_src": "home_page_spec",
+      "_tgt": "bottom_nav_component",
+      "source": "home_page_spec",
+      "target": "bottom_nav_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L88-L89",
+      "weight": 1.0,
+      "_src": "assets_page_spec",
+      "_tgt": "bottom_nav_component",
+      "source": "assets_page_spec",
+      "target": "bottom_nav_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L125-L126",
+      "weight": 1.0,
+      "_src": "session_detail_page_spec",
+      "_tgt": "bottom_nav_component",
+      "source": "session_detail_page_spec",
+      "target": "bottom_nav_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L160-L161",
+      "weight": 1.0,
+      "_src": "value_page_spec",
+      "_tgt": "bottom_nav_component",
+      "source": "value_page_spec",
+      "target": "bottom_nav_component"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L145-L147",
+      "weight": 1.0,
+      "_src": "value_page_spec",
+      "_tgt": "rationale_value_range_not_single",
+      "source": "value_page_spec",
+      "target": "rationale_value_range_not_single"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/ux-design-update/07-component-spec.md",
+      "source_location": "L196-L197",
+      "weight": 1.0,
+      "_src": "profile_page_spec",
+      "_tgt": "bottom_nav_component",
+      "source": "profile_page_spec",
+      "target": "bottom_nav_component"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L66-L79",
+      "weight": 1.0,
+      "_src": "typecast_partnership_proposal",
+      "_tgt": "typecast_natural_conversation_data",
+      "source": "typecast_partnership_proposal",
+      "target": "typecast_natural_conversation_data"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L158-L176",
+      "weight": 1.0,
+      "_src": "typecast_partnership_proposal",
+      "_tgt": "emotion_synthesis_improvement",
+      "source": "typecast_partnership_proposal",
+      "target": "emotion_synthesis_improvement"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L178-L193",
+      "weight": 1.0,
+      "_src": "typecast_partnership_proposal",
+      "_tgt": "conversational_ai_dialogue_act",
+      "source": "typecast_partnership_proposal",
+      "target": "conversational_ai_dialogue_act"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubbf8\ud305\uae30\uc220 \uc790\ub8cc/typecast/typecast-proposal.md",
+      "source_location": "L104-L124",
+      "weight": 1.0,
+      "_src": "typecast_partnership_proposal",
+      "_tgt": "trust_score_algorithm",
+      "source": "typecast_partnership_proposal",
+      "target": "trust_score_algorithm"
+    },
+    {
+      "type": "reinforces",
+      "label": "Accessibility principles enforce motion rules",
+      "description": "Anti-false-expectation principle requires strict motion constraints",
+      "confidence": 1.0,
+      "_src": "accessibility_standards",
+      "_tgt": "motion_design",
+      "source": "accessibility_standards",
+      "target": "motion_design",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "contains",
+      "label": "3-Space IA includes ValueRangeCard",
+      "confidence": 1.0,
+      "_src": "3_space_ia",
+      "_tgt": "ValueRangeCard",
+      "source": "3_space_ia",
+      "target": "ValueRangeCard",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "contains",
+      "label": "3-Space IA includes VaultCard",
+      "confidence": 1.0,
+      "_src": "3_space_ia",
+      "_tgt": "VaultCard",
+      "source": "3_space_ia",
+      "target": "VaultCard",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "contains",
+      "label": "3-Space IA includes RefineryReportCard",
+      "confidence": 1.0,
+      "_src": "3_space_ia",
+      "_tgt": "RefineryReportCard",
+      "source": "3_space_ia",
+      "target": "RefineryReportCard",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "contains",
+      "label": "3-Space IA includes ReadinessSKUCard",
+      "confidence": 1.0,
+      "_src": "3_space_ia",
+      "_tgt": "ReadinessSKUCard",
+      "source": "3_space_ia",
+      "target": "ReadinessSKUCard",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "implements",
+      "label": "PrivacyControlCenterPage implements consent state machine",
+      "confidence": 1.0,
+      "_src": "consent_state_machine",
+      "_tgt": "PrivacyControlCenterPage",
+      "source": "consent_state_machine",
+      "target": "PrivacyControlCenterPage",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "defines",
+      "label": "State machine defines 5 edge cases",
+      "confidence": 1.0,
+      "_src": "consent_state_machine",
+      "_tgt": "consent_edge_cases",
+      "source": "consent_state_machine",
+      "target": "consent_edge_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "requires",
+      "label": "State machine requires batch apply functionality",
+      "confidence": 1.0,
+      "_src": "consent_state_machine",
+      "_tgt": "batch_apply_consent",
+      "source": "consent_state_machine",
+      "target": "batch_apply_consent",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both STT/upload concurrency issues in scan pipeline",
+      "confidence": 0.8,
+      "_src": "stt_worker_memory_leak",
+      "_tgt": "upload_queue_race_condition",
+      "source": "stt_worker_memory_leak",
+      "target": "upload_queue_race_condition",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both initialization/recovery timing issues",
+      "confidence": 0.7,
+      "_src": "storage_initializer_race",
+      "_tgt": "stt_network_restart_missing",
+      "source": "storage_initializer_race",
+      "target": "stt_network_restart_missing",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both plaintext secret storage vulnerabilities",
+      "confidence": 1.0,
+      "_src": "access_token_plaintext",
+      "_tgt": "encryption_key_localstorage",
+      "source": "encryption_key_localstorage",
+      "target": "access_token_plaintext",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both missing input validation/protection mechanisms",
+      "confidence": 0.75,
+      "_src": "oauth_redirect_unvalidated",
+      "_tgt": "rate_limiting_missing",
+      "source": "oauth_redirect_unvalidated",
+      "target": "rate_limiting_missing",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both authorization/permission bypass issues",
+      "confidence": 1.0,
+      "_src": "admin_role_validation_missing",
+      "_tgt": "rls_policy_too_permissive",
+      "source": "admin_role_validation_missing",
+      "target": "rls_policy_too_permissive",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both blocking SKU export package generation",
+      "confidence": 0.8,
+      "_src": "s3_chunk_merge_missing",
+      "_tgt": "transcript_coverage_low",
+      "source": "s3_chunk_merge_missing",
+      "target": "transcript_coverage_low",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "enables",
+      "label": "Audio pipeline unification enables segment-level speaker verification",
+      "confidence": 0.9,
+      "_src": "audio_pipeline_unification",
+      "_tgt": "voice_enrollment_level2",
+      "source": "audio_pipeline_unification",
+      "target": "voice_enrollment_level2",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "uses",
+      "label": "Audio unification may incorporate MFCC analysis",
+      "confidence": 0.6,
+      "_src": "audio_pipeline_unification",
+      "_tgt": "mfcc_speaker_similarity",
+      "source": "audio_pipeline_unification",
+      "target": "mfcc_speaker_similarity",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Option B (WeSpeaker post-processing) part of audio unification",
+      "confidence": 0.85,
+      "_src": "diarization_improvement_options",
+      "_tgt": "audio_pipeline_unification",
+      "source": "audio_pipeline_unification",
+      "target": "diarization_improvement_options",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both optimize speech processing pipeline",
+      "confidence": 0.7,
+      "_src": "whisperx_turbo_transition",
+      "_tgt": "audio_pipeline_unification",
+      "source": "audio_pipeline_unification",
+      "target": "whisperx_turbo_transition",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "related_to",
+      "label": "MFCC similarity analysis informs diarization accuracy assessment",
+      "confidence": 0.8,
+      "_src": "pyannote_diarization_issue",
+      "_tgt": "mfcc_speaker_similarity",
+      "source": "mfcc_speaker_similarity",
+      "target": "pyannote_diarization_issue",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "solved_by",
+      "label": "5 improvement options address diarization accuracy",
+      "confidence": 1.0,
+      "_src": "pyannote_diarization_issue",
+      "_tgt": "diarization_improvement_options",
+      "source": "pyannote_diarization_issue",
+      "target": "diarization_improvement_options",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "verifies",
+      "label": "10 test cases verify 5 edge case behaviors",
+      "confidence": 1.0,
+      "_src": "consent_test_cases",
+      "_tgt": "consent_edge_cases",
+      "source": "consent_edge_cases",
+      "target": "consent_test_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "relates_to",
+      "label": "Both part of SKU export phase 1 bug fixes",
+      "confidence": 0.9,
+      "_src": "esm_require_error",
+      "_tgt": "sku_inventory_api_404",
+      "source": "esm_require_error",
+      "target": "sku_inventory_api_404",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "relates_to",
+      "label": "Both API client/integration bugs",
+      "confidence": 0.8,
+      "_src": "inventory_map_typeerror",
+      "_tgt": "http_method_mismatch",
+      "source": "inventory_map_typeerror",
+      "target": "http_method_mismatch",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both resource/batch size management issues",
+      "confidence": 0.6,
+      "_src": "upsert_billable_units_stackoverflow",
+      "_tgt": "readfile_stat_missing",
+      "source": "upsert_billable_units_stackoverflow",
+      "target": "readfile_stat_missing",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "semantic_similar_to",
+      "label": "Both memory management and cleanup issues",
+      "confidence": 0.75,
+      "_src": "audio_cleanup_memory_leak",
+      "_tgt": "base64_oom",
+      "source": "audio_cleanup_memory_leak",
+      "target": "base64_oom",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hyperedge_01_sku_data_pipeline",
+      "label": "SKU Data Collection Pipeline - All Tiers",
+      "nodes": [
+        "sku_u_a01_voice_raw",
+        "sku_u_a02_voice_context",
+        "sku_u_a03_dialog_act",
+        "audio_scan_pipeline",
+        "quality_trust_value_engines"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/data-spec-v2.md"
+    },
+    {
+      "id": "hyperedge_02_encryption_auth_compliance",
+      "label": "Security & Privacy Enforcement",
+      "nodes": [
+        "aes256_encryption",
+        "auth_flow_pkce",
+        "pii_masking_enforcement",
+        "user_consent_api"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md"
+    },
+    {
+      "id": "hyperedge_03_admin_delivery_system",
+      "label": "Admin Export & Settlement Workflow",
+      "nodes": [
+        "admin_api",
+        "billable_units_management",
+        "export_requests_workflow",
+        "utterance_review_filter_feature"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "uncounted-docs/\ubc31\uc564\ub4dc/BACKEND_API.md"
+    },
+    {
+      "id": "consent_system_flow",
+      "type": "multi_participant_system",
+      "label": "Consent System Flow",
+      "description": "GlobalConsent state machine with RecordVisibility control, batch apply logic, edge case handling, and 10 test scenarios. Involves: consent_state_machine, PrivacyControlCenterPage, consent_edge_cases, batch_apply_consent, consent_test_cases",
+      "participants": [
+        "consent_state_machine",
+        "PrivacyControlCenterPage",
+        "consent_edge_cases",
+        "batch_apply_consent",
+        "consent_test_cases"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "id": "audio_processing_architecture",
+      "type": "multi_participant_system",
+      "label": "Audio Processing Architecture",
+      "description": "Unified audio pipeline spanning preprocessing, speaker verification, diarization, and STT. Java source-of-truth with TS bridge. Includes MFCC similarity, WeSpeaker embeddings, and WhisperX optimization. Participants: audio_pipeline_unification, voice_enrollment_level2, pyannote_diarization_issue, diarization_improvement_options, mfcc_speaker_similarity, whisperx_turbo_transition",
+      "participants": [
+        "audio_pipeline_unification",
+        "voice_enrollment_level2",
+        "pyannote_diarization_issue",
+        "diarization_improvement_options",
+        "mfcc_speaker_similarity",
+        "whisperx_turbo_transition"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "id": "sku_export_pipeline",
+      "type": "multi_participant_system",
+      "label": "SKU Export Pipeline",
+      "description": "Complete export workflow from upload through packaging. Critical blockers: S3 chunk merge (I1) and transcript coverage (I2). Fixed 12 bugs spanning API integration, security, memory management, and authorization. Participants: s3_chunk_merge_missing, transcript_coverage_low, esm_require_error, sku_inventory_api_404, inventory_map_typeerror, http_method_mismatch, status_validation_error, upsert_billable_units_stackoverflow, admin_role_validation_missing, rls_policy_too_permissive, audio_cleanup_memory_leak, mock_data_silent_fallback, admin_exports_800_line_limit, handle_execute_double_lock",
+      "participants": [
+        "s3_chunk_merge_missing",
+        "transcript_coverage_low",
+        "esm_require_error",
+        "sku_inventory_api_404",
+        "inventory_map_typeerror",
+        "http_method_mismatch",
+        "status_validation_error",
+        "upsert_billable_units_stackoverflow",
+        "admin_role_validation_missing",
+        "rls_policy_too_permissive",
+        "audio_cleanup_memory_leak",
+        "mock_data_silent_fallback",
+        "admin_exports_800_line_limit",
+        "handle_execute_double_lock"
+      ],
+      "critical_blockers": 2,
+      "bugs_fixed": 12,
+      "confidence": 1.0
+    }
+  ]
+}

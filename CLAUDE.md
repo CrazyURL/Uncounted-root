@@ -48,3 +48,12 @@ cd uncounted-admin && yarn dev         # port 15173
 
 - 서브프로젝트별: `uncounted-{api,voice-api,app,admin}/CLAUDE.md`
 - 공통 규칙: `.claude/rules/common/*.md` (architecture · dev-environment · agents · DB 마이그레이션)
+
+## graphify
+
+This project has a graphify knowledge graph at graphify-out/.
+
+Rules:
+- Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
+- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
+- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)
