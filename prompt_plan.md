@@ -1,29 +1,59 @@
 ---
-title: "계획 파일 관리 시스템"
+title: "health 엔드포인트에 버전 정보 추가"
 status: active
 created: 2026-04-16
-type: chore
+type: feature
 ---
 
-# 계획 파일 관리 시스템
+# health 엔드포인트에 버전 정보 추가
 
-상태: **구현 진행 중** (2026-04-16)
+## 현재 상태
 
-## 요약
+- **`/`** (루트): `service`, `version: '1.0.0'` (하드코딩), `status`, `timestamp` 반환
+- **`/health`**: `{ status: 'ok' }` 만 반환
+- **package.json**: `version: "0.1.0"`
 
-`/plan` 명령의 저장 방식을 단일 파일(`prompt_plan.md`)에서 `plans/` 디렉토리 개별 파일로 변경.
-`prompt_plan.md`는 활성 계획의 복사본으로 하위 호환 유지.
+## 문제점
 
-## 변경 사항
+1. `/health`에 버전 정보 없음 — 배포 확인 불가
+2. 루트 `version: '1.0.0'`이 package.json `0.1.0`과 불일치
+3. 버전이 하드코딩 — 배포마다 수동 변경 필요
 
-- [x] `plans/` 디렉토리 생성
-- [x] 기존 계획 마이그레이션 (agent-sync, labeling-ui)
-- [ ] `/plan` 명령 후처리 섹션 수정
+## 계획
 
-## 파일 네이밍: `YYYYMMDD-HHMM-slug.md`
+### 변경 파일: `uncounted-api/src/index.ts` + `uncounted-api/src/openapi.ts` (2개)
 
-## 워크플로우
-1. `/plan` → 계획 수립
-2. 확인 → `plans/YYYYMMDD-HHMM-slug.md` 저장
-3. `prompt_plan.md`에 복사 (하위 호환)
-4. Gemini에게 핸드오프
+**Step 1** — package.json에서 버전을 읽는 방식 도입 (`index.ts`)
+
+```typescript
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
+
+const pkg = JSON.parse(
+  readFileSync(resolve(import.meta.dirname ?? '.', '../package.json'), 'utf-8')
+)
+```
+
+**Step 2** — 루트 엔드포인트의 하드코딩 `'1.0.0'` → `pkg.version`
+
+**Step 3** — `/health` 응답에 버전 추가
+
+```typescript
+app.get('/health', (c) => {
+  return c.json({
+    status: 'ok',
+    version: pkg.version,
+  })
+})
+```
+
+**Step 4** — OpenAPI 스펙(`openapi.ts`)의 `/health` 스키마에 `version` 필드 반영
+
+## 리스크
+
+- **LOW**: `import.meta.dirname` Node 버전 호환성 — 대안 존재
+- **LOW**: package.json 읽기 실패 시 fallback 필요
+
+## 복잡도: LOW
+
+파일 2개, 5분 이내 작업.
