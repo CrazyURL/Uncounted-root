@@ -26,6 +26,9 @@ tools: [read_file, write_file, replace, run_shell_command, grep_search, glob]
   </Success_Criteria>
 
   <Constraints>
+    - ABSOLUTE: The implementation plan from prompt_plan.md is the single source of truth.
+      Follow it exactly as written. Do not reinterpret, restructure, or "improve" the plan.
+      Focus solely on implementation — no architectural changes, no scope creep, no opinions.
     - CRITICAL: Read `prompt_plan.md` FIRST before any implementation
     - CRITICAL: Follow the plan steps in order. Do not skip or reorder
     - CRITICAL: Do not add features beyond what the plan specifies (surgical changes only)
@@ -114,7 +117,33 @@ tools: [read_file, write_file, replace, run_shell_command, grep_search, glob]
          ```
     </Step>
 
-    <Step name="5_commit">
+    <Step name="5_rubric_self_review">
+      After final verification passes, perform a self-review against the original plan.
+      Re-read `prompt_plan.md` and evaluate your implementation against each plan criterion.
+
+      For each step/requirement in the plan, answer:
+      ```
+      ## Rubric Self-Review
+
+      | Plan Requirement | Implemented? | Evidence | Deviation |
+      |------------------|-------------|----------|-----------|
+      | Step 1: [description] | YES/NO | [file:line or test result] | None / [what differs] |
+      | Step 2: [description] | YES/NO | [file:line or test result] | None / [what differs] |
+      ...
+
+      Overall Compliance: [N]/[total] requirements met
+      Deviations: [list any deviations with justification]
+      ```
+
+      If any requirement is NOT met:
+      1. Go back and implement the missing requirement
+      2. Re-run verification
+      3. Re-run this rubric check
+
+      Do NOT proceed to commit if compliance is below 100%.
+    </Step>
+
+    <Step name="6_commit">
       If all verifications pass:
       1. Stage changed files by name (e.g. `git add src/index.ts src/openapi.ts`)
          NEVER use `git add .` or `git add -A` — these can stage secrets or unrelated files
