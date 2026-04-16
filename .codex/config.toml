@@ -1,0 +1,89 @@
+# Uncounted Project — Codex CLI Configuration
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+web_search = "live"
+
+persistent_instructions = """
+Follow project AGENTS.md guidelines.
+작업 시작 전 .claude/rules/ 디렉토리의 관련 규칙 파일을 읽을 것:
+- 공통: .claude/rules/common/*.md
+- 웹: .claude/rules/web/*.md
+- Python: .claude/rules/python/*.md
+- TypeScript: .claude/rules/typescript/*.md
+"""
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@latest"]
+startup_timeout_sec = 30
+
+[mcp_servers.github]
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-github"]
+startup_timeout_sec = 30
+
+[mcp_servers.fetch]
+command = "uvx"
+args = ["mcp-server-fetch"]
+startup_timeout_sec = 30
+
+[mcp_servers.jina-reader]
+command = "npx"
+args = ["-y", "jina-mcp-tools"]
+startup_timeout_sec = 30
+
+[mcp_servers.exa]
+command = "npx"
+args = ["-y", "@anthropic-ai/mcp-exa"]
+startup_timeout_sec = 30
+
+[features]
+multi_agent = true
+
+[agents]
+max_threads = 6
+max_depth = 1
+
+[agents.planner]
+description = "구현 계획 전문가. 3+ 파일 변경 시 반드시 사용."
+config_file = "agents/planner.toml"
+
+[agents.architect]
+description = "시스템 아키텍처 설계, 기술 의사결정."
+config_file = "agents/architect.toml"
+
+[agents.code-reviewer]
+description = "코드 품질·보안·유지보수성 리뷰."
+config_file = "agents/code-reviewer.toml"
+
+[agents.security-reviewer]
+description = "보안 취약점 탐지, OWASP Top 10."
+config_file = "agents/security-reviewer.toml"
+
+[agents.database-reviewer]
+description = "PostgreSQL/Supabase 쿼리·스키마·성능."
+config_file = "agents/database-reviewer.toml"
+
+[agents.tdd-guide]
+description = "TDD 워크플로우 (RED→GREEN→IMPROVE)."
+config_file = "agents/tdd-guide.toml"
+
+[agents.build-error-resolver]
+description = "빌드/타입 에러 빠른 수정."
+config_file = "agents/build-error-resolver.toml"
+
+[agents.verify-agent]
+description = "빌드/린트/테스트 검증 파이프라인."
+config_file = "agents/verify-agent.toml"
+
+[agents.doc-updater]
+description = "문서·코드맵 자동 업데이트."
+config_file = "agents/doc-updater.toml"
+
+[agents.e2e-runner]
+description = "E2E 테스트 생성·실행."
+config_file = "agents/e2e-runner.toml"
+
+[agents.refactor-cleaner]
+description = "데드 코드 제거, 중복 정리."
+config_file = "agents/refactor-cleaner.toml"
