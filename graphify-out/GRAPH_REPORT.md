@@ -1,7 +1,7 @@
 # Graph Report - .  (2026-04-16)
 
 ## Corpus Check
-- 631 files · ~2,137,961 words
+- 631 files · ~2,137,633 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -1776,12 +1776,12 @@ Nodes (1): handleExecute Double-Lock Issue (FIXED)
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `d()` connect `Community 1` to `Community 0`, `Community 2`, `Community 3`, `Community 4`, `Community 10`, `Community 19`, `Community 22`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
-- **Why does `word_level_speaker_accuracy()` connect `Community 24` to `Community 3`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+- **Why does `I()` connect `Community 1` to `Community 2`, `Community 3`, `Community 4`, `Community 5`, `Community 8`, `Community 17`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+- **Why does `$t()` connect `Community 0` to `Community 2`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
 - **Why does `W()` connect `Community 1` to `Community 2`, `Community 3`, `Community 10`, `Community 13`, `Community 15`, `Community 19`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **Are the 66 inferred relationships involving `d()` (e.g. with `.infer()` and `.assignSpeakersByEmbedding()`) actually correct?**
   _`d()` has 66 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 53 inferred relationships involving `W()` (e.g. with `.assignSpeakersByEmbedding()` and `.labelSegmentWithReference()`) actually correct?**
