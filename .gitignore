@@ -6,3 +6,4 @@ nltk_data/
 !.claude/
 graphify-out/cache/
 plans/
+.worktrees/
