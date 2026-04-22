@@ -1,7 +1,7 @@
 # Graph Report - .  (2026-04-22)
 
 ## Corpus Check
-- 642 files · ~2,145,457 words
+- 642 files · ~2,146,039 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -1982,12 +1982,12 @@ Nodes (1): handleExecute Double-Lock Issue (FIXED)
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$t()` connect `Community 0` to `Community 1`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
-- **Why does `I()` connect `Community 3` to `Community 1`, `Community 2`, `Community 4`, `Community 5`, `Community 6`, `Community 7`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
-- **Why does `IR()` connect `Community 0` to `Community 1`, `Community 3`, `Community 5`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+- **Why does `W()` connect `Community 3` to `Community 1`, `Community 2`, `Community 4`?**
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+- **Why does `c()` connect `Community 3` to `Community 0`, `Community 1`, `Community 2`, `Community 5`, `Community 7`, `Community 8`, `Community 12`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Why does `X()` connect `Community 0` to `Community 1`, `Community 2`, `Community 3`, `Community 14`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Are the 57 inferred relationships involving `d()` (e.g. with `.infer()` and `.infer()`) actually correct?**
   _`d()` has 57 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 81 inferred relationships involving `SpeakerEmbeddingModel` (e.g. with `ffmpeg로 m4a/mp3/wav를 16k mono float32로 디코드.` and `각 utterance_XXX.wav를 utterance.start_sec 위치에 paste한 mono float32 array.`) actually correct?**
