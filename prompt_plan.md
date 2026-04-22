@@ -1,15 +1,21 @@
 ---
 title: "음성 PII 자동 마스킹 (Audio PII Masking)"
-status: active
+status: completed
 created: 2026-04-22
+completed: 2026-04-22
 type: feature
 ---
 
 # Implementation Plan: 음성 PII 자동 마스킹
 
+> **✅ 완료** (2026-04-22, voice-api `158f161`)
+> 193 tests passed, coverage pii_masker 93% / audio_pii_masker 85%.
+> H1/H2 버그 + M1~M5 이슈 코드 리뷰로 발견·수정 완료.
+> 다음 단계: dev 서버 통합 검증(실제 PII 샘플 업로드).
+
 ## Overview
 
-voice-api의 텍스트 PII 마스킹을 오디오 레벨로 확장한다. WhisperX word-level
+voice-api의 텍스트 PII 마스킹을 오디오 레벨로 확장했다. WhisperX word-level
 timestamps를 활용해 PII 발화 구간을 1kHz 비프로 치환한 WAV를 반환한다.
 설계·결정 이력은 `uncounted-voice-api/docs/audio-pii-masking-plan.md` 참조.
 
@@ -28,7 +34,7 @@ timestamps를 활용해 PII 발화 구간을 1kHz 비프로 치환한 WAV를 반
 
 ## Implementation Phases
 
-### Phase 1: pii_masker 확장 — char span 반환 (2 files)
+### Phase 1: pii_masker 확장 — char span 반환 (2 files) ✅
 
 1. **`detect_pii_spans()` 신규 함수 추가** (File: `uncounted-voice-api/app/pii_masker.py`, `mask_pii()` 함수 근처 — 현재 L216)
    - Action: `PII_PATTERNS`를 재사용해 `[{type, char_start, char_end, matched_text}]` 반환. 기존 `mask_pii()`는 내부에서 `detect_pii_spans()`를 호출 후 span 기반 치환으로 리팩터
@@ -42,7 +48,7 @@ timestamps를 활용해 PII 발화 구간을 1kHz 비프로 치환한 WAV를 반
    - Dependencies: 1
    - Risk: Low
 
-### Phase 2: audio_pii_masker 모듈 신규 (2 files)
+### Phase 2: audio_pii_masker 모듈 신규 (2 files) ✅
 
 3. **`audio_pii_masker.py` 신규** (File: `uncounted-voice-api/app/services/audio_pii_masker.py` — 신규)
    - Action: 두 함수 구현
@@ -58,7 +64,7 @@ timestamps를 활용해 PII 발화 구간을 1kHz 비프로 치환한 WAV를 반
    - Dependencies: 3
    - Risk: Low
 
-### Phase 3: stt_processor 통합 — 일반 모드 (4 files)
+### Phase 3: stt_processor 통합 — 일반 모드 (4 files) ✅
 
 5. **`transcribe()` 시그니처 확장** (File: `uncounted-voice-api/app/stt_processor.py`, `transcribe()` — 현재 L547)
    - Action: `mask_audio_pii: bool = False`, `mask_audio_names: bool = False` 파라미터 추가. Line 644 `mask_segments()` 호출 직전에 `find_pii_word_ranges` 호출 후 `mask_audio_ranges`로 `audio` ndarray 치환. 이후 `mute_non_speaker`/`extract_utterance_audio`가 마스킹된 audio를 사용
@@ -84,7 +90,7 @@ timestamps를 활용해 PII 발화 구간을 1kHz 비프로 치환한 WAV를 반
    - Dependencies: 5, 6, 7
    - Risk: Medium — 테스트 샘플 준비 필요 (동기 녹음 or TTS)
 
-### Phase 4: 청크 모드 지원 (2 files)
+### Phase 4: 청크 모드 지원 (2 files) ✅
 
 9. **`_transcribe_chunked()` 내부 적용** (File: `uncounted-voice-api/app/stt_processor.py`, `_transcribe_chunked()` — 현재 L430)
    - Action: `emit_chunk_utterances(chunk_audio, ...)` 호출 이전에 chunk-local segments로 `find_pii_word_ranges` 실행 → `mask_audio_ranges`로 `chunk_audio` 치환. 이후 발화 WAV 생성이 마스킹된 chunk에서 수행
@@ -98,7 +104,7 @@ timestamps를 활용해 PII 발화 구간을 1kHz 비프로 치환한 WAV를 반
     - Dependencies: 9
     - Risk: Low
 
-### Phase 5: 문서화 & 운영 (4 files)
+### Phase 5: 문서화 & 운영 (4 files) ✅
 
 11. **API reference 업데이트** (File: `uncounted-voice-api/docs/api-reference.md`)
     - Action: `mask_audio_pii`, `mask_audio_names` 쿼리 파라미터 및 응답 `time_ranges` 필드 문서화. Known limitation(STT missed PII) 명시
