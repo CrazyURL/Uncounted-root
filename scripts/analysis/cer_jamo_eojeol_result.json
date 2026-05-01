@@ -1,0 +1,15 @@
+{
+  "n": 100,
+  "failed": 0,
+  "duration_sec": 723.7880000000001,
+  "cer_syllable_no_space_pct": 16.280417149478563,
+  "cer_syllable_with_space_pct": 17.40139211136891,
+  "cer_jamo_no_space_pct": 12.843700354393253,
+  "wer_eojeol_with_space_pct": 35.20518358531318,
+  "aihub_conformer_cer_pct": 9.76,
+  "aihub_jasper_wer_pct": 22.71,
+  "interpretation": {
+    "jamo_vs_syllable_ratio": 0.7889048687431586,
+    "wer_vs_cer_ratio": 2.1624251554537564
+  }
+}

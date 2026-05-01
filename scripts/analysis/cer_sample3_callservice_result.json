@@ -1,0 +1,15 @@
+{
+  "domain": "KtelSpeech_callservice",
+  "dataset": "AI-Hub #100 상담음성",
+  "n": 100,
+  "failed": 0,
+  "cer_syllable_no_space_pct": 4.528985507246377,
+  "cer_syllable_with_space_pct": 6.304929308368361,
+  "cer_jamo_no_space_pct": 3.5439471117372925,
+  "wer_eojeol_with_space_pct": 21.08843537414966,
+  "aihub_jasper_baseline_pct": 10.14,
+  "comparison": {
+    "sample1_call_syllable": 16.28,
+    "sample2_broadcast_syllable": 7.34
+  }
+}

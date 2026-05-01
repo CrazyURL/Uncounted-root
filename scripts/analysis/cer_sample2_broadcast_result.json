@@ -1,0 +1,9 @@
+{
+  "domain": "broadcast",
+  "n": 100,
+  "failed": 0,
+  "cer_syllable_no_space_pct": 7.339651752259202,
+  "cer_syllable_with_space_pct": 7.751683363442273,
+  "cer_jamo_no_space_pct": 4.9935388591471295,
+  "wer_eojeol_with_space_pct": 19.673123486682808
+}

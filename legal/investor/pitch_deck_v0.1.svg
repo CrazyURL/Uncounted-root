@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1684 1190" width="1684" height="1190" font-family="'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1B2A4E"/>
+      <stop offset="100%" stop-color="#2C4373"/>
+    </linearGradient>
+    <linearGradient id="kpiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E8E60" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0E8E60" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="bmGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="rewardGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#475569" stop-opacity="0.02"/>
+    </linearGradient>
+    <style>
+      .h1 { fill: #FFFFFF; font-size: 38px; font-weight: 700; letter-spacing: -0.5px; }
+      .h1sub { fill: #C7D2E0; font-size: 17px; font-weight: 400; }
+      .ver { fill: #94A3B8; font-size: 13px; font-weight: 500; letter-spacing: 1px; }
+      .colTitle { fill: #1B2A4E; font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+      .colTitleAlt { fill: #0E8E60; font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+      .colTitleSlate { fill: #475569; font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+      .colItem { fill: #334155; font-size: 14px; font-weight: 400; }
+      .num { fill: #0E8E60; font-size: 22px; font-weight: 700; }
+      .numAmber { fill: #D97706; font-size: 22px; font-weight: 700; }
+      .numNavy { fill: #1B2A4E; font-size: 22px; font-weight: 700; }
+      .label { fill: #64748B; font-size: 12px; font-weight: 500; letter-spacing: 0.3px; text-transform: uppercase; }
+      .sectionTitle { fill: #1B2A4E; font-size: 19px; font-weight: 700; letter-spacing: -0.3px; }
+      .skuName { fill: #1B2A4E; font-size: 14px; font-weight: 700; }
+      .skuPrice { fill: #D97706; font-size: 16px; font-weight: 700; }
+      .skuMeta { fill: #64748B; font-size: 11px; font-weight: 500; }
+      .body { fill: #334155; font-size: 13px; font-weight: 400; }
+      .bodyEm { fill: #1B2A4E; font-size: 13px; font-weight: 600; }
+      .footnote { fill: #94A3B8; font-size: 11px; font-style: italic; }
+      .check { fill: #0E8E60; font-size: 14px; font-weight: 700; }
+      .placeholder { fill: #64748B; font-size: 14px; font-weight: 600; font-style: italic; }
+      .tableHead { fill: #1B2A4E; font-size: 12px; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; }
+      .tableCell { fill: #334155; font-size: 13px; font-weight: 500; }
+      .tableCellEm { fill: #0E8E60; font-size: 13px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1684" height="1190" fill="#F8FAFC"/>
+
+  <!-- =============================== -->
+  <!-- HEADER (1684 x 130)              -->
+  <!-- =============================== -->
+  <rect x="0" y="0" width="1684" height="130" fill="url(#headerGrad)"/>
+  <text x="60" y="56" class="h1">[회사명] — 한국어 음성 데이터 자산 거래 인프라</text>
+  <text x="60" y="92" class="h1sub">"Android 자동 녹음 67% 유일 접근 + iOS 33% 웹 동의 흡수 + 양자 동의 + KISA 컴플라이언스"</text>
+  <text x="1620" y="56" class="ver" text-anchor="end">BM v10.0 / 2026-05</text>
+  <text x="1620" y="78" class="ver" text-anchor="end">[홈페이지]</text>
+
+  <!-- =============================== -->
+  <!-- 3-COL TOP (시장 / 기술 / 법적)   -->
+  <!-- y=160, height=200, 3 cols       -->
+  <!-- =============================== -->
+
+  <!-- COL 1: 시장 기회 -->
+  <rect x="60" y="160" width="510" height="200" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="80" y="190" class="label">시장 기회</text>
+  <text x="80" y="222" class="colTitle">한국어 음성 long-tail · 4세대 진입</text>
+  <text x="80" y="262" class="numAmber">$292억 → $1,740억</text>
+  <text x="80" y="285" class="body">글로벌 AI 학습 데이터 (2024 → 2032), CAGR 24.9%</text>
+  <text x="80" y="316" class="bodyEm">• 한국어 음성 카탈로그 부재 (Shaip·Magic Data 미진입)</text>
+  <text x="80" y="335" class="bodyEm">• AI Hub 24,000h 합법 흡수 (학습 자원)</text>
+
+  <!-- COL 2: 기술 차별화 -->
+  <rect x="588" y="160" width="510" height="200" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="608" y="190" class="label">기술 차별화 (측정 검증)</text>
+  <text x="608" y="222" class="colTitleAlt">WhisperX zero-shot AI-Hub 능가</text>
+  <text x="608" y="262" class="num">통화 CER 4.53% / jamo 3.54%</text>
+  <text x="608" y="285" class="body">AI-Hub Jasper 10.14% (in-distribution) 큰 폭 능가</text>
+  <text x="608" y="316" class="bodyEm">• Sample 1·2·3 도메인 검증 (4.53~16.28%)</text>
+  <text x="608" y="335" class="bodyEm">• 240 tests PASS · GPU 서버 deploy 완료</text>
+
+  <!-- COL 3: 법적 차별화 -->
+  <rect x="1116" y="160" width="510" height="200" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="1136" y="190" class="label">법적 차별화 (게이트 C+ 완료)</text>
+  <text x="1136" y="222" class="colTitleSlate">양자 동의 + PII + 음성=생체정보</text>
+  <text x="1136" y="262" class="numNavy">PII 마스킹 97.5%</text>
+  <text x="1136" y="285" class="body">알파 209건 baseline · KISA 가이드라인 준수</text>
+  <text x="1136" y="316" class="bodyEm">• consent 토큰 + IP 기록 + 무기한 정책</text>
+  <text x="1136" y="335" class="bodyEm">• iOS 정책 해자 — 5년+ 모방 불가능</text>
+
+  <!-- =============================== -->
+  <!-- BM v10.0 4-Tier SKU Grid         -->
+  <!-- y=388, height=178                -->
+  <!-- =============================== -->
+  <rect x="60" y="388" width="1566" height="178" rx="10" fill="url(#bmGrad)" stroke="#D97706" stroke-width="1.5"/>
+  <text x="80" y="418" class="sectionTitle">BM v10.0 — 4단계 SKU 그리드 (가입자 수 기반 자동 단계 승급)</text>
+  <text x="1606" y="418" class="label" text-anchor="end">코호트 v 회전 · 신선도 차등 · 비독점 N회</text>
+
+  <!-- Tier 1: 시드 -->
+  <rect x="80" y="438" width="370" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="100" y="465" class="label">시드 단계 · M0~M6</text>
+  <text x="100" y="490" class="skuName">UC-A1 6h 파일럿</text>
+  <text x="100" y="518" class="skuPrice">₩100~500K / 건</text>
+  <text x="100" y="538" class="skuMeta">가입자 20~100명 · N회 1 · 무료 검증 미끼</text>
+
+  <!-- Tier 2: 초기 -->
+  <rect x="465" y="438" width="370" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="485" y="465" class="label">초기 단계 · M3~M9</text>
+  <text x="485" y="490" class="skuName">UC-A1 60h 트라이얼</text>
+  <text x="485" y="518" class="skuPrice">₩200~300K / h</text>
+  <text x="485" y="538" class="skuMeta">가입자 100~10K · N회 1~2 · 단가 검증</text>
+
+  <!-- Tier 3: 성장 -->
+  <rect x="850" y="438" width="370" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="870" y="465" class="label">성장 단계 · M9~M24</text>
+  <text x="870" y="490" class="skuName">UC-A2 600h 정기</text>
+  <text x="870" y="518" class="skuPrice">₩300~600K / h</text>
+  <text x="870" y="538" class="skuMeta">가입자 10K~100K · N회 3~6 · 신선도 차등</text>
+
+  <!-- Tier 4: 규모 -->
+  <rect x="1235" y="438" width="371" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="1255" y="465" class="label">규모 단계 · M24+</text>
+  <text x="1255" y="490" class="skuName">UC-A3 / UC-LLM 6,000h</text>
+  <text x="1255" y="518" class="skuPrice">₩600K~2M / h</text>
+  <text x="1255" y="538" class="skuMeta">가입자 100K~1M · N회 5~10 · 4세대 진입</text>
+
+  <!-- =============================== -->
+  <!-- 화자 보상 (Cap + 잉여 이월)      -->
+  <!-- y=590, height=170               -->
+  <!-- =============================== -->
+  <rect x="60" y="590" width="772" height="170" rx="10" fill="url(#rewardGrad)" stroke="#475569" stroke-width="1"/>
+  <text x="80" y="620" class="sectionTitle">화자 보상 — 순이익 50:50 + Cap + 선가입자 우선</text>
+
+  <text x="80" y="652" class="bodyEm">매출 - 운영비 = 순이익 → 50% 회사 유보 + 50% 화자 풀</text>
+  <text x="80" y="678" class="body">• Cap <tspan class="numNavy" font-size="14">₩300만/년</tspan> (한국 기타소득 분리과세 한도, 매년 1월 리셋)</text>
+  <text x="80" y="700" class="body">• 잉여 데이터 자동 다음 v 이월 (영구 자산, 5년+ 보존)</text>
+  <text x="80" y="722" class="body">• 분기 운영비 결산 공개 + 매년 외부 회계 감사 (가입자 10K+)</text>
+  <text x="80" y="744" class="body">• 분배 알고리즘 공개 (해시 검증, 사용자 신뢰)</text>
+
+  <!-- =============================== -->
+  <!-- 4 시나리오 매트릭스              -->
+  <!-- y=590, x=850, width=776         -->
+  <!-- =============================== -->
+  <rect x="850" y="590" width="776" height="170" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="870" y="620" class="sectionTitle">유저 4 시나리오 (5년 누적 보상)</text>
+
+  <!-- Table head -->
+  <line x1="870" y1="638" x2="1606" y2="638" stroke="#E2E8F0"/>
+  <text x="870" y="660" class="tableHead">시나리오</text>
+  <text x="1140" y="660" class="tableHead">5년 누적</text>
+  <text x="1310" y="660" class="tableHead">첫 입금</text>
+  <text x="1450" y="660" class="tableHead">비중</text>
+  <line x1="870" y1="668" x2="1606" y2="668" stroke="#E2E8F0"/>
+
+  <text x="870" y="690" class="tableCell">S1 시드 + 헤비유저</text>
+  <text x="1140" y="690" class="tableCellEm">₩1,500만</text>
+  <text x="1310" y="690" class="tableCell">M5~M10</text>
+  <text x="1450" y="690" class="tableCell">Cap × 5년</text>
+
+  <text x="870" y="712" class="tableCell">S2 성장 + 헤비유저</text>
+  <text x="1140" y="712" class="tableCellEm">₩1,500만</text>
+  <text x="1310" y="712" class="tableCell">M2~M3</text>
+  <text x="1450" y="712" class="tableCell">Cap × 5년</text>
+
+  <text x="870" y="734" class="tableCell">S3 시드 + 일반유저</text>
+  <text x="1140" y="734" class="tableCellEm">₩1,120만</text>
+  <text x="1310" y="734" class="tableCell">M5~M10</text>
+  <text x="1450" y="734" class="tableCell">선가입 보너스</text>
+
+  <text x="870" y="756" class="tableCell">S4 성장 + 일반유저</text>
+  <text x="1140" y="756" class="tableCellEm">₩940만</text>
+  <text x="1310" y="756" class="tableCell">M2~M3</text>
+  <text x="1450" y="756" class="tableCell">기여도 비례</text>
+
+  <!-- =============================== -->
+  <!-- KPI J-curve (시드 → 1년 → 5년)  -->
+  <!-- y=786, height=200               -->
+  <!-- =============================== -->
+  <rect x="60" y="786" width="1042" height="200" rx="10" fill="url(#kpiGrad)" stroke="#0E8E60" stroke-width="1.5"/>
+  <text x="80" y="816" class="sectionTitle">로드맵 — 시드 출발 → 5년 J-curve</text>
+
+  <!-- Table head -->
+  <line x1="80" y1="834" x2="1082" y2="834" stroke="#CBD5E1"/>
+  <text x="80" y="856" class="tableHead">단계</text>
+  <text x="220" y="856" class="tableHead">가입자</text>
+  <text x="400" y="856" class="tableHead">매출 (시나리오)</text>
+  <text x="660" y="856" class="tableHead">순이익</text>
+  <text x="850" y="856" class="tableHead">첫 입금</text>
+  <line x1="80" y1="864" x2="1082" y2="864" stroke="#CBD5E1"/>
+
+  <text x="80" y="888" class="tableCell">시드 (M0~M6)</text>
+  <text x="220" y="888" class="tableCellEm">20명</text>
+  <text x="400" y="888" class="tableCell">₩6,150만</text>
+  <text x="660" y="888" class="tableCellEm">₩3,150만</text>
+  <text x="850" y="888" class="tableCell">M5~M10</text>
+
+  <text x="80" y="912" class="tableCell">1년차 (~M12)</text>
+  <text x="220" y="912" class="tableCellEm">10,000명</text>
+  <text x="400" y="912" class="tableCell">₩4억 / ₩45억 / ₩360억</text>
+  <text x="660" y="912" class="tableCellEm">₩1.1~310억</text>
+  <text x="850" y="912" class="tableCell">M2~M3</text>
+
+  <text x="80" y="936" class="tableCell">5년 누적</text>
+  <text x="220" y="936" class="tableCellEm">1,000,000명</text>
+  <text x="400" y="936" class="tableCell">₩70~100B (감가 반영)</text>
+  <text x="660" y="936" class="tableCellEm">₩35~50B</text>
+  <text x="850" y="936" class="tableCell">상시</text>
+
+  <text x="80" y="970" class="footnote">시나리오: 보수 (LOI 1~2건) / 중립 (LOI 3~4건) / 낙관 (LOI 5+건). 운영비·N회 상한 반영.</text>
+
+  <!-- =============================== -->
+  <!-- 매수자 + 진척 (오른쪽)           -->
+  <!-- y=786, x=1120, width=506        -->
+  <!-- =============================== -->
+  <rect x="1120" y="786" width="506" height="200" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="1140" y="816" class="sectionTitle">매수자 카테고리 6종 + 진척</text>
+
+  <text x="1140" y="846" class="bodyEm">STT (CLOVA·리턴제로) · TTS (슈퍼톤·네오사피엔스)</text>
+  <text x="1140" y="866" class="bodyEm">화자분리 · 콜봇 · 보이스피싱 탐지 · LLM Instruction</text>
+
+  <line x1="1140" y1="884" x2="1606" y2="884" stroke="#E2E8F0"/>
+
+  <text x="1140" y="908" class="check">✓</text>
+  <text x="1162" y="908" class="body">PII baseline 97.5% (목표 97% 초과)</text>
+
+  <text x="1140" y="930" class="check">✓</text>
+  <text x="1162" y="930" class="body">WhisperX 통화 CER 4.53% (Sample 3, AI-Hub 능가)</text>
+
+  <text x="1140" y="952" class="check">✓</text>
+  <text x="1162" y="952" class="body">게이트 C+ 컴플라이언스 완료 (consent + IP + 토큰)</text>
+
+  <text x="1140" y="974" class="check">✓</text>
+  <text x="1162" y="974" class="body">데이터 스키마 v2.0 sprint 완료 (16 객체 + 메타)</text>
+
+  <!-- =============================== -->
+  <!-- FOOTER                           -->
+  <!-- y=1010, height=140              -->
+  <!-- =============================== -->
+  <rect x="0" y="1010" width="1684" height="180" fill="#1B2A4E"/>
+
+  <text x="60" y="1054" class="label" fill="#94A3B8">투자 라운드</text>
+  <text x="60" y="1086" class="placeholder" fill="#FFFFFF" font-size="22" font-style="normal" font-weight="700">라운드 검토 중</text>
+  <text x="60" y="1112" class="body" fill="#C7D2E0">1년차 KPI: LOI 1건 + 가입자 10K + 단가 ₩200~300K/h 시장 검증</text>
+  <text x="60" y="1136" class="body" fill="#C7D2E0">시드 6개월 KPI: 가입자 20→50명 + 첫 매출 + 첫 입금 (M5~M10)</text>
+
+  <text x="900" y="1054" class="label" fill="#94A3B8">대표 / 회사명</text>
+  <text x="900" y="1086" class="placeholder" fill="#FFFFFF">[본인 이름] · [회사명]</text>
+  <text x="900" y="1112" class="body" fill="#C7D2E0">[직함]</text>
+  <text x="900" y="1136" class="body" fill="#C7D2E0">사업 철학 7원칙: 정직 UX · 단가 단호 · 비독점 N회 · 알고리즘 공개</text>
+
+  <text x="1300" y="1054" class="label" fill="#94A3B8">연락처</text>
+  <text x="1300" y="1086" class="placeholder" fill="#FFFFFF">[이메일]</text>
+  <text x="1300" y="1112" class="body" fill="#C7D2E0">[전화 / 카카오톡]</text>
+  <text x="1300" y="1136" class="body" fill="#C7D2E0">[홈페이지 / GitHub]</text>
+
+  <!-- Bottom edge accent -->
+  <rect x="0" y="1186" width="1684" height="4" fill="#0E8E60"/>
+</svg>
