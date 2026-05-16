@@ -1,157 +1,292 @@
 ---
-title: "음성 PII 자동 마스킹 (Audio PII Masking)"
-status: completed
-created: 2026-04-22
-completed: 2026-04-22
+title: "STAGE 15~17 — 화자 자동 식별 + 세그먼트 주제 라벨 + 데이터셋 확장"
+status: active
+created: 2026-05-14
 type: feature
 ---
 
-# Implementation Plan: 음성 PII 자동 마스킹
+# STAGE 15~17 — 화자 자동 식별 + 세그먼트 주제 라벨 + 데이터셋 확장
 
-> **✅ 완료** (2026-04-22, voice-api `158f161`)
-> 193 tests passed, coverage pii_masker 93% / audio_pii_masker 85%.
-> H1/H2 버그 + M1~M5 이슈 코드 리뷰로 발견·수정 완료.
-> 다음 단계: dev 서버 통합 검증(실제 PII 샘플 업로드).
+## 핵심 원칙 (Advisor 반영)
 
-## Overview
+| # | 제약 |
+|---|------|
+| 1 | **실행 순서**: 17 (데이터셋) → 15 (화자분석, 말투연령 헤드 학습 포함) → 16 (세그먼트) |
+| 2 | **관계 룰엔진은 PII 마스킹 전에 실행** — raw transcript에서 호칭 추출 |
+| 3 | **관계 룰엔진 방향**: 발화자 X가 호칭을 말하면 → 상대 화자의 relation에 기록 |
+| 4 | **Pyannote centroid 재사용** — 별도 모델 없이 cosine similarity로 SPEAKER_00 판정 |
+| 5 | **KcELECTRA CPU 전용** — 말투연령 헤드도 STAGE 14 백본 공유 |
+| 6 | **화자 속성은 session_speakers 테이블에 정규화** — utterances에 중복 저장 X |
+| 7 | **마이그레이션 순서**: 066 → 067 → 068 |
+| 8 | **NULL = "신호 없음"** — 분석 불가 시 NULL (unknown 값 X) |
+| 9 | **고정 주제 분류 체계 30종** + **시드 문구 사전** (주제별 5~10문장) |
+| 10 | **Export JSON schema_version: 2** — 첫날부터 |
+| 11 | **SPEAKER_00 폴백**: 누적 발화 시간 최장 화자 = 본인 + speaker_role_source 기록 |
+| 12 | **세그먼트 최소 3발화**, 코사인 유사도 임계값 0.35 (env var 튜닝 가능) |
+| 13 | **speech_age_model_version 컬럼** — 066에 포함, STAGE 14 auto_label_model_version과 평행 |
 
-voice-api의 텍스트 PII 마스킹을 오디오 레벨로 확장했다. WhisperX word-level
-timestamps를 활용해 PII 발화 구간을 1kHz 비프로 치환한 WAV를 반환한다.
-설계·결정 이력은 `uncounted-voice-api/docs/audio-pii-masking-plan.md` 참조.
+---
 
-## Requirements Restatement
+## STAGE 17 — 데이터셋 확장 (먼저 실행)
 
-- `pii_masker`가 char span (start/end)을 반환하도록 확장 (현재 카운트만)
-- WhisperX `segments[].words[]`의 `start`/`end`를 이용해 PII→time range 매핑
-- 매핑된 샘플 범위를 **1kHz sine + 10ms fade**로 치환 (결정 Q2 A)
-- `transcribe()`에 `mask_audio_pii: bool = False` 플래그 추가 (opt-in)
-- 이름 마스킹은 `mask_audio_names: bool = False` 별도 플래그 (결정 Q4 A)
-- 버퍼 `PAD_SEC = 0.15s`, 환경변수 `PII_MASK_PAD_SEC`로 튜닝 (결정 Q5 B)
-- 플래그 ON 시 `speaker_audio`/`utterance_audio`를 처음부터 마스킹된 상태로 생성 (결정 Q3 A)
-- 응답에 `pii_summary[].time_ranges: [{start, end}]` 추가
-- 청크 모드(>1h)에서도 동일 적용 (chunk-local 좌표계)
-- dev 서버 검증 후 live 승격 (기본 플래그 off로 하위호환)
+### 17.1 `prepare_emotion_dataset.py` 수정
 
-## Implementation Phases
+**파일**: `uncounted-voice-api/scripts/prepare_emotion_dataset.py`
 
-### Phase 1: pii_masker 확장 — char span 반환 (2 files) ✅
+5번째 소스 추가: AI허브 "공감형 대화"
+- 감정 → 긍정/중립/부정 매핑 적용 (기존 4개 소스와 동일 방식)
+- 대화행위 → 기존 15종 매핑
+- 경로: `.env` `AIHUB_EMPATHETIC_DIR`
 
-1. **`detect_pii_spans()` 신규 함수 추가** (File: `uncounted-voice-api/app/pii_masker.py`, `mask_pii()` 함수 근처 — 현재 L216)
-   - Action: `PII_PATTERNS`를 재사용해 `[{type, char_start, char_end, matched_text}]` 반환. 기존 `mask_pii()`는 내부에서 `detect_pii_spans()`를 호출 후 span 기반 치환으로 리팩터
-   - Why: audio 마스킹은 char position이 필수. 기존 API는 byte-equivalent 유지
-   - Dependencies: None
-   - Risk: Low — 순수 함수, 기존 테스트 그대로 통과해야 함
+### 17.2 말투연령 학습 데이터 준비
 
-2. **Unit tests for spans** (File: `uncounted-voice-api/tests/test_pii_spans.py` — 신규)
-   - Action: 9개 PII 타입(주민/운전/여권/카드/이메일/전화/계좌/IP/이름)별 span 정확도 테스트. 기존 178개 pytest 통과 회귀 확인
-   - Why: Phase 2의 전제 조건
-   - Dependencies: 1
-   - Risk: Low
+**파일**: `uncounted-voice-api/scripts/prepare_speech_age_dataset.py` (신규)
 
-### Phase 2: audio_pii_masker 모듈 신규 (2 files) ✅
+소스: AI허브 "연령대별 특징적 발화(은어·속어 등)"
+- 연령대 레이블: 20대/30대/40대/50대+ (4-class)
+- 출력: `data/speech_age/train.csv`, `data/speech_age/val.csv`
+- 형식: `text,age_group` (탭 구분, UTF-8)
+- 경로: `.env` `AIHUB_SPEECH_AGE_DIR`
 
-3. **`audio_pii_masker.py` 신규** (File: `uncounted-voice-api/app/services/audio_pii_masker.py` — 신규)
-   - Action: 두 함수 구현
-     - `find_pii_word_ranges(segments, enable_name_masking=False, pad_sec=0.15) -> list[(start_sec, end_sec, pii_type)]` — `segment.text`의 char span을 `segment.words[].word`의 누적 char offset으로 매핑하여 걸치는 모든 word의 min start / max end 계산 후 pad 적용
-     - `mask_audio_ranges(audio, ranges, sr, method="beep") -> np.ndarray` — sample range를 1kHz sine(진폭 0.1) + 10ms 선형 fade in/out으로 치환. 원본 ndarray 불변(copy)
-   - Why: 핵심 변환 로직. `audio_splitter.py`와 분리하여 테스트 용이
-   - Dependencies: 1
-   - Risk: Medium — char→word 매핑은 공백/대소문자 처리에 엣지 케이스 있음
+---
 
-4. **Unit tests** (File: `uncounted-voice-api/tests/test_audio_pii_masker.py` — 신규)
-   - Action: 합성 sine 오디오 + 가짜 segments로 (a) word range 매핑 정확도 (b) masked sample이 1kHz로 치환됐는지 FFT 검증 (c) fade 구간의 진폭 변화 선형성 검증
-   - Why: 단위 정확도 확보 후 파이프라인 통합
-   - Dependencies: 3
-   - Risk: Low
+## STAGE 15 — 화자 자동 식별 + 생체·언어 분석
 
-### Phase 3: stt_processor 통합 — 일반 모드 (4 files) ✅
+### 15.1 DB 마이그레이션 066 — session_speakers 테이블 신규
 
-5. **`transcribe()` 시그니처 확장** (File: `uncounted-voice-api/app/stt_processor.py`, `transcribe()` — 현재 L547)
-   - Action: `mask_audio_pii: bool = False`, `mask_audio_names: bool = False` 파라미터 추가. Line 644 `mask_segments()` 호출 직전에 `find_pii_word_ranges` 호출 후 `mask_audio_ranges`로 `audio` ndarray 치환. 이후 `mute_non_speaker`/`extract_utterance_audio`가 마스킹된 audio를 사용
-   - Why: 마스킹이 speaker/utterance WAV에 자연히 반영되도록 흐름 앞단에 삽입
-   - Dependencies: 3
-   - Risk: Low — `audio.copy()`로 약 115MB(1h 16kHz mono) 일시 증가, 허용 범위
+**파일**: `uncounted-api/supabase/migrations/066_session_speakers.sql`
 
-6. **Response schema 확장** (File: `uncounted-voice-api/app/models/schemas.py`)
-   - Action: `PiiDetectedItem`에 `time_ranges: list[TimeRange]` optional 필드 추가. `TimeRange(start: float, end: float)` 모델 신규
-   - Why: 감사 로그 및 클라이언트 확인용
-   - Dependencies: 3
-   - Risk: Low — optional 필드
+화자 속성은 **발화 단위가 아닌 화자 단위** 속성이므로 별도 테이블로 정규화:
 
-7. **Router 파라미터 노출** (File: `uncounted-voice-api/app/routers/transcribe.py`)
-   - Action: `/transcribe` 쿼리파라미터 `mask_audio_pii`, `mask_audio_names` 추가, `transcribe()`에 전달
-   - Why: 클라이언트가 opt-in 가능
-   - Dependencies: 5
-   - Risk: Low
+```sql
+CREATE TABLE IF NOT EXISTS session_speakers (
+  id                      UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  session_id              UUID NOT NULL REFERENCES sessions(id) ON DELETE CASCADE,
+  speaker_label           TEXT NOT NULL,      -- 'SPEAKER_00' | 'SPEAKER_01'
+  speaker_role            TEXT,               -- 'self' | 'other' | NULL
+  speaker_role_source     TEXT,               -- 'profile_match' | 'heuristic' | NULL
+  speaker_gender          TEXT,               -- 'male' | 'female' | NULL
+  speaker_voice_age_range TEXT,               -- '20s' | '30s' | '40s' | '50s+' | NULL
+  speaker_speech_age_range TEXT,              -- '20s' | '30s' | '40s' | '50s+' | NULL
+  speaker_speech_age_model_version TEXT,      -- 재학습 추적용
+  speaker_relation        TEXT,               -- '부모' | '배우자' | '직장상사' | ... | NULL
+  created_at              TIMESTAMPTZ DEFAULT NOW(),
+  UNIQUE(session_id, speaker_label)
+);
 
-8. **Integration test — 일반 모드** (File: `uncounted-voice-api/tests/test_stt_processor_audio_pii.py` — 신규)
-   - Action: 전화번호 음성 샘플 업로드 → 응답 WAV 재로드 → PII 구간 RMS가 비프 레퍼런스와 매칭되는지 검증. `mask_audio_pii=False`일 때 byte-equivalent 회귀 테스트
-   - Why: end-to-end 정확도 + 하위호환 확인
-   - Dependencies: 5, 6, 7
-   - Risk: Medium — 테스트 샘플 준비 필요 (동기 녹음 or TTS)
+-- utterances에 FK 추가 (session_speaker_id)
+ALTER TABLE utterances
+  ADD COLUMN IF NOT EXISTS session_speaker_id UUID
+    REFERENCES session_speakers(id) ON DELETE SET NULL;
 
-### Phase 4: 청크 모드 지원 (2 files) ✅
+CREATE INDEX IF NOT EXISTS idx_session_speakers_session
+  ON session_speakers(session_id);
+CREATE INDEX IF NOT EXISTS idx_utterances_session_speaker
+  ON utterances(session_speaker_id) WHERE session_speaker_id IS NOT NULL;
+```
 
-9. **`_transcribe_chunked()` 내부 적용** (File: `uncounted-voice-api/app/stt_processor.py`, `_transcribe_chunked()` — 현재 L430)
-   - Action: `emit_chunk_utterances(chunk_audio, ...)` 호출 이전에 chunk-local segments로 `find_pii_word_ranges` 실행 → `mask_audio_ranges`로 `chunk_audio` 치환. 이후 발화 WAV 생성이 마스킹된 chunk에서 수행
-   - Why: 청크 모드의 OOM 제약 유지하면서 마스킹 적용
-   - Dependencies: 3, 5
-   - Risk: Medium — 청크 경계에 걸친 PII는 한쪽만 마스킹 (문서화 한계)
+### 15.2 화자 분석 서비스
 
-10. **Chunked mode integration test** (File: `uncounted-voice-api/tests/test_chunked_audio_pii.py` — 신규)
-    - Action: >1h 합성 오디오 + 여러 청크에 PII 삽입 → 각 utterance WAV 마스킹 확인
-    - Why: 청크 모드 정확도 검증
-    - Dependencies: 9
-    - Risk: Low
+**파일**: `uncounted-voice-api/app/services/speaker_analysis_service.py` (신규)
 
-### Phase 5: 문서화 & 운영 (4 files) ✅
+#### SPEAKER_00 자동 판정 (pyannote centroid 재사용)
 
-11. **API reference 업데이트** (File: `uncounted-voice-api/docs/api-reference.md`)
-    - Action: `mask_audio_pii`, `mask_audio_names` 쿼리 파라미터 및 응답 `time_ranges` 필드 문서화. Known limitation(STT missed PII) 명시
-    - Why: 클라이언트(앱/어드민) 팀이 사용
-    - Dependencies: 7
-    - Risk: Low
+```python
+def identify_self_speaker(speaker_centroids: dict[str, np.ndarray],
+                           speaker_durations: dict[str, float],
+                           user_id: str) -> tuple[str, str]:
+    profile = fetch_voice_profile(user_id)  # voice_profiles.embedding
+    if profile is not None:
+        scores = {spk: cosine_sim(centroid, profile)
+                  for spk, centroid in speaker_centroids.items()}
+        best = max(scores, key=scores.get)
+        if scores[best] >= 0.75:
+            return best, 'profile_match'
+    longest = max(speaker_durations, key=speaker_durations.get)
+    return longest, 'heuristic'
+```
 
-12. **환경변수 rule 업데이트** (File: `uncounted-voice-api/.claude/rules/python/config-and-pii.md`)
-    - Action: `PII_MASK_PAD_SEC` (default 0.15) 테이블에 추가. PII Masking Details 섹션에 audio masking 동작 요약
-    - Why: 운영자·다음 세션을 위한 참조
-    - Dependencies: 3
-    - Risk: Low
+#### 성별 감지 (librosa F0 중앙값)
 
-13. **CLAUDE.md 한 줄 갱신** (File: `uncounted-voice-api/CLAUDE.md`)
-    - Action: "STT + 화자분리 + 발화분리 + PII 마스킹" → "STT + 화자분리 + 발화분리 + 텍스트/음성 PII 마스킹"
-    - Why: 프로젝트 루트 레벨 요약 정합성
-    - Dependencies: 11
-    - Risk: Low
+```python
+def detect_gender(audio_segment: np.ndarray, sr: int) -> str | None:
+    f0 = librosa.yin(audio_segment, fmin=50, fmax=400)
+    f0_valid = f0[f0 > 0]
+    if len(f0_valid) == 0:
+        return None
+    median = float(np.median(f0_valid))
+    if 85 <= median <= 180:   return 'male'
+    if 165 <= median <= 255:  return 'female'
+    return None
+```
 
-14. **config.py 환경변수 기본값 추가** (File: `uncounted-voice-api/app/config.py`)
-    - Action: `PII_MASK_PAD_SEC: float = 0.15` 추가
-    - Why: Phase 2의 `find_pii_word_ranges` 기본 파라미터 공급
-    - Dependencies: 3
-    - Risk: Low
+#### 관계 룰엔진 — 방향 명시
 
-## Dependencies (Cross-cutting)
+```python
+def extract_relation_for_other(
+    utterances_by_speaker: dict[str, list[str]],
+    self_speaker: str
+) -> dict[str, str]:
+    """발화자 self_speaker가 호칭을 말하면 → OTHER 화자의 relation에 기록"""
+    results = {}
+    self_texts = ' '.join(utterances_by_speaker.get(self_speaker, []))
+    for pattern, label in RELATION_RULES.items():
+        if re.search(pattern, self_texts):
+            for spk in utterances_by_speaker:
+                if spk != self_speaker:
+                    results[spk] = label
+            break
+    return results
+```
 
-- WhisperX word alignment 반드시 활성화 (현재 기본). 비활성 시 PII word range 매핑 불가 → 조용히 skip
-- numpy (기존 의존성) — sine 파형 생성
-- PII 정규식 9종 (기존 `PII_PATTERNS`)
+### 15.3 STT 파이프라인 통합
 
-## Risks
+파이프라인 실행 순서:
+```
+1. WhisperX + pyannote 화자분리
+2. identify_self_speaker()
+3. extract_relation_for_other(raw_texts, self_speaker)  ← PII 마스킹 전
+4. PII 마스킹 적용
+5. auto_label_service.predict() (STAGE 14)
+6. detect_gender() / estimate_voice_age() / predict_speech_age() per speaker
+7. session_speakers 레코드 구성
+8. build_result() 반환
+```
 
-- **MEDIUM**: Char→word offset 매핑 엣지 케이스 (WhisperX word에 공백 포함/제외 차이). Phase 2 단위 테스트에서 다중 샘플 검증 필수
-- **MEDIUM**: STT가 놓친 PII는 마스킹되지 않음 (known limitation). 문서 명시 + 사용자에게 "마스킹은 best-effort" 안내
-- **LOW**: 청크 경계에 걸친 PII 부분 마스킹. 청크 overlap 없음 — 현재 아키텍처 유지
-- **LOW**: `audio.copy()`로 VRAM/RAM +1x 일시 증가. 1h 16kHz mono는 약 115MB — 허용 범위
+### 15.4 스키마 확장
 
-## Estimated Complexity: MEDIUM
+**파일**: `uncounted-voice-api/app/models/schemas.py` — `SpeakerInfo` 신규 + `UtteranceResponse`에 `session_speaker_id` 추가
 
-- Phase 1: 반일 (span 확장 + 단위 테스트)
-- Phase 2: 1일 (매핑 로직 + 1kHz 비프 + fade)
-- Phase 3: 반일 (파이프라인 통합 + 스키마)
-- Phase 4: 반일 (청크 모드)
-- Phase 5: 반일 (문서화)
-- **Total: ~3일** (1인, TDD 포함, end-to-end 검증 별도)
+### 15.5 말투연령 모델 학습 스크립트
 
-## Decision Record
+**파일**: `uncounted-voice-api/scripts/train_speech_age_model.py` (신규)
+- STAGE 14 emotion 모델 백본 공유 (KcELECTRA)
+- 출력: `models/speech_age/v{YYYYMMDD_HHMMSS}/` + `current` symlink
 
-설계 결정(Q1~Q5) 및 대안 비교는 `uncounted-voice-api/docs/audio-pii-masking-plan.md` 참조.
+---
+
+## STAGE 16 — 세그먼트 기반 주제 라벨
+
+### 16.1 DB 마이그레이션 067
+
+**파일**: `uncounted-api/supabase/migrations/067_session_segments.sql`
+
+```sql
+CREATE TABLE IF NOT EXISTS session_segments (
+  id               UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  session_id       UUID NOT NULL REFERENCES sessions(id) ON DELETE CASCADE,
+  segment_index    INTEGER NOT NULL,
+  topic            TEXT NOT NULL,
+  start_ms         INTEGER NOT NULL,
+  end_ms           INTEGER NOT NULL,
+  utterance_count  INTEGER NOT NULL,
+  created_at       TIMESTAMPTZ DEFAULT NOW()
+);
+```
+
+### 16.2 DB 마이그레이션 068
+
+**파일**: `uncounted-api/supabase/migrations/068_utterances_segment_id.sql`
+
+```sql
+ALTER TABLE utterances
+  ADD COLUMN IF NOT EXISTS segment_id UUID
+    REFERENCES session_segments(id) ON DELETE SET NULL;
+```
+
+### 16.3 주제 분류 체계 — 시드 문구 사전
+
+고정 30종 주제 + 주제별 시드 문장 5~10개 → KcELECTRA 임베딩 → anchor centroid
+세그먼트 centroid ↔ anchor 최근접 → 주제 레이블
+
+```python
+TOPIC_SEEDS = {
+    "일상·안부": ["오늘 어떻게 지냈어?", "요즘 바빠?", ...],
+    "가족·육아": ["아이 어린이집 다녀왔어?", ...],
+    # ... 30종
+}
+COSINE_THRESHOLD = float(os.getenv('TOPIC_COSINE_THRESHOLD', '0.35'))
+MIN_SEGMENT_UTTERANCES = 3
+```
+
+### 16.4 Export JSON schema_version: 2
+
+```json
+{
+  "schema_version": 2,
+  "session_id": "...",
+  "speakers": [{"speaker_label": "SPEAKER_00", "speaker_role": "self", ...}],
+  "segments": [{"segment_id": "...", "topic": "가족·육아", "utterances": [...]}]
+}
+```
+
+---
+
+## 핵심 파일 목록
+
+| 단계 | 파일 | 변경 |
+|------|------|------|
+| 17 | `uncounted-voice-api/scripts/prepare_emotion_dataset.py` | 수정 |
+| 17 | `uncounted-voice-api/scripts/prepare_speech_age_dataset.py` | 신규 |
+| 15 | `uncounted-api/supabase/migrations/066_session_speakers.sql` | 신규 |
+| 15 | `uncounted-voice-api/app/services/speaker_analysis_service.py` | 신규 |
+| 15 | `uncounted-voice-api/scripts/train_speech_age_model.py` | 신규 |
+| 15 | `uncounted-voice-api/app/models/schemas.py` | 수정 |
+| 15 | `uncounted-voice-api/app/stt_processor.py` | 수정 |
+| 16 | `uncounted-api/supabase/migrations/067_session_segments.sql` | 신규 |
+| 16 | `uncounted-api/supabase/migrations/068_utterances_segment_id.sql` | 신규 |
+| 16 | `uncounted-voice-api/app/services/topic_segmentation_service.py` | 신규 |
+
+---
+
+## 작업 순서
+
+```
+0. 사용자 계획 승인
+
+[STAGE 17]
+1. prepare_emotion_dataset.py — 공감형 대화 5번째 소스 추가
+2. prepare_speech_age_dataset.py — 연령대별 발화 데이터 파이프라인 신규
+
+[STAGE 15]
+3. 066_session_speakers.sql
+4. speaker_analysis_service.py
+5. train_speech_age_model.py
+6. stt_processor.py 수정 (관계 추출 → PII → 자동라벨 → 화자분석)
+7. schemas.py 수정
+
+[STAGE 16]
+8. 067_session_segments.sql
+9. 068_utterances_segment_id.sql
+10. topic_segmentation_service.py
+11. stt_processor.py 수정 (세그먼트 단계 추가)
+12. Export JSON schema_version: 2
+
+[검증]
+13. cd uncounted-voice-api && python -m pytest tests/ -x
+14. cd uncounted-api && npx tsc --noEmit
+
+[배포 — 수동]
+15. Supabase SQL Editor: 066 → 067 → 068 순서로 적용
+16. GPU 서버: git pull + restart
+17. Render Manual Deploy (api-dev)
+```
+
+---
+
+## 위험 / 결정
+
+| 위험 | 대응 |
+|------|------|
+| 말투연령 데이터셋 미확보 | speech_age_range = NULL graceful degradation |
+| pyannote centroid API 미노출 | stt_processor에서 직접 계산 후 서비스에 주입 |
+| 고정 주제 오탐률 | threshold 0.35 env var 튜닝 가능 |
+| 관계 룰엔진 오분류 | NULL 기본, 오탐보다 미탐이 안전 |
+
+## 절대 금지
+
+- KcELECTRA / 말투연령 헤드를 GPU에 올리는 것
+- 관계 추출을 PII 마스킹 **후에** 실행하는 것
+- 화자 속성을 utterances 행마다 중복 저장하는 것
+- 067 전에 068 마이그레이션 실행
+- 자유형 TF-IDF 주제 레이블 사용

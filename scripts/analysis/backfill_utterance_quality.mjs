@@ -7,7 +7,7 @@
 //   node scripts/analysis/backfill_utterance_quality.mjs --batch=50
 
 import { createClient } from '../../uncounted-api/node_modules/@supabase/supabase-js/dist/index.mjs'
-import { S3Client, GetObjectCommand } from '../../uncounted-api/node_modules/@aws-sdk/client-s3/dist/cjs/index.js'
+import { S3Client, GetObjectCommand } from '../../uncounted-api/node_modules/@aws-sdk/client-s3/dist-cjs/index.js'
 import { readFileSync, writeFileSync, unlinkSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -42,8 +42,8 @@ const s3 = new S3Client({
   endpoint: env.S3_ENDPOINT,
   region: env.S3_REGION ?? 'us-east-1',
   credentials: {
-    accessKeyId: env.S3_ACCESS_KEY_ID,
-    secretAccessKey: env.S3_SECRET_ACCESS_KEY,
+    accessKeyId: env.S3_ACCESS_KEY,
+    secretAccessKey: env.S3_SECRET_KEY,
   },
   forcePathStyle: true,
 })
@@ -131,18 +131,25 @@ async function downloadToTmp(storagePath) {
   return tmpPath
 }
 
+// ── quality_status='done' 세션 ID 목록 ────────────────────────────────
+async function fetchDoneSessionIds() {
+  const { data, error } = await sb
+    .from('sessions')
+    .select('id')
+    .eq('quality_status', 'done')
+
+  if (error) throw new Error(`fetchDoneSessionIds: ${error.message}`)
+  return (data ?? []).map((r) => r.id)
+}
+
 // ── 대상 utterance 조회 ───────────────────────────────────────────────
-async function fetchTargetUtterances(offset, limit) {
-  // quality_status='done'인 세션의 quality_score가 null인 utterance
+async function fetchTargetUtterances(sessionIds, offset, limit) {
   const { data, error } = await sb
     .from('utterances')
     .select('id, session_id, storage_path')
     .is('quality_score', null)
     .not('storage_path', 'is', null)
-    .in(
-      'session_id',
-      sb.from('sessions').select('id').eq('quality_status', 'done'),
-    )
+    .in('session_id', sessionIds)
     .range(offset, offset + limit - 1)
     .order('id')
 
@@ -151,23 +158,28 @@ async function fetchTargetUtterances(offset, limit) {
 }
 
 // ── 전체 대상 건수 ─────────────────────────────────────────────────────
-async function countTargets() {
+async function countTargets(sessionIds) {
   const { count, error } = await sb
     .from('utterances')
     .select('id', { count: 'exact', head: true })
     .is('quality_score', null)
     .not('storage_path', 'is', null)
-    .in(
-      'session_id',
-      sb.from('sessions').select('id').eq('quality_status', 'done'),
-    )
+    .in('session_id', sessionIds)
 
   if (error) throw new Error(`countTargets: ${error.message}`)
   return count ?? 0
 }
 
 // ── 메인 ─────────────────────────────────────────────────────────────
-const total = await countTargets()
+const doneSessionIds = await fetchDoneSessionIds()
+console.log(`quality_status='done' 세션: ${doneSessionIds.length}개`)
+
+if (doneSessionIds.length === 0) {
+  console.log('백필 대상 세션 없음. 종료.')
+  process.exit(0)
+}
+
+const total = await countTargets(doneSessionIds)
 console.log(`백필 대상: ${total}개 utterance`)
 
 if (isDryRun) {
@@ -186,7 +198,7 @@ let failed = 0
 let offset = 0
 
 while (offset < total) {
-  const batch = await fetchTargetUtterances(offset, BATCH_SIZE)
+  const batch = await fetchTargetUtterances(doneSessionIds, offset, BATCH_SIZE)
   if (batch.length === 0) break
 
   console.log(`\n배치 처리: ${offset + 1}~${offset + batch.length} / ${total}`)
