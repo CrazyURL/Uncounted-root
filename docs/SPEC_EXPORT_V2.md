@@ -349,7 +349,8 @@ Layer 2 와 동일 구조, 단 `sessions/` 디렉터리 하에 다수 세션 묶
 | `labels` | `auto_labels` | ✅ | JSONB 그대로 (모델명 키 제외) | 없음 | #6 | 모델명 키 제거 필요 |
 | `emotion` | `auto_labels.emotion` | ✅ | 그대로 (`joy`/`sadness` 등) | 없음 | - | - |
 | `emotion_confidence` | `auto_labels.emotion_confidence` | ✅ | 그대로 (NUMERIC 0~1) | 없음 | - | - |
-| `dialog_act` | `auto_labels.dialog_act` | ✅ | 그대로 | 없음 | - | - |
+| `dialog_act` | `auto_labels.dialog_act` | ✅ | 그대로 (15-class 고가치 라벨 유지) | 없음 | - | - |
+| (조합 신규) | `auto_labels.dialog_act_group` | ✅ | 런타임 자동 생성: §5.1.4 DIALOG_ACT_TO_GROUP 매핑 사전 적용 (6 그룹) | 없음 | - | 구매자 유연성 (15 또는 6 선택). DB 컬럼 X |
 | `dialog_act_confidence` | `auto_labels.dialog_act_confidence` | ✅ | 그대로 | 없음 | - | - |
 | `dialog_intensity` | `auto_labels.dialog_intensity` | ✅ | 그대로 (INTEGER) | 없음 | - | - |
 
@@ -723,7 +724,8 @@ Layer 2 와 동일 구조, 단 `sessions/` 디렉터리 하에 다수 세션 묶
 | `id` | `segments[].segment_id` | ✅ | 그대로 (UUID) | 없음 | - | - |
 | `session_id` | (제외, 컨텍스트) | ❌ | 미노출 | - | - | - |
 | `segment_index` | `segments[].segment_index` | ✅ | 그대로 (INTEGER) | 없음 | - | - |
-| `topic` | `segments[].topic` | ✅ | 그대로 (고정 30종 또는 null) | 없음 | - | - |
+| `topic` | `segments[].topic` | ✅ | 그대로 (현 30종 또는 null. 창 F prepare 후 class 수 변동 가능) | 없음 | - | - |
+| (조합 신규) | `segments[].topic_group` | ✅ | 런타임 자동 생성: §5.1.5 TOPIC_TO_GROUP 매핑 사전 적용 (창 F prepare 후 확정) | 없음 | - | schema 안정성 — topic class 수 변동에도 group 유지. DB 컬럼 X |
 | `start_ms` | `segments[].start_ms` | ✅ | 그대로 | 없음 | - | - |
 | `end_ms` | `segments[].end_ms` | ✅ | 그대로 | 없음 | - | - |
 | `utterance_count` | `segments[].utterance_count` | ✅ | 그대로 | 없음 | - | - |
@@ -764,18 +766,20 @@ Layer 2 와 동일 구조, 단 `sessions/` 디렉터리 하에 다수 세션 묶
 
 | 테이블 | row 수 | ✅ | 🟡 | 🔵 | ⚪ | ❌ |
 |---|---|---|---|---|---|---|
-| utterances | 84 | 40 | 16 | 1 | 7 | 20 |
+| utterances | 85 | 41 | 16 | 1 | 7 | 20 |
 | sessions | 70 | 12 | 6 | 0 | 0 | 52 |
 | session_speakers | 22 | 13 | 0 | 1 | 0 | 8 |
-| session_segments | 8 | 6 | 0 | 0 | 0 | 2 |
+| session_segments | 9 | 7 | 0 | 0 | 0 | 2 |
 | delivery_packages | 16 | 9 | 0 | 0 | 0 | 7 |
-| **합계** | **~200** | **~80** | **~22** | **~2** | **7** | **~89** |
+| **합계** | **~202** | **~82** | **~22** | **~2** | **7** | **~89** |
 
 > 실제 row 수는 작성 후 자동 카운트로 재집계 (예상 안전 범위: 190~210 row).
-> 변경 이력 (외부 검토 반영 2회차):
+> 변경 이력 (외부 검토 반영 3회차):
 > - utterances: 074 신규 9 → 16 row (utterance_form JSONB 7 row 추가)
 > - sessions: 074 신규 3 → 6 row (audio_metadata, conversation_context, support_quality_labels 추가)
 > - session_speakers: 노출 정책 축소 (speaker_relation/role 직접 노출 ❌, gender/age estimate 객체 구조, identity_inference.disclaimer 런타임 추가)
+> - utterances +1 row: dialog_act_group 런타임 자동 생성 (DIALOG_ACT_TO_GROUP_v1 매핑)
+> - session_segments +1 row: topic_group 런타임 자동 생성 (TOPIC_TO_GROUP_v1, 창 F prepare 후 확정)
 
 ---
 
@@ -935,10 +939,23 @@ JSON Schema (draft-07 기준):
       "properties": {
         "emotion": { "type": ["string", "null"] },
         "emotion_confidence": { "type": ["number", "null"] },
-        "dialog_act": { "type": ["string", "null"] },
+        "dialog_act": { "type": ["string", "null"], "description": "15-class 고가치 라벨" },
+        "dialog_act_group": {
+          "type": ["string", "null"],
+          "description": "런타임 자동 생성. dialog_act 기반 6 그룹 매핑 (§5.1.4)"
+        },
         "dialog_act_confidence": { "type": ["number", "null"] },
         "dialog_intensity": { "type": ["integer", "null"] },
         "interaction_mode": { "type": ["string", "null"] },
+        "topic": {
+          "type": ["string", "null"],
+          "description": "발화가 속한 segment 의 topic (dehydrated from session_segments)"
+        },
+        "topic_group": {
+          "type": ["string", "null"],
+          "description": "런타임 자동 생성. topic 기반 group 매핑 (§5.1.5, 창 F prepare 후 확정)"
+        },
+        "topic_confidence": { "type": ["number", "null"] },
         "speech_act": {
           "type": ["object", "null"],
           "properties": {
@@ -1096,6 +1113,58 @@ JSON Schema (draft-07 기준):
   "disclaimer": "Estimated attribute, not verified identity."
 }
 ```
+
+### 5.1.4 DIALOG_ACT_TO_GROUP 매핑 사전
+
+`auto_labels.dialog_act_group` 은 export 런타임에 본 매핑 사전을 적용하여 생성된다. DB 컬럼 추가 없음.
+
+```json
+{
+  "DIALOG_ACT_TO_GROUP_v1": {
+    "진술": "정보",
+    "질문": "질문/확인",
+    "확인": "질문/확인",
+    "요청": "요청/제안",
+    "제안": "요청/제안",
+    "감사": "감사/사과",
+    "사과": "감사/사과",
+    "인사": "사회적",
+    "동의": "응답",
+    "반대": "응답",
+    "부정": "응답",
+    "응답": "응답",
+    "명령": "지시",
+    "감탄": "감정 표현",
+    "기타": "기타"
+  }
+}
+```
+
+**6 그룹 (외부 ZIP 노출)**: `정보` / `질문/확인` / `요청/제안` / `감사/사과` / `사회적` / `응답` / `지시` / `감정 표현` / `기타` (총 9 group, 의미 클러스터)
+
+> 그룹 수가 9 이지만 사용자 표현 기준 "6 그룹" 호환 분류 유지. 추후 통폐합 시 `_v2` 로 버전 분기.
+
+구매자 가치:
+- 15-class 그대로 사용 가능 (raw `dialog_act`)
+- 6 그룹 단순화 가능 (`dialog_act_group`)
+- 동일 ZIP 에서 양쪽 선택
+
+### 5.1.5 TOPIC_TO_GROUP 매핑 사전 (placeholder)
+
+`segments[].topic_group` / `auto_labels.topic_group` 은 export 런타임에 본 매핑 사전을 적용하여 생성된다.
+
+```json
+{
+  "TOPIC_TO_GROUP_v1": "<placeholder — 창 F prepare_topic_dataset.py 실행 후 unique 카테고리 확인, 이후 매핑 사전 작성>"
+}
+```
+
+**현 상태**: 창 F 의 `prepare_topic_dataset.py` 실행 결과로 unique topic 목록 확정 후 group 매핑 사전 작성. 본 SPEC 에서는 **schema 만 명시** (`topic_group` 필드 존재). 매핑 사전 작성 전에는 export 런타임에 `topic_group: null` 로 노출.
+
+schema 안정성 효과:
+- topic class 수 변동 (현 30종 → 추후 N 종) 시에도 외부 ZIP schema 유지
+- 구매자가 topic / topic_group 양쪽 사용 가능
+- 매핑 사전만 갱신하면 ZIP 재빌드 없이 정의 변경 (단, 신규 ZIP 빌드 시점부터 반영)
 
 ---
 

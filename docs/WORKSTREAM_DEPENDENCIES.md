@@ -151,10 +151,32 @@
 | 항목 | 내용 |
 |---|---|
 | **입력** | AIHUB 데이터 (`C:\Users\gdash\Downloads\AIHUB`) |
-| **출력 (의존 대상 없음)** | <ul><li>새 모델 체크포인트 (4 분류기: emotion, dialog_act, speech_act, topic)</li><li>WhisperX fine-tune 결과 (저음질 전화망 데이터)</li><li>평가 리포트 (internal_*.json, 외부 ZIP 미포함)</li></ul> |
+| **출력 (의존 대상 없음)** | <ul><li>새 모델 체크포인트 (4 분류기: emotion, dialog_act, speech_act, topic)</li><li>WhisperX 평가/Fine-tune 결과 (단계적 진행)</li><li>평가 리포트 (`logs/*.json`, internal — 외부 ZIP 미포함)</li><li>TOPIC_TO_GROUP_v1 매핑 사전 (`prepare_topic_dataset.py` 결과 기반, SPEC §5.1.5 갱신)</li></ul> |
 | **선행 작업** | 없음 (창 0 완료 무관) |
 | **창 0 와의 관계** | 매핑표가 모델명 일반화 강제하므로, 모델명이 바뀌어도 외부 ZIP에는 영향 X |
-| **완료 조건** | <ul><li>각 분류기 F1 ≥ baseline</li><li>A/B 테스트 통과</li><li>production 배포 결정 (별도 게이트)</li></ul> |
+| **완료 조건** | <ul><li>각 분류기 F1 ≥ baseline</li><li>WhisperX: 단계별 게이트 통과 (3.6.1 참조)</li><li>A/B 테스트 통과</li><li>production 배포 결정 (별도 게이트)</li></ul> |
+
+#### 3.6.1 WhisperX Phase 8 — 단계 분리 (외부 검토 반영)
+
+**원칙**: WhisperX full fine-tune 즉시 진행 X. 정량화된 의사결정 우선 (1~2주 GPU 낭비 회피).
+
+| Phase | 작업 | 산출물 | 게이트 |
+|---|---|---|---|
+| **8a — baseline 측정** | 현재 production WhisperX (large-v3 베이스) 의 전화망 음성 WER/CER 측정 | `logs/baseline_whisperx.json` (WER, CER, 처리 시간, 샘플 수) | LeeGoGke 베이스 수치 확인 → 8b 시작 |
+| **8b — 데이터 품질 검증** | AI Hub #5 (저음질 전화망) audio/text pair 정합성 검증. 라벨 누락/오류 샘플 확인 | `logs/data_quality.json` (paired_count, mismatched_count, dropped_reasons) | 정합성 ≥ 95% → 8c 시작 |
+| **8c — Smoke fine-tune** | 1~5시간 subset, 1~2 epochs, LoRA 또는 frozen-encoder 부분 학습 | `logs/smoke_finetune.json` (Δ WER, Δ CER, VRAM/시간 사용) | 의미 있는 개선 (예: Δ WER ≥ 1pp) → 8d 승인 요청 |
+| **8d — Full fine-tune** | 전체 데이터 + 전체 epoch. **LeeGoGke 별도 승인 후만 시작** | `logs/full_finetune.json`, 새 체크포인트 | A/B 테스트 통과 → production 배포 |
+
+**금지**: 8a 미실행 상태에서 8c/8d 직행 X. 8c 미실행 상태에서 8d 직행 X.
+
+**병행 가능**: KcELECTRA 분류기 재학습은 Phase 8 과 독립 (8a~d 진행 중에도 분류기 학습 별도 진행 가능).
+
+#### 3.6.2 TOPIC_TO_GROUP_v1 매핑 사전 작성 (창 F 부수 산출물)
+
+- `prepare_topic_dataset.py` 실행 → unique topic 목록 추출
+- 매핑 사전 작성 (의미 클러스터 기반)
+- SPEC §5.1.5 갱신 (PR 권장)
+- export-builder 재실행 시점부터 외부 ZIP `segments[].topic_group` 채움
 
 ---
 
