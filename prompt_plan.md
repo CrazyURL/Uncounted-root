@@ -5,6 +5,43 @@ created: 2026-05-14
 type: feature
 ---
 
+## 완료된 추가 작업 (2026-05-17)
+
+### ExportLog + 납품 패키지 모달 ✅
+
+| 파일 | 내용 |
+|------|------|
+| `uncounted-admin/src/types/admin.ts` | `ExportLog` 타입 추가 (`session_ids: string[]` 포함) |
+| `uncounted-admin/src/lib/exportLog.ts` | localStorage 기반 ExportLog CRUD (DB 연동 전 최소 구현) |
+| `uncounted-admin/src/components/domain/ExportLogPanel.tsx` | 최근 다운로드 로그 접기/펴기 + 납품 등록 버튼 |
+| `uncounted-admin/src/components/domain/DeliveryPackageModal.tsx` | ExportLog → client 연결 일괄 납품 등록 모달 |
+| `uncounted-admin/src/pages/admin/AdminInventoryPage.tsx` | session_ids 캡처(핸들러 3개) + DeliveryPackageModal 연결 |
+| `uncounted-admin/src/lib/adminHelpers.ts` | `buildCallTranscriptTxt()` 추가, `owner_inference` 필드 보강 |
+
+납품 흐름: 다운로드 → ExportLog 기록(localStorage) → ExportLogPanel 납품 등록 버튼 → DeliveryPackageModal(납품처·단가 입력) → `createDelivery()` 세션별 순차 호출
+
+TODO: ExportLog DB 연동(`/api/admin/export-logs`), 납품 완료 후 ExportLog에 "납품됨" 상태 표시
+
+### 최소 판매 가능 데이터셋 — 창 A (도메인 로직 + Export 유틸) ✅
+
+| 파일 | 추가 내용 |
+|------|----------|
+| `uncounted-admin/src/types/adminSession.ts` | `SaleStatus` 타입, `getSaleStatus()`, `isMinSaleable()`, `getSaleStatusLabel()`, `getSaleStatusBadgeVariant()` |
+| `uncounted-admin/src/lib/adminHelpers.ts` | `MinSaleableExportParams` 인터페이스, `buildUtterancesJsonl()`, `buildCallExportJson()`, `buildMinSaleableManifest()`, `buildDatasetSummary()`, `buildQualityReport()`, `buildConsentReport()`, `exportMinSaleableDataset()` |
+
+판정 정책: consent both_agreed + pipeline complete + review approved + pii 정상 + 포함 발화 ≥ 1 → sellable. locked만 export 제외, restricted는 옵션 포함. speaker role은 candidate 고정.
+
+### 품질 검사 3종 — gpu-worker.ts + worker.py 양쪽 반영 ✅
+
+| # | 기능 | 위치 |
+|---|------|------|
+| F1 | both_agreed + raw_audio_url IS NULL > 5건 → 경보 로그 | sweepStuckSessions / sweep_stuck_sessions |
+| F2 | segment_id=NULL 발화 → session_segments 시간 범위 자동 역할당 | sweepSegmentBackfill / sweep_segment_backfill |
+| F3 | both_agreed + 화자 1명 + 발화 ≥ 6 → pyannote 실패 의심, pending 재큐 | processOneSession / process_one_session |
+
+- admin-utterances-v2: speaker_role/gender/age, segment_topic 응답 추가
+- packageBuilder: segments.jsonl export (STAGE 16)
+
 # STAGE 15~17 — 화자 자동 식별 + 세그먼트 주제 라벨 + 데이터셋 확장
 
 ## 핵심 원칙 (Advisor 반영)
