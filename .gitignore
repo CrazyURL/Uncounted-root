@@ -7,3 +7,7 @@ nltk_data/
 graphify-out/cache/
 plans/
 .worktrees/
+
+# Internal Master Context docs (sensitive: AIHUB path, GPU IP, pricing, model names)
+docs/CLAUDE.md
+docs/CLAUDE_WORKSTREAM_HEADER.md
