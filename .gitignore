@@ -11,3 +11,16 @@ plans/
 # Internal Master Context docs (sensitive: AIHUB path, GPU IP, pricing, model names)
 docs/CLAUDE.md
 docs/CLAUDE_WORKSTREAM_HEADER.md
+
+# Independent sub-project clone (underscore variant — uncounted-*/ above misses it). Contains .env secrets.
+uncounted_client/
+
+# Dependencies / throwaway working dirs
+node_modules/
+scratch/
+
+# Secrets — never commit any env file (keep example/sample templates)
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
