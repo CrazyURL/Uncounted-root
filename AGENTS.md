@@ -58,3 +58,22 @@ cd uncounted-admin && yarn dev         # port 15173
 - 암호화 키/로직 변경 → API, App (JS+Java), Admin 3곳 동기화 (Voice API는 암호화 미적용)
 - 타입 변경 → `src/types/` 일관성 확인
 - 코딩 스타일, 테스트, 보안, graphify 등 상세 규칙 → `.claude/rules/` 참조
+
+## 품질 지표 B-60 고착 버그 — 2026-05-23
+
+**상태**: 수정 완료 (신규 처리분부터 정상). 기존 DB 데이터는 자동 변경 없음.
+
+**원인**: `uncounted-voice-api/app/worker.py` `_get_audio_stats_sync()`가 `ffprobe -af`
+(지원되지 않는 옵션)을 사용해 astats/silencedetect가 묵시적으로 실패,
+fallback 기본값이 저장됕다.
+
+**영향**: `utterances` / `bu_quality_metrics` 테이블의 기존 값
+(`quality_score=60`, `quality_grade=B`, `snr_db=0`, `speech_ratio=1.0`)은
+실제 음질을 반영하지 않는다.
+
+**운영 주의**:
+- 기존 B-60 데이터를 "품질 통과"로 해석하지 말 것.
+- 납품 리포트의 `quality_grade=B / snr_db_avg=0 / speech_ratio_avg=1.0`은 "재측정 필요"로 처리.
+- API 쪽 납품 가능 여부 판단에서 기존 `quality_score/quality_grade`는 신뢰 보류.
+  voice-api 수정 후 재측정된 값만 품질 판단에 사용한다.
+- 기존 데이터 backfill은 별도 dry-run 트랙에서 승인 후 진행.
