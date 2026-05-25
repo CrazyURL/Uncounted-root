@@ -18,7 +18,7 @@ const require = createRequire(import.meta.url)
 const { chromium } = require('C:/Users/user/Documents/project/uncounted-admin-emotion-h2a/node_modules/playwright')
 
 const CHROME = 'C:\\Users\\user\\AppData\\Local\\ms-playwright\\chromium-1208\\chrome-win64\\chrome.exe'
-const ADMIN_URL = 'http://localhost:15173'
+const ADMIN_URL = process.env.ADMIN_URL || 'http://localhost:15173'
 const EMAIL = 'gdash86@gmail.com'
 const SHOTS = 'C:/Users/user/Documents/project/uncounted-root/scripts/analysis/_h2b_shot'
 
