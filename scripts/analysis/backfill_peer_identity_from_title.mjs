@@ -122,6 +122,7 @@ async function main() {
     total: sessions.length,
     matched: 0,
     skipped: 0,
+    skippedNoUser: 0,
     byKind: { title_phone: 0, title_name: 0 },
     peerIdNull: 0,
     peerIdSet: 0,
@@ -135,7 +136,15 @@ async function main() {
   const sessionToPeer = []
 
   for (const s of sessions) {
-    if (s.user_id) stat.distinctUsers.add(s.user_id)
+    // 멱등성 가드: user_id 가 없으면 적재 스킵. peer_identity_hash 의 unique 키는
+    // (user_id, peer_identity_hash) 이고 PG 는 NULL user_id 를 distinct 로 취급 →
+    // null-user 행은 재apply 마다 중복 insert(비멱등). apply 전에 닫고 간다.
+    if (!s.user_id) {
+      stat.skippedNoUser++
+      stat.skipped++
+      continue
+    }
+    stat.distinctUsers.add(s.user_id)
     const key = deriveFromTitle(s.user_id, s.title)
     if (!key) {
       stat.skipped++
@@ -165,7 +174,7 @@ async function main() {
 
   console.log(`전체 세션:           ${stat.total}`)
   console.log(`title 매칭:          ${stat.matched}`)
-  console.log(`스킵(비매칭):        ${stat.skipped}`)
+  console.log(`스킵(비매칭):        ${stat.skipped}  (그중 user_id 없음: ${stat.skippedNoUser})`)
   console.log(`  ├ title_phone:     ${stat.byKind.title_phone}`)
   console.log(`  └ title_name:      ${stat.byKind.title_name}`)
   console.log(`distinct 상대(peer): ${distinctPeers}  (phone ${distinctPhonePeers} / name ${distinctNamePeers})`)
