@@ -370,6 +370,24 @@ Layer 2 와 동일 구조, 단 `sessions/` 디렉터리 하에 다수 세션 묶
 | `pii_intervals[].original` | (절대 제외) | ❌ | 미노출 | 원문 PII | #3 | export-builder strip |
 | `pii_intervals[].startSec/endSec/maskType/piiType` | `pii_labels[].*` | ✅ | 그대로 | 없음 | - | - |
 
+##### maskType provenance (D4b-3)
+
+`pii_intervals[].maskType` 은 **각 구간에 실제로 적용된 처리**를 나타내는 provenance 값이다(고정 enum 아님, `type: string`).
+
+| maskType | 의미 | 저장 오디오 |
+|---|---|---|
+| `text_only` | 텍스트(transcript) 마스킹됨 · 음향 마스킹 **미적용** · 구간은 downstream 마스킹용 보존 | **원본(불변)** |
+| `beep` / `audio_beep_1khz` | 1kHz 비프 음향 마스킹 적용 | 변형됨 |
+| `silence` | 무음 음향 마스킹 적용 | 변형됨 |
+
+`pii_meta.maskingMethod` 는 패키지의 **실제 maskType 분포에서 산출**한다(`maskingProvenance.ts`):
+
+- 음향 변형 maskType(beep/silence)이 **실재할 때만** `audio_beep_1khz`/`audio_silence` 토큰을 표기한다.
+- `text_only` 만 있는 패키지는 `text_substitute` 만 표기하며 `audio_beep_1khz` 를 **주장하지 않는다**.
+- `pii_meta.maskTypeDistribution` 으로 분포를 투명 공개한다.
+
+> 이 표기는 적용된 처리의 **정직한 provenance** 이며 **무결성 보증이 아니다**(잔존 확률적 불확실성이 있을 수 있음 — disclosure 전제). 적용되지 않은 방식을 표기하지 않는다.
+
 #### 4.2.10 PII 감사 (5) — Migration 036
 
 | 내부 필드 | 외부 필드 | 카테고리 | 변환 규칙 | 노출 위험 | 안전선 | 비고 |
